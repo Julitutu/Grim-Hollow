@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="0.1.0">
+    <update version="0.1.1">
       <file name="Grim-Hollow.index"
         url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow.index" />
     </update>
@@ -28,8 +28,8 @@
       url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-laneshi.xml" />
     <file name="race-morbus-kobold.xml"
       url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-morbus-kobold.xml" />
-    <file name="race-race-ogresh.xml"
-      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-race-ogresh.xml" />
+    <file name="race-ogresh.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-ogresh.xml" />
     <file name="race-wechselkind.xml"
       url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-wechselkind.xml" />
 
