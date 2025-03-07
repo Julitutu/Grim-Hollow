@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.0">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/source.xml" />
+		<update version="0.1.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/source.xml" />
 		</update>
 	</info>
 	<element name="Grim Hollow - Campaing Guide" type="Source" source="Core" id="ID_LT_SOURCE_GHCG">
