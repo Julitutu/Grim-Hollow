@@ -3,8 +3,8 @@
     <info>
         <name>Advanced Backgrounds</name>
         <description>Advanced Backgrounds rules from the Grim Hollow.</description>
-        <update version="0.1.0">
-            <file name="option-advanced-backgrounds.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow-The-Players-Guide/refs/heads/main/Setting/option-advanced-backgrounds.xml" />
+        <update version="0.1.1">
+            <file name="option-advanced-backgrounds.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/option-advanced-backgrounds.xml" />
         </update>
     </info>
 
