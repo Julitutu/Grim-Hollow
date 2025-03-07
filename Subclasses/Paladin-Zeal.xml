@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of Zeal</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="Paladin-Zeal.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Paladin-Zeal.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of Zeal" type="Archetype" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_PALADIN_OATH_OF_ZEAL">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of Zeal is taken by paladins consumed by hatred for a specific group or ideology. Zealots, as these paladins are sometimes called, pursue an inquisition against their enemies at all costs. They abandon compassion and honor as impediments to the more important work of ridding the world of those they deem dangerous or heretical.</p>
+            <p><b>Tenets of Zeal</b></p>
+            <p>The tenets of the Oath of Zeal are serious and severe, as are those paladins who choose to take them.</p>
+            <p class="indent"><b><i>Uncover Corruption.</i></b> Darkness cannot abide the light of day. Wickedness must be revealed before it can be destroyed.</p>
+            <p class="indent"><b><i>Purge the Heretics.</i></b> Heresy is a tumor that spread through the hearts of the innocent. Cut it out at the source.</p>
+            <p class="indent"><b><i>No Mercy.</i></b> The righteous path requires unwavering conviction and unflinching resolve.</p>
+            <p class="indent"><b><i>By Any Means Necessary.</i></b> There is no sacrifice too great when it comes to defeating the wicked.</p>
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_OATH_SPELLS" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_CHANNEL_DIVINITY" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_AURA_OF_CLARITY" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_COMPEL_CONFESSION" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_APOCALYPTIC_REVELATION" />
+		</description>
+		<sheet display="false">
+			<description>The Oath of Zeal is taken by paladins consumed by hatred for a specific group or ideology. Zealots, as these paladins are sometimes called, pursue an inquisition against their enemies at all costs.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_OATH_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_CHANNEL_DIVINITY" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_AURA_OF_CLARITY" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_COMPEL_CONFESSION" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_APOCALYPTIC_REVELATION" level="20" />
+		</rules>
+	</element>
+
+	<element name="Oath Spells" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_OATH_SPELLS">
+		<description>
+			<p>You gain oath spells at the paladin levels listed.</p>
+			<h5>Oath of Zeal Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>detect evil and good, hunter’s mark</i></td></tr>
+				<tr><td>5th</td><td><i>detect thoughts, knock</i></td></tr>
+				<tr><td>9th</td><td><i>fear, tongues</i></td></tr>
+				<tr><td>13th</td><td><i>divination, locate creature</i></td></tr>
+				<tr><td>17th</td><td><i>insect plague, scrying</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" level="3" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_HUNTERS_MARK" level="3" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="5" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_KNOCK" level="5" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_FEAR" level="9" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_TONGUES" level="9" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_DIVINATION" level="13" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" level="13" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_INSECT_PLAGUE" level="17" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="17" spellcasting="Paladin" prepared="true"/>
+		</rules>
+	</element>
+
+	<element name="Channel Divinity" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_CHANNEL_DIVINITY">
+		<description>
+			<p>When you take this oath at 3rd level, you gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
+            <p class="indent"><b><i>Mark of the Heretic.</i></b> You can use your Channel Divinity to mark a creature as a heretic. As a bonus action, choose a creature you can see within 30 feet and a weeping symbol appears on it. For the next minute, your weapon attacks against the chosen creature score a critical hit on a roll of 19 or 20, and each time the creature’s turn starts you can use your reaction to make one weapon attack against it.</p>
+			<p class="indent"><b><i>Inquisitor’s Eye.</i></b> You can use your Channel Divinity to open your senses to hidden signs of corruption and malfeasance. As a bonus action, you grant yourself advantage on Intelligence (Investigation), Wisdom (Insight), and Wisdom (Perception) ability checks for the next 10 minutes. During this time, you can’t be surprised.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain the following two Channel Divinity options.&#13;
+            • Mark of the Heretic. As a bonus action, you can use your Channel Divinity to mark a creature as a heretic. Choose a creature you can see within 30 feet and a weeping symbol appears on it. For the next minute, your weapon attacks against the chosen creature score a critical hit on a roll of 19 or 20, and each time the creature’s turn starts you can use your reaction to make one weapon attack against it.&#13;
+            • Inquisitor’s Eye. You can use your Channel Divinity to open your senses to hidden signs of corruption and malfeasance. As a bonus action, you grant yourself advantage on Intelligence (Investigation), Wisdom (Insight), and Wisdom (Perception) ability checks for the next 10 minutes. During this time, you can’t be surprised.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_CHANNEL_DIVINITY_MARK_OF_THE_HERETIC" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_CHANNEL_DIVINITY_INQUISITORS_EYE" />
+		</rules>
+	</element>
+
+    <element name="Channel Divinity: Mark of the Heretic" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_CHANNEL_DIVINITY_MARK_OF_THE_HERETIC">
+		<description>
+			<p>As a bonus action, you can use your Channel Divinity to mark a creature as a heretic. Choose a creature you can see within 30 feet and a weeping symbol appears on it. For the next minute, your weapon attacks against the chosen creature score a critical hit on a roll of 19 or 20, and each time the creature’s turn starts you can use your reaction to make one weapon attack against it.</p>
+        </description>
+		<sheet usage="Channel Divinity" action="Bonus Action" alt="Mark of the Heretic">
+			<description>As a bonus action, you can use your Channel Divinity to mark a creature as a heretic. Choose a creature you can see within 30 feet and a weeping symbol appears on it. For the next minute, your weapon attacks against the chosen creature score a critical hit on a roll of 19 or 20, and each time the creature’s turn starts you can use your reaction to make one weapon attack against it.</description>
+		</sheet>
+	</element>
+
+    <element name="Channel Divinity: Inquisitor’s Eye" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_CHANNEL_DIVINITY_INQUISITORS_EYE">
+		<description>
+            <p>You can use your Channel Divinity to open your senses to hidden signs of corruption and malfeasance. As a bonus action, you grant yourself advantage on Intelligence (Investigation), Wisdom (Insight), and Wisdom (Perception) ability checks for the next 10 minutes. During this time, you can’t be surprised.</p>
+        </description>
+		<sheet usage="Channel Divinity" action="Bonus Action" alt="Inquisitor’s Eye">
+            <description>You can use your Channel Divinity to open your senses to hidden signs of corruption and malfeasance. As a bonus action, you grant yourself advantage on Intelligence (Investigation), Wisdom (Insight), and Wisdom (Perception) ability checks for the next 10 minutes. During this time, you can’t be surprised.</description>
+		</sheet>
+	</element>
+
+	<element name="Aura of Clarity" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_AURA_OF_CLARITY">
+		<description>
+			<p>Beginning at 7th level, you and friendly creatures within 10 feet of you can’t be blinded while you are conscious. Additionally, creatures and objects of your choice within this range can’t benefit from being invisible.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You and friendly creatures within {{aura of clarity:range}} feet of you can’t be blinded while you are conscious. Additionally, creatures and objects of your choice within this range can’t benefit from being invisible.</description>
+		</sheet>
+        <rules>
+            <stat name="aura of clarity:range" value="10" />
+            <stat name="aura of clarity:range" value="20" level="18" />
+        </rules>
+	</element>
+
+	<element name="Compel Confession" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_COMPEL_CONFESSION">
+		<description>
+			<p>Starting at 15th level, you can cast the zone of truth spell without expending a spell slot. When you cast the spell with this feature, creatures who succeed on their saving throw take 1d4 psychic damage at the start of each of their turns while they remain within the affected area.</p>
+		</description>
+		<sheet>
+			<description>You can cast the zone of truth spell without expending a spell slot. When you cast the spell with this feature, creatures who succeed on their saving throw take 1d4 psychic damage at the start of each of their turns while they remain within the affected area.</description>
+		</sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ZONE_OF_TRUTH" spellcasting="Paladin" prepared="true" />
+        </rules>
+	</element>
+
+	<element name="Apocalyptic Revelation" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ZEAL_APOCALYPTIC_REVELATION">
+		<description>
+			<p>At 20th level, as an action you can reveal the true nature of your enemies to all for 1 minute. During this time, you gain the following benefits:</p>
+			<ul>
+				<li>You have truesight out to a distance of 120 feet.</li>
+				<li>Creatures who start their turn, or move within, 5 feet of you must make a Constitution saving throw against your paladin spell save DC. On a failure, the creature is blinded until the start of its next turn.</li>
+				<li>As a bonus action on each of your turns you can choose a creature within 60 feet and reveal its weaknesses for all to see. Attacks made against the chosen creature have advantage until the start of your next turn.</li>
+			</ul>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Action">
+			<description>As an action you can reveal the true nature of your enemies to all for 1 minute. During this time, you gain the following benefits:&#13;
+            • You have truesight out to a distance of 120 feet.&#13;
+            • Creatures who start their turn, or move within, 5 feet of you must make a Constitution saving throw against your paladin spell save DC. On a failure, the creature is blinded until the start of its next turn.&#13;
+            • As a bonus action on each of your turns you can choose a creature within 60 feet and reveal its weaknesses for all to see. Attacks made against the chosen creature have advantage until the start of your next turn.</description>
+		</sheet>
+	</element>
+</elements>

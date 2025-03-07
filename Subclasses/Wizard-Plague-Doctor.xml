@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>School of Plauge Doctor</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="Wizard-Plague-Doctor.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Wizard-Plague-Doctor.xml" />
+		</update>
+	</info>
+
+	<element name="School of the Plague Doctor" type="Archetype" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_WIZARD_PLAGUE_DOCTOR">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>Blending spellcasting with science, you distill your magic into concoctions that harm or heal. Plague Doctors often wear grotesque masks protecting them from toxic ingredients. Many regard the mask with fear as a sign of pestilence, making Plague Doctors a source of both hope and trepidation.</p>
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_POTION_CRAFT" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_GOOD_MEDICINE" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_BAD_MEDICINE" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_BREATHE_IT_IN" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_MEDICINAL_MASTER" />
+		</description>
+		<sheet display="false">
+			<description>Blending spellcasting with science, you distill your magic into concoctions that harm or heal. Plague Doctors often wear grotesque masks protecting them from toxic ingredients.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_POTION_CRAFT" level="2" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_GOOD_MEDICINE" level="2" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_BAD_MEDICINE" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_BREATHE_IT_IN" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_MEDICINAL_MASTER" level="14" />
+		</rules>
+	</element>
+
+    <element name="Potion Craft" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_POTION_CRAFT">
+        <description>
+            <p>Beginning when you select this arcane tradition at 2nd level, you gain proficiency in Medicine and with alchemist’s supplies and herbalism kits.</p>
+            <p class="indent">Additionally, you have learned to create magical concoctions. You can create any number of concoctions using your alchemist supplies or herbalism kit for 10 minutes, expending a spell slot for each concoction created. When you do, for each concoction created, choose a spell from your wizard’s spell book that targets only one creature. The chosen spell must be of an equal or lower level than the expended spell slot.</p>
+            <p class="indent">When a creature consumes the concoction, it becomes the target of the spell as if you had just cast it. If the spell requires concentration, the creature that consumes the potion needs to concentrate on it. Concoctions created this way lose their magical effect at the end of your next long rest.</p>
+        </description>
+        <sheet>
+            <description>You have learned to create magical concoctions. You can create any number of concoctions using your alchemist supplies or herbalism kit for 10 minutes, expending a spell slot for each concoction created. When you do, for each concoction created, choose a spell from your wizard’s spell book that targets only one creature. The chosen spell must be of an equal or lower level than the expended spell slot.&#13;
+			When a creature consumes the concoction, it becomes the target of the spell as if you had just cast it. If the spell requires concentration, the creature that consumes the potion needs to concentrate on it. Concoctions created this way lose their magical effect at the end of your next long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+        </rules>
+    </element>
+
+    <element name="Good Medicine" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_GOOD_MEDICINE">
+        <description>
+            <p>Also at 2nd level, when you craft a concoction, you can choose to expend a spell slot without choosing a spell, instead creating good medicine. When a creature consumes your good medicine, you roll 1d8 per level of the spell slot expended casting the spell, and the creature regains an equal number of hit points. If you expended a spell slot of 3rd level or higher, you also end all diseases afflicting the creature.</p>
+        </description>
+        <sheet>
+            <description>When you craft a concoction, you can choose to expend a spell slot without choosing a spell, instead creating good medicine. When a creature consumes your good medicine, you roll 1d8 per level of the spell slot expended casting the spell, and the creature regains an equal number of hit points. If you expended a spell slot of 3rd level or higher, you also end all diseases afflicting the creature.</description>
+        </sheet>
+    </element>
+
+    <element name="Bad Medicine" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_BAD_MEDICINE">
+        <description>
+            <p>Starting at 6th level, when you craft a concoction you can choose to expend a spell slot without choosing a spell, instead crafting bad medicine. When you create a dose of bad medicine, choose one effect per level of spell slot expended.</p>
+            <ul>
+                <li>The creature is poisoned.</li>
+                <li>The creature’s movement speeds are halved.</li>
+                <li>The creature takes an additional 1d4 necrotic damage the first time it takes damage each turn.</li>
+                <li>The creature takes 1d6 poison damage each time it takes an action, bonus action, or reaction on a turn.</li>
+                <li>The creature takes acid damage equal to the level of the spell slot expended at the start of each of its turns.</li>
+            </ul>
+            <p class="indent">As an action, you can hurl a dose of bad medicine at a point you can see within 30 feet. Creatures within 10 feet of that point must make a Constitution saving throw against your wizard spell save DC. On a failure, a creature suffers all of the chosen effects for the next minute.</p>
+            <p class="indent">As an action, the affected creature can attempt another Constitution saving throw to end any effects early.</p>
+        </description>
+        <sheet action="Action">
+            <description>When you craft a concoction you can choose to expend a spell slot without choosing a spell, instead crafting bad medicine. When you create a dose of bad medicine, choose one effect per level of spell slot expended.&#13;
+                • The creature is poisoned.&#13;
+                • The creature’s movement speeds are halved.&#13;
+                • The creature takes an additional 1d4 necrotic damage the first time it takes damage each turn.&#13;
+                • The creature takes 1d6 poison damage each time it takes an action, bonus action, or reaction on a turn.&#13;
+                • The creature takes acid damage equal to the level of the spell slot expended at the start of each of its turns.&#13;
+                As an action, you can hurl a dose of bad medicine at a point you can see within 30 feet. Creatures within 10 feet of that point must make a DC {{plague doctor:dc}} Constitution saving throw. On a failure, a creature suffers all of the chosen effects for the next minute.&#13;
+                As an action, the affected creature can attempt another Constitution saving throw to end any effects early.</description>
+        </sheet>
+        <rules>
+            <stat name="plague doctor:dc" value="8" />
+            <stat name="plague doctor:dc" value="proficiency" />
+            <stat name="plague doctor:dc" value="intelligence:modifier" />
+        </rules>
+    </element>
+
+    <element name="Breathe It In" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_BREATHE_IT_IN">
+        <description>
+            <p>Starting at 10th level, being persistently exposed to the most deadly ailments known has given you some small measure of resistance to them. After you take necrotic or poison damage, you gain temporary hit points equal to the damage.</p>
+            <p class="indent">In addition, you are immune to disease and have advantage on saving throws against being poisoned.</p>
+        </description>
+        <sheet>
+            <description>After you take necrotic or poison damage, you gain temporary hit points equal to the damage.&#13;
+			In addition, you are immune to disease and have advantage on saving throws against being poisoned.</description>
+        </sheet>
+    </element>
+    
+    <element name="Medicinal Master" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_MEDICINAL_MASTER">
+		<description>
+			<p>Starting at 14th level, when you heal with your Good Medicine or deal damage with your Bad Medicine, roll an additional 2d8 to determine the amount of hit points regained or necrotic damage dealt.</p>
+		</description>
+		<sheet>
+			<description>When you heal with your Good Medicine or deal damage with your Bad Medicine, roll an additional 2d8 to determine the amount of hit points regained or necrotic damage dealt.</description>
+		</sheet>
+	</element>
+</elements>

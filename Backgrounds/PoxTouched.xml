@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Pox-Touched</name>
+		<description>Background from Grim Hollow - The Players Guide</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.1.0">
+			<file name="PoxTouched.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Backgrounds/PoxTouched.xml" />
+		</update>
+	</info>
+
+	<!-- Pox-Touched Background -->
+	<element name="Pox-Touched" type="Background" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_BACKGROUND_POX_TOUCHED">
+		<description>
+			<p>When you fell ill with the Weeping Pox, you assumed you would die from it, as had so many before you. Your neighbors shunned you, fearing that you would spread the disease to them and their families. Then a miracle happened. A stranger came to you and offered to help. The stranger brought forth strange medicines, providing you with curative draughts and elixirs. And just as the disease reached its worst stages, the symptoms began to vanish. Before long, you were cured of the disease. The sores and scars of the disease, however, still play across your body—an unsubtle reminder of the terrible scourge you faced. The stranger left you after the treatments concluded, but you retained some of the knowledge that the healer used while caring for you. Those who marvel at your recovery also fear you: they harbor some suspicion that you made deals with dark powers to drive away the disease.</p>
+			<p class="indent"><b>Skill Proficiency:</b> Intimidation, Medicine</p>
+			<p class="indent"><b>Tool Proficiencies:</b> Herbalism kit</p>
+			<p class="indent"><b>Languages:</b> Any one common language</p>
+			<p class="indent"><b>Equipment:</b> Herbalism kit, 10 gp</p>
+			<div element="ID_GFG_GHPG_BACKGROUND_FEATURE_MEDICAL_MARVEL" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>As one of the Pox-Touched, you faced down a terrible fate and lived to recount the experience. Such a terrible experience, and the joyful escape from that fate, leaves a lingering effect on those who go through it.</p>
+		</description>
+		<setters>
+			<set name="short">Intimidation, Medicine, Herbalism kit, one common language. Medical Marvel feature.</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+			<select type="Language" name="Language (Pox-Touched)" supports="Standard" />
+
+			<grant type="Background Feature" id="ID_GFG_GHPG_BACKGROUND_FEATURE_MEDICAL_MARVEL" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+
+			<select type="List" name="Personality Trait (Pox-Touched)">
+				<item id="1">I’m overly conscious of what the Weeping Pox did to my countenance.</item>
+				<item id="2">I hear the voices of all those who died from the disease, and I speak on their behalf.</item>
+				<item id="3">I have come to deeply respect the work of the alchemists and potion-makers of the world.</item>
+				<item id="4">I fear disease after having almost succumbed to one.</item>
+				<item id="5">I process everything I see and experience verbally.</item>
+				<item id="6">I prefer darkness and solitude to light and company</item>
+            </select>
+
+            <select type="List" name="Ideal (Pox-Touched)">
+				<item id="1">I am alive, and I will live every moment to its fullest.</item>
+				<item id="2">Helping others is the best way to live a full life.</item>
+				<item id="3">I am destined for great things, having survived where so many others did not. </item>
+				<item id="4">Discipline and rigor are the best tools against the chaos of the world.</item>
+				<item id="5">Self-reliance is the key to survival. Others may let you down.</item>
+				<item id="6">One person’s ideal is another’s flaw. Ideals should be malleable.</item>
+            </select>
+
+            <select type="List" name="Bond (Pox-Touched)">
+				<item id="1">I do what I do for all those suffering from horrible maladies. They deserve respect, empathy, and assistance.</item>
+				<item id="2">The book of cures that my doctor left me is incomprehensible to me, but I carry it with me everywhere.</item>
+				<item id="3">My pet was with me during my recovery, and it reminds me of all that I have.</item>
+				<item id="4">My parents never gave up on me, and I visit them whenever I can.</item>
+				<item id="5">I have a twin who I cannot stand but would do anything for.</item>
+				<item id="6">I owe my life to the itinerant healer who healed me. </item>
+            </select>
+            <select type="List" name="Flaw (Pox-Touched)">
+				<item id="1">Cleanliness is the most important virtue, and no one around me is ever clean enough.</item>
+				<item id="2">One of the herbs that helped heal me is something I must take every day or I feel terrible.</item>
+				<item id="3">I’m easily distracted.</item>
+				<item id="4">When innocent people are being hurt, I fly into a blind rage that’s hard to control.</item>
+				<item id="5">Since the Weeping Pox could not kill me, I’m obviously indestructible. </item>
+				<item id="6">My appearance means more to me than I should.</item>
+            </select>
+		</rules>
+	</element>
+
+	<!-- Feature: Medical Marvel -->
+	<element name="Feature: Medical Marvel" type="Background Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_BACKGROUND_FEATURE_MEDICAL_MARVEL">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Your dramatic and sudden recovery from the Weeping Pox—as well as the physical changes to your appearance because of the disease—has made you a marvel to the people around you. Though you may be treated differently as a strange oddity, your new status does have potential perks. You can ask for small favors, from meals to places to rest, and find the common folks willing to oblige, even if they are slightly afraid of you.</p>
+		</description>
+		<sheet alt="Medical Marvel" />
+	</element>
+</elements>

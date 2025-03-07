@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Way of Pride</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="Monk-Way-of-Pride.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Monk-Way-of-Pride.xml" />
+		</update>
+	</info>
+
+	<element name="Way of Pride" type="Archetype" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_MONK_WAY_OF_PRIDE">
+		<supports>Monastic Tradition</supports>
+		<description>
+			<p>Monks of the Way of Pride value themselves above all others. These monks focus on mastering their form, ego, and destructive power. They use their monastic traditions publicly, with the intention of gaining the respect and admiration of “lesser beings.”</p>
+			<p class="indent">The prideful traditions of this order include adorning oneself with jewelry, hiding their scars from prying eyes, and commanding respect from those that would oppose them.</p>
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_TALL_TALES" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_BRUISED_EGO" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_ASSERTIVE_ATTACKER" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_IRRATIONAL_RETALIATION" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_REDOUBLED_EFFORTS" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_EVER_PRIDEFUL" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_EGOTISTICAL" />
+		</description>
+		<sheet display="false">
+			<description>Monks of the Way of Pride value themselves above all others. These monks focus on mastering their form, ego, and destructive power.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_TALL_TALES" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_BRUISED_EGO" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_ASSERTIVE_ATTACKER" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_IRRATIONAL_RETALIATION" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_REDOUBLED_EFFORTS" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_EVER_PRIDEFUL" level="11" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_EGOTISTICAL" level="17" />
+		</rules>
+	</element>
+
+    <element name="Tall Tales" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_TALL_TALES">
+        <description>
+            <p>At 3rd level, you have gained a knack for telling embellished tales of your past achievements. You gain proficiency in your choice of one of the following skills: Deception, Intimidation, Performance, and Persuasion.</p>
+        </description>
+        <sheet display="false">
+            <description>You gain proficiency in your choice of one of the following skills: Deception, Intimidation, Performance, and Persuasion.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency (Tall Tales)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" />
+        </rules>
+    </element>
+
+    <element name="Bruised Ego" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_BRUISED_EGO">
+        <description>
+            <p>At 3rd level, your ego bolsters your vitality, strengthening as you fight to prove your vigor. Whenever you expend a ki point, you can also choose to gain temporary hit points equal to your Proficiency Bonus. While your current hit points are equal to or less than half your maximum hit points, you can also add your Wisdom modifier to the amount of temporary hit points gained.</p>
+        </description>
+        <sheet>
+            <description>Whenever you expend a ki point, you can also choose to gain {{proficiency}} temporary hit points. While your current hit points are equal to or less than half your maximum hit points, you can also add {{wisdom:modifier}} to the amount of temporary hit points gained.</description>
+            <description level="17">Whenever you expend a ki point, you can also choose to gain {{proficiency}} temporary hit points. While your current hit points are less than your maximum hit points, you can also add {{wisdom:modifier}} to the amount of temporary hit points gained.</description>
+        </sheet>
+    </element>
+
+    <element name="Assertive Attacker" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_ASSERTIVE_ATTACKER">
+        <description>
+            <p>At 3rd level, while your current hit points are equal to or less than half your maximum hit points, your Martial Arts die counts as being one higher than normal.</p>
+            <p class="indent">For example, if you are a 6th-level monk, your Martial Arts die goes from a d6 to a d8. At 17th level and higher you Martial Arts die goes from a d10 to a d12.</p>
+        </description>
+        <sheet>
+            <description>While your current hit points are equal to or less than half your maximum hit points, your Martial Arts die counts as {{assertive attacker}}.</description>
+            <description level="17">While your current hit points are less than your maximum hit points, your Martial Arts die counts as {{assertive attacker}}.</description>
+        </sheet>
+        <rules>
+            <stat name="assertive attacker" value="1d6" inline="true"/>
+            <stat name="assertive attacker" value="1d8" inline="true" level="5" />
+            <stat name="assertive attacker" value="1d10" inline="true" level="11" />
+            <stat name="assertive attacker" value="1d12" inline="true" level="17" />
+        </rules>
+    </element>
+
+    <element name="Irrational Retaliation" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_IRRATIONAL_RETALIATION">
+        <description>
+            <p>Beginning at 6th level, damage dealt to you is damage dealt to your pride, and that is something you simply cannot allow. Whenever a creature deals damage to you, you can use your reaction to expend 2 ki points to target that creature. Until the end of your next turn, all attacks you make against the target creature have advantage.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Whenever a creature deals damage to you, you can use your reaction to expend 2 ki points to target that creature. Until the end of your next turn, all attacks you make against the target creature have advantage.</description>
+        </sheet>
+    </element>
+
+    <element name="Redoubled Efforts" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_REDOUBLED_EFFORTS">
+        <description>
+            <p>Additionally at 6th level, while your current hit points are equal to or less than half your maximum hit points, you can roll one additional Martial Arts die when determining the extra damage dealt by a critical hit.</p>
+        </description>
+        <sheet>
+            <description>While your current hit points are equal to or less than half your maximum hit points, you can roll one additional Martial Arts die when determining the extra damage dealt by a critical hit.</description>
+            <description level="17">While your current hit points are less than your maximum hit points, you can roll one additional Martial Arts die when determining the extra damage dealt by a critical hit.</description>
+        </sheet>
+    </element>
+
+    <element name="Ever Prideful" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_EVER_PRIDEFUL">
+        <description>
+            <p>At 11th level, your muscle memory takes over. When your hit points are reduced to 0 you are not knocked unconscious, but you must still make death saving throws and suffer all the normal effects of taking damage while at 0 hit points. At the beginning of each of your turns whilst in this state you can spend 1 ki point to remain in this state. If you do not spend a ki point at the start of your turn whilst at 0 hit points you suffer all the normal effects of being reduced to 0 hit points.</p>
+            <p>The following also apply:</p>
+            <ul>
+                <li>You cannot speak.</li>
+                <li>You cannot cast or concentrate on spells.</li>
+                <li>Critical hits against you in this state count as one failed death saving throw instead of 2.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When your hit points are reduced to 0 you are not knocked unconscious, but you must still make death saving throws and suffer all the normal effects of taking damage while at 0 hit points. At the beginning of each of your turns whilst in this state you can spend 1 ki point to remain in this state. If you do not spend a ki point at the start of your turn whilst at 0 hit points you suffer all the normal effects of being reduced to 0 hit points.&#13;
+            • You cannot speak.&#13;
+            • You cannot cast or concentrate on spells.&#13;
+            • Critical hits against you in this state count as one failed death saving throw instead of 2.</description>
+        </sheet>
+    </element>
+
+    <element name="Egotistical" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WAY_OF_PRIDE_EGOTISTICAL">
+        <description>
+            <p>Beginning at 17th level, you gain the benefits of this class’ features that state ‘while your current hit points are equal to or less than half your maximum hit points’ whenever you are below your hit point maximum instead, provided you have been damaged by a hostile creature within the past minute.</p>
+        </description>
+        <sheet display="false">
+            <description>Beginning at 17th level, you gain the benefits of this class features that state ‘while your current hit points are equal to or less than half your maximum hit points’ whenever you are below your hit point maximum instead, provided you have been damaged by a hostile creature within the past minute.</description>
+        </sheet>
+    </element>
+</elements>

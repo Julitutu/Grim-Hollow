@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dreamer</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="race-dreamer.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-dreamer.xml" />
+		</update>
+	</info>
+
+	<!-- Dreamer Race -->
+	<element name="Dreamer" type="Race" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACE_DREAMER">
+		<description>
+            <p>History repeats itself. Even before the humans had their Eras of Expansion and Descent, other races had built empires on Etharis. The elves and the dwarves both had their time, and other, older races did as well. Where the dwarves of Stehlenwald live today was once the seat of an ancient empire that surpassed any that have come since. The name of this empire has been lost, and only fragmented remains of the oldest stories even hint at the grand heights that race once reached.</p>
+            <p>What can be gleaned from the histories of the elves and dwarves is that at one point a horrible calamity befell the land, wiping clean any trace of this ancient empire. The disaster came suddenly and without warning, and it was believed that nothing survived. Something did.</p>
+            <p>When the humans rose to power and began threatening the elves and dwarves, the Stehlenwald dwarves were forced to dig deeper into their mountain strongholds in order to withstand the siege. Deep in the dark, even below the adamantine that proved to be their salvation, the dwarves found sealed chambers dating back to before the cataclysm. With the seal broken, an ancient spell was lifted and the chambers’ inhabitants began to stir from their millennia-long slumber.</p>
+            <p>In the days before the calamity wiped out their civilization, a group of these “dreamers” foresaw the danger and came up with a plan to survive it. Time passes differently in dreams, and the ancients sought to use that fact to free themselves from the flow of time. Suspended between reality and dreams, sealed deep underground, they could live in a state of perpetual slumber for as long as necessary and outlast the disaster that would wipe out the rest of their kind.</p>
+            <p>The plan worked, but living for so long within the dream-world had unforeseen consequences. Upon waking, the dreamers found that they could no longer differentiate between dreams and memories, with both fading quickly from their minds. The result was the emergence of a new race with no knowledge of their own history, only half- formed images and dream-like impressions of a place and time that may or may not have existed.</p>
+            <p>Now the dreamers struggle to adapt in a world that seems like a waking nightmare. Whatever their history, they have proven to be quick-witted and strong, able to learn new tasks and execute them well. Their long slumber has left them strangely energized and able to work even beyond the legendary endurance of the dwarves. Even so, sleep is where the dreamers still feel most at home, and they have a habit of quickly dozing off whenever no immediate task presents itself.</p>
+			<h4>DREAMER TRAITS</h4>
+            <p>Dreamers’ connections to the dream world change their mortal forms.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 2 and your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Dreamers mature at the age of 18 and can live up to 250 years old. The magic that kept them in stasis during their long slumber has also served to preserve their bodies from natural aging.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Existence in the timeless sleep of the dream-realm makes most dreamers feel detached from the rest of the waking world, so many tend towards neutrality.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are roughly the same height and build as a human. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Dreamwalking.</em></strong> While asleep, a dreamer can reach out and touch the dreams of others within 1 mile. Additionally, after finishing a long rest, and provided you slept during that time, you may choose one skill or tool proficiency. Until your next long rest, you may add a bonus equal to your proficiency bonus to any rolls you make using the selected skill or tool.</p>
+            <p class="indent"><strong><em>Even in Sleep.</em></strong> While asleep, you do not suffer penalties to Perception rolls utilizing senses other than sight.</p>
+            <p class="indent"><strong><em>Power Nap.</em></strong> When taking a short rest, you may choose to sleep for 1 hour. If you do so, you may reduce your exhaustion by one level and regain one hit die in addition to the other benefits of a short rest.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> Acclimated to the pitch black tunnels beneath Stehlenwald, you can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light. You can’t discern colour in darkness, only shades of gray.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Dreamspeak, Dwarvish, and one other language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height">5'</set>
+			<set name="weight">120 lb.</set>
+		</setters>
+		<rules>
+			<!-- Ability Score Increase (Intelligence +2, Constitution +1) -->
+			<stat name="intelligence" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase (+2 and +1, or three +1's) -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Dreamer)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Dreamer)" supports="Custom Ability Score Increase 1" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Size (Medium) -->
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+
+			<!-- Speed (30 ft. walking) -->
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<!-- Languages (Common, +1 other) -->
+            <grant type="Language" id="ID_LANGUAGE_DREAMSPEAK" />
+			<grant type="Language" id="ID_LANGUAGE_DWARVISH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Dreamer)" supports="Standard||Exotic" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<!-- Tasha's Cauldron of Everything: Customized Language -->
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+            <!-- Dreamwalking -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_DREAMER_DREAMWALKING" />
+
+            <!-- Even in Sleep -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_DREAMER_EVEN_IN_SLEEP" />
+
+            <!-- Power Nap -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_DREAMER_POWER_NAP" />
+
+			<!-- Darkvision -->
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+
+	<!-- Dreamwalking Trait -->
+	<element name="Dreamwalking" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_DREAMER_DREAMWALKING">
+		<description>
+			<p>While asleep, a dreamer can reach out and touch the dreams of others within 1 mile. Additionally, after finishing a long rest, and provided you slept during that time, you may choose one skill or tool proficiency. Until your next long rest, you may add a bonus equal to your proficiency bonus to any rolls you make using the selected skill or tool.</p>
+		</description>
+		<sheet>
+			<description>While asleep, a dreamer can reach out and touch the dreams of others within 1 mile. Additionally, after finishing a long rest, and provided you slept during that time, you may choose one skill or tool proficiency. Until your next long rest, you may add a bonus equal {{proficiency}} to any rolls you make using the selected skill or tool.</description>
+		</sheet>
+	</element>
+
+	<!-- Even in Sleep Trait -->
+	<element name="Even in Sleep" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_DREAMER_EVEN_IN_SLEEP">
+		<description>
+			<p>While asleep, you do not suffer penalties to Perception rolls utilizing senses other than sight.</p>
+		</description>
+		<sheet>
+			<description>While asleep, you do not suffer penalties to Perception rolls utilizing senses other than sight.</description>
+		</sheet>
+	</element>
+
+    <!-- Power Nap Trait -->
+	<element name="Power Nap" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_DREAMER_POWER_NAP">
+		<description>
+			<p>When taking a short rest, you may choose to sleep for 1 hour. If you do so, you may reduce your exhaustion by one level and regain one hit die in addition to the other benefits of a short rest.</p>
+		</description>
+		<sheet>
+			<description>When taking a short rest, you may choose to sleep for 1 hour. If you do so, you may reduce your exhaustion by one level and regain one hit die in addition to the other benefits of a short rest.</description>
+		</sheet>
+	</element>
+
+    <!-- Dreamspeak -->
+    <element name="Dreamspeak" type="Language" source="Grim Hollow - The Players Guide" id="ID_LANGUAGE_DREAMSPEAK">
+		<supports>Exotic</supports>
+		<description>
+			<p>Typically spoken by Dreamers.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="speakers">Dreamers</set>
+			<set name="script">Common</set>
+		</setters>
+	</element>
+</elements>

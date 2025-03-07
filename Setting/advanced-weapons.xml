@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Advanced Weapons</name>
+		<description>Advanced Weapons from Grim Hollow - The Players Guide</description>
+		<update version="0.1.0">
+			<file name="advanced-weapons.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/advanced-weapons.xml" />
+		</update>
+	</info>
+
+    <!-- Advanced Weapons option -->
+	<element name="Advanced Weapons" type="Option" source="Dungeon Master’s Guide" id="ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS">
+		<description>
+			<p>Mastery of advanced weapons requires military training and skill. To use most weapons’ advanced properties, you must be 3rd level or higher and have proficiency with all martial weapons. At 3rd level or higher, if you would gain proficiency with a martial weapon, you can choose an advanced weapon instead.</p>
+		</description>
+		<setters>
+			<set name="short">You can introduce advance weapons to your campaign.</set>
+		</setters>
+	</element>
+
+	<!-- Weapon properties -->
+	<element name="Armor Piercing" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_ARMOR_PIERCING">
+		<description>
+			<p>An armor-piercing weapon is a melee weapon designed to punch through armor and thick hide alike. When you make an attack roll using an armor-piercing weapon, you gain a +1 bonus to the attack roll if your target is wearing armor or has natural armor.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Blackpowder" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER">
+		<description>
+			<p>Blackpowder weapons fire projectiles with ear-splitting noise, shredding armor with deadly force. When fired, blackpowder weapons emit a deafening crack audible 300 feet away. A blackpowder weapon exposed to heavy rain, or submerged or similarly drenched in water, can’t fire until dried for 1 hour.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Brutal" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_BRUTAL">
+		<description>
+			<p>A brutal weapon is designed for maximum damage. When you score a critical hit with a brutal weapon against a creature, you can roll an additional die of the weapon’s damage dice, adding it to the damage total.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Cumbersome" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_CUMBERSOME">
+		<description>
+			<p>Cumbersome weapons are difficult to wield but are effective ranged tools for those strong enough to wield them. When making an attack with a cumbersome weapon, you must use your Strength modifier for the attack and damage rolls.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Damage" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_DAMAGE">
+		<description>
+			<p>An advanced weapon that has the damage property can deal an alternative form of damage. You can choose the type when you attack or when you hit with an attack from any of the damage types mentioned.</p>
+		</description>
+		<sheet display="false" />
+	</element>	
+	<element name="Defending" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_DEFENDING">
+		<description>
+			<p>A defending weapon is either made for parrying, has advanced techniques for use in parrying, or both. When you use a defending weapon, you can use your reaction to defend against a melee weapon attack that hits you. If you do, increase your AC by 1d4 against that attack.</p>
+		</description>
+		<sheet display="false" />
+	</element>	
+	<element name="Disarming" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_DISARMING">
+		<description>
+			<p>A disarming weapon can catch a foe’s weapon, allowing you to remove it from their grasp. When an opponent misses you with a melee weapon attack, you can use your reaction to attempt to disarm them. Both you and the attacker must make contested attack rolls. If you roll higher, and the weapon is something the target can drop, the weapon falls from the target’s grasp, landing within 5 feet of the target in a space you choose. If you score a critical hit, and the attacker did not, you can send the weapon flying up to 15 feet away from the target into a space you choose instead. If you have a free hand when you score a critical hit this way, you can disarm the target so that you end up with the dropped weapon in your hand. If the attacker tied or rolled higher, then nothing happens.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Double" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE">
+		<description>
+			<p>A two-handed, double weapon functions as two light weapons, one in each hand, for two-weapon fighting purposes. If a double weapon has the reach property, you can use only one of these properties during the same turn.</p>
+		</description>
+		<sheet display="false" />
+	</element>	
+	<element name="Entangling" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_ENTANGLING">
+		<description>
+			<p>An entangling weapon can tie a target up. When you hit with an entangling weapon attack against a target no more than one size larger than you, you can use your bonus action to attempt to grapple the target. (This bonus-action use applies when you throw an entangling weapon because you’re throwing with special preparation.) You don’t need a free hand—the weapon fulfills that requirement. If you succeed, the target is grappled by you or the weapon if you’re no longer holding it.</p>
+            <p>Until the grapple ends, you can’t use the entangling weapon to attack a different target. If you aren’t holding the entangling weapon, such as when you throw a gladiator net, the grapple continues, and the target needs to succeed at a DC 10 Dexterity (Acrobatics) or Strength (Athletics) check to escape the weapon.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Guard" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_GUARD">
+		<description>
+			<p>Guard weapons allow you to fight defensively, using the weapon’s long haft or flat surface for parrying. While you wield a guard weapon, whenever a hostile creature moves within your reach when you didn’t move on your last turn, you can use your reaction to make a weapon attack with the guard weapon against that creature. If the attack hits, then it deals no damage, but the target immediately stops moving, and its speed becomes 0 until the end of its turn.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Hafted" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_HAFTED">
+		<description>
+			<p>A hafted weapon’s haft can function well as an off-hand attack. When you attack with only the hafted weapon, you can use a bonus action to make a melee weapon attack with the haft. The haft deals 1d4 bludgeoning damage, and you add your ability modifier to damage as you would for other sorts of two-weapon fighting. If you have feats that mimic this ability, the damage dice becomes 1d8 instead.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Magazine" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_MAGAZINE">
+		<description>
+			<p>A weapon with the magazine property also has a number and an ammunition type. The weapon holds that amount and type of ammo, which you can expend before needing to reload the weapon. Removing or loading a magazine counts as your interaction with an object, so doing both in one turn takes an action. A magazine weapon comes with one empty magazine included in the weapon’s cost and weight. Loading an empty magazine with ammunition takes 1 minute.</p>
+		</description>
+		<sheet display="false" />
+	</element>	
+	<element name="Momentum" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM">
+		<description>
+			<p>Momentum weapons allow you to deliver devastating attacks as part of rapid movement. When you hit a creature with a momentum weapon after you moved 20 feet or more in a straight line during the same turn, upgrade the damage dice to the weapon’s momentum dice value.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Monk" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_MONK">
+		<description>
+			<p>A monk gains proficiency with advanced monk weapons at 5th level.</p>
+		</description>
+		<sheet display="false" />
+	</element>	
+	<element name="Precise" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_PRECISE">
+		<description>
+			<p>When you attack with a precise weapon, you can score a critical hit on a roll of 19 or 20. If a feature or item you have increases the numbers you can roll for a critical hit, a precise weapon increases that range by one. A fighter with Superior Critical, for instance, scores a critical hit on a roll of 17 to 20 with a precise weapon. Any roll lower than 20 must still hit to be a critical hit—it’s not an automatic hit as if the roll was a 20.</p>
+		</description>
+		<sheet display="false" />
+	</element>	
+	<element name="Reach" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_REACH">
+		<description>
+			    <p>Besides the normal rules for this property, if a reach weapon has the double property, you can use only one of these properties during the same turn.</p>
+		</description>
+		<sheet display="false" />
+	</element>	
+	<element name="Repeater" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_REPEATER">
+		<description>
+			   <p>Repeater weapons can fire ammo in quick succession, using multiple barrels or quick-reloading mechanisms. When you take the attack action with a repeater weapon, you can use a bonus action to attack again with the same weapon. You add your ability modifier to the damage the bonus-action shot only if that modifier is negative.</p>
+		</description>
+		<sheet display="false" />
+	</element>		
+	<element name="Restraining" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_RESTRAINING">
+		<description>
+			<p>Only entangling weapons can be restraining weapons. If you have a target grappled with a restraining weapon, and you succeed on another attempt to grapple the target with the same weapon, the target becomes restrained instead of grappled. The target then remains restrained until the grapple ends. If you stop holding the restraining weapon, the target can escape as if from an unheld entangling weapon.</p>
+		</description>
+		<sheet display="false" />
+	</element>		
+	<element name="Returning" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_RETURNING">
+		<description>
+			<p>A returning weapon allows you to hurl the weapon in such a way that it returns to you. When you attack with a returning weapon, if you roll an even number on the d20, the weapon returns to you by the end of your turn. You can catch the weapon if you have a hand free to do so. If not, the weapon lands at a random point within 5 feet of you. If you roll an odd number on the d20 for the attack roll, the weapon fails to return to you.</p>
+		</description>
+		<sheet display="false" />
+	</element>		
+	<element name="Scatter" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_SCATTER">
+		<description>
+			<p>Scatter weapons can devastate multiple enemies at once. When you take the Attack action and hit a creature with a scatter weapon, measure the weapon’s scatter range from the square the target you hit occupies to a point farther from you. Creatures other than the original target that fall within the weapon’s scatter range must attempt a Dexterity saving throw (DC of 8 + your proficiency bonus + the ability score modifier you use to determine damage for the scatter weapon). Creatures that fail take damage equal to the ability score modifier you use to determine damage with the weapon (minimum 1). This damage is of the same type you dealt to the original target.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Set" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_SET">
+		<description>
+			<p>You can use a bonus action on your turn to prepare, or “set,” a set weapon against a foe moving toward you. A weapon becomes unset if you move or take any action after setting it. If a target enters your reach while you have the weapon set, you can use your reaction to make a melee attack with the set weapon against that target. If you hit, and your target moved 20 feet or more toward you before the attack, you can roll one of the weapon’s damage dice one additional time and add it to the damage total.</p>
+		</description>
+		<sheet display="false" />
+	</element>	
+	<element name="Strong-Draw" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_STRONG_DRAW">
+		<description>
+			<p>An advanced ranged weapon with the strong-draw quality requires great strength to use. You must have a Strength of 13 or higher to use such a weapon, or you make attack rolls using the weapon with disadvantage. You add not only your Dexterity modifier to damage with a strong-draw weapon, but you also add 1 + half your Strength Modifier (rounded down) to the damage.</p>
+		</description>
+		<sheet display="false" />
+	</element>		<element name="Swift" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_SWIFT">
+		<description>
+			<p>Swift weapons help you recover quickly from misses. When you miss with a swift weapon, you gain advantage on the first attack roll you make with the weapon against the same target before the end of your next turn.</p>
+		</description>
+		<sheet display="false" />
+	</element>		
+	<element name="Tripping" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING">
+		<description>
+			<p>A tripping weapon allows users to knock targets prone. When you hit with a tripping weapon, you can use a bonus action to force your target to attempt a Strength saving throw, provided the target is no more than one size larger than you. The DC for the saving throw equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice). If the target fails, it falls prone.</p>
+		</description>
+		<sheet display="false" />
+	</element>			
+
+		<!-- Ammunition -->
+
+	<element name="Bludgeoning Arrow" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_ARROW_BLUDGEONING">
+		<description>
+			<p>Bludgeoning ammunition.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">5</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Ranging Arrow" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_ARROW_RANGING">
+		<description>
+			<p>Ranging ammunition.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0.025">1/40 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Slashing Arrow" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_ARROW_SLASHING">
+		<description>
+			<p>Slashing ammunition.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Whistling Arrow" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_ARROW_WHISTLING">
+		<description>
+			<p>Whistling ammunition.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0.05">1/20 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+    
+	<element name="Piercing Sling Bullet" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_SLING_BULLET_PIERCING">
+		<description>
+			<p>Piercing ammunition.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">1</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+    <element name="Ranging Sling Bullet" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_SLING_BULLET_RANGING">
+		<description>
+			<p>Ranging Ammunition</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">5</set>
+			<set name="weight" lb="0.05">1/20 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Whistling Sling Bullet" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_SLING_BULLET_WHISTLING">
+		<description>
+			<p>Whistling Ammunition</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">5</set>
+			<set name="weight" lb="0.05">1/20 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+    <element name="Bellows Cannister (20) " type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_BELLOWS_CANNISTER">
+		<description>
+			<p>Bellows cannister Ammunition</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+   	<element name="Dragon Shot (20)" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_DRAGON_SHOT">
+		<description>
+			<p>Dragon shot Ammunition</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>   
+
+	<element name="Magazine" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_MAGAZINE">
+		<description>
+			<p>Magazine</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>	
+
+	<element name="Paper Cartridge Bullets (20)" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_PAPER_CARTRIDGE_BULLETS">
+		<description>
+			<p>Paper cartridge bullets</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">3</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+    <!-- Alchemical Ammunition -->
+
+	<element name="Alchemical Arrow" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_ALCHEMICAL_ARROW">
+		<description>
+			<p>Alchemical Ammunition</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="0.2">1/5 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Alchemical Bolt" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_ALCHEMICAL_BOLT">
+		<description>
+			<p>Alchemical Ammunition</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="0.2">1/5 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Alchemical Sling Bullet" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_ALCHEMICAL_SLING_BULLET">
+		<description>
+			<p>Alchemical Ammunition</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">55</set>
+			<set name="weight" lb="0.2">1/5 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+    <!-- Specialized Ammunition -->
+
+	<element name="Specialized Arrow (5)" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_SPECIALIZED_ARROW">
+		<description>
+			<p>Specialized Ammunition</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0.25">1/4 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Specialized Bolt (5)" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_SPECIALIZED_BOLT">
+		<description>
+			<p>Specialized Ammunition</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Specialized Paper Cartridge Bullets (5)" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_SPECIALIZED_PAPER_CARTRIDGE_BULLETS">
+		<description>
+			<p>Specialized Ammunition</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Specialized Sling Bullets" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_AMMUNITION_SPECIALIZED_SLING_BULLETS">
+		<description>
+			<p>Specialized Ammunition</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!-- Advanced Melee Weapons -->
+    <element name="Catchpole" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_CATCHPOLE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_ENTANGLING, ID_GFG_GHPG_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="5">5 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="piercing">1d6</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_CATCHPOLE</set>
+        </setters>
+    </element>
+
+    <element name="Cavalry Flail" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_CAVALRY_FLAIL">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_GFG_GHPG_WEAPON_PROPERTY_SWIFT, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="bludgeoning">1d8</set>
+            <set name="versatile">1d10</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_CAVALRY_FLAIL</set>
+        </setters>
+    </element>
+    
+    <element name="Cavalry Hammer" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_CAVALRY_HAMMER">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_ARMOR_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="bludgeoning">1d8</set>
+            <set name="versatile">1d10</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_CAVALRY_HAMMER</set>
+        </setters>
+    </element>
+
+    <element name="Cavalry Pick" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_CAVALRY_PICK">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_ARMOR_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="piercing">1d8</set>
+            <set name="versatile">1d10</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_CAVALRY_PICK</set>
+        </setters>
+    </element>
+
+    <element name="Chakram" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_CHAKRAM">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG_WEAPON_PROPERTY_SWIFT, ID_GFG_GHPG_WEAPON_PROPERTY_RETURNING, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="slashing">1d4</set>
+            <set name="range">20/60</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_CHAKRAM</set>
+        </setters>
+    </element>
+
+	<element name="Claymore" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_CLAYMORE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG_WEAPON_PROPERTY_BRUTAL, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description></description>
+		<setters>
+			<set name="category">Advanced Melee Weapons</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d6</set>
+			<set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_CLAYMORE</set>
+		</setters>
+	</element>
+
+    <element name="Double Blade" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_DOUBLE_BLADE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_GFG_GHPG_WEAPON_PROPERTY_SET, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="5">5 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="slashing">1d6</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_DOUBLE_BLADE</set>
+        </setters>
+    </element>
+
+    <element name="Double Spear" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_DOUBLE_SPEAR">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_GFG_GHPG_WEAPON_PROPERTY_SET, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="piercing">1d6</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_DOUBLE_SPEAR</set>
+        </setters>
+    </element>
+
+    <element name="Elite Rapier" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_ELITE_RAPIER">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_GFG_GHPG_WEAPON_PROPERTY_SWIFT</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="piercing">1d8</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_ELITE_RAPIER</set>
+        </setters>
+    </element>
+
+    <element name="Fighting Chain" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_FIGHTING_CHAIN">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_DISARMING, ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG_WEAPON_PROPERTY_ENTANGLING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="bludgeoning">1d4</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_FIGHTING_CHAIN</set>
+        </setters>
+    </element>
+
+    <element name="Fighting Chain, two-handed" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_FIGHTING_CHAIN_TWOHANDED">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG_WEAPON_PROPERTY_BRUTAL, ID_GFG_GHPG_WEAPON_PROPERTY_DISARMING, ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG_WEAPON_PROPERTY_ENTANGLING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">750</set>
+            <set name="weight" lb="6">6 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="slashing">1d6</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_FIGHTING_CHAIN_TWOHANDED</set>
+        </setters>
+    </element>
+
+    <element name="Fighting Chain, Hook" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_FIGHTING_CHAIN_HOOK">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_DAMAGE, ID_GFG_GHPG_WEAPON_PROPERTY_DISARMING, ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG_WEAPON_PROPERTY_ENTANGLING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="bludgeoning">1d4</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_FIGHTING_CHAIN_HOOK</set>
+        </setters>
+    </element>
+	
+	<element name="Fighting Chain, Sickle" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_FIGHTING_CHAIN_SICKLE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_DAMAGE, ID_GFG_GHPG_WEAPON_PROPERTY_DISARMING, ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG_WEAPON_PROPERTY_ENTANGLING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="bludgeoning">1d4</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_FIGHTING_CHAIN_SICKLE</set>
+        </setters>
+    </element>
+
+	<element name="Gladiator Net" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_GLADIATOR_NET">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_ENTANGLING, ID_GFG_GHPG_WEAPON_PROPERTY_RESTRAINING, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">350</set>
+            <set name="weight" lb="5">5 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="range">5/15</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_GLADIATOR_NET</set>
+        </setters>
+    </element>
+	
+	<element name="Guardian Poleaxe" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_GUARDIAN_POLEAXE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG_WEAPON_PROPERTY_DAMAGE, ID_GFG_GHPG_WEAPON_PROPERTY_GUARD, ID_GFG_GHPG_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_SET, ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">750</set>
+            <set name="weight" lb="9">9 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="slashing">1d10</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_GUARDIAN_POLEAXE</set>
+        </setters>
+    </element>
+
+	<element name="Knightly Lance" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_KNIGHTLY_LANCE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="6">6 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="piercing">2d6</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_KNIGHTLY_LANCE</set>
+        </setters>
+    </element>
+	
+	<element name="Knightly Sword" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_KNIGHTLY_SWORD">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_        WEAPON_PROPERTY_GUARD, ID_GFG_GHPG_WEAPON_PROPERTY_DEFENDING, ID_GFG_GHPG_WEAPON_PROPERTY_PRECISE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">750</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="slashing">1d8</set>
+            <set name="versatile">1d10</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_KNIGHTLY_SWORD</set>
+        </setters>
+    </element>
+
+	<element name="Military Fork" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_MILITARY_FORK">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_SET, ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="8">8 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="piercing">2d6</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_MILITARY_FORK</set>
+        </setters>
+    </element>
+
+	<element name="Parrying Dagger" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PARRYING_DAGGER">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_DISARMING, ID_GFG_GHPG_WEAPON_PROPERTY_DEFENDING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">350</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="piercing">1d4</set>
+			<set name="range">20/60</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_PARRYING_DAGGER</set>
+        </setters>
+    </element>
+
+	<element name="Polearm" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_POLEARM">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_GUARD, ID_GFG_GHPG_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_SET, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="12">12 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="piercing">1d12</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_POLEARM</set>
+        </setters>
+    </element>
+
+	<element name="Punching Dagger" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PUNCHING_DAGGER">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_ARMOR_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_DEFENDING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">300</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="piercing">1d4</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_PUNCHING_DAGGER</set>
+        </setters>
+    </element>
+	
+	<element name="Returning Club" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_RETURNING_CLUB">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG_WEAPON_PROPERTY_RETURNING, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">300</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="bludgeoning">1d4</set>
+			<set name="range">20/60</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_RETURNING_CLUB</set>
+        </setters>
+    </element>
+
+	<element name="Sabre" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_SABRE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_GFG_GHPG_WEAPON_PROPERTY_SWIFT</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="slashing">1d8</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_SABRE</set>
+        </setters>
+    </element>
+	
+	<element name="Sheathed Staff" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_SHEATHED_STAFF">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="6">6 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="bludgeoning">1d6</set>
+            <set name="versatile">1d8</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_SHEATHED_STAFF</set>
+        </setters>
+    </element>
+
+	<element name="Side-Handle Baton" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_SIDEHANDLE_BATON">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_DEFENDING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_GFG_GHPG_WEAPON_PROPERTY_SWIFT</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="bludgeoning">1d4</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_SIDEHANDLE_BATON</set>
+        </setters>
+    </element>
+
+	<element name="Wrath Axe" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_WRATH_AXE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG_WEAPON_PROPERTY_BRUTAL, ID_GFG_GHPG_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="12">12 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="slashing">2d6</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_WRATH_AXE</set>
+        </setters>
+    </element>
+
+	<element name="Wrath Maul" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_WRATH_MAUL">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_BRUTAL, ID_GFG_GHPG_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Melee Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="15">15 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="bludgeoning">2d6</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_WRATH_MAUL</set>
+        </setters>
+    </element>
+	
+	<!-- Advanced Ranged Weapons -->
+    <element name="Arbalest" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_ARBALEST">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG_WEAPON_PROPERTY_STRONG_DRAW, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description></description>
+		<setters>
+			<set name="category">Advanced Ranged Weapons</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">80/300</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_ARBALEST</set>
+		</setters>
+	</element>
+
+	<element name="Blackpowder Pistol" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_BLACKPOWDER_PISTOL">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Ranged Weapons</set>
+            <set name="cost" currency="gp">200</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="range">25/100</set>
+            <set name="damage" type="piercing">2d4</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_BLACKPOWDER_PISTOL</set>
+        </setters>
+    </element>
+
+    <element name="Blackpowder Rifle" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_BLACKPOWDER_RIFLE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Ranged Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="10">10 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="range">80/300</set>
+            <set name="damage" type="piercing">2d6</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_BLACKPOWDER_RIFLE</set>
+        </setters>
+    </element>
+
+    <element name="Blunderbuss" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_BLUNDERBUSS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER, ID_GFG_GHPG_WEAPON_PROPERTY_CUMBERSOME, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG_WEAPON_PROPERTY_SCATTER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description></description>
+		<setters>
+			<set name="category">Advanced Ranged Weapons</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">20/30</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_BLUNDERBUSS</set>
+		</setters>
+	</element>
+
+    <element name="Blunderbuss, Hand" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_BLUNDERBUSS_HAND">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG_WEAPON_PROPERTY_SCATTER</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Ranged Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="range">20/30</set>
+            <set name="damage" type="piercing">2d4</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_BLUNDERBUSS_HAND</set>
+        </setters>
+    </element>
+
+    <element name="Composite Longbow" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_COMPOSITE_LONGBOW">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG_WEAPON_PROPERTY_STRONG_DRAW, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description></description>
+		<setters>
+			<set name="category">Advanced Ranged Weapons</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">200/600</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_COMPOSITE_LONGBOW</set>
+		</setters>
+	</element>
+
+	<element name="Composite Shortbow" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_COMPOSITE_SHORTBOW">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_STRONG_DRAW, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description></description>
+		<setters>
+			<set name="category">Advanced Ranged Weapons</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">100/400</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_COMPOSITE_SHORTBOW</set>
+		</setters>
+	</element>
+
+    <element name="Dragon Pistol" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_DRAGON_PISTOL">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG_WEAPON_PROPERTY_SCATTER</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Ranged Weapons</set>
+            <set name="cost" currency="gp">350</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="range">20</set>
+            <set name="damage" type="piercing">2d4</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_DRAGON_PISTOL</set>
+        </setters>
+    </element>
+
+	<element name="Dragon Rifle" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_DRAGON_RIFLE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG_WEAPON_PROPERTY_SCATTER</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Ranged Weapons</set>
+            <set name="cost" currency="gp">750</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="range">20</set>
+            <set name="damage" type="piercing">2d6</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_DRAGON_RIFLE</set>
+        </setters>
+    </element>
+
+	<element name="Flame Bellows" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_FLAME_BELLOWS">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_CUMBERSOME, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG_WEAPON_PROPERTY_SCATTER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Ranged Weapons</set>
+            <set name="cost" currency="gp">750</set>
+            <set name="weight" lb="11">11 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="range">15</set>
+            <set name="damage" type="fire">2d6</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_FLAME_BELLOWS</set>
+        </setters>
+    </element>
+
+	<element name="Repeater Crossbow" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_REPEATER_CROSSBOW">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG_WEAPON_PROPERTY_REPEATER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Ranged Weapons</set>
+            <set name="cost" currency="gp">750</set>
+            <set name="weight" lb="7">7 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="range">80/300</set>
+            <set name="damage" type="piercing">1d8</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_REPEATER_CROSSBOW</set>
+        </setters>
+    </element>
+
+	<element name="Repeater Crossbow, Hand" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_REPEATER_CROSSBOW_HAND">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG_WEAPON_PROPERTY_REPEATER</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Ranged Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="range">30/120</set>
+            <set name="damage" type="piercing">1d6</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_REPEATER_CROSSBOW_HAND</set>
+        </setters>
+    </element>
+	
+	<element name="Repeater Crossbow, Heavy" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_REPEATER_CROSSBOW_HEAVY">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG_WEAPON_PROPERTY_REPEATER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Ranged Weapons</set>
+            <set name="cost" currency="gp">1000</set>
+            <set name="weight" lb="20">20 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="range">100/400</set>
+            <set name="damage" type="piercing">1d10</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_REPEATER_CROSSBOW_HEAVY</set>
+        </setters>
+    </element>
+	
+	<element name="Repeater Needler" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_REPEATER_NEEDLER">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG_WEAPON_PROPERTY_REPEATER</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Ranged Weapons</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="3">3 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="range">30/120</set>
+            <set name="damage" type="piercing">1</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_REPEATER_NEEDLER</set>
+        </setters>
+    </element>
+
+	<element name="Repeater Slinger" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_REPEATER_SLINGER">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG_WEAPON_PROPERTY_REPEATER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description></description>
+        <setters>
+            <set name="category">Advanced Ranged Weapons</set>
+            <set name="cost" currency="gp">750</set>
+            <set name="weight" lb="9">9 lb.</set>
+            <set name="slot">twohand</set>
+            <set name="range">80/300</set>
+            <set name="damage" type="bludgeoning">1d8</set>
+            <set name="proficiency">ID_GFG_GHPG_PROFICIENCY_WEAPON_REPEATER_SLINGER</set>
+        </setters>
+    </element>
+
+	<!-- Proficiencies -->
+
+    <element name="Weapon Proficiency (Advanced Weapons)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_ADVANCED_WEAPONS">
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_ADVANCED_MELEE_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_ADVANCED_RANGED_WEAPONS" />
+        </rules>
+    </element>
+
+    <element name="Weapon Proficiency (Advanced Melee Weapons)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_ADVANCED_MELEE_WEAPONS">
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <rules>
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_CATCHPOLE" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_CAVALRY_FLAIL" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_CAVALRY_HAMMER" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_CAVALRY_PICK" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_CHAKRAM" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_CLAYMORE" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_DOUBLE_BLADE" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_DOUBLE_SPEAR" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_ELITE_RAPIER" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_FIGHTING_CHAIN" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_FIGHTING_CHAIN_TWOHANDED" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_FIGHTING_CHAIN_HOOK" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_FIGHTING_CHAIN_SICKLE" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_GLADIATOR_NET" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_GUARDIAN_POLEAXE" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_MILITARY_FORK" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_KNIGHTLY_SWORD" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_PARRYING_DAGGER" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_POLEARM" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_PUNCHING_DAGGER" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_RETURNING_CLUB" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_SABRE" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_SHEATHED_STAFF" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_SIDEHANDLE_BATON" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_WRATH_AXE" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_WRATH_MAUL" />
+        </rules>
+    </element>
+
+    <element name="Weapon Proficiency (Advanced Ranged Weapons)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_ADVANCED_RANGED_WEAPONS">
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <rules>
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_ARBALEST" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_BLACKPOWDER_PISTOL" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_BLACKPOWDER_RIFLE" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_BLUNDERBUSS" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_BLUNDERBUSS_HAND" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_COMPOSITE_LONGBOW" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_COMPOSITE_SHORTBOW" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_DRAGON_PISTOL" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_DRAGON_RIFLE" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_FLAME_BELLOWS" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_REPEATER_CROSSBOW" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_REPEATER_CROSSBOW_HAND" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_REPEATER_CROSSBOW_HEAVY" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_REPEATER_NEEDLER" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_REPEATER_SLINGER" />
+        </rules>
+    </element>
+
+    <element name="Blackpowder Proficiency (Advanced Ranged Weapons)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BLACKPOWDER_WEAPONS">
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <rules>
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_BLACKPOWDER_PISTOL" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_BLACKPOWDER_RIFLE" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_BLUNDERBUSS" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_BLUNDERBUSS_HAND" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_DRAGON_PISTOL" />
+            <grant type="Proficiency" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_DRAGON_RIFLE" />
+        </rules>
+    </element>
+
+    <!-- Melee Advanced Proficiency -->
+
+	<element name="Weapon Proficiency (Catchpole)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_CATCHPOLE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_ENTANGLING, ID_GFG_GHPG_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+		<sheet alt="Catchpole" />
+	</element>
+
+    <element name="Weapon Proficiency (Cavalry Flail)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_CAVALRY_FLAIL">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_GFG_GHPG_WEAPON_PROPERTY_SWIFT, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Cavalry Flail" />
+    </element>
+	
+	<element name="Weapon Proficiency (Cavalry Hammer)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_CAVALRY_HAMMER">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_ARMOR_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Cavalry Hammer" />
+    </element>
+
+    <element name="Weapon Proficiency (Cavalry Pick)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_CAVALRY_PICK">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_ARMOR_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Cavalry Pick" />
+    </element>
+
+    <element name="Weapon Proficiency (Chakram)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_CHAKRAM">
+       <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG_WEAPON_PROPERTY_SWIFT, ID_GFG_GHPG_WEAPON_PROPERTY_RETURNING, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Chakram" />
+    </element>
+
+	<element name="Weapon Proficiency (Claymore)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_CLAYMORE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG_WEAPON_PROPERTY_BRUTAL, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+		<sheet alt="Claymore" />
+	</element>
+
+	<element name="Weapon Proficiency (Double Blade)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_DOUBLE_BLADE">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_GFG_GHPG_WEAPON_PROPERTY_SET, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Double Blade" />
+    </element>
+
+    <element name="Weapon Proficiency (Double Spear)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_DOUBLE_SPEAR">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_GFG_GHPG_WEAPON_PROPERTY_SET, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Double Spear" />
+    </element>
+
+    <element name="Weapon Proficiency (Elite Rapier)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_ELITE_RAPIER">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_GFG_GHPG_WEAPON_PROPERTY_SWIFT</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Elite Rapier" />
+    </element>
+
+    <element name="Weapon Proficiency (Fighting Chain)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_FIGHTING_CHAIN">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_DISARMING, ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG_WEAPON_PROPERTY_ENTANGLING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Fighting Chain" />
+    </element>
+
+	<element name="Weapon Proficiency (Two-Handed Fighting Chain)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_FIGHTING_CHAIN_TWOHANDED">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG_WEAPON_PROPERTY_BRUTAL, ID_GFG_GHPG_WEAPON_PROPERTY_DISARMING, ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG_WEAPON_PROPERTY_ENTANGLING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Two-Handed Fighting Chain" />
+    </element>
+
+    <element name="Weapon Proficiency (Hook Fighting Chain)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_FIGHTING_CHAIN_HOOK">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_DAMAGE, ID_GFG_GHPG_WEAPON_PROPERTY_DISARMING, ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG_WEAPON_PROPERTY_ENTANGLING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Hook Fighting Chain" />
+    </element>
+	
+	<element name="Weapon Proficiency (Sickle Fighting Chain)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_FIGHTING_CHAIN_SICKLE">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_DAMAGE, ID_GFG_GHPG_WEAPON_PROPERTY_DISARMING, ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG_WEAPON_PROPERTY_ENTANGLING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Sickle Fighting Chain" />
+    </element>
+
+	<element name="Weapon Proficiency (Gladiator Net)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_GLADIATOR_NET">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS,ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_ENTANGLING, ID_GFG_GHPG_WEAPON_PROPERTY_RESTRAINING, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Gladiator Net" />
+    </element>
+	
+	<element name="Weapon Proficiency (Guardian Poleaxe)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_GUARDIAN_POLEAXE">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG_WEAPON_PROPERTY_DAMAGE, ID_GFG_GHPG_WEAPON_PROPERTY_GUARD, ID_GFG_GHPG_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_SET, ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Guardian Poleaxe" />
+    </element>
+
+	<element name="Weapon Proficiency (Knightly Lance)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_KNIGHTLY_LANCE">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Knightly Lance" />
+    </element>
+	
+	<element name="Weapon Proficiency (Knightly Sword)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_KNIGHTLY_SWORD">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG_WEAPON_PROPERTY_GUARD, ID_GFG_GHPG_WEAPON_PROPERTY_DEFENDING, ID_GFG_GHPG_WEAPON_PROPERTY_PRECISE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Knightly Sword" />
+    </element>
+
+	<element name="Weapon Proficiency (Military Fork)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_MILITARY_FORK">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_SET, ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Military Fork" />
+    </element>
+
+	<element name="Weapon Proficiency (Parrying Dagger)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_PARRYING_DAGGER">
+       <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_DISARMING, ID_GFG_GHPG_WEAPON_PROPERTY_DEFENDING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Parrying Dagger" />
+    </element>
+
+	<element name="Weapon Proficiency (Polearm)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_POLEARM">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_GUARD, ID_GFG_GHPG_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_GFG_GHPG_WEAPON_PROPERTY_SET, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Polearm" />
+    </element>
+
+	<element name="Weapon Proficiency (Punching Dagger)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_PUNCHING_DAGGER">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_ARMOR_PIERCING, ID_GFG_GHPG_WEAPON_PROPERTY_DEFENDING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Punching Dagger" />
+    </element>
+	
+	<element name="Weapon Proficiency (Returning Club)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_RETURNING_CLUB">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG_WEAPON_PROPERTY_RETURNING, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Returning Club" />
+    </element>
+
+	<element name="Weapon Proficiency (Sabre)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_SABRE">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_GFG_GHPG_WEAPON_PROPERTY_SWIFT</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Sabre" />
+    </element>
+	
+	<element name="Weapon Proficiency (Sheathed Staff)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_SHEATHED_STAFF">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Sheathed Staff" />
+    </element>
+
+	<element name="Weapon Proficiency (Side-Handle Baton)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_SIDEHANDLE_BATON">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_DEFENDING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG_WEAPON_PROPERTY_MONK, ID_GFG_GHPG_WEAPON_PROPERTY_SWIFT</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Side-Handle Baton" />
+    </element>
+	
+	<element name="Weapon Proficiency (Wrath Axe)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_WRATH_AXE">
+       <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG_WEAPON_PROPERTY_BRUTAL, ID_GFG_GHPG_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Wrath Axe" />
+    </element>
+
+	<element name="Weapon Proficiency (Wrath Maul)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_WRATH_MAUL">
+        <supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG_WEAPON_PROPERTY_BRUTAL, ID_GFG_GHPG_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Wrath Maul" />
+    </element>
+
+	<!-- Advanced Ranged Weapons -->
+    <element name="Weapon Proficiency (Arbalest)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_ARBALEST">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG_WEAPON_PROPERTY_STRONG_DRAW, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+		<sheet alt="Arbalest" />
+	</element>
+
+	<element name="Weapon Proficiency (Blackpowder Pistol)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_BLACKPOWDER_PISTOL">
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Blackpowder Pistol" />
+    </element>
+
+    <element name="Weapon Proficiency (Blackpowder Rifle)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_BLACKPOWDER_RIFLE">
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Blackpowder Rifle" />
+    </element>
+	
+	<element name="Weapon Proficiency (Blunderbuss)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_BLUNDERBUSS">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER, ID_GFG_GHPG_WEAPON_PROPERTY_CUMBERSOME, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG_WEAPON_PROPERTY_SCATTER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+		<sheet alt="Blunderbuss" />
+	</element>
+
+	<element name="Weapon Proficiency (Hand Blunderbuss)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_BLUNDERBUSS_HAND">
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG_WEAPON_PROPERTY_SCATTER</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Hand Blunderbuss" />
+    </element>
+
+	<element name="Weapon Proficiency (Composite Longbow)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_COMPOSITE_LONGBOW">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG_WEAPON_PROPERTY_STRONG_DRAW, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+		<sheet alt="Composite Longbow" />
+	</element>
+
+	<element name="Weapon Proficiency (Composite Shortbow)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_COMPOSITE_SHORTBOW">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_STRONG_DRAW, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+		<sheet alt="Composite Shortbow" />
+	</element>
+
+    <element name="Weapon Proficiency (Dragon Pistol)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_DRAGON_PISTOL">
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG_WEAPON_PROPERTY_SCATTER</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Dragon Pistol" />
+    </element>
+
+	<element name="Weapon Proficiency (Dragon Rifle)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_DRAGON_RIFLE">
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG_WEAPON_PROPERTY_SCATTER</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Dragon Rifle" />
+    </element>
+
+	<element name="Weapon Proficiency (Flame Bellows)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_FLAME_BELLOWS">
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_CUMBERSOME, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG_WEAPON_PROPERTY_SCATTER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Flame Bellows" />
+    </element>
+
+	<element name="Weapon Proficiency (Repeater Crossbow)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_REPEATER_CROSSBOW">
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG_WEAPON_PROPERTY_REPEATER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Repeater Crossbow" />
+    </element>
+	
+	<element name="Weapon Proficiency (Hand Repeater Crossbow)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_REPEATER_CROSSBOW_HAND">
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG_WEAPON_PROPERTY_REPEATER</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Hand Repeater Crossbow" />
+    </element>
+	
+	<element name="Weapon Proficiency (Heavy Repeater Crossbow)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_REPEATER_CROSSBOW_HEAVY">
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG_WEAPON_PROPERTY_REPEATER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Heavy Repeater Crossbow" />
+    </element>
+
+	<element name="Weapon Proficiency (Repeater Needler)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_REPEATER_NEEDLER">
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG_WEAPON_PROPERTY_REPEATER</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Repeater Needler" />
+    </element>
+	<element name="Weapon Proficiency (Repeater Slinger)" type="Proficiency" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFICIENCY_WEAPON_REPEATER_SLINGER">
+        <supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG_WEAPON_PROPERTY_REPEATER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <requirements>ID_GFG_GHPG_OPTION_ADVANCED_WEAPONS</requirements>
+        <sheet alt="Repeater Slinger" />
+    </element>
+
+   	<!-- Weapon Groups -->
+    <element name="Advanced Melee Weapon" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_ADVANCED_MELEE_WEAPONS" />
+    <element name="Advanced Ranged Weapon" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS" />
+    <element name="Advanced  Weapon" type="Weapon Group" source="Internal" id="ID_INTERNAL_WEAPON_GROUP_ADVANCED_WEAPONS" />
+</elements>

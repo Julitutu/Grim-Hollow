@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Fractured</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="Barbarian-Fractured.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Barbarian-Fractured.xml" /> 
+		</update>
+	</info>
+
+    <!-- Path of the Fractured -->
+	<element name="Path of the Fractured" type="Archetype" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_BARBARIAN_FRACTURED">
+		<supports>Primal Path</supports>
+		<description>
+			<p>Barbarians are defined by their rage, channeling emotion to unleash brief but potent destruction on their enemies. A rare few study esoteric psychological techniques that split their rage off from the rest of their psyche, dividing their identity into two parts: ego and id. When their ego is in control, the Fractured—as these barbarians are known—are capable of a degree of self-control and cunning few other barbarians are. When they allow their id to take control, their countenance turns monstrous and their bodies swell with the power of rage made physically manifest.</p>
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_FRACTURED_FACE_OF_RAGE" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_FRACTURED_MASK_OF_CIVILITY" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_FRACTURED_BRAINS_AND_BRAWN" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_FRACTURED_CUNNING_AND_BRUTAL" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_FRACTURED_BETTER_HALF" />
+		</description>
+		<sheet display="false">
+			<description>Barbarians are defined by their rage, channeling emotion to unleash brief but potent destruction on their enemies. A rare few study esoteric psychological techniques that split their rage off from the rest of their psyche, dividing their identity into two parts: ego and id.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_FRACTURED_FACE_OF_RAGE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_FRACTURED_MASK_OF_CIVILITY" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_FRACTURED_BRAINS_AND_BRAWN" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_FRACTURED_CUNNING_AND_BRUTAL" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_FRACTURED_BETTER_HALF" level="14" />
+		</rules>
+	</element>
+
+    <!-- Face of Rage -->
+	<element name="Face of Rage" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_FRACTURED_FACE_OF_RAGE">
+		<description>
+			<p>Starting at 3rd level, when you enter your rage, your features distort and your body swells such that your appearance completely changes. Creatures who don’t witness your transformation and have not witnessed it in the past do not recognize you. In addition, while raging, you gain the following benefits if you aren’t wearing heavy armor:</p>
+			<ul>
+				<li>You can roll a 1d8 in place of the normal damage of your unarmed strike, and your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</li>
+				<li>When you use the attack action with an unarmed strike and are not wielding a shield, you can make one unarmed strike as a bonus action.</li>
+				<li>You count as one size larger when determining who you can target and who can target you with grappling, and your reach with unarmed attacks increases to 10 feet.</li>
+			</ul>
+		</description>
+		<sheet>
+            <description>While raging and not wearing heavy armor, you gain the following benefits&#13;
+			 • You can roll a 1d8 in place of the normal damage of your unarmed strike, and your unarmed strikes count as magical.&#13;
+			 • When you use the attack action with an unarmed strike and are not wielding a shield, you can make one unarmed strike as a bonus action.&#13;
+			 • You count as one size larger when determining who you can target and who can target you with grappling, and your reach with unarmed attacks increases to 10 feet.</description>
+        </sheet>
+	</element>
+
+    <!-- Mask of Civility -->
+    <element name="Mask of Civility" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_FRACTURED_MASK_OF_CIVILITY">
+        <description>
+            <p>Also at 3rd level, you gain proficiency with one of the following skills of your choice: Arcana, History, Investigation, Medicine, Nature, Persuasion, or Religion. In addition, you gain proficiency with one artisan’s tool kit of your choice or learn to read, speak, and write one language of your choice.</p>
+        </description>
+        <sheet display="false">
+            <description>You gain proficiency with one of the following skills of your choice: Arcana, History, Investigation, Medicine, Nature, Persuasion, or Religion. In addition, you gain proficiency with one artisan’s tool kit of your choice or learn to read, speak, and write one language of your choice.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency (Mask of Civility)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION" />
+            <select type="Proficiency" name="Tool Proficiency (Mask of Civility)" supports="Artisan tools" optional="true" />
+			<select type="Language" name="Language (Mask of Civility)" supports="Standard||Exotic" optional="true" />
+        </rules>
+    </element>
+
+    <!-- Brains and Brawn -->
+    <element name="Brains and Brawn" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_FRACTURED_BRAINS_AND_BRAWN">
+        <description>
+            <p>At 6th level, while you are not raging, you have resistance to psychic damage. While you are raging, you have resistance to all damage except psychic damage.</p>
+        </description>
+        <sheet>
+            <description>While you are not raging, you have resistance to psychic damage. While you are raging, you have resistance to all damage except psychic damage.</description>
+        </sheet>
+    </element>
+
+    <!-- Cunning and Brutal -->
+    <element name="Cunning and Brutal" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_FRACTURED_CUNNING_AND_BRUTAL">
+        <description>
+            <p>At 10th level, while you are not raging, you can take a bonus action on each of your turns to take the Disengage or Help action. While you are raging, your unarmed strikes score a critical hit on a roll of 19 or 20.</p>
+        </description>
+        <sheet>
+            <description>While you are not raging, you can take a bonus action on each of your turns to take the Disengage or Help action. While you are raging, your unarmed strikes score a critical hit on a roll of 19 or 20.</description>
+        </sheet>
+    </element>
+
+    <!-- Better Half -->
+    <element name="Better Half" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_FRACTURED_BETTER_HALF">
+		<description>
+			<p>At 14th level, when you take damage that would reduce you to 0 hit points, you can use your reaction to drop to 1 hit point instead and gain temporary hit points equal to half your maximum hit points. In addition, if you were raging your rage ends, and if you weren’t raging, you enter a rage (even if you have no remaining uses of your rage). You lose all remaining temporary hit points after 1 minute.</p>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Reaction">
+			<description>When you take damage that would reduce you to 0 hit points, you can use your reaction to drop to 1 hit point instead and gain temporary hit points equal to half your maximum hit points. In addition, if you were raging your rage ends, and if you weren’t raging, you enter a rage (even if you have no remaining uses of your rage). You lose all remaining temporary hit points after 1 minute.</description>
+		</sheet>
+	</element>
+</elements>

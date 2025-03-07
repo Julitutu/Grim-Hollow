@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Highway Rider</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="Rogue-Highway-Rider.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Rogue-Highway-Rider.xml" />
+		</update>
+	</info>
+
+	<element name="Highway Rider" type="Archetype" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_ROGUE_HIGHWAY_RIDER">
+		<supports>Roguish Archetype</supports>
+		<description>
+			<p>Stalking the backroads, the Highway Rider strikes fear into the heart of every traveler and penny-pinching merchant. They run down their prize astride a swift and loyal steed – and then make a quick getaway.</p>
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_HAIR_TRIGGER" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_TRUSTY_MOUNT" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_RIDE_THEM_DOWN" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_HORSE_LORD" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_TRUE_GRIT" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_DESPERADO" />
+		</description>
+		<sheet display="false">
+			<description>Stalking the backroads, the Highway Rider strikes fear into the heart of every traveler and penny-pinching merchant. They run down their prize astride a swift and loyal steed – and then make a quick getaway.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_HAIR_TRIGGER" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_TRUSTY_MOUNT" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_RIDE_THEM_DOWN" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_HORSE_LORD" level="9" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_TRUE_GRIT" level="13" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_DESPERADO" level="17" />
+		</rules>
+	</element>
+
+    <element name="Hair Trigger" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_HAIR_TRIGGER">
+		<description>
+			<p>Starting at 3rd level, when you roll for initiative, you can immediately use your reaction to take one of the following actions:</p>
+            <ul>
+                <li>Make one weapon attack with advantage</li>
+                <li>Move your speed, or your mount’s speed, without provoking opportunity attacks</li>
+                <li>Take the Dodge action</li>
+                <li>Interact with an object or use an item</li>
+            </ul>
+		</description>
+        <sheet action="Reaction">
+            <description>When you roll for initiative, you can immediately use your reaction to take one of the following actions:&#13;
+            • Make one weapon attack with advantage&#13;
+            • Move your speed, or your mount’s speed, without provoking opportunity attacks&#13;
+            • Take the Dodge action&#13;
+            • Interact with an object or use an item</description>
+        </sheet>
+    </element>
+
+    <element name="Trusty Mount" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_TRUSTY_MOUNT">
+		<description>
+			<p>At 3rd level, you can cast the find steed spell. When you do, its creature type remains beast rather than changing to your choice of celestial, fey, or fiend. Once you cast this spell using this feature, you can’t do so again until you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast the find steed spell. When you do, its creature type remains beast rather than changing to your choice of celestial, fey, or fiend.</description>
+		</sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" />
+        </rules>
+    </element>
+
+    <element name="Ride Them Down" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_RIDE_THEM_DOWN">
+		<description>
+			<p>Also at 3rd level, you gain an additional way to use your Sneak Attack: you don’t need advantage on the attack roll to use your Sneak Attack against a creature if you or your mount moved at least 20 feet this turn, and you don’t have disadvantage on the attack roll. All the other rules for Sneak Attack still apply.</p>
+		</description>
+		<sheet>
+			<description>You don’t need advantage on the attack roll to use your Sneak Attack against a creature if you or your mount moved at least 20 feet this turn, and you don’t have disadvantage on the attack roll. All the other rules for Sneak Attack still apply.</description>
+		</sheet>
+    </element>
+
+    <element name="Horse Lord" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_HORSE_LORD">
+		<description>
+			<p>At 9th level, you can spend a minute grooming and caring for your mount, at the end of which time it gains temporary hit points equal to twice your level in this class.</p>
+            <p class="indent">In addition, your cunning extends to your steed. While you are controlling a mount, it can spend a bonus action on its turn to take the Dash, Disengage, or Dodge action.</p>
+		</description>
+		<sheet>
+			<description>You can spend a minute grooming and caring for your mount, at the end of which time it gains {{horse lord}} temporary hit points.&#13;
+            In addition, your cunning extends to your steed. While you are controlling a mount, it can spend a bonus action on its turn to take the Dash, Disengage, or Dodge action.</description>
+		</sheet>
+        <rules>
+            <stat name="horse lord" value="level:rogue" />
+            <stat name="horse lord" value="level:rogue" />
+        </rules>
+    </element>
+
+    <element name="True Grit" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_TRUE_GRIT">
+		<description>
+			<p>At 13th level, you gain proficiency in Constitution saving throws. In addition, when you are subjected to an effect that allows you to make a Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+		</description>
+		<sheet>
+			<description>When you are subjected to an effect that allows you to make a Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+		</sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+        </rules>
+	</element>
+
+    <element name="Desperado" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HIGHWAY_RIDER_DESPERADO">
+        <description>
+            <p>Starting at 17th level, when you are reduced to 0 hit points, you can use your reaction to take one of the actions listed in your Hair Trigger feature immediately before you fall unconscious.</p>
+        </description>
+		<sheet action="Reaction">
+            <description>When you are reduced to 0 hit points, you can use your reaction to take one of the actions listed in your Hair Trigger feature immediately before you fall unconscious.</description>
+        </sheet>
+    </element>
+</elements>

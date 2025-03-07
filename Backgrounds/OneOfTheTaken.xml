@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>One of the Taken</name>
+		<description>Background from Grim Hollow - The Players Guide</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.1.0">
+			<file name="OneOfTheTaken.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Backgrounds/OneOfTheTaken.xml" />
+		</update>
+	</info>
+
+	<!-- One of the Taken Background -->
+	<element name="One of the Taken" type="Background" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_BACKGROUND_ONE_OF_THE_TAKEN">
+		<description>
+			<p>On the fringes of the civilized world, parents warn their children not to wander away from their homes, especially at night. The many creatures that haunt the forests, from the faerie-folk to the minions of the Great Beast, spell doom for the innocent who stray too far into the darkness. You failed to heed your parents’ warnings, and you were taken. In fact, those who know of your experience use that word to describe you: Taken. You do not remember what happened to you while you were away, but through some mysterious and possibly fortunate circumstances, you wandered back into town after months or years of going missing. Maybe the fairies whisked you off to some magical realm. Maybe evil cultists of an Arch Daemon held you prisoner, planning to sacrifice you to their dark leader when the time was right, and you found a way to escape. Maybe one of the Beast’s warped and feral minions took a liking to you and kept you as a pet. Whatever your story, you can’t remember your time away. But that doesn’t mean you weren’t changed by it.</p>
+			<p class="indent"><b>Skill Proficiency:</b> Nature, Survival</p>
+			<p class="indent"><b>Tool Proficiencies:</b> Tinker’s tools or woodcarver’s tools</p>
+			<p class="indent"><b>Languages:</b> Any one common language</p>
+			<p class="indent"><b>Equipment:</b> One set of artisan’s tools, 20 gp</p>
+			<div element="ID_GFG_GHPG_BACKGROUND_FEATURE_INSIGHTFUL_FLASHBACKS" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>As one of the Taken, your experiences changed and shaped you even if you cannot remember the exact details. Even more dramatically, how you were treated upon your return by those around you</p>
+		</description>
+		<setters>
+			<set name="short">Nature, Survival, Tinker’s tools or woodcarver’s tools, one common language. Insightful Flashbacks feature.</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<select type="Proficiency" name="Tool Proficiency (One of the Taken)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+			<select type="Language" name="Language (One of the Taken)" supports="Standard" />
+
+			<grant type="Background Feature" id="ID_GFG_GHPG_BACKGROUND_FEATURE_INSIGHTFUL_FLASHBACKS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+
+			<select type="List" name="Personality Trait (One of the Taken)">
+				<item id="1">I am easily startled, jumping at the slightest sound.</item>
+				<item id="2">Other people irritate me, but I love the company of animals.</item>
+				<item id="3">I cannot abide silence, so I surround myself with noise whenever possible.</item>
+				<item id="4">I often forget what day or month or year it is.</item>
+				<item id="5">I use the attention of my time missing to make myself important and noticed.</item>
+				<item id="6">I am restless, never satisfied with what I have or what I am, always seeking more.</item>
+			</select>
+
+			<select type="List" name="Ideal (One of the Taken)">
+				<item id="1">Innocents need protection. I won’t let what happened to me happen to others.</item>
+				<item id="2">That which does not kill you makes you stronger. Conflict begets strength.</item>
+				<item id="3">The world is a cruel place. In the end we are all ground down to dust.</item>
+				<item id="4">Mysteries abound, and the point of life is to solve as many of them as possible.</item>
+				<item id="5">The only way to avoid being a victim is to be the aggressor.</item>
+				<item id="6">Passing on your knowledge and wisdom to others ensures you will live forever.</item>
+			</select>
+
+			<select type="List" name="Bond (One of the Taken)">
+				<item id="1">You were taken with another, and that person was returned as well. You are bound to them forever.</item>
+				<item id="2">You were found with a strange object in the woods. That object never leaves your possession.</item>
+				<item id="3">While others shunned you on your return, your pet never left your side. This unusually long-lived pet means the world to you.</item>
+				<item id="4">When you returned, the community rallied around you to care for you. You guard that community fiercely.</item>
+				<item id="5">An elder who was also taken as a child listens to you and helps guide you on your path forward.</item>
+				<item id="6">A faerie grove in the forest near you is the only place where you are truly at peace.</item>
+			</select>
+
+			<select type="List" name="Flaw (One of the Taken)">
+				<item id="1">I suffer nightmares that I cannot recall when I wake, and the lack of sleep makes me prone to fits of anger.</item>
+				<item id="2">I seek money and power regardless of the cost to my soul.</item>
+				<item id="3">I am rude to others as I tend to speak what’s on my mind rather than filtering myself.</item>
+				<item id="4">My quest for justice sometimes interferes with my common sense.</item>
+				<item id="5">I am indifferent to the suffering of others.</item>
+				<item id="6">I believe lies, which makes me easily duped by those with ill intent.</item>
+			</select>
+		</rules>
+	</element>
+
+	<!-- Feature: Insightful Flashbacks -->
+	<element name="Feature: Insightful Flashbacks" type="Background Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_BACKGROUND_FEATURE_INSIGHTFUL_FLASHBACKS">
+		<supports>Background Feature</supports>
+		<description>
+			<p>While you don’t remember your time away from the civilized world, you occasionally have glimpses of what happened. When you are making an ability check to know or remember something about a monster or some other piece of lore, you can reroll a check that gave you no information. If the new check provides information, you cannot use this ability again until you gain a level. This represents your subconscious mind reminding you of details you witnessed while you were lost.</p>
+		</description>
+		<sheet alt="Insightful Flashbacks" />
+	</element>
+</elements>

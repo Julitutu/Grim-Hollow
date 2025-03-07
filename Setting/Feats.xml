@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Feats</name>
+        <description>Feats from Grim Hollow.</description>
+       <update version="0.1.0">
+            <file name="Feats.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/Feats.xml" />
+        </update>
+    </info>
+
+    <element name="Blackpowder Expert" type="Feat" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_BLACKPOWDER_EXPERT">
+        <prerequisite>Proficiency with advanced weapons</prerequisite>
+        <requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_ADVANCED_WEAPONS</requirements>
+        <description>
+            <p><i>Prerequisite: Proficiency with advanced weapons</i></p>
+            <p>You are well-versed in the use of Blackpowder weapons and wield them with deadly efficiency. You gain the following benefits:</p>
+            <ul>
+                <li>You ignore the loading property of Blackpowder weapons with which you are proficient.</li>
+                <li>Whenever a hostile creature moves within 10 feet of you, and you did not move on your last turn, you can use a reaction to make a ranged weapon attack against that creature.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You ignore the loading property of Blackpowder weapons with which you are proficient.&#13;
+            Whenever a hostile creature moves within 10 feet of you, and you did not move on your last turn, you can use a reaction to make a ranged weapon attack against that creature.</description>
+        </sheet>
+    </element>
+
+    <element name="Blood Hound" type="Feat" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_BLOOD_HOUND">
+        <prerequisite>Wisdom 13 or higher</prerequisite>
+        <requirements>[wis:13]</requirements>
+        <description>
+            <p>Your keen senses are heightened beyond that of most people. Whether these senses were heightened through training, through the loss of other senses, or they simply matured as you did, you gain the following benefits:</p>
+            <ul>
+                <li>While conscious, whenever a creature that is small or larger moves, within 10 feet of you, you immediately become aware of its presence.</li>
+                <li>Your attack rolls do not have disadvantage against invisible creatures that you are aware of.</li>
+                <li>You have advantage on Wisdom (Perception) and Wisdom (Survival) checks that rely on sound or smell.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>While conscious, whenever a creature that is small or larger moves within 10 feet of you, you immediately become aware of its presence.&#13;
+            Your attack rolls do not have disadvantage against invisible creatures that you are aware of.&#13;
+            You have advantage on Perception and Survival checks that rely on sound or smell.</description>
+        </sheet>
+    </element>
+
+    <element name="Hulking Figure" type="Feat" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_HULKING_FIGURE">
+        <prerequisite>Strength 13 or higher</prerequisite>
+        <requirements>[str:13]</requirements>
+        <description>
+            <p>You are a broad and formidable size for your race, either due to extensive training or natural build. You gain the following benefits:</p>
+            <ul>
+                <li>You count as one size larger (to a maximum size of large) when determining your carrying capacity and the weight you can push, drag, and lift.</li>
+                <li>When you hit a creature with a melee attack, if you used your strength modifier to hit the creature, you deal an additional 1d4 damage. This damage is of the same type as the weapon attack.</li>
+                <li>Whenever you attempt a Charisma (Intimidation) check against a creature of your size or smaller, you can add your Strength modifier to the result.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You gain the following benefits:&#13;
+            • You count as one size larger (to a maximum size of large) when determining your carrying capacity and the weight you can push, drag, and lift.&#13;
+            • When you hit a creature with a melee attack, if you used your strength modifier to hit the creature, you deal an additional 1d4 damage. This damage is of the same type as the weapon attack&#13;
+            • Whenever you attempt a Charisma (Intimidation) check against a creature of your size or smaller, you can add {{strength:modifier}} to the result.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+        </rules>
+    </element>
+
+    <element name="Iron Gut" type="Feat" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_IRON_GUT">
+        <prerequisite>Constitution 13 or higher</prerequisite>
+        <requirements>[con:13]</requirements>
+        <description>
+            <p>You eat like a giant and drink like a fish. Years of punishing your stomach and liver have led to a powerful fortitude. You gain the following benefits:</p>
+            <ul>
+                <li>You have advantage on Saving Throws against being poisoned.</li>
+                <li>Upon completing a long rest, you regain 1 additional spent Hit Dice.</li>
+                <li>As an action, you can spend Hit Dice to heal yourself, as if you have taken a short rest. You can use this ability a number of times equal to your Constitution modifier (minimum of 1) per long rest.</li>
+            </ul>
+        </description>
+        <sheet usage="{{iron gut}}/Long Rest">
+            <description>You gain the following benefits:&#13;
+            • You have Advantage on saves against being poisoned.&#13;
+            • Upon completing a long rest, you regain 1 additional spent Hit Dice.&#13;
+            • As an action, you can spend Hit Dice to heal yourself, as if you have taken a short rest. You can use this ability a number of times equal to your Constitution modifier (minimum of 1) per long rest.</description>
+        </sheet>
+        <rules>
+            <stat name="iron gut" value="1" bonus="base" />
+            <stat name="iron gut" value="constitution:modifier" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Lightning Caster" type="Feat" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_LIGHTNING_CASTER">
+        <prerequisite>The ability to cast at least one cantrip</prerequisite>
+        <requirements>[type:spell]</requirements>
+        <description>
+            <p>Your rapid-fire style of casting cantrips allows you to weave magic with uncanny speed, granting you the following benefit:</p>
+            <ul>
+                <li>Whenever you cast a cantrip that can only target a single enemy, you can use your bonus action to target two enemies within 5 feet of one another instead.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Whenever you cast a cantrip that can only target a single enemy, you can use your bonus action to target two enemies within 5 feet of one another instead.</description>
+        </sheet>
+    </element>
+
+    <element name="Nimble Physique" type="Feat" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_NIMBLE_PHYSIQUE">
+        <prerequisite>Dexterity 13 or higher</prerequisite>
+        <requirements>[dex:13]</requirements>
+        <description>
+            <p>You are small and thin for your race. You have a mysterious and consistent ability to avoid danger. This feat grants the following benefits:</p>
+            <ul>
+                <li>As long as you are not wearing armour, you may take the dodge action as a bonus action. You can use this feature a number of times equal to your Dexterity modifier (minimum of once) per long rest.</li>
+                <li>You can fit and squeeze through spaces as though you were one size smaller than you are.</li>
+                <li>Moving through spaces occupied by allies does not impose movement penalties.</li>
+            </ul>
+        </description>
+        <sheet usage="{{nimble physique}}/Long Rest">
+            <description>This feat grants the following benefits:&#13;
+            • While unarmored, you may take the dodge action as a bonus action.&#13;
+            • You can fit and squeeze through spaces as though you were one size smaller than you are.&#13;
+            • Moving through spaces occupied by allies does not impose movement penalties.</description>
+        </sheet>
+        <rules>
+            <stat name="nimble physique" value="1" bonus="base" />
+            <stat name="nimble physique" value="dexterity:modifier" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Nocturnal" type="Feat" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_NOCTURNAL">
+        <description>
+            <p>Due to extensive exposure to the dark, and possible supernatural abilities, you have an unmatched ability to fight adversaries in the dark. You gain the following benefits:</p>
+            <ul>
+                <li>You gain Darkvision with a radius of 60 feet. If you already have darkvision, then the radius of your darkvision increases by 30 feet, to a maximum of 120 feet.</li>
+                <li>You have advantage on Dexterity (Stealth) checks while in dim light or nonmagical darkness.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You gain the following benefits:&#13;
+            •You gain Darkvision with a radius of 60 feet. If you already have darkvision, then the radius of your darkvision increases by 30 feet, to a maximum of 120 feet.&#13;
+            •You have advantage on Stealth checks while in dim light or nonmagical darkness.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <stat name="darkvision:range" value="30" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Scatter Weapon Master" type="Feat" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_SCATTER_WEAPON_MASTER">
+        <prerequisite>Proficiency in Advanced Weapons</prerequisite>
+        <requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_ADVANCED_WEAPONS</requirements>
+        <description>
+            <p>Through many hours spent using these destructive weapons, whether on the training grounds or setting hag huts ablaze, you have gained immense experience with scatter weapons and gain the following benefits:</p>
+            <ul>
+                <li>Critical hits double the damage dealt by the Scatter property on a failed save.</li>
+                <li>When making an attack with a weapon with the Scatter property, you may choose any number of targets to gain advantage on saving throws caused by your attack.</li>
+                <li>You ignore the Loading quality of Scatter weapons with which you are proficient.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You have gained immense experience with scatter weapons and gain the following benefits:&#13;
+            • Critical hits double the damage dealt by the Scatter property on a failed save.&#13;
+            • When making an attack with a weapon with the Scatter property, you may choose any number of targets to gain advantage on saving throws caused by your attack.&#13;
+            You ignore the Loading quality of Scatter weapons with which you are proficient.</description>
+        </sheet>
+    </element>
+
+    <element name="Thrown Weapon Master" type="Feat" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_THROWN_WEAPON_MASTER">
+        <description>
+            <p>You excel at thrown weapons and gain the following benefits:</p>
+            <ul>
+                <li>When you take the attack action to throw a weapon with the Thrown property, you may immediately use a bonus action to make two more attacks with a Thrown weapon. These must also be thrown attacks. You may use this ability a number of times equal to your dexterity or strength modifier per short rest.</li>
+                <li>If you throw a weapon as part of an attack, you may immediately draw another one-handed weapon as part of that attack.</li>
+            </ul>
+        </description>
+        <sheet display="false">
+            <description>When you take the attack action to throw a weapon with the Thrown property, you may immediately use a bonus action to make two more attacks with a Thrown weapon. These must also be thrown attacks..&#13;
+            Draw a one-handed weapon immediately after throwing a weapon as part of an attack.</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Ability" supports="ID_GFG_GHCG_FEAT_THROWN_WEAPON_MASTER_STRENGTH|ID_GFG_GHCG_FEAT_THROWN_WEAPON_MASTER_DEXTERITY" />
+        </rules>
+    </element>
+
+    <element name="Strength Base" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_THROWN_WEAPON_MASTER_STRENGTH">
+        <description>
+        </description>
+        <sheet usage="{{strength:modifier}}/Short Rest">
+            <description>When you take the attack action to throw a weapon with the Thrown property, you may immediately use a bonus action to make two more attacks with a Thrown weapon. These must also be thrown attacks.&#13;
+            If you throw a weapon as part of an attack, you may immediately draw another one-handed weapon as part of that attack.</description>
+        </sheet>
+    </element>
+
+    <element name="Dexterity Base" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_THROWN_WEAPON_MASTER_DEXTERITY">
+        <description>
+        </description>
+        <sheet usage="{{dexterity:modifier}}/Short Rest">
+            <description>When you take the attack action to throw a weapon with the Thrown property, you may immediately use a bonus action to make two more attacks with a Thrown weapon. These must also be thrown attacks.&#13;
+            If you throw a weapon as part of an attack, you may immediately draw another one-handed weapon as part of that attack.</description>
+        </sheet>
+    </element>
+
+    <element name="Weaver of Maledictions" type="Feat" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_WEAVER_OF_MALEDICTIONS">
+        <prerequisite>The ability to cast at least one spell</prerequisite>
+        <requirements>[type:spell]</requirements>
+        <description>
+            <p>You have learned how to use effigy dolls when cursing your targets. These dolls take 8 hours to create and can only be used on the target that the effigy was created to resemble. Only you can benefit from dolls you have created. When you use an effigy doll you gain the following benefits:</p>
+            <ul>
+                <li>The target of the curse has disadvantage on their initial saving throw.</li>
+                <li>The target of your curse does not know that you tried to curse them upon a successful save against being cursed.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You have learned how to use effigy dolls when cursing your targets. These dolls take 8 hours to create and can only be used on the target that the effigy was created to resemble. Only you can benefit from dolls you have created. When you use an effigy doll you gain the following benefits:&#13;
+            • The target of your curse has disadvantage on their initial saving throw.&#13;
+            • The target of your curse does not know that you tried to curse them upon a successful save against being cursed.</description>
+        </sheet>
+    </element>
+
+    <element name="Witch Hunter" type="Feat" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_WITCH_HUNTER">
+        <description>
+            <p>You have honed and perfected your skills fighting against spellcasters. You gain the following benefits:</p>
+            <ul>
+                <li>Whenever a hostile creature targets you with a spell, make a Wisdom saving throw against the spellcaster’s spell save DC. On a success, the creature must choose a new target or lose the spell. This does not protect you from area effects, such as the explosion of a fireball.</li>
+                <li>Whenever you hit a spellcaster with a melee attack, the target’s speed is reduced by 10 feet until the beginning of your next turn.</li>
+                <li>You have advantage on saving throws against being cursed.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Whenever a hostile creature targets you with a spell, make a Wisdom saving throw against the spellcaster’s spell save DC. On a success, the creature must choose a new target or lose the spell.&#13;
+            Whenever you hit a spellcaster with a melee attack, the target’s speed is reduced by 10 feet until the beginning of your next turn.&#13;
+            You have advantage on saving throws against being cursed.</description>
+        </sheet>
+    </element>
+
+</elements>

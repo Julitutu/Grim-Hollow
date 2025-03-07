@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Bulwark Warrior</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="Fighter-Bulwark-Warrior.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Fighter-Bulwark-Warrior.xml" />
+		</update>
+	</info>
+
+	<element name="Bulwark Warrior" type="Archetype" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FIGHTER_BULWARK_WARRIOR">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>Those who learn the fighting prowess of the Bulwark Warrior protect their allies from certain death. Bulwark Warriors maintain control on their enemies to keep them focused on themselves. Endurance and strength are primary skills of these warriors, they are prepared to take lethal strikes for their compatriots.</p>
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_PROTECTIVE_TAUNT" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_WEATHER_THE_STORM" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_LIVING_SHIELD" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_AGGRESSIVE_DEFENSE" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_IMPROVED_SECOND_WIND" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_HALT_THE_ASSAULT" />
+		</description>
+		<sheet display="false">
+			<description>Those who learn the fighting prowess of the Bulwark Warrior protect their allies from certain death. Bulwark Warriors maintain control on their enemies to keep them focused on themselves.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_PROTECTIVE_TAUNT" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_WEATHER_THE_STORM" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_LIVING_SHIELD" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_AGGRESSIVE_DEFENSE" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_IMPROVED_SECOND_WIND" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_HALT_THE_ASSAULT" level="18" />
+		</rules>
+	</element>
+
+    <element name="Protective Taunt" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_PROTECTIVE_TAUNT">
+        <description>
+            <p>Starting at 3rd level, once per turn whenever you make a melee weapon attack against a creature, you can taunt them into attacking you. When a creature you’ve hit since the start of your last turn attacks someone other than you, use your reaction to force them to attack you instead. This effect ends early if they move more than 5 feet out of your reach, you become incapacitated, or you die.</p>
+        </description>
+        <sheet usage="1/Turn" action="Reaction">
+            <description>Once per turn whenever you make a melee weapon attack against a creature, you can taunt them into attacking you. When a creature you’ve hit since the start of your last turn attacks someone other than you, use your reaction to force them to attack you instead. This effect ends early if they more more than 5 feet out of your reach, you become incapacitated, or you die.</description>
+        </sheet>
+    </element>
+
+    <element name="Weather the Storm" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_WEATHER_THE_STORM">
+        <description>
+            <p>Also at 3rd level, you have grown accustomed to being battered and bruised. As a bonus action, for the next minute at the end of each of your turns, you can gain temporary hit points equal to your fighter level. Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest" action="Bonus Action">
+            <description>As a bonus action, for the next minute at the end of each of your turns, you can gain {{level:fighter}} temporary hit points.</description>
+        </sheet>
+    </element>
+   
+    <element name="Living Shield" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_LIVING_SHIELD">
+        <description>
+            <p>When you reach 7th level, you can quickly protect allies from attacks. As an action, all creatures of your choice within 30 feet that can hear you must make a Wisdom saving throw with a DC equal to 8 + your Constitution modifier + your proficiency bonus. Each creature that fails the save has disadvantage on all attack rolls that do not target you until the beginning of your next turn.</p>
+            <p>Additionally, you can gain a number of hit points equal to your Constitution modifier for each failed saving throw. You can use this feature twice, regaining all spent uses at the end of a long rest. You gain an additional use of this ability at 15th level.</p>
+        </description>
+        <sheet usage="2/Long Rest" action="Action">
+            <description>As an action, all creatures of your choice within 30 feet that can hear you must make a DC {{living shield:dc}} Wisdom saving throw. Each creature that fails the save has disadvantage on all attack rolls that do not target you until the beginning of your next turn.&#13;
+            Additionally, you can gain {{constitution:modifier}} of hit points for each failed saving throw.</description>
+        </sheet>
+        <rules>
+            <stat name="living shield:dc" value="8" />
+            <stat name="living shield:dc" value="proficiency" />
+            <stat name="living shield:dc" value="constitution:modifier" />
+        </rules>
+    </element>
+   
+    <element name="Aggressive Defense" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_AGGRESSIVE_DEFENSE">
+        <description>
+            <p>At 10th level, you learn to wait for the perfect moment to strike. Once per turn when you have temporary hit points and hit a creature with a melee weapon attack, you can expend up to half your fighter level in temporary hit points to deal that much additional damage to your target.</p>
+        </description>
+        <sheet>
+            <description>Once per turn when you have temporary hit points and hit a creature with a melee weapon attack, you can expend up {{level:fighter:half}} in temporary hit points to deal that much additional damage to your target.</description>
+        </sheet>
+    </element>
+
+    <element name="Improved Second Wind" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_IMPROVED_SECOND_WIND">
+		<description>
+			<p>Starting at 15th level, your endurance is unrivaled in battles. When you gain health from your Second Wind feature, you can also gain temporary hit points equal to the amount healed.</p>
+		</description>
+		<sheet>
+			<description>When you gain health from your Second Wind feature, you can also gain temporary hit points equal to the amount healed.</description>
+		</sheet>
+	</element>
+
+    <element name="Halt the Assault" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BULWARK_WARRIOR_HALT_THE_ASSAULT">
+        <description>
+            <p>Starting at 18th level, when a creature within 5 feet of you takes damage, you can use your reaction to use your temporary hit points to reduce the damage taken by the target by the amount of temporary hit points forfeited.</p>
+        </description>
+		<sheet action="Reaction">
+            <description>When a creature within 5 feet of you takes damage, you can use your reaction to use your temporary hit points to reduce the damage taken by the target by the amount of temporary hit points forfeited.</description>
+        </sheet>
+    </element>
+</elements>

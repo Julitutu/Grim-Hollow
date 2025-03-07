@@ -1,0 +1,561 @@
+<elements>
+    <info>
+        <name>Fey Transformation</name>
+        <description>Transformation from Grim Hollow: Campaign Guide</description>
+        <author>Ghostfire Gaming</author>
+        <update version="0.1.0">
+            <file name="fey.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/fey.xml" />
+        </update>
+    </info>
+
+    <!-- Items -->
+    <element name="Fey Transformation (Level 1)" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_TRANSFORMATION_FEY_LEVEL_1">
+        <compendium display="false" />
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG_FEAT_TRANSFORMATION_FEY" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG_FEAT_TRANSFORMATION_FEY" requirements="[cha:13]"/>
+        </rules>
+    </element>
+    <element name="Fey Transformation (Level 2)" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_TRANSFORMATION_FEY_LEVEL_2">
+        <compendium display="false" />
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG_FEAT_TRANSFORMATION_FEY" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_2" requirements="ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_1"/>
+        </rules>
+    </element>
+    <element name="Fey Transformation (Level 3)" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_TRANSFORMATION_FEY_LEVEL_3">
+        <compendium display="false" />
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG_FEAT_TRANSFORMATION_FEY" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_3" requirements="ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_2"/>
+        </rules>
+    </element>
+    <element name="Fey Transformation (Level 4)" type="Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ITEM_TRANSFORMATION_FEY_LEVEL_4">
+        <compendium display="false" />
+        <description>
+            <p>
+                <i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+            </p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG_FEAT_TRANSFORMATION_FEY" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_4" requirements="ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_3"/>
+        </rules>
+    </element>
+
+    <!-- Feat -->
+    <element name="Fey" type="Feat" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_TRANSFORMATION_FEY">
+        <requirements>[cha:13]</requirements>
+        <description>
+            <p>The soft strumming of a harp draws the children ever deeper into the dark wood. As they reach a moonlit clearing, they see a beautiful maid dressed in a gown of starlight. She turns her soft gaze upon them at the sounds of their gasps and calls to them, “Welcome, little ones, be not afraid. Step into the ring so we may dance and play.”</p>
+            <p>An elfin man with pale blue skin leans his forehead against the dying tree. As he softly hums, the shriveled leaves turn green once again, and the ancient bow begins to straighten. The man lets out a sigh of relief, which momentarily chills the air.</p>
+            <p>The fey are changeable beings of great power and even greater danger. No two fey are quite alike, but their tie to the natural world is universal. Mortals cannot comprehend the level of true freedom the faerie people feel. To know such freedom is to change entirely.</p>
+            <h4>Becoming a Fey</h4>
+            <p>Becoming a fey requires a direct connection to the faerie realms. Most creatures who become fey are forced to do so when they are stolen from the material realm as a child. These children, known as changelings, rapidly transform after only a few days trapped in the realm of faerie. A changeling’s transition is often painful or strange, for a child altered in this way does not have a say in what type of fey they ultimately become.</p>
+            <p>A creature who voluntarily seeks to become a fey can strike a deal with an arch fey or beseech the court of one of the faerie queens. These pathways to transformation are as dangerous as the realms of faeries themselves, and it requires a quick wit and sharp awareness to get the best of the fey kind.</p>
+            <h4>Transformation Features</h4>
+            <p>A fey has the following transformation features:</p>
+            <h5>Prerequisites</h5>
+            <ul>
+                <li>
+                    <b>Ability Scores:</b> Charisma 13</li>
+                <li>
+                    <b>Roleplay:</b> You must have sworn fealty to one of the fey courts, been raised in the realms as a changeling, or have some other plausible reason to have become a fey. Discuss with your GM how you can achieve this in the game.</li>
+            </ul>
+            <p>Some of your abilities require your target to make a saving throw to resist their effects. The saving throw DC is calculated as follows:</p>
+            <center>
+                <p>
+                    <b>Transformation Save DC</b> = 8 + your proficiency bonus + your Charisma modifier</p>
+            </center>
+            <h5>Level Milestones</h5>
+            <p>The following are examples of possible level milestones for the Fey:</p>
+            <ul>
+                <li>Striking a bargain with a greater fey</li>
+                <li>Performing a great deed in the name of one of the faerie queens</li>
+                <li>Establishing a new faerie ring or bridge to the fey realms</li>
+                <li>Defeating a powerful agent from your rival court</li>
+                <li>Earning a domain or title in the realm of faerie</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You are undergoing the Fey transformation.</description>
+        </sheet>
+        <rules>
+            <stat name="fey:dc" value="8" />
+            <stat name="fey:dc" value="proficiency" />
+            <stat name="fey:dc" value="charisma:modifier" />
+
+            <grant type="Feat Feature" id="ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_1" />
+        </rules>
+    </element>
+
+    <!-- Transformation Level 1 -->
+    <element name="Fey (Level 1)" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_1">
+        <prerequisite>Fey Transformation</prerequisite>
+        <requirements>ID_GFG_GHPG_FEAT_TRANSFORMATION_FEY</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 1st level, you gain the following Transformation Boons and this level’s Transformation Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_FEY_FORM" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_TWILIGHT_STEP" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_PLANAR_BINDING_FEY" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Fey Form, Twilight Step, Planar Binding (Flaw)</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_GFG_GHPG_FEAT_FEATURE_FEY_FORM" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG_FEAT_FEATURE_PLANAR_BINDING_FEY" />
+        </rules>
+    </element>
+
+    <element name="Boon: Fey Form" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_FEY_FORM">
+        <supports>Fey Boon</supports>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_1</requirements>
+        <description>
+            <p>Your Charisma score increases by 2 and your Dexterity score increases by 1. An ability score cannot be increased beyond 16 this way. You also become a fey in addition to any other creature types you are. Spells that affect humanoids still affect you. However, you’re immune to effects that only affect a creature of your new type of a specific CR.</p>
+            <p>When you gain this ability, you must also choose which Fey court fuels your transformation. Choose one of the following:</p>
+            <ul>
+                <li>
+                    <b>The Summer Court.</b> The summer court embodies the bounty and warmth of the growing season. The fey of summer tend towards joviality, fickleness, and vanity. Creatures of summer often hide their cruel intentions behind beautiful facades.</li>
+                <li>
+                    <b>The Winter Court.</b> The winter court embodies the stillness and darkness of the coldest season. The fey of winter tend to be serious, cruel, and reflective. Creatures of winter are often terrifying to behold but very direct about their intentions.</li>
+            </ul>
+        </description>
+        <sheet display="false">
+            <description>You also become a fey in addition to any other creature types you are. Spells that affect humanoids still affect you. However, you’re immune to effects that only affect a creature of your new type of a specific CR.</description>
+        </sheet>
+        <rules>
+            <stat name="charisma" value="2" />
+            <stat name="dexterity" value="1" />
+            <grant type="Racial Feature" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_FEY" />
+            <select type="Feat Feature" name="Fey Court" supports="Fey Court" />
+        </rules>
+    </element>
+
+    <element name="The Summer Court" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_FEY_FORM_SUMMER">
+        <supports>Fey Court</supports>
+        <description>
+            <p>The summer court embodies the bounty and warmth of the growing season. The fey of summer tend towards joviality, fickleness, and vanity. Creatures of summer often hide their cruel intentions behind beautiful facades.</p>
+        </description>
+        <sheet display="false">
+            <description>The summer court embodies the bounty and warmth of the growing season. The fey of summer tend towards joviality, fickleness, and vanity. Creatures of summer often hide their cruel intentions behind beautiful facades.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_GFG_GHPG_FEAT_FEATURE_TWILIGHT_STEP_SUMMER" />    
+        </rules>
+    </element>
+
+    <element name="The Winter Court" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_FEY_FORM_WINTER">
+        <supports>Fey Court</supports>
+        <description>
+            <p>The winter court embodies the stillness and darkness of the coldest season. The fey of winter tend to be serious, cruel, and reflective. Creatures of winter are often terrifying to behold but very direct about their intentions.</p>
+        </description>
+        <sheet display="false">
+            <description>The winter court embodies the stillness and darkness of the coldest season. The fey of winter tend to be serious, cruel, and reflective. Creatures of winter are often terrifying to behold but very direct about their intentions.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_GFG_GHPG_FEAT_FEATURE_TWILIGHT_STEP_WINTER" />    
+        </rules>
+    </element>
+
+    <element name="Boon: Twilight Step" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_TWILIGHT_STEP_SUMMER">
+        <supports>Fey Boon</supports>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_1</requirements>
+        <description>
+            <p>As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. Your twilight step also gains an additional feature depending on which court you chose for your Fey Form ability.</p>
+            <ul>
+                <li>
+                    <b>Summer.</b> Immediately after using your Twilight Step, one creature of your choice that you can see within 5 feet of you takes fire damage equal to your Charisma modifier (minimum of 1 damage).</li>
+                <li>
+                    <b>Winter.</b> Immediately after using your Twilight Step, one creature of your choice that you can see within 5 feet of you takes cold damage equal to your Charisma modifier (minimum of 1 damage).</li>
+            </ul>
+            <p>You can use the Twilight Step feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{fey min}}/Long Rest">
+            <description>You can magically teleport up to 30 feet to an unoccupied space you can see. Your twilight step also gains an additional feature depending on which court you chose for your Fey Form ability.&#13;
+            • Summer. Immediately after using your Twilight Step, one creature of your choice that you can see within 5 feet of you takes {{fey min}} fire damage.</description>
+        </sheet>
+        <rules>
+            <stat name="fey min" value="1" bonus="base" />
+            <stat name="fey min" value="charisma:modifier" bonus="base" />
+        </rules>
+    </element>
+    <element name="Boon: Twilight Step" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_TWILIGHT_STEP_WINTER">
+        <supports>Fey Boon</supports>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_1</requirements>
+        <description>
+            <p>As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. Your twilight step also gains an additional feature depending on which court you chose for your Fey Form ability.</p>
+            <ul>
+                <li>
+                    <b>Summer.</b> Immediately after using your Twilight Step, one creature of your choice that you can see within 5 feet of you takes fire damage equal to your Charisma modifier (minimum of 1 damage).</li>
+                <li>
+                    <b>Winter.</b> Immediately after using your Twilight Step, one creature of your choice that you can see within 5 feet of you takes cold damage equal to your Charisma modifier (minimum of 1 damage).</li>
+            </ul>
+            <p>You can use the Twilight Step feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{fey min}}/Long Rest">
+            <description>You can magically teleport up to 30 feet to an unoccupied space you can see. Your twilight step also gains an additional feature depending on which court you chose for your Fey Form ability.&#13;
+            • Winter. Immediately after using your Twilight Step, one creature of your choice that you can see within 5 feet of you takes {{fey min}} cold damage.</description>
+        </sheet>
+        <rules>
+            <stat name="fey min" value="1" bonus="base" />
+            <stat name="fey min" value="charisma:modifier" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Planar Binding" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_PLANAR_BINDING_FEY">
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_1</requirements>
+        <description>
+            <p>Your body and soul are bound to one of the faerie realms. You have disadvantage on death saving throws as the realm attempts to pull you back to it. If you would be killed, your soul is taken back to a plane of existence of the GM’s choice. This plane is your new home, and you become an NPC under the GM’s control.</p>
+            <p>If you are in the faerie realm responsible for your transformation, this flaw has no effect.</p>
+        </description>
+        <sheet>
+            <description>You have disadvantage on death saving throws as the realm attempts to pull you back to it. If you would be killed, your soul is taken back to a plane of existence of the GM’s choice. This plane is your new home, and you become an NPC under the GM’s control.&#13;
+            If you are in the faerie realm responsible for your transformation, this flaw has no effect.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Level 2 -->
+    <element name="Fey (Level 2)" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_2">
+        <prerequisite>Fey Transformation Level 1</prerequisite>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 2nd level, you can pick one of the following Transformation Boons.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_TWO_FACED" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_SPRITE_SERVANT" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_MAGIC_TRICKS" />
+            </div>
+            <p>You also gain this level’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG_FEAT_FEATURE_QUEENS_COMMAND" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Level 2 Boon. Queen's Command (Flaw)</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Transformation Boon (Level 2)" supports="Fey Boon" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG_FEAT_FEATURE_QUEENS_COMMAND" />
+        </rules>
+    </element>
+
+    <element name="Boon: Two-Faced" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_TWO_FACED_SUMMER">
+        <supports>Fey Boon</supports>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_2,ID_GFG_GHPG_FEAT_FEATURE_FEY_FORM_SUMMER</requirements>
+        <description>
+            <p>You can choose to transform your face into a vision of enchanting loveliness or horrifying ugliness. Any nonfey creature within 30 feet of you when you transform your face must make a Wisdom saving throw or be affected for 1 minute.</p>
+            <ul>
+                <li>
+                    <b>Summer.</b> Any creature that fails the saving throw becomes charmed. This effect ends early on a creature if you or an ally deal damage to it or take other harmful actions.</li>
+                <li>
+                    <b>Winter.</b> Any creature that fails the saving throw becomes frightened of you. This effect ends early if a creature affected by this ability ends its turn out of your line of sight.</li>
+            </ul>
+            <p>You can use this feature a number of times equal to your Charisma modifier (minimum of once). you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{fey min}}/Long Rest">
+            <description>You can choose to transform your face into a vision of enchanting loveliness or horrifying ugliness. Any nonfey creature within 30 feet of you when you transform your face must make a DC {{fey:dc}} Wisdom saving throw or be affected for 1 minute.&#13;
+            • Summer. Any creature that fails the saving throw becomes charmed. This effect ends early on a creature if you or an ally deal damage to it or take other harmful actions.</description>
+        </sheet>
+    </element>
+    <element name="Boon: Two-Faced" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_TWO_FACED_WINTER">
+        <supports>Fey Boon</supports>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_2,ID_GFG_GHPG_FEAT_FEATURE_FEY_FORM_WINTER</requirements>
+        <description>
+            <p>You can choose to transform your face into a vision of enchanting loveliness or horrifying ugliness. Any nonfey creature within 30 feet of you when you transform your face must make a Wisdom saving throw or be affected for 1 minute.</p>
+            <ul>
+                <li>
+                    <b>Summer.</b> Any creature that fails the saving throw becomes charmed. This effect ends early on a creature if you or an ally deal damage to it or take other harmful actions.</li>
+                <li>
+                    <b>Winter.</b> Any creature that fails the saving throw becomes frightened of you. This effect ends early if a creature affected by this ability ends its turn out of your line of sight.</li>
+            </ul>
+            <p>You can use this feature a number of times equal to your Charisma modifier (minimum of once). you regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{fey min}}/Long Rest">
+            <description>You can choose to transform your face into a vision of enchanting loveliness or horrifying ugliness. Any nonfey creature within 30 feet of you when you transform your face must make a DC {{fey:dc}} Wisdom saving throw or be affected for 1 minute.&#13;
+            • Winter. Any creature that fails the saving throw becomes frightened of you. This effect ends early if a creature affected by this ability ends its turn out of your line of sight.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Sprite Servant" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_SPRITE_SERVANT">
+        <supports>Fey Boon</supports>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_2</requirements>
+        <description>
+            <p>A fey sprite binds itself to your service. The sprite is a floating ball of light, considered to be a Tiny creature which cannot be harmed or affected in any way. The sprite has the following characteristics:</p>
+            <ul>
+                <li>The sprite has a fly speed of 40 feet.</li>
+                <li>The sprite cannot speak verbally, but it can telepathically communicate with you as long as it is within a mile of you. The sprite understands all languages you do.</li>
+                <li>The sprite can become invisible at will. Otherwise, it sheds dim light in a 10-foot radius. As a bonus action, you can command the sprite to shine more brightly. When following this command, the sprite can shed bright light in a 20-foot radius and dim light for an additional 20 feet.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>A fey sprite binds itself to your service. The sprite is a floating ball of light, considered to be a Tiny creature which cannot be harmed or affected in any way. The sprite has the following characteristics:
+            • The sprite has a fly speed of 40 feet.
+            • The sprite cannot speak verbally, but it can telepathically communicate with you as long as it is within a mile of you. The sprite understands all languages you do.
+            • The sprite can become invisible at will. Otherwise, it sheds dim light in a 10-foot radius. As a bonus action, you can command the sprite to shine more brightly. When following this command, the sprite can shed bright light in a 20-foot radius and dim light for an additional 20 feet.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Magic Tricks" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_MAGIC_TRICKS">
+        <supports>Fey Boon</supports>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_2</requirements>
+        <description>
+            <p>Your transformation grants you innate power, which manifests as the ability to cast a small number of spells. You learn one illusion or enchantment cantrip.</p>
+            <p>In addition, choose one 1st-level and one 2nd-level illusion or enchantment spell. You can cast each of these spells once without expending a spell slot. You regain the ability to cast them in this way when you finish a short or long rest. Charisma is your spellcasting ability for these spells. When you finish a long rest you can replace your 1st or 2nd level spell with a spell of the same level which must also be an enchantment or illusion spell.</p>
+        </description>
+        <sheet>
+            <description>Your transformation grants you innate power, which manifests as the ability to cast a small number of spells. You learn one illusion or enchantment cantrip.&#13;
+            In addition, choose one 1st-level and one 2nd-level illusion or enchantment spell. You can cast each of these spells once without expending a spell slot. You regain the ability to cast them in this way when you finish a short or long rest. Charisma is your spellcasting ability for these spells. When you finish a long rest you can replace your 1st or 2nd level spell with a spell of the same level which must also be an enchantment or illusion spell.</description>
+        </sheet>        
+        <spellcasting name="Fey Transformation" ability="Charisma" prepare="true">
+            <list known="true">Illusion||Enchantment</list>
+        </spellcasting>
+        <rules>
+            <select type="Spell" name="Cantrip (Magic Tricks)" supports="(Illusion||Enchantment), 0" allowReplace="true" spellcasting="Fey Transformation"/>
+            <select type="Spell" name="1st-level Spell (Magic Tricks)" supports="(Illusion||Enchantment), 1" allowReplace="true" spellcasting="Fey Transformation"/>
+            <select type="Spell" name="2nd-level Spell (Magic Tricks)" supports="(Illusion||Enchantment), 2" allowReplace="true" spellcasting="Fey Transformation"/>
+        </rules>
+    </element>
+
+    <element name="Flaw: Queen’s Command" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_QUEENS_COMMAND">
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_2</requirements>
+        <description>
+            <p>The fey court lends you its power, and in exchange you must pay regular tribute to maintain your freedom. Twice a year, at the winter and summer solstice, you must deliver a treasure or other significant tribute to the winter or summer queen (whichever you pay allegiance to). If you do not provide a tribute by the appointed day, your queen pulls you immediately to her faerie realm. Once pulled in this way, you must remain in the faerie realm for 100 years, or until you strike a bargain with the queen to let you return to the mortal plane. Your GM will tell you what constitutes an appropriate tribute to the court. Some fey queens prefer magic items while others wish for long kept secrets, the capture of fey criminals, or humanoid servants.</p>
+        </description>
+        <sheet>
+            <description>The fey court lends you its power, and in exchange you must pay regular tribute to maintain your freedom. Twice a year, at the winter and summer solstice, you must deliver a treasure or other significant tribute to the winter or summer queen (whichever you pay allegiance to). If you do not provide a tribute by the appointed day, your queen pulls you immediately to her faerie realm. Once pulled in this way, you must remain in the faerie realm for 100 years, or until you strike a bargain with the queen to let you return to the mortal plane. Your GM will tell you what constitutes an appropriate tribute to the court. Some fey queens prefer magic items while others wish for long kept secrets, the capture of fey criminals, or humanoid servants.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Level 3 -->
+    <element name="Fey (Level 3)" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_3">
+        <prerequisite>Fey Transformation Level 2</prerequisite>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 3rd level, you can pick one of the following Transformation Boons, or pick a boon from a lower level that you meet the prerequisites for.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_FAERIE_MANTLE" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_MADE_OF_MAGIC" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_COURTLY_GRACES" />
+            </div>
+            <p>You also gain this level’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG_FEAT_FEATURE_BOUND_BY_WORDS" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Level 3 Boon. Bound by Words (Flaw)</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Transformation Boon (Level 3)" supports="Fey Boon" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG_FEAT_FEATURE_BOUND_BY_WORDS" />
+        </rules>
+    </element>
+
+    <element name="Boon: Faerie Mantle" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_FAERIE_MANTLE">
+        <supports>Fey Boon</supports>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_3</requirements>
+        <description>
+            <p>You can use an action to wrap yourself in the majesty of the faerie for 1 minute. During this time, you project an aura of blinding beauty out to a distance of 30 feet. When creatures of your choice start their turn or move into this aura, they must succeed on a Charisma saving throw or be blinded for 1 minute. A creature blinded in this way can repeat the saving throw at the end of each of its turns, ending the blinded condition on a success. Once you use this action you cannot do so again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>You can wrap yourself in the majesty of the faerie for 1 minute. During this time, you project an aura of blinding beauty out to a distance of 30 feet. When creatures of your choice start their turn or move into this aura, they must succeed on a DC {{fey:dc}} Charisma saving throw or be blinded for 1 minute. A creature blinded in this way can repeat the saving throw at the end of each of its turns, ending the blinded condition on a success.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Made of Magic" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_MADE_OF_MAGIC">
+        <supports>Fey Boon</supports>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_3</requirements>
+        <description>
+            <p>Your transformation into a fey has changed the fundamental nature of your body. You gain resistance to damage from Spells.</p>
+            <p>In addition, when you make a saving throw against a spell you can use a reaction to gain advantage on the roll. Once you use this reaction, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Short Rest">
+            <description>You gain resistance to damage from Spells.&#13;
+            In addition, when you make a saving throw against a spell you can use a reaction to gain advantage on the roll.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Courtly Graces" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_COURTLY_GRACES_SUMMER">
+        <supports>Fey Boon, Fey Court</supports>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_3,ID_GFG_GHPG_FEAT_FEATURE_FEY_FORM_SUMMER</requirements>
+        <description>
+            <p>You gain proficiency in two skills determined by your court. If you are already proficient in one or both of these skills, then your proficiency bonus is doubled for ability checks using that skill. If you have or ever gain double proficiency in one or both of these skills, you gain +2 for that skill instead.</p>
+            <p>Additionally, your fealty to a fey court offers you protection from certain emotions associated with the court. You gain a benefit based on your court.</p>
+        </description>
+        <sheet>
+            <description>ou gain proficiency in Performance and Persuasion, and you are immune to being charmed. If you are already proficient in one or both of these skills, then your proficiency bonus is doubled for ability checks using that skill. If you have or ever gain double proficiency in one or both of these skills, you gain +2 for that skill instead.&#13;
+            Additionally, your fealty to a fey court offers you protection from certain emotions associated with the court. You gain a benefit based on your court.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERFORMANCE" />
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERSUASION" />
+        </rules>
+    </element>
+    <element name="Boon: Courtly Graces" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_COURTLY_GRACES_WINTER">
+        <supports>Fey Boon, Fey Court</supports>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_3,ID_GFG_GHPG_FEAT_FEATURE_FEY_FORM_WINTER</requirements>
+        <description>
+            <p>You gain proficiency in two skills determined by your court. If you are already proficient in one or both of these skills, then your proficiency bonus is doubled for ability checks using that skill. If you have or ever gain double proficiency in one or both of these skills, you gain +2 for that skill instead.</p>
+            <p>Additionally, your fealty to a fey court offers you protection from certain emotions associated with the court. You gain a benefit based on your court.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency in Deception and Intimidation, and you are immune to being frightened. If you are already proficient in one or both of these skills, then your proficiency bonus is doubled for ability checks using that skill. If you have or ever gain double proficiency in one or both of these skills, you gain +2 for that skill instead.&#13;
+            Additionally, your fealty to a fey court offers you protection from certain emotions associated with the court. You gain a benefit based on your court.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_DECEPTION" />
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_INTIMIDATION" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Bound by Words" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_BOUND_BY_WORDS">
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_3</requirements>
+        <description>
+            <p>The fey choose their words carefully for they are bound by them, and so too are you. When you give your word to a humanoid creature (such as by making a promise or pledge, entering into a contract, or coming to a verbal agreement) the commitment becomes magically enforced. If you fail to fulfill your part of the agreement, you lose the benefit of all of your fey transformation boons until you surrender an additional tithe to the summer or winter queen, as described in your Queen’s Command flaw. This tithe is in addition to those required by that flaw.</p>
+            <p>Importantly, you are bound by the letter of any agreement you make, not by the spirit. If you promise you will not lay a hand on the prince, for example, there would be no consequences if you kicked him (provided your hand didn’t touch him in the process).</p>
+        </description>
+        <sheet>
+            <description>When you give your word to a humanoid creature the commitment becomes magically enforced. If you fail to fulfill your part of the agreement, you lose the benefit of all of your fey transformation boons until you surrender an additional tithe to the summer or winter queen, as described in your Queen’s Command flaw. This tithe is in addition to those required by that flaw.&#13;
+            Importantly, you are bound by the letter of any agreement you make, not by the spirit. If you promise you will not lay a hand on the prince, for example, there would be no consequences if you kicked him (provided your hand didn’t touch him in the process).</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Level 4 -->
+    <element name="Fey (Level 4)" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_4">
+        <prerequisite>Fey Transformation Level 3</prerequisite>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 4th level, you can pick one of the following Transformation Boons, or pick a boon from a lower level that you meet the prerequisites for.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_GREATER_MAGIC_TRICKS" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_MISDIRECTION" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_TWILIGHT_GLAMOUR" />
+            </div>
+            <p>You also gain this level’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG_FEAT_FEATURE_SEASONALLY_AFFECTED" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Level 4 Boon. Seasonally Affected (Flaw)</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Transformation Boon (Level 4)" supports="Fey Boon" />
+            <grant type="Feat Feature" 
+            id="ID_GFG_GHPG_FEAT_FEATURE_SEASONALLY_AFFECTED_SUMMER" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG_FEAT_FEATURE_SEASONALLY_AFFECTED_WINTER" />
+        </rules>
+    </element>
+
+    <element name="Boon: Greater Magic Tricks" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_GREATER_MAGIC_TRICKS">
+        <prerequisite>Magic Tricks</prerequisite>
+        <supports>Fey Boon</supports>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_4, ID_GFG_GHPG_FEAT_FEATURE_MAGIC_TRICKS</requirements>
+        <description>
+            <p>Choose an enchantment or illusion spell of 3rd, 4th, and 5th level. You can cast each of these spells once without expending a spell slot and regain the ability to cast them in this way when you finish a long rest. Charisma is your spellcasting ability for these spells. When you finish a long rest you can replace your 3rd-, 4th-, or 5th-level spell with a spell of the same level, which must also be an enchantment or illusion spell.</p>
+            <p>Additionally, you and cast the 1st and 2nd level spells form the Magic Tricks Boon twice per short or long rest.</p>
+        </description>
+        <sheet>
+            <description>Choose an enchantment or illusion spell of 3rd, 4th, and 5th level. You can cast each of these spells once without expending a spell slot and regain the ability to cast them in this way when you finish a long rest. Charisma is your spellcasting ability for these spells. When you finish a long rest you can replace your 3rd-, 4th-, or 5th-level spell with a spell of the same level, which must also be an enchantment or illusion spell.&#13;
+            Additionally, you and cast the 1st and 2nd level spells form the Magic Tricks Boon twice per short or long rest.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="3rd-level Spell (Greater Magic Tricks)" supports="3,(Illusion||Enchantment)" allowReplace="true" spellcasting="Fey Transformation"/>
+            <select type="Spell" name="4th-level Spell (Greater Magic Tricks)" supports="4,(Illusion||Enchantment)" allowReplace="true" spellcasting="Fey Transformation"/>
+            <select type="Spell" name="5th-level Spell (Greater Magic Tricks)" supports="5,(Illusion||Enchantment)" allowReplace="true" spellcasting="Fey Transformation"/>
+        </rules>
+    </element>
+
+    <element name="Boon: Misdirection" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_MISDIRECTION">
+        <supports>Fey Boon</supports>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_4</requirements>
+        <description>
+            <p>Light and magic bend strangely around you, making you difficult to hit. All attack rolls against you have disadvantage. If you are hit by an attack, this trait is disrupted until the end of your next turn. This trait only works while you are conscious.</p>
+        </description>
+        <sheet>
+            <description>Light and magic bend strangely around you, making you difficult to hit. All attack rolls against you have disadvantage. If you are hit by an attack, this trait is disrupted until the end of your next turn. This trait only works while you are conscious.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Twilight Glamour" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_TWILIGHT_GLAMOUR">
+        <supports>Fey Boon</supports>
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_4</requirements>
+        <description>
+            <p>As an action, you can become invisible. Anything you are wearing or carrying on your person is invisible as well. The invisibility ends if you choose to end it, if you attack, or if you cast a spell. Once your invisibility ends in this way, you cannot use this feature again for 1 minute. This trait only works while you are conscious.</p>
+        </description>
+        <sheet action="Action">
+            <description>You can become invisible. Anything you are wearing or carrying on your person is invisible as well. The invisibility ends if you choose to end it, if you attack, or if you cast a spell. Once your invisibility ends in this way, you cannot use this feature again for 1 minute. This trait only works while you are conscious.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Seasonally Affected" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_SEASONALLY_AFFECTED_SUMMER">
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_4,ID_GFG_GHPG_FEAT_FEATURE_FEY_FORM_SUMMER</requirements>
+        <description>
+            <p>Your connection to the fey courts has granted you tremendous power but also an esoteric fragility: you gain a weakness towards cold damage if you are in the summer court, or fire damage if you are in the winter court.</p>
+            <p>If you were normally resistant to this damage type, it instead affects you normally. If you are normally immune to damage of that type, you are resistant instead. In addition, whenever you take damage of that type, your maximum hit points are reduced by an equal amount. When your maximum hit points are reduced by this effect, they return to normal after you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>You gain a weakness towards cold damage.&#13;
+            If you were normally resistant to this damage type, it instead affects you normally. If you are normally immune to damage of that type, you are resistant instead. In addition, whenever you take damage of that type, your maximum hit points are reduced by an equal amount. When your maximum hit points are reduced by this effect, they return to normal after you finish a long rest.</description>
+        </sheet>
+    </element>
+    <element name="Flaw: Seasonally Affected" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_SEASONALLY_AFFECTED_WINTER">
+        <requirements>ID_GFG_GHPG_TRANSFORMATION_FEY_LEVEL_4,ID_GFG_GHPG_FEAT_FEATURE_FEY_FORM_WINTER</requirements>
+        <description>
+            <p>Your connection to the fey courts has granted you tremendous power but also an esoteric fragility: you gain a weakness towards cold damage if you are in the summer court, or fire damage if you are in the winter court.</p>
+            <p>If you were normally resistant to this damage type, it instead affects you normally. If you are normally immune to damage of that type, you are resistant instead. In addition, whenever you take damage of that type, your maximum hit points are reduced by an equal amount. When your maximum hit points are reduced by this effect, they return to normal after you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>You gain a weakness towards fire damage if you are in the winter court.&#13;
+            If you were normally resistant to this damage type, it instead affects you normally. If you are normally immune to damage of that type, you are resistant instead. In addition, whenever you take damage of that type, your maximum hit points are reduced by an equal amount. When your maximum hit points are reduced by this effect, they return to normal after you finish a long rest.</description>
+        </sheet>
+    </element>
+</elements>

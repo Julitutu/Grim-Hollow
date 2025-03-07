@@ -1,0 +1,549 @@
+<elements>
+  <info>
+    <name>Aberrant Horror Transformation</name>
+    <description>Transformation from Grim Hollow: Campaing Guide</description>
+    <author>Ghostfire Gaming</author>
+    <update version="0.1.0">
+			<file name="aberrant-horror.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/aberrant-horror.xml" />
+		</update>
+  </info>
+  
+    <!-- Items -->
+  <element name="Aberrant Horror Transformation (Level 1)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_ABERRANT_HORROR" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_FEAT_TRANSFORMATION_ABERRANT_HORROR" requirements="[con:13]"/>
+		</rules>
+	</element>
+    <element name="Aberrant Horror Transformation (Level 2)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_ABERRANT_HORROR" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2" requirements="ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1"/>
+		</rules>
+	</element>
+    <element name="Aberrant Horror Transformation (Level 3)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_ABERRANT_HORROR" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3" requirements="ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2"/>
+		</rules>
+	</element>
+    <element name="Aberrant Horror Transformation (Level 4)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_ABERRANT_HORROR_LEVEL_4">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_ABERRANT_HORROR" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_4" requirements="ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3"/>
+		</rules>
+	</element>
+
+
+    <!-- Feat -->
+  <element name="Aberrant Horror" type="Feat" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_TRANSFORMATION_ABERRANT_HORROR">
+    <p><em>Prerequisite: Constitution 13</em></p>
+    <requirements>[con:13]</requirements>
+    <description>
+      <p>A cloaked figure flees through the dimly lit city streets. The guards appear to have the upper hand, until she turns to greet them—a hulking mess of spines, claws, and gnashing maws.</p>
+      <p>Lightning cracks. A mad doctor bellows in triumph as a once-deceased woman rises. With three fleshy tentacles sprouting from her back, his newest creation is complete. Thunder booms as the woman approaches the doctor menacingly, tendrils extended. Not all successful experiments end well.</p>
+      <p>Aberrant Horrors are the result of a humanoid becoming an aberration. Able to break free from the physical restrictions imposed upon them by the Material Plane, they shift the components of their form at a whim. This makes Aberrant Horrors terrifying to behold, especially in battle. Many adversaries have been caught off-guard when a seemingly defenceless opponent grew rows of gruesome spines before their eyes.</p>
+      <h4>Becoming an Aberrant Horror</h4>
+      <p>Each Aberrant Horror is defined by one key question: what happened to them? Some individuals make pacts with ancient entities for powers that have unforeseen effects. Others awaken after being defeated by an unnatural monster, surprised that they have been spared, only to feel something writhing in their stomach. Many tropes of body horror can be used as inspiration for an Aberrant Horror.</p>
+      <p>Once your origin has been determined, you can consider what your character’s motivations are regarding their transformation. As their power grows and manifests, they may feel they have lost what makes them fundamentally themselves. Perhaps they decide to take revenge on the entity responsible for their transformation, or perhaps they perceive their transformation as a gift.</p>
+      <h4>Transformation Features</h4>
+      <p>An Aberrant Horror has the following transformation features:</p>
+      <h5>Prerequisites</h5>
+      <p><b>Ability Scores:</b> Constitution 13</p>
+      <p><b>Roleplay:</b> You must have had an encounter with an Aberration, magical anomaly, or some other plausible reason to have become an Aberrant Horror. Discuss with your GM how you can achieve this in your backstory or in-game.</p>
+      <p>Some of your abilities will require your target to make a saving throw to resist their effects. The saving throw DC is calculated as follows:</p>
+      <center>
+        <p><strong>Transformation Save DC</strong> = 8 + your proficiency bonus + your Constitution modifier</p>
+      </center>
+      <h5>Level Milestones</h5>
+      <p>The following are examples of possible level milestones for the Aberrant Horror:</p>
+      <ul>
+          <li>Defeating a powerful Aberration and absorbing its power.</li>
+          <li>Undergoing a dangerous and costly experiment.</li>
+          <li>Surviving a magical mishap.</li>
+          <li>Acquiring the strength to give birth to a more powerful version of yourself, which then consumes your old self.</li>
+          <li>Fulfilling an eldritch prophecy written in the stars.</li>
+      </ul>
+      <h5>Unstable Mutation</h5>
+      <table>
+        <thead>
+            <tr><td>Level 1</td><td>Level 2</td><td>Level 3</td><td>Level 4</td><td>Effect</td></tr>
+        </thead>
+        <tr><td>01-05</td><td>01-08</td><td>01-09</td><td>01-11</td><td>Your body starts to become formless. You have disadvantage on Dexterity saving throws.</td></tr>
+        <tr><td>06-10</td><td>09-16</td><td>10-18</td><td>12-22</td><td>You start to become rigid and brittle, making resting less effective. When you consume a hit dice, you do not add your constitution modifier to the result.</td></tr>
+        <tr><td>11-15</td><td>17-24</td><td>19-27</td><td>23-33</td><td>Your body starts sweating a viscous substance that hardens quickly. You cannot doff armour or change clothes. Dropping, stowing, or interacting with an object requires an action.</td></tr>
+        <tr><td>16-24</td><td>25-32</td><td>28-36</td><td>34-43</td><td>You immediately throw up a thick, black ichor and begin feeling nauseous. You do not benefit from the effects of any food, drink, or potions consumed.</td></tr>
+        <tr><td>25-32</td><td>33-40</td><td>37-45</td><td>44-52</td><td>You are only able to form one-word sentences in a guttural voice you do not recognise. You can still cast spells with verbal components.</td></tr>
+        <tr><td>43-40</td><td>35-48</td><td>46-54</td><td>53-61</td><td>Your legs become unresponsive and difficult to move. Your movement speed decreases by 10 feet.</td></tr>
+        <tr><td>41-48</td><td>42-56</td><td>55-63</td><td>62-70</td><td>Your body begins fighting against any form you take. You cannot make reactions.</td></tr>
+        <tr><td>49-56</td><td>57-64</td><td>64-72</td><td>71-77</td><td>Your arms periodically have a will of their own, causing your reaction speed to slow while you regain control of them. You have disadvantage on Dexterity ability checks to determine initiative order.</td></tr>
+        <tr><td>57-64</td><td>65-72</td><td>73-80</td><td>78-84</td><td>Your skin quivers and shifts, while your appearance constantly changes. Every 30 seconds a defining feature of appearance changes, such as hair colour, facial features, or body proportions.</td></tr>
+        <tr><td>65-81</td><td>73-83</td><td>81-89</td><td>85-91</td><td>Nothing happens.</td></tr>
+        <tr><td>82-91</td><td>84-92</td><td>90-95</td><td>92-96</td><td>You become immune to the grappled and restrained conditions.</td></tr>
+        <tr><td>92-100</td><td>93-100</td><td>96-100</td><td>97-100</td><td>If you would gain hit points from a spell or ability other than your own, you gain that many hit points plus your Constitution modifier instead.</td></tr>
+      </table>
+       </description>
+        <sheet>
+            <description>You are undergoing the Aberrant Horror transformation.</description>
+        </sheet>
+        <rules>
+            <stat name="aberrant horror:dc" value="8" />
+            <stat name="aberrant horror:dc" value="proficiency" />
+            <stat name="aberrant horror:dc" value="constitution:modifier" />
+
+            <grant type="Feat Feature" id="ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1" />
+        </rules>
+  </element>
+  
+    <!-- Transformation Level 1 -->
+    <element name="Aberrant Horror (Level 1)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1">
+            <prerequisite>Aberrant Horror Transformation</prerequisite>
+            <requirements>ID_GFG_GHCG_FEAT_TRANSFORMATION_ABERRANT_HORROR</requirements>
+            <compendium display="false" />
+        <description>
+        <p>Starting at 1st level, you gain:</p>
+        <div class="reference">
+            <div element="ID_GFG_GHCG_FEAT_FEATURE_ABERRANT_ADAPTATIONS" />
+            <div element="ID_GFG_GHCG_FEAT_FEATURE_ABERRANT_FORM" />
+            <div element="ID_GFG_GHCG_FEAT_FEATURE_UNSTABLE_MUTATIONS" />
+        </div>
+        </description>
+        <sheet display="false">
+        <description>
+            Aberrant Adaptations: Chitinous Shell (+2 AC, -10ft speed), Eldritch Limbs (d6 unarmed, choose damage type).
+            Aberrant Form: +2 Con, +1 Str (max 16), Aberration type.
+            Unstable Mutations: Roll on the Unstable Mutation table.
+        </description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_ABERRANT_ADAPTATIONS" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_ABERRANT_FORM" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_UNSTABLE_MUTATIONS" />
+        </rules>
+    </element>
+
+    <element name="Boon: Aberrant Adaptations" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_ABERRANT_ADAPTATIONS">
+        <supports>Aberrant Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1</requirements>
+        <description>
+        <p>Your body can twist and reshape itself as you will it, changing body parts into dangerous weapons or useful tools, and regenerating after damage. This ability is represented through Adaptations.</p>
+        <h5>Basic Adaptations</h5>
+        <p>At 1st level, you gain the following adaptations:</p>
+        <p><b><i>Chitinous Shell.</i></b> As a bonus action, you can develop a hard, crustacean-like shell. When you use this adaptation and are not wearing heavy armour, you gain a +2 to AC. However, this reduces your speed by 10 feet. This adaptation lasts for 1 minute or until you are knocked unconscious. On your turn, you may use a bonus action to end this Adaptation.</p>
+        <p><b><i>Eldritch Limbs.</i></b> You can transform one or both of your arms into a weapon of thick muscle, sharp claws, or hardened bone. When you make an attack, you can use this Adaptation. If you do, you gain the following features:</p>
+        <ul>
+            <li>You can choose what type of damage your unarmed attacks will cause, from Piercing, Bludgeoning, or Slashing. Your arm becomes a claw, tusk, or bone club, depending on the damage type chosen.</li>
+            <li>You may roll a d6 in place of normal damage for unarmed strikes.</li>
+            <li>You cannot hold any object in the affected arm. This includes, but is not limited to, weapons, shields, and spellcasting focuses. Any object you are holding merges into your adaptation or immediately drops to the ground. The GM may decide if they feel the object is too large to merge.</li>
+        </ul>
+        <p>This adaptation lasts until you become knocked unconscious. On your turn, you may use a bonus action to end this adaptation.</p>
+        </description>
+        <sheet>
+            <description>At 1st level, you gain the following adaptations&#13;
+        Chitinous Shell. As a bonus action, you can develop a hard, crustacean-like shell. When you use this adaptation and are not wearing heavy armour, you gain a +2 to AC. However, this reduces your speed by 10 feet. This adaptation lasts for 1 minute or until you are knocked unconscious. On your turn, you may use a bonus action to end this Adaptation.&#13;
+        Eldritch Limbs. You can transform one or both of your arms into a weapon of thick muscle, sharp claws, or hardened bone. When you make an attack, you can use this Adaptation. If you do, you gain the following features:&#13;
+        • You can choose what type of damage your unarmed attacks will cause, from Piercing, Bludgeoning, or Slashing. Your arm becomes a claw, tusk, or bone club, depending on the damage type chosen.&#13;
+        • You may roll a d6 in place of normal damage for unarmed strikes.&#13;
+        • You cannot hold any object in the affected arm. This includes, but is not limited to, weapons, shields, and spellcasting focuses. Any object you are holding merges into your adaptation or immediately drops to the ground. The GM may decide if they feel the object is too large to merge.&#13;
+        This adaptation lasts until you become knocked unconscious. On your turn, you may use a bonus action to end this adaptation.</description>
+        </sheet>
+    </element>
+    <element name="Boon: Aberrant Form" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_ABERRANT_FORM">
+        <supports>Aberrant Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1</requirements>
+        <description>
+            <p>Your Constitution score increases by 2 and your Strength score increases by 1. An ability score cannot be increased beyond 16 this way.</p>
+        <p>You become an Aberration in addition to any other creature types you are. Spells and abilities that affect Aberrations of a specific CR have no effect on you.</p>
+        </description>
+        <sheet display="false">
+            <description>You become an Aberration in addition to any other creature types you are. Spells and abilities that affect Aberrations of a specific CR have no effect on you.</description>
+        </sheet>
+        <rules>
+            <stat name="constitution" value="2" />
+            <stat name="strength" value="1" />
+            <grant type="Racial Feature" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_ABERRATION" />
+        </rules>
+    </element>
+    <element name="Flaw: Unstable Mutations" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_UNSTABLE_MUTATIONS">
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1</requirements>
+        <description>
+        <p>Your body becomes malleable and struggles to maintain any one physical shape. Upon completing a long rest, you must roll 1d100 on the Unstable Form table and apply the effects of the result, determined by your transformation level. These effects last until you complete another long rest. If you roll the same result on the table more than once in a row, roll again until a new result is rolled.</p>
+        </description>
+        <sheet>
+            <description>Upon completing a long rest, you must roll 1d100 on the Unstable Form table and apply the effects of the result, determined by your transformation level. These effects last until you complete another long rest. If you roll the same result on the table more than once in a row, roll again until a new result is rolled.</description>
+        </sheet>
+    </element>
+
+  <!-- Transformation Level 2 -->
+    <element name="Aberrant Horror (Level 2)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2">
+        <prerequisite>Aberrant Horror Transformation Level 1</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>At 2nd level, you can pick one of the following Transformation Boons:</p>
+            <div class="reference">
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_EFFICIENT_KILLER" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_OTHERWORLDLY_TENDRILS" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_SITUATIONAL_EVOLUTION" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_UNEARTHLY_SENSE" />
+            </div>        
+            <p>In addition, you also gain this level’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHCG_FEAT_FEATURE_HIDEOUS_APPEARANCE" />
+        </description>
+        <sheet display="false">
+                <description>Choose one Level 2 Boon. Hideous Appearance Flaw.</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Transformation Boon" supports="Aberrant Boon" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_HIDEOUS_APPEARANCE" />
+        </rules>
+    </element>
+
+    <element name="Boon: Efficient Killer" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_EFFICIENT_KILLER">
+        <supports>Aberrant Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2</requirements>
+        <description>
+            <p>When you make an unarmed attack while you are benefiting from the Eldritch Limbs adaptation, you can gain one of the following effects depending on the type of damage you chose:</p>
+            <ul>
+            <li><b>Piercing.</b> You can launch a razor-sharp barb from your arm. Make a ranged attack at a target within 30 feet. Upon a hit, the target takes piercing damage equal to 2d6 + your Strength modifier.</li>
+            <li><b>Bludgeoning.</b> You can manifest a long tentacle, tipped with a hardened bone club. Your unarmed attack deals an additional 1d6 bludgeoning damage. When you hit a creature with an unarmed attack, you can then attempt to damage another creature within 5 feet of the original target. If the original attack roll would hit the second creature, it takes bludgeoning damage equal to 1d6 + your Strength modifier.</li>
+            <li><b>Slashing.</b> Your arm forms a row of viciously hooked claws and talons. Your unarmed attack deals an additional 1d6 slashing damage, and the target must succeed at a Constitution saving throw. Upon a failed save, the target gains the bleeding condition for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself upon a success.</li>
+            </ul>
+        </description>
+        <sheet><description>When you make an unarmed attack while you are benefiting from the Eldritch Limbs adaptation, you can gain one of the following effects depending on the type of damage you chose:&#13;
+            • Piercing. You can launch a razor-sharp barb from your arm. Make a ranged attack at a target within 30 feet. Upon a hit, the target takes piercing damage equal to 2d6 + {{strength:modifier}}.&#13;
+            • Bludgeoning. You can manifest a long tentacle, tipped with a hardened bone club. Your unarmed attack deals an additional 1d6 bludgeoning damage. When you hit a creature with an unarmed attack, you can then attempt to damage another creature within 5 feet of the original target. If the original attack roll would hit the second creature, it takes bludgeoning damage equal to 1d6 + {{strength:modifier}}.&#13;
+            • Slashing. Your arm forms a row of viciously hooked claws and talons. Your unarmed attack deals an additional 1d6 slashing damage, and the target must succeed at a DC{{aberrant horror:dc}} Constitution saving throw. Upon a failed save, the target gains the bleeding condition for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself upon a success.</description>
+        </sheet>
+    </element>
+    
+    <element name="Boon: Other-Worldly Tendrils" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_OTHERWORLDLY_TENDRILS">
+        <supports>Aberrant Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2</requirements>
+        <description>
+            <p>Starting at 2nd level, you can use a bonus action to grow a long, tendril-like appendage out of your body that you are proficient with. On subsequent turns, immediately after taking the attack action, you may use a bonus action to have the tendril attack an enemy within 10 feet of you. If you do, make an unarmed melee attack using your Strength modifier. On a hit, the target takes bludgeoning damage equal to 1d4 + your Strength modifier. </p>
+            <p>The tendril lasts until you become unconscious. On your turn, you may use a bonus action to retract it. In addition, you gain the following Adaptations:</p>
+            <ul>
+                <li><b>Toxic Spray.</b> A lamprey-like mouth opens at the end of a tendril and sprays a noxious toxin. When you attack a creature with one of your tendrils, you can choose to use this Adaptation and forgo dealing damage. If you do, instead of rolling to hit, the target must make a Constitution saving throw against your Transformation Save DC. On a failed save, they become poisoned. A creature that has failed this saving throw makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer affected by this Adaptation.</li>
+                <li><b>Constrict.</b> A tendril wraps tightly around the target. When you hit with a tendril attack, and the target is large or smaller, you can choose to use this Adaptation. If you do, the attack deals no damage and the target is grappled. Until the grapple is ended, the tentacle cannot be used against other targets.</li>
+                <li><b>Hypnotic Trance.</b> A tendril flashes a myriad of coloured bioluminescent lights, attempting to disorient the target. When you attack a creature with one of your tendrils, you can choose to use this Adaptation and forgo dealing damage. If you do, instead of rolling to hit, the target must make a Wisdom saving throw against your Transformation Save DC. On a failed save, all attack rolls against the target have advantage, until the start of the affected creatures next turn. A creature that has failed this saving throw makes another Wisdom saving throw at the end of each of its turns. On a successful save, it is no longer affected by this Adaptation.</li>
+            </ul>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can use a bonus action to grow a long, tendril-like appendage out of your body that you are proficient with. On subsequent turns, immediately after taking the attack action, you may use a bonus action to have the tendril attack an enemy within 10 feet of you. If you do, make an unarmed melee attack using your Strength modifier. On a hit, the target takes bludgeoning damage equal to 1d4 + {{strength:modifier}}.&#13;
+            The tendril lasts until you become unconscious. On your turn, you may use a bonus action to retract it. In addition, you gain the following Adaptations&#13;
+            • Toxic Spray. When you attack a creature with one of your tendrils, you can choose to use this Adaptation and forgo dealing damage. If you do, instead of rolling to hit, the target must make a DC {{aberrant horror:dc}} Constitution saving throw. On a failed save, they become poisoned. A creature that has failed this saving throw makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer affected by this Adaptation.&#13;
+            • Constrict. When you hit with a tendril attack, and the target is large or smaller, you can choose to use this Adaptation. If you do, the attack deals no damage and the target is grappled. Until the grapple is ended, the tentacle cannot be used against other targets.&#13;
+            • Hypnotic Trance. When you attack a creature with one of your tendrils, you can choose to use this Adaptation and forgo dealing damage. If you do, instead of rolling to hit, the target must make a DC {{aberrant horror:dc}} Wisdom saving throw. On a failed save, all attack rolls against the target have advantage, until the start of the affected creatures next turn. A creature that has failed this saving throw makes another Wisdom saving throw at the end of each of its turns. On a successful save, it is no longer affected by this Adaptation.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Situational Evolution" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_SITUATIONAL_EVOLUTION">
+        <supports>Aberrant Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2</requirements>
+        <description>
+            <p>You can use an action to grow gills and flippers, thin hairs on your extremities to climb walls, or a layer of rapidly-regenerating flesh. You gain the following Adaptations:</p>
+            <ul>
+            <li><b>Scopulae.</b> Your climbing speed becomes the same as your walking speed. You can climb vertical objects, while leaving one hand free.</li>
+            <li><b>Gills and Flippers.</b> Your swim speed becomes the same as your walking speed, and you can breathe underwater.</li>
+            <li><b>Regenerative Tissue.</b> At the beginning of your turn, you regain hit points equal to your Constitution modifier if you have no more than half your hit points left. If you take fire or acid damage, then this Adaptation has no effect at the beginning of your next turn.</li>
+            </ul>
+        <p>These adaptations last until you become unconscious, use a different one of these Adaptations, or use a bonus action on your turn to end the Adaptation.</p>
+        </description>
+        <sheet>
+            <description>You gain the following Adaptations:&#13;
+            • Scopulae. Your climbing speed becomes the same as your walking speed. You can climb vertical objects, while leaving one hand free.&#13;
+            • Gills and Flippers. Your swim speed becomes the same as your walking speed, and you can breathe underwater.&#13;
+            • Regenerative Tissue. At the beginning of your turn, you regain {{constitution:modifier}} hit points if you have no more than half your hit points left. If you take fire or acid damage, then this Adaptation has no effect at the beginning of your next turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Unearthly Senses" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_UNEARTHLY_SENSE">
+        <supports>Aberrant Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2</requirements>
+        <description>
+            <p>Starting at 2nd level, you may use a bonus action to enhance your body’s sensory organs, or grow entirely new ones. While this effect is active, you may choose one of the following Adaptations:</p>
+            <ul>
+            <li><b>Keen Senses.</b> Your eyes bulge, your skin tingles, and your nostrils flare. You gain advantage on Wisdom (Perception) checks that rely on sight, hearing, or smell.</li>
+            <li><b>Darkvision.</b> Your eyes take on the appearance of a cat’s, growing to fill the upper half of your face. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray. If you already possess darkvision from another source, the distance extends to 120 feet instead.</li>
+            <li><b>Third Eye.</b> Another eye emerges from your forehead, granting you the ability to see invisible creatures and objects as if they were visible.</li>
+            </ul>
+        <p>These Adaptations last until you become unconscious, use a different one of these Adaptations, or use a bonus action on your turn to end the Adaptation. Once you reach Transformation Level 4, you may choose two of the listed Adaptations instead of one.</p>
+        </description>
+        <sheet action="Bonus Actions">
+            <description>You enhance your body’s sensory organs, or grow entirely new ones. While this effect is active, you may choose one of the following Adaptations:&#13;
+            • Keen Senses. You gain advantage on Wisdom (Perception) checks that rely on sight, hearing, or smell.&#13;
+            • Darkvision. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray. If you already possess darkvision from another source, the distance extends to 120 feet instead.&#13;
+            • Third Eye. Another eye emerges from your forehead, granting you the ability to see invisible creatures and objects as if they were visible.&#13;
+            These Adaptations last until you become unconscious, use a different one of these Adaptations, or use a bonus action on your turn to end the Adaptation. Once you reach Transformation Level 4, you may choose two of the listed Adaptations instead of one.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Hideous Appearance" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_HIDEOUS_APPEARANCE">
+        <description>
+            <p>Your appearance has grotesquely transformed. You may be a hulking mass of flesh, adorned with countless eyes, or a bone-and-tusk-covered natural weapon. Regardless of your true form, you’re horrific to behold. You can suspend this form and manifest the appearance of the humanoid you once were, but this is taxing and requires concentration. This form is not permanent, and moments of stress are likely to reveal your true nature. Your true form is revealed in the following situations:</p>
+                <ul>
+                    <li>Concentrating on a spell.</li>
+                    <li>Gaining the unconscious condition.</li>
+                    <li>Entering hallowed ground.</li>
+                    <li>Choosing to reveal yourself.</li>
+            </ul>
+            <p>In events of extreme emotional or physical stress, a GM may call for a Constitution saving throw with a DC of their choosing to see if you maintain your humanoid form.</p>
+            <p>Non-evil creatures that witness your true form become instantly hostile to you, unless the GM decides otherwise.</p>
+        </description>
+        <sheet>
+            <description>Your appearance has grotesquely transformed. You may be a hulking mass of flesh, adorned with countless eyes, or a bone-and-tusk-covered natural weapon. Regardless of your true form, you’re horrific to behold. You can suspend this form and manifest the appearance of the humanoid you once were, but this is taxing and requires concentration. This form is not permanent, and moments of stress are likely to reveal your true nature. Your true form is revealed in the following situations:&#13;
+            • Concentrating on a spell.&#13;
+            • Gaining the unconscious condition.&#13;
+            • Entering hallowed ground.&#13;
+            • Choosing to reveal yourself.&#13;
+            In events of extreme emotional or physical stress, a GM may call for a Constitution saving throw with a DC of their choosing to see if you maintain your humanoid form. Non-evil creatures that witness your true form become instantly hostile to you, unless the GM decides otherwise.</description>
+        </sheet>
+    </element>
+
+  <!-- Transformation Level 3 -->
+    <element name="Aberrant Horror (Level 3)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3">
+        <prerequisite>Aberrant Horror Transformation Level 2</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>At 3rd level, you can pick one of the following Transformation Boons, or pick a boon from a lower level that you meet the prerequisites for:</p>
+            <div class="reference">
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_WINGS" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_ADDITIONAL_TENDRILS" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_ENHANCED_HYPERTHROPHY" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_SHIFTING_FORM" />
+            </div>
+            <p>In addition, you also gain this level’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHCG_FEAT_FEATURE_UNSTABLE_EXISTENCE" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Level 3 Boon. Unstable Existence Flaw.</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Transformation Boon" supports="Aberrant Boon" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_UNSTABLE_EXISTENCE" />
+         </rules>
+    </element>
+
+  <element name="Boon: Wings" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_WINGS">
+        <supports>Aberrant Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3</requirements>
+        <description>
+            <p>Beginning at 3rd level, you can grow large, twisted wings of mutated flesh. You gain the following Adaptation:</p>
+            <p><b><i>Wings.</i></b> As a bonus action, you can manifest a pair of distorted, fleshy wings. You gain a fly speed equal to your current speed. These wings recede after 10 minutes. You can reabsorb them as a bonus action on your turn, and they reabsorb automatically if you are knocked unconscious. You can manifest your wings while wearing medium or light armour if it is made to accommodate them. You cannot manifest your wings while wearing heavy armour. </p>
+            <p>Once you use this Adaptation, you cannot use it again until you complete a short rest.</p>
+
+        </description>
+        <sheet action="Bonus Action" usage="1/Short Rest">
+            <description>You gain the following Adaptation:&#13;
+            • Wings. As a bonus action, you can manifest a pair of distorted, fleshy wings. You gain a fly speed equal to your current speed. These wings recede after 10 minutes. You can reabsorb them as a bonus action on your turn, and they reabsorb automatically if you are knocked unconscious. You can manifest your wings while wearing medium or light armour if it is made to accommodate them. You cannot manifest your wings while wearing heavy armour.</description>
+        </sheet>
+    </element>
+    
+    <element name="Boon: Additional Tendrils" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_ADDITIONAL_TENDRILS">
+        <p><em>Prerequisite: Otherworldly Tendrils</em></p>
+        <supports>Aberrant Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3, ID_GFG_GHCG_FEAT_FEATURE_OTHERWORLDLY_TENDRILS</requirements>
+        <description>
+            <p>You are able to grow an additional tendril. On subsequent turns, you may use a bonus action to attack with each tendril you have grown. The tendrils can all attack the same target or different ones. Make a separate attack roll for each tendril.</p>
+            <p>When you reach the 4th level of this transformation, the number of tendrils you can manifest is increased to three.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You are able to grow an additional tendril. On subsequent turns, you may use a bonus action to attack with each tendril you have grown. The tendrils can all attack the same target or different ones. Make a separate attack roll for each tendril.&#13;
+            When you reach the 4th level of this transformation, the number of tendrils you can manifest is increased to three.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Enhanced Hypertrophy" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_ENHANCED_HYPERTHROPHY">
+        <supports>Aberrant Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3</requirements>
+        <description>
+            <p>You may roll a d8 in place of normal damage for unarmed strikes. The base damage dice for your adaptations, like Efficient Killer and Otherworldly Tendrils becomes one base die higher. For example, an adaptation that deals 2d6 damage would become 2d8 damage instead.</p>
+        </description>
+        <sheet>
+            <description>You may roll a d8 in place of normal damage for unarmed strikes. The base damage dice for your adaptations, like Efficient Killer and Otherworldly Tendrils becomes one base die higher. For example, an adaptation that deals 2d6 damage would become 2d8 damage instead.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Shifting Form" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_SHIFTING_FORM">
+        <supports>Aberrant Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3</requirements>
+        <description>
+            <p>Your body has begun to lose its cohesion, softening and shifting like thick jelly. You take no extra damage from critical hits due to the shuffling of your internal organs. Whenever you make a melee or ranged attack using your Eldritch Limbs, you deal an additional 1d6 acid damage. You gain resistance to acid damage.</p>
+        </description>
+        <sheet>
+            <description>Your body has begun to lose its cohesion, softening and shifting like thick jelly. You take no extra damage from critical hits due to the shuffling of your internal organs. Whenever you make a melee or ranged attack using your Eldritch Limbs, you deal an additional 1d6 acid damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Unstable Existence" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_UNSTABLE_EXISTENCE">
+        <description>
+            <p>The nature of magic is beginning to unravel your material form. Whenever you roll a natural 1,2 or 3 on a saving throw against a spell or magical ability, you reveal your Hideous Appearance.</p>
+        </description>
+        <sheet>
+            <description>The nature of magic is beginning to unravel your material form. Whenever you roll a natural 1,2 or 3 on a saving throw against a spell or magical ability, you reveal your Hideous Appearance.</description>
+        </sheet>
+    </element>
+
+
+      <!-- Transformation Level 4 -->
+    <element name="Aberrant Horror (Level 4)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_4">
+        <prerequisite>Aberrant Horror Transformation Level 3</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>You can pick one of the following Transformation Boons, or pick a boon from a lower level that you meet the prerequisites for:</p>
+            <div class="reference">
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_SAVAGE_PREDATOR" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_MASTER_OF_THE_DEEP" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_EXTREMOPHILIC_CONDITIONING" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_AMORPHOUS_FLESH" />
+            </div>
+            <p>In addition, you also gain this level’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHCG_FEAT_FEATURE_UNSTABLE_EXISTENCE" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Level 4 Boon. Entropic Abomination Flaw.</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Transformation Boon" supports="Aberrant Boon" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_UNSTABLE_EXISTENCE" />
+         </rules>        
+    </element>
+
+    <element name="Boon: Savage Predator" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_SAVAGE_PREDATOR">
+        <supports>Aberrant Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_4</requirements>
+        <description>
+            <p>Beginning at 4th level, whenever you roll to hit a target and score a natural 20, you may deal an additional 6d6 damage. This damage is the same type as your weapon. In addition, each creature of your choice that is within 30 feet of you must succeed a Wisdom saving throw or become Frightened of you for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+        </description>
+        <sheet>
+            <description>Whenever you roll to hit a target and score a natural 20, you may deal an additional 6d6 damage. This damage is the same type as your weapon. In addition, each creature of your choice that is within 30 feet of you must succeed a DC {{aberrant horror:dc}} Wisdom saving throw or become Frightened of you for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+        </sheet>
+    </element>
+    
+    <element name="Boon: Master of the Deep" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_MASTER_OF_THE_DEEP">
+        <p><em>Prerequisite: Additional Tendrils</em></p>
+        <supports>Aberrant Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_4, ID_GFG_GHCG_FEAT_FEATURE_ADDITIONAL_TENDRILS</requirements>
+        <description>
+            <p>On your turn as an action, you can rapidly grow and launch hundreds of tiny tendrils from your body. Each creature of your choice within 15 feet of you must succeed on a Dexterity saving throw. On a failed save, they suffer one of the following effects of your choice for 1 minute. You can choose different effect options for different creatures:</p>
+            <ul>
+                <li>Become poisoned.</li>
+                <li>Speed becomes 0.</li>
+                <li>Attacks against them have advantage.</li>
+            </ul>
+            <p>Once you use this feature, you cannot use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Short Rest">
+            <description>On your turn as an action, you can rapidly grow and launch hundreds of tiny tendrils from your body. Each creature of your choice within 15 feet of you must succeed on a DC {{aberrant horror:dc}} Dexterity saving throw. On a failed save, they suffer one of the following effects of your choice for 1 minute. You can choose different effect options for different creatures:&#13;
+            • Become poisoned.&#13;
+            • Speed becomes 0.&#13;
+            • Attacks against them have advantage.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Extremophilic Conditioning" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_EXTREMOPHILIC_CONDITIONING">
+        <supports>Aberrant Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_4</requirements>
+        <description>
+            <p>Starting at 4th level, your body has learned to adapt to extreme conditions, allowing you to survive where most would perish. On your turn, as an action, you can use the following Adaptation.</p>
+            <p><b>Metamorphosis.</b> You rapidly change your body’s biophysical and chemical composition in reaction to your environment. Choose one of the following options:</p>
+            <ul>
+                <li>You are resistant to Bludgeoning, Piercing, and Slashing damage. When determining falling damage, you take 1 bludgeoning damage for each 10 feet fallen in place of normal damage (maximum of 20 bludgeoning damage).</li>
+              <li>You are resistant to Fire, Lightning, and Acid damage. You are immune to the effects of extreme hot climates.</li>
+              <li>You are resistant to Cold, Thunder, and Poison damage. You are immune to the effects of extreme cold climates.</li>
+           </ul>            
+            <p>This adaptation lasts until you use this Adaptation again.</p>
+        </description>
+        <sheet action="Action">
+            <description>On your turn, as an action, you can use the following Adaptation:&#13;
+            Metamorphosis. You rapidly change your body’s biophysical and chemical composition in reaction to your environment. Choose one of the following options:&#13;
+            • You are resistant to Bludgeoning, Piercing, and Slashing damage. When determining falling damage, you take 1 bludgeoning damage for each 10 feet fallen in place of normal damage (maximum of 20 bludgeoning damage).&#13;
+            • You are resistant to Fire, Lightning, and Acid damage. You are immune to the effects of extreme hot climates.&#13;
+            • You are resistant to Cold, Thunder, and Poison damage. You are immune to the effects of extreme cold climates.&#13;
+            This adaptation lasts until you use this Adaptation again.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Amorphous Flesh" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_AMORPHOUS_FLESH">
+        <supports>Aberrant Boon</supports>
+        <p><em>Prerequisite: Shifting Form</em></p>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_ABERRANT_HORROR_LEVEL_4,ID_GFG_GHPG_FEAT_FEATURE_SHIFTING_FORM</requirements>
+        <description>
+            <p>Your body has continued to dissolve into a corrosive slurry of flesh and bone similar to an ooze. You are able to move through gaps as narrow as 1 inch wide, and you are immune to the grappled, prone, and restrained conditions. In addition, whenever you take 10 or more points of bludgeoning, piercing, or slashing damage, you may choose to continue splitting along the wound, separating into two distinct parts that reform into versions of yourself that are one size smaller than the original, each with one half of your current hit points. If you have an odd number of hit points, you choose which segment gets the additional 1 hp. As you split you may choose how your armor and other equipment is split between the two.</p>
+            <p>On your turn you may move with each form and you may also take one action with each form. You may only take one bonus action and one reaction per turn, although you may choose which segment you want to act when you do so.</p>
+            <p>You may reform into a single body as an action, which may be taken by either segment when they are both within 5 feet of one another. If you do so, you regain hit points equal to the number of hit points your other form has, and you become your normal size. Your second body lasts for one hour before dissolving into nothingness.</p>
+        </description>
+        <sheet>
+            <description>You are able to move through gaps as narrow as 1 inch wide, and you are immune to the grappled, prone, and restrained conditions. In addition, whenever you take 10 or more points of bludgeoning, piercing, or slashing damage, you may choose to continue splitting along the wound, separating into two distinct parts that reform into versions of yourself that are one size smaller than the original, each with one half of your current hit points. If you have an odd number of hit points, you choose which segment gets the additional 1 hp. As you split you may choose how your armor and other equipment is split between the two.&#13;
+            On your turn you may move with each form and you may also take one action with each form. You may only take one bonus action and one reaction per turn, although you may choose which segment you want to act when you do so.&#13;
+            You may reform into a single body as an action, which may be taken by either segment when they are both within 5 feet of one another. If you do so, you regain hit points equal to the number of hit points your other form has, and you become your normal size. Your second body lasts for one hour before dissolving into nothingness.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Entropic Abomination" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_ENTROPIC_ABOMINATION">
+        <description>
+            <p>The very essence of magic aggravates the unstable nature of your aberrant body.</p>
+            <p>Whenever you fail a saving throw to a spell or magical ability, roll on the Unstable Mutation table. If the result is less than your current unstable mutation effect, then replace it with the new result.</p>
+        </description>
+        <sheet>
+            <description>Whenever you fail a saving throw to a spell or magical ability, roll on the Unstable Mutation table. If the result is less than your current unstable mutation effect, then replace it with the new result.</description>
+        </sheet>
+    </element>
+</elements>

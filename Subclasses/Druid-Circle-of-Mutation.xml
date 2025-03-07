@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of Mutation</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="Druid-Circle-of-Mutation.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Druid-Circle-of-Mutation.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of Mutation" type="Archetype" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_DRUID_CIRCLE_OF_MUTATION">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>Druids of the Circle of Mutation believe that nature should be improved in order to compete with the unnatural world. Their order hides in the darkest corners of swamps and forests, conducting experiments to warp the structure of their domain. They go unheard from for months on end, emerging from the wild with twisted vines and mutated creatures at their side. These druids have earned the scorn of other circles, discredited as those who have lost their way. In the eyes of a mutation druid, those who wish to preserve nature as it is simply fear what change brings.</p>
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_MUTATION_MUTATE_SHAPE" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_MUTATION_CIRCLE_FORMS" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_MUTATION_UNNATURAL_AND_UNNERVING" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_MUTATION_ENDLESS_EVOLUTION" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_MUTATION_APEX_PREDATOR_AURA" />
+		</description>
+		<sheet display="false">
+			<description>Druids of the Circle of Mutation believe that nature should be improved in order to compete with the unnatural world. Their order hides in the darkest corners of swamps and forests, conducting experiments to warp the structure of their domain.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_MUTATION_MUTATE_SHAPE" level="2" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_MUTATION_CIRCLE_FORMS" level="2" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_MUTATION_UNNATURAL_AND_UNNERVING" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_MUTATION_ENDLESS_EVOLUTION" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_MUTATION_APEX_PREDATOR_AURA" level="14" />
+		</rules>
+	</element>
+
+    <element name="Mutate Shape" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_MUTATION_MUTATE_SHAPE">
+        <description>
+            <p>Starting when you choose this circle at 2nd level, you can use a bonus action to use your Wild Shape.</p>
+            <p class="indent">In addition, while you are transformed by Wild Shape, you can use a bonus action to expend a spell slot and gain a number of mutation points equal to the level of the spell slot expended. These mutation points last until they are spent or your use of Wild Shape ends. While you are in your beast shape you can expend one or more mutation points (no action required by you) to select a mutation from the list below. When you do, your physical body contorts and changes in a gruesome display.</p>
+            <p>Chosen mutations last for the duration of your Wild Shape.</p>
+            <p class="indent"><b>Creature of the Sea.</b> For 1 mutation point, you can breathe air and water and gain a swim speed of 30 feet. For an additional 1 mutation point, your swim speed increases to 60 feet.</p>
+            <p class="indent"><b>Creature of the Sky.</b> For 3 mutation points, you gain a fly speed of 30 feet. For an additional 2 mutation points, your fly speed increases to 60 feet.</p>
+            <p class="indent"><b>Darkvision.</b> For 1 mutation point, you gain darkvision out to a distance of 60 feet.</p>
+            <p class="indent"><b>Echolocation.</b> For 4 mutation points, you have blindsight out to a distance of 30 feet while you are not deafened.</p>
+            <p class="indent"><b>Enchanted Attacks.</b> For 1 mutation point, your attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
+            <p class="indent"><b>Enlarge.</b> For 1 mutation point, your size increases by one step (from Medium to Large, for example). You can spend an additional 2 mutation points to increase your size by two steps instead (from Medium to Huge, for example).</p>
+            <p class="indent"><b>Multiattack.</b> For a number of mutation points equal to 2 + 2 x your beast form’s CR, whenever you use your action to make a natural weapon attack you can make two natural weapon attacks instead.</p>
+            <p class="indent"><b>Natural Armor.</b> For 1, 2, or 3 mutation points you increase your AC by an equal amount.</p>
+            <p class="indent"><b>Reduce.</b> For 1 mutation point, your size decreases by one step (from Medium to Small, for example). You can spend an additional 2 mutation points to decrease your size by two steps instead (from Medium to Tiny, for example).</p>
+            <p class="indent"><b>Unnatural Voice.</b> For 1 mutation point, you can speak as normal, even if your beast shape lacks the anatomy for such vocalizations. This does not allow for spellcasting while in Wild Shape form.</p>
+            <p class="indent"><b>Venomous Attacks.</b> For 2 mutation points, attacks you make with your natural weapons deal an additional 1d4 poison damage.</p>
+        </description>
+		<sheet action="Bonus Action">
+			<description>As a bonus action, you can expend a spell slot and gain a number of mutation points equal to the level of the spell slot expended:&#13;
+                • Creature of the Sea.  For 1 mutation point, you can breathe air and water and gain a swim speed of 30 feet. For an additional 1 mutation point, your swim speed increases to 60 feet.&#13;
+                • Creature of the Sky. For 3 mutation points, you gain a fly speed of 30 feet. For an additional 2 mutation points, your fly speed increases to 60 feet.&#13;
+                • Darkvision. For 1 mutation point, you gain darkvision out to a distance of 60 feet.&#13;
+                • Echolocation. For 4 mutation points, you have blindsight out to a distance of 30 feet while you are not deafened.&#13;
+                • Enchanted Attacks. For 1 mutation point, your attacks count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.&#13;
+                • Enlarge. For 1 mutation point, your size increases by one step (from Medium to Large, for example). You can spend an additional 2 mutation points to increase your size by two steps instead (from Medium to Huge, for example).&#13;
+                • Multiattack. For a number of mutation points equal to 2 + 2 x your beast form’s CR, whenever you use your action to make a natural weapon attack you can make two natural weapon attacks instead.&#13;
+                • Natural Armor. For 1, 2, or 3 mutation points you increase your AC by an equal amount.&#13;
+                • Reduce. For 1 mutation point, your size decreases by one step (from Medium to Small, for example). You can spend an additional 2 mutation points to decrease your size by two steps instead (from Medium to Tiny, for example).&#13;
+                • Unnatural Voice. For 1 mutation point, you can speak as normal, even if your beast shape lacks the anatomy for such vocalizations. This does not allow for spellcasting while in Wild Shape form.&#13;
+                • Venomous Attacks. For 2 mutation points, attacks you make with your natural weapons deal an additional 1d4 poison damage.&#13;
+            These mutation points last until they are spent or your use of Wild Shape ends. While you are in your beast shape you can expend one or more mutation points (no action required by you) to select a mutation.</description>
+		</sheet>
+    </element>
+
+    <element name="Circle Forms" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_MUTATION_CIRCLE_FORMS">
+		<description>
+			<p>Also at 2nd level, your ability to transform into dangerous beasts is enhanced. Starting when you gain this feature, you can use your Wild Shape to transform into a beast with a challenge rating 1 or lower. You ignore the Max CR column of the Beast Shapes table, but must abide by the other limitations there.</p>
+			<p class="indent">Starting at 6th level, you can transform into a beast with a challenge rating equal to or less than your druid level divided by 3, rounded down.</p>
+		</description>
+		<sheet>
+			<description>You can use your Wild Shape to transform into a beast with a CR as high as {{circle forms:cr}}.</description>
+		</sheet>
+		<rules>
+			<stat name="circle forms:cr" value="1" bonus="base" />
+			<stat name="circle forms:cr" value="2" level="6" bonus="base" />
+			<stat name="circle forms:cr" value="3" level="9" bonus="base" />
+			<stat name="circle forms:cr" value="4" level="12" bonus="base" />
+			<stat name="circle forms:cr" value="5" level="15" bonus="base" />
+			<stat name="circle forms:cr" value="6" level="18" bonus="base" />
+		</rules>
+	</element>
+
+    <element name="Unnatural and Unnerving" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_MUTATION_UNNATURAL_AND_UNNERVING">
+        <description>
+            <p>Starting at 6th level, you gain proficiency with the Intimidation skill if you don’t already have it. If you are already proficient in Intimidation, you gain proficiency in one skill of your choice from the following: Athletics, Acrobatics, Perception, Stealth, or Survival.</p>
+            <p>In addition, you have advantage on Charisma (Intimidation) ability checks you make while you are in your beast shape and have at least one mutation.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Charisma (Intimidation) ability checks you make while you are in your beast shape and have at least one mutation.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Skill Proficiency (Unnatural and Unnerving)" supports="ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" default="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+		</rules>
+    </element>
+
+    <element name="Endless Evolution" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_MUTATION_ENDLESS_EVOLUTION">
+        <description>
+            <p>At 10th level, when you enter your Wild Shape you gain a number of mutation points equal to your Wisdom modifier (minimum 1). Unspent mutation points are lost when you leave your beast shape.</p>
+            <p class="indent">In addition, you can use an action to touch a beast and expend a spell slot, causing it to mutate to your liking. You gain a number of mutation points equal to the level of the spell slot or the CR of the beast, whichever is lower. As part of the same action, you must spend all mutation points on mutations which manifest in the beast. Unspent mutation points are lost. Mutations remain indefinitely until the same beast is targeted by a different use of this feature or the dispel magic spell, remove curse spell, or similar magic.</p>
+        </description>
+        <sheet>
+            <description>When you enter your Wild Shape you gain {{endless evolution}} of mutation points. Unspent mutation points are lost when you leave your beast shape.&#13;
+            In addition, you can use an action to touch a beast and expend a spell slot, causing it to mutate to your liking. You gain a number of mutation points equal to the level of the spell slot or the CR of the beast, whichever is lower. As part of the same action, you must spend all mutation points on mutations which manifest in the beast. Unspent mutation points are lost. Mutations remain indefinitely until the same beast is targeted by a different use of this feature or the dispel magic spell, remove curse spell, or similar magic.</description>
+        </sheet>
+        <rules>
+            <stat name="endless evolution" value="1" bonus="base" />
+            <stat name="endless evolution" value="wisdom:modifier" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Apex Predator Aura" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_MUTATION_APEX_PREDATOR_AURA">
+        <description>
+            <p>Starting at 14th level, beasts that begin their turn within 30 feet of you must make a Wisdom saving throw with a DC equal to your druid spell save. On a failure, the creature is frightened for 10 minutes. On a success, the creature is immune to this effect for the next 24 hours. An affected creature can use its action on each subsequent turn to steel themselves and repeat the saving throw, ending and becoming immune to this fear effect for the next 24 hours on a success.</p>
+            <p class="indent">You can use an action to cause this aura to affect chosen creatures within 30 feet, instead of only beasts, until the start of your next turn. Once you use this special action, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet action="Action">
+            <description>Beasts that begin their turn within 30 feet of you must make a DC {{circle of mutation:dc}} Wisdom saving throw. On a failure, the creature is frightened for 10 minutes. On a success, the creature is immune to this effect for the next 24 hours. An affected creature can use its action on each subsequent turn to steel themselves and repeat the saving throw, ending and becoming immune to this fear effect for the next 24 hours on a success.&#13;
+            You can use an action to cause this aura to affect chosen creatures within 30 feet, instead of only beasts, untsil the start of your next turn. Once you use this special action, you can’t use it again until you finish a long rest.</description>
+        </sheet>
+        <rules>
+            <stat name="circle of mutation:dc" value="8" />
+            <stat name="circle of mutation:dc" value="proficiency" />
+            <stat name="circle of mutation:dc" value="wisdom:modifier" />
+        </rules>
+    </element>
+</elements>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ogresh</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="race-ogresh.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-ogresh.xml" />
+		</update>
+	</info>
+
+	<!-- Ogresh Race -->
+	<element name="Ogresh" type="Race" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACE_OGRESH">
+		<description>
+			<p>The populous races of Etharis all have stories about the ogresh, although few have seen them in person. Stories describe them as solitary wise men and women who serve as founts of information and advice for the nearby communities. Adventure tales abound where the protagonist receives counsel from an ogresh before setting off on their quest, and yet others describe royal advisors with a distinctive set of wide features. Regardless of the veracity of such tales, the ogresh still exist across the continent, viewed as something of an exotic oddity.</p>
+			<p>In truth, the scarcity of the ogresh is a result of their particular biology. Young ogresh mature slowly, and during their extended youth, which may last decades, they are driven by a deep-seated sense of wanderlust. This feeling compels them to travel in search of a suitable area to settle, consisting of ample natural resources, a local population of sentient creatures, and a lack of other ogresh nearby. Once they decide upon an area, an ogresh enters the second stage of their life, which is marked by a drastically increased appetite and a mostly sedentary lifestyle. More than a single ogresh could easily deplete the surplus of a small village, so the reason for their wanderlust is a simple case of biological necessity.</p>
+            <p>Given their reliance on other species, it comes as no surprise that the ogresh are masters of social interaction. Each individual is born with an inherent ability to read body language and vocal cues helpful in discerning the attitude of others. Indeed, the vast stores of knowledge often attributed to the ogresh is a reflection of their uncanny ability to glean information about an individual through these subtle clues. Even a casual conversation could end up revealing far more than one would intend to these keen observers, and the ogresh are smart enough to capitalize on such information.</p>
+			<h4>OGRESH TRAITS</h4>
+            <p>Ogresh possess inborn traits that contribute to their reputation as master communicators.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 2 and your Constitution and Wisdom scores increase by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Ogresh reach maturity around age 25 and can live as long as 300 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> In order to fit in with the societies they attach themselves to, ogresh are usually flexible when it comes to ideas of alignment, meaning that most of them tend towards neutrality.</p>
+			<p class="indent"><strong><em>Size.</em></strong> While only a little taller than a human, around 6 to 7 feet tall, an ogresh has a distinctively wide build which makes them significantly heavier than humans, even before they enter the sedentary portion of their life. A young ogresh usually ranges between 200 and 300 pounds, while an older, settled ogresh can get upwards of 700 to 800 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Takes One to Know One.</em></strong> You have advantage on saving throws against being charmed.</p>
+			<p class="indent"><strong><em>Powerful Build.</em></strong> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+            <p class="indent"><strong><em>Gift of Gab.</em></strong> You gain proficiency with two of the following skills of your choice: Persuasion, Insight, Deception, and Performance.</p>
+			<p class="indent"><strong><em>A Friendly Ear.</em></strong> Once per short rest, you can attempt to charm a non-hostile creature you are conversing with if you converse with them for at least one minute. The creature must make a Wisdom saving throw, the DC for this saving throw equals 8 + your Charisma modifier + your proficiency bonus. On a failed save, the target becomes charmed by you for one hour, and you learn one piece of information that the target knows that relates to the topic of your conversation, at the DM’s discretion. Regardless of whether or not the target makes the save, they remain unaware of your attempt.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write three languages of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height">6'</set>
+			<set name="weight">200 lb.</set>
+		</setters>
+		<rules>
+			<!-- Ability Score Increase (Constitution +1, Charisma +2, Wisdom +1) -->
+            <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase (+2 and +1, or three +1's) -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Ogresh)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ogresh)" supports="Custom Ability Score Increase 1" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Size (Medium) -->
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+
+			<!-- Speed (30 ft. walking) -->
+			<stat name="innate speed" value="30" bonus="base" />
+
+            <!-- Takes One to Know One -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_OGRESH_TAKES_ONE_TO_KNOW_ONE" />
+
+            <!-- Powerful Build -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_OGRESH_POWERFUL_BUILD" />
+
+            <!-- Gift of Gab -->
+            <grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_OGRESH_GIFT_OF_GAB" />
+
+            <!-- A Friendly Ear -->
+            <grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_OGRESH_A_FRIENDLY_EAR" />
+
+			<!-- Languages (Choose three) -->
+			<select type="Language" name="Language (Ogresh)" supports="Standard||Exotic" number="3" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<!-- Tasha's Cauldron of Everything: Customized Language -->
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+
+	<!-- Takes One to Know One -->
+	<element name="Takes One to Know One" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_OGRESH_TAKES_ONE_TO_KNOW_ONE">
+		<description>
+			<p>You have advantage on saving throws against being charmed.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being charmed.</description>
+		</sheet>
+	</element>
+
+    <!-- Powerful Build -->
+	<element name="Powerful Build" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_OGRESH_POWERFUL_BUILD">
+		<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+		</rules>
+	</element>
+
+    <!-- Gift of Gab -->
+	<element name="Gift of Gab" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_OGRESH_GIFT_OF_GAB">
+		<description>
+			<p>You gain proficiency with two of the following skills of your choice: Persuasion, Insight, Deception, and Performance.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency with two of the following skills of your choice: Persuasion, Insight, Deception, and Performance.</description>
+		</sheet>
+        <rules>
+			<select type="Proficiency" name="Skill Proficiency (Gift of Gab)" supports="ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE" number="2" />
+		</rules>
+    </element>
+
+    <!-- A Friendly Ear -->
+	<element name="A Friendly Ear" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_OGRESH_A_FRIENDLY_EAR">
+		<description>
+			<p>Once per short rest, you can attempt to charm a non-hostile creature you are conversing with if you converse with them for at least one minute. The creature must make a Wisdom saving throw, the DC for this saving throw equals 8 + your Charisma modifier + your proficiency bonus. On a failed save, the target becomes charmed by you for one hour, and you learn one piece of information that the target knows that relates to the topic of your conversation, at the DM’s discretion. Regardless of whether or not the target makes the save, they remain unaware of your attempt.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You can attempt to charm a non-hostile creature you are conversing with if you converse with them for at least one minute. The creature must make a DC {{a friendly ear:dc}} Wisdom saving throw. On a failed save, the target becomes charmed by you for one hour, and you learn one piece of information that the target knows that relates to the topic of your conversation, at the DM’s discretion. Regardless of whether or not the target makes the save, they remain unaware of your attempt.</description>
+		</sheet>
+        <rules>
+            <stat name="a friendly ear:dc" value="8" />
+			<stat name="a friendly ear:dc" value="proficiency" />
+			<stat name="a friendly ear:dc" value="charisma:modifier" />
+        </rules>
+	</element>
+</elements>

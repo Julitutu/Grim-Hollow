@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Bugbear</name>
+		<source>Grim Hollow - Monster Grimoire</source>
+		<update version="0.1.0">
+			<file name="race-bugbear.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-bugbear.xml" />
+		</update>
+	</info>
+
+	<!-- Bugbear Race -->
+	<element name="Bugbear" type="Race" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACE_BUGBEAR">
+		<description>
+			<p>Most bugbears interacting with the populace of Etharis are those infected with the cursed disease known as Tormach’s Rage. This makes the sight of a bugbear terrifying to anyone beholding them in their terrible frenzied attacks.</p>
+            <p>Powerful magic, divine intervention, and other unusual circumstances, however, might cure a bugbear of the affliction. These cured individuals, cognizant of their previous situations and the toll it took on them physically and mentally, have a new outlook on life. What they choose to do with their freedom from the grasp of the disease, of course, changes from bugbear to bugbear.</p>
+            <p>Some might seek their own kind, hoping to find groups of bugbears who have not fallen to the disease. These, however, are extremely rare. It’s more likely that these bugbears, having been changed by their experience, attempt to join society to achieve their goals.</p>
+            <h4>BUGBEAR TRAITS</h4>
+            <p>Bugbears healed from the scourge of Tormach’s Rage retain some of the ferocity but have also been changed from the experience.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2 and your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> The toll that Tormach’s Rage takes on you shortens your life span. You reach maturity at 16 years old and tend to fade away by the age of 40.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> The perspective gained through the curse, and shedding it, makes you tend toward neutrality.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You typically grow to 7 feet tall, reaching 300 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Battle-tested.</em></strong> You have advantage on saving throws that would cause you to become charmed or frightened. You also have advantage on Charisma (Intimidation) checks.</p>
+			<p class="indent"><strong><em>Controlled Frenzy.</em></strong> You can enter a state of controlled rage a number of times equal to your proficiency bonus. It is no action to enter the state, which lasts until the start of your next turn. While in this state, you add 1d6 to your weapon damage. This extra damage increases to 1d10 at 7th level and 1d12 at 14th level. The uses of your controlled frenzy refresh after finishing a long rest.</p>
+            <p class="indent"><strong><em>Hardy.</em></strong> You have advantage on Constitution saving throws.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You speak Goblin and one national language.</p>
+        </description>
+		<sheet display="false" />
+		<setters>
+			<set name="height">7'</set>
+			<set name="weight">300 lb.</set>
+		</setters>
+		<rules>
+			<!-- Ability Score Increase (Strength +2, Wisdom +1) -->
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase (+2 and +1, or three +1's) -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Bugbear)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Bugbear)" supports="Custom Ability Score Increase 1" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Size (Medium) -->
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+
+			<!-- Speed (30 ft. walking) -->
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<!-- Darkvision -->
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+            <!-- Battle-tested -->
+			<grant type="Racial Trait" id="ID_GFG_GHMG_RACIAL_TRAIT_BUGBEAR_BATTLE_TESTED" />
+
+            <!-- Controlled Frenzy -->
+			<grant type="Racial Trait" id="ID_GFG_GHMG_RACIAL_TRAIT_BUGBEAR_CONTROLLED_FRENZY" />
+
+            <!-- Hardy -->
+			<grant type="Racial Trait" id="ID_GFG_GHMG_RACIAL_TRAIT_BUGBEAR_HARDY" />
+
+			<!-- Languages (Goblin, +1 other) -->
+			<grant type="Language" id="ID_LANGUAGE_GOBLIN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+            <select type="Language" name="Language (Bugbear)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<!-- Tasha's Cauldron of Everything: Customized Language -->
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+
+	<!-- Battle-tested Trait -->
+	<element name="Battle-tested" type="Racial Trait" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACIAL_TRAIT_BUGBEAR_BATTLE_TESTED">
+		<description>
+			<p>You have advantage on saving throws that would cause you to become charmed or frightened. You also have advantage on Charisma (Intimidation) checks.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws that would cause you to become charmed or frightened. You also have advantage on Charisma (Intimidation) checks.</description>
+		</sheet>
+	</element>
+
+    <!-- Controlled Frenzy Trait -->
+	<element name="Controlled Frenzy" type="Racial Trait" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACIAL_TRAIT_BUGBEAR_CONTROLLED_FRENZY">
+		<description>
+			<p>You can enter a state of controlled rage a number of times equal to your proficiency bonus. It is no action to enter the state, which lasts until the start of your next turn. While in this state, you add 1d6 to your weapon damage. This extra damage increases to 1d10 at 7th level and 1d12 at 14th level. The uses of your controlled frenzy refresh after finishing a long rest.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>You can enter a state of controlled rage. It is no action to enter the state, which lasts until the start of your next turn. While in this state, you add 1d6 to your weapon damage.</description>
+            <description level="7">You can enter a state of controlled rage. It is no action to enter the state, which lasts until the start of your next turn. While in this state, you add 1d10 to your weapon damage.</description>
+            <description level="14">You can enter a state of controlled rage. It is no action to enter the state, which lasts until the start of your next turn. While in this state, you add 1d12 to your weapon damage.</description>
+        </sheet>
+	</element>
+
+    <!-- Hardy -->
+	<element name="Hardy" type="Racial Trait" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACIAL_TRAIT_BUGBEAR_HARDY">
+		<description>
+			<p>You have advantage on Constitution saving throws.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Constitution saving throws.</description>
+		</sheet>
+	</element>
+</elements>

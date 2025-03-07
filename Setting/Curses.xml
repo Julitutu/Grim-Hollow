@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Curses from Grim Hollow</name>
+		<update version="0.1.0">
+			<file name="Curses.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/Curses.xml" />
+		</update>
+	</info>
+
+	<!-- Curses option -->
+	<element name="Curses" type="Option" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_OPTION_CURSES">
+		<description>
+			<p>From punishing afflictions to poetic justice, curses are synonymous with dark fantasy. Within Etharis, curses are powerful spells reserved by dark casters for those they feel have truly wronged them. Curses channel dark emotions and vengeance, and grow in power when cast with spiteful intent. Woe befalls the fool who takes hag pacts lightly.</p>
+			<h4>Curse Spell List</h4>
+			<p>Curses are dark magic fueled by malice and other hostile emotions. While they are not restricted to characters by alignment, casting a curse is an evil deed. The following classes add all curses to their spell lists:</p>
+			<ul>
+				<li>Bard</li>
+				<li>Cleric</li>
+				<li>Druid</li>
+				<li>Sorcerer</li>
+				<li>Warlock</li>
+				<li>Wizard</li>
+			</ul>
+			<h4>Components</h4>
+			<p class="indent">Casting a curse requires spell components that bear a specific connection to the target of the curse. When casting a curse, the spellcaster must have all required components in their possession, regardless of any spellcasting focus or components pouch they possess.</p>
+			<h4>Shadowsteel</h4>			
+			<p>Shadowsteel is a dark combination of metallurgy and insidious sorcery. Due to its ability to hold dark magic, Shadowsteel is a required component for dark mages looking to cast curses. As each curse requires a component made of Shadowsteel, the availability of the resource can be tailored to your campaign, depending on how available your GM wishes curses to be.</p>
+			<h4>Curse Strength Table</h4>
+			<p>Curses are spells of dark emotions and twisted fate, gaining power depending on the circumstances of their use. A curse cast with the dying breath of a betrayed lover will bear considerably more power than a run-of-themill curse.</p>
+			<p>When determining the spell DC of a curse, use the spellcaster’s DC and consult the table below for modifiers:</p>
+			<h5>title</h5>
+			<table>
+				<thead>
+					<tr><td>Knowledge of the Target</td><td>Save Modifier</td></tr>
+				</thead>
+				<tr><td>Secondhand</td><td>-10</td></tr>
+				<tr><td>Firsthand</td><td>-5</td></tr>
+				<tr><td>Familiar</td><td>0</td></tr>
+				<thead><tr><td>Target’s Transgression</td></tr><tr><td>Save Modifier (only the highest applies)</td></tr></thead>
+				<tr><td>Broke a deal</td><td>+2</td></tr>
+				<tr><td>Sworn enemy</td><td>+7</td></tr>
+				<tr><td>Egregious betrayal</td><td>+10</td></tr>
+				<tr><td>Desecrated your home</td><td>+8</td></tr>
+				<tr><td>Spiteful envy</td><td>+5</td></tr>
+			</table>
+			<p class="indent">These are examples of modifiers for curses, based on the relationship between the caster and the target. A GM can modify or expand these to suit the needs of their game.</p>
+			<h4>Triggering Event</h4>
+			<p>Curses often have no immediate effect upon casting. Curses lie dormant within a target until they complete a task or action that satisfies their triggering event. For example, a target cursed with the curse of ravenous hunger will suffer no effects until they consume their next meal. Upon completing the Triggering Event, the target will automatically start the effects of the curse at stage 1.</p>
+			<h4>Stage Progression</h4>
+			<p>While curses are dangerous magic, they take time to reach full power. Curses develop in 3 stages. As a curse progresses through the stages, it becomes more harmful to the afflicted. Whenever a cursed creature fails an escalation check, they advance to the next stage of the curse. The effects of a new stage are in addition to those of previous stages. If an effect contradicts another, use the effect from the greater stage.</p>
+			<h4>Escalation</h4>
+			<p>Escalation represents the curse gaining power as time goes on. At dawn once a day, a cursed creature must make an escalation check to see if their curse escalates. To pass, a creature needs to roll an unmodified d20, and obtain a score greater than the number of checks they have made on this stage. On a failed save, the cursed creature applies the effects of the next stage of the curse, in addition to any previous stages.</p>
+			<p class="indent">For example, a creature who has just been cursed makes an escalation check the following dawn. They must roll greater than a 1. The next day the DC will increase to 2, and so on. If, on the 5th dawn, they roll a 5 or less, the curse escalates to the second stage. They apply any new effects and reset the DC to 1.</p>
+			<h4>Culmination</h4>
+			<p>All curses have a culmination. This is the final intent of the curse, and often involves transforming the victim into a twisted creature, barely resembling who they once were. Culminations are truly evil effects and are almost always permanent. When a creature fails an escalation check at stage 3 of a curse, they apply the effects of the curse’s culmination. They continue to apply the effects of the previous stages, but cease making escalation checks. Once a curse’s culmination has been reached, it can only be cured with the use of a wish spell.</p>
+			<h4>Curing</h4>
+			<p>Once they have begun, curses are notoriously difficult to cure. Many adventurers have fallen to a curse before they were able to gather the components to cure it. As a result, it is not unheard of for travelling mystics to carry multiple curing ingredients with them, to sell for exorbitant prices.</p>
+			<p>To cure a curse, a cursed creature must be targeted with the remove curse spell. In addition, a number of cure components are required equal to the number of stages their curse has escalated to. For example, a curse that has escalated to stage 3 requires 3 cure components as well as a remove curse spell.</p>
+			<p>The following items outline a number of cure components that can be found within the world of Etharis. A GM can include additional components based on their setting, campaign story or game mechanic they wish to include.</p>
+			<p>Hag’s promise. A potion brewed by hags, purposely named confusingly.</p>
+			<p>A strand of hair from the lost but not found. From a pillow or other possession of a lost person.</p>
+			<p>A twice-murdered raven. A raven that has been killed, resurrected, then killed again.</p>
+			<p>The highest pinecone of a forest. Found with a lot of climbing.</p>
+			<p>A clock which runs backwards. Casting slow and haste on a timepiece will cause it to tick backwards.</p>
+			<p>A black pearl, harvested but a week ago. Found with a lot of swimming.</p>
+			<p>A book that has never been read. From a publisher or printing press.</p>
+			<p>A rose that grows in darkness but not sunlight. A rare flower known as a Black Rose.</p>
+			<p> A life willingly given. Someone willing to sacrifice themself to cure the cursed.</p>
+			<p>Wish. A wish granted by a spell or entity.</p>
+			<p class="indent"></p>
+		</description>
+		<setters>
+			<set name="short">You can introduce curses to your campaign.</set>
+		</setters>
+	</element>
+
+	<!-- Curses -->
+	<element name="Curse of Conceited Obsession" type="Spell" source="Grim Hollow - Campaing Guide" id="ID_GHCG_SPELL_CURSE_OF_CONCEITED_OBSESSION">
+        <requirements>ID_GFG_GHCG_OPTION_CURSES</requirements>
+		<supports>Curses, Spell Saving Throw</supports>
+        <description>
+            <p>This spell curses a creature on the same plane of existence as you with an obsessive self-infatuation. The target must make a Charisma saving throw against the spell’s DC, which is modified by the Curse Strength Table. On a successful save, the target becomes aware that somebody attempted to curse them. On a failed save, the target becomes cursed and is unaware of this. Upon the completion of this curse’s triggering event, the target automatically advances to stage 1 of this curse.</p>
+            <p class="indent"><b>Triggering event.</b> The next time the cursed creature looks into a mirror or reflective surface, it spontaneously cracks.</p>
+            <ul>
+                <li><b>Stage 1.</b> The cursed creature is compelled to stop and admire themselves whenever they see their own reflection.</li>
+                <li><b>Stage 2.</b> The cursed creature becomes obsessed with looking for and finding its own reflection wherever it goes. Additionally, the cursed creature has disadvantage on attack rolls.</li>
+                <li><b>Stage 3.</b> The cursed creature is driven to find or, if necessary, build a location where it can see its own reflection from many angles. The cursed creature is compelled to remain in this location and admire itself. Additionally, attack rolls against the creature gain advantage.</li>
+            </ul>
+            <p class="indent"><b>Culmination.</b> Upon failing the final escalation check, the cursed creature twists into a deformed figure and becomes a Weeping Willow. If the creature is a player character, they become an NPC under the GM’s control.</p>
+        </description>
+        <setters>
+            <set name="level">6</set>
+            <set name="school">Enchantment</set>
+            <set name="time">1 hour</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a thread from the bed of your target, a handful of teeth, and a Shadowsteel gilded mirror worth at least 1,000 gp, all of which the spell consumes</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+            <set name="duration">Until Cured</set>
+            <set name="keywords">curse</set>
+        </setters>
+    </element>
+	<element name="Curse of Damned Aging" type="Spell" source="Grim Hollow - Campaing Guide" id="ID_GHCG_SPELL_CURSE_OF_DAMNED_AGING">
+        <requirements>ID_GFG_GHCG_OPTION_CURSES</requirements>
+		<supports>Curses, Spell Saving Throw</supports>
+		<description>
+			<p>This spell curses a creature on the same plane of existence as you with withering and horrific aging. The target must make a Strength saving throw against the spell’s DC, which is modified by the Curse Strength Table. On a successful save, the target becomes aware that somebody attempted to curse them. On a failed save, the target becomes cursed and is unaware of this. Upon the completion of this curse’s triggering event, the target automatically advances to stage 1 of this curse.</p>
+            <p class="indent"><b>Triggering event.</b> The next time the target changes clothing, they find multiple wrinkles, grey hairs and liver spots they did not previously have.</p>
+            <ul>
+                <li><b>Stage 1.</b> The cursed creature is compelled to rest when the occasion permits it, becoming lethargic and lazy.</li>
+                <li><b>Stage 2.</b> The cursed creature becomes feeble as their muscle mass begins to deteriorate. The cursed creature has disadvantage on Strength saving throws.</li>
+                <li><b>Stage 3.</b> The cursed creature starts to age rapidly, becoming decrepit. The cursed creature’s Strength score becomes 6, unless it was already lower.</li>
+            </ul>
+            <p class="indent"><b>Culmination.</b> Upon failing the final escalation check, the cursed creature twists into a deformed figure and becomes a Body Snatcher. If the creature is a player character, they become an NPC under the GM’s control.</p>
+        </description>
+		<setters>
+            <set name="level">4</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 hour</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a childhood possession of the target, a pint of blood, and a Shadowsteel stopwatch worth at least 1,000 gp, all of which the spell consumes</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+            <set name="duration">Until Cured</set>
+            <set name="keywords">curse</set>
+		</setters>
+	</element>
+	<element name="Curse of Foul Blight" type="Spell" source="Grim Hollow - Campaing Guide" id="ID_GHCG_SPELL_CURSE_OF_FOUL_BLIGHT">
+        <requirements>ID_GFG_GHCG_OPTION_CURSES</requirements>
+		<supports>Curses, Spell Saving Throw</supports>
+		<description>
+			<p>This spell curses a creature on the same plane of existence as you with a putrefying and stinking pox. The target must make a Charisma saving throw against the spell’s DC, which is modified by the Curse Strength Table. On a successful save, the target becomes aware that somebody attempted to curse them. On a failed save, the target becomes cursed and is unaware of this. Upon the completion of this curse’s triggering event, the target automatically advances to stage 1 of this curse.</p>
+            <p class="indent"><b>Triggering event.</b> The target searches their backpack, clothes drawer, or wherever else they store their garments, they find an infestation of insects.</p>
+            <ul>
+                <li><b>Stage 1.</b> The cursed creature is afflicted with a minor cough. Whenever they speak more than a few words at a time, they break into a fit of coughing.</li>
+                <li><b>Stage 2.</b> The smell of putrescence lingers in the air around the cursed creature. Food and drink quickly spoil, jewellery tarnishes, and wood rots within 10 feet of the cursed creature. Additionally, the cursed creature has disadvantage on Charisma saving throws.</li>
+                <li><b>Stage 3.</b> The cursed creature’s skin becomes riddled with pock marks, pustules, and lesions. Insects flock to the cursed creature, infesting their clothes. The cursed creature’s Charisma score becomes 6, unless it was already lower.</li>
+            </ul>
+            <p class="indent"><b>Culmination.</b> Upon failing the final escalation check, the cursed creature twists into a deformed figure and becomes a Plague Carrion. If the creature is a player character, they become an NPC under the GM’s control.</p>
+		</description>
+		<setters>
+            <set name="level">4</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 hour</set>
+            <set name="range">Self</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a shred of the target’s clothing, a chunk of rotten flesh, and a Shadowsteel jewellery box worth at least 1,000 gp, all of which the spell consumes</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+            <set name="duration">Until Cured</set>
+            <set name="keywords">curse</set>
+		</setters>
+	</element>
+	<element name="Curse of Ill-Fated Fortune" type="Spell" source="Grim Hollow - Campaing Guide" id="ID_GHCG_SPELL_CURSE_OF_ILLFATED_FORTUNE">
+		<requirements>ID_GFG_GHCG_OPTION_CURSES</requirements>
+		<supports>Curses, Spell Saving Throw</supports>
+		<description>
+			<p>This spell curses a creature on the same plane of existence as you with lethal bad luck. The target must make a Dexterity saving throw against the spell’s DC, which is modified by the Curse Strength Table. On a successful save, the target becomes aware that somebody attempted to curse them. On a failed save, the target becomes cursed and is unaware of this. Upon the completion of this curse’s triggering event, the target automatically advances to stage 1 of this curse.</p>
+			<p class="indent"><b>Triggering event.</b> The next time the target walks through a doorway or up a flight of stairs, the target stubs their toe, bruising it badly.</p>
+			<ul>
+				<li><b>Stage 1.</b> The cursed creature falls victim to minor inconveniences and bad luck. Shops they wish to visit close just as they arrive, equipment breaks at inconvenient moments, and other unfortunate events befall them.</li>
+				<li><b>Stage 2.</b> The cursed creature becomes a beacon of bad luck as otherwise harmless setbacks become increasingly dangerous. For example, objects constantly seem to be placed in their way. Additionally, the cursed creature has disadvantage on Dexterity saving throws.</li>
+				<li><b>Stage 3.</b> The cursed creature becomes dangerously accident-prone, as even the simplest tasks have unforeseen life-threatening consequences. The cursed creature’s Dexterity score becomes 6, unless it was lower already.</li>
+			</ul>
+			<p class="indent"><b>Culmination.</b> Upon failing the final escalation check, the cursed creature twists into a deformed figure and becomes a Herald of Calamity. If the creature is a player character, they become an NPC under the GM’s control.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Divination</set>
+			<set name="time">1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a shred of the target’s clothing, a splinter of bone, and a collection of Shadowsteel dice worth at least 1,000 gp, all of which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+			<set name="duration">Until Cured</set>
+			<set name="keywords">curse</set>
+		</setters>
+	</element>
+	<element name="Curse of Insatiable Greed" type="Spell" source="Grim Hollow - Campaing Guide" id="ID_GHCG_SPELL_CURSE_OF_INSATIABLE_GREED">
+		<requirements>ID_GFG_GHCG_OPTION_CURSES</requirements>
+		<supports>Curses, Spell Saving Throw</supports>
+		<description>
+			<p>This spell curses a creature on the same plane of existence as you with a bitter and self-destructive greed. The target must make a Wisdom saving throw against the spell’s DC, which is modified by the Curse Strength Table. On a successful save, the target becomes aware that somebody attempted to curse them. On a failed save, the target becomes cursed and is unaware of this. Upon the completion of this curse’s triggering event, the target automatically advances to stage 1 of this curse.</p>
+			<p class="indent"><b>Triggering event.</b> The next time the target completes a long rest, they notice they have lost a valued item.</p>
+			<ul>
+				<li><b>Stage 1.</b> The cursed creature becomes compelled to steal trinkets they do not own.</li>
+				<li><b>Stage 2.</b> The cursed creature finds a secret place to start stashing their hoard, and becomes anxious about leaving the location of their hoard for extended periods of time. Additionally, the cursed creature has disadvantage on Wisdom saving throws.</li>
+				<li><b>Stage 3.</b> The cursed creature is driven to transform their hoard into a labyrinth of possessions and treasure they have stolen. The cursed creature cannot leave this labyrinth. Additionally, the cursed creature’s Wisdom score becomes 6, unless it was already lower.</li>
+			</ul>
+			<p class="indent"><b>Culmination.</b> Upon failing the final escalation check, the cursed creature twists into a deformed figure and becomes a Verminous Abomination. If the creature is a player character, they become an NPC under the GM’s control.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a coin that the target has previously possessed, the tail of a rat, and a Shadowsteel crown of thorns worth at least 1,000 gp, all of which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+			<set name="duration">Until Cured</set>
+			<set name="keywords">curse</set>
+		</setters>
+	</element>
+	<element name="Curse of Lost Sentiment" type="Spell" source="Grim Hollow - Campaing Guide" id="ID_GHCG_SPELL_CURSE_OF_LOST_SENTIMENT">
+		<requirements>ID_GFG_GHCG_OPTION_CURSES</requirements>
+		<supports>Curses, Spell Saving Throw</supports>
+		<description>
+			<p>This spell curses a creature on the same plane of existence as you with the loss of memories and horrific madness. The target must make an Intelligence saving throw against the spell’s DC, which is modified by the Curse Strength Table. On a successful save, the target becomes aware that somebody attempted to curse them. On a failed save, the target becomes cursed and is unaware of this. Upon the completion of this curse’s triggering event, the target automatically advances to stage 1 of this curse.</p>
+			<p class="indent"><b>Triggering event.</b> The next time the target sleeps, they suffer nightmares of a person they treasure abandoning them.</p>
+			<ul>
+				<li><b>Stage 1.</b> The cursed creature begins forgetting events that have occurred within the past few days, as well as the names of acquaintances.</li>
+				<li><b>Stage 2.</b> The cursed creature forgets all but their closest companions. The curse begins creating twisting the creatures mind, creating delusions of hidden threats and scheming rivals. Additionally, the cursed creature has disadvantage on Intelligence saving throws.</li>
+				<li><b>Stage 3.</b> The cursed creature completely forgets their closest companions, who they are, and any goals they once possessed (including curing the curse). The curse twists their mind into madness and fabricates delusions of a great conspiracy only the cursed creature can prevent. The cursed creature is compelled to take any action they believe necessary to uncover this conspiracy. Additionally, the cursed creature’s Intelligence score becomes 6, unless it was already lower.</li>
+			</ul>
+			<p class="indent"><b>Culmination.</b> Upon failing the final escalation check, the cursed creature twists into a deformed figure and becomes a Dream Whisperer. If the creature is a player character, they become an NPC under the GM’s control.</p>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a lock of hair from someone the target loves, an animal’s heart, and a Shadowsteel idol worth at least 1,000 gp, all of which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+			<set name="duration">Until Cured</set>
+			<set name="keywords">curse</set>
+		</setters>
+	</element>
+	<element name="Curse of Ravenous Hunger" type="Spell" source="Grim Hollow - Campaing Guide" id="ID_GHCG_SPELL_CURSE_OF_RAVENOUS_HUNGER">
+		<requirements>ID_GFG_GHCG_OPTION_CURSES</requirements>
+		<supports>Curses, Spell Saving Throw</supports>
+		<description>
+			<p>This spell curses a creature on the same plane of existence as you with painful and unending starvation. The target must make a Constitution saving throw against the spell’s DC, which is modified by the Curse Strength Table. On a successful save, the target becomes aware that somebody attempted to curse them. On a failed save, the target becomes cursed and is unaware of this. Upon the completion of this curse’s triggering event, the target automatically advances to stage 1 of this curse.</p>
+			<p class="indent"><b>Triggering event.</b> While eating their next meal, the target bites their tongue and their mouth fills with blood.</p>
+			<ul>
+				<li><b>Stage 1.</b> The cursed creature is gripped with an insatiable appetite.</li>
+				<li><b>Stage 2.</b> The cursed creature becomes compelled to eat inappropriate items such as coins, flowers, glass, dirt. Additionally, the cursed creature has disadvantage on Constitution saving throws.</li>
+				<li><b>Stage 3.</b> The cursed creature becomes ravenous and is compelled to consume the flesh of humanoids. No other food will satiate its starvation. The cursed creature’s Constitution score becomes 6, unless it was already lower.</li>
+			</ul>
+			<p class="indent"><b>Culmination.</b> Upon failing the final escalation check, the cursed creature twists into a deformed figure and becomes a Bloated Gastromorph. If the creature is a player character, they become an NPC under the GM’s control.</p>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a morsel of food that belonged to the target, a sun-dried slug, and a Shadowsteel dining plate worth at least 1,000 gp, all of which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+			<set name="duration">Until Cured</set>
+			<set name="keywords">curse</set>
+		</setters>
+	</element>
+	<element name="Curse of Uncontrollable Wrath" type="Spell" source="Grim Hollow - Campaing Guide" id="ID_GHCG_SPELL_CURSE_OF_UNCONTROLLABLE_WRATH">
+		<requirements>ID_GFG_GHCG_OPTION_CURSES</requirements>
+		<supports>Curses, Spell Saving Throw</supports>
+		<description>
+			<p>This spell curses a creature on the same plane of existence as you with an uncontrollable temper and lust for violence. The target must make a Wisdom saving throw against the spell’s DC, which is modified by the Curse Strength Table. On a successful save, the target becomes aware that somebody attempted to curse them. On a failed save, the target becomes cursed and is unaware of this. Upon the completion of this curse’s triggering event, the target automatically advances to stage 1 of this curse.</p>
+			<p class="indent"><b>Triggering event.</b> The next time the cursed creature wields a weapon or spellcasting focus, an old wound of theirs reopens.</p>
+			<ul>
+				<li><b>Stage 1.</b> The cursed creature becomes easily agitated and aggressive.</li>
+				<li><b>Stage 2.</b> The cursed creature becomes obsessed with violence. The thrill of solo battle intoxicates them, and their demeanour toward their allies sours as the curse grows. The cursed creature cannot benefit from the spells or abilities of allies.</li>
+				<li><b>Stage 3.</b> The cursed creature is driven to insatiable bloodlust, unable to rest while there are enemies to slaughter. The cursed creature cannot complete a long rest.</li>
+			</ul>
+			<p class="indent"><b>Culmination.</b> Upon failing the final escalation check, the cursed creature twists into a deformed figure and becomes an Avatar of Slaughter. If the creature is a player character, they become an NPC under the GM’s control.</p>
+		</description>
+		<setters>
+			<set name="level">6</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon that belonged to the target, a severed hand, and a Shadowsteel knife worth at least 1,000 gp, all of which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+			<set name="duration">Until Cured</set>
+			<set name="keywords">curse</set>
+		</setters>
+	</element>
+
+</elements>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of Blood</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="Druid-Circle-of-Blood.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Druid-Circle-of-Blood.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of Blood" type="Archetype" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_DRUID_CIRCLE_OF_BLOOD">
+		<supports>Druid Circle</supports>
+		<description>
+			<p>The Circle of Blood is a keeper of old ways. They remember how ancient druids performed sacrificial rituals under a blood-red moon to appease the uncaring forces of nature. The Circle of Blood druid trades blood for life in a delicate balance to bolster their allies and destroy their enemies.</p>
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_BLOOD_CIRCLE_SPELLS" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_BLOOD_BOON" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_BLOOD_RITE_OF_THE_BLOOD_MOON" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_BLOOD_LUST" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_BLOOD_CREATE_BLOOD_ELEMENTAL" />
+		</description>
+		<sheet display="false">
+			<description>The Circle of Blood is a keeper of old ways. They remember how ancient druids performed sacrificial rituals under a blood-red moon to appease the uncaring forces of nature.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BLOOD_CIRCLE_SPELLS" level="2" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BLOOD_BOON" level="2" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BLOOD_RITE_OF_THE_BLOOD_MOON" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BLOOD_LUST" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BLOOD_CREATE_BLOOD_ELEMENTAL" level="14" />
+		</rules>
+	</element>
+
+    <element name="Circle Spells" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BLOOD_CIRCLE_SPELLS"> <!-- Falta crear los Spells -->
+		<description>
+			<p>At 3rd, 5th, 7th, and 9th level you gain access to the spells listed for that level in the Circle of Blood Spells table. Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+			<h5>Circle of Blood Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Druid Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><i>hold person, sense lifeblood</i></td></tr>
+				<tr><td>5th</td><td><i>blood bond, sanguine poppet</i></td></tr>
+				<tr><td>7th</td><td><i>circle of scarlet, dark sacrament</i></td></tr>
+				<tr><td>9th</td><td><i>dominate person, mortality</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_GHPG_SPELL_SENSE_LIFEBLOOD" level="3" spellcasting="Druid" prepared="true" />
+            <grant type="Spell" id="ID_GHPG_SPELL_BLOOD_BOND" level="5" spellcasting="Druid" prepared="true" />
+            <grant type="Spell" id="ID_GHPG_SPELL_SANGUINE_POPPET" level="5" spellcasting="Druid" prepared="true" />
+            <grant type="Spell" id="ID_GHPG_SPELL_CIRCLE_OF_SCARLET" level="7" spellcasting="Druid" prepared="true" />
+            <grant type="Spell" id="ID_GHPG_SPELL_DARK_SACRAMENT" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DOMINATE_PERSON" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_GHPG_SPELL_MORTALITY" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+    </element>
+
+    <element name="Blood Boon" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BLOOD_BOON">
+        <description>
+			<p>When you choose this circle at 2nd level, when a creature you can see within 60 feet of you dies, you can use your reaction to claim the last vestiges of its vitality. You regain one previously spent Hit Dice. When you do, you can grant a creature you can see within 60 feet of you a number of temporary hit points equal to your druid level.</p>
+            <p>You can use this feature a number of times equal to your Wisdom modifier, regaining all expended uses at the end of a long rest.</p>
+        </description>
+        <sheet usage="{{wisdom:modifier}}/Long Rest" action="Reaction">
+			<description>When a creature you can see within 60 feet of you dies, you can use your reaction to claim the last vestiges of its vitality. You regain one previously spent Hit Dice. When you do, you can grant a creature you can see within 60 feet of you a {{level:druid}} of temporary hit points.</description>
+        </sheet>
+    </element>
+
+    <element name="Rite of the Blood Moon" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BLOOD_RITE_OF_THE_BLOOD_MOON">
+        <description>
+            <p>At 6th level, you learn a rite that invokes the power within a creature’s blood. As an action, you can expend one use of your Wild Shape class feature to drive yourself or a willing creature within 5 feet of you into a blood frenzy which lasts for 1 minute. The affected creature gains the following benefits:</p>
+            <ul>
+                <li>It gains resistance to bludgeoning, piercing, and slashing damage against weapons which are not magical.</li>
+                <li>It gains darkvision to a range of 60 feet and advantage on Wisdom (Perception) checks.</li>
+                <li>It can roll a d8 in place of the normal damage of its unarmed strike. When it takes the Attack action on its turn, it can make one attack with its unarmed strike as a bonus action.</li>
+                <li>Its speed increases by 10 feet.</li>
+                <li>It can’t speak or cast spells.</li>
+            </ul>
+            <p>Only one creature at a time can be affected by your Blood Rite. If you use the Rite of the Blood Moon on another creature, the effects of the Rite end for any other creature.</p>
+        </description>
+        <sheet action="Action">
+            <description>As an action, you can expend one use of your Wild Shape class feature to drive yourself or a willing creature within 5 feet of you into a blood frenzy which lasts for 1 minute. The affected creature gains the following benefits:&#13;
+            • It gains resistance to bludgeoning, piercing, and slashing damage against weapons which are not magical.&#13;
+            • It gains darkvision to a range of 60 feet and advantage on Wisdom (Perception) checks.&#13;
+            • It can roll a d8 in place of the normal damage of its unarmed strike. When it takes the Attack action on its turn, it can make one attack with its unarmed strike as a bonus action.&#13;
+            • Its speed increases by 10 feet.&#13;
+            • It can’t speak or cast spells.&#13;
+			Only one creature at a time can be affected by your Blood Rite. If you use the Rite of the Blood Moon on another creature, the effects of the Rite end for any other creature.</description>
+        </sheet>
+    </element>
+
+    <element name="Blood Lust" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BLOOD_LUST">
+        <description>
+            <p>Starting at 10th level, those under the effect of your Blood Rite can sacrifice a piece of their own vitality to enhance their capacity for destruction. Once on each of its turns when a creature under the effects of your Rite of the Blood Moon feature makes a damage roll, it can expend a hit die and add the result to the damage roll.</p>
+        </description>
+        <sheet>
+            <description>Once on each of its turns when a creature under the effects of your Rite of the Blood Moon feature makes a damage roll, it can expend a hit die and add the result to the damage roll.</description>
+        </sheet>
+    </element>
+
+    <element name="Create Blood Elemental" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_BLOOD_CREATE_BLOOD_ELEMENTAL">
+        <description>
+            <p>Starting at 14th level, when a creature you can see within 60 feet of you dies, you can use your reaction to fully exsanguinate its corpse, conjuring a water elemental composed of its blood and bound to your service.</p>
+            <p class="indent">Roll initiative for the elemental, which has its own turns. It obeys your verbal commands. The elemental remains in your service for 1 hour or until it is reduced to 0 hit points, at which point it collapses into a pool of blood.</p>
+            <p class="indent">Once you conjure an elemental with this feature, you can’t use the feature again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest" action="Reaction">
+            <description>When a creature you can see within 60 feet of you dies, you can use your reaction to fully exsanguinate its corpse, conjuring a water elemental composed of its blood and bound to your service.&#13;
+            Roll initiative for the elemental, which has its own turns. It obeys your verbal commands. The elemental remains in your service for 1 hour or until it is reduced to 0 hit points, at which point it collapses into a pool of blood.</description>
+        </sheet>
+    </element>
+</elements>

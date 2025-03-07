@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grudgel</name>
+		<source>Grim Hollow - Monster Grimoire</source>
+		<update version="0.1.0">
+			<file name="race-grudgel.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-grudgel.xml" />
+		</update>
+	</info>
+
+	<!-- Grudgel Race -->
+	<element name="Grudgel" type="Race" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACE_GRUDGEL">
+		<description>
+			<p>Although it’s disorienting to not remember your life before waking up one morning in a fog, your people are incredibly resourceful and clear-headed. Your early days on Etharis were not easy, as your physical form struck fear into the hearts of Etharis’s less fierce inhabitants. Some heard tales from their ancestors about creatures like you being evil and cruel.</p>
+            <p>But you are neither, and your helpfulness and peaceful demeanor helped those around you find a place in the world. Still, in regions where few grudgels have migrated, fear is still the first reaction you see from others.</p>
+            <h4>GRUDGEL TRAITS</h4>
+            <p>Grudgels bring both brains and brawn to their endeavors.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2 and your Strength score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> While your people have not been on Etharis long enough to get precise life-span measurements, it appears that most of your kind mature by age 15 and live to about 75 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> You have a tendency toward order over chaos, of cooperation over selfishness.</p>
+            <p class="indent"><strong><em>Size.</em></strong> You are generally larger than humans, averaging well over 6 feet tall and 250 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+            <p class="indent"><strong><em>Center.</em></strong> You can use a bonus action to focus before making an attack roll or ability check. If you do so, you have advantage on your next attack roll or ability check before the end of your turn. You can use this ability again after completing a short or long rest.</p>
+            <p class="indent"><strong><em>Warrior.</em></strong> You have proficiency with simple weapons, light armor, shields, and one martial weapon of your choice.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You speak Grudgel and one national language</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height">6'</set>
+			<set name="weight">250 lb.</set>
+		</setters>
+		<rules>
+			<!-- Ability Score Increase (Dexterity +2, Strenght +1) -->
+            <stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase (+2 and +1, or three +1's) -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Grudgel)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Grudgel)" supports="Custom Ability Score Increase 1" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Size (Medium) -->
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+
+			<!-- Speed (30 ft. walking) -->
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<!-- Darkvision -->
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+            <!-- Center -->
+            <grant type="Racial Trait" id="ID_GFG_GHMG_RACIAL_TRAIT_GRUDGEL_CENTER" />
+
+            <!-- Warrior -->
+			<grant type="Racial Trait" id="ID_GFG_GHMG_RACIAL_TRAIT_GRUDGEL_WARRIOR" />
+
+			<!-- Languages (Grudgel, +1 other) -->
+            <grant type="Language" id="ID_GHMG_LANGUAGE_GRUDGEL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Grudgel)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<!-- Tasha's Cauldron of Everything: Customized Language -->
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+
+    <!-- Center -->
+	<element name="Center" type="Racial Trait" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACIAL_TRAIT_GRUDGEL_CENTER">
+		<description>
+			<p>You can use a bonus action to focus before making an attack roll or ability check. If you do so, you have advantage on your next attack roll or ability check before the end of your turn. You can use this ability again after completing a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest" action="Bonus Action">
+			<description>You can use a bonus action to focus before making an attack roll or ability check. If you do so, you have advantage on your next attack roll or ability check before the end of your turn.</description>
+		</sheet>
+	</element>
+
+    <!-- Warrior -->
+	<element name="Warrior" type="Racial Trait" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACIAL_TRAIT_GRUDGEL_WARRIOR">
+		<description>
+			<p>You have proficiency with simple weapons, light armor, shields, and one martial weapon of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency with simple weapons, light armor, shields, and one martial weapon of your choice.</description>
+		</sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+            <select type="Proficiency" name="Martial Weapon Proficiency" supports="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY"/>
+        </rules>
+	</element>
+
+    	<!-- Grudgel Language -->
+
+	<element name="Grudgel" type="Language" source="Grim Hollow - Monster Grimoireal" id="ID_GHMG_LANGUAGE_GRUDGEL">
+		<supports>Standard</supports>
+		<description>
+			<p>Spoken by the Grudgels.</p>
+		</description>
+		<setters>
+            <set name="script">Common</set>
+			<set name="speakers">Grudgel</set>
+		</setters>
+	</element>
+</elements>

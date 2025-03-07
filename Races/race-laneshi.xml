@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Laneshi</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="race-laneshi.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-laneshi.xml" />
+		</update>
+	</info>
+
+	<!-- Laneshi Race -->
+	<element name="Laneshi" type="Race" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACE_LANESHI">
+		<description>
+			<p>Deep beneath the waves lies the Llana’Shi Empire. An ancient race, the laneshi straddle the line between life and death, communing with spirits for guidance and unafraid to meet death on the battlefield. Pale humanoids with manes of kelp-like hair, they seek the underlying duality of everything they encounter. A laneshi is more likely than not to view matters in absolutes and react accordingly. Friend or foe. Day or night. Acceptance or rejection. All things must have their place, and to this end they have developed a rigid caste system.</p>
+			<p>The mystic caste comprises all those laneshi who are born as twins, a very common occurrence. When this happens, the first-born of the pair is inducted into the mystic caste, while the other twin is consecrated as his or her sibling’s spirit guide. Using a powerful necromantic ritual, the second twin is sacrificed and its soul bound within the body of the other. Each member of the mystic caste is therefore possessed of two souls: one living and one dead. This grants them vision into the spirit world and heightens their necromantic abilities. Mystics are in charge of all things that possess no life, and are therefore in charge of funeral rites, crafting, construction, recordkeeping, and food preparation. Heavier duties are usually performed with the aid of undead labor.</p>
+            <p>The second caste, the warrior caste, is in charge of all things relating to the living. This includes not only warfare, but also ruling, diplomacy, farming, the raising and educating of children, and so forth. The warrior caste is roughly double the size of the mystic caste and is structured as a meritocracy, with great deeds leading to greater status. The laneshi are constantly at war with their deep-dwelling neighbors, and use their ability to speak with the marine wildlife to find opportunities for heroism and advancement.</p>
+			<p>Despite this, the rulers of the Llana’Shi Empire have recently turned their eyes toward the surface for unknown reasons. Perhaps some new and greater threat is stirring in the dark depths of the sea, and the Laneshi seek aid from their air-breathing cousins. Or perhaps the rumors of mysterious visitors to the royal palace and blasphemous compacts with ancient evils are true, and the laneshi king is looking for new lands to conquer to appease the hunger of his unnamable master.</p>
+			<h4>LANESHI TRAITS</h4>
+            <p>The strict laneshi caste system governed your early training, and you also inherit certain fundamental traits due to your parentage.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1, and your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Laneshi mature quickly, reaching adulthood at around 14, and live up to 150 years old.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Laneshi have a strong tendency towards law, as is reflected in the regimented society and caste system. They don’t show any particular leaning in regards to good and evil, however, with both showing up among their ranks in equal numbers.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Laneshi are about the same size and build as humans. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet. You have a base swimming speed of 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Born in the depths of the ocean where little light penetrates, the laneshi are at home in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern colour in darkness, only shades of grey.</p>
+            <p class="indent"><strong><em>Amphibious.</em></strong> You can breathe both air and water.</p>
+			<p class="indent"><strong><em>Beast Whisperers.</em></strong> You know the speak with animals spell. You can cast it once per day with this trait, regaining the ability to do so upon the completion of a long rest.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Laneshi and one other language of your choice.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> The circumstances of their birth determine which caste a particular laneshi belongs to, and therefore the rituals and training which govern their early life. The warrior caste involves rigorous physical training, weapon skills, and mounted combat. The mystic caste are born as twins, and contain the bound soul of their departed sibling bound within themselves.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height">5'</set>
+			<set name="weight">120 lb.</set>
+		</setters>
+		<rules>
+			<!-- Ability Score Increase (Strength +1, Wisdom +1) -->
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase (+2 and +1, or three +1's) -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Laneshi)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Laneshi)" supports="Custom Ability Score Increase 1" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Size (Medium) -->
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+
+			<!-- Speed (30 ft. walking, 30 ft. swimming) -->
+			<stat name="innate speed" value="30" bonus="base" />
+            <stat name="innate speed:swim" value="30" bonus="base" />
+
+			<!-- Darkvision -->
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+            <!-- Amphibious -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_LANESHI_AMPHIBIOUS" />
+
+            <!-- Beast Whisperers -->
+            <grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_LANESHI_BEAST_WHISPERERS" />
+
+			<!-- Languages (Common, +1 other) -->
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Laneshi)" supports="Standard||Exotic" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<!-- Tasha's Cauldron of Everything: Customized Language -->
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<!-- Subrace Selection -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_LANESHI_SUBRACE" />
+		</rules>
+	</element>
+
+	<!-- Amphibious -->
+	<element name="Amphibious" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_LANESHI_AMPHIBIOUS">
+		<description>
+			<p>You can breathe both air and water.</p>
+		</description>
+		<sheet>
+			<description>You can breathe both air and water.</description>
+		</sheet>
+	</element>
+
+    <!-- Beast Whisperers -->
+	<element name="Beast Whisperers" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_LANESHI_BEAST_WHISPERERS">
+		<description>
+			<p>You know the speak with animals spell. You can cast it once per day with this trait, regaining the ability to do so upon the completion of a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You know the speak with animals spell. You can cast it once per day with this trait, regaining the ability to do so upon the completion of a long rest.</description>
+		</sheet>
+        <rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" />
+		</rules>
+	</element>
+
+	<!-- Subrace Trait (Placeholder) -->
+	<element name="Laneshi Subrace" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_LANESHI_SUBRACE">
+		<description>
+			<p>The circumstances of their birth determine which caste a particular laneshi belongs to, and therefore the rituals and training which govern their early life. The warrior caste involves rigorous physical training, weapon skills, and mounted combat. The mystic caste are born as twins, and contain the bound soul of their departed sibling bound within themselves.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Laneshi Subrace" supports="Laneshi" />
+		</rules>
+	</element>
+
+    <!-- Laneshi Warrior Subrace -->
+	<element name="Laneshi Warrior" type="Sub Race" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_SUBRACE_LANESHI_WARRIOR">
+		<supports>Laneshi</supports>
+		<description>
+			<p>Laneshi warriors bear traits informed by their heritage and training.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by an additional 1 (total of 2).</p>
+			<p class="indent"><strong><em>Skirmish Tactics.</em></strong> When you hit a hostile creature with a weapon attack, you may take the Disengage action as a bonus action until the end of your turn.</p>
+            <p class="indent"><strong><em>Laneshi Weapon Training.</em></strong> You gain proficiency with spears, tridents, javelins and light armor. You also gain proficiency in the Animal Handling skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!-- Ability Score Increase (Strength +1) -->
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase +1 -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Laneshi Warrior)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Skirmish Tactics -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_LANESHI_WARRIOR_SKIRMISH_TACTICS" />
+
+			<!-- Laneshi Weapon Training -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_LANESHI_WARRIOR_LANESHI_WEAPON_TRAINING" />
+		</rules>
+	</element>
+
+    <!-- Skirmish Tactics -->
+	<element name="Skirmish Tactics" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_LANESHI_WARRIOR_SKIRMISH_TACTICS">
+		<description>
+			<p>When you hit a hostile creature with a weapon attack, you may take the Disengage action as a bonus action until the end of your turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you hit a hostile creature with a weapon attack, you may take the Disengage action as a bonus action until the end of your turn.</description>
+		</sheet>
+	</element>
+
+    <!-- Laneshi Weapon Training -->
+	<element name="Laneshi Weapon Training" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_LANESHI_WARRIOR_LANESHI_WEAPON_TRAINING">
+		<description>
+			<p>You gain proficiency with spears, tridents, javelins and light armor. You also gain proficiency in the Animal Handling skill.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency with spears, tridents, javelins and light armor. You also gain proficiency in the Animal Handling skill.</description>
+		</sheet>
+		<rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+     <!-- Laneshi Mystic Subrace -->
+	<element name="Laneshi Mystic" type="Sub Race" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_SUBRACE_LANESHI_MYSTIC">
+		<supports>Laneshi</supports>
+		<description>
+			<p>Laneshi mystics are changed by the circumstances of their birth.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by an additional 1 (total of 2).</p>
+            <p class="indent"><strong><em>Duality of Spirit.</em></strong> You have undergone the Rite of Tann’lia, and the soul of your dead twin is now bound to your own. You have resistance to psychic damage, and you have advantage on Intelligence, Wisdom, and Charisma saves against magic. The first time this trait activates after a long rest, you must make a DC 12 Wisdom saving throw. If you fail, your twin’s spirit attempts to wrest control away from you, leaving you stunned until the end of your next turn.</p>
+			<p class="indent"><strong><em>Laneshi Magic.</em></strong> You know one necromancy cantrip of your choice. At 5th level, you learn an additional necromancy cantrip of your choice. Wisdom is your spellcasting ability for it.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!-- Ability Score Increase (Wisdom +1) -->
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase +1 -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Laneshi Mystic)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Duality of Spirit -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_LANESHI_MYSTIC_DUALITY_OF_SPIRIT" />
+
+            <!-- Laneshi Magic -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_LANESHI_MYSTIC_LANESHI_MAGIC" />
+		</rules>
+	</element>
+
+    <!-- Duality of Spirit -->
+	<element name="Duality of Spirit" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_LANESHI_MYSTIC_DUALITY_OF_SPIRIT">
+		<description>
+			<p>You have undergone the Rite of Tann’lia, and the soul of your dead twin is now bound to your own. You have resistance to psychic damage, and you have advantage on Intelligence, Wisdom, and Charisma saves against magic. The first time this trait activates after a long rest, you must make a DC 12 Wisdom saving throw. If you fail, your twin’s spirit attempts to wrest control away from you, leaving you stunned until the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Intelligence, Wisdom, and Charisma saves against magic. The first time this trait activates after a long rest, you must make a DC 12 Wisdom saving throw. If you fail, your twin’s spirit attempts to wrest control away from you, leaving you stunned until the end of your next turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+
+    <!-- Laneshi Magic -->
+	<element name="Laneshi Magic" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_LANESHI_MYSTIC_LANESHI_MAGIC">
+		<description>
+			<p>You know one necromancy cantrip of your choice. At 5th level, you learn an additional necromancy cantrip of your choice. Wisdom is your spellcasting ability for it.</p>
+		</description>
+		<sheet>
+			<description>You know one necromancy cantrip of your choice. Wisdom is your spellcasting ability for it.</description>
+			<description level="5">You know two necromancy cantrips of your choice. Wisdom is your spellcasting ability for it.</description>
+		</sheet>
+        <rules>
+			<select type="Spell" name="Necromancy Cantrip (Laneshi Mystic)" supports="Necromancy,0" />
+            <select type="Spell" name="Necromancy Cantrip (Laneshi Mystic)" supports="Necromancy,0" level="5" />
+		</rules>
+	</element>
+</elements>

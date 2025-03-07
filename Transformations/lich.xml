@@ -1,0 +1,524 @@
+<elements>
+	<info>
+		<name>Lich Transformation</name>
+		<description>Transformation from Grim Hollow: Campaign Guide</description>
+		<author>Ghostfire Gaming</author>
+    <update version="0.1.0">
+			<file name="lich.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/lich.xml" />
+		</update>
+	</info>
+
+    <!-- Items -->
+    <element name="Lich Transformation (Level 1)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_LICH_LEVEL_1">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_LICH" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_FEAT_TRANSFORMATION_LICH" requirements="[int:16],[type:spell],([level:bard:13]|[level:cleric:13]|[level:druid:13]|[level:sorcerer:13]|[level:wizard:13])"/>
+		</rules>
+	</element>
+    <element name="Lich Transformation (Level 2)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_LICH_LEVEL_2">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_LICH" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_2" requirements="ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_1"/>
+		</rules>
+	</element>
+    <element name="Lich Transformation (Level 3)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_LICH_LEVEL_3">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_LICH" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_3" requirements="ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_2"/>
+		</rules>
+	</element>
+    <element name="Lich Transformation (Level 4)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_LICH_LEVEL_4">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_LICH" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_4" requirements="ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_3"/>
+		</rules>
+	</element>
+
+
+    <!-- Feat -->
+	<element name="Lich" type="Feat" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_TRANSFORMATION_LICH">
+        <requirements>[int:16],[type:spell]</requirements>
+		<description>
+			<p>The screams of souls torn from their bodies echo over the electric crackling of forbidden magic. A skeletal form rapidly stitches flesh and muscle to its frame, creating a seemingly living man – a man from an age and kingdom long gone. A man who has conquered death and risen again to enact his insidious will from millennia ago. The screams stop and are replaced with murmurs, as the corpses of the fallen arise as undead.</p>
+            <p>An ancient figure slowly turns the pages of a decrepit tome possessing forbidden cosmic knowledge. Tracing a bony finger over the inscription, the figure turns its head, revealing a gaunt, deathly face. “I do not receive company often,” it rasps, slowly locking eyes with a broad-shouldered warrior. The warrior makes no movement or gestures, save for his eyes, which dart rapidly around the room in search of an escape. “Oh, do not struggle. It will be over soon.” The deathly figure continues, raising itself up from a crouch. The very fabric of the room appears to warp and shudder with the figure’s power and authority.</p>
+            <p>A Lich is to the arcane what a king is to their Kingdom: undisputed, absolute power. Resting upon a throne of raw, world-rending spellcasting potential, a Lich comes as close to a God as any mortal could imagine. However, this aweinspiring power comes at a dear price. Immune to the effects of age but not time, a Lich is destined to exist without living for eternity. While this drives some Liches mad and others evil, it makes them all physically decrepit and feeble. Time itself takes their body from them until they are reduced to a skeletal head, passively watching the world pass them by.</p>
+            <h4>Becoming a Lich</h4>
+            <p>Across the Multiverse there are many ways to become a Lich, each determining the type of Lich the mortal becomes. However, within Etharis there is only one type of Lich, as there is only one known method of ascending to Lichdom: The Ritual of Dread. The process of this ritual is a well-guarded secret, entrusted to only a handful of mortals at any one time. The process of the ritual involves several despicable acts including murder, the brewing of a vile concoction, and even one’s own death. However, it is the process of tearing one’s soul from the body that is most despised, for this process involves the sacrifice of something truly dear to a mortal, and no substitute will be accepted. For some, it is the death of a cherished loved one. For others it is a family legacy. Regardless of the sacrifice, unless the Dreadscape spirits deem it worthy, Lichdom will not be granted.</p>
+			<h4>Transformation Features</h4>
+            <p>A Lich has the following transformation features:</p>
+            <h5>Prerequisites</h5>
+            <ul>
+            <li><b>Ability Scores:</b> Intelligence 16</li>
+            <li><b>Spellcasting Ability:</b> You must have the ability to cast 7th level spells.</li>
+            <li><b>Roleplay:</b> You must complete the Ritual of Dread. The process of this ritual is partially described, but left intentionally vague so it can be tailored to your setting and campaign. Discuss with your GM how you can achieve this in-game.</li>
+            </ul>
+             <p>Some of your abilities require your target to make a saving throw to resist their effects. The saving throw DC is calculated as follows:</p>
+            <center>
+                <p><b>Transformation Save DC</b> = 8 + your proficiency bonus + your Intelligence modifier</p>
+            </center>
+			<h5>Level Milestones</h5>
+            <p>The following are examples of possible level milestones for the Lich:</p>
+            <ul>
+                <li>Discover ancient and dark arcane knowledge.</li>
+                <li>Consume the soul of an exceptionally powerful spellcaster.</li>
+                <li>Build a monument to your power to serve as a giant arcane focus.</li>
+                <li>Create an army of undead.</li>
+                <li>Kill a god.</li>
+            </ul>
+		</description>
+        <sheet>
+            <description>You are undergoing the Lich transformation.</description>
+        </sheet>
+        <rules>
+            <stat name="lich:dc" value="8" />
+            <stat name="lich:dc" value="proficiency" />
+            <stat name="lich:dc" value="intelligence:modifier" />
+            
+            <grant type="Feat Feature" id="ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_1" />
+        </rules>
+	</element>
+
+     <!-- Transformation Level 1 -->
+    <element name="Lich (Level 1)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_1">
+        <prerequisite>Lich Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_FEAT_TRANSFORMATION_LICH</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 1st level, you gain the following Transformation Boons and this level’s Transformation Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_HARVESTER_OF_SOULS" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_UNDEAD_FORM" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_PHYLACTERY" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Harvester of Souls, Undead Form, Phylactery.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_HARVESTER_OF_SOULS" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_UNDEAD_FORM" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_PHYLACTERY" />
+        </rules>
+    </element>
+
+    <element name="Boon: Harvester of Souls" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_HARVESTER_OF_SOULS">
+        <supports>Lich Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_1</requirements>
+        <description>
+            <p>You have gained the ability to tear the soul out of creatures you kill and consume it for its invigorating effects. Whenever you reduce a creature to 0 hit points, if you are on the same plane of existence as your phylactery, its soul is captured and your phylactery becomes charged. On your turn, as an action, you can consume any number of charge levels from your phylactery to regain a single spell slot. When you regain a spell slot in this way, the spell slot’s level is equal to one third of the charge you consumed, rounded down.</p>
+        </description>
+        <sheet action="Action">
+            <description>Whenever you reduce a creature to 0 hit points, if you are on the same plane of existence as your phylactery, its soul is captured and your phylactery becomes charged.&#13;
+            On your turn, as an action, you can consume any number of charge levels from your phylactery to regain a single spell slot. When you regain a spell slot in this way, the spell slot’s level is equal to one third of the charge you consumed, rounded down.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Undead Form" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_UNDEAD_FORM">
+        <supports>Lich Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_1</requirements>
+        <description>
+            <p>Your Intelligence score increases by 4 and your Wisdom score increases by 2. An ability score cannot be increased beyond 22 this way. You become an Undead in addition to any other creature types you are. Spells and abilities that state effects or conditions specifically regarding Undead of a specific CR have no effect on you.</p>
+            <p>If a spell or ability other than your own would cause you to gain Hit Points, you gain that many temporary Hit Points instead. If you are reduced to 0 hit points and fall unconscious as a result, any healing you receive will stabilize you and leave you on 1 hit point and unconscious. You stop aging. You are immune to any effect that would age you, and you cannot die from old age. You do not require air, food, drink or sleep.</p>
+        </description>
+        <sheet>
+            <description>If a spell or ability other than your own would cause you to gain Hit Points, you gain that many temporary Hit Points instead. If you are reduced to 0 hit points and fall unconscious as a result, any healing you receive will stabilize you and leave you on 1 hit point and unconscious. You stop aging. You are immune to any effect that would age you, and you cannot die from old age. You do not require air, food, drink or sleep.</description>
+        </sheet>
+        <rules>
+            <stat name="intelligence" value="4" />
+            <stat name="wisdom" value="2" />
+            <stat name="intelligence:max" value="2"/>
+            <stat name="wisdom:max" value="2"/>
+            <grant type="Racial Feature" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_UNDEAD" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Phylactery" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_PHYLACTERY">
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_1</requirements>
+        <description>
+            <p>You have successfully torn your soul from your body and trapped it in a suitable object. The object must be a trinket or item no larger than 1 square foot in size. This item becomes your phylactery.</p>
+            <p><b>Phylactery.</b> A phylactery is an enchanted vessel containing a Lich’s soul. Additionally, a phylactery is a conduit for the Lich to feed on captured souls.</p>
+            <center>A phylactery has the following statistics:
+            <ul>
+                <li>Armour Class: 18</li>
+                <li>Hit Points: 90</li>
+                <li>Speed: 0</li>
+                <li>Damage Immunities: poison, psychic; bludgeoning, piercing, and slashing from non-magical sources.</li>
+                <li>Damage Resistances: necrotic, cold, thunder, lightning, force, fire.</li>
+            </ul>
+            </center>
+            <p>While a soul is stored in your phylactery, the phylactery is considered charged. Its charge level is equal to the CR of all the creatures whose soul you have captured. To store a new soul in your Phylactery, add the CR of the creature you killed to your Phylacteries charge level. The souls of creatures with a CR of less than ¼ are not great enough to charge your phylactery. Your Phylacteries charge level cannot exceed 27.</p>
+            <p>If your phylactery is reduced to 0 hit points, your soul is lost; you crumble to dust and are killed outright.</p>
+            <p>If you are killed and you control a charged phylactery on the same plane of existence, your phylactery’s charge is consumed and your body is reconstructed within 5 feet of your phylactery 7 days later. If you are killed and your Phylactery does not have a level of charge, you are reanimated 7 days later as a Demilich under the GM’s control.</p>
+        </description>
+        <sheet>
+            <description>Phylactery: A phylactery is an enchanted vessel containing a Lich’s soul. Additionally, a phylactery is a conduit for the Lich to feed on captured souls.&#13;
+            While a soul is stored in your phylactery, the phylactery is considered charged. Its charge level is equal to the CR of all the creatures whose soul you have captured. To store a new soul in your Phylactery, add the CR of the creature you killed to your Phylacteries charge level. The souls of creatures with a CR of less than ¼ are not great enough to charge your phylactery. Your Phylacteries charge level cannot exceed 27.&#13;
+            If your phylactery is reduced to 0 hit points, your soul is lost; you crumble to dust and are killed outright.
+            If you are killed and you control a charged phylactery on the same plane of existence, your phylactery’s charge is consumed and your body is reconstructed within 5 feet of your phylactery 7 days later. If you are killed and your Phylactery does not have a level of charge, you are reanimated 7 days later as a Demilich under the GM’s control.&#13;
+            Phylactery Statistics:&#13;
+            Armor Class: 18&#13;
+            Hit Points: 90&#13;
+            Speed: 0&#13;
+            Damage Immunities: poison, psychic; bludgeoning, piercing, and slashing from non-magical sources.&#13;
+            Damage Resistances: necrotic, cold, thunder, lightning, force, fire.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Level 2 -->
+    <element name="Lich (Level 2)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_2">
+        <prerequisite>Lich Transformation Level 1</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 2nd level, you can pick one of the following Transformation Boons.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_PUPPET_MASTER" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_LICHDOM_OF_THE_ARCANE" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_RIFT_TO_THE_DREADSCAPES" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_PHYLACTERY_BOND" />
+            </div>
+            <p>In addition, you gain this level’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHCG_FEAT_FEATURE_HIDEOUS_APPEARANCE_LICH" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Level 2 Boon. Hideous Appearance (Flaw)</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Transformation Boon (Level 2)" supports="Lich Boon" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_HIDEOUS_APPEARANCE_LICH" />
+        </rules>
+    </element>
+    
+    <element name="Boon: Puppet Master" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_PUPPET_MASTER">
+        <supports>Lich Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_2</requirements>
+        <description>
+            <p>Undead creatures of CR 1 or less that you animate with spells or abilities become permanently under your control. In addition, other creatures cannot gain control of undead creatures you raised.</p>
+        </description>
+        <sheet>
+            <description>Undead creatures of CR 1 or less that you animate with spells or abilities become permanently under your control. In addition, other creatures cannot gain control of undead creatures you raised.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Lichdom of the Arcane" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_LICHDOM_OF_THE_ARCANE">
+        <supports>Lich Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_2</requirements>
+        <description>
+            <p>Whenever you kill any creature with a spell, you may apply an additional effect depending on the damage dealt. Any effects with range are centred on or measured from the killed target, and if required, use your Transformation save DC. This ability cannot be used when you kill a construct, undead, or any creature without a soul.</p>
+            <p>The following are the effects caused when you use this ability:</p>
+            <ul>
+                <li><b>Fire.</b> The target is vaporised into a cloud of ash and smoke The space that the creature died in, and each space within 5 feet of it, are considered heavily obscured for 1 minute. Winds of moderate or greater speeds (at least 10 miles per hour) also disperse the cloud.</li>
+                <li><b>Necrotic.</b> As the soul of your enemy leaves their body, you are able to siphon off part of their life force. You regain hit points equal to your Intelligence modifier (minimum of 1), plus your character level.</li>
+                <li><b>Poison.</b> Target a creature within 10 feet of the killed creature. That creature must succeed on a Constitution saving throw or gain the poisoned condition for 1 minute.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Whenever you kill any creature with a spell, you may apply an additional effect depending on the damage dealt. Any effects with range are centred on or measured from the killed target, and if required, use your Transformation save DC. This ability cannot be used when you kill a construct, undead, or any creature without a soul.&#13;
+            The following are the effects caused when you use this ability:&#13;
+            • Fire. The target is vaporised into a cloud of ash and smoke The space that the creature died in, and each space within 5 feet of it, are considered heavily obscured for 1 minute. Winds of moderate or greater speeds (at least 10 miles per hour) also disperse the cloud.&#13;
+            • Necrotic. As the soul of your enemy leaves their body, you are able to siphon off part of their life force. You regain hit points equal to your {{intelligence:modifier}} (min 1), plus your character level.&#13;
+            • Poison. Target a creature within 10 feet of the killed creature. That creature must succeed on a DC {{lich:dc}} Constitution saving throw or gain the poisoned condition for 1 minute.</description>
+        </sheet>
+    </element>
+
+     <element name="Boon: Rift to the Dreadscapes" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_RIFT_TO_THE_DREADSCAPES">
+        <supports>Lich Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_2</requirements>
+        <description>
+            <p>You gain the ability to open a rift to the Dreadscapes. As an action on your turn, you can choose a point within 5 feet of you to open the rift. Once opened, the rift stretches out from that point to a 20-foot-radius sphere. When a creature other than you enters the rift’s area for the first time on its turn, or starts its turn there, it must make a Constitution saving throw against your Transformation DC. On a failed save, the creature suffers 10d10 necrotic damage, or half as much on a successful save. Undead creatures are immune to damage from this ability. The rift remains open for 1 minute, but closes if you become unconscious. Once you use this ability, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>You can choose a point within 5 feet of you to open the rift. Once opened, the rift stretches out from that point to a 20-foot-radius sphere. When a creature other than you enters the rift’s area for the first time on its turn, or starts its turn there, it must make a DC {{lich:dc}} Constitution saving throw. On a failed save, the creature suffers 10d10 necrotic damage, or half as much on a successful save. Undead creatures are immune to damage from this ability. The rift remains open for 1 minute, but closes if you become unconscious.</description>
+        </sheet>
+    </element>
+    
+    <element name="Boon: Phylactery Bond" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_PHYLACTERY_BOND">
+        <supports>Lich Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_2</requirements>
+        <description>
+            <p>You share an especially strong bond with your phylactery and gain benefits from keeping it on your person. You may choose to craft your phylactery into an amulet, a ring, a brooch, or some other form of jewelry. When you finish a short or long rest and you are wearing your phylactery, you may choose a damage type other than radiant damage. As long as you wear your phylactery, you have immunity to that damage type. In addition, your phylactery is more resilient than normal. Your phylactery’s AC becomes 20 and its hit points increase to 120.</p>
+            <p>Your phylactery’s nature is hidden from casual observation, and an observer must make an Intelligence (Arcana) check against your Transformation Save DC in order to identify your phylactery.</p>
+        </description>
+        <sheet>
+            <description>When you finish a short or long rest and you are wearing your phylactery, you may choose a damage type other than radiant damage. As long as you wear your phylactery, you have immunity to that damage type. In addition, your phylactery is more resilient than normal. Your phylactery’s AC becomes 20 and its hit points increase to 120.&#13;
+            Your phylactery’s nature is hidden from casual observation, and an observer must make a DC {{lich:dc}} Intelligence (Arcana) check in order to identify your phylactery.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Hideous Appearance" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_HIDEOUS_APPEARANCE_LICH">
+        <description>
+            <p>Your appearance has grotesquely transformed. Your skin has become rotten and pale, while your figure has become gaunt and hunched, radiating a ghastly aura. You can suppress this form and present the appearance of the humanoid you once were, however this is taxing and requires concentration. Moments of stress are likely to reveal your true nature. In the following situations your true form is revealed:</p>
+            <ul>
+                <li>Concentrating on a spell.</li>
+                <li>Gaining the unconscious condition.</li>
+                <li>Entering hallowed ground.</li>
+                <li>Choosing to reveal yourself.</li>
+            </ul>
+            <p>In events of extreme emotional or physical stress, a GM may call for a Constitution saving throw with a DC of their choosing to see if you maintain your humanoid form.</p>
+            <p>Non-evil creatures that witness your true form become instantly hostile to you, unless the GM decides otherwise.</p>
+        </description>
+        <sheet>
+           <description>Your appearance has grotesquely transformed. Your skin has become rotten and pale, while your figure has become gaunt and hunched, radiating a ghastly aura. You can suppress this form and present the appearance of the humanoid you once were, however this is taxing and requires concentration. Moments of stress are likely to reveal your true nature. Your true form is revealed:&#13;
+            • Concentrating on a spell.&#13;
+            • Gaining the unconscious condition.&#13;
+            • Entering hallowed ground.&#13;
+            • Choosing to reveal yourself.&#13;
+            In events of extreme emotional or physical stress, a GM may call for a Constitution saving throw with a DC of their choosing to see if you maintain your humanoid form. Non-evil creatures that witness your true form become instantly hostile to you, unless the GM decides otherwise.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Level 3 -->
+    <element name="Lich (Level 3)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_3">
+        <prerequisite>Lich Transformation Level 2</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 3rd level, you can pick one of the following Transformation Boons, or pick a boon from a lower level that you meet the prerequisites for.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_RELENTLESS_UNDEAD" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_ARCANE_SUPREMACY" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_STAFF_OF_THE_DREADSCAPES" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_ENHANCED_PHYLACTERY" />
+            </div>
+            <p>You also gain this level’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHCG_FEAT_FEATURE_NECROMANTIC_DYSTROPHY" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Level 3 Boon. Necromantic Dystrophy (Flaw)</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Transformation Boon (Level 3)" supports="Lich Boon" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_NECROMANTIC_DYSTROPHY" />
+         </rules>
+    </element>
+    
+    <element name="Boon: Relentless Undead" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_RELENTLESS_UNDEAD">
+        <supports>Lich Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_3</requirements>
+        <description>
+            <p>Whenever an undead creature you control is reduced to 0 hit points, it may immediately move up to its full speed and make an attack action before dying. This feature has no effect if the creature has been reduced to 0 hit points by radiant damage.</p>
+        </description>
+        <sheet>
+            <description>Whenever an undead creature you control is reduced to 0 hit points, it may immediately move up to its full speed and make an attack action before dying. This feature has no effect if the creature has been reduced to 0 hit points by radiant damage.</description>
+        </sheet>
+    </element>
+    
+    <element name="Boon: Arcane Supremacy" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_ARCANE_SUPREMACY">
+        <supports>Lich Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_3</requirements>
+        <description>
+            <p>You become an exemplar of arcane power. When you cast a concentration spell, if you are already concentrating on one concentration spell, you do not lose concentration of that spell; instead you gain one level of exhaustion. If you are already concentrating on more than one spell, this feature has no effect. If you cast a third concentration spell during this time, you lose concentration on one of the two spells. Once you use this feature you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When you cast a concentration spell, if you are already concentrating on one concentration spell, you do not lose concentration of that spell; instead you gain one level of exhaustion. If you are already concentrating on more than one spell, this feature has no effect. If you cast a third concentration spell during this time, you lose concentration on one of the two spells.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Staff of the Dreadscapes" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_STAFF_OF_THE_DREADSCAPES">
+        <supports>Lich Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_3</requirements>
+        <description>
+            <p>Starting at 3rd level, you can use an action to summon a deathly staff made of blackened bone and twisted rotwood. The staff is the same as a quarterstaff, with the following features:</p>
+            <ul>
+                <li>Necrotic damage dealt by you ignores resistance to necrotic damage.</li>
+                <li>Your Spell Save DC and Transformation DC are both increased by 2.</li>
+                <li>Food and non-creature plants the staff touches wither and decay.</li>
+            </ul>
+            <p>You can unsummon the staff at any time with the use of an action. If you un-wield the staff, it immediately unsummons.</p>
+        </description>
+        <sheet action="Action">
+            <description>You can summon a deathly staff made of blackened bone and twisted rotwood. The staff is the same as a quarterstaff, with the following features:&#13;
+            • Necrotic damage dealt by you ignores resistance to necrotic damage.&#13;
+            • Your Spell Save DC and Transformation DC are both increased by 2.&#13;
+            • Food and non-creature plants the staff touches wither and decay.&#13;
+            You can unsummon the staff at any time with the use of an action. If you un-wield the staff, it immediately unsummons.</description>
+        </sheet>
+    </element>
+
+     <element name="Boon: Enhanced Phylactery" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_ENHANCED_PHYLACTERY">
+        <p><em>Prerequisite: Phylactery Bond</em></p>
+        <supports>Lich Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_3, ID_GFG_GHPG_FEAT_FEATURE_PHYLACTERY_BOND</requirements>
+        <description>
+            <p>Your bond with your phylactery strengthens, granting additional benefits:</p>
+            <ul>
+            <li>If you aren’t wearing armor, your base Armor Class is 15 + your Dexterity modifier. Your phylactery’s AC is increased by 2.</li>
+            <li>Your spell save DC and spell attack bonus each increase by 2.</li>
+            <li>You and your phylactery have advantage on saving throws against spells and other magical effects.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Your bond with your phylactery strengthens, granting additional benefits:&#13;
+            • If you aren’t wearing armor, your base Armor Class is 15 + your Dexterity modifier. Your phylactery’s AC is increased by 2.&#13;
+            • Your spell save DC and spell attack bonus each increase by 2.&#13;
+            • You and your phylactery have advantage on saving throws against spells and other magical effects.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:enhanced phylactery" value="15" />
+            <stat name="ac:enhanced phylactery" value="dexterity:modifier" />
+            <stat name="ac:calculation" value="ac:enhanced phylactery" bonus="calculation" equipped="[armor:none]" alt="Enhanced Phylactery" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Necromantic Dystrophy" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_NECROMANTIC_DYSTROPHY">
+        <description>
+            <p>Your body has become dependent on consuming souls, otherwise it becomes withered and frail. If you go more than 24 hours without converting 4 CR worth of souls from your Phylactery into spell slots you gain the following effects:</p>
+            <ul>
+                <li>You cannot use the dash, dodge, or disengage actions. You cannot use these actions as bonus actions.</li>
+                <li>You cannot use your reaction to make opportunity attacks.</li>
+                <li>You cannot disguise your hideous form feature.</li>
+            </ul>
+            <p>Upon converting the required amount of souls into spell slots, you are no longer affected by the aforementioned effects.</p>
+        </description>
+        <sheet>
+            <description>If you go more than 24 hours without converting 4 CR worth of souls from your Phylactery into spell slots you gain the following effects:
+            • You cannot use the dash, dodge, or disengage actions. You cannot use these actions as bonus actions.
+            • You cannot use your reaction to make opportunity attacks.
+            • You cannot disguise your hideous form feature.
+            Upon converting the required amount of souls into spell slots, you are no longer affected by the aforementioned effects.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Level 4 -->
+    <element name="Lich (Level 4)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_4">
+        <prerequisite>Lich Transformation Level 3</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 4th level, you can pick one of the following Transformation Boons, or pick a boon from a lower level that you meet the prerequisites for.</p>
+             <div class="reference">
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_LORD_OF_UNDEATH" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_ARCANE_OMNISCIENCE" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_DEATHLY_BEING" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_SOUL_REFLECTION" />
+            </div>           
+            <p>You also gain this level’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHCG_FEAT_FEATURE_WEIGHT_OF_AGES" />
+        </description>
+        <sheet display="false">
+           <description>Choose a Level 4 Boon. Weight of Ages (Flaw).</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Transformation Boon (Level 4)" supports="Lich Boon" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_WEIGHT_OF_AGES" />
+         </rules>        
+    </element>
+
+    <element name="Boon: Lord of Undeath" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_LORD_OF_UNDEATH">
+        <supports>Lich Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_4</requirements>
+        <description>
+            <p>Whenever you reduce a humanoid to 0 hit points, you can choose to reanimate it. If you do, the creature rises at the beginning of its next turn as a zombie permanently under your control, following verbal commands to the best of its ability.</p>
+        </description>
+        <sheet>
+            <description>Whenever you reduce a humanoid to 0 hit points, you can choose to reanimate it. If you do, the creature rises at the beginning of its next turn as a zombie permanently under your control, following verbal commands to the best of its ability.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Arcane Omniscience" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_ARCANE_OMNISCIENCE">
+        <supports>Lich Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_4,[type:spell]</requirements>
+        <description>
+            <p>You have mastered the arcane arts. You know every spell from the wizard’s spell list and can prepare a number of these equal to your Intelligence modifier. Spells prepared this way do not count towards the maximum number of spells you can prepare. Upon completing a short rest, you can change one or more of these prepared spells for another spell from the wizards spell list.</p>
+        </description>
+        <sheet>
+            <description>You know every spell from the wizard’s spell list and can prepare {{intelligence:modifier}}. Spells prepared this way do not count towards the maximum number of spells you can prepare. Upon completing a short rest, you can change one or more of these prepared spells for another spell from the wizards spell list.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Deathly Being" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_DEATHLY_BEING">
+        <supports>Lich Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_4</requirements>
+        <description>
+            <p>You become immune to poison damage, as well as bludgeoning, piercing, and slashing damage from non-magical attacks. In addition, you cannot become charmed, poisoned, paralysed, or frightened.</p>
+        </description>
+        <sheet>
+            <description>You become immune to poison damage, as well as bludgeoning, piercing, and slashing damage from non-magical attacks. In addition, you cannot become charmed, poisoned, paralysed, or frightened.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_BLUDGEONING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PIERCING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_SLASHING" />
+        </rules>
+    </element>
+
+    <element name="Boon: Soul Reflection" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_SOUL_REFLECTION">
+        <p><em>Prerequisite: Enhanced Phylactery</em></p>
+        <supports>Lich Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_LICH_LEVEL_4, ID_GFG_GHPG_FEAT_FEATURE_ENHANCED_PHYLACTERY</requirements>
+        <description>
+            <p>You have learned to utilize your bond with your phylactery to its greatest effect. While wearing your phylactery, whenever you are targeted by a spell, if you are the only target, you can use your reaction and spend charges from your phylactery equal to the spell’s level. If you do so, the spell reflects and instead targets an appropriate target of your choice within range of the spell as if you cast it. For the purpose of using this feature, cantrips are considered 1st-level spells.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>While wearing your phylactery, whenever you are targeted by a spell, if you are the only target, you can use your reaction and spend charges from your phylactery equal to the spell’s level. If you do so, the spell reflects and instead targets an appropriate target of your choice within range of the spell as if you cast it. For the purpose of using this feature, cantrips are considered 1st-level spells.</description>
+        </sheet>
+    </element>
+
+     <element name="Flaw: Weight of Ages" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_WEIGHT_OF_AGES">
+        <description>
+            <p>The weight of time is degrading for your Lich form and only the consumption of many souls can stay its effects. If you go more than 24 hours without converting 8 CR worth of soul from your Phylactery into spell slots you gain the following effects:</p>
+            <ul>
+                <li>You cannot use the attack action.</li>
+                <li>If you move on your turn, you cannot use a bonus action or reaction until your next turn.</li>
+                <li>If you use a bonus action on your turn, your speed becomes 0 until your next turn.</li>
+            </ul>
+            <p>Upon converting the required amount of souls into spell slots, you are no longer affected by the aforementioned effects.</p>
+        </description>
+        <sheet>
+            <description>If you go more than 24 hours without converting 8 CR worth of soul from your Phylactery into spell slots you gain the following effects:&#13;
+            • You cannot use the attack action.&#13;
+            • If you move on your turn, you cannot use a bonus action or reaction until your next turn.&#13;
+            • If you use a bonus action on your turn, your speed becomes 0 until your next turn.&#13;
+            Upon converting the required amount of souls into spell slots, you are no longer affected by the aforementioned effects.</description>
+        </sheet>
+    </element>
+</elements>

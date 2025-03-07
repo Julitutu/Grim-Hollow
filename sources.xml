@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/source.xml" />
+		</update>
+	</info>
+	<element name="Grim Hollow - Campaing Guide" type="Source" source="Core" id="ID_LT_SOURCE_GHCG">
+		<description>
+			<![CDATA[<p><strong>WELCOME, GAMING ENTHUSIAST</strong></p><p> If you’re reading this then you are most likely an avid fan of tabletop roleplaying games, dark fantasy, and—hopefully, after you read this book—Grim Hollow. Inside, you will find the world of Etharis, a labour of love and passion made possible entirely by the support (and hard work) of gamers just like you.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">GHCG</set>
+			<set name="url">https://ghostfiregaming.com/product/grim-hollow-the-campaign-guide-hardcover-book/</set>
+			<set name="image">https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Campaing-Guide.jpg</set>
+			<set name="author" abbreviation="GFG" url="https://ghostfiregaming.com">Ghostfire Gaming</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+	<element name="Grim Hollow - The Players Guide" type="Source" source="Core" id="ID_LT_SOURCE_GHPG">
+		<description>
+			<![CDATA[<p><strong>Welcome to Grim Hollow!</strong></p><p>Dark fantasy and horror have long been a favorite genre of storytellers—not to mention story listeners. From the earliest humans gathered around fires, making up stories of the monsters that inhabited the dark, the wilderness, the seas, and the spaces between the stars, we’ve never lost the thrill of being thrilled, the adrenaline rush of being scared out of our wits, while knowing—or at least hoping—that we’re safe from any true danger.</p>
+			<p>Grim Hollow and its world of Etharis offer roleplaying game fans the ability to partake in those thrills of a dark fantasy setting. Whether the terror comes in the form of nature’s most reddened teeth and claws, or the fear spread through mortals’ actions when they’re driven by the lust for power, or the horror of lifeless monsters shambling through the moonless nights longing to extinguish the bright lights of life, Etharis teems with threats perfect for many different styles of horror-based, dark-fantasy campaigns.</p>
+			<p> More importantly, the rules in this book provide the means to allow players to experiment with their characters, who face the most terrible fate of all: succumbing to the darkness and being changed by it. The existential terror of becoming a monster can make fighting monsters seem pale by comparison..</p>]]>
+			  
+		</description>
+		<setters>
+			<set name="abbreviation">GHPG</set>
+			<set name="url">https://ghostfiregaming.com/product/grim-hollow-the-players-guide-hardcover-book/</set>
+			<set name="image">https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Players-Guide.jpg</set>
+			<set name="author" abbreviation="GFG" url="https://ghostfiregaming.com">Ghostfire Gaming</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+	<element name="Grim Hollow - Monster Grimoire" type="Source" source="Core" id="ID_LT_SOURCE_GHMG">
+		<description>
+			<![CDATA[<p><strong>Grim Hollow: The Monster Grimoire</strong> is the third installment in the Grim Hollow series of setting books. Two other tomes—Grim Hollow: The Campaign Guide and Grim Hollow: The Players Guide—preceded it. The three books form the complete set of books for gamemasters to run dark fantasy and horror campaigns in the Grim Hollow setting.</p>
+			<p>The Grim Hollow setting takes place in a world known as Etharis, a dark and gritty environment where the vicious, terrible, horrifying monsters that hide in the shadowy alleyways and remote wildernesses are only the start of the peril. As much as the monsters of the world threaten the citizenry, the dark figures that entice those who seek power are just as dangerous. Blood magic, undeath, lycanthropy, fey magic, fell sorcery, and other temptations: would-be heroes are always one wrong step away from becoming the villains they claim to fight.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">GHMG</set>
+			<set name="url">https://ghostfiregaming.com/product/grim-hollow-the-monster-grimoire-book/</set>
+			<set name="image">https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Monster-Grimoire.jpg</set>
+			<set name="author" abbreviation="GFG" url="https://ghostfiregaming.com">Ghostfire Gaming</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+</elements>

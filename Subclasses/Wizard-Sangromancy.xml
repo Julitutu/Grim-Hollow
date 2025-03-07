@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>School of Sangromancy</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="Wizard-Sangromancy.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Wizard-Sangromancy.xml" />
+		</update>
+	</info>
+
+    <element name="School of Sangromancy" type="Archetype" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_WIZARD_SANGROMANCY">
+		<supports>Arcane Tradition</supports>
+		<description>
+			<p>You study an uncommon subschool of magic known as sangromancy or blood magic. Despite its dark reputation, there’s nothing inherently evil about the practice of sangromancy, though its demands on its practitioners are gruesome. As a sangromancer, your chosen magic demands more than knowledge—it demands sacrifice as well. Other wizards may view you with skepticism or even outright hostility, but none can deny the potency of your art.</p>
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_SANGROMANCY_SANGROMANCY_SAVANT" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_SANGROMANCY_FULL_BLOODED" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_SANGROMANCY_SANGUINE_VIGOR" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_SANGROMANCY_BLOOD_FOR_BLOOD" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_SANGROMANCY_RED_RENEWAL" />
+		</description>
+		<sheet display="false">
+			<description>You study an uncommon subschool of magic known as sangromancy or blood magic. Despite its dark reputation, there’s nothing inherently evil about the practice of sangromancy, though its demands on its practitioners are gruesome.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_SANGROMANCY_SANGROMANCY_SAVANT" level="2" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_SANGROMANCY_FULL_BLOODED" level="2" />
+            <grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_SANGROMANCY_SANGUINE_VIGOR" level="6" />
+            <grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_SANGROMANCY_BLOOD_FOR_BLOOD" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_SANGROMANCY_RED_RENEWAL" level="14" />
+		</rules>
+	</element>
+
+    <element name="Sangromancy Savant" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_SANGROMANCY_SANGROMANCY_SAVANT">
+		<description>
+			<p>Beginning when you select this arcane tradition at 2nd level, all sangromancy spells are added to the wizard spell list for you. In addition, the gold and time you must spend to copy a sangromancy spell into your spellbook is halved.</p>
+		</description>
+		<sheet>
+			<description>All sangromancy spells are added to the wizard spell list for you. In addition, the gold and time you must spend to copy a sangromancy spell into your spellbook is halved.</description>
+		</sheet>
+		<spellcasting name="Wizard" extend="true">
+			<extend>ID_GHPG_SPELL_BLOOD_BOND</extend>
+			<extend>ID_GHPG_SPELL_BLOOD_RUSH</extend>
+			<extend>ID_GHPG_SPELL_CONSUMPTION</extend>
+			<extend>ID_GHPG_SPELL_CREEPING_DEATH</extend>
+			<extend>ID_GHPG_SPELL_CRIMSON_LASH</extend>
+			<extend>ID_GHPG_SPELL_DARK_SACRAMENT</extend>
+			<extend>ID_GHPG_SPELL_HEARTSEEKER</extend>
+			<extend>ID_GHPG_SPELL_MORTALITY</extend>
+			<extend>ID_GHPG_SPELL_REANIMATE</extend>
+			<extend>ID_GHPG_SPELL_RED_RAIN</extend>
+			<extend>ID_GHPG_SPELL_SANGUINE_POPPET</extend>
+			<extend>ID_GHPG_SPELL_SANGUINE_SHIELD</extend>
+			<extend>ID_GHPG_SPELL_SENSE_LIFEBLOOD</extend>
+			<extend>ID_GHPG_SPELL_STEAL_IMMORTALITY</extend>
+			<extend>ID_GHPG_SPELL_THEFT_OF_VITAE</extend>
+			<extend>ID_GHPG_SPELL_WILTING_SMITE</extend>
+		</spellcasting>
+	</element>
+
+    <element name="Full-Blooded" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_SANGROMANCY_FULL_BLOODED">
+        <description>
+            <p>Starting at 2nd level, you gain a pool of d12s that you can expend instead of a hit die when you cast sangromancy spells. The number of dice in the pool equals 1 + your wizard level.</p>
+            <p class="indent">Your pool regains all expended dice when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{pool of dices}}/Long Rest">
+            <description>You gain a pool of d12s that you can expend instead of a hit die when you cast sangromancy spells.</description>
+        </sheet>
+        <rules>
+            <stat name="pool of dices" value="1" />
+            <stat name="pool of dices" value="level:wizard" />
+        </rules>
+    </element>
+
+    <element name="Sanguine Vigor" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_SANGROMANCY_SANGUINE_VIGOR">
+		<description>
+			<p>Starting at 6th level, your hit point maximum increases by 6 and increases by 1 again whenever you gain a level in this class.</p>
+            <p class="indent">In addition, when you cast a sangromancy spell, you regain a number of hit points equal to the level of the spell.</p>
+		</description>
+		<sheet>
+			<description>Your hit point maximum increases by 6 and increases by 1 again whenever you gain a level in this class.&#13;
+            In addition, when you cast a sangromancy spell, you regain a number of hit points equal to the level of the spell.</description>
+		</sheet>
+        <rules>
+            <stat name="hp" value="level:wizard"/>
+        </rules>
+    </element>
+    
+    <element name="Blood for Blood" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_SANGROMANCY_BLOOD_FOR_BLOOD">
+		<description>
+			<p>At 10th level, when you deal damage to a creature with a spell you cast, you can expend and roll a hit die, or a d12 from your Full-Blooded feature, to add its result to the damage dealt to that creature.</p>
+		</description>
+		<sheet>
+			<description>When you deal damage to a creature with a spell you cast, you can expend and roll a hit die, or a d12 from your Full-Blooded feature, to add its result to the damage dealt to that creature.</description>
+		</sheet>
+	</element>
+
+     <element name="Red Renewal" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_SANGROMANCY_RED_RENEWAL">
+        <description>
+            <p>Starting at 14th level, when you finish a short rest, you can choose expended hit dice to recover. When you do, choose a number of expended hit dice equal to half your wizard level and regain them. You regain an equivalent number of dice from your Full Blooded feature. Once you use this feature, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When you finish a short rest, you can choose expended hit dice to recover. When you do, you will recover {{level:wizard:half}} of your spent dice. You regain an equivalent number of dice from your Full Blooded feature. Once you use this feature, you can’t use it again until you finish a long rest.</description>
+        </sheet>
+    </element>
+
+
+</elements>

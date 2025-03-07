@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Eldritch Domain</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="Cleric-Eldritch-Domain.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Cleric-Eldritch-Domain.xml" />
+		</update>
+	</info>
+
+	<element name="Eldritch Domain" type="Archetype" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_CLERIC_ELDRITCH_DOMAIN">
+		<supports>Divine Domain</supports>
+		<description>
+			<p>Even the most benevolent divine beings operate outside the bounds of mortal comprehension. These eldritch forces sing a siren song that calls out for mortal worshippers through lucid dreams and the whispers of dead gods. The Eldritch domain empowers the devoted followers of unknown and distant forces of chaos, divine entities of eldritch oblivion, and dead gods.</p>
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_DOMAIN_SPELLS" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_UNPREDICTABLE_INSPIRATION" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_ELDRITCH_CONTAGION" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_CHANNEL_DIVINITY_PROPHECY_OF_DOOM" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_OTHERWORLDLY_CALM" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_POTENT_SPELLCASTING" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_SING_THE_SONG" />
+		</description>
+		<sheet display="false">
+			<description>Even the most benevolent divine beings operate outside the bounds of mortal comprehension. These eldritch forces sing a siren song that calls out for mortal worshippers through lucid dreams and the whispers of dead gods.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_DOMAIN_SPELLS" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_UNPREDICTABLE_INSPIRATION" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_ELDRITCH_CONTAGION" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_CHANNEL_DIVINITY_PROPHECY_OF_DOOM" level="2" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_OTHERWORLDLY_CALM" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_POTENT_SPELLCASTING" level="8" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_SING_THE_SONG" level="17" />
+		</rules>
+	</element>
+
+    <element name="Domain Spells" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_DOMAIN_SPELLS">
+        <description>
+            <p>You gain domain spells at the cleric levels listed in the Eldritch Domain Spells table. See the Divine Domain class feature for how domain spells work.</p>
+            <h5>Eldritch Domain Spells</h5>
+            <table>
+                <thead>
+                    <tr><td>Cleric Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><i>hideous laughter, sleep</i></td></tr>
+                <tr><td>3rd</td><td><i>detect thoughts, see invisibility</i></td></tr>
+                <tr><td>5th</td><td><i>fear, tongues</i></td></tr>
+                <tr><td>7th</td><td><i>confusion, phantasmal killer</i></td></tr>
+                <tr><td>9th</td><td><i>contact other plane, dream</i></td></tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<grant type="Spell" id="ID_PHB_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="1" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLEEP" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FEAR" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_TONGUES" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_KILLER" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONTACT_OTHER_PLANE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DREAM" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+    </element>
+
+    <element name="Unpredictable Inspiration" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_UNPREDICTABLE_INSPIRATION">
+		<description>
+			<p>At 1st level, choose any cantrip. The chosen cantrip counts as a cleric spell for you but does not count against the number of cleric cantrips you know. Each time you finish a long rest you can replace the chosen cantrip with any other cantrip of your choice.</p>
+            <p>In addition, you gain proficiency in a skill of your choice. Each time you finish a long rest you can replace the chosen skill with another skill of your choice.</p>
+		</description>
+        <sheet>
+			<description>Choose any cantrip. The chosen cantrip counts as a cleric spell for you but does not count against the number of cleric cantrips you know. Each time you finish a long rest you can replace the chosen cantrip with any other cantrip of your choice.&#13;
+			In addition, you gain proficiency in a skill of your choice. Each time you finish a long rest you can replace the chosen skill with another skill of your choice.</description>
+		</sheet>
+        <rules>
+            <select type="Spell" name="Cantrip (Eldritch Domain)" supports="0" />
+            <select type="Proficiency" name="Skill Proficiency (Unpredictable Inspiration)" supports="Skill" />
+        </rules>
+    </element>
+
+    <element name="Eldritch Contagion" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_ELDRITCH_CONTAGION">
+		<description>
+			<p>Starting at 1st level, you’ve been gifted with the ability to impart a fleeting taste of the unknowable on others. When you cast a spell with a spell slot of 1st level or higher that targets one or more creatures, you can use a bonus action on the same turn to force one of the spell’s targets to make a Wisdom saving throw. On a failure, roll on the Eldritch Effects table and the creature suffers that effect for 1 minute. At the end of each of its turns, the creature can make another Wisdom saving throw, ending the effect on a success. This effect ends early if you use this feature again.</p>
+            <h5>Eldritch Effects</h5>
+            <table>
+                <thead>
+                    <tr><td>d8</td><td>Effect</td></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>The creature cannot speak or cast spells that have verbal components.</td></tr>
+                    <tr><td>2</td><td>The creature takes 1d8 psychic damage at the start of each of its turns.</td></tr>
+                    <tr><td>3</td><td>The creature is disoriented. It immediately falls prone and falls prone again at the end of each turn it moves 5 feet or more.</td></tr>
+                    <tr><td>4</td><td>The creature is distracted by visions and voices and has disadvantage on attack rolls and Wisdom (Perception) ability checks.</td></tr>
+                    <tr><td>5</td><td>The creature is unsure of itself. It can move or take an action on its turn but not both and it cannot use reactions.</td></tr>
+                    <tr><td>6</td><td>The creature is reckless. It has advantage on attack rolls and attack rolls against it have advantage.</td></tr>
+                    <tr><td>7</td><td>The creature is deafened and cannot see objects or creatures further than 30 feet away.</td></tr>
+                    <tr><td>8</td><td>The creature is frightened of you.</td></tr>
+                </tbody>
+            </table>
+		</description>
+        <sheet>
+            <description>When you cast a spell with a spell slot of 1st level or higher that targets one or more creatures, you can use a bonus action on the same turn to force one of the spell’s targets to make a DC {{eldritch contagion:dc}} Wisdom saving throw. On a failure, roll on the Eldritch Effects table and the creature suffers that effect for 1 minute. At the end of each of its turns, the creature can make another Wisdom saving throw, ending the effect on a success. This effect ends early if you use this feature again.&#13;
+            • 1 - The creature cannot speak or cast spells that have verbal components.&#13;
+            • 2 - The creature takes 1d8 psychic damage at the start of each of its turns.&#13;
+            • 3 - The creature is disoriented. It immediately falls prone and falls prone again at the end of each turn it moves 5 feet or more.&#13;
+            • 4 - The creature is distracted by visions and voices and has disadvantage on attack rolls and Wisdom (Perception) ability checks.&#13;
+            • 5 - The creature is unsure of itself. It can move or take an action on its turn but not both and it cannot use reactions.&#13;
+            • 6 - The creature is reckless. It has advantage on attack rolls and attack rolls against it have advantage.&#13;
+            • 7 - The creature is deafened and cannot see objects or creatures further than 30 feet away.&#13;
+            • 8 - The creature is frightened of you.</description>
+        </sheet>
+        <rules>
+            <stat name="eldritch contagion:dc" value="8" />
+            <stat name="eldritch contagion:dc" value="proficiency" />
+            <stat name="eldritch contagion:dc" value="wisdom:modifier" />
+        </rules>
+    </element>
+    
+    <element name="Channel Divinity: Prophecy of Doom" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_CHANNEL_DIVINITY_PROPHECY_OF_DOOM">
+        <supports>Channel Divinity</supports>
+		<description>
+			<p>Starting at 2nd level, you can use your Channel Divinity to speak a prophecy, inducing visions and hallucinations in nearby creatures.</p>
+            <p>As an action, choose a point within 120 feet of you that you can see and roll on the Eldritch Effects table. Each creature in a 15-foot-radius sphere centered on the chosen point must succeed on a Wisdom saving throw or suffer the temporary effect for 1 minute. At the end of each of its turns, an affected creature can make another Wisdom saving throw, ending the temporary effect on a success.</p>
+		</description>
+		<sheet usage="Channel Divinity" action="Action">
+			<description>As an action, choose a point within 120 feet of you that you can see and roll on the Eldritch Effects table. Each creature in a 15-foot-radius sphere centered on the chosen point must succeed on a DC {{eldritch contagion:dc}} Wisdom saving throw or suffer the temporary effect for 1 minute. At the end of each of its turns, an affected creature can make another Wisdom saving throw, ending the temporary effect on a success.</description>
+		</sheet>
+	</element>
+    
+    <element name="Otherworldly Calm" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_OTHERWORLDLY_CALM">
+        <description>
+            <p>Starting at 6th level, you gain resistance to psychic damage and advantage on saving throws against being charmed and frightened.</p>
+            <p>Additionally, any creature that attempts to read your thoughts find them incomprehensible. The attempt automatically fails and they must succeed on a Wisdom saving throw against your cleric spell save DC or take psychic damage equal to your cleric level.</p>
+        </description>
+        <sheet>
+            <description>You gain advantage on saving throws against being charmed and frightened.&#13;
+			Additionally, any creature that attempts to read your thoughts find them incomprehensible. The attempt automatically fails and they must succeed on a DC {{eldritch contagion:dc}} Wisdom saving throw or take {{level:cleric}} psychic damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+        </rules>
+    </element>
+    
+    <element name="Potent Spellcasting" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_POTENT_SPELLCASTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_CLERIC_DIVINE_STRIKE_OR_POTENT_SPELLCASTING</requirements>
+		<description>
+			<p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>+{{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
+		</sheet>
+	</element>
+
+    <element name="Sing the Song that Ends the World" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_SING_THE_SONG">
+        <description>
+            <p>Starting at 17th level, creatures who fail a saving throw against your Prophecy of Doom feature take 10d10 psychic damage. Once a creature has taken damage in this way, it can’t take damage from this feature again for 10 minutes.</p>
+        </description>
+        <sheet>
+            <description>Creatures who fail a saving throw against your Prophecy of Doom feature take 10d10 psychic damage. Once a creature has taken damage in this way, it can’t take damage from this feature again for 10 minutes.</description>
+        </sheet>
+    </element>
+</elements>

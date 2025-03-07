@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Morbus Kobold</name>
+		<source>Grim Hollow - Monster Grimoire</source>
+		<update version="0.1.0">
+			<file name="race-morbus-kobold.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-morbus-kobold.xml" />
+		</update>
+	</info>
+
+	<!-- Morbus Kobold Race -->
+	<element name="Morbus Kobold" type="Race" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACE_MORBUS_KOBOLD">
+		<description>
+            <p>Your people evolved separately from your kobold cousins, spurred on by the dangerous practice of manipulating diseases and the compounds that spread them. Your webbed hands and feet make you a strong swimmer, but it’s your knowledge that sets you apart.</p>
+            <p>Your culture taught you much about diseases and rare ingredients that might spread or cure those diseases. Though your disease-spreading kin have a clear and grotesque idea of what they want the world to look like, you have other notions. These thoughts may have driven you from your clan, pushing you into a world that found you strange at first. But your knowledge of the diseases that plague the world left you in a unique position to help.</p>
+            <h4>MORBUS KOBOLD TRAITS</h4>
+            <p>Morbus kobolds take the knowledge of diseases and natural substances, and they can use it for good as much as evil.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2 and your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> You reach adulthood by age 10, living to approximately 100 years.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> While your kin revel in the chaos and pain that disease spreads, you have learned the value of life.</p>
+            <p class="indent"><strong><em>Size.</em></strong> You are generally shorter and slighter than your goblin cousins, averaging about 3 feet tall and 30 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet, and you have a swim speed of 30 feet as well.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+            <p class="indent"><strong><em>Disease Resistant.</em></strong> You gain advantage on saving throws to resist disease. In addition, once per long rest, you can use a reaction to provide an adjacent ally advantage on a saving throw to resist diseases.</p>
+            <p class="indent"><strong><em>Medical Knowledge.</em></strong> Your interactions with disease and medicines provide you with superior knowledge. You make Intelligence (Nature) and Wisdom (Medicine) checks with advantage, and you are proficient with alchemist’s supplies.</p>
+            <p>In addition, at the end of a short rest, you can choose yourself or one ally who spends hit dice to regain hit points. The chosen creature rolls each hit die spent twice, taking the higher of the two rolls.</p>
+            <p class="indent"><strong><em>Natural Alchemist.</em></strong> At the end of a long rest, if you have access to alchemist’s supplies, you can create a substance that maintains a magical property until the start of your next long rest. This substance can act as a potion of healing, a vial of acid, or alchemist’s fire.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You speak Draconic and one national language</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height">3'</set>
+			<set name="weight">30 lb.</set>
+		</setters>
+		<rules>
+			<!-- Ability Score Increase (Dexterity +2, Constitution +1) -->
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase (+2 and +1, or three +1's) -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Morbus Kobold)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Morbus Kobold)" supports="Custom Ability Score Increase 1" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Size (Small) -->
+			<grant type="Size" id="ID_SIZE_SMALL" />
+
+			<!-- Speed (30 ft. walking, 30ft swim) -->
+			<stat name="innate speed" value="30" bonus="base" />
+            <stat name="innate speed:swim" value="30" bonus="base" />
+
+			<!-- Darkvision -->
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+            <!-- Disease Resistant -->
+            <grant type="Racial Trait" id="ID_GFG_GHMG_RACIAL_TRAIT_MORBUS_KOBOLD_DISEASE_RESISTANT" />
+
+            <!-- Medical Knowledge -->
+            <grant type="Racial Trait" id="ID_GFG_GHMG_RACIAL_TRAIT_MORBUS_KOBOLD_MEDICAL_KNOWLEDGE" />
+
+            <!-- Natural Alchemist -->
+            <grant type="Racial Trait" id="ID_GFG_GHMG_RACIAL_TRAIT_MORBUS_KOBOLD_NATURAL_ALCHEMIST" />
+
+			<!-- Languages (Draconic, +1 other) -->
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Morbus Kobold)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<!-- Tasha's Cauldron of Everything: Customized Language -->
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+
+    <!-- Disease Resistant Trait -->
+	<element name="Disease Resistant" type="Racial Trait" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACIAL_TRAIT_MORBUS_KOBOLD_DISEASE_RESISTANT">
+		<description>
+			<p>You gain advantage on saving throws to resist disease. In addition, once per long rest, you can use a reaction to provide an adjacent ally advantage on a saving throw to resist diseases.</p>
+		</description>
+		<sheet usage="1/Long Rest" action="Reaction">
+			<description>You gain advantage on saving throws to resist disease. In addition, you can use a reaction to provide an adjacent ally advantage on a saving throw to resist diseases.</description>
+		</sheet>
+	</element>
+
+    <!-- Medical Knowledge Trait -->
+	<element name="Medical Knowledge" type="Racial Trait" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACIAL_TRAIT_MORBUS_KOBOLD_MEDICAL_KNOWLEDGE">
+		<description>
+			<p>Your interactions with disease and medicines provide you with superior knowledge. You make Intelligence (Nature) and Wisdom (Medicine) checks with advantage, and you are proficient with alchemist’s supplies.</p>
+            <p>In addition, at the end of a short rest, you can choose yourself or one ally who spends hit dice to regain hit points. The chosen creature rolls each hit die spent twice, taking the higher of the two rolls.</p>
+		</description>
+		<sheet>
+			<description>You make Intelligence (Nature) and Wisdom (Medicine) checks with advantage, and you are proficient with alchemist’s supplies.
+            In addition, at the end of a short rest, you can choose yourself or one ally who spends hit dice to regain hit points. The chosen creature rolls each hit die spent twice, taking the higher of the two rolls.</description>
+		</sheet>
+        <rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+        </rules>
+	</element>
+
+    <!-- Natural Alchemist Trait -->
+	<element name="Natural Alchemist" type="Racial Trait" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACIAL_TRAIT_MORBUS_KOBOLD_NATURAL_ALCHEMIST">
+		<description>
+			<p>At the end of a long rest, if you have access to alchemist’s supplies, you can create a substance that maintains a magical property until the start of your next long rest. This substance can act as a potion of healing, a vial of acid, or alchemist’s fire.</p>
+		</description>
+		<sheet>
+			<description>At the end of a long rest, if you have access to alchemist’s supplies, you can create a substance that maintains a magical property until the start of your next long rest. This substance can act as a potion of healing, a vial of acid, or alchemist’s fire.</description>
+		</sheet>
+	</element>
+</elements>

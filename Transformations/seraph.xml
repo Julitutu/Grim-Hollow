@@ -1,0 +1,467 @@
+
+<elements>
+	<info>
+		<name>Seraph Transformation</name>
+		<description>Transformation from Grim Hollow: Campaign Guide</description>
+		<author>Ghostfire Gaming</author>
+        <update version="0.1.0">
+			<file name="seraph.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/seraph.xml" />
+		</update>
+	</info>
+
+    <!-- Items -->
+    <element name="Seraph Transformation (Level 1)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_SERAPH_LEVEL_1">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_SERAPH" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_FEAT_TRANSFORMATION_SERAPH" requirements="[wis:13]"/>
+		</rules>
+	</element>
+    <element name="Seraph Transformation (Level 2)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_SERAPH_LEVEL_2">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_SERAPH" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_2" requirements="ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_1"/>
+		</rules>
+	</element>
+    <element name="Seraph Transformation (Level 3)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_SERAPH_LEVEL_3">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_SERAPH" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_3" requirements="ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_2"/>
+		</rules>
+	</element>
+    <element name="Seraph Transformation (Level 4)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_SERAPH_LEVEL_4">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_SERAPH" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_4" requirements="ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_3"/>
+		</rules>
+	</element>
+    
+    <!-- Feat -->
+    <element name="Seraph" type="Feat" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_TRANSFORMATION_SERAPH">
+        <requirements>[wis:13]</requirements>
+		<description>
+			  <p>Incense burns dimly, as muffled coughs echo through the musty room. Loved ones hold each other as a bedridden woman exhales for the last time, her scarred face bearing the mortifying lesions of the Weeping Pox. Her family sobs, too lost in their sorrow to notice how the smouldering embers radiate and shine. A woman with flowing robes and platinum hair approaches, radiant energy emitting from her folded, angelic wings. “Hold on for but a moment my child,” she whispers. “Mercy has been granted.”</p>
+              <p>With a thunderous boom, the Seraph’s hammer collides with a skeletal abomination. Shards of bone scatter across the dilapidated chapel floor as the monster roars in pain. Gritting her teeth, the angelic figure proclaims, “By all that is holy, you will be vanquished!” Golden fire erupts from her hammer as she prepares for another strike.</p>
+              <p>Seraphs are mortals who have transformed into Celestial representations of a virtue or ideal. Exalted by a higher power, Seraphs are selected by divine beings after long and patient observation, confirming that the mortal displays pure character. Seraphs are selected from noble martyrs, tireless crusaders, or other exemplary individuals who are prepared to become the physical manifestation of righteousness.</p>
+              <h4>Becoming a Seraph</h4>
+              <p>To be chosen by an Arch Seraph is to become a vessel for the principles they uphold. This is a charge not to be taken lightly, and those who display righteousness with the intention of becoming a Seraph are usually overlooked for this reason. When becoming a Seraph, consider why your character was chosen. Do you display hidden merit? Are you devoted to a cause they will value?</p>
+              <h4>Transformation Features</h4>
+              <p>A Seraph has the following transformation features:</p>
+              <h5>Prerequisites</h5>
+              <ul>
+                <li><b>Ability Scores:</b> Wisdom 13</li>
+                <li><b>Roleplay:</b> You must have been exalted by an Arch Seraph, divine cosmic energies, or have some other plausible reason to have become a Seraph. Discuss with your GM how you can achieve this in-game.</li>
+              </ul>
+              <p>Some of your abilities require your target to make a saving throw to resist their effects. The saving throw DC is calculated as follows:</p>
+              <center><p><b>Transformation Save DC</b> = 8 + your proficiency bonus + your Wisdom modifier</p></center>
+              <h5>Level Milestones</h5>
+              <p>The following are examples of possible level milestones for the Seraph:</p>
+              <ul>
+                <li>Defeating a powerful force of darkness.</li>
+                <li>Create a hallowed landmark for pilgrims.</li>
+                <li>Establish a parish of worshipers who uphold your virtue.</li>
+                <li>Establish a portal between the Material Plane and the Empyrium.</li>
+                <li>Redeem a soul that was considered beyond redemption.</li>
+              </ul>
+		</description>
+        <sheet>
+            <description>You are undergoing the Seraph transformation.</description>
+        </sheet>
+        <rules>
+            <stat name="seraph:dc" value="8" />
+            <stat name="seraph:dc" value="proficiency" />
+            <stat name="seraph:dc" value="wisdom:modifier" />
+            
+            <grant type="Feat Feature" id="ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_1" />
+        </rules>
+	</element>
+
+     <!-- Transformation Level 1 -->
+    <element name="Seraph (Level 1)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_1">
+        <prerequisite>Seraph Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_FEAT_TRANSFORMATION_SERAPH</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 1st level, you gain the following Transformation Boons and this level’s Transformation Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_CELESTIAL_FORM" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_ANGELIC_WINGS" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_PLANAR_BINDING_SERAPH" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Celestial Form, Angelic Wings, Planar Binding (Flaw)</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_CELESTIAL_FORM" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_ANGELIC_WINGS" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_PLANAR_BINDING_SERAPH" />
+        </rules>
+    </element>
+
+    <element name="Boon: Celestial Form" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_CELESTIAL_FORM">
+        <supports>Seraph Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_1</requirements>
+        <description>
+            <p>Your Wisdom score increases by 2 and your Constitution score increases by 1. An ability score cannot be increased beyond 16 this way.</p>
+            <p>You become a Celestial in addition to any other creature types you are. Spells and abilities that affect Celestials of a specific CR have no effect on you.</p>
+        </description>
+        <sheet>
+            <description display="false">You become a Celestial in addition to any other creature types you are. Spells and abilities that affect Celestials of a specific CR have no effect on you.</description>
+        </sheet>
+        <rules>
+            <stat name="wisdom" value="2" />
+            <stat name="constitution" value="1" />
+            <grant type="Racial Feature" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_CELESTIAL" />
+        </rules>
+    </element>
+
+    <element name="Boon: Angelic Wings" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_ANGELIC_WINGS">
+        <supports>Seraph Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_1</requirements>
+        <description>
+            <p>You have manifested feathered wings. You have a flying speed equal to your normal speed. You cannot wear armour or clothing that has not been modified to accommodate your wings.</p>
+        </description>
+        <sheet>
+            <description>You have manifested feathered wings. You have a flying speed equal to your normal speed. You cannot wear armour or clothing that has not been modified to accommodate your wings.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:fly" value="speed" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Planar Binding" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_PLANAR_BINDING_SERAPH">
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_1</requirements>
+        <description>
+            <p>Your body and soul are bound to a divine plane of existence. You have disadvantage on death saving throws as the plane attempts to pull you back to it. If you would be killed, your soul has been taken back to a plane of existence of the GM’s choice. This plane is your new home, and you become an NPC under the GM’s control.</p>
+            <p>If you are on the divine plane responsible for your transformation, this flaw has no effect.</p>
+        </description>
+        <sheet>
+            <description>You have disadvantage on death saving throws as the plane attempts to pull you back to it. If you would be killed, your soul has been taken back to a plane of existence of the GM’s choice. This plane is your new home, and you become an NPC under the GM’s control.&#13;
+            If you are on the divine plane responsible for your transformation, this flaw has no effect.</description>
+        </sheet>
+    </element>
+
+     <!-- Transformation Level 2 -->
+    <element name="Seraph (Level 2)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_2">
+        <prerequisite>Seraph Transformation Level 1</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 2nd level, you can pick one of the following Transformation Boons.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_DIVINE_RETRIBUTION" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_DIVINE_CLEMENCY" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_DIVINE_EXPEDITION" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_DIVINE_PROTECTION" />
+            </div>
+             <p>You also gain this level’s Transformation Flaw.</p>
+             <div element="ID_GFG_GHCG_FEAT_FEATURE_DIVINE_APPEARENCE" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Level 2 Boon. Divine Appearance (Flaw)</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Transformation Boon (Level 2)" supports="Seraph Boon" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_DIVINE_APPEARENCE" />
+        </rules>
+    </element>
+
+    <element name="Boon: Divine Retribution" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_DIVINE_RETRIBUTION">
+        <supports>Seraph Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_2</requirements>
+        <description>
+            <p>When you or an allied creature you can see within 30 feet takes the attack action, you can use your reaction to imbue them with holy zeal. Immediately after the target completes the attack action, they can make an additional attack as a bonus action. On a hit, the hit target takes an additional 1d8 radiant damage. You may use this feature a number of times equal to your Wisdom modifier (minimum of 1). You regain all uses of this feature when you finish a long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="{{seraph min}}/Long Rest">
+            <description>When you or an allied creature you can see within 30 feet takes the attack action, you can use your reaction to imbue them with holy zeal. Immediately after the target completes the attack action, they can make an additional attack as a bonus action. On a hit, the hit target takes an additional 1d8 radiant damage.</description>
+        </sheet>
+        <rules>
+            <stat name="seraph min" value="1" bonus="base" />
+            <stat name="seraph min" value="wisdom:modifier" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Boon: Divine Clemency" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_DIVINE_CLEMENCY">
+        <supports>Seraph Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_2</requirements>
+        <description>
+            <p>When you or a creature you can see within 60 feet takes damage, you can use your reaction to cast a spell of 1st level or higher. This spell must target the damaged creature and restore hit points to it. You may use this feature a number of times equal to your Wisdom modifier (minimum of 1). You regain all uses of this feature when you finish a long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="{{seraph min}}/Long Rest">
+            <description>When you or a creature you can see within 60 feet takes damage, you can use your reaction to cast a spell of 1st level or higher. This spell must target the damaged creature and restore hit points to it.</description>
+        </sheet>
+    </element>
+    
+    <element name="Boon: Divine Expedition" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_DIVINE_EXPEDITION">
+        <supports>Seraph Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_2</requirements>
+        <description>
+            <p>At the beginning of another creature’s turn, you can use your reaction to move yourself up to your speed or allow an ally that you can see, within 60 feet, to move up to their speed. Movement made this way does not cause attacks of opportunity. You may use this feature a number of times equal to your Wisdom modifier (minimum of 1). You regain all uses of this feature when you finish a long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="{{seraph min}}/Long Rest">
+            <description>At the beginning of another creature’s turn, you can use your reaction to move yourself up to your speed or allow an ally that you can see, within 60 feet, to move up to their speed. Movement made this way does not cause attacks of opportunity.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Divine Protection" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_DIVINE_PROTECTION">
+        <supports>Seraph Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_2</requirements>
+        <description>
+            <p>When you or an allied creature you can see within 30 feet is targeted by an attack, you can use your reaction to shield them with holy light. The target gains a +4 bonus to AC against the attack. You may use this feature a number of times equal to your Wisdom modifier (minimum of 1). You regain all uses of this feature when you finish a long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="{{seraph min}}/Long Rest">
+            <description>When you or an allied creature you can see within 30 feet is targeted by an attack, you can use your reaction to shield them with holy light. The target gains a +4 bonus to AC against the attack.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Divine Appearance" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_DIVINE_APPEARENCE">
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_2</requirements>
+        <description>
+            <p>Your appearance has radically transformed. Your body radiates a divine glow, while your wings are prominent and powerful appendages. You can contain this form and present the appearance of the humanoid you once were, but this is taxing and requires concentration. Moments of stress are likely to reveal your true nature. In the following situations, your true form is revealed:</p>
+            <ul>
+                <li>Concentrating on a spell.</li>
+                <li>Gaining the unconscious condition.</li>
+                <li>Entering desecrated ground.</li>
+                <li>Choosing to reveal yourself.</li>
+            </ul>
+            <p>In events of extreme emotional or physical stress, a GM may call for a Constitution saving throw with a DC of their choosing to see if you maintain your humanoid form.</p>
+            <p>Evil humanoid creatures that witness or hear about your true form become instantly hostile to you and are compelled by malice to destroy you, unless the GM decides otherwise.</p>
+            <p>If the creature is scared of you or decides that you are too powerful to fight, it will attempt to harm you in another way, but will not give up on destroying you.</p>
+        </description>
+        <sheet>
+            <description>Your appearance has radically transformed. Your body radiates a divine glow, while your wings are prominent and powerful appendages. You can contain this form and present the appearance of the humanoid you once were, but this is taxing and requires concentration. Moments of stress are likely to reveal your true nature. Your true form is revealed:&#13;
+            • Concentrating on a spell.&#13;
+            • Gaining the unconscious condition.&#13;
+            • Entering desecrated ground.&#13;
+            • Choosing to reveal yourself.&#13;
+            In events of extreme emotional or physical stress, a GM may call for a Constitution saving throw with a DC of their choosing to see if you maintain your humanoid form. Evil humanoid creatures that witness or hear about your true form become instantly hostile to you and are compelled by malice to destroy you, unless the GM decides otherwise.&#13;
+            If the creature is scared of you or decides that you are too powerful to fight, it will attempt to harm you in another way, but will not give up on destroying you.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Level 3 -->
+    <element name="Seraph (Level 3)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_3">
+        <prerequisite>Seraph Transformation Level 2</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 3rd level, you can pick one of the following Transformation Boons, or pick a boon from a lower level that you meet the prerequisites for.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_RADIANT_STRIKE" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_CLEANSE_AFFLICTION" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_BOW_OF_CELESTIAL_JUDGEMENT" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_HOLY_BULWARK" />
+            </div>
+             <p>You also gain this level’s Transformation Flaw.</p>
+             <div element="ID_GFG_GHCG_FEAT_FEATURE_BEACON_TO_DARKNESS" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Level 3 Boon. Beacon to Darkness (Flaw)</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Transformation Boon (Level 3)" supports="Seraph Boon" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_BEACON_TO_DARKNESS" />
+         </rules>       
+    </element>
+
+    <element name="Boon: Radiant Strike" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_RADIANT_STRIKE">
+        <supports>Seraph Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_3</requirements>
+        <description>
+            <p>Whenever you hit a target with a melee attack, you deal an additional 1d6 radiant damage to the target. This damage increases to 2d6 if the target is a Fiend, Fey, or Undead.</p>
+        </description>
+        <sheet>
+            <description>Whenever you hit a target with a melee attack, you deal an additional 1d6 radiant damage to the target. This damage increases to 2d6 if the target is a Fiend, Fey, or Undead.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Cleanse Affliction" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_CLEANSE_AFFLICTION">
+        <supports>Seraph Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_3</requirements>
+        <description>
+            <p>When you cast a spell that restores hit points to an ally, you can also remove one condition being inflicted on them by a spell or ability.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell that restores hit points to an ally, you can also remove one condition being inflicted on them by a spell or ability.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Bow of Celestial Judgement" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_BOW_OF_CELESTIAL_JUDGEMENT">
+        <supports>Seraph Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_3</requirements>
+        <description>
+            <p>You can use a bonus action to summon a powerful bow made of divine light. The bow is the same as a longbow, except attacks made with it deal radiant damage and have the following features:</p>
+            <ul>
+                <li>The bow does not use ammunition. Instead, when the wielder draws the bowstring, an ethereal arrow of radiant light forms.</li>
+                <li>Attacks with the bow deal an additional 1d8 radiant damage. Against fiends, fey and undead, the bow deals an additional 2d8 radiant damage instead.</li>
+                <li>The bow’s radiant form emits bright light in a 5-foot radius and dim light for an additional 5 feet.</li>
+            </ul>
+            <p>You can unsummon the bow at any time with the use of an action. If you unwield the bow, it immediately unsummons.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can summon a powerful bow made of divine light. The bow is the same as a longbow, except attacks made with it deal radiant damage and have the following features:&#13;
+            • The bow does not use ammunition. Instead, when the wielder draws the bowstring, an ethereal arrow of radiant light forms.&#13;
+            • Attacks with the bow deal an additional 1d8 radiant damage. Against fiends, fey and undead, the bow deals an additional 2d8 radiant damage instead.&#13;
+            • The bow’s radiant form emits bright light in a 5-foot radius and dim light for an additional 5 feet.&#13;
+            You can unsummon the bow at any time with the use of an action. If you unwield the bow, it immediately unsummons.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Holy Bulwark" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_HOLY_BULWARK">
+        <supports>Seraph Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_3</requirements>
+        <description>
+            <p>You may use your action to steel yourself against the tactics of your most hated adversaries, gaining one of the following benefits:</p>
+            <ul>
+                <li><b>Stand Against the Infernal.</b> You gain resistance to fire damage.</li>
+                <li><b>Cleanse the Undead.</b> You gain resistance to necrotic damage.</li>
+                <li><b>Ignore Fey Trickery.</b> You are immune to the charmed and frightened conditions.</li>
+            </ul>
+            <p>This effect lasts until you use this feature again.</p>
+        </description>
+        <sheet action="Action">
+            <description>You steel yourself against the tactics of your most hated adversaries, gaining one of the following benefits:&#13;
+            • Stand Against the Infernal. You gain resistance to fire damage.&#13;
+            • Cleanse the Undead. You gain resistance to necrotic damage.&#13;
+            • Ignore Fey Trickery. You are immune to the charmed and frightened conditions.&#13;
+            This effect lasts until you use this feature again.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Beacon to Darkness" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_BEACON_TO_DARKNESS">
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_3</requirements>
+        <description>
+            <p>You have become a Seraph of noted virtue and divinity. This has made you a target for all that is dark in the world. Whenever you or an ally within 30 feet commits an act of greater evil, such as murdering a helpless innocent, a small amount of darkness attaches itself to you, and you gain 1 corruption point (to a maximum of 5). Whether the act constitutes greater evil is determined by the GM. Whenever you make an attack roll against an evil creature, or make a saving throw against a spell or ability from an evil creature, subtract the number of corruption points you have from the roll. Whenever you complete a short or long rest, and have prayed for at least 1 hour, you can reduce the number of corruption points you have by 1.</p>
+        </description>
+        <sheet>
+            <description>Whenever you or an ally within 30 feet commits an act of greater evil, such as murdering a helpless innocent, a small amount of darkness attaches itself to you, and you gain 1 corruption point (to a maximum of 5). Whether the act constitutes greater evil is determined by the GM. Whenever you make an attack roll against an evil creature, or make a saving throw against a spell or ability from an evil creature, subtract the number of corruption points you have from the roll. Whenever you complete a short or long rest, and have prayed for at least 1 hour, you can reduce the number of corruption points you have by 1.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Level 4 -->
+    <element name="Seraph (Level 4)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_4">
+        <prerequisite>Seraph Transformation Level 3</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 4th level, you can pick one of the following Transformation Boons, or pick a boon from a lower level that you meet the prerequisites for.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_AURA_OF_HOLY_PURGE" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_AURA_OF_MERCIFUL_BLESSING" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_AURA_OF_EMPYREAL_VALOR" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_AURA_OF_CELESTIAL_RESILIENCE" />
+            </div>
+            <p>You also gain this level’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHCG_FEAT_FEATURE_PULL_OF_THE_EMPYREAN" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Level 4 Boon. Pull of the Empyrean (Flaw)</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Transformation Boon (Level 4)" supports="Seraph Boon" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_PULL_OF_THE_EMPYREAN" />
+         </rules>       
+    </element>
+
+    <element name="Boon: Aura of Holy Purge" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_AURA_OF_HOLY_PURGE">m
+        <supports>Seraph Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_4</requirements>
+        <description>
+            <p>You emit an aura of righteous fervour. This aura radiates up to 20 feet from you while you are conscious. When you or an ally within range of your aura hits a hostile creature, they can choose for that hit to be a critical hit instead. Once a creature has benefited from this hit instead. Once a creature has benefited from this feature, they cannot benefit from it again until they have completed a long rest.</p>
+        </description>
+        <sheet>
+            <description>You emit an aura of righteous fervour. This aura radiates up to 20 feet from you while you are conscious. When you or an ally within range of your aura hits a hostile creature, they can choose for that hit to be a critical hit instead. Once a creature has benefited from this feature, they cannot benefit from it again until they have completed a long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Aura of Merciful Blessing" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_AURA_OF_MERCIFUL_BLESSING">
+        <supports>Seraph Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_4</requirements>
+        <description>
+            <p>You emit an aura of invigoration and fortitude. This aura radiates up to 20 feet from you while you are conscious. When you or an ally within range of your aura is reduced to 0 hit points, they are reduced to 1 hit point instead. Once a creature has benefited from this feature, they cannot benefit again until they have completed a long rest.</p>
+        </description>
+        <sheet>
+            <description>You emit an aura of invigoration and fortitude. This aura radiates up to 20 feet from you while you are conscious. When you or an ally within range of your aura is reduced to 0 hit points, they are reduced to 1 hit point instead. Once a creature has benefited from this feature, they cannot benefit again until they have completed a long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Aura of Empyreal Valor" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_AURA_OF_EMPYREAL_VALOR">
+        <supports>Seraph Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_4</requirements>
+        <description>
+            <p>You emit an aura of swiftness and bravery. This aura radiates up to 20 feet from you while you are conscious. When you or an ally within range of your aura makes a Dexterity ability check to determine initiative, they can add +5 to the result. In addition, on that creature’s turn they gain advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. Once a creature has benefited from this feature, they cannot benefit again until they have completed a long rest.</p>
+        </description>
+        <sheet>
+            <description>You emit an aura of swiftness and bravery. This aura radiates up to 20 feet from you while you are conscious. When you or an ally within range of your aura makes a Dexterity ability check to determine initiative, they can add +5 to the result. In addition, on that creature’s turn they gain advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. Once a creature has benefited from this feature, they cannot benefit again until they have completed a long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Aura of Celestial Resilience" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_AURA_OF_CELESTIAL_RESILIENCE">
+        <supports>Seraph Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_4</requirements>
+        <description>
+            <p>You emit an aura of stalwart conviction. This aura radiates up to 20 feet from you while you are conscious. When you or an ally within range of your aura fails a saving throw, they can choose to succeed it instead. Once a creature has benefited from this feature, they cannot benefit from it again until they have completed a long rest.</p>
+        </description>
+        <sheet>
+            <description>You emit an aura of stalwart conviction. This aura radiates up to 20 feet from you while you are conscious. When you or an ally within range of your aura fails a saving throw, they can choose to succeed it instead. Once a creature has benefited from this feature, they cannot benefit from it again until they have completed a long rest.</description>
+        </sheet>
+    </element>
+    
+    <element name="Flaw: Pull of the Empyrean" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_PULL_OF_THE_EMPYREAN">
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_SERAPH_LEVEL_4</requirements>
+        <description>
+            <p>Your new native plane attempts to draw you to it, laying claim to your form. Whenever you roll a natural 1 on a saving throw against a magical spell or ability, you take 1d6 force damage per 2 class levels in addition to any other damage or effects you would suffer, as your native plane attempts to unbind you from the material plane. For example, a 6th level Fighter would take 3d6 force damage. This damage ignores resistances and immunities.</p>
+        </description>
+        <sheet>
+            <description>Whenever you roll a natural 1 on a saving throw against a magical spell or ability, you take 1d6 force damage per 2 class levels in addition to any other damage or effects you would suffer. This damage ignores resistances and immunities.</description>
+        </sheet>
+    </element>
+</elements>

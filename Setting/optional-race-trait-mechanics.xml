@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Optional Race Trait</name>
+		<update version="0.1.0">
+			<file name="optional-race-trait-mechanics.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/optional-race-trait-mechanics.xml" />
+		</update>
+	</info>
+
+    <element name="Dwarf, LV03: Dwarven Blackpowder Training" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_VM_DWARVEN_BLACKPOWDER_TRAINING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You have proficiency with Blackpowder weapons when you reach 
+			3rd-level.</p>
+		</description>
+		<setters>
+			<set name="category">Optional Race Trait</set>
+			<set name="keywords">third level, 3rd level, Proficiency</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BLACKPOWDER_WEAPONS"  level="3" requirements="ID_SRD_RACE_DWARF"/>
+		</rules>
+	</element>
+     <element name="Gnome, LV03: Gnome specialist training" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_VM_DWARVEN_BLACKPOWDER_TRAINING">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You have proficiency with Scatter weapons when you reach 3rd-level.</p>
+		</description>
+		<setters>
+			<set name="category">Optional Race Trait</set>
+			<set name="keywords">third level, 3rd level, Proficiency</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_GFG_GHPG_WEAPON_BLUNDERBUSS" level="3" requirements="ID_RACE_GNOME"/>
+            <grant type="Proficiency" id="ID_GFG_GHPG_WEAPON_BLUNDERBUSS_HAND" level="3" requirements="ID_RACE_GNOME"/>
+            <grant type="Proficiency" id="ID_GFG_GHPG_WEAPON_DRAGON_PISTOL" level="3" requirements="ID_RACE_GNOME"/>
+            <grant type="Proficiency" id="ID_GFG_GHPG_WEAPON_DRAGON_RIFLE" level="3" requirements="ID_RACE_GNOME"/>
+            <grant type="Proficiency" id="ID_GFG_GHPG_WEAPON_FLAME_BELLOWS" level="3" requirements="ID_RACE_GNOME"/>
+		</rules>
+	</element>
+</elements>

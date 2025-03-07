@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wretched Bloodline</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="Sorcerer-Wretched-Bloodline.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Sorcerer-Wretched-Bloodline.xml" />
+		</update>
+	</info>
+
+	<element name="Wretched Bloodline" type="Archetype" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_SORCERER_WRETCHED_BLOODLINE">
+		<supports>Sorcerous Origin</supports>
+		<description>
+			<p>With every promise made to a fairy, contract signed with a devil, and pact with the unquiet dead, there’s a chance someone doesn’t keep their end of the bargain. The vengeance of immortal beings lasts much longer than one lifetime, and the lingering magic of these curses can affect the mortal’s descendants.</p>
+            <p class="indent">These inherited magical afflictions may manifest as a plague, deformity, or aversion to the sun. In such families, a child may be born that learns to master the latent magic within their inherited curse, turning their bloodline’s bane into a personal boon—these sorcerers are known collectively as the Wretched.</p>
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_BAD_LUCK_CHARM" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_BLOOD_TIES" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_WRETCHED_CURSE" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_SHARE_THE_BURDEN" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_TERRIFYING_VISAGE" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_VENGEFUL_SUMMONS" />
+		</description>
+		<sheet diplay="false">
+			<description>With every promise made to a fairy, contract signed with a devil, and pact with the unquiet dead, there’s a chance someone doesn’t keep their end of the bargain. The vengeance of immortal beings lasts much longer than one lifetime, and the lingering magic of these curses can affect the mortal’s descendants.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_BAD_LUCK_CHARM" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_BLOOD_TIES" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_WRETCHED_CURSE" level="1" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_SHARE_THE_BURDEN" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_TERRIFYING_VISAGE" level="14" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_VENGEFUL_SUMMONS" level="18" />
+		</rules>
+	</element>
+
+    <element name="Bad Luck Charm" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_BAD_LUCK_CHARM">
+        <description>
+            <p>Starting at 1st level, you have mastered the ability to temporarily cast a small fragment of your curse onto another. You can use a bonus action to choose a creature you can see within 30 feet. The chosen creature has disadvantage on the next ability check, attack roll, or saving throw it makes. Once you use this feature, you can’t do so again until you finish a short or long rest, unless you spend 1 sorcery point to use it again.</p>
+        </description>
+		<sheet usage="1/Short Rest" action="Bonus Action">
+            <description>As a bonus action, choose a creature you can see within 30 feet. The chosen creature has disadvantage on the next ability check, attack roll, or saving throw it makes. Once you use this feature, you can’t do so again until you finish a short or long rest, unless you spend 1 sorcery point to use it again.</description>
+        </sheet>
+    </element>
+
+    <element name="Blood Ties" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_BLOOD_TIES">
+        <description>
+            <p>At 1st level, your senses easily attune to the supernatural forces that caused your inherited affliction. You know the detect evil and good spell and can cast it without expending a spell slot. This spell counts as a sorcerer spell for you but does not count against your number of spells known. Once you cast this spell without expending a spell slot, you can’t do so again until you finish a short or long rest.</p>
+            <p class="indent">In addition, choose one of the following creature types as the being who cursed your ancestor: fey, fiend, or undead. While you are concentrating on the detect evil and good spell, creatures of the chosen type have disadvantage on attack rolls against you, and you cannot be charmed, frightened, or possessed by such creatures.</p>
+        </description>
+        <sheet>
+            <description>You know the detect evil and good spell and can cast it without expending a spell slot. This spell counts as a sorcerer spell for you but does not count against your number of spells known. Once you cast this spell without expending a spell slot, you can’t do so again until you finish a short or long rest.&#13;
+            </description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" spellcasting="Sorcerer" prepared="true" />
+            <select type="Archetype Feature" name="Blood Ties" supports="Blood Ties"/>
+        </rules>
+    </element>
+    <element name="Blood Ties(Fey)" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_BLOOD_TIES_FEY">
+		<supports>Blood Ties</supports>
+        <description>
+            <p>While you are concentrating on the detect evil and good spell, creatures of the fey type have disadvantage on attack rolls against you, and you cannot be charmed, frightened, or possessed by such creatures.</p>
+        </description>
+        <sheet>
+            <description>While you are concentrating on the detect evil and good spell, creatures of the fey type have disadvantage on attack rolls against you, and you cannot be charmed, frightened, or possessed by such creatures.</description>
+        </sheet>
+	</element>
+    <element name="Blood Ties(Fiend)" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_BLOOD_TIES_FIEND">
+		<supports>Blood Ties</supports>
+        <description>
+            <p>While you are concentrating on the detect evil and good spell, creatures of the fiend type have disadvantage on attack rolls against you, and you cannot be charmed, frightened, or possessed by such creatures.</p>
+        </description>
+        <sheet>
+            <description>While you are concentrating on the detect evil and good spell, creatures of the fiend type have disadvantage on attack rolls against you, and you cannot be charmed, frightened, or possessed by such creatures.</description>
+        </sheet>
+	</element>
+    <element name="Blood Ties(Undead)" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_BLOOD_TIES_UNDEAD">
+		<supports>Blood Ties</supports>
+        <description>
+            <p>While you are concentrating on the detect evil and good spell, creatures of the undead type have disadvantage on attack rolls against you, and you cannot be charmed, frightened, or possessed by such creatures.</p>
+        </description>
+        <sheet>
+            <description>While you are concentrating on the detect evil and good spell, creatures of the undead type have disadvantage on attack rolls against you, and you cannot be charmed, frightened, or possessed by such creatures.</description>
+        </sheet>
+	</element>
+
+    <element name="Wretched Curse" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_WRETCHED_CURSE">
+		<description>
+            <p>Also at 1st level, you suffer from a curse inherited from an ancestor who failed to uphold their end of a bargain with an otherworldly power. Choose one of the following curses that was passed down to you.</p>
+            <h5 class="caption">HULKING</h5>
+			<p>Your ancestor was cursed with a hulking frame. You have disadvantage on Dexterity (Stealth) ability checks made to move quietly. In addition, your maximum hit points increase by 1 and increase by 1 again each time you gain a level in this class. Finally, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+			<h5 class="caption">NOCTURNAL</h5>
+			<p>Your ancestor was cursed to shun the light of day. You have disadvantage on Wisdom (Perception) ability checks made to see while you are in sunlight. In addition, you have darkvision out to a distance of 120 feet and can see through magical darkness within that range.</p>
+			<h5 class="caption">PLAGUEBEARER</h5>
+			<p>Your ancestor was cursed with physical symptoms of a plague. You have disadvantage on Charisma (Persuasion) ability checks made against humanoid creatures who are not blinded. In addition, you are immune to disease and have resistance to necrotic damage.</p>
+		</description>
+        <sheet>
+            <description>Choose one of the following curses that was passed down to you:</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Wretched Curse" supports="Wretched Curse" />
+        </rules>
+    </element>
+    
+    <element name="Hulking" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WRETCHED_CURSE_HULKING">
+        <supports>Wretched Curse</supports>
+		<description>
+            <p>Your ancestor was cursed with a hulking frame. You have disadvantage on Dexterity (Stealth) ability checks made to move quietly. In addition, your maximum hit points increase by 1 and increase by 1 again each time you gain a level in this class. Finally, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+        </description>
+        <sheet>
+            <description>You have disadvantage on Dexterity (Stealth) ability checks made to move quietly. In addition, your maximum hit points increase by 1 and increase by 1 again each time you gain a level in this class. Finally, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+        </sheet>
+        <rules>
+			<stat name="hp" value="level:sorcerer" />
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+        </rules>
+	</element>
+
+    <element name="Nocturnal" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WRETCHED_CURSE_NOCTURNAL">
+        <supports>Wretched Curse</supports>
+		<description>
+            <p>Your ancestor was cursed to shun the light of day. You have disadvantage on Wisdom (Perception) ability checks made to see while you are in sunlight. In addition, you have darkvision out to a distance of 120 feet and can see through magical darkness within that range.</p>
+        </description>
+        <sheet>
+            <description>You have disadvantage on Wisdom (Perception) ability checks made to see while you are in sunlight. In addition, you have darkvision out to a distance of 120 feet and can see through magical darkness within that range.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <stat name="darkvision:range" value="120" bonus="base" />
+        </rules>
+	</element>
+
+    <element name="Plaguebearer" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WRETCHED_CURSE_PLAGUEBEARER">
+        <supports>Wretched Curse</supports>
+		<description>
+            <p>Your ancestor was cursed with physical symptoms of a plague. You have disadvantage on Charisma (Persuasion) ability checks made against humanoid creatures who are not blinded. In addition, you are immune to disease and have resistance to necrotic damage.</p>
+        </description>
+        <sheet>
+            <description>You have disadvantage on Charisma (Persuasion) ability checks made against humanoid creatures who are not blinded. In addition, you are immune to disease.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+	</element>
+
+    <element name="Share the Burden" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_SHARE_THE_BURDEN">
+        <description>
+            <p>At 6th level, you learn the bestow curse spell. This spell counts as a sorcerer spell for you, but it doesn’t count against your number of sorcerer spells known. When you cast the spell, you can choose to cast it by spending 3 sorcery points instead of a spell slot. If you cast the spell using sorcery points, its range changes to 60 feet for that casting and your concentration can’t be broken as a result of taking damage.</p>
+        </description>
+        <sheet>
+            <description>You learn the bestow curse spell. This spell counts as a sorcerer spell for you, but it doesn’t count against your number of sorcerer spells known. When you cast the spell, you can choose to cast it by spending 3 sorcery points instead of a spell slot. If you cast the spell using sorcery points, its range changes to 60 feet for that casting and your concentration can’t be broken as a result of taking damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" spellcasting="Sorcerer" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Terrifying Visage" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_TERRIFYING_VISAGE">
+        <description>
+            <p>Beginning at 14th level, you can use a bonus action to adopt the terrifying visage of the being who cursed your ancestor for 10 minutes. During this time, you can use an action on each of your turns to cause each creature who can see you within 30 feet make a Wisdom saving throw against your sorcerer spell save DC. On a failure, a creature is frightened of you until the end of your next turn.</p>
+            <p class="indent">In addition, while you have adopted the terrifying visage, you gain an additional benefit based on the creature type chosen with your Blood Ties feature.</p>
+            <p class="indent"><b>Fey.</b> You can use a bonus action to teleport up to 30 feet in any direction.</p>
+            <p class="indent"><b>Fiend.</b> You have resistance to cold and fire damage.</p>
+            <p class="indent"><b>Undead.</b> When you take damage that isn’t radiant, you can use your reaction to reduce that damage by an amount equal to half your sorcerer level.</p>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+        </description>
+		<sheet usage="1/Long Rest" action="Bonus Action">
+			<description>As a bonus action to adopt the terrifying visage of the being who cursed your ancestor for 10 minutes. During this time, you can use an action on each of your turns to cause each creature who can see you within 30 feet make a Wisdom saving throw against your sorcerer spell save DC. On a failure, a creature is frightened of you until the end of your next turn.</description>
+		</sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_GFG_GHPG_TERRIFYING_VISAGE_FEY" requirements="ID_GFG_GHPG_BLOOD_TIES_FEY"/>
+            <grant type="Archetype Feature" id="ID_GFG_GHPG_TERRIFYING_VISAGE_FIEND" requirements="ID_GFG_GHPG_BLOOD_TIES_FIEND"/>
+            <grant type="Archetype Feature" id="ID_GFG_GHPG_TERRIFYING_VISAGE_UNDEAD" requirements="ID_GFG_GHPG_BLOOD_TIES_UNDEAD"/>
+
+            <stat name="frightened:dc" value="8" />
+            <stat name="frightened:dc" value="proficiency" />
+            <stat name="frightened:dc" value="charisma:modifier" />
+        </rules>
+    </element>
+
+    <element name="Terrifying Visage(Fey)" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_TERRIFYING_VISAGE_FEY">
+        <description>
+            <p>You can use a bonus action to teleport up to 30 feet in any direction.</p>
+        </description>
+        <sheet>
+            <description>You can use a bonus action to teleport up to 30 feet in any direction.</description>
+        </sheet>
+	</element>
+    <element name="Terrifying Visage(Fiend)" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_TERRIFYING_VISAGE_FIEND">
+        <description>
+            <p>You have resistance to cold and fire damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to cold and fire damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+	</element>
+    <element name="Terrifying Visage(Undead)" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_TERRIFYING_VISAGE_UNDEAD">
+        <description>
+            <p>When you take damage that isn’t radiant, you can use your reaction to reduce that damage by an amount equal to half your sorcerer level.</p>
+        </description>
+        <sheet>
+            <description>When you take damage that isn’t radiant, you can use your reaction to reduce that damage by {{terrifying visage:undead}}.</description>
+        </sheet>
+        <rules>
+            <stat name="terrifying visage:undead" value="level:sorcerer:half" />
+        </rules>
+	</element>
+
+    <element name="Vengeful Summons" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_WRETCHED_BLOODLINE_VENGEFUL_SUMMONS">
+        <description>
+            <p>Beginning at 18th level, your magic has become powerful enough that you can call and command a servant of those that cursed you. Choose one of the following creatures as a representative for your curse based on the choice you made with your Blood Ties feature: lamia or troll (fey only), barbed devil or incubus/succubus (fiend only), ghost or wraith (undead only).</p>
+            <p class="indent">You can use an action and spend 5 sorcery points to summon your chosen creature. The creature appears in an unoccupied space you can see within 60 feet, and disappears when it drops to 0 hit points, you use this feature to summon another creature, or after 10 minutes have passed.</p>
+            <p class="indent">Roll initiative for the creature, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action on your part), telling it what it must do on its next turn. If you issue no command, it spends its turn attacking any creature within reach.</p>
+        </description>
+        <sheet action="Action">
+			<description>You can use an action and spend 5 sorcery points to summon your chosen creature. The creature appears in an unoccupied space you can see within 60 feet, and disappears when it drops to 0 hit points, you use this feature to summon another creature, or after 10 minutes have passed.&#13;
+            Roll initiative for the creature, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action on your part), telling it what it must do on its next turn. If you issue no command, it spends its turn attacking any creature within reach.</description>
+		</sheet>
+    </element>
+</elements>

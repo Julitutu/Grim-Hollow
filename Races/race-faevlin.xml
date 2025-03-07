@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Faevlin</name>
+		<source>Grim Hollow - Monster Grimoire</source>
+		<update version="0.1.0">
+			<file name="race-faevlin.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-faevlin.xml" />
+		</update>
+	</info>
+
+	<!-- Faevlin Race -->
+	<element name="Faevlin" type="Race" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACE_FAEVLIN">
+		<description>
+            <p>Escaping the fey realm have given you a sense that nothing can keep you from achieving all your goals. Especially if those goals involve guile, subterfuge, or chicanery. You look at the world much differently than other creatures, mostly because your head is upside-down. Keeping your chin up has never been a problem!</p>
+            <p>You’re always looking over your shoulder, as the fey powers that you tricked might be seeking vengeance against you. Gaining power makes it harder for that to take place.</p>
+            <h4>FAEVLIN TRAITS</h4>
+			<p>Faevlin combine the sneakiness of their mortal-world cousins with the magic that seeped into your being from the land of fey.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2 and your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> As a creature that has a connection to the land of the fey, you’re longer-lived than your goblin cousins. You reach adulthood at the age of 20 and live to 160 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Your capricious and whimsical nature indicates a trend toward chaotic behavior.</p>
+            <p class="indent"><strong><em>Size.</em></strong> You are generally shorter and slighter than your goblin cousins, averaging about 3 feet tall and 60 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+            <p class="indent"><strong><em>Fey Fade.</em></strong> When an attack misses you, you can teleport up to 30 feet in a random direction, arriving in a safe, unoccupied space. You cannot use this ability again until you finish a short rest.</p>
+            <p class="indent"><strong><em>Fey Touched.</em></strong> Magic can’t put you to sleep, and you can only be charmed by the magic of a fey creature.</p>
+            <p class="indent"><strong><em>Sneaky.</em></strong> You can use a bonus action to take the Hide action.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You speak Goblin, Sylvan, and one national language.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height">3'</set>
+			<set name="weight">60 lb.</set>
+		</setters>
+		<rules>
+			<!-- Ability Score Increase (Dexterity +2, Wisdom +1) -->
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase (+2 and +1, or three +1's) -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Faevlin)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Faevlin)" supports="Custom Ability Score Increase 1" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Size (Small) -->
+			<grant type="Size" id="ID_SIZE_SMALL" />
+
+			<!-- Speed (30 ft. walking) -->
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<!-- Darkvision -->
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+            <!-- Fey Fade -->
+			<grant type="Racial Trait" id="ID_GFG_GHMG_RACIAL_TRAIT_FAEVLIN_FEY_FADE" />
+
+            <!-- Fey Touched -->
+            <grant type="Racial Trait" id="ID_GFG_GHMG_RACIAL_TRAIT_FAEVLIN_FEY_TOUCHED" />
+
+            <!-- Sneaky -->
+            <grant type="Racial Trait" id="ID_GFG_GHMG_RACIAL_TRAIT_FAEVLIN_SNEAKY" />
+
+			<!-- Languages (Goblin, Sylvan, +1 other) -->
+            <grant type="Language" id="ID_LANGUAGE_GOBLIN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Faevlin)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<!-- Tasha's Cauldron of Everything: Customized Language -->
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+
+	<!-- Fey Fade Trait -->
+	<element name="Fey Fade" type="Racial Trait" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACIAL_TRAIT_FAEVLIN_FEY_FADE">
+		<description>
+			<p>When an attack misses you, you can teleport up to 30 feet in a random direction, arriving in a safe, unoccupied space. You cannot use this ability again until you finish a short rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When an attack misses you, you can teleport up to 30 feet in a random direction, arriving in a safe, unoccupied space.</description>
+		</sheet>
+	</element>
+
+    <!-- Fey Touched -->
+	<element name="Fey Touched" type="Racial Trait" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACIAL_TRAIT_FAEVLIN_FEY_TOUCHED">
+		<description>
+			<p>Magic can’t put you to sleep, and you can only be charmed by the magic of a fey creature.</p>
+		</description>
+		<sheet>
+			<description>Magic can’t put you to sleep, and you can only be charmed by the magic of a fey creature.</description>
+		</sheet>
+	</element>
+
+    <!-- Sneaky -->
+	<element name="Sneaky" type="Racial Trait" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACIAL_TRAIT_FAEVLIN_SNEAKY">
+		<description>
+			<p>You can use a bonus action to take the Hide action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can use a bonus action to take the Hide action.</description>
+		</sheet>
+	</element>
+</elements>

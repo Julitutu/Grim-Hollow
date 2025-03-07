@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Living Crucible</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="Fighter-Living-Crucible.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Fighter-Living-Crucible.xml" />
+		</update>
+	</info>
+
+    <element name="Living Crucible" type="Archetype" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FIGHTER_LIVING_CRUCIBLE">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>Fighters who become Living Crucibles have discovered an external means of power. While most other fighters train in martial traditions or study the art of war, Living Crucibles hone their craft of alchemy and prepare their body to endure compounds poisonous to others. In exchange for this rigorous physical and mental preparation, these fighters are able to temporarily push their bodies past their natural limits. Under the influence of their alchemical compounds these fighters can see in darkness, enhance their speed, inure themselves to magical attacks, and more.</p>
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_COMPOUND_CREATOR" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_STUDENT_OF_ALCHEMY" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_QUICK_CREATION" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_LIVING_CAULDRON" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_TOXIN_TRANSMUTATION" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_LIVING_CATALYST" />
+		</description>
+		<sheet display="false">
+			<description>Fighters who become Living Crucibles have discovered an external means of power. While most other fighters train in martial traditions or study the art of war, Living Crucibles hone their craft of alchemy and prepare their body to endure compounds poisonous to others.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_COMPOUND_CREATOR" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_STUDENT_OF_ALCHEMY" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_QUICK_CREATION" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_LIVING_CAULDRON" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_TOXIN_TRANSMUTATION" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_LIVING_CATALYST" level="18" />
+        </rules>
+	</element>
+
+    <element name="Compound Creator" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_COMPOUND_CREATOR">
+        <description>
+            <p>When you choose this archetype at 3rd level, you learn to create alchemical compounds toxic to others but empowering to you.</p>
+            <p class="indent"><b>Creating Compounds.</b> You learn three compounds of your choice, which are detailed under “Compounds” below. You can create any number of these compounds you know by using alchemist’s supplies and spending 10 minutes to create them. These compounds remain potent until the end of your next long rest, after which time they become inert and have no effect.</p>
+            <p class="indent">You learn two additional compounds of your choice at 7th, 10th, and 15th level. Each time you learn new compounds, you can also replace one compound you know with another one.</p>
+            <p class="indent"><b>Consuming Compounds.</b> As a bonus action you can consume a single compound using this feature. You can safely consume a number of compounds up to 1 + your Constitution modifier (minimum of 1). Each compound you consume after that causes you to gain a level of exhaustion. When you finish a long rest, you regain the ability to safely consume compounds. You can benefit from multiple compounds at the same time, but taking the same compound more than once provides no additional effects.</p>
+            <p class="indent">The benefits associated with each compound apply only to you. Any other creature that consumes one of your compounds must succeed on a Constitution saving throw (DC = 8 + your proficiency bonus + your Intelligence modifier) or become poisoned for 1 minute.</p>
+            <h4>Compounds</h4>
+            <div class="reference">
+               <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_ADRENAL_INJECTION" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_ALLSENSE_INJECTION" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_ARCANE_EYE_OIL" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_DRAUGHT_OF_BULLS_STRENGTH" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_DRAUGHT_OF_CATS_GRACE" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_DRAUGHT_OF_BEARS_ENDURANCE" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_DRAUGHT_OF_FOXES_CUNNING" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_DRAUGHT_OF_OWLS_WISDOM" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_DRAUGHT_OF_EAGLES_SPLENDOR" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_ELFSIGHT_OIL" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_FLESHKNIT_PHOSPHATE" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_IRONMIND_INJECTION" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_LIQUID_COURAGE" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_LIQUID_RAGE" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_PRESTO_POWDER" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_SPELLSHINE_OINTMENT" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_STEELSKIN_OINTMENT" />
+                <div element="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_TENMEN_TINCTURE" />
+            </div>
+        </description>
+        <sheet usage="{{living crucible:safe compounds}}/Long Rest" action="Bonus Action">
+			<description>You can create compounds, each one granting diffent benefits. As a bonus action, you can consume these compounds that you have created. You can safely consume a number of compounds up to {{living crucible:safe compounds}}.</description>
+		</sheet>
+        <rules>
+            <stat name="living crucible:safe compounds" value="1" />
+            <stat name="living crucible:safe compounds" value="1" bonus="base" />
+            <stat name="living crucible:safe compounds" value="constitution:modifier" bonus="base" />
+
+            <stat name="compound:dc" value="8" />
+            <stat name="compound:dc" value="proficiency" />
+            <stat name="compound:dc" value="intelligence:modifier" />
+
+            <select type="Archetype Feature" name="Compound (3rd level)" supports="Compound" number="3" />
+            <select type="Archetype Feature" name="Compound (7th level)" supports="Compound" number="2" level="7" />
+            <select type="Archetype Feature" name="Compound (10th level)" supports="Compound" number="2" level="10" />
+            <select type="Archetype Feature" name="Compound (15th level)" supports="Compound" number="2" level="15" />
+        </rules>
+    </element>
+
+    <element name="Student of Alchemy" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_STUDENT_OF_ALCHEMY">
+        <description>
+            <p>Also at 3rd level, you gain proficiency with alchemist’s supplies. Your proficiency bonus is doubled for any ability check that uses this proficiency.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency with alchemist’s supplies. Your proficiency bonus is doubled for any ability check that uses alchemist’s supplies.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+        </rules>
+    </element>
+
+    <element name="Quick Creation" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_QUICK_CREATION">
+        <description>
+            <p>At 7th level, once per long rest you can use a bonus action to quickly create and consume one compound that you already know how to make.</p>
+        </description>
+        <sheet usage="1/Long Rest" action="Bonus Action">
+            <description>You can use a bonus action to quickly create and consume one compound that you already know how to make.</description>
+        </sheet>
+    </element>
+
+    <element name="Living Cauldron" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_LIVING_CAULDRON">
+        <description>
+            <p>At 10th level, the number of compounds you can safely consume increases to 3 + your Constitution modifier (minimum 1).</p>
+            <p>At 18th level, the number of compounds you can safely consume increases to 5 + your Constitution modifier (minimum 1).</p>
+        </description>
+        <sheet display="false">
+            <description>At 10th level, the number of compounds you can safely consume increases to 3 + your Constitution modifier (minimum 1). At 18th level, the number of compounds you can safely consume increases to 5 + your Constitution modifier (minimum 1).</description>
+        </sheet>
+        <rules>
+            <stat name="living crucible:safe compounds" value="2" level="10"/>
+            <stat name="living crucible:safe compounds" value="2" level="18"/>
+        </rules>
+    </element>
+
+    <element name="Toxin Transmutation" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_TOXIN_TRANSMUTATION">
+        <description>
+            <p>At 15th level, you can use a bonus action to end one effect causing you to be poisoned. When you do, you gain temporary hit points equal to your level in this class.</p>
+        </description>
+        <sheet>
+            <description>You can use a bonus action to end one effect causing you to be poisoned. When you do, you gain {{level:fighter}} temporary hit points.</description>
+        </sheet>
+    </element>
+
+    <element name="Living Catalyst" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_LIVING_CRUCIBLE_LIVING_CATALYST">
+        <description>
+            <p>At 18th level, when you finish a long rest you can choose to replace one compound you know with another one.</p>
+        </description>
+        <sheet>
+            <description>When you finish a long rest you can choose to replace one compound you know with another one.</description>
+        </sheet>
+    </element>
+
+   <!-- Compounds -->
+    <element name="Adrenal Injection" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_ADRENAL_INJECTION">
+		<supports>Compound</supports>
+		<description>
+			<p>For the next minute, your movement speed is increased by 10 feet and your jumping distances are tripled.</p>
+		</description>
+        <sheet>
+            <description>For the next minute, your movement speed is increased by 10 feet and your jumping distances are tripled.</description>
+        </sheet>
+	</element>
+
+    <element name="Allsense Injection" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_ALLSENSE_INJECTION">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next minute, you have blindsight out to a distance of 30 feet.</p>
+		</description>
+        <sheet>
+            <description>For the next minute, you have blindsight out to a distance of 30 feet.</description>
+        </sheet>
+	</element>
+
+    <element name="Arcane Eye Oil" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_ARCANE_EYE_OIL">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next hour, you can sense magic as if you were under the effects of the detect magic spell.</p>
+		</description>
+        <sheet>
+            <description>For the next hour, you can sense magic as if you were under the effects of the detect magic spell.</description>
+        </sheet>
+	</element>
+
+    <element name="Draught of Bull’s Strength" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_DRAUGHT_OF_BULLS_STRENGTH">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next 10 minutes, you have advantage on Strength ability checks and saving throws.</p>
+		</description>
+        <sheet>
+            <description>For the next 10 minutes, you have advantage on Strength ability checks and saving throws.</description>
+        </sheet>
+	</element>
+
+    <element name="Draught of Cat’s Grace" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_DRAUGHT_OF_CATS_GRACE">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next 10 minutes, you have advantage on Dexterity ability checks and saving throws.</p>
+		</description>
+        <sheet>
+            <description>For the next 10 minutes, you have advantage on Dexterity ability checks and saving throws.</description>
+        </sheet>
+	</element>
+
+    <element name="Draught of Bear’s Endurance" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_DRAUGHT_OF_BEARS_ENDURANCE">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next 10 minutes, you have advantage on Constitution ability checks and saving throws.</p>
+		</description>
+        <sheet>
+            <description>For the next 10 minutes, you have advantage on Constitution ability checks and saving throws.</description>
+        </sheet>
+	</element>
+
+    <element name="Draught of Fox’s Cunning" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_DRAUGHT_OF_FOXES_CUNNING">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next 10 minutes, you have advantage on Intelligence ability checks and saving throws.</p>
+		</description>
+        <sheet>
+            <description>For the next 10 minutes, you have advantage on Intelligence ability checks and saving throws.</description>
+        </sheet>
+	</element>
+
+    <element name="Draught of Owl’s Wisdom" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_DRAUGHT_OF_OWLS_WISDOM">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next 10 minutes, you have advantage on Wisdom ability checks and saving throws.</p>
+		</description>
+        <sheet>
+            <description>For the next 10 minutes, you have advantage on Wisdom ability checks and saving throws.</description>
+        </sheet>
+	</element>
+
+    <element name="Draught of Eagle’s Splendor" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_DRAUGHT_OF_EAGLES_SPLENDOR">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next 10 minutes, you have advantage on Charisma ability checks and saving throws.</p>
+		</description>
+        <sheet>
+            <description>For the next 10 minutes, you have advantage on Charisma ability checks and saving throws.</description>
+        </sheet>
+	</element>
+
+    <element name="Elfsight Oil" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_ELFSIGHT_OIL">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next 8 hours, you have darkvision out to a range of 120 feet.</p>
+		</description>
+        <sheet>
+            <description>For the next 8 hours, you have darkvision out to a range of 120 feet.</description>
+        </sheet>
+	</element>
+
+    <element name="Fleshknit Phosphate" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_FLESHKNIT_PHOSPHATE">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next minute, if you have at least 1 hit point, you regain a number of hit points equal to your proficiency bonus at the start of each of your turns.</p>
+		</description>
+        <sheet>
+            <description>For the next minute, if you have at least 1 hit point, you regain a {{proficiency}} of hit points at the start of each of your turns.</description>
+        </sheet>
+	</element>
+
+    <element name="Ironmind Injection" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_IRONMIND_INJECTION">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next hour, you have advantage on saving throws made against being charmed or frightened.</p>
+		</description>
+        <sheet>
+            <description>For the next hour, you have advantage on saving throws made against being charmed or frightened.</description>
+        </sheet>
+	</element>
+
+    <element name="Liquid Courage" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_LIQUID_COURAGE">
+        <supports>Compound</supports>
+		<description>
+			<p>You gain temporary hit points equal to your Constitution ability score plus twice your level in this class. You lose any remaining temporary hit points from this compound after 1 minute.</p>
+		</description>
+        <sheet>
+            <description>You gain {{liquid courage}} temporary hit points. You lose any remaining temporary hit points from this compound after 1 minute.</description>
+        </sheet>
+        <rules>
+            <stat name="liquid courage" value="constitution:score" />
+            <stat name="liquid courage" value="level:fighter" />
+            <stat name="liquid courage" value="level:fighter" />
+        </rules>
+	</element>
+
+    <element name="Liquid Rage" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_LIQUID_RAGE">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next minute, your weapon attacks deal an extra 1d4 damage.</p>
+		</description>
+        <sheet>
+            <description>For the next minute, your weapon attacks deal an extra 1d4 damage.</description>
+        </sheet>
+	</element>
+
+    <element name="Presto Powder" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_PRESTO_POWDER">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next 10 minutes, you have advantage on ability checks made to determine initiative and you can use a bonus action on each of your turns to take the Dash or Disengage action.</p>
+		</description>
+        <sheet>
+            <description>For the next 10 minutes, you have advantage on ability checks made to determine initiative and you can use a bonus action on each of your turns to take the Dash or Disengage action.</description>
+        </sheet>
+	</element>
+
+    <element name="Spellshine Ointment" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_SPELLSHINE_OINTMENT">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next minute, you have resistance to damage from spells.</p>
+		</description>
+        <sheet>
+            <description>For the next minute, you have resistance to damage from spells.</description>
+        </sheet>
+	</element>
+
+    <element name="Steelskin Ointment" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_STEELSKIN_OINTMENT">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next minute, you have resistance to bludgeoning, piercing, and slashing damage.</p>
+		</description>
+        <sheet>
+            <description>For the next minute, you have resistance to bludgeoning, piercing, and slashing damage.</description>
+        </sheet>
+	</element>
+
+    <element name="Tenmen Tincture" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_COMPOUND_LIVING_CRUCIBLE_TENMEN_TINCTURE">
+        <supports>Compound</supports>
+		<description>
+			<p>For the next hour, you count as one size larger when determining your carrying capacity, and you ignore the heavy property of weapons.</p>
+		</description>
+        <sheet>
+            <description>For the next hour, you count as one size larger when determining your carrying capacity, and you ignore the heavy property of weapons.</description>
+        </sheet>
+	</element>
+</elements>

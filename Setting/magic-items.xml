@@ -1,0 +1,1633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Grim Hollow Magic Items</name>
+        <description>Magic Items from the Grim Hollow Setting</description>
+        <update version="0.1.0">
+            <file name="magic-items.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/magic-items.xml" />
+        </update>
+    </info>
+   <element name="Watcher’s Candle" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WATCHERS_CANDLE">
+        <description>
+            <p>This black tapered candle cannot be lit. When a celestial, fiend, undead, or fey comes within 120 feet of the candle, it lights and burns with a purple flame. Once the candle has caught flame, it burns for one hour, and it cannot be used again.</p>
+            <p>Watcher’s candles cannot function if they are wrapped in packaging or stowed in a container.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="weight" lb="0"></set>
+            <set name="stackable">true</set>
+            <set name="name-format">Watcher's Candle</set>
+        </setters>
+   </element>
+
+   <element name="Seeing Glass" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_SEEING_GLASS">
+        <description>
+            <p>This ornate silver hand mirror is decorated with a motif of withered roses. The mirror’s reflection always shows the true form of any creature viewed in it as if it were seen by the <i>truesight</i> spell. You can see invisible creatures, the true form of shapechanger, and the true faces of creatures attempting to disguise their hideous appearance.</p>
+            <p>If the seeing glass is turned upon a vampire, the glass immediately shatters and is destroyed.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="weight" lb="0"></set>  
+            <set name="name-format">Seeing Glass</set>
+        </setters>
+    </element>
+
+    <element name="Stitching Needle" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_STITCHING_NEEDLE">
+        <description>
+            <p>This black iron needle easily pierces the skin. If a creature’s mouth is sewn shut with a stitching needle, it loses the ability to speak or cast spells with verbal components. The creature gains the ability to communicate with telepathy out to a range of 60 feet. A creature you speak to in this manner does not need to share a language with you to communicate, but it must be able to understand at least one language. A creature without telepathy can receive and respond to messages but can’t initiate a conversation with you.</p>
+           <p>Stitching the mouth of a willing, unconscious, or incapacitated creature takes 10 minutes. Removing the stitches takes 1 minute.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="weight" lb="0"></set>  
+            <set name="name-format">Stitching Needle</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Hunter’s Mutagen" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_HUNTERS_MUTAGEN">
+        <description>
+            <p>This glowing green liquid sends a creature’s antibodies into a hyperactive state. When you drink this potion, you are immune to poison and disease for one hour. You also cannot contract curses like lycanthropy or mummy rot for the duration. At the end of the hour, you gain one level of exhaustion.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+             <set name="weight" lb="0.5"></set>
+             <set name="stackable">true</set>
+            <set name="name-format">Hunter's Mutagen</set>
+        </setters>
+    </element>
+
+    <!-- Aberrant Items -->
+    <element name="Fin Symbiote" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FIN_SYMBIOTE">
+    <description>
+        <p>This tendril of flesh harvested from a living aboleth can be embedded into the skin of an aberrant horror. To attune to this item, you must stitch it onto your skin and leave it for the entire attunement period, during which the fin burrows into your body to bond with your muscular system.</p>
+        <p>While attuned to this item, you gain a +2 bonus to the saving throw DC of your Transformation Save.</p>
+        <p>The fin cannot be removed while you’re attuned to it, and you can’t voluntarily end your attunement to it. If the tentacle is sliced from your body, it grows back in 1d4 hours.</p>
+    </description>
+    <setters>
+        <set name="category">Wondrous Items</set>
+        <set name="type">Wondrous Item</set>
+        <set name="rarity">Rare</set>
+        <set name="attunement" addition="by an aberrant horror">true</set>
+        <set name="name-format">Fin Symbiote</set>
+    </setters>
+    </element>
+
+    <element name="Stalk Symbiote" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_STALK_SYMBIOTE">
+        <description>
+        <p>This tendril of flesh harvested from a living aberration can be embedded into the skull of an aberrant horror. To attune to this item, you must stitch it onto your scalp and leave it for the entire attunement period, during which the stalk burrows into your skull to bond with your brain.</p>
+        <p>While attuned to this item, you have advantage on Wisdom (Perception) checks. In addition, you and any of your allies within 30 feet of you can’t be surprised, except when incapacitated by something other than nonmagical sleep.</p>
+        <p>The stalk can’t be removed while you’re attuned to it, and you can’t voluntarily end your attunement to it. If the stalk is sliced from your body, it grows back in 1d4 hours.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement" addition="by an aberrant horror">true</set>
+            <set name="name-format">Stalk Symbiote</set>
+        </setters>
+    </element>
+
+    <element name="Straitjacket" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_STRAITJACKET">
+        <description>
+        <p>This stained grey jacket has arms that reach to the floor and dozens of restraining straps. While wearing the straitjacket, an aberrant horror rolls twice on the Unstable Mutations table and can choose which result occurs.</p>
+        <p>The straitjacket takes 10 minutes to don or doff. A creature wearing the straitjacket has disadvantage on attack rolls.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement" addition="by an aberrant horror">true</set>
+            <set name="name-format">Straitjacket</set>
+        </setters>
+    </element>
+
+    <element name="Star Metal Ring" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_STAR_METAL_RING">
+        <description>
+        <p>This heavy steel ring is set with a chunk of shimmering star metal. While wearing this ring, your appendages are crusted with iridescent star metal. All your unarmed strikes deal magical damage while you are attuned to this ring.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+        <set name="type">Ring</set>
+        <set name="slot">ring</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement" addition="by an aberrant horror">true</set>
+            <set name="name-format">Star Metal Ring</set>
+        </setters>
+    </element>
+
+        <!-- Fey Items -->
+
+    <element name="Queen's Token" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_QUEENS_TOKEN">
+        <description>
+            <p>This humble acorn is one of the mightiest gifts a faerie queen can bestow upon her subjects. While holding the acorn, a creature can use an action to cast the <i>wish</i> spell. After using the acorn in this way, it immediately teleports back to the queen who bestowed it.</p>
+            <p>If the <i>wish</i> spell is used in a way that the queen would perceive as a threat to herself or her realm, the spell does not work. Instead, the creature who made the wish immediately transforms into an oak tree. Only a <i>wish</i> spell cast with the queen’s token can return a creature transformed in this way to its original state.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Legendary</set>
+            <set name="name-format">Queen's Token</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+        </setters>
+    </element>
+
+    <element name="Iridescent Armor" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_IRIDESCENT_ARMOR">
+            <description>
+                <p>This shimmering breastplate is forged from a giant dragonfly’s carapace and adorned with a cape of gossamer fabric. You gain a +1 bonus to AC while you wear this armor. Once per day, you can use an action to transform the gossamer cape into a pair of dragonfly wings, which grant you a flying speed of 60 feet for one hour. Once the armor is used this way, this property cannot be used again until the following dawn.</p>
+            </description>
+        <setters>
+        <set name="category">Magic Armor</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="type" addition="breastplate">Armor</set>
+        <set name="rarity">Rare</set>
+        <set name="armor">Breastplate</set>
+            <set name="enhancement">1</set>
+            <set name="name-format">Iridescent {{parent}}</set>
+        </setters>
+    </element>
+
+    <element name="Faerie Crown" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FAERIE_CROWN">
+            <description>
+            <p>This crown is woven of aromatic flowers that attract butterflies. The crown has 1d6+3 butterflies that hover around the crown. When a weapon attack would hit you, you can use your reaction to release one of the butterflies. When you do so, the butterfly interposes itself between you and the attack, taking the hit instead of you. A butterfly used in this way is destroyed.</p>
+                <p>Once all the butterflies are used, the faerie crown withers and is destroyed.</p>
+            </description>
+            <setters>
+                <set name="category">Wondrous Items</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="weight" lb="0"></set>
+                <set name="slot">head</set>
+                <set name="type">Wondrous Item</set>
+                <set name="rarity">Very Rare</set>
+                <set name="name-format">Faerie Crown</set>
+            </setters>
+    </element>
+
+    <element name="Toadstool Toddy" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_TOADSTOOL_TODDY">
+        <description>
+        <p>This carbonated liquid, a potent distillation of faerie magic, is bright fuchsia and tastes of autumn rain. A fey who drinks this potion can withstand 3 additional days in an urban environment without suffering exhaustion or penalties to rest.</p>
+        </description>
+        <setters>
+                <set name="category">Potions</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="weight" lb="0.5">½ lb.</set>
+                <set name="type">Potion</set>
+                <set name="rarity">Uncommon</set>
+                <set name="stackable">true</set>
+            <set name="name-format">Toadstool Toddy</set>
+        </setters>
+    </element>
+
+    <!-- Fiend Items -->
+
+    <element name="Ring of Hidden Desire" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RING_OF_HIDDEN_DESIRE">
+        <description>
+            <p>This rose gold band is set with an obsidian stone carved in the shape of a heart. While wearing this ring, you can use an action to attempt to learn a creature’s darkest desire. Select a creature that you can see. That creature must succeed on a DC 13 Wisdom saving throw. On a failed save, you immediately learn the target’s darkest desire. On a successful save, you do not learn anything, and the creature is immune to the effects of the ring for 24 hours. If the creature you choose has an Intelligence of 3 or lower, the creature is unaffected.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement" addition="by a fiend">true</set>
+            <set name="slot">ring</set>
+            <set name="name-format">Ring of Hidden Desire</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+        </setters>
+    </element>
+
+    <element name="Profane Charm" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_PROFANE_CHARM">
+        <description>
+            <p>This charm is a charred feather harvested from a fallen angel, wrapped in silver wire. While wearing this charm, you can enter hallowed ground without triggering your hideous appearance. In addition, you cannot be detected as a fiend by the <i>detect evil and good</i> spell or a paladin’s divine sense ability.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement" addition="by a fiend">true</set>
+            <set name="name-format">Profane Charm</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="slot">neck</set>
+        </setters>
+    </element>
+
+    <element name="Cinder Coat" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_CINDER_COAT">
+        <description>
+            <p>This floor-length leather duster is the color of dying embers. You have a +1 bonus to AC while wearing this armor.</p>
+            <p>The coat has 3 charges. When you hit a creature with an attack, and that creature is not at maximum hit points, you can expend 1 charge to deal an extra 1d10 fire damage to the target. The coat regains 1d3 expended charges daily at dawn.</p>
+        </description>
+        <setters>
+        <set name="category">Magic Armor</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="type" addition="leather">Armor</set>
+        <set name="rarity">Very Rare</set>
+        <set name="armor">Leather</set>
+        <set name="attunement" addition="by a fiend">true</set>
+        <set name="name-format">Cinder Coat</set>
+        <set name="enhancement">1</set>
+        <set name="charges">3</set>
+        </setters>
+    </element>
+    <element name="Ardor" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARDOR">
+        <description>
+        <p>The blades of this greataxe smolder with an inner light. The dark wooden handle is accented with silver.</p>
+            <p>When the celestial realm turned back yet another assault from the forces of evil, a fiendish forge master received a vision, allowing them to craft a battleaxe like no other. With the might of Ardor, the fiends now possess a weapon capable of striking down the celestial forces. Ardor now lies in the fiendish realm’s hidden vaults, waiting to be wielded when the forces of darkness make their ultimate strike to consume the world. The fiends don’t realize that an equally powerful weapon rests in the hands of the celestials who wage eternal war against them. The fates who inspired the forge master to craft Ardor also sent a vision to a smith of heaven in the interest of maintaining the balance of power.</p>
+            <p><b><i>Axe of Hell.</i></b> This magic battleaxe grants a +3 bonus to attack and damage rolls made with it. When you hit with an attack using it, the target takes an extra 3d10 necrotic damage.</p>
+            <p><b><i>Champion of Evil.</i></b> While holding the hammer, you are immune to the charmed, frightened, paralyzed, poisoned, and stunned conditions.</p>
+            <p><b><i>Ardor’s Pursuit.</i></b> As a bonus action, you can release Ardor to hover magically in an unoccupied space within 5 feet of you. If you can see the battleaxe, you can mentally command it as a bonus action to fly up to 50 feet and either make one attack against a target or return to your hands. If any effect targets the hovering axe, you are considered to be holding it. The hovering axe falls if the attuned user dies.</p>
+            <p><b><i>Spells.</i></b> While the axe is on your person, you can use an action to cast one of the following spells (save DC 18): <i>bane, banishment, bestow curse, branding smite, or incendiary cloud</i>. Once you use the axe to cast a spell, that spell can’t be cast again from it until the next dawn.</p>
+            <p><b><i>Destroying the Axe.</i></b> The only thing capable of damaging the battleaxe is its celestial twin Zeal. A creature wielding Zeal can choose to attack Ardor, which has an AC of 21 and 300 HP. No other creature or object can damage Ardor.</p>
+            <p><b><i>Sentience.</i></b> <i>Ardor</i> is a sentient chaotic evil weapon with an Intelligence of 14, a Wisdom of 10, and a Charisma of 18. It has hearing and darkvision out to a range of 120 feet.</p>
+            <p>The weapon communicates telepathically with its wielder and can speak, read, and understand Infernal.</p>
+        </description>
+        <setters>
+            <set name="keywords">battleaxe</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="battleaxe">Weapon</set>
+            <set name="attunement" addition="by a fiend">true</set>
+            <set name="rarity">Artifact</set>
+            <set name="weapon">Battleaxe</set>
+                <set name="enhancement">3</set>
+            <set name="name-format">Ardor</set>
+        </setters>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BANE" />
+            <grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" />
+            <grant type="Spell" id="ID_PHB_SPELL_BESTOW_CURSE" />
+            <grant type="Spell" id="ID_PHB_SPELL_BRANDING_SMITE" />
+            <grant type="Spell" id="ID_PHB_SPELL_INCENDIARY_CLOUD" />
+        </rules>
+    </element>
+
+    <!-- Lich Items -->
+
+    <element name="Funeral Mask" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FUNERAL_MASK">
+        <description>
+            <p>This delicate mask is made of thinly beaten copper that molds to the skin when worn. While wearing this mask, you can use an action to alter your appearance for one hour. You decide what you look like, including your height, weight, facial features, the sound of your voice, hair length, coloration, and distinguishing characteristics. You can make yourself appear as a member of another race, though none of your statistics change. You also can’t appear as a creature of a different size, and your basic shape stays the same; if you’re bipedal, you can’t use this spell to become quadrupedal, for instance.</p>
+            <p>At any time for the duration of the spell, you can use your action to change your appearance in this way. While altered in this manner, your hideous appearance is concealed. Once you use the mask, you cannot do so again until the following dawn.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement" addition="by a lich">true</set>
+            <set name="name-format">Funeral Mask</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="slot">head</set>
+        </setters>
+    </element>
+
+    <element name="Staff of the Sorcerer King" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_STAFF_OF_THE_SORCERER_KING">
+            <description>
+            <p>This ebony staff bears a bronze spear tip and additional blades carved to depict a winged scarab. The staff can be wielded as a magic spear that grants a +2 bonus to attack and damage rolls made with it. You are considered proficient with this weapon while you are attuned to it, even if you aren’t proficient with spears. While you hold it, you gain a +2 bonus to spell attack rolls.</p>
+            <p><b><i>Cull Subjects.</i></b> Humanoids roll at disadvantage to save against spells you cast while attuned to the staff.</p>
+            <p><b><i>Spell Shield.</i></b> While attuned to this staff, you have advantage on saving throws against any spell that targets only you.</p>
+            <p><b><i>Curse.</i></b> This staff is cursed, and becoming attuned to it extends the curse to you. Until the curse is broken with <i>remove curse</i> or similar magic, you are unwilling to part with the staff, keeping it within reach at all times. In addition, you have disadvantage on attack rolls made with weapons other than this one.</p>
+            <p>While you are attuned to the staff, once a day at midnight, you must succeed on a DC 17 Constitution saving throw. On a failed save, your maximum hit points are reduced by 10 unless you are undead. These hit points can only be restored by means of a <i>wish</i> spell. If your maximum hit points are reduced to 0 in this way, you die and immediately rise as a wight.</p>
+        </description>
+        <setters>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type">Staff</set>
+            <set name="attunement" addition="by a spellcaster">true</set>
+            <set name="rarity">Legendary</set>
+            <set name="weapon">Quarterstaff</set>
+            <set name="enhancement">2</set>
+            <set name="name-format">Staff of the Sorcerer King</set>
+            <set name="slot">onehand</set>
+        </setters>
+    <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
+            <stat name="spellcasting:attack" value="2" />
+    </rules>
+    </element>
+
+    <element name="Rod of Ruin" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ROD_OF_RUIN">
+        <description>
+        <p>This rod is formed of stacked crystal spheres filled with smoke. The rod has 3 charges and regains all its expended charges daily at dusk.</p>
+        <p>When a creature you can see within 60 feet of you damages you while you are holding this rod, you can use your reaction to expend 1 charge to force the creature to make a DC 15 Constitution saving throw. On a failed save, the creature ages 2d10 years and takes one level of exhaustion.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="type">Rod</set>
+            <set name="slot">onehand</set>
+            <set name="attunement" addition="by a lich">true</set>
+            <set name="rarity">Rare</set>
+            <set name="charges">3</set>
+        </setters>
+    </element>
+
+    <element name="Armor of Zombie Flesh" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARMOR_OF_ZOMBIE_FLESH">
+    <description>
+        <p>This armor is formed from the tanned flesh of an animated zombie. While wearing this armor, your AC becomes 16 + your Dexterity modifier. You are considered proficient with this armor even if you are not proficient with hide armor</p>
+    </description>
+    <setters>
+                <set name="keywords">armor</set>
+                <set name="category">Magic Armor</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="slot">body</set>
+                <set name="type" addition="hide">Armor</set>
+                <set name="attunement" addition="by a lich">true</set>
+                <set name="rarity">Rare</set>
+                <set name="armor">Hide</set>
+        <set name="name-format">Armor of Zombie Flesh</set>
+            </setters>
+        <rules>
+            <stat name="ac:armor of zombie flesh" value="16" />
+            <stat name="ac:armor of zombie flesh" value="dexterity:modifier" />
+            <stat name="ac:calculation" value="ac:armor of zombie flesh" bonus="calculation" />
+        </rules>
+    </element>
+
+    <!-- Lycanthrope Items -->
+
+    <element name="Second Skin" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_SECOND_SKIN">
+        <description>
+        <p>This harness is woven from the hides of slain lycanthropes. While in your hybrid form, the harness bonds to your flesh like a second pelt, giving you an AC of 18. This AC replaces your usual Transformation AC.</p>
+        <p>While you wear the harness, you have disadvantage on Charisma checks to interact with other lycanthropes.</p>
+        </description>
+        <setters>
+        <set name="keywords">armor</set>
+        <set name="category">Magic Armor</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="slot">body</set>
+        <set name="type" addition="hide">Armor</set>
+        <set name="attunement" addition="by a lycanthrope">true</set>
+        <set name="rarity">Rare</set>
+        <set name="armor">Hide</set>
+        <set name="name-format">Second Skin</set>
+        </setters>
+        <rules>
+        <stat name="ac:armored:armor" value="18" />
+        </rules>
+    </element>
+    <element name="Crimson Mist" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_CRIMSON_MIST">
+    <description>
+        <p>This tiny mist bottle contains a cocktail of prey pheromones, enough for one use. You can use an action to spray the pheromones on one target within 5 feet, and its effect lasts for 24 hours.</p>
+        <p>When they fail their Lust for the Hunt saving throw, a lycanthrope must prioritize a target affected by crimson mist over any other target.</p>
+    </description>
+    <setters>
+        <set name="keywords">consumable</set>
+        <set name="category">Wondrous Items</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="weight" lb="0.5"></set>
+        <set name="type">Wondrous Item</set>
+        <set name="rarity">Uncommon</set>
+        <set name="stackable">true</set>
+        <set name="name-format">Crimson Mist</set>
+    </setters>
+    </element>
+    <element name="Rod of the Pack Master" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ROD_OF_THE_PACK_MASTER">
+    <description>
+        <p>This rod appears to be a piece of driftwood carved with images of wolves and bears. While holding this rod, you can choose any number of willing creatures you can see within 30 feet. The rod can be held in the teeth and is usable in your hybrid or kindred form. You transform each target into a wolf or a bear (your lycanthrope heritage determines which).</p>
+        <p>The transformation lasts for 24 hours for each target, until you choose to end the effect, or until the target drops to 0 hit points or dies. A target’s game statistics are replaced by the chosen beast’s statistics, though the target retains its alignment and Intelligence, Wisdom, and Charisma scores. The target assumes the hit points of its new form, and when it reverts to its normal form, it returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn’t reduce the creature’s normal form to 0 hit points, it isn’t knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can’t speak or cast spells.</p>
+        <p>The target’s gear melds into the new form. The target can’t activate, wield, or otherwise benefit from its equipment.</p>
+        <p>Once the rod has been used in this way, it can't be used again until the next dawn.</p>
+    </description>
+    <setters>
+            <set name="keywords">rod</set>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="type">Rod</set>
+            <set name="slot">onehand</set>
+            <set name="attunement" addition="by a lycanthrope">true</set>
+            <set name="rarity">Very Rare</set>
+        </setters>
+    </element>
+    <element name="Iron Fangs" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_IRON_FANGS">
+    <description>
+        <p>These iron tooth caps are inscribed with magical runes. If you transform into your hybrid form or kindred form while wearing the iron fangs, the magical metal expands to coat your teeth. Your bite attacks count as magical damage. In addition, while you wear the iron fangs, you cannot transmit the curse of lycanthropy through bites.</p>
+    </description>
+    <setters>
+            <set name="keywords">lycanthrope</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement" addition="by a lycanthrope">true</set>
+            <set name="name-format">Iron Fangs</set>
+        </setters>
+    </element>
+
+    <!-- Primordial Items -->
+    <element name="Bow of Four" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_BOW_OF_FOUR">
+        <description>
+            <p>This white wooden bow is set with four gemstones: a ruby, an emerald, a sapphire, and a diamond. When you hold this bow, you can summon a magical arrow composed of one of the four elements. Conjuring an arrow in this way does not require an action. Each time you summon an arrow, you must choose one of the four options below. If you do not fire the arrow within 1 minute of summoning it, it dissolves.</p>
+            <ul>
+            <li><b><i>Arrow of Air.</i></b> On a hit, the arrow of air deals 2d8 lightning damage</li>
+            <li><b><i>Arrow of Earth.</i></b> On a hit, the arrow of earth deals 2d8 magical bludgeoning damage.</li>
+            <li><b><i>Arrow of Fire.</i></b> On a hit, the arrow of fire deals 3d8 fire damage.</li>
+            <li><b><i>Arrow of Water.</i></b> On a hit, the arrow of water deals 2d8 cold damage.</li>
+            </ul>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="longbow">Weapon</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement" addition="by a primordial">true</set>
+            <set name="weapon">Longbow</set>
+            <set name="name-format">Bow of Four</set>
+        </setters>
+    </element>
+
+    <element name="Lodestone Armor" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_LODESTONE_ARMOR">
+        <description>
+        <p>This plate armor is lined with magnetic lodestone harvested from the plane of elemental earth. While wearing this armor, you can use a bonus action to enhance its magnetic polarity. When you do so, loose stone, soil, and minerals are immediately pulled to the surface of the armor, granting you a +1 bonus to AC but reducing your speed by 5 feet. You can use a bonus action to activate this property each round cumulatively, up to a maximum of +5 AC and a 25-foot reduction in speed.</p>
+        <p>If 1 minute passes without using a bonus action to activate this property, all magnetized material falls off the armor, ending both AC bonuses and speed reduction.</p>
+        </description>
+        <setters>
+        <set name="category">Magic Armor</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="type" addition="plate">Armor</set>
+        <set name="rarity">Rare</set>
+        <set name="armor">Plate</set>
+        <set name="attunement" addition="by a primordial">true</set>
+        <set name="name-format">Lodestone Armor</set>
+        </setters>
+    </element>
+
+    <element name="Ring of Radiation" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RING_OF_RADIATION">
+        <description>
+        <p>This ring is made of braided copper wire. While wearing this ring, your elemental energies are supercharged, allowing them to radiate from your body. When you attack with unarmed strikes, your reach increases by 5 feet.</p>
+        </description>
+        <setters>
+            <set name="keywords">ring</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+        <set name="slot">ring</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement" addition="by a primordial">true</set>
+            <set name="name-format">Ring of Radiation</set>
+        </setters>
+    </element>
+
+    <element name="Rod of Elemental Stasis" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ROD_OF_ELEMENTAL_STASIS">
+        <description>
+            <p>This wooden rod is set with four glass spheres that each contain a microcosm of elemental energy.</p>
+            <p>If an air elemental, a fire elemental, an earth elemental, or a water elemental is slain within 60 feet of you while you are holding the rod, the elemental is absorbed into the rod. A creature absorbed in this way occupies one of the four crystals in the rod. If the four crystals are already full when an elemental dies within range, the elemental dies as normal.</p>
+            <p>As an action, you can present the rod and free one of the elementals contained within a crystal. The freed elemental appears within 5 feet of you and is friendly to you and your allies. Roll initiative for the summoned elemental, which has its own turns. The elemental obeys any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures but otherwise take no actions.</p>
+            <p>A freed elemental remains for 10 minutes, until you dismiss it, or until it is slain, after which it disappears to its home plane.</p>
+        </description>
+        <setters>
+            <set name="keywords">rod</set>
+            <set name="category">Rods</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 lb.</set>
+            <set name="type">Rod</set>
+            <set name="slot">onehand</set>
+            <set name="attunement" addition="by a primordial">true</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+
+    <!-- Seraph Items -->
+    <element name="Heaven's Herald" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_HEAVENS_HERALD">
+        <description>
+            <p>This golden trumpet is never dulled by rust or dirt. As an action, a good-aligned creature can blow the trumpet, which emits a rousing battle song that can be heard up to 600 feet away. The creature blowing the trumpet can choose up to 12 allies within the area to receive the benefits of heaven’s herald. An allied creature becomes immune to being frightened and makes all Wisdom saving throws with advantage. In addition, its hit point maximum increases by 2d10, and it gains the same number of hit points. These benefits last for 24 hours. Once used in this way, the herald cannot be used again until dawn.</p>
+            <p>If a neutral-aligned creature attempts to use the trumpet, no sound emerges, and nothing happens.</p>
+            <p>If an evil-aligned creature attempts to use the trumpet, the creature must succeed on a DC 15 Dexterity saving throw as a column of divine fire roars from the heavens to smite the user. A creature takes 8d6 radiant damage on a failed save, or half as much damage on a successful one.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="name-format">Heaven's Herald</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+        </setters>
+    </element>
+
+    <element name="Zeal" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ZEAL">
+        <description>
+            <p>The steel head of this warhammer seems to glow with an inner light. The pale wooden handle is accented with white gold.</p>
+        <p>When the celestial realm nearly fell into darkness, a heavenly smith received a vision allowing them to craft a hammer like no other. With the might of Zeal, the armies of heaven turned back their foes, restoring cosmic balance. Zeal now lies in the hidden vaults of the celestial realms, waiting to be wielded once again when the forces of darkness threaten to consume the world.</p>
+            <p>The celestials don’t realize that an equally powerful weapon rests in the hands of the very same armies of darkness that drove them back. The fates who inspired the smith to craft Zeal also sent a vision to a forge keeper of hell in the interest of maintaining the balance of power.</p>
+            <p><b><i>Hammer of Heaven.</i></b> This magic warhammer grants a +3 bonus to attack and damage rolls made with it. When you hit with an attack using it, the target takes an extra 3d10 radiant damage.</p>
+            <p><b><i>Champion of Good.</i></b> While holding the hammer, you are immune to the charmed, frightened, paralyzed, poisoned, and stunned conditions.</p>
+            <p><b><i>Zealous Pursuit.</i></b> As a bonus action, you can release Zeal to hover magically in an unoccupied space within 5 feet of you. If you can see the hammer, you can mentally command it as a bonus action to fly up to 50 feet and either make one attack against a target or return to your hands. If any effect targets the hovering hammer, you are considered to be holding it. The hovering hammer falls if the attuned user dies.</p>
+            <p><b><i>Spells.</i></b> While the hammer is on your person, you can use an action to cast one of the following spells (save DC 18): <i> banishment, branding smite, beacon of hope, earthquake,</i> or <i>heroism</i>. Once you use the hammer to cast a spell, that spell can’t be cast again from it until the next dawn.</p>
+            <p><b><i>Destroying the Hammer.</i></b> The only thing capable of damaging the hammer is its fiendish twin Ardor. A creature wielding Ardor can choose to attack Zeal, which has an AC of 21 and 300 HP. No other creature or object can damage Zeal.</p>
+            <p><b><i>Sentience.</i></b> <i>Zeal</i> is a sentient lawful good weapon with an Intelligence of 14, a Wisdom of 10, and a Charisma of 18. It has hearing and darkvision out to a range of 120 feet.</p>
+            <p>The weapon communicates telepathically with its wielder and can speak, read, and understand Celestial.</p>
+        </description>
+        <setters>
+            <set name="keywords">warhammer</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="warhammer">Weapon</set>
+            <set name="attunement" addition="by a seraph">true</set>
+            <set name="rarity">Artifact</set>
+            <set name="enhancement">3</set>
+            <set name="weapon">Warhammer</set>
+            <set name="name-format">Zeal</set>
+        </setters>
+            <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" />
+            <grant type="Spell" id="ID_PHB_SPELL_BRANDING_SMITE" />
+            <grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" />
+            <grant type="Spell" id="ID_PHB_SPELL_EARTHQUAKE" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEROISM" />
+            </rules>
+    </element>
+
+    <element name="Ring of Truth" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RING_OF_TRUTH">
+        <description>
+            <p>This golden band is stamped with images of smiling humanoid faces. While wearing this ring, you continually emit an aura identical to the effects of the <i>zone of truth</i> spell. The zone affects a 15-foot-radius sphere centered on the wearer.</p>
+        </description>
+        <setters>
+            <set name="keywords">ring</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">ring</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Ring of Truth</set>
+        </setters>
+    </element>
+    <element name="Humble Frock" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_HUMBLE_FROCK">
+            <description>
+            <p>This rough spawn frock is weather-worn and full of holes. While wearing the frock and no other armor or clothing, a seraph automatically succeeds on checks to conceal their divine appearance.</p>
+            </description>
+            <setters>
+                <set name="category">Wondrous Items</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="weight" lb="0"></set>
+                <set name="slot">body</set>
+                <set name="type">Wondrous Item</set>
+                <set name="rarity">Uncommon</set>
+                <set name="attunement" addition="by a seraph">true</set>
+                <set name="name-format">Humble Frock</set>
+            </setters>
+    </element>
+
+    <!-- Specter Items -->
+
+    <element name="Ectoplasmic Whip" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ECTOPLASMIC_WHIP">
+        <description>
+            <p>This whip is made of silver plasma that seems to phase in and out of reality. You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+            <p>The whip is invisible to non-undead creatures. You have advantage on attacks made with the whip against creatures who cannot perceive it.</p>
+        </description>
+        <setters>
+            <set name="keywords">whip</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="whip">Weapon</set>
+            <set name="attunement" addition="by a spectre">true</set>
+            <set name="rarity">Rare</set>
+            <set name="enhancement">1</set>
+            <set name="weapon">Whip</set>
+            <set name="name-format">Ectoplasmic Whip</set>
+        </setters>
+    </element>
+
+    <element name="Banshee Box" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_BANSHEE_BOX">
+        <description>
+            <p>This ivory music box is inlaid with silver decorations depicting tiny scenes of gruesome violence. When a creature attuned to the box opens the lid, they can mentally command the box to make a sound of their choosing. Once the lid is open, the sound continues to play until the box is closed. If the attuned user closes the lid then opens it again, they can mentally command the box to play a different sound. If the attuned user travels more than 300 feet away from the box, the lid closes and the music box ceases to play.</p>
+            <p>The box can create any soundscape, like haunting piano music, the sounds of a lively party, or a continuous series of screams. When the box is opened, the user can choose whether the sound is audible in a sphere with a 5-foot radius, a 30-foot radius, or a 120-foot radius.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement" addition="by a spectre">true</set>
+            <set name="name-format">Banshee Box</set>
+        </setters>
+    </element>
+
+    <element name="Wand of the Poltergeist" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WAND_OF_THE_POLTERGEIST">
+            <description>
+                <p>This wand is a swirl of dark and white wood topped with a carved screaming skull. The wand has 7 charges, which are used to fuel the spells within it. With the wand in hand, you can use your action to cast one of the following spells from the wand. The DC for these spells is equal to your Transformation DC: <i>shatter</i> (1 charge), <i>animate objects</i> (4 charges), or <i>major image</i> (3 charges). No components are required.</p>
+                <p>The wand regains 1d6 + 1 expended charges each day at dusk. If you expend the wand’s last charge, roll a d20. On a 20, the wand explodes into splinters and is destroyed.</p>
+            </description>
+            <setters>
+                <set name="keywords">wand</set>
+                <set name="category">Wands</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="weight" lb="1">1 lb.</set>
+                <set name="type">Wand</set>
+        <set name="slot">onehand</set>
+                <set name="attunement" addition="by a spectre">true</set>
+                <set name="rarity">Very Rare</set>
+                <set name="charges">7</set>
+                <set name="name-format">Wand of the Poltergeist</set>
+            </setters>
+    </element>
+
+    <element name="Mortal Coil" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_MORTAL_COIL">
+        <description>
+        <p>This ring is composed of hundreds of rose gold wires woven to coil around the finger. While a spectre wears this ring, they can use a bonus action to become completely corporeal. While in this corporeal state, they do not register as undead to any magical effects and can interact with the material world as a typical humanoid. While in a corporeal state, the spectre loses all benefits of their transformation. A spectre can use a bonus action to return to their true form.</p>
+        </description>
+        <setters>
+            <set name="keywords">ring</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">ring</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement" addition="by a spectre">true</set>
+            <set name="name-format">Mortal Coil</set>
+        </setters>
+    </element>
+
+    <!-- Vampire Items -->
+
+    <element name="Sun Shades" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_SUN_SHADES">
+        <description>
+        <p>These black leather goggles are set with cloudy glass that completely obscure the eyes of the wearer. While wearing these dark lenses, you do not have disadvantage on attack rolls and ability checks made while in sunlight. You also cannot see in complete darkness while wearing the shades, even if you have darkvision.</p>
+        </description>
+        <setters>
+            <set name="keywords">goggles</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="name-format">Sun Shades</set>
+        </setters>
+    </element>
+
+    <element name="Blood Capsule" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_BLOOD_CAPSULE">
+        <description>
+        <p>This cylindrical flask is etched with necrotic runes. Humanoid blood stored in the blood capsule remains fresh for up to one year. The flask stores enough blood to sustain a vampire for one day.</p>
+        </description>
+        <setters>
+        <set name="keywords">container</set>
+        <set name="category">Wondrous Items</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="weight" lb="0"></set>
+        <set name="type">Wondrous Item</set>
+        <set name="rarity">Uncommon</set>
+            <set name="name-format">Blood Capsule</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Light Drinker" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_LIGHT_DRINKER">
+            <description>
+                <p>This sword’s hilt and blade are forged of a single piece of black metal that seems to absorb the light around it. You gain a +2 bonus to attack and damage rolls made with this magic weapon, which deals cold damage instead of slashing damage. While attuned to the sword, you gain darkvision to 60 feet and can see in magical darkness.</p>
+                <p>As a bonus action, you can cause the sword to emit magical darkness in a 15-foot radius and dim light for an additional 15 feet. While the darkness is active, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each. Darkness created by this sword can only be suppressed by an <i>antimagic field</i>.</p>
+            </description>
+            <setters>
+                <set name="keywords">longsword, darkvision</set>
+                <set name="category">Magic Weapons</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="type" addition="longsword">Weapon</set>
+                <set name="attunement">true</set>
+                <set name="rarity">Very Rare</set>
+                <set name="weapon">Longsword</set>
+                <set name="enhancement">2</set>
+                <set name="name-format">Light Drinker</set>
+            </setters>
+        <rules>
+        <grant type="Vision" id="ID_VISION_DARKVISION" />
+        <stat name="darkvision:range" value="60" bonus="base" />
+        </rules>
+    </element>
+    <element name="Angelskin Armor" type="Magic Item" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ANGELSKIN_ARMOR">
+            <description>
+            <p>This leather armor is made from the flayed flesh of angels. While wearing the armor, you are immune to bludgeoning, piercing, and slashing damage from nonmagical attacks. This includes attacks from nonmagical wooden or silvered weapons.</p>
+            <p>Any celestial that sees this armor becomes immediately hostile against the wearer.</p>
+            </description>
+            <setters>
+                <set name="keywords">armor</set>
+                <set name="category">Magic Armor</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="slot">body</set>
+                <set name="type" addition="leather">Armor</set>
+                <set name="rarity">Rare</set>
+                <set name="armor">Leather</set>
+                <set name="name-format">Angelskin Armor</set>
+            </setters>
+        <rules>
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_BLUDGEONING" />
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PIERCING" />
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_SLASHING" />
+        </rules>
+    </element>
+
+    <!-- Monster Grimoire -->
+    <element name="Adder Stone" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_ADDER_STONE">
+        <description>
+            <p>While you carry this glassy stone, which has a natural hole in it and is the size of a small fruit, you have advantage on saving throws against effects that cause you to become paralyzed. These stones are often found near the place where a marra is slain. When the adder stone prevents someone from becoming paralyzed (one saving throw would fail and the other succeed), it shatters into worthless shards.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="weight" lb="0"></set>
+            <set name="name-format">Adder Stone</set>
+            <set name="cost" currency="gp">0</set>
+        </setters>
+    </element>
+
+    <element name="Arcane Oil" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_ARCANE_OIL">
+      <description>
+        <p>This substance is created by distilling the jelly that encases the brain of a xakalonus. As an action, you can coat one weapon or 20 pieces of ammunition with the substance. If the coated objects are not magical, for the next minute, your attacks with the coated weapon or ammunition gain a +2 bonus to attack and damage rolls.</p>
+        <p>If the coated objects are magical, the oil does not affect attack or damage rolls with them. However, your attacks against the hraptnon can fully damage that creature for one minute.</p>
+      </description>
+      <setters>
+        <set name="category">Potions</set>
+        <set name="type">Potion</set>
+        <set name="rarity">Rare</set>
+        <set name="stackable">true</set>
+        <set name="weight" lb="0.5"></set>
+        <set name="name-format">Arcane Oil</set>
+      </setters>
+    </element>
+    
+    <element name="Brazen Armor" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_BRAZEN_ARMOR">
+      <description>
+      <p>This armor, fashioned from the body of an Empyrean brazen bull, gleams brightly in direct sunlight. While wearing this armor, you gain a +1 bonus to AC. In addition, you have resistance to fire and radiant damage.</p>
+      </description>
+        <setters>
+            <set name="keywords">armor</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="plate">Armor</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Very Rare</set>
+            <set name="armor">Plate</set>
+            <set name="enhancement">1</set>
+            <set name="name-format">Brazen Armor</set>
+        </setters>
+      <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+      </rules>
+    </element>
+
+    <element name="Cap of Bravery" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_CAP_OF_BRAVERY">
+        <description>
+          <p>Woven into a cap from the remains of an old snarite, this cap provides the wearer with a sense of magical peace and calm that emanates from them. When the wearer succeeds on a saving throw against the frightened condition, allies within 30 feet gain advantage on saving throws against the same effect.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="name-format">Cap of Bravery</set>
+        </setters>
+    </element>
+
+    <element name="Carvaloth Scale Armor" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_CARVALOTH_SCALE_ARMOR">
+    <description>
+        <p>While you wear this red-tinged armor made from the scales of several carvaloths, Wisdom (Perception) checks made to see you have disadvantage, and you have advantage on Dexterity (Stealth) checks made to hide from sight, as the armor’s color shifts to camouflage you.</p>
+    </description>
+    <setters>
+        <set name="keywords">armor</set>
+        <set name="category">Magic Armor</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="slot">body</set>
+        <set name="type" addition="scale mail">Armor</set>
+        <set name="rarity">Uncommon</set>
+        <set name="armor">Scale Mail</set>
+        <set name="name-format">Carvaloth Scale Armor</set>
+    </setters>
+    </element>
+
+    <element name="Caustic Rapier" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_CAUSTIC_RAPIER">
+        <description>
+        <p>This strange weapon is fashioned from the mandibles of a hivewolf. While you wield this weapon, you have a +2 bonus to attack and damage rolls made with this weapon. When you roll a 19-20 on your attack roll with this weapon, that attack does an additional 7 (2d6) acid damage. In addition, you are immune to acid damage while wielding the weapon.</p>
+        </description>
+        <setters>
+            <set name="keywords">rapier</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="rapier">Weapon</set>
+            <set name="rarity">Rare</set>
+            <set name="enhancement">2</set>
+            <set name="weapon">Rapier</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Caustic Rapier</set>
+        </setters>
+        <rules>
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ACID" />
+        </rules>
+    </element>
+
+    <element name="Coat of Lies" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_COAT_OF_LIES">
+        <description>
+        <p>This coat made of the severed tongues of a harvester’s victims provides a +1 bonus to your AC, and you have advantage on Charisma (Deception) checks.</p>
+        <p>Also, as a bonus action three times per day, you can activate the magic of the cloak. If you do, the next spell you cast before the start of your next turn can be cast without any somatic or verbal components.</p>
+        </description>
+        <setters>
+        <set name="keywords">coat</set>
+        <set name="category">Wondrous Items</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="weight" lb="0"></set>
+        <set name="slot">body</set>
+        <set name="type">Wondrous Item</set>
+        <set name="rarity">Rare</set>
+        <set name="attunement" addition="by a spellcaster">true</set>
+        <set name="name-format">Coat of Lies</set>
+        </setters>
+        <rules>
+        <stat name="ac:misc" value="1" />
+        </rules>
+    </element>
+
+    <element name="Cloak of the Listener" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_CLOAK_OF_THE_LISTENER">
+        <description>
+            <p>This is a cloak made of ears that were once part of a swarm of ears. It pulses gently and oozes yellow fluid from its many holes. While wearing this cloak, you can call upon its magic with an action to create two effects:</p>
+            <ul>
+                <li><b><i>Ooze.</i></b> Upon tugging the cloak, you can cause the cloak to create a 10 ft. puddle of waxy material onto the ground within 10 feet of you. Creatures entering or starting their turn in the area must succeed on a DC 15 Dexterity saving throw or become grappled by the wax (escape DC 15). This wax remains for 1 minute.</li>
+                <li><b><i>Hide.</i></b> Upon completely hiding your head with the cloak, you gain blindsense up to 120 ft. and can hear all conversations within that range regardless of obstructions. These effects last for 1 minute.</li>
+            </ul>
+        <p>After using each of these effects once, they can be used again after the wearer finishes a long rest.</p>
+        </description>
+        <setters>
+            <set name="keywords">cloak</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="slot">shoulders</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="name-format">Cloak of the Listener</set>
+        </setters>
+    </element>
+
+    <element name="Cloak of the Mausgeist" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_CLOAK_OF_THE_MAUSGEIST">
+        <description>
+            <p>This fine garment is made of mausgeist fur with a silk lining. While wearing it, you gain the following benefits:</p>
+            <ul>
+                <li>You have advantage on Wisdom (Perception) checks that rely on hearing.</li>
+                <li>You have advantage on saving throws against spells and other magical effects.</li>
+                <li>You can use an action to cast the <i>charm person</i> spell (save DC 13). The spell affects any creature within 30 feet of you. Once used, this property of the cloak can't be used again until the next dawn.</li>
+            </ul>
+        </description>
+        <setters>
+                <set name="keywords">cloak</set>
+                <set name="category">Wondrous Items</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="weight" lb="0"></set>
+                <set name="slot">shoulders</set>
+                <set name="type">Wondrous Item</set>
+                <set name="rarity">Very Rare</set>
+                <set name="attunement">true</set>
+                <set name="name-format">Cloak of the Mausgeist</set>
+        </setters>
+    </element>
+
+    <element name="Cloak of the Stygian Bat" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_CLOAK_OF_THE_STYGIAN_BAT">
+        <description>
+            <p>This cloak is made from the hide of stygian bats, bristling with coarse black hairs. While wearing the cloak, you have advantage on Wisdom (Perception) checks that rely on hearing.</p>
+            <p>In addition, you can activate the cloak to gain a fly speed of 30 feet for one minute. While it is active, you also have blindsight (120 ft.) and have advantage on Dexterity saving throws while in the air. The cloak cannot be activated again until the wearer finishes a long rest.</p>
+        </description>
+        <setters>
+                <set name="keywords">cloak, fly</set>
+                <set name="category">Wondrous Items</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="weight" lb="0"></set>
+                <set name="slot">shoulders</set>
+                <set name="type">Wondrous Item</set>
+                <set name="rarity">Rare</set>
+                <set name="attunement">true</set>
+                <set name="name-format">Cloak of the Stygian Bat</set>
+        </setters>
+    </element>
+
+    <element name="Cloak of Therianthropy" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_CLOAK_OF_THERIANTHROPY">
+        <description>
+            <p>This spotted grey cloak is made of cured styrkvisnar hide. While wearing this cloak, you have advantage on Strength (Athletics) checks.</p>
+            <p>As an action, you can command the cloak to transform you into a wolf, eagle, or seal for up to 1 hour. The transformation otherwise functions as the <i>polymorph</i> spell, but you can use a bonus action to revert to your normal form. The cloak can’t be used this way again until the next dawn.</p>
+        </description>
+        <setters>
+                <set name="keywords">cloak</set>
+                <set name="category">Wondrous Items</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="weight" lb="0"></set>
+                <set name="slot">shoulders</set>
+                <set name="type">Wondrous Item</set>
+                <set name="rarity">Rare</set>
+                <set name="attunement">true</set>
+                <set name="name-format">Cloak of Therianthropy</set>
+        </setters>
+    </element>
+
+    <element name="Coldrazor" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_COLDRAZOR">
+        <description>
+            <p>This magic handaxe is wielded by the memori lich known as Runa Banasár. It appears to be made of ice, carved with runes and studded with tiny, glittering gems of various types.</p>
+            <p>You gain a +3 bonus to attack and damage rolls made with this magic weapon. On a successful attack, the weapon does an additional 14 (4d6) cold damage. If a single attack does more than 20 points of cold damage, the target must succeed on a DC 15 Constitution saving throw or be stunned until the end of its next turn.</p>
+            <p>Additionally, the attuned wielder can call <i>Coldrazor</i> back to their hand immediately after throwing it.</p>
+        </description>
+        <setters>
+            <set name="keywords">handaxe</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="handaxe">Weapon</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Legendary</set>
+            <set name="enhancement">3</set>
+            <set name="weapon">Handaxe</set>
+            <set name="name-format">Coldrazor</set>
+        </setters>
+    </element>
+
+    <element name="Corrupted Tusk-Dagger" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_CORRUPTED_TUSK_DAGGER">
+    <description>
+        <p>This dagger is fashioned from the fangs of a dragonborn vampire. When a wielder scores a critical hit with the dagger, the weapon damage is 4d4 instead of 1d4. In addition, on a critical hit, the target must succeed on a DC 15 Constitution saving throw or be stunned until the end of its next turn.</p>
+    </description>
+    <setters>
+        <set name="keywords">dagger</set>
+        <set name="category">Magic Weapons</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="type" addition="dagger">Weapon</set>
+        <set name="rarity">Rare</set>
+        <set name="weapon">Dagger</set>
+        <set name="name-format">Corrupted Tusk-Dagger</set>
+    </setters>
+    </element>
+
+    <element name="Crown of the Keppmir King" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_CROWN_OF_THE_KEPPMIR_KING">
+        <description>
+            <p>This platinum crown is adorned with black gems and shells. When worn, the crown increases your Constitution to 20. You have resistance to cold and can breathe underwater.</p>
+            <p><b><i>Curse.</i></b> This crown is cursed, a fact revealed only when an <i>identify</i> spell is cast on the crown or you attune to it. Attuning to the crown curses you until you are targeted by the <i>remove curse</i> spell or similar magic; it is impossible to remove the crown. While cursed, you turn into a keppmir after 2d10 days.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+            <set name="cursed">true</set>
+            <set name="slot">head</set>
+            <set name="name-format">Crown of the Keppmir King</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+        </setters>
+        <rules>
+        <stat name="constitution:score:set" value="20" bonus="base" />
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+
+    <element name="Elixir of Elemental Spittle" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_ELIXIR_OF_ELEMENTAL_SPITTLE">
+        <description>
+        <p>This foul-smelling liquid is made from the saliva of an elemental troll. When consumed, you can use a bonus action to spit energy at a creature within 5 feet for 1 minute. The target must succeed on a DC 12 Dexterity saving throw or take 7 (2d6) damage of a type corresponding to the troll whose spittle was used to craft the potion. No damage is inflicted on a successful save.</p>
+            <p>If the target of the spell rolls a natural 20 on their saving throw, the potion explodes inside you, doing 6d6 damage of the potion’s energy type to you. The potion becomes ineffective after the explosion.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Elixir of Elemental Spittle</set>
+            <set name="weight" lb="0.5"></set>
+        </setters>
+    </element>
+
+    <element name="Elixir of Life Protection" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_ELIXIR_OF_LIFE_PROTECTION">
+        <description>
+            <p>When you drink this thick, chalky mixture, your maximum hit points cannot be reduced by a melee weapon attack from an undead creature for 10 minutes.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Elixir of Life Protection</set>
+            <set name="weight" lb="0.5"></set>
+        </setters>
+    </element>
+
+    <element name="Enchanted Feather" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_ENCHANTED_FEATHER">
+        <description>
+            <p>This magical feather can sometimes be found growing from a rabenhex. As an action while the feather is on your person, you can cast <i>remove curse</i> on one creature or object. If the object is a cursed magic item, its curse remains, but the spell breaks its owner’s attunement to the object so it can be removed or discarded. The feather’s magic is expended after the curse is removed, whereupon the feather becomes nonmagical.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="name-format">Enchanted Feather</set>
+            <set name="weight" lb="0"></set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Flammable Tincture" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_FLAMMABLE_TINCTURE">
+        <description>
+        <p>This swirling mixture of red and white liquid is formed from the remains of a coldfire ooze. As an action, the vial of flammable tincture can be hurled up to 30 feet at a target, which must succeed one a DC 10 Dexterity saving throw or be covered with the liquid. For 1 minute, the creature is vulnerable to fire damage. This overrides any previous immunity or resistance.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Flammable Tincture</set>
+            <set name="weight" lb="0.5"></set>
+        </setters>
+    </element>
+
+    <element name="Glass-Studded Armor" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_GLASS_STUDDED_ARMOR">
+        <description>
+            <p>While wearing this armor, you have resistance to radiant damage. Each time a creature makes a melee attack against you, it takes 3 piercing damage. A creature can choose to make an attack with disadvantage to avoid this damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">armor</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="studded leather">Armor</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Rare</set>
+            <set name="armor">Studded Leather</set>
+            <set name="name-format">Glass-Studded Armor</set>
+        </setters>
+        <rules>
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+        </rules>
+    </element>
+
+    <element name="Gold Boar Ring" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_GOLD_BOAR_RING">
+        <description>
+        <p>The ring, made from the bristles of the gold mane boar, sheds bright light in a 20-foot radius and dim light for an additional 20 feet. This light shines even in areas where magic does not function normally, or where magical light would normally be suppressed.</p>
+        </description>
+        <setters>
+            <set name="keywords">ring</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="slot">ring</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Uncommon</set>
+            <set name="name-format">Gold Boar Ring</set>
+        </setters>
+    </element>
+
+    <element name="Grenade of Remorse" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_GRENADE_OF_REMORSE">
+        <description>
+        <p>This substance, harvested from the tears of a remorseful storm, proves toxic to creatures of unnatural origins. You can throw the grenade up to 30 feet as an action, and all creatures within 20 feet of the point of impact are covered in the grenade’s contents.</p>
+        <p>Upon contact with this liquid, all fiends, aberrations, or undead creatures must succeed on a DC 17 Constitution saving throw, taking 28 (8d6) psychic damage on a failed save, or half as much damage on a successful one. All other creature types take no damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">grenade</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Grenade of Remorse</set>
+        </setters>
+    </element>
+
+    <element name="Gristaline" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_GRISTALINE">
+        <description>
+        <p>This gruesome mixture is made from ground mouruge bones, along with rotten meat and mud. When consumed, your Strength score changes to 19 for one hour. The potion has no effect on you if your Strength is greater than 19. You also have disadvantage on Intelligence ability checks and saving throws for the duration.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Gristaline</set>
+            <set name="weight" lb="0.5"></set>
+        </setters>
+    </element>
+
+    <element name="Hogs' Wash" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_HOGS_WASH">
+        <description>
+            <p>This foul-tasting tea is brewed from the powdered tusks of doom boars. If you drink this potion, it acts as a <i>remove curse</i>. Additionally, hogs’ wash can be used as a component in removing stronger curses that cannot be removed with a normal <i>remove curse</i> casting. (See Grim Hollow: The Campaign Guide for more details on curse removal.)</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Hogs' Wash</set>
+            <set name="weight" lb="0.5"></set>
+        </setters>
+    </element>
+
+    <element name="Knifewing Cape" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_KNIFEWING_CAPE">
+            <description>
+            <p>While wearing this cloak made from the skin of 20 knifewings, you gain a +1 bonus to AC. In addition, when you fall while wearing this cloak, you descend 60 feet per round and take no damage from falling.</p>
+            </description>
+            <setters>
+                <set name="keywords">cloak</set>
+                <set name="category">Wondrous Items</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="weight" lb="0"></set>
+                <set name="slot">shoulders</set>
+                <set name="type">Wondrous Item</set>
+                <set name="rarity">Rare</set>
+                <set name="attunement">true</set>
+                <set name="name-format">Knifewing Cape</set>
+        </setters>
+        <rules>
+                <stat name="ac:misc" value="1" />
+        </rules>
+    </element>
+
+    <element name="Lindwyrm Venom" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_LINDWYRM_VENOM">
+        <description>
+        <p>This terrible venom is extracted and distilled from the deadly lindwyrm. It can be delivered via ingestion or a wound. A creature exposed to the venom must succeed on a DC 18 Constitution saving throw or take 36 (8d8) poison damage and be poisoned for 1 minute. While poisoned, the creature has disadvantage on Strength and Dexterity skill checks and saving throws.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Lindwyrm Venom</set>
+            <set name="weight" lb="0.5"></set>
+        </setters>
+    </element>
+
+    <element name="Living Net" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_LIVING_NET">
+        <description>
+        <p>This net is made of wire and thread from a suture golem. The net coils and moves on its own as if it were alive. The net moves and tightens to better restrain a creature caught within. A DC 15 Strength check is required to break free, and it has an AC of 15. Dealing 15 points of slashing damage also frees the trapped creature. Additionally, if the net is destroyed, the threads reconnect and repair after 1 minute.</p>
+        </description>
+        <setters>
+        <set name="keywords">net</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="net">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="weapon">Net</set>
+            <set name="name-format">Living Net</set>
+        </setters>
+    </element>
+
+    <element name="Lycanthropy Antidote" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_LYCANTHROPY_ANTIDOTE">
+        <description>
+            <p>This silvery potion, made with fzeg blood, is dotted with flecks of red. Drinking this liquid removes the curse of werewolf lycanthropy.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Lycanthropy Antidote</set>
+            <set name="weight" lb="0.5"></set>
+        </setters>
+    </element>
+
+    <element name="Lycan Weapon" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_LYCAN_WEAPON">
+        <description>
+            <p>Made from the claws, teeth, and bones of lycanthropes, these weapons are particularly effective against other lycanthropes or vampires. You gain a +2 bonus to attack and damage rolls made with this weapon.</p>
+            <p>Additionally, on a successful attack against a lycanthrope, the target is forced back into its human form unless it succeeds on a DC 10 Charisma saving throw. Also, damage done to vampires with lycan weapons cannot be regenerated until the creature finishes a short rest.</p>
+        </description>
+        <setters>
+            <set name="category">Magic Weapons</set>
+            <set name="type" addition="any">Weapon</set>
+            <set name="rarity">Rare</set>
+            <set name="enhancement">2</set>
+            <set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+            <set name="name-format">{{parent}} Lycan</set>
+            <set name="cost" currency="gp">0</set>
+        </setters>
+    </element>
+
+    <element name="Magebane Bomb" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_MAGEBANE_BOMB">
+        <description>
+        <p>This bubbling liquid is distilled from the remains of a magebane ooze. You can throw the container at an enemy’s weapon or armor, or at a spellcaster. Make a simple ranged weapon attack. On a hit, the target takes 3 (1d6) acid damage, and their weapon takes a -1 penalty to attacks and damage or their armor takes a -1 penalty to the AC it offers until they complete a long rest.</p>
+        <p>If the target is a spellcaster and you hit them with the bomb, for 1 minute they take a -1 penalty to hit with spell attacks, and the DCs of their saving throws against spells they can decrease by 1.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Magebane Bomb</set>
+        </setters>
+    </element>
+
+    <element name="Malleus Macabre" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_MALLEUS_MACABRE">
+        <description>
+            <p>This weapon is a blunt but jagged-edged bludgeon that is the object form of a kokela. You gain a +4 bonus to damage rolls made with this weapon, and attack rolls made with this weapon score a critical hit on a roll of 19 or 20. If you have abilities that increase your critical range with melee weapon attacks, this weapon scores a critical hit on a roll of 17-20.</p>
+            <p><b><i>Curse.</i></b> This weapon is cursed. Attuning to it curses you until you spend one year at least a mile away from the weapon. While you remain cursed, you are unwilling to part with the club, always keeping it within reach. You also have disadvantage on attack rolls with weapons other than this one, unless no foe is within 60 feet of you that you can see or hear.</p>
+            <p>Whenever you roll a critical hit with this weapon, after damage is normally dealt, there is a 25% chance the <i>malleus macabre</i> casts a 9th-level <i>cloudkill</i> spell centered on you.</p>
+        </description>
+        <setters>
+            <set name="keywords">greatclub</set>
+            <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="type" addition="greatclub">Weapon</set>
+            <set name="attunement" addition="by a fighter or barbarian">true</set>
+            <set name="rarity">Very Rare</set>
+            <set name="cursed">true</set>
+            <set name="weapon">Greatclub</set>
+            <set name="name-format">Malleus Macabre</set>
+        </setters>
+    </element>
+
+    <element name="Mask of the Maestro" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_MASK_OF_THE_MAESTRO">
+        <description>
+        <p>Carved from yew, this mask is shaped in the likeness of a beast’s visage and has 3 charges. While wearing the mask, you can expend 1 charge and use the mask to cast the <i>polymorph</i> spell on yourself. The magic lasts for only 1 minute.</p>
+        <p><b><i>Curse.</i></b> This item is cursed. Wearing it curses you until you are targeted by a <i>remove curse</i> spell or similar magic. While you remain cursed, you cannot remove the mask.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="name-format">Mask of the Maestro</set>
+            <set name="charges">3</set>
+            <set name="cursed">true</set>
+        </setters>
+    </element>
+
+    <element name="Morose Monocle" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_MOROSE_MONOCLE">
+        <description>
+        <p>While wearing this opaque, grey eyepiece, you can see any humanoid creature experiencing significant pain, sorrow, or guilt, as well as any grief eaters within 60 ft. of you. These creatures are seen as white silhouettes that shine brighter the stronger their emotional turmoil. However, the wearer cannot discern anything else looking through the monocle, and creatures with one eye using the monocle are considered blind while looking through the eyepiece.</p>
+        <p>While wearing the monocle, you also gain advantage on Wisdom (Insight) checks made to gauge a creature’s emotions.</p>
+        </description>
+        <setters>
+            <set name="keywords">monocle</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="name-format">Morose Monocle</set>
+        </setters>
+    </element>
+
+    <element name="Muscle Graft" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_MUSCLE_GRAFT">
+        <description>
+        <p>Created through a gruesome process using the treated muscle tissue of a bugbear vampire, this magical prosthetic can be grafted to a living creature. When you do this, you gain a +2 bonus to your Strength score. However, you are also overwhelmed with a deep desire for raw blood and rare meat, and each week for a year you must succeed on a DC 10 Constitution saving throw or else become a vampire spawn with no progenitor. The process of grafting the muscle is quite dangerous requiring, a DC 15 Constitution saving throw during attunement. Failing this saving throw weakens the body, causing you to lose 2 points of Constitution.</p>
+        </description>
+        <setters>
+            <set name="keywords">graft</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Very Rare</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Muscle Graft</set>
+        </setters>
+        <rules>
+        <stat name="strength" value="2" />
+        </rules>
+    </element>
+
+    <element name="Net of Maiden's Hair" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_NET_OF_MAIDENS_HAIR">
+        <description>
+        <p>Sewn from the plant creature known as maiden’s hair, this sweet-smelling piece of headgear bestows lingering magical properties.</p>
+        <p>While wearing the net on your head, you have advantage on Charisma (Persuasion) checks. Additionally, you can use a bonus action instead of an action to escape grapples, and you have advantage on such checks.</p>
+        </description>
+        <setters>
+            <set name="keywords">net</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Net of Maiden's Hair</set>
+        </setters>
+    </element>
+
+    <element name="Nightmare Staff" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_NIGHTMARE_STAFF">
+            <description>
+                <p>This twisted staff is created from the remains of a marra. It has 3 charges and regains its expended charges daily at dusk. When a creature you can see within 60 feet of you damages you while you hold this staff, you can use your reaction to expend 1 charge to force the creature to succeed on a DC 13 Intelligence saving throw. On a failure, the creature sees a phantasm that causes it to be frightened of you until the end of its next turn. If the creature is already frightened, it also takes 7 (2d6) psychic damage.</p>
+            </description>
+            <setters>
+                <set name="keywords">staff</set>
+                <set name="category">Staffs</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="weight" lb="4">4 lb.</set>
+                <set name="slot">onehand</set>
+                <set name="type">Staff</set>
+                <set name="attunement">true</set>
+                <set name="rarity">Uncommon</set>
+                <set name="charges">3</set>
+            </setters>
+    </element>
+
+    <element name="Paralyzing Bolt" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_PARALYZING_BOLT">
+        <description>
+        <p>These serpent tooth-tipped crossbow bolts cause the target’s muscles to become rigid, paralyzing the target until the end of your next turn unless they succeed on a DC 10 Constitution saving throw. Once it hits a target, the ammunition is no longer magical.</p>
+        </description>
+        <setters>
+            <set name="keywords">bolt, ammunition</set>
+            <set name="category">Ammunition</set>
+            <set name="type" addition="bolt">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Paralyzing Bolt</set>
+            <set name="ammunition">ID_INTERNAL_ITEM_AMMUNITION_BOLT</set>
+        </setters>
+    </element>
+
+    <element name="Pigskin Armor" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_PIGSKIN_ARMOR">
+        <description>
+        <p>This strong, flexible armor made from the hide of ogre swine is surprisingly supple. It counts as light armor rather than medium armor, and it has a 20% chance of protecting the wearer from the extra damage done by a critical hit.</p>
+        <p>While wearing the armor, however, you snore uncontrollably while sleeping, and your food intake doubles.</p>
+        </description>
+        <setters>
+            <set name="keywords">armor</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="hide">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Hide</set>
+            <set name="name-format">Pigskin Armor</set>
+        </setters>
+    </element>
+
+    <element name="Potion of Glacial Resistance" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_POTION_OF_GLACIAL_RESISTANCE">
+        <description>
+        <p>This brew is made from the ground horns of keppmirs. When consumed, this potion allows you to breathe underwater for one hour, during which time you gain resistance to cold damage. It tastes salty and gives off a slight warmth.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Potion of Glacial Resistance</set>
+            <set name="weight" lb="0.5"></set>
+        </setters>
+    </element>
+
+    <element name="Potion of Harm" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_POTION_OF_HARM">
+        <description>
+        <p>This concoction is the result of a failed attempt to make a <i>potion of heal</i> from the remains of a downcast vampire. When you imbibe this potion, roll 1d4. That becomes your new hit point total.</p>
+        <p>If the <i>potion of harm</i> is given to a creature with 0 hit points, they instantly gain one failed death save and begin dying if they are stable.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Potion of Harm</set>
+            <set name="weight" lb="0.5"></set>
+        </setters>
+    </element>
+
+    <element name="Potion of Heal" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_POTION_OF_HEAL">
+        <description>
+            <p>This very rare liquid is made from the remains of a downcast vampire. When you imbibe this potion, you regain hit points so that you are at your hit point maximum value.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Potion of Heal</set>
+            <set name="weight" lb="0.5"></set>
+        </setters>
+    </element>
+
+    <element name="Potion of Life Sharing" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_POTION_OF_LIFE_SHARING">
+        <description>
+            <p>This shimmering liquid changes colors constantly within its vial. Made from the acid glands of the dreaded wolfentroika, this potion allows you to share your life force with others.</p>
+            <p>For 1 minute after drinking the potion, you can target one creature within 30 feet of you that you can see or hear. As a bonus action, you can remove up to 20 hit points from your own total, healing the targeted creature for that amount. At the end of the minute, you gain a level of exhaustion.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Potion of Life Sharing</set>
+            <set name="weight" lb="0.5"></set>
+        </setters>
+    </element>
+
+    <element name="Potion of Malice" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_POTION_OF_MALICE">
+        <description>
+        <p>This brew is made from the spore sacs of three grippers. When consumed, this potion causes the imbiber to give off spores that anger enemies within 10 feet. Those enemies must succeed on a DC 10 Wisdom saving throw or they must target the imbiber with their attacks for 1 minute. All weapon attacks are made with disadvantage.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Potion of Malice</set>
+            <set name="weight" lb="0.5"></set>
+        </setters>
+    </element>
+
+    <element name="Potion of Relentlessness" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_POTION_OF_RELENTLESSNESS">
+        <description>
+        <p>When you drink this viscous potion made of quoxxarie blood, you are harder to knock unconscious. When damage would reduce you to 0 hit points, you spend a hit die and are at 1 hit point instead. The effect of the potion lasts for 1 minute, and at the end of that time you gain a level of exhaustion for each hit die spent unless you succeed on a DC 15 Constitution saving throw.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Potion of Relentlessness</set>
+            <set name="weight" lb="0.5"></set>
+        </setters>
+    </element>
+
+    <element name="Quakescale Armor" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_QUAKESCALE_ARMOR">
+        <description>
+        <p>Fashioned from the scales of a quake drake, this armor rumbles softly with the sound of thunder during storms. While wearing it, you have resistance to thunder damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">armor</set>
+            <set name="category">Magic Armor</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="slot">body</set>
+            <set name="type" addition="scale mail">Armor</set>
+            <set name="rarity">Uncommon</set>
+            <set name="armor">Scale Mail</set>
+            <set name="name-format">Quakescale Armor</set>
+        </setters>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+        </rules>
+    </element>
+
+    <element name="Ready Gunk" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_READY_GUNK">
+        <description>
+            <p>This sticky paste is fashioned from the powdered bone armor of a bone trader. When you treat a weapon, shield, or other item that can be wielded in one or two hands, you can use a bonus action to summon and equip it, as long as the item is within 30 feet of you. After using the magic of the paste three times, it loses its potency.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="name-format">Ready Gunk</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+
+    <element name="Resuscitation Bomb" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RESUSCITATION_BOMB">
+        <description>
+            <p>This foul-smelling concoction is made from the remains of stinking sludge. As an action, the vial holding this brew can be dropped in a space within 10 feet of the wielder. The vial breaks, releasing a noxious vapor that spreads to a 30-foot radius. Any unconscious, sleeping, incapacitated, or stunned creature is instantly awakened, removing those conditions. A dying creature gains advantage on their next death saving throw. Creatures not suffering from those conditions or dying must succeed on a DC 15 Constitution saving throw or be poisoned for 1 minute.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Rare</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Resuscitation Bomb</set>
+            <set name="weight" lb="0.5"></set>
+        </setters>
+    </element>
+
+    <element name="Ring of Nightmares" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RING_OF_NIGHTMARES">
+    <description>
+        <p>This ring, crafted using the powdered brain of a restless lumberer, has 3 charges, and it regains 1d3 expended charges daily at dawn. While wearing the ring, you can use a bonus action to expend 1 charge to change the damage type of a spell you cast before the end of your turn to psychic damage.</p>
+        <p>In addition, while attuned to the ring, you’re immune to spells or magical abilities that interfere with your sleep or cause nightmares while you sleep.</p>
+    </description>
+    <setters>
+        <set name="keywords">ring</set>
+        <set name="category">Wondrous Items</set>
+        <set name="cost" currency="gp">0</set>
+        <set name="weight" lb="0">0 lb.</set>
+        <set name="slot">ring</set>
+        <set name="type">Ring</set>
+        <set name="rarity">Rare</set>
+            <set name="attunement" addition="by a spellcaster">true</set>
+        <set name="name-format">Ring of Nightmares</set>
+        <set name="charges">3</set>
+    </setters>
+    </element>
+
+
+    <element name="Sizzling Serum" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_SIZZLING_SERUM">
+        <description>
+            <p>Created from the ichor in a potbelly’s stomach-pot, this volatile concoction is effective at damaging inorganic substances. As an action, you can hurl the serum up to 30 feet at a construct or dump it onto an object. A construct or object must succeed on a DC 15 Constitution saving throw or take 35 (10d6) fire damage, or half as much on a successful one.</p>
+        </description>
+        <setters>
+            <set name="category">Potions</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Uncommon</set>
+            <set name="stackable">true</set>
+            <set name="name-format">Sizzling Serum</set>
+            <set name="weight" lb="0.5"></set>
+        </setters>
+    </element>
+
+    <element name="Staff of Briars" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_STAFF_OF_BRIARS">
+        <description>
+            <p>This wooden staff is made from the harvested claws of braerog. It has 10 charges when it is created. While holding it, you can use an action to expend 1 charge from the staff and cause thorny vines to sprout from a patch of earth or soil in a 20-foot square within 5 feet of you, or from the staff itself. Unless you choose a specific kind of briar plant, the staff creates a rose patch. These plants turn the ground in the area into difficult terrain. The briar patch is nonmagical, and it grows or withers as a normal plant would.</p>
+            <p>The staff regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff turns into rose petals and is lost forever.</p>
+        </description>
+        <setters>
+            <set name="keywords">staff</set>
+            <set name="category">Staffs</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 lb.</set>
+            <set name="slot">onehand</set>
+            <set name="type">Staff</set>
+            <set name="rarity">Uncommon</set>
+            <set name="charges">10</set>
+        </setters>
+    </element>
+
+    <element name="Suit of the Lamb" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_SUIT_OF_THE_LAMB">
+        <description>
+        <p>This suit of comfortable woolen clothes, made from the wool of the rare and dangerous poffer, includes a shirt, trousers or a kilt, and thick socks. While wearing the suit, you have resistance to lightning damage, and you don’t suffer effects from extreme cold weather.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="name-format">Suit of the Lamb</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="slot">body</set>
+        </setters>
+        <rules>
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+        </rules>
+    </element>
+
+    <element name="Talisman of Tormach" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_TALISMAN_OF_TORMACH">
+        <description>
+            <p>The dreadful talisman is crafted from the skull at the center of a gore elemental. When a creature wearing the talisman strikes a killing blow with a melee weapon, that creature gains 10 temporary hit points for 1 minute. While it has those temporary hit points, its melee weapon attacks deal an additional 3 (1d6) necrotic damage.</p>
+        </description>
+        <setters>
+            <set name="keywords">talisman</set>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="slot">neck</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Talisman of Tormach</set>
+        </setters>
+    </element>
+
+    <element name="Telltale Heart" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_TELLTALE_HEART">
+        <description>
+        <p>This cherry-sized bloodstone heart is the beating center of a poppet. While on your person, you have advantage on saving throws against becoming frightened. If an effect causes you to be frightened without a saving throw, you receive a DC 15 Wisdom saving throw to avoid the condition.</p>
+        <p>Also, when you make an Intelligence ability check while holding the stone, you can listen to it, gaining unusual insight or access to esoteric lore. If you do so, you gain advantage on that Intelligence check. The telltale heart can’t be used this way again until you finish a long rest.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0"></set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="attunement">true</set>
+            <set name="name-format">Telltale Heart</set>
+        </setters>
+    </element>
+
+    <element name="Tormach's Blessed Weapon" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_TORMACHS_BLESSED_WEAPON">
+    <description>
+    <p>Dedicated followers of Tormach sometimes gain the blessing of the Lord of Blood Oaths. When they do, their weapons gain a spark of the Marauder’s power. On a successful attack, the wielder can force the target to succeed on a DC 10 Strength saving throw or be knocked prone. This ability can be used again when the wielder finishes a long rest.</p>
+    <p>At the start of each day there is a 10% chance that the spark leaves the weapon, making it a normal item.</p>
+    </description>
+    <setters>
+        <set name="category">Magic Weapons</set>
+            <set name="cost" currency="gp">0</set>
+        <set name="type" addition="any melee weapon">Weapon</set>
+        <set name="rarity">Common</set>
+            <set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+        <set name="name-format">Tormach's Blessed {{parent}}</set>
+    </setters>
+    </element>
+
+    <element name="Wand of Silence" type="Magic Item" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_WAND_OF_SILENCE">
+            <description>
+                <p>This wand has 7 charges. While holding it, you can use an action to expend 1 charge to cast the <i>silence</i> spell (save DC 15). The wand regains 1d6+1 expended charges daily at dawn. If you expend the wand’s last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.</p>
+            </description>
+            <setters>
+                <set name="keywords">wand</set>
+                <set name="category">Wands</set>
+                <set name="cost" currency="gp">0</set>
+                <set name="weight" lb="1">1 lb.</set>
+                <set name="type">Wand</set>
+                <set name="slot">onehand</set>
+                <set name="attunement" addition="by a spellcaster">true</set>
+                <set name="rarity">Uncommon</set>
+                <set name="charges">7</set>
+                <set name="name-format">Wand of Silence</set>
+            </setters>
+    </element>
+</elements>

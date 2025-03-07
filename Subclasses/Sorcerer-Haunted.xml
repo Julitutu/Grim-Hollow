@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Haunted</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="Sorcerer-Haunted.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Sorcerer-Haunted.xml" />
+		</update>
+	</info>
+
+    <element name="Haunted" type="Archetype" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_SORCERER_SCION_OF_MADNESS">
+        <supports>Sorcerous Origin</supports>
+        <description>
+            <p>The eldritch powers that lurk beyond the veil of the moon have plunged the world into chaos. This chaos is what gives you might; there isn't any form of power more pure nor more potent than this eldritch insanity. You might have endured nightmarish experiments, possibly a higher being has taken an interest in you, or maybe you’re a mere pawn in an outer god's scheme. Perhaps you were blessed by powers that shouldn't be, or one of your parents was under an eldritch curse. Whatever the case may be, this insanity consumes you, and will be unleashed on the world, for better or atrociously worse.</p>
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_HAUNTED_SPELLS" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_PHANTOM_COMPANION" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_SIXTH_SENSE" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_STRENGTH_OF_SPIRIT" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_DEATHLY_PALLOR" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_PHANTOM_POSSESSION" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_BECOME_DEATH" />
+        </description>
+        <sheet display="false">
+            <description>The eldritch powers that lurk beyond the veil of the moon have plunged the world into chaos. This chaos is what gives you might; there isn't any form of power more pure nor more potent than this eldritch insanity.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_HAUNTED_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_PHANTOM_COMPANION" level="1" />
+            <grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_SIXTH_SENSE" level="1" />
+            <grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_STRENGTH_OF_SPIRIT" level="6" />
+            <grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_DEATHLY_PALLOR" level="6" />
+            <grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_PHANTOM_POSSESSION" level="14" />
+            <grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_BECOME_DEATH" level="18" />
+        </rules>
+    </element>
+
+    <element name="Haunted Spells" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_HAUNTED_SPELLS">
+		<description>
+            <p>You learn additional spells when you reach certain levels in this class, as shown on the Haunted Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn’t count against the number of sorcerer spells you know.</p>
+            <p>When you cast a spell you know from the Haunted Spells table, you can cast it by expending a spell slot as normal or by spending a number of sorcery points equal to the spell’s level.</p>
+			<h5>Haunted Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st</td><td><i>unseen servant</i></td></tr>
+				<tr><td>3rd</td><td><i>see invisibility</i></td></tr>
+				<tr><td>5th</td><td><i>speak with dead</i></td></tr>
+				<tr><td>7th</td><td><i>death ward</i></td></tr>
+				<tr><td>9th</td><td><i>little death</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+            <grant type="Spell" id="ID_PHB_SPELL_UNSEEN_SERVANT" level="1" spellcasting="Sorcerer" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" level="3" spellcasting="Sorcerer" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="5" spellcasting="Sorcerer" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Sorcerer" prepared="true" />
+            <grant type="Spell" id="ID_GHPG_SPELL_LITTLE_DEATH" level="9" spellcasting="Sorcerer" prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Phantom Companion" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_PHANTOM_COMPANION">
+		<description>
+			<p>At 1st level, you learn the find familiar spell and can cast it as a ritual. The spell doesn’t count against your number of spells known.</p>
+            <p>When you cast the spell, you can only choose the form of a specter, which becomes your phantom companion. Instead of a celestial, fey, or fiend this familiar’s creature type is undead.</p>
+            <p class="indent">As an action, you can command your phantom companion to turn invisible until it attacks or you cast a spell through it. While invisible, it leaves no physical evidence of its passage, so it can be tracked only by magic. Any equipment or objects it is holding remains visible.</p>
+            <p class="indent">Additionally, at 3rd level, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make its Life Drain attack with its reaction.</p>
+		</description>
+		<sheet>
+			<description>You learn the find familiar spell and can cast it as a ritual. The spell doesn’t count against your number of spells known. When you cast the spell, you can only choose the form of a specter, which becomes your phantom companion. Instead of a celestial, fey, or fiend this familiar’s creature type is undead.&#13;
+            As an action, you can command your phantom companion to turn invisible until it attacks or you cast a spell through it. While invisible, it leaves no physical evidence of its passage, so it can be tracked only by magic. Any equipment or objects it is holding remains visible.</description>
+            <description level="3">You learn the find familiar spell and can cast it as a ritual. The spell doesn’t count against your number of spells known. When you cast the spell, you can only choose the form of a specter, which becomes your phantom companion. Instead of a celestial, fey, or fiend this familiar’s creature type is undead.&#13;
+            As an action, you can command your phantom companion to turn invisible until it attacks or you cast a spell through it. While invisible, it leaves no physical evidence of its passage, so it can be tracked only by magic. Any equipment or objects it is holding remains visible.&#13;
+            When you take the Attack action, you can forgo one of your own attacks to allow your familiar to make its Life Drain attack with its reaction.
+            <div class="reference">
+                <div element="ID_WOTC_MM_INFORMATION_COMPANION_SPECTER" />
+            </div></description>
+		</sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" spellcasting="Sorcerer" prepared="true"/>
+            <select type="Companion" name="Panthom Companion" supports="Phantom Companion" default="ID_WOTC_MM_COMPANION_SPECTER"/>
+        </rules>
+    </element>
+
+    <element name="Sixth Sense" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_SIXTH_SENSE">
+		<description>
+			<p>Starting at 1st level, when you make a Dexterity ability check to determine initiative, you gain a bonus to the roll equal to your Charisma modifier.</p>
+		</description>
+		<sheet>
+			<description>When you make a Dexterity ability check to determine initiative, you gain a bonus to the roll equal to your Charisma modifier.</description>
+		</sheet>
+        <rules>
+            <stat name="initiative:misc" value="charisma:modifier" />
+        </rules>
+    </element>
+
+    <element name="Strength of Spirit" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_STRENGTH_OF_SPIRIT">
+		<description>
+			<p>At 6th level, your bond to the specter summoned by your Phantom Companion feature empowers it further. You gain the following benefits:</p>
+            <ul>
+                <li>Your specter’s maximum hit points increase by four times your level in this class.</li>
+                <li>Your specter can deliver spells of any range, not just touch. Apart from this change, it follows all the normal rules of casting a spell through your familiar.</li>
+                <li>When you use your action to cast a spell, you can use a bonus action on the same turn to command your specter to use its Life Drain attack against a creature within range of your choice.</li>
+            </ul>
+		</description>
+		<sheet>
+			<description>At 6th level, your bond to the specter summoned by your Phantom Companion feature empowers it further.&#13;
+            • Your specter’s maximum hit points increase by four times your level in this class.&#13;
+            • Your specter can deliver spells of any range, not just touch. Apart from this change, it follows all the normal rules of casting a spell through your familiar.&#13;
+            • When you use your action to cast a spell, you can use a bonus action on the same turn to command your specter to use its Life Drain attack against a creature within range of your choice.</description>
+		</sheet>
+        <rules>
+            <stat name="additional:hp:max" value="level:sorcerer" />
+            <stat name="additional:hp:max" value="level:sorcerer" />
+            <stat name="additional:hp:max" value="level:sorcerer" />
+            <stat name="additional:hp:max" value="level:sorcerer" />
+            <stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Deathly Pallor" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_DEATHLY_PALLOR">
+		<description>
+			<p>Also at 6th level, you gain resistance to necrotic damage. In addition, when you cast a sorcerer spell that deals damage, you can choose to change the damage type dealt to necrotic.</p>
+		</description>
+		<sheet>
+			<description>When you cast a sorcerer spell that deals damage, you can choose to change the damage type dealt to necrotic.</description>
+		</sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+    </element>
+
+    <element name="Phantom Possession" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_PHANTOM_POSSESSION">
+		<description>
+			<p>At 14th level, as an action you can direct your phantom companion to attempt to possess and enter a creature of your choice within 5 feet of your phantom. When you do, the creature must succeed on a Charisma saving throw against your spell save DC or be possessed by your phantom for 1 minute. During this time your phantom cannot be affected by spells or abilities, take actions, or interact with in any way.</p>
+            <p class="indent">While the target is possessed, you have a telepathic link with it as long as the two of you are within 100 feet. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability, taking the Dodge action if it has not used its action already.</p>
+            <p class="indent">Each time the target takes damage, it makes a new Charisma saving throw against the possession. If the saving throw succeeds, the possession ends and your phantom companion reappears in the closest unoccupied space.</p>
+            <p class="indent">Once you use this feature, you can’t do so again until you finish a short rest.</p>
+		</description>
+		<sheet usage="1/Short Rest" action="Action">
+			<description>As an action you can direct your phantom companion to attempt to possess and enter a creature of your choice within 5 feet of your phantom. When you do, the creature must succeed on a DC {{haunted:dc}} Charisma saving throw or be possessed by your phantom for 1 minute. During this time your phantom cannot be affected by spells or abilities, take actions, or interact with in any way.&#13;
+			While the target is possessed, you have a telepathic link with it as long as the two of you are within 100 feet. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability, taking the Dodge action if it has not used its action already.&#13;
+			Each time the target takes damage, it makes a new Charisma saving throw against the possession. If the saving throw succeeds, the possession ends and your phantom companion reappears in the closest unoccupied space.</description>
+		</sheet>
+        <rules>
+            <stat name="haunted:dc" value="8" />
+            <stat name="haunted:dc" value="proficiency" />
+            <stat name="haunted:dc" value="charisma:modifier" />
+        </rules>
+    </element>
+
+    <element name="Become Death" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_HAUNTED_BECOME_DEATH">
+        <description>
+            <p>At 18th level, you can transmute your physical form into a spectral one when you near death. When you take damage that would reduce you to 0 hit points, you drop to 1 hit point instead and gain temporary hit points equal to half your maximum hit points. At the start of each of your turns, you lose 5 temporary hit points and all creatures of your choice within 30 feet take 5 necrotic damage. While you have any temporary hit points granted from this feature, you have resistance to all damage, a fly speed of 30 feet, and can move through creatures and objects provided you end your movement in an unoccupied space.</p>
+            <p class="indent">Once you use this feature, you can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>When you take damage that would reduce you to 0 hit points, you drop to 1 hit point instead and gain {{become death:thp}} temporary hit points. At the start of each of your turns, you lose 5 temporary hit points and all creatures of your choice within 30 feet take 5 necrotic damage. While you have any temporary hit points granted from this feature, you have resistance to all damage, a fly speed of 30 feet, and can move through creatures and objects provided you end your movement in an unoccupied space.</description>
+        </sheet>
+        <rules>
+            <stat name="become death:thp" value="hp:half" />
+        </rules>
+    </element>
+
+    <!-- Specter -->
+    <element name="Specter" type="Companion" source="Monster Manual" id="ID_WOTC_MM_COMPANION_SPECTER">
+        <supports>Phantom Companion</supports>
+        <description>
+            <p>A specter is the angry, unfettered spirit of a humanoid that has been prevented from passing to the afterlife. Specters no longer possess connections to who or what they were, yet are condemned to walk the world forever. Some are spawned when dark magic or the touch of a wraith rips a soul from a living body.</p>
+            <p><b>Beyond Redemption.</b> When a ghost's unfinished business is completed, it can rest at last. No such rest or redemption awaits a specter. It is doomed to the Material Plane, its only end the oblivion that comes with the destruction of its soul. Until then, it bears out its lonely life in forlorn places, carrying on forgotten through the ages of the world.</p>
+            <p><b>Undying Hatred.</b> Living creatures remind the specter that life is beyond its grasp. The mere sight of the living overwhelms a specter with sorrow and wrath, which can be abated only by destroying said life. A specter kills quickly and mercilessly, for only by depriving others of life can it gain the slightest satisfaction. However, no matter how many lives it extinguishes, a specter always succumbs to its hatred and sorrow.</p>
+            <p><b>Dwellers in Darkness.</b> Sunlight represents a source of life that no specter can ever hope to douse, and it pains them. When night falls, they leave their final resting places in search of living creatures to slay, knowing that few weapons can harm them in return.</p>
+            <p>At the first light of dawn, they retreat back into the darkness, where they remain until night falls again.</p>
+            <p><b>Undead Nature.</b> A specter doesn't require air, food, drink, or sleep.</p>
+        </description>
+        <setters>
+            <set name="size">Medium</set>
+            <set name="type">Undead</set>
+            <set name="alignment">Chaotic Evil</set>
+            <set name="ac">12</set>
+            <set name="hp">22 (5d8)</set>
+            <set name="speed">Fly 50 ft. (Hover)</set>
+            <set name="strength">1</set>
+            <set name="dexterity">14</set>
+            <set name="constitution">11</set>
+            <set name="intelligence">10</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">11</set>
+            <set name="resistances">Acid, Cold, Fire, Lightning, Thunder, Bludgeoning, Piercing, and Slashing from nonmagical attacks</set>
+            <set name="immunities">Necrotic, Poison</set>
+            <set name="conditionImmunities">Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious</set>            
+            <set name="senses">Darkvision 60 ft., Passive Perception 10</set>
+            <set name="languages">Understands all languages it knew in life but can't speak</set>
+            <set name="challenge">1</set>
+            <set name="traits">ID_WOTC_MM_COMPANION_TRAIT_SPECTER_INCORPOREAL_MOVEMENT,ID_WOTC_MM_COMPANION_TRAIT_SPECTER_SUNLIGHT_SENSITIVITY</set>
+            <set name="actions">ID_WOTC_MM_COMPANION_ACTION_SPECTER_LIFE_DRAIN</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="12" />
+            <stat name="companion:hp:max" value="22" bonus="base" />
+            <stat name="companion:speed:fly" value="50" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Incorporeal Movement" type="Companion Trait" source="Monster Manual" id="ID_WOTC_MM_COMPANION_TRAIT_SPECTER_INCORPOREAL_MOVEMENT">
+        <description>
+            <p>The specter can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</p>
+        </description>
+        <sheet>
+            <description>The specter can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</description>
+        </sheet>
+    </element>
+    <element name="Sunlight Sensitivity" type="Companion Trait" source="Monster Manual" id="ID_WOTC_MM_COMPANION_TRAIT_SPECTER_SUNLIGHT_SENSITIVITY">
+        <description>
+            <p>While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</p>
+        </description>
+        <sheet>
+            <description>While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</description>
+        </sheet>
+    </element>
+    <element name="Life Drain" type="Companion Action" source="Monster Manual" id="ID_WOTC_MM_COMPANION_ACTION_SPECTER_LIFE_DRAIN">
+        <description>
+            <p><i>Melee Weapon Attack:</i> +4 to hit, reach 5 ft., one target. <i>Hit:</i> 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</description>
+        </sheet>
+    </element>
+
+    <element name="Specter" type="Information" source="Monster Manual" id="ID_WOTC_MM_INFORMATION_COMPANION_SPECTER">
+		<description>
+			<p style="margin-bottom:-5px"><em>Medium Undead, Chaotic Evil</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 12</li>
+				<li><strong>Hit Points</strong> 22 (5d8)</li>
+				<li><strong>Speed</strong> Fly 50 ft. (Hover)</li>
+			</ul>
+						<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>1 (-5)</td><td>14 (+3)</td><td>11 (0)</td><td>10 (0)</td><td>10 (0)</td><td>11 (0)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Damage Resistances</strong> Acid, Cold, Fire, Lightning, Thunder, Bludgeoning, Piercing, and Slashing from nonmagical attacks</li>
+				<li><strong>Damage Immunities</strong> Necrotic, Poison</li>
+				<li><strong>Condition Immunities</strong> Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious</li>
+				<li><strong>Senses</strong> Darkvision 60 ft., Passive Perception 10</li>
+				<li><strong>Languages</strong> Understands all languages it knew in life but can't speak</li>
+				<li><strong>Challenge</strong> 1 <strong>Proficiency Bonus</strong> -</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Incorporeal Movement.</em></strong> The specter can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.</li>
+                <li><strong><em>Sunlight Sensitivity.</em></strong> While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.</li>
+			</ul>
+			<h4 style="margin-top:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Life Drain.</strong> Melee Weapon Attack:</em> +4 to hit, reach 5 ft., one target. <em>Hit:</em> 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</li>
+			</ul>
+		</description>
+	</element>
+</elements>

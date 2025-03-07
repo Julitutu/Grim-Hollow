@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Primal Spirit</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="Barbarian-Primal-Spirit.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Barbarian-Primal-Spirit.xml" />
+		</update>
+	</info>
+
+	<element name="Path of the Primal Spirit" type="Archetype" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_BARBARIAN_PATH_OF_THE_PRIMAL_SPIRIT">
+		<supports>Primal Path</supports>
+		<description>
+			<p>Many barbarians are in tune with the natural world, but few are as mystically intertwined with it as those who walk the Path of the Primal Spirit. These barbarians forge powerful connections with the beasts and natural spirits of the world, inspiring such ethereal beings to manifest and journey with them on far-flung adventures.</p>
+			<p class="indent">Barbarians who follow this path have a deep reverence for the ecological cycle of the natural world. Such barbarians are as likely to accept quests and pleas for aid from local wildlife as they are other humanoids. This respect for animals doesn’t cross into naivety—no barbarian better understands the circle of life and the delicate balance between the needs of predator and prey better than those who walk the Path of the Primal Spirit.</p>
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_PRIMAL_COMPANION" />
+            <div class="reference">
+                <div element="ID_GFG_GHPG_INFORMATION_PRIMAL_GUARDIAN" />
+                <div element="ID_GFG_GHPG_INFORMATION_PRIMAL_STRIKER" />
+            </div>
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SHARED_RAGE" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_KIN_TO_BEASTS" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SKINRIDER_TRANCE" />
+			<div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SHAPE_OF_THE_WILD" />
+		</description>
+		<sheet display="false">
+			<description>Many barbarians are in tune with the natural world, but few are as mystically intertwined with it as those who walk the Path of the Primal Spirit. These barbarians forge powerful connections with the beasts and natural spirits of the world, inspiring such ethereal beings to manifest and journey with them on far-flung adventures.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_PRIMAL_COMPANION" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SHARED_RAGE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_KIN_TO_BEASTS" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SKINRIDER_TRANCE" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SHAPE_OF_THE_WILD" level="14" />
+		</rules>
+	</element>
+
+    <!-- Primal Companion -->
+	<element name="Primal Companion" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_PRIMAL_COMPANION">
+		<description>
+			<p>At 3rd level, you gain a primal companion, a spirit that accompanies you on your adventures and instinctively fights alongside you. Select either the Guardian or Striker, and one of land, sea, or sky. Its in game statistics can be found on one of the following cards, which uses your proficiency bonus (PB) in several places.</p>
+			<p class="indent">You determine your companion’s appearance; however, this does not affect its game statistics. Despite taking on a physical form, your primal companion does not need to breathe, eat, or sleep. You and your primal companion can communicate with one another telepathically while you are both on the same plane.</p>
+			<p class="indent">As an action, you can temporarily dismiss your primal companion or summon it within 30 feet of you.</p>
+            <p class="indent">In combat, your primal companion shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you use a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, your companion can take any action of its choice, not just Dodge.</p>
+            <p class="indent">You can spend one minute caring for your primal companion. When you do, the spirit regains 2d6 hit points. Your primal companion regains all lost hit points at the end of a long rest. If your primal companion dies, the spirit manifests in a form of your choice the next time you finish a long rest.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG_INFORMATION_PRIMAL_GUARDIAN" />
+                <div element="ID_GFG_GHPG_INFORMATION_PRIMAL_STRIKER" />
+            </div>
+		</description>
+		<sheet action="Action">
+			<description>You gain a primal companion, a spirit that accompanies you on your adventures and instinctively fights alongside you. Select either the Guardian or Striker, and one of land, sea, or sky.</description>
+		</sheet>
+        <rules>
+            <select type="Companion" name="Primal Companion" supports="ID_GFG_GHPG_COMPANION_PRIMAL_GUARDIAN|ID_GFG_GHPG_COMPANION_PRIMAL_STRIKER" />
+        </rules>
+	</element>
+
+    <!-- Shared Rage -->
+    <element name="Shared Rage" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SHARED_RAGE">
+        <description>
+            <p>Also at 3rd level, while you are raging, your primal companion has resistance to bludgeoning, piercing, and slashing damage.</p>
+        </description>
+        <sheet>
+            <description>While you are raging, your primal companion has resistance to bludgeoning, piercing, and slashing damage.</description>
+        </sheet>
+    </element>
+
+    <!-- Kin to Beasts -->
+    <element name="Kin to Beasts" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_KIN_TO_BEASTS">
+        <description>
+            <p>At 6th level, you can cast the animal friendship and speak with animals spells using Constitution as your spellcasting ability. Once you cast a spell using this feature, you can’t cast either spell until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>You can cast the animal friendship and speak with animals spells using Constitution as your spellcasting ability. Once you cast a spell using this feature, you can’t cast either spell until you finish a short or long rest.</description>
+        </sheet>
+        <rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" />
+		</rules>
+    </element>
+
+    <!-- Skinrider’s Trance -->
+    <element name="Skinrider’s Trance" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SKINRIDER_TRANCE">
+        <description>
+            <p>At 10th level, you can use an action and choose your primal companion or one beast currently under the effect of your animal friendship spell to enter a trance. For the duration of this trance, you possess the chosen creature.</p>
+            <p class="indent">While possessing a creature, you sense the world through the target’s senses, you have total control over its movement and actions, you use the beast’s physical statistics and abilities instead of your own, and keep your mental attributes. This possession ends if you choose to exit the trance (no action required by you), the beast you’re possessing is reduced to 0 hit points, or you and the beast are on different planes of existence.</p>
+            <p class="indent">While in this trance, you are blinded and deafened in regard to your own senses and cannot move or take actions. You can remain in the trance for a number of hours up to half your level in this class + your Constitution modifier.</p>
+            <p class="indent">Once you use this feature to enter the trance, you cannot do so again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest" action="Action">
+            <description>You can use an action and choose your primal companion or one beast currently under the effect of your animal friendship spell to enter a trance. For the duration of this trance, you possess the chosen creature.&#13;
+            While possessing a creature, you sense the world through the target’s senses, you have total control over its movement and actions, you use the beast’s physical statistics and abilities instead of your own, and keep your mental attributes. This possession ends if you choose to exit the trance (no action required by you), the beast you’re possessing is reduced to 0 hit points, or you and the beast are on different planes of existence.&#13;
+            While in this trance, you are blinded and deafened in regard to your own senses and cannot move or take actions. You can remain in the trance for a number of hours up to {{skinrider:trance:duration}}.</description>
+        </sheet>
+        <rules>
+            <stat name="skinrider:trance:duration" value="level:barbarian:half" />
+            <stat name="skinrider:trance:duration" value="constitution:modifier" />
+        </rules>
+    </element>
+
+    <!-- Shape of the Wild -->
+    <element name="Shape of the Wild" type="Archetype Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SHAPE_OF_THE_WILD">
+        <description>
+            <p>At 14th level, you can use a bonus action on your turn to choose a new form for your primal companion, causing it to transform instantaneously. When you cause your primal companion to transform in this way, its current hit points change to its new maximum hit points.</p>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest" action="Bonus Action">
+            <description>As a bonus action on your turn, you can choose a new form for your primal companion, causing it to transform instantaneously. When you cause your primal companion to transform in this way, its current hit points change to its new maximum hit points.</description>
+        </sheet>
+    </element>
+
+    <!-- Primal Companion -->
+    <!-- Guardian -->
+	<element name="Primal Guardian" type="Companion" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_COMPANION_PRIMAL_GUARDIAN">
+        <supports>Primal Companion</supports>
+		<description>
+        </description>
+        <setters>
+            <set name="size">Medium (Large if Land or Sea)</set>
+            <set name="type">Beast</set>
+            <set name="alignment">Neutral</set>
+            <set name="ac">12 plus PB (natural armor)</set>
+            <set name="hp">5 + six times your barbarian level</set>
+            <set name="speed">30 ft.; fly 45 ft. (Sky only); swim 45 ft. (Sea only)</set>
+            <set name="strength">15</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">16</set>
+            <set name="intelligence">4</set>
+            <set name="wisdom">12</set>
+            <set name="charisma">6</set>
+            <set name="saves">Str +2 plus PB, Con +3 plus PB</set>
+            <set name="skills">Athletics +2 plus PB, Intimidation -2 plus PB x 2, Perception +1 plus PB</set>
+            <set name="senses">Darkvision 60 ft., passive Perception 11 plus PB</set>
+            <set name="languages">Understands your languages but cannot speak.</set>
+            <set name="challenge">-</set>
+            <set name="traits">ID_GFG_GHPG_COMPANION_TRAIT_GUARDIAN_PROTECTIVE_INSTINCT,ID_GFG_GHPG_COMPANION_TRAIT_GUARDIAN_VIGILANT</set>
+            <set name="actions">ID_GFG_GHPG_COMPANION_ACTION_GUARDIAN_NATURAL_WEAPON</set>
+            <set name="reactions">ID_GFG_GHPG_COMPANION_REACTION_GUARDIAN_BODY_BLOCK</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="12" bonus="base"/>
+            <stat name="companion:ac" value="proficiency" bonus="proficiency" />
+
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+            <stat name="companion:hp:max" value="level:barbarian" />
+
+            <stat name="companion:speed" value="30" bonus="base" />
+            <stat name="companion:speed:fly" value="45" bonus="base" />
+            <stat name="companion:speed:swim" value="45" bonus="base" />
+
+            <stat name="companion:athletics" value="proficiency" bonus="proficiency" />
+            
+            <stat name="companion:intimidation" value="proficiency" />
+			<stat name="companion:intimidation" value="proficiency" />
+
+            <stat name="companion:perception" value="proficiency" />
+
+            <stat name="companion:strength:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+
+            <stat name="companion:proficiency" value="proficiency" bonus="proficiency"/>
+        </rules>
+	</element>
+    <element name="Protective Instinct" type="Companion Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_COMPANION_TRAIT_GUARDIAN_PROTECTIVE_INSTINCT">
+        <description>
+            <p>When the guardian’s hit points fall below half its maximum, it’s enraged for 10 minutes, gaining temp hit points equal to half of its maximum. While enraged, hostile creatures within 5 feet have disadvantage on attack rolls against creatures other than the guardian.</p>
+        </description>
+        <sheet>
+        <description>When the guardian’s hit points fall below half its maximum, it’s enraged for 10 minutes, gaining temp hit points equal to half of its maximum. While enraged, hostile creatures within 5 feet have disadvantage on attack rolls against creatures other than the guardian.</description>
+        </sheet>
+    </element>
+    <element name="Vigilant" type="Companion Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_COMPANION_TRAIT_GUARDIAN_VIGILANT">
+        <description>
+            <p>The guardian can’t be surprised.</p>
+        </description>
+        <sheet>
+            <description>The guardian can’t be surprised</description>
+        </sheet>
+    </element>
+	<element name="Natural Weapon" type="Companion Action" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_COMPANION_ACTION_GUARDIAN_NATURAL_WEAPON">
+		<description>
+			<p>Melee Weapon Attack: +2 plus PB, reach 5 ft., one target. Hit: 1d4 + 2 bludgeoning, piercing, or slashing damage (based on form chosen).</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +2 plus PB to hit, reach 5 ft., one target. Hit: 1d4 + 2 bludgeoning, piercing, or slashing damage (based on form chosen).</description>
+		</sheet>
+	</element>
+    <element name="Body Block" type="Companion Reaction" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_COMPANION_REACTION_GUARDIAN_BODY_BLOCK">
+        <description>
+            <p>When an ally within 5 feet of it is hit by an attack, the guardian takes the damage instead.</p>
+        </description>
+		<sheet action="Reaction">
+        	<description>When an ally within 5 feet of it is hit by an attack, the guardian takes the damage instead.</description>
+		</sheet>
+    </element>
+
+    <!-- Striker -->
+	<element name="Primal Striker" type="Companion" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_COMPANION_PRIMAL_STRIKER">
+		<supports>Primal Companion</supports>
+		<description>
+            <p>Medium Beast, neutral</p>
+        </description>
+        <setters>
+            <set name="size">Medium</set>
+            <set name="type">Beast</set>
+            <set name="alignment">Neutral</set>
+            <set name="ac">12 plus PB (natural armor)</set>
+            <set name="hp">5 + four times your barbarian level</set>
+            <set name="speed">40 ft.; fly 60 ft. (Sky only); swim 60 ft. (Sea only)</set>
+            <set name="strength">15</set>
+            <set name="dexterity">15</set>
+            <set name="constitution">14</set>
+            <set name="intelligence">4</set>
+            <set name="wisdom">12</set>
+            <set name="charisma">7</set>
+            <set name="saves">Str +2 plus PB, Con +3 plus PB</set>
+            <set name="skills">Perception +1 plus PB, Stealth +2 plus PB</set>
+            <set name="senses">Darkvision 60 ft., passive Perception 11 plus PB</set>
+            <set name="languages">Understands your languages but cannot speak.</set>
+            <set name="challenge">-</set>
+            <set name="traits">ID_GFG_GHPG_COMPANION_TRAIT_STRIKER_FLYBY,ID_GFG_GHPG_COMPANION_TRAIT_STRIKER_AQUATIC_ASSAULT,ID_GFG_GHPG_COMPANION_TRAIT_STRIKER_ENRAGED_STRIKES</set>
+            <set name="actions">ID_GFG_GHPG_COMPANION_ACTION_STRIKER_NATURAL_WEAPON</set>
+            <set name="reactions">ID_GFG_GHPG_COMPANION_REACTION_STRIKER_HARRY</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="12" bonus="base"/>
+            <stat name="companion:ac" value="proficiency" bonus="proficiency" />
+
+            <stat name="companion:hp:max" value="5" />
+            <stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+
+            <stat name="companion:speed" value="40" bonus="base" />
+            <stat name="companion:speed:fly" value="60" bonus="base" />
+            <stat name="companion:speed:swim" value="60" bonus="base" />
+
+            <stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+            <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+
+            <stat name="companion:perception" value="proficiency" bonus="proficiency" />
+            <stat name="companion:stealth" value="proficiency" bonus="proficiency" />
+            <stat name="companion:proficiency" value="proficiency" bonus="proficiency"/>
+        </rules>
+	</element>
+    <element name="Flyby (Sky Only)" type="Companion Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_COMPANION_TRAIT_STRIKER_FLYBY">
+        <description>
+            <p>The striker doesn’t provoke opportunity attacks when it flies out of an enemy’s reach.</p>
+        </description>
+        <sheet>
+			<description>The striker doesn’t provoke opportunity attacks when it flies out of an enemy’s reach.</description>
+		</sheet>
+    </element>
+    <element name="Aquatic Assault (Sea Only)" type="Companion Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_COMPANION_TRAIT_STRIKER_AQUATIC_ASSAULT">
+        <description>
+            <p>While the striker is submerged in water it has advantage on natural weapon attacks made against other creatures without a swim speed submerged in water.</p>
+        </description>
+        <sheet>
+			<description>natural weapon attacks made against other creatures without a swim speed submerged in water.</description>
+		</sheet>
+    </element>
+    <element name="Enraged Strikes" type="Companion Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_COMPANION_TRAIT_STRIKER_ENRAGED_STRIKES">
+        <description>
+            <p>While you are raging, the striker’s natural weapon attacks gain a damage bonus equal to your Rage Damage.</p>
+        </description>
+        <sheet>
+			<description>While you are raging, the striker’s natural weapon attacks gain a damage bonus equal to your Rage Damage.</description>
+		</sheet>
+    </element>
+
+	<element name="Natural Weapon" type="Companion Action" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_COMPANION_ACTION_STRIKER_NATURAL_WEAPON">
+		<description>
+			<p>Melee Weapon Attack: +2 plus PB to hit, reach 5 ft., one target. Hit: 1d8 + PB bludgeoning, piercing, or slashing damage (based on form chosen).</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +2 plus PB to hit, reach 5 ft., one target. Hit: 1d8 + PB bludgeoning, piercing, or slashing damage (based on form chosen).</description>
+		</sheet>
+	</element>
+    <element name="Harry (Land Only)" type="Companion Reaction" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_COMPANION_REACTION_STRIKER_HARRY">
+        <description>
+            <p>When a creature within 5 feet of the striker is attacked, the striker gives that attack roll advantage.</p>
+        </description>
+		<sheet action="Reaction">
+        	<description>When a creature within 5 feet of the striker is attacked, the striker gives that attack roll advantage.</description>
+		</sheet>
+    </element>
+
+    <!-- Companions Information -->
+    <element name="Primal Guardian" type="Information" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_INFORMATION_PRIMAL_GUARDIAN">
+		<description>
+			<p style="margin-bottom:-5px"><em>Medium (Large if Land or Sea) Beast</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 12 plus PB (natural armor)</li>
+				<li><strong>Hit Points</strong> 5 + six times your barbarian level</li>
+				<li><strong>Speed</strong> 30 ft.; fly 45 ft. (Sky only); swim 45 ft. (Sea only)</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>15 (+2)</td><td>12 (+1)</td><td>16 (+3)</td><td>4 (-3)</td><td>12 (+1)</td><td>6 (-2)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Saving Throws</strong> Str +2 plus PB, Con +3 plus PB</li>
+				<li><strong>Skills</strong> Athletics +2 plus PB, Intimidation -2 plus PB x 2, Perception +1 plus PB</li>
+				<li><strong>Senses</strong> Darkvision 60 ft., passive Perception 11 plus PB</li>
+				<li><strong>Languages</strong> Understands your languages but cannot speak.</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> —</li>
+				<li style="text-align:right; margin-top:-1em"><strong>Proficiency Bonus (PB)</strong> equals your bonus</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+                <li><strong><em>Protective Instinct.</em></strong> When the guardian’s hit points fall below half its maximum, it’s enraged for 10 minutes, gaining temp hit points equal to half of its maximum. While enraged, hostile creatures within 5 feet have disadvantage on attack rolls against creatures other than the guardian.</li>
+				<li><strong><em>Vigilant.</em></strong> The defender can't be surprised.</li>
+			</ul>
+			<h4 style="margin-top:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Natural Weapon.</strong> Melee Weapon Attack:</em> +2 plus PB, reach 5 ft., one target. <em>Hit:</em> 1d4 + 2 bludgeoning, piercing, or slashing damage (based on form chosen).</li>
+			</ul>
+			<h4 style="margin-top:10px">Reactions</h4>
+			<ul class="unstyled">
+				<li><strong><em>Body Block.</em></strong> When an ally within 5 feet of it is hit by an attack, the guardian takes the damage instead.</li>
+			</ul>
+		</description>
+	</element>
+
+   <element name="Primal Guardian" type="Information" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_INFORMATION_PRIMAL_STRIKER">
+		<description>
+			<p style="margin-bottom:-5px"><em>Medium Beast</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>Armor Class</strong> 12 plus PB (natural armor)</li>
+				<li><strong>Hit Points</strong> 5 + four times your barbarian level</li>
+				<li><strong>Speed</strong> 40 ft.; fly 60 ft. (Sky only); swim 60 ft. (Sea only)</li>
+			</ul>
+			<table style="text-align:center;margin-top:10px;margin-bottom:10px">
+				<thead><tr><td>STR</td><td>DEX</td><td>CON</td><td>INT</td><td>WIS</td><td>CHA</td></tr></thead>
+				<tr><td>15 (+2)</td><td>15 (+2)</td><td>14 (+2)</td><td>4 (-3)</td><td>12 (+1)</td><td>7 (-2)</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Saving Throws</strong> Str +2 plus PB, Con +3 plus PB</li>
+				<li><strong>Skills</strong> Perception +1 plus PB, Stealth +2 plus PB</li>
+				<li><strong>Senses</strong> Darkvision 60 ft., passive Perception 11 plus PB</li>
+				<li><strong>Languages</strong> Understands your languages but cannot speak.</li>
+				<li style="margin-bottom:-1em"><strong>Challenge</strong> —</li>
+				<li style="text-align:right; margin-top:-1em"><strong>Proficiency Bonus (PB)</strong> equals your bonus</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+                <li><strong><em>Flyby (Sky Only).</em></strong> The striker doesn’t provoke opportunity attacks when it flies out of an enemy’s reach.</li>
+				<li><strong><em>Aquatic Assault (Sea Only).</em></strong> While the striker is submerged in water it has advantage on natural weapon attacks made against other creatures without a swim speed submerged in water.</li>
+                <li><strong><em>Enraged Strikes.</em></strong> While you are raging, the striker’s natural weapon attacks gain a damage bonus equal to your Rage Damage.</li>
+			</ul>
+			<h4 style="margin-top:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Natural Weapon.</strong> Melee Weapon Attack:</em> +2 plus PB, reach 5 ft., one target. <em>Hit:</em> 1d8 + PB bludgeoning, piercing, or slashing damage (based on form chosen).</li>
+			</ul>
+			<h4 style="margin-top:10px">Reactions</h4>
+			<ul class="unstyled">
+				<li><strong><em>Harry (Land Only).</em></strong> When a creature within 5 feet of the striker is attacked, the striker gives that attack roll advantage.</li>
+			</ul>
+		</description>
+	</element>
+</elements>

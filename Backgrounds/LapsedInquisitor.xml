@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Lapsed Inquisitor</name>
+		<description>Background from Grim Hollow - The Players Guide</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.1.0">
+			<file name="LapsedInquisitor.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Backgrounds/LapsedInquisitor.xml" />
+		</update>
+	</info>
+
+	<!-- Lapsed Inquisitor Background -->
+	<element name="Lapsed Inquisitor" type="Background" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_BACKGROUND_LAPSED_INQUISITOR">
+		<description>
+			<p>You spent years traveling the countryside as a member of the Arcanist Inquisition, seeking out heretics and blasphemers, daemon and arcanist. Your work uncovered hidden evil that likely saved the lives of countless innocents. However, on more than one occasion the zeal of yourself or others brought low individuals who were themselves innocent.</p>
+            <p>After a crisis of conscience, you left the ranks of the inquisitors. Leaving those ranks is itself a dangerous prospect, but you could no longer abide. Maybe someone you love and care for starting showing arcane affinities that would have led to their destruction. Maybe you did. Maybe the last investigation you performed opened your eyes to new realities.</p>
+            <p>Now you are living with a target on your back. Your former peers don’t take kindly to people leaving their ranks. Those whom you persecuted have not forgotten your deeds. But life must still be lived, and there’s more than one way to find and destroy the evil in the world.</p>
+			<p class="indent"><b>Skill Proficiency:</b> Arcana, Religion</p>
+			<p class="indent"><b>Tool Proficiencies:</b> Land-based vehicles</p>
+			<p class="indent"><b>Languages:</b> One of the following: Abyssal, Celestial, Infernal</p>
+			<p class="indent"><b>Equipment:</b> A holy symbol, diplomat’s pack, 10 gp</p>
+			<div element="ID_GFG_GHPG_BACKGROUND_FEATURE_THE_INQUISITORS_STARE" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>You find yourself in constant conflict between your old mind set and your new life. The motivations and beliefs that led to your inquisitional pursuits were strong, and the feelings and experiences that turned you from that path were equally strong.</p>
+		</description>
+		<setters>
+			<set name="short">Arcana, Religion, Land-based vehicles, one of Abyssal, Celestial, or Infernal. The Inquisitor’s Stare feature.</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+			<select type="Language" name="Language (Lapsed Inquisitor)" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_CELESTIAL|ID_LANGUAGE_INFERNAL" />
+
+			<grant type="Background Feature" id="ID_GFG_GHPG_BACKGROUND_FEATURE_THE_INQUISITORS_STARE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+
+			<select type="List" name="Personality Trait (Lapsed Inquisitor)">
+				<item id="1">Whatever I believe is true at the moment is the only truth.</item>
+				<item id="2">The various realities you have seen make it hard for you to know what is true and what is not.</item>
+				<item id="3">I feel great shame over my actions as an inquisitor.</item>
+				<item id="4">I believe that my enemies are waiting around every corner.</item>
+				<item id="5">When I get tense, I like to dance and pray to relieve the tension.</item>
+				<item id="6">No matter what you’ve seen or done, I can top that.</item>
+			</select>
+
+            <select type="List" name="Ideal (Lapsed Inquisitor)">
+				<item id="1">The arcane is dangerous and evil, but it must be conquered with compassion rather than violence.</item>
+				<item id="2">The unexamined life is a blessing that should not be overlooked… or overanalyzed</item>
+				<item id="3">Life is too short to not live it to its fullest.</item>
+				<item id="4">Progress is an arch daemon’s playground.</item>
+				<item id="5">Nothing means anything. Life is futile and uncaring.</item>
+				<item id="6">Children are the only ones who can make the world right.</item>
+			</select>
+            <select type="List" name="Bond (Lapsed Inquisitor)">
+				<item id="1">The person who made me see the error in my inquisitioning ways keeps me grounded.</item>
+				<item id="2">My old amulet of office never leaves my neck, a reminder of what I was and what I can never become again.</item>
+				<item id="3">I adopted the pet of one of my former victims. I care for it as penance for all the lives I destroyed.</item>
+				<item id="4">My former assistant left the Inquisition with me, and I feel beholden to lead them on a better path.</item>
+				<item id="5">The spirit of someone who died at my hands has become my friend and confessor.</item>
+				<item id="6">Although I have left the Inquisition, my former mentor still holds an important place in my heart.</item>
+			</select>
+
+            <select type="List" name="Flaw (Lapsed Inquisitor)">
+				<item id="1">I still exhibit some of the fear and hatred that drove me as an inquisitor.</item>
+				<item id="2">When things don’t go my way, I sulk and pout.</item>
+				<item id="3">The terrors of my past occupation make others likely to fear and hate me.</item>
+				<item id="4">I have a difficult time remaining calm when I know someone is lying to me.</item>
+				<item id="5">I can be quite a coward when I don’t have the upper hand in a conflict.</item>
+				<item id="6">I keep close watch on my finances and never forgive a debt.</item>
+			</select>
+		</rules>
+	</element>
+
+	<!-- Feature: The Inquisitor’s Stare -->
+	<element name="Feature: The Inquisitor’s Stare" type="Background Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_BACKGROUND_FEATURE_THE_INQUISITORS_STARE">
+		<supports>Background Feature</supports>
+		<description>
+			<p>You’ve seen more fear and pain each day that most people see in a lifetime. With a mere glance, you can tell if someone is hiding something, if they are in pain, and if they are about to succumb to injuries. Once per day, you can automatically succeed on a Wisdom (Insight) check or know if a living creature is at less than 10% of its maximum hit points.</p>
+		</description>
+		<sheet alt="The Inquisitor’s Stare" />
+	</element>
+</elements>

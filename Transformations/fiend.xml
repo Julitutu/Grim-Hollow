@@ -1,0 +1,841 @@
+<elements>
+	<info>
+		<name>Fiend Transformation</name>
+		<description>Transformation from Grim Hollow: Campaign Guide</description>
+		<author>Ghostfire Gaming</author>
+    <update version="0.1.0">
+			<file name="fiend.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/fiend.xml" />
+		</update>
+	</info>
+
+    <!-- Items -->
+  <element name="Fiend Transformation (Level 1)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_FIEND_LEVEL_1">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_FIEND" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_FEAT_TRANSFORMATION_FIEND" requirements="[cha:13]"/>
+		</rules>
+	</element>
+    <element name="Fiend Transformation (Level 2)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_FIEND_LEVEL_2">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_FIEND" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_2" requirements="ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_1"/>
+		</rules>
+	</element>
+    <element name="Fiend Transformation (Level 3)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_FIEND_LEVEL_3">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_FIEND" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_3" requirements="ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_2"/>
+		</rules>
+	</element>
+    <element name="Fiend Transformation (Level 4)" type="Item" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_ITEM_TRANSFORMATION_FIEND_LEVEL_4">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_GFG_GHCG_FEAT_TRANSFORMATION_FIEND" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Transformations</set>
+			<set name="keywords">transformation</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Feat" id="ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_4" requirements="ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_3"/>
+		</rules>
+	</element>
+
+
+
+    <!-- Feats -->
+	<element name="Fiend" type="Feat" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_TRANSFORMATION_FIEND">
+        <requirements>[cha:13]</requirements>
+		<description>
+			<p>A smirking, well-dressed man of unknown origin appears in a time of great need. He extends his hand and a contract manifests in a golden flash. With a quill floating by his side, he remarks, “Of course I can fix your dilemma. After all, who do you think caused it in the first place?” For a solution to a world of problems, the man asks for only two things in return: a signature and an eternity of servitude.</p>
+			<p>Hellfire swirls up a Fiend’s arms as she laughs maniacally. In a single motion, she launches waves of fiery death at the legions of lesser Daemons sent to rein her in. Those who perish twist and harden into charred, blackened figures with bright molten cores. The Fiend laughs again as she snaps her fingers and each figure explodes into another wave of fiery destruction.</p>
+			<p>Many tales are told in Etharis of the power of Fiends and the dangers of their contracts. Regardless, every year a champion rises, a prodigy is born, or some individual makes a deal for their soul in exchange for Lady Luck to be on their side. To a Fiend, a soul is a delicious meal with an invigorating aftertaste. Most importantly, a soul contains the power to sustain their transformation.</p>
+			<h4>Becoming a Fiend</h4>
+			<p>A mortal can become a Fiend in a variety of ways. Some forfeit their souls and become one upon death. Others undertake excruciating rituals to transform into one. However, your character becomes a Fiend constitutes their contract. Communicating with your GM about creating deals with mortals in their story is a great way to roleplay your influence within the game world. As a Fiend, you should consider what your character’s motivations are and which NPCs they can use to achieve their goals.</p>
+			<h4>Transformation Features</h4>
+			<p>A Fiend has the following transformation features:</p>
+			<h5>Prerequisites</h5>
+			<p><b>Ability Scores:</b> Charisma 13</p>
+			<p><b>Roleplay:</b> You must have made a pact with a Fiend, undergone an infernal ritual, or have some other plausible reason to have become a Fiend. Discuss with your GM how you can achieve this in-game.</p>
+            <p>Some of your abilities require your target to make a saving throw to resist their effects. The saving throw DC is calculated as follows:</p>
+            <center>
+                <p><strong>Transformation Save DC</strong> = 8 + your proficiency bonus + your Charisma modifier</p>
+            </center>
+			<h5>Level Milestones</h5>
+            <p>The following are examples of possible level milestones for the Fiend:</p>
+            <ul>
+                <li>Defeating a greater rival Fiend and taking their place in the hierarchy.</li>
+                <li>Ensnaring a particularly powerful or influential soul with a contract.</li>
+                <li>Establishing a cult of worshipers who offer their strength to you.</li>
+                <li>Establishing a portal between the material plane and the Netherworld.</li>
+                <li>Killing or corrupting a Seraph.</li>
+            </ul>
+		</description>
+        <sheet>
+            <description>You are undergoing the Fiend transformation.</description>
+        </sheet>
+        <rules>
+            <stat name="fiend:dc" value="8" />
+            <stat name="fiend:dc" value="proficiency" />
+            <stat name="fiend:dc" value="charisma:modifier" />
+            
+            <grant type="Feat Feature" id="ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_1" />
+        </rules>
+	</element>
+
+    <!-- Transformation Level 1 -->
+    <element name="Fiend (Level 1)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_1">
+        <prerequisite>Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_FEAT_TRANSFORMATION_FIEND</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 1st level, you gain the following Transformation Boons and this level’s Transformation Flaw.</p>
+             <div class="reference">
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_GIFTS_OF_DAMNATION" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_FIENDISH_FORM" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_PLANAR_BINDING" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Gifts of Damnation, Fiendish Form, Brand of the Slaver's Leash, Planar Binding (Flaw)</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_GIFTS_OF_DAMNATION" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_FIENDISH_FORM" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_PLANAR_BINDING" />
+        </rules>
+    </element>
+    
+    <element name="Boon: Gifts of Damnation" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFTS_OF_DAMNATION">
+        <supports>Fiend Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_1</requirements>
+        <description>
+            <p>You have acquired the ability to bind your first mortal to your will. You can create a contract to bind their soul to you, feeding on its power. However, you will not gain the benefits of this gift until you have bound a mortal with a contract.</p>
+            <p>To bind a mortal’s soul to you and grant them a Gift of Damnation, you must first create a contract for that gift. A contract requires magical ink and paper worth 50gp for each Transformation level you have acquired, and you must meet the prerequisites listed. In addition, you and the mortal must both sign the contract willingly, fully aware of the costs involved. Once signed, Netherworld entities give the benefits of the gift to you, and the mortal receives the named benefit within 7 days. You do not have to provide this benefit yourself. For example, upon signing a contract for a Gift of Unfettered Glory, you will receive the benefits listed under the gift. The mortal who signs will receive glory and no in-game mechanical bonuses, provided by the dubious powers of the Netherworld.</p>
+            <p>While you may have any number of contracts in your possession, you can only benefit from one at a time. Upon the completion of a long rest, you may swap the contract you are currently benefiting from for an alternate contract that you have bound a mortal to and signed.</p>
+            <p>On your turn, as an action, you can call upon the Netherworld to reveal to you the exact location of a creature that has signed one of your contracts, providing they are on the same plane of existence as you.</p>
+            <p>A contract you hold lasts for 7 years or until the mortal that signed it dies. At which point it bursts into flames and you cannot receive any benefits from it.</p>
+            <p><b>Available Contracts</b></p>
+            <div element="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_UNFETTERED_GLORY"/>
+            <div element="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_JOYOUS_YOUTH"/>
+        </description>
+        <sheet>
+            <description> A contract requires magical ink and paper worth 50gp for each Transformation level you have acquired, and you must meet the prerequisites listed. In addition, you and the mortal must both sign the contract willingly, fully aware of the costs involved.&#13;
+            While you may have any number of contracts in your possession, you can only benefit from one at a time. Upon the completion of a long rest, you may swap the contract you are currently benefiting from for an alternate contract that you have bound a mortal to and signed.&#13;
+            On your turn, as an action, you can call upon the Netherworld to reveal to you the exact location of a creature that has signed one of your contracts, providing they are on the same plane of existence as you.&#13;
+            A contract you hold lasts for 7 years or until the mortal that signed it dies. At which point it bursts into flames and you cannot receive any benefits from it.
+            </description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Gift of Damnation" supports="Damnation Gift" />
+            <select type="Feat Feature" name="Gift of Damnation" supports="Damnation Gift"  requirements="ID_GFG_GHPG_FEAT_FEATURE_INFERNAL_SUB_CONTRACTOR"/>
+        </rules>
+    </element>
+
+     <element name="Boon: Fiendish Form" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_FIENDISH_FORM">
+        <supports>Fiend Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_1</requirements>
+        <description>
+            <p>Your Charisma score increases by 2 and your Intelligence score increases by 1. An ability score cannot be increased beyond 16 this way. You become a Fiend in addition to any other creature types you are. Spells and abilities that affect Fiends of a specific CR have no effect on you.</p>
+        </description>
+        <sheet display="false">
+            <description>You become a Fiend in addition to any other creature types you are. Spells and abilities that affect Fiends of a specific CR have no effect on you.</description>
+        </sheet>
+        <rules>
+            <stat name="charisma" value="2" />
+            <stat name="intelligence" value="1" />
+            <grant type="Racial Feature" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_FIEND" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Planar Binding" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_PLANAR_BINDING">
+        <description>
+            <p>Your body and soul are bound to a fiendish plane of existence. You have disadvantage on death saving throws as the plane attempts to pull you back to it. If you would be killed, your soul has been dragged back to a plane of existence of the GM’s choice. This plane is your new home, and you become an NPC under the GM’s control.</p>
+            <p>If you are on the fiendish plane responsible for your transformation, this flaw has no effect.</p>
+        </description>
+        <sheet>
+            <description>You have disadvantage on death saving throws as the plane attempts to pull you back to it. If you would be killed, your soul has been dragged back to a plane of existence of the GM’s choice. This plane is your new home, and you become an NPC under the GM’s control. If you are on the fiendish plane responsible for your transformation, this flaw has no effect.</description>
+        </sheet>
+    </element>
+    
+   <!-- Transformation Level 2 -->
+    <element name="Fiend (Level 2)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_2">
+        <prerequisite>Fiend Transformation Level 1</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 2nd level, you can pick one of the following Transformation Boons:</p>
+            <div class="reference">
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_BRAND_OF_THE_CHAINERS_GAZE" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_BRAND_OF_THE_TYRANTS_HELLFIRE" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_BRAND_OF_THE_DECEIVERS_GUILE" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_BRAND_OF_THE_SLAVERS_LEASH" />
+            </div>
+            <p>In addition, you also gain this level’s Flaw:</p>
+            <div element="ID_GFG_GHCG_FEAT_FEATURE_HIDEOUS_APPEARANCE_FIEND" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Level 2 Boon. Hideous Appearance (Flaw).</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Transformation Boon (Level 2)" supports="Fiend Boon" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_HIDEOUS_APPEARANCE_FIEND" />
+        </rules>
+    </element>
+
+    <element name="Boon: Brand of the Chainer’s Gaze" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_BRAND_OF_THE_CHAINERS_GAZE">
+        <supports>Fiend Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_2</requirements>
+        <description>
+            <p>As a bonus action on your turn, you can brand a creature within 60 feet of you with a fiery mark that diminishes their resolve. The target must make a Wisdom saving throw, and on a failed save they are branded. Whenever a creature branded in this way makes a saving throw, they must roll 1d6 and subtract the result from their saving throw.</p>
+            <p>A creature remains branded this way for 1 minute. The brand disappears if the creature is knocked unconscious, enters hallowed ground, or is targeted by the <i>remove curse</i> spell. You may use this feature a number of times equal to your Charisma modifier (minimum of 1). You regain all uses of this feature when you finish a long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{fiend min}}/Long Rest">
+            <description>You can brand a creature within 60 feet of you with a fiery mark that diminishes their resolve. The target must make a DC {{fiend:dc}} Wisdom saving throw, and on a failed save they are branded. Whenever a creature branded in this way makes a saving throw, they must roll 1d6 and subtract the result from their saving throw.&#13;
+            A creature remains branded this way for 1 minute. The brand disappears if the creature is knocked unconscious, enters hallowed ground, or is targeted by the remove curse spell.</description>
+        </sheet>
+        <rules>
+            <stat name="fiend min" value="1" bonus="base" />
+            <stat name="fiend min" value="charisma:modifier" bonus="base" />
+        </rules>
+    </element>
+    
+    <element name="Boon: Brand of the Tyrant’s Hellfire" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_BRAND_OF_THE_TYRANTS_HELLFIRE">
+        <supports>Fiend Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_2</requirements>
+        <description>
+            <p>As a bonus action on your turn, you can brand a creature within 60 feet of you with a fiery mark that exudes hellfire. The target must make a Charisma saving throw, and on a failed save they are branded. Whenever you hit a creature branded in this way with an attack, you deal an additional 1d6 fire damage.</p>
+            <p>A creature remains branded for 1 minute. The brand disappears if the creature is knocked unconscious, enters hallowed ground, or is targeted by the <i>remove curse</i> spell. You may use this feature a number of times equal to your Charisma modifier (minimum of 1). You regain all uses of this feature when you finish a long rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{fiend min}}/Long Rest">
+            <description>You can brand a creature within 60 feet of you with a fiery mark that exudes hellfire. The target must make a DC {{fiend:dc}} Charisma saving throw, and on a failed save they are branded. Whenever you hit a creature branded in this way with an attack, you deal an additional 1d6 fire damage.&#13;
+            A creature remains branded this way for 1 minute. The brand disappears if the creature is knocked unconscious, enters hallowed ground, or is targeted by the remove curse spell.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Brand of the Deceiver’s Guile" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_BRAND_OF_THE_DECEIVERS_GUILE">
+        <supports>Fiend Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_2</requirements>
+        <description>
+            <p>As a bonus action on your turn, you can brand a creature within 60 feet of you with a fiery mark that twists their senses and perspective. The target must make an Intelligence saving throw, and on a failed save they are branded. Whenever a creature branded in this way attempts to attack you, they must roll 1d6 and subtract the result from their attack roll.</p>
+            <p>A creature remains branded this way for 1 minute. The brand disappears if the creature is knocked unconscious, enters hallowed ground, or is targeted by the <i>remove curse</i> spell. You may use this feature a number of times equal to your Charisma modifier (minimum of 1). You regain all uses of this feature when you finish a long rest.</p>
+        </description>
+         <sheet action="Bonus Action" usage="{{fiend min}}/Long Rest">
+            <description>You can brand a creature within 60 feet of you with a fiery mark that twists their senses and perspective. The target must make a DC {{fiend:dc}} Intelligence saving throw, and on a failed save they are branded. Whenever a creature branded in this way attempts to attack you, they must roll 1d6 and subtract the result from their attack roll.&#13;
+            A creature remains branded this way for 1 minute. The brand disappears if the creature is knocked unconscious, enters hallowed ground, or is targeted by the remove curse spell.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Brand of the Slaver’s Leash" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_BRAND_OF_THE_SLAVERS_LEASH">
+        <supports>Fiend Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_2</requirements>
+        <description>
+            <p>As an action, a flaming whip appears in your hand and lashes out at a creature you can see within 10 feet of you. That creature must make a Dexterity saving throw against your Transformation Save DC. On a failed save, the creature takes 2d4 fire damage and is inflicted with a searing brand.</p>
+            <p>While branded in this way, the creature is tied to you with a wreathing leash of flame and cannot use its movement to move more than 10 feet away from you. On your turn, you may use a bonus action to drag the creature up to 10 feet in any direction. You may also use your reaction to prevent any event that would take the creature out of range. For example, if the branded creature uses the misty step spell to move out of the 10 feet radius, or an ally of the target attempting to physically drag their ally out of the leash’s range, the attempt fails.</p>
+            <p>Spells that have the ability to teleport multiple people, like dimension door, work as intended for all involved except for the branded creature.</p>
+            <p>A creature remains branded this way for 1 minute. The brand disappears if the creature is knocked unconscious, enters hallowed ground, is targeted by the remove curse spell, or if the creature is more than 10 feet away from you at the end of any turn.</p>
+        </description>
+        <sheet action="Action">
+            <description>A flaming whip appears in your hand and lashes out at a creature you can see within 10 feet. Target makes a DC {{fiend:dc}} Dexterity saving throw. On a failed save, the creature takes 2d4 fire damage and is inflicted with a searing brand.&#13;
+            While branded in this way, the creature is tied to you with a wreathing leash of flame and cannot use its movement to move more than 10 feet away from you. On your turn, you may use a bonus action to drag the creature up to 10 feet in any direction. You may also use your reaction to prevent any event that would take the creature out of range. For example, if the branded creature uses the misty step spell to move out of the 10 feet radius, or an ally of the target attempting to physically drag their ally out of the leash’s range, the attempt fails.&#13;
+            Spells that have the ability to teleport multiple people, like dimension door, work as intended for all involved except for the branded creature.&#13;
+            Reaction (Prevent): Prevent events that would take the creature out of range.&#13;
+            A creature remains branded this way for 1 minute. The brand disappears if the creature is knocked unconscious, enters hallowed ground, is targeted by the remove curse spell, or if the creature is more than 10 feet away from you at the end of any turn.</description>
+        </sheet>
+    </element>
+
+     <element name="Flaw: Hideous Appearance" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_HIDEOUS_APPEARANCE_FIEND">
+        <description>
+            <p>Your appearance has grotesquely transformed. Your skin becomes red and leathery, and vicious horns, teeth and nails erupt through the surface of your skin. You can suppress this form and present the appearance of the humanoid you once were, but this is taxing and requires concentration. Moments of stress are likely to reveal your true nature. In the following situations your true form is revealed:</p>
+            <ul>
+                <li>Concentrating on a spell.</li>
+                <li>Gaining the unconscious condition.</li>
+                <li>Entering hallowed ground.</li>
+                <li>Choosing to reveal yourself.</li>
+            </ul>
+            <p>In events of extreme emotional or physical stress, a GM may call for a Constitution saving throw with a DC of their choosing to see if you maintain your humanoid form.</p>
+            <p>Non-evil creatures that witness your true form become instantly hostile to you, unless the GM decides otherwise.</p>
+        </description>
+        <sheet>
+            <description>Your appearance has grotesquely transformed. Your skin becomes red and leathery, and vicious horns, teeth and nails erupt through the surface of your skin. You can suppress this form and present the appearance of the humanoid you once were, but this is taxing and requires concentration. Moments of stress are likely to reveal your true nature. In the following situations your true form is revealed:
+                • Concentrating on a spell.
+                • Gaining the unconscious condition.
+                • Entering hallowed ground.
+                • Choosing to reveal yourself.
+                In events of extreme emotional or physical stress, a GM may call for a Constitution saving throw with a DC of their choosing to see if you maintain your humanoid form.
+                Non-evil creatures that witness your true form become instantly hostile to you, unless the GM decides otherwise.
+            </description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Level 3 -->
+    <element name="Fiend (Level 3)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_3">
+        <prerequisite>Fiend Transformation Level 2</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 3rd level, you can pick one of the following Transformation Boons, or pick a boon from a lower level that you meet the prerequisites for.</p>
+             <div class="reference">
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_ALLURING_DECEIT" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_INFERNAL_RESISTANCE" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_NETHER_BLADE" />
+                <div element="ID_GFG_GHPG_FEAT_FEATURE_INFERNAL_SUB_CONTRACTOR" />
+            </div>
+            <p>You also gain this level’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHCG_FEAT_FEATURE_TRUE_NAME" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Level 3 Boon. True Name (Flaw).</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Transformation Boon (Level 3)" supports="Fiend Boon" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_TRUE_NAME" />
+         </rules>           
+    </element>
+
+    <element name="Boon: Alluring Deceit" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_ALLURING_DECEIT">
+        <supports>Fiend Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_3</requirements>
+        <description>
+            <p>You gain mastery of deception and hollow promises. You gain proficiency in Deception and Persuasion. If you are already proficient in either of these skills, then your proficiency bonus is doubled for ability checks using that skill. This ability has no effect on a skill if the proficiency bonus is already doubled.</p>
+            <p>Magic that would determine if you are telling the truth always indicates you are being truthful, and you cannot be magically compelled to tell the truth.</p>
+        </description>
+        <sheet>
+            <description>Magic that would determine if you are telling the truth always indicates you are being truthful, and you cannot be magically compelled to tell the truth.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_DECEPTION" />
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERSUASION" />
+        </rules>
+    </element>
+
+    <element name="Boon: Infernal Resistance" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_INFERNAL_RESISTANCE">
+        <supports>Fiend Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_3</requirements>
+        <description>
+            <p>You gain an imposing fortitude, drawing on Netherworld energy. If you would take magical damage from a spell, ability, or weapon, you can use your reaction and take half the amount of damage instead. You cannot use this feature against damage from silvered weapons.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Take half damage from magical sources (except silvered weapons).</description>
+        </sheet>
+    </element>
+    
+    <element name="Boon: Nether Blade" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_NETHER_BLADE">
+        <supports>Fiend Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_3</requirements>
+        <description>
+            <p>You can use a bonus action to summon a dreaded Nether Blade. The blade takes the form of a simple or martial weapon that deals slashing damage of your choice. Attacks made with the blade deal fire damage and gain the following features:</p>
+            <ul>
+            <li>Attacks you make with the blade deal an additional 2d6 fire damage.</li>
+            <li>The blade emits flames that create bright light in a 5 foot radius and dim light for an additional 5 feet.</li>
+            <li>You cannot be disarmed of the blade.</li>
+            </ul>
+            <p>You can unsummon the blade at any time by using an action. If you unwield the blade, it immediately unsummons.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can summon a Nether Blade. he blade takes the form of a simple or martial weapon that deals slashing damage of your choice. Attacks made with the blade deal fire damage and gain the following features:&#13;
+            • Attacks you make with the blade deal an additional 2d6 fire damage.&#13;
+            • The blade emits flames that create bright light in a 5 foot radius and dim light for an additional 5 feet.&#13;
+            • You cannot be disarmed of the blade.&#13;
+            You can unsummon the blade at any time by using an action. If you unwield the blade, it immediately unsummons.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Infernal Sub-Contractor" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_INFERNAL_SUB_CONTRACTOR">
+        <supports>Fiend Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_2</requirements>
+        <description>
+            <p>Your mastery of the infernal laws allows you to utilize the benefits of two Gifts of Damnation simultaneously. In addition, you may change gifts on a short rest instead of a long rest.</p>    
+        </description>
+         <sheet>
+            <description>Your mastery of the infernal laws allows you to utilize the benefits of two Gifts of Damnation simultaneously. In addition, you may change gifts on a short rest instead of a long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: True Name" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_TRUE_NAME">
+        <description>
+            <p>Your fiendish transformation is complete, and you are reborn. You must choose a new name for yourself, which becomes your true name. You receive a talisman of brimstone and brass with your true name inscribed in infernal on it. A creature within 10 feet of you that knows your true name, can use an action and speak your true name in an attempt to bind you to their will. If they do, you must make a DC 20 Wisdom saving throw. On a failed save, you become charmed by the creature, and must complete all commands they issue to you to the best of your ability. You remain charmed for 8 hours remain charmed for 8 hours. If the creature that bound you dies, this effect ends.</p>
+        </description>
+        <sheet>
+            <description>You must choose a new name for yourself, which becomes your true name. You receive a talisman of brimstone and brass with your true name inscribed in infernal on it. A creature within 10 feet of you that knows your true name, can use an action and speak your true name in an attempt to bind you to their will. If they do, you must make a DC 20 Wisdom saving throw. On a failed save, you become charmed by the creature, and must complete all commands they issue to you to the best of your ability. You remain charmed for 8 hours remain charmed for 8 hours. If the creature that bound you dies, this effect ends.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Level 4 -->
+    <element name="Fiend (Level 4)" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_4">
+        <prerequisite>Fiend Transformation Level 3</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>Starting at 4th level, you can pick one of the following Transformation Boons, or pick a boon from a lower level that you meet the prerequisites for.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_COMMAND_THE_INFERNAL" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_BRIMSTONE_PYROLYSIS" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_INFERNAL_SUMMONING" />
+                <div element="ID_GFG_GHCG_FEAT_FEATURE_LOOPHOLE" />
+            </div>
+            <p>You also gain this level’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHCG_FEAT_FEATURE_PULL_OF_THE_NETHERWORLD" />
+        </description>
+        <sheet display="false">
+           <description>Choose one Level 4 Boon. Pull of the Netherworld (Flaw)</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Transformation Boon (Level 4)" supports="Fiend Boon" />
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_PULL_OF_THE_NETHERWORLD" />
+         </rules>        
+    </element>
+
+    <element name="Boon: Command the Infernal" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_COMMAND_THE_INFERNAL">
+        <supports>Fiend Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_4</requirements>
+        <description>
+            <p>You gain authority over lesser infernal creatures. As a bonus action, you can force a Fiend within 30 feet of you that has a CR of 1/2 or lower to make a Wisdom saving throw against your Transformation Save DC. On a failure, that creature must immediately kneel. On that creature’s turn, it must face you, then kneel and end it’s turn. While kneeling, the creature is considered prone. If the creature is immune to the prone condition, then the creature just ends its turn.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>You can force a Fiend within 30 feet of you that has a CR of 1/2 or lower to make a DC {{fiend:dc}} Wisdom saving throw. On a failure, that creature must immediately kneel. On that creature’s turn, it must face you, then kneel and end it’s turn. While kneeling, the creature is considered prone. If the creature is immune to the prone condition, then the creature just ends its turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Brimstone Pyrolysis" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_BRIMSTONE_PYROLYSIS">
+        <supports>Fiend Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_4</requirements>
+        <description>
+            <p>When you inflict fire damage against a hostile creature and reduce it to 0 hit points, you can immolate that creature and turn them into a Brimstone Statue.</p>
+            <p><b>Brimstone Statue.</b> A Brimstone Statue is the scorched remains of a corpse whose essence has burned out. A Brimstone Statue is the same size as the creature before it died, and uses the following statistics:</p>
+            <ul>
+                <li>Armour Class: 10</li>
+                <li>Hit Points: 10</li>
+                <li>Speed: 0</li>
+                <li>Damage Immunities: poison, psychic</li>
+            </ul>
+            <p>A Brimstone Statue that is reduced to 0 hit points falls apart and is destroyed. It does not detonate.</p>
+            <p><b>Detonate.</b> On your turn, as an action, you can detonate one or more Brimstone Statues that you have created. When a Brimstone Statue detonates, it is destroyed, and each creature other than you within 10 feet of the statue must make a Dexterity saving throw. A target takes 3d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+        </description>
+        <sheet action="Action">
+            <description>When you inflict fire damage against a hostile creature and reduce it to 0 hit points, you can immolate that creature and turn them into a Brimstone Statue.&#13;
+            Brimstone Statue. A Brimstone Statue is the scorched remains of a corpse whose essence has burned out. A Brimstone Statue is the same size as the creature before it died, and uses the following statistics:&#13;
+            • Armour Class: 10&#13;
+            • Hit Points: 10&#13;
+            • Speed: 0&#13;
+            • Damage Immunities: poison, psychic&#13;
+            A Brimstone Statue that is reduced to 0 hit points falls apart and is destroyed. It does not detonate.&#13;
+            Detonate. On your turn, as an action, you can detonate one or more Brimstone Statues that you have created. When a Brimstone Statue detonates, it is destroyed, and each creature other than you within 10 feet of the statue must make a Dexterity saving throw. A target takes 3d6 fire damage on a failed save, or half as much damage on a successful one.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Infernal Summoning" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_INFERNAL_SUMMONING">
+        <supports>Fiend Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_4</requirements>
+        <description>
+            <p>On your turn as an action, you can tear open a portal to the Netherworld and summon up to 4 Imps. These Imps are each summoned into their own unoccupied space within 30 feet of you.</p>
+            <p>The summoned Imps are friendly to you and your companions. They all act directly after you in the initiative order. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. The Imps disappear in a shower of ash and embers after 1 hour, or if they are reduced to 0 hit points. The GM has the Imps’ statistics.</p>
+            <p>Once you use this ability, you cannot use it again until you complete a long rest.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>You can tear open a portal to the Netherworld and summon up to 4 Imps. These Imps are each summoned into their own unoccupied space within 30 feet of you.&#13;
+            The summoned Imps are friendly to you and your companions. They all act directly after you in the initiative order. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. The Imps disappear in a shower of ash and embers after 1 hour, or if they are reduced to 0 hit points. The GM has the Imps’ statistics.&#13;
+            The Imps disappear in a shower of ash and embers after 1 hour, or if they are reduced to 0 hit points. The GM has the Imps’ statistics.</description>
+        </sheet>
+    </element>
+
+     <element name="Boon: Loophole" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_LOOPHOLE">
+        <supports>Fiend Boon</supports>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_4</requirements>
+        <description>
+            <p>As an expert in the magic of binding and the formation of magical contracts, you gain insight into the workings of summoning spells and how to interfere with them. Whenever you encounter a summoned creature, you are immediately aware it was summoned. As an action, you may wrest control of a summoning spell away from the caster. The spellcaster must make a Wisdom saving throw against your Transformation Save DC. On a failure, you gain control over the spell and any remaining creatures as if you had cast the spell, including concentration for any remaining duration. You may use this ability a number of times equal to your Charisma modifier (minimum 1), and you regain all uses of this ability when you finish a long rest.</p>
+        </description>
+        <sheet action="Action" usage="{{fiend min}}/Long Rest">
+            <description>As an expert in the magic of binding and the formation of magical contracts, you gain insight into the workings of summoning spells and how to interfere with them. Whenever you encounter a summoned creature, you are immediately aware it was summoned. You may wrest control of a summoning spell away from the caster. The spellcaster must make a DC {{fiend:dc}} Wisdom saving throw. On a failure, you gain control over the spell and any remaining creatures as if you had cast the spell, including concentration for any remaining duration.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Pull of the Netherworld" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_PULL_OF_THE_NETHERWORLD">
+        <description>
+            <p>Your new native plane attempts to pull you to it, laying claim to your form. Whenever you roll a natural 1 on a saving throw against a magical spell or ability, you take 1d6 force damage per two character levels in addition to any other damage or effects you would suffer, as your native plane attempts to unbind you from the Material Plane. For example, a 6th level Fighter would take 3d6 force damage. This damage ignores resistances and immunities.</p>
+        </description>
+        <sheet>
+            <description>Your new native plane attempts to pull you to it, laying claim to your form. Whenever you roll a natural 1 on a saving throw against a magical spell or ability, you take {{pull of the netherworld}}d6 force damage per two character levels in addition to any other damage or effects you would suffer, as your native plane attempts to unbind you from the Material Plane. For example, a 6th level Fighter would take 3d6 force damage. This damage ignores resistances and immunities.</description>
+        </sheet>
+        <rules>
+            <stat name="pull of the netherworld" value="1" />
+            <stat name="pull of the netherworld" value="1" level="3"/>
+            <stat name="pull of the netherworld" value="1" level="5"/>
+            <stat name="pull of the netherworld" value="1" level="7"/>
+            <stat name="pull of the netherworld" value="1" level="9"/>
+            <stat name="pull of the netherworld" value="1" level="11"/>
+            <stat name="pull of the netherworld" value="1" level="13"/>
+            <stat name="pull of the netherworld" value="1" level="15"/>
+            <stat name="pull of the netherworld" value="1" level="17"/>
+            <stat name="pull of the netherworld" value="1" level="19"/>
+        </rules>
+    </element>
+    
+    <!--Gifts of Damnation-->
+    <element name="Gift of Unfettered Glory" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_UNFETTERED_GLORY">
+        <supports>Damnation Gift</supports>
+        <description>
+            <p>When you hit a creature with a melee attack or melee spell attack, you can add your Charisma modifier to the damage dealt.</p>
+        </description>
+        <sheet>
+            <description>When you hit a creature with a melee attack or melee spell attack, you can add {{charisma:modifier}} to the damage dealt.</description>
+        </sheet>
+    </element>
+
+    <element name="Gift of Joyous Youth" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_JOYOUS_YOUTH">
+        <supports>Damnation Gift</supports>
+        <description>
+            <p>At the beginning of your turn, if you have no remaining Hit Dice, you can choose to make a DC 10 Charisma saving throw. On a success, you regain 1 spent Hit Die. If you fail, you suffer 1d6 psychic damage.</p>
+        </description>
+         <sheet>
+            <description>At the beginning of your turn, if you have no remaining Hit Dice, you can choose to make a DC 10 Charisma saving throw. On a success, you regain 1 spent Hit Die. If you fail, you suffer 1d6 psychic damage.</description>
+        </sheet>
+    </element>
+    
+    <element name="Gift of Liberating Freedom" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_LIBERATING_FREEDOM_FIEND">
+        <supports>Damnation Gift</supports>
+        <prerequisite>2nd Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_2</requirements>
+        <description>
+            <p>As a bonus action, you can manifest a pair of leathery wings. You gain a fly speed equal to your current speed. These wings recede if you dismiss them as a bonus action on your turn, or if you are knocked unconscious. You cannot manifest your wings while wearing heavy armour. You can manifest your wings while wearing medium or light armour if it is made to accommodate them.</p>
+        </description>
+         <sheet action="Bonus Action">
+            <description>You gain a fly speed equal to your current speed. These wings recede if you dismiss them as a bonus action on your turn, or if you are knocked unconscious. You cannot manifest your wings while wearing heavy armour.</description>
+        </sheet>
+    </element>
+
+    <element name="Gift of Unsurpassed Fortune" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_UNSURPASSED_FORTUNE">
+        <supports>Damnation Gift</supports>
+        <description>
+            <p>Whenever a creature makes an attack roll, skill check, or saving throw within 20 feet, after the GM has rolled but before they have determined the result, you can use your reaction to roll a d20. If you roll a 10 or higher, the attack roll, saving throw, or skill check immediately fails. You cannot do this again until you complete a long rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Long Rest">
+            <description>Whenever a creature makes an attack roll, skill check, or saving throw within 20 feet, after the GM has rolled but before they have determined the result, you can use your reaction to roll a d20. If you roll a 10 or higher, the attack roll, saving throw, or skill check immediately fails.</description>
+        </sheet>
+    </element>
+
+    <element name="Gift of Unconditional Love" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_UNCONDITIONAL_LOVE_FIEND">
+        <supports>Damnation Gift</supports>
+        <prerequisite>3rd Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_3</requirements>
+        <description>
+            <p>Whenever a creature fails a Charisma saving throw due to a spell or magical ability you control, you can use your reaction to gain temporary hit points equal to 1d10 + your Character’s level. You cannot do this again until you complete a short rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Short Rest">
+            <description>Whenever a creature fails a Charisma saving throw due to a spell or magical ability you control, you can use your reaction to gain temporary hit points equal to 1d10 + {{level}}.</description>
+        </sheet>
+    </element>
+
+    <!-- Expansive Knowledge -->
+    <element name="Gift of Expansive Knowledge" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND">
+        <supports>Damnation Gift</supports>
+        <prerequisite>4th Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_4,[type:spell]</requirements>
+        <description>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal to your Charisma modifier. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</description>
+        <rules>
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_ARTIFICER" requirements="ID_WOTC_TCOE_CLASS_ARTIFICER"/>    
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_BARD" requirements="ID_WOTC_PHB_CLASS_BARD"/>
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_CLERIC" requirements="ID_WOTC_PHB_CLASS_CLERIC"/>
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_DRUID" requirements="ID_WOTC_PHB_CLASS_DRUID"/>
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_PALADIN" requirements="ID_WOTC_PHB_CLASS_PALADIN"/>
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_RANGER" requirements="ID_WOTC_PHB_CLASS_RANGER"/>
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_SORCERER" requirements="ID_WOTC_PHB_CLASS_SORCERER"/>
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_WARLOCK" requirements="ID_WOTC_PHB_CLASS_WARLOCK"/>
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_WIZARD" requirements="ID_WOTC_PHB_CLASS_WIZARD"/>
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_ARCANE_TRICKSTER" requirements="ID_WOTC_PHB_ARCHETYPE_ARCANE_TRICKSTER"/>
+            <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_ELDRITCH_KNIGHT" requirements="ID_WOTC_PHB_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT"/>
+        </rules>
+    </element>
+
+    <element name="Gift of Expansive Knowledge" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_ARTIFICER">
+        <supports>Expansive Knowledge</supports>
+        <prerequisite>4th Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND</requirements>
+        <description>
+            <p>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal to your Charisma modifier. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</p>
+        </description>
+        <sheet>
+            <description>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal {{charisma:modifier}}. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="1st Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Artificer" requirements="[charisma:modifier:1]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="2nd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Artificer" requirements="[charisma:modifier:2]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="3rd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Artificer" requirements="[charisma:modifier:3]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="4th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Artificer" requirements="[charisma:modifier:4]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="5th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Artificer" requirements="[charisma:modifier:5]" prepared="true" allowReplace="true"/>
+        </rules>
+    </element>
+
+    <element name="Gift of Expansive Knowledge" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_BARD">
+        <supports>Expansive Knowledge</supports>
+        <prerequisite>4th Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND</requirements>
+        <description>
+            <p>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal to your Charisma modifier. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</p>
+        </description>
+        <sheet>
+            <description>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal {{charisma:modifier}}. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="1st Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Bard" requirements="[charisma:modifier:1]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="2nd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Bard" requirements="[charisma:modifier:2]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="3rd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Bard" requirements="[charisma:modifier:3]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="4th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Bard" requirements="[charisma:modifier:4]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="5th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Bard" requirements="[charisma:modifier:5]" prepared="true" allowReplace="true"/>
+        </rules>
+    </element>
+
+    <element name="Gift of Expansive Knowledge" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_CLERIC">
+        <supports>Expansive Knowledge</supports>
+        <prerequisite>4th Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND</requirements>
+        <description>
+            <p>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal to your Charisma modifier. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</p>
+        </description>
+        <sheet>
+            <description>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal {{charisma:modifier}}. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="1st Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Cleric" requirements="[charisma:modifier:1]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="2nd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Cleric" requirements="[charisma:modifier:2]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="3rd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Cleric" requirements="[charisma:modifier:3]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="4th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Cleric" requirements="[charisma:modifier:4]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="5th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Cleric" requirements="[charisma:modifier:5]" prepared="true" allowReplace="true"/>
+        </rules>
+    </element>
+
+    
+    <element name="Gift of Expansive Knowledge" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_DRUID">
+        <supports>Expansive Knowledge</supports>
+        <prerequisite>4th Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND</requirements>
+        <description>
+            <p>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal to your Charisma modifier. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</p>
+        </description>
+        <sheet>
+            <description>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal {{charisma:modifier}}. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="1st Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Druid" requirements="[charisma:modifier:1]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="2nd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Druid" requirements="[charisma:modifier:2]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="3rd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Druid" requirements="[charisma:modifier:3]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="4th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Druid" requirements="[charisma:modifier:4]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="5th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Druid" requirements="[charisma:modifier:5]" prepared="true" allowReplace="true"/>
+        </rules>
+    </element>
+
+    <element name="Gift of Expansive Knowledge" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_PALADIN">
+        <supports>Expansive Knowledge</supports>
+        <prerequisite>4th Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND</requirements>
+        <description>
+            <p>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal to your Charisma modifier. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</p>
+        </description>
+        <sheet>
+            <description>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal {{charisma:modifier}}. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="1st Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Paladin" requirements="[charisma:modifier:1]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="2nd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Paladin" requirements="[charisma:modifier:2]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="3rd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Paladin" requirements="[charisma:modifier:3]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="4th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Paladin" requirements="[charisma:modifier:4]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="5th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Paladin" requirements="[charisma:modifier:5]" prepared="true" allowReplace="true"/>
+        </rules>
+    </element>
+
+    <element name="Gift of Expansive Knowledge" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_RANGER">
+        <supports>Expansive Knowledge</supports>
+        <prerequisite>4th Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND</requirements>
+        <description>
+            <p>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal to your Charisma modifier. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</p>
+        </description>
+        <sheet>
+            <description>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal {{charisma:modifier}}. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="1st Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Ranger" requirements="[charisma:modifier:1]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="2nd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Ranger" requirements="[charisma:modifier:2]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="3rd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Ranger" requirements="[charisma:modifier:3]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="4th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Ranger" requirements="[charisma:modifier:4]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="5th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Ranger" requirements="[charisma:modifier:5]" prepared="true" allowReplace="true"/>
+        </rules>
+    </element>
+
+    <element name="Gift of Expansive Knowledge" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_SORCERER">
+        <supports>Expansive Knowledge</supports>
+        <prerequisite>4th Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND</requirements>
+        <description>
+            <p>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal to your Charisma modifier. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</p>
+        </description>
+        <sheet>
+            <description>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal {{charisma:modifier}}. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="1st Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Sorcerer" requirements="[charisma:modifier:1]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="2nd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Sorcerer" requirements="[charisma:modifier:2]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="3rd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Sorcerer" requirements="[charisma:modifier:3]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="4th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Sorcerer" requirements="[charisma:modifier:4]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="5th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Sorcerer" requirements="[charisma:modifier:5]" prepared="true" allowReplace="true"/>
+        </rules>
+    </element>
+
+    <element name="Gift of Expansive Knowledge" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_WARLOCK">
+        <supports>Expansive Knowledge</supports>
+        <prerequisite>4th Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND</requirements>
+        <description>
+            <p>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal to your Charisma modifier. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</p>
+        </description>
+        <sheet>
+            <description>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal {{charisma:modifier}}. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="1st Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Warlock" requirements="[charisma:modifier:1]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="2nd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Warlock" requirements="[charisma:modifier:2]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="3rd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Warlock" requirements="[charisma:modifier:3]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="4th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Warlock" requirements="[charisma:modifier:4]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="5th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Warlock" requirements="[charisma:modifier:5]" prepared="true" allowReplace="true"/>
+        </rules>
+    </element>
+
+    <element name="Gift of Expansive Knowledge" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_WIZARD">
+        <supports>Expansive Knowledge</supports>
+        <prerequisite>4th Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND</requirements>
+        <description>
+            <p>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal to your Charisma modifier. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</p>
+        </description>
+        <sheet>
+            <description>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal {{charisma:modifier}}. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="1st Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Wizard" requirements="[charisma:modifier:1]" prepared="true" allowReplace="true" />
+            <select type="Spell" name="2nd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Wizard" requirements="[charisma:modifier:2]" prepared="true" allowReplace="true" />
+            <select type="Spell" name="3rd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Wizard" requirements="[charisma:modifier:3]" prepared="true" allowReplace="true" />
+            <select type="Spell" name="4th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Wizard" requirements="[charisma:modifier:4]" prepared="true" allowReplace="true" />
+            <select type="Spell" name="5th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Wizard" requirements="[charisma:modifier:5]" prepared="true" allowReplace="true" />
+        </rules>
+    </element>
+
+    <element name="Gift of Expansive Knowledge" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_ARCANE_TRICKSTER">
+        <supports>Expansive Knowledge</supports>
+        <prerequisite>4th Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND</requirements>
+        <description>
+            <p>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal to your Charisma modifier. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</p>
+        </description>
+        <sheet>
+            <description>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal {{charisma:modifier}}. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="1st Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Arcane Trickster" requirements="[charisma:modifier:1]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="2nd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Arcane Trickster" requirements="[charisma:modifier:2]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="3rd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Arcane Trickster" requirements="[charisma:modifier:3]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="4th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Arcane Trickster" requirements="[charisma:modifier:4]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="5th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Arcane Trickster" requirements="[charisma:modifier:5]" prepared="true" allowReplace="true"/>
+        </rules>
+    </element>
+
+    <element name="Gift of Expansive Knowledge" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND_ELDRITCH_KNIGHT">
+        <supports>Expansive Knowledge</supports>
+        <prerequisite>4th Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_EXPANSIVE_KNOWLEDGE_FIEND</requirements>
+        <description>
+            <p>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal to your Charisma modifier. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</p>
+        </description>
+        <sheet>
+            <description>When you complete this contract for the first time, you learn additional spells from the cleric, warlock, or wizard spell list equal {{charisma:modifier}}. You must have a spell slot level equal to or greater than each of these spells. While you have the effects of this contract and no other contract active, you know these spells in addition to your total Spells Known.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="1st Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Eldritch Knight" requirements="[charisma:modifier:1]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="2nd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Eldritch Knight" requirements="[charisma:modifier:2]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="3rd Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Eldritch Knight" requirements="[charisma:modifier:3]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="4th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Eldritch Knight" requirements="[charisma:modifier:4]" prepared="true" allowReplace="true"/>
+            <select type="Spell" name="5th Gift of Expansive Knowledge" supports="$(spellcasting:slots),(Cleric||Warlock||Wizard)" spellcasting="Eldritch Knight" requirements="[charisma:modifier:5]" prepared="true" allowReplace="true"/>
+        </rules>
+    </element>
+
+
+    <!-- End Expansive Knowledge -->
+     <element name="Gift of Prodigious Talent" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_PRODIGIOUS_TALENT_FIEND">
+        <supports>Damnation Gift</supports>
+        <prerequisite>2nd Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_2</requirements>
+        <description>
+            <p>Choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. This ability cannot double your proficiency bonus on a skill whose proficiency bonus is already being doubled.</p>
+        </description>
+        <sheet display="false">
+            <description>Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies..</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Skill Proficiency (Gift of Prodigious Talent)" supports="ID_INTERNAL_SUPPORT_EXPERTISE" number="2" />
+        </rules>
+    </element>
+
+    <element name="Gift of Second Chances" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_SECOND_CHANCES_FIEND">
+        <supports>Damnation Gift</supports>
+        <prerequisite>3rd Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_3</requirements>
+        <description>
+            <p>If you are reduced to 0 hit points, you can use your reaction to roll a Hit Die. If you do, your hit point total becomes the Hit Die result instead. You can’t use this feature again until you complete a long rest.</p>
+        </description>
+         <sheet action="Reaction" usage="1/Long Rest">
+            <description>If you are reduced to 0 hit points, you can use your reaction to roll a Hit Die. If you do, your hit point total becomes the Hit Die result instead.</description>
+        </sheet>
+    </element>
+
+    <element name="Gift of Unbridled Power" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_GIFT_OF_UNBRIDLED_POWER">
+        <supports>Damnation Gift</supports>
+        <prerequisite>4th Level of Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHCG_TRANSFORMATION_FIEND_LEVEL_4</requirements>
+        <description>
+            <p>Upon completing a short rest, you can spend 1 Hit Die and regain any number of spell slots whose total is equal to or less than the result of the Hit Die. If you do, you suffer psychic damage equal to the number of spell slot levels you regained. You cannot use this ability again until you complete a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>Upon completing a short rest, you can spend 1 Hit Die and regain any number of spell slots whose total is equal to or less than the result of the Hit Die. If you do, you suffer psychic damage equal to the number of spell slot levels you regained.</description>
+        </sheet>
+    </element>
+</elements>

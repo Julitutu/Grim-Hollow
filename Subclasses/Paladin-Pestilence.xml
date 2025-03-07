@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Oath of Pestilence</name>
+        <source>Grim Hollow - The Players Guide</source>
+        <update version="0.1.0">
+            <file name="Paladin-Pestilence.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Paladin-Pestilence.xml" />
+        </update>
+    </info>
+
+    <element name="Oath of Pestilence" type="Archetype" source="Grim Hollow - The Players Guide"
+        id="ID_GFG_GHPG_ARCHETYPE_PALADIN_OATH_OF_PESTILENCE">
+        <supports>Sacred Oath</supports>
+        <description>
+            <p>Clad in grime-soaked armor and wielding rusting weapons, the Oath of Pestilence
+                paladin spreads corruption, disease, and filth. Bound by an oath which infests their
+                bodies with all manner of plagues, these heralds of decay lumber forward with unholy
+                toughness and grim resolve.</p>
+            <p class="indent">
+                <b>Tenets of Pestilence</b>
+            </p>
+            <p>The tenets of the Oath of Pestilence emphasize the role of disease as a purifying
+                element in the cycle of life.</p>
+            <p class="indent"><b>
+                    <i>Strength in Resilience.</i>
+                </b> Surviving hardship and plague
+                make you stronger. Spreading these things causes strength to flourish.</p>
+            <p class="indent"><b>
+                    <i>All Things Must Pass.</i>
+                </b> Death is the natural conclusion
+                of life. There is nothing unnatural or amoral about the ending of life.</p>
+            <p class="indent"><b>
+                    <i>Might Makes Right.</i>
+                </b> The laws of mortals mean nothing
+                to poxes and plagues, they go where they wish and take what they want. So should
+                you.</p>
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_OATH_SPELLS" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_CHANNEL_DIVINITY" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_AURA_OF_RAMPANT_SICKNESS" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_DISGUSTING_RESILIENCE" />
+            <div element="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_PLAGUEBRINGER" />
+        </description>
+        <rules>
+            <grant type="Archetype Feature"
+                id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_OATH_SPELLS" level="3" />
+            <grant type="Archetype Feature"
+                id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_CHANNEL_DIVINITY" level="3" />
+            <grant type="Archetype Feature"
+                id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_AURA_OF_RAMPANT_SICKNESS" level="7" />
+            <grant type="Archetype Feature"
+                id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_DISGUSTING_RESILIENCE" level="15" />
+            <grant type="Archetype Feature"
+                id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_PLAGUEBRINGER" level="20" />
+        </rules>
+    </element>
+
+    <element name="Oath Spells" type="Archetype Feature" source="Grim Hollow - The Players Guide"
+        id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_OATH_SPELLS">
+        <description>
+            <p>You gain oath spells at the paladin levels listed in the Oath of Pestilence Spells
+                table. See the Sacred Oath class feature for how oath spells work.</p>
+            <h5>Oath of Pestilence Spells</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Paladin Level</td>
+                        <td>Spells</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>3rd</td>
+                    <td>
+                        <i>bane, inflict wounds</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5th</td>
+                    <td>
+                        <i>acid arrow, ray of enfeeblement</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9th</td>
+                    <td>
+                        <i>flash fever, stinking cloud</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13th</td>
+                    <td>
+                        <i>blight, confusion</i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>17th</td>
+                    <td>
+                        <i>contagion, insect plague</i>
+                    </td>
+                </tr>
+            </table>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BANE" level="3" spellcasting="Paladin"
+                prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_INFLICT_WOUNDS" level="3" spellcasting="Paladin"
+                prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_MELFS_ACID_ARROW" level="5" spellcasting="Paladin"
+                prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_RAY_OF_ENFEEBLEMENT" level="5"
+                spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_GHPG_SPELL_FLASH_FEVER" level="9" spellcasting="Paladin"
+                prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_STINKING_CLOUD" level="9" spellcasting="Paladin"
+                prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="13" spellcasting="Paladin"
+                prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONFUSION" level="13" spellcasting="Paladin"
+                prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="17" spellcasting="Paladin"
+                prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_INSECT_PLAGUE" level="17" spellcasting="Paladin"
+                prepared="true" />
+        </rules>
+    </element>
+
+    <element name="Channel Divinity" type="Archetype Feature"
+        source="Grim Hollow - The Players Guide"
+        id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_CHANNEL_DIVINITY">
+        <description>
+            <p>When you take this oath at 3rd level, you gain the following two Channel Divinity
+                options. See the Sacred Oath class feature for how Channel Divinity works.</p>
+            <p class="indent"><b>
+                    <i>Debilitating Fever.</i>
+                </b> Your touch inflicts disease. Make
+                a melee spell attack against a creature within your reach that isn’t a construct or
+                undead. On a hit, the creature becomes diseased and is incapacitated for 1 minute.
+                At the end of each of the diseased target’s turns, the target can make a
+                Constitution saving throw. On a success, the target is no longer diseased, and the
+                effect ends.</p>
+            <p>Since this ability induces a natural disease in its target, any effect that removes a
+                disease or otherwise ameliorates a disease’s effects apply to it.</p>
+            <p class="indent"><b>
+                    <i>Entropic Infection.</i>
+                </b> You can use your Channel Divinity
+                to weaken a creature against entropic energies. As an action, you can force a
+                creature of your choice that you can see within 30 feet of you to make a
+                Constitution saving throw. On a failed save, for the next minute the creature takes
+                an additional 2d6 damage the first time it takes necrotic damage each turn. During
+                this time, the creature loses resistance to necrotic damage if it has it.</p>
+        </description>
+        <sheet display="false">
+            <description>You gain the following two Channel Divinity options. See the Sacred Oath
+                class feature for how Channel Divinity works.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature"
+                id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_CHANNEL_DIVINITY_DEBILITATING_FEVER" />
+            <grant type="Archetype Feature"
+                id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_CHANNEL_DIVINITY_ENTROPIC_INFECTION" />
+        </rules>
+    </element>
+
+    <element name="Channel Divinity: Debilitating Fever" type="Archetype Feature"
+        source="Grim Hollow - The Players Guide"
+        id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_CHANNEL_DIVINITY_DEBILITATING_FEVER">
+        <description>
+            <p>Your touch inflicts disease. Make a melee spell attack against a creature within your
+                reach that isn’t a construct or undead. On a hit, the creature becomes diseased and
+                is incapacitated for 1 minute. At the end of each of the diseased target’s turns,
+                the target can make a Constitution saving throw. On a success, the target is no
+                longer diseased, and the effect ends.</p>
+            <p>Since this ability induces a natural disease in its target, any effect that removes a
+                disease or otherwise ameliorates a disease’s effects apply to it.</p>
+        </description>
+        <sheet alt="Debilitating Fever" action="Action" usage="Channel Divinity">
+            <description>Make a melee spell attack against a creature within your reach that isn’t a
+                construct or undead. On a hit, the creature becomes diseased and is incapacitated
+                for 1 minute. At the end of each of the diseased target’s turns, the target can make
+                a Constitution saving throw. On a success, the target is no longer diseased, and the
+                effect ends. Since this ability induces a natural disease in its target, any effect
+                that removes a disease or otherwise ameliorates a disease’s effects apply to it.</description>
+        </sheet>
+    </element>
+
+    <element name="Channel Divinity: Entropic Infection" type="Archetype Feature"
+        source="Grim Hollow - The Players Guide"
+        id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_CHANNEL_DIVINITY_ENTROPIC_INFECTION">
+        <description>
+            <p>You can use your Channel Divinity to weaken a creature against entropic energies. As
+                an action, you can force a creature of your choice that you can see within 30 feet
+                of you to make a Constitution saving throw. On a failed save, for the next minute
+                the creature takes an additional 2d6 damage the first time it takes necrotic damage
+                each turn. During this time, the creature loses resistance to necrotic damage if it
+                has it.</p>
+        </description>
+        <sheet alt="Entropic Infection" action="Action" usage="Channel Divinity">
+            <description>You can use your Channel Divinity to weaken a creature against entropic
+                energies. As an action, you can force a creature of your choice that you can see
+                within 30 feet of you to make a DC {{pestilence:dc}}Constitution saving throw. On a
+                failed save, for the next minute the creature takes an additional 2d6 damage the
+                first time it takes necrotic damage each turn. During this time, the creature loses
+                resistance to necrotic damage if it has it.</description>
+        </sheet>
+        <rules>
+            <stat name="pestilence:dc" value="8" />
+            <stat name="pestilence:dc" value="proficiency" />
+            <stat name="pestilence:dc" value="charisma:modifier" />
+        </rules>
+    </element>
+
+    <element name="Aura of Rampant Sickness" type="Archetype Feature"
+        source="Grim Hollow - The Players Guide"
+        id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_AURA_OF_RAMPANT_SICKNESS">
+        <description>
+            <p>Starting at 7th level, you emit an aura of contagion and virulence to a range of 10
+                feet. When a creature within your aura makes an ability check, attack roll, or
+                saving throw you can give that roll disadvantage as a reaction. Once you do, you
+                can’t give another roll disadvantage using this feature until the start of your next
+                turn.</p>
+            <p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>You emit an aura of contagion and virulence to a range of {{aura of rampant
+                sickness:range}} feet. When a creature within your aura makes an ability check,
+                attack roll, or saving throw you can give that roll disadvantage as a reaction. Once
+                you do, you can’t give another roll disadvantage using this feature until the start
+                of your next turn.</description>
+        </sheet>
+        <rules>
+            <stat name="aura of rampant sickness:range" value="10" />
+            <stat name="aura of rampant sickness:range" value="20" level="18" />
+        </rules>
+    </element>
+
+    <element name="Disgusting Resilience" type="Archetype Feature"
+        source="Grim Hollow - The Players Guide"
+        id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_DISGUSTING_RESILIENCE">
+        <description>
+            <p>At 15th level, when you take damage which would reduce you to 0 hit points, you can
+                choose to expend any number of hit dice. Roll those dice and subtract the result
+                from the damage taken. If this reduces the damage to 0, you don’t take any damage.</p>
+            <p>In addition, if you are killed your corpse violently explodes in a shower of pus and
+                gore, dealing 8d6 necrotic damage to creatures within 20 feet of you that fail a
+                Constitution saving throw.</p>
+        </description>
+        <sheet>
+            <description>When you take damage which would reduce you to 0 hit points, you can choose
+                to expend any number of hit dice. Roll those dice and subtract the result from the
+                damage taken. If this reduces the damage to 0, you don’t take any damage.&#13;
+                In addition, if you are killed your corpse violently explodes in a shower of pus and
+                gore, all the creatures within 20 feet of you must make a DC {{pestilence:dc}}
+                Constitution Saving throw. On a failed, the explotion deals 8d6 necrotic damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Plaguebringer" type="Archetype Feature" source="Grim Hollow - The Players Guide"
+        id="ID_GFG_GHPG_ARCHETYPE_FEATURE_PESTILENCE_PLAGUEBRINGER">
+        <description>
+            <p>At 20th level, you become an avatar of plague, which gives you the following
+                benefits:</p>
+            <ul>
+                <li>You have resistance to necrotic damage and are immune to poison damage and the poisoned condition.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You are immune to the poisoned condition.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+        </rules>
+    </element>
+</elements>

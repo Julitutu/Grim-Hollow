@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gnoll</name>
+		<source>Grim Hollow - Monster Grimoire</source>
+		<update version="0.1.0">
+			<file name="race-gnoll.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-gnoll.xml" />
+		</update>
+	</info>
+
+	<!-- Gnoll Race -->
+	<element name="Gnoll" type="Race" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACE_GNOLL">
+		<description>
+			<p>You were once a different humanoid creature of Etharis, going about your life like everyone else. Then the Great Beast paid a visit to your home area. The corrupting magic of the Beast didn’t just change your life, it changed your very essence. You became a raving monster, a hyena-headed killer whose mind crackled with a presence that drove you further and further into an insatiable bloodlust.</p>
+            <p>Then, one day, out of nowhere, the crackling ceased. Your body remained in its corrupted form, a furry and scary-looking beast, but your mind returned to its previous state. You couldn’t remember what happened to you since the mutation of the Great Beast overpowered you, but you remember your life before. With your new, monstrous form but your previous consciousness, life will certainly take you to interesting places.</p>
+            <h4>GNOLL TRAITS</h4>
+			<p>Gnolls who’ve escaped the bonds of the Great Beast retain some of their bestial abilities but regain their memories and original personality.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> One ability score of your choice increases by 2, reflecting who you were before you became a gnoll. Also, your Constitution score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> You became mature when you transformed into a gnoll, if you weren’t already. You’re unsure of how long you will live in this new form. Most gnolls don’t die of old age.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> You have the same alignment tendencies as before you were transformed, although your experience may have changed your outlook now.</p>
+            <p class="indent"><strong><em>Size.</em></strong> You are slighting taller than an average human, although you tend to be stooped and you’re the same girth. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+            <p class="indent"><strong><em>Instinctive.</em></strong> If you are not surprised, your supernatural danger acuity allows you to roll with advantage on your first initiative roll after completing a long rest.</p>
+            <p class="indent"><strong><em>Spine Spike.</em></strong> You have spikes that grow from your spine that can be expelled toward a target as a bonus action. You are proficient with these spikes, which are considered natural ranged weapons and can use either Strength or Dexterity for attack and damage rolls. The range on your spikes are 20/60 ft, and they do 1d6 piercing damage. At level 11, the damage increases to 1d12. You can use your spine spikes a number of times per long rest equal to your proficiency bonus.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You speak Gnoll and one national language.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height">6'</set>
+			<set name="weight">180 lb.</set>
+		</setters>
+		<rules>
+			<!-- Ability Score Increase (Constitution +1, Choice +2) -->
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <select type="Ability Score Improvement" name="Custom Ability Score Increase (Gnoll)" supports="Custom Ability Score Increase 2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase (+2 and +1, or three +1's) -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Gnoll)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Gnoll)" supports="Custom Ability Score Increase 1" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Size (Medium) -->
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+
+			<!-- Speed (30 ft. walking) -->
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<!-- Darkvision -->
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+
+            <!-- Instinctive -->
+            <grant type="Racial Trait" id="ID_GFG_GHMG_RACIAL_TRAIT_GNOLL_INSTINCTIVE" />
+
+            <!-- Spine Spike -->
+			<grant type="Racial Trait" id="ID_GFG_GHMG_RACIAL_TRAIT_GNOLL_SPINE_SPIKE" />
+
+			<!-- Languages (Gnoll, +1 other) -->
+            <grant type="Language" id="ID_GHMG_LANGUAGE_GNOLL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Gnoll)" supports="Standard" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<!-- Tasha's Cauldron of Everything: Customized Language -->
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		</rules>
+	</element>
+
+    <!-- Instinctive -->
+	<element name="Instinctive" type="Racial Trait" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACIAL_TRAIT_GNOLL_INSTINCTIVE">
+		<description>
+			<p>If you are not surprised, your supernatural danger acuity allows you to roll with advantage on your first initiative roll after completing a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>If you are not surprised, your supernatural danger acuity allows you to roll with advantage on your first initiative roll.</description>
+		</sheet>
+	</element>
+
+    <!-- Spine Spike -->
+	<element name="Spine Spike" type="Racial Trait" source="Grim Hollow - Monster Grimoire" id="ID_GFG_GHMG_RACIAL_TRAIT_GNOLL_SPINE_SPIKE">
+		<description>
+			<p>You have spikes that grow from your spine that can be expelled toward a target as a bonus action. You are proficient with these spikes, which are considered natural ranged weapons and can use either Strength or Dexterity for attack and damage rolls. The range on your spikes are 20/60 ft, and they do 1d6 piercing damage. At level 11, the damage increases to 1d12. You can use your spine spikes a number of times per long rest equal to your proficiency bonus.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest" action="Bonus Action">
+			<description level="1">You have spikes that grow from your spine that can be expelled toward a target as a bonus action. You are proficient with these spikes, which are considered natural ranged weapons. The range on your spikes are 20/60 ft, and they do 1d6 piercing damage.</description>
+			<description level="11">You have spikes that grow from your spine that can be expelled toward a target as a bonus action. You are proficient with these spikes, which are considered natural ranged weapons. The range on your spikes are 20/60 ft, and they do 1d12 piercing damage.</description>
+		</sheet>
+	</element>
+
+	<!-- Gnoll Language -->
+
+	<element name="Gnoll" type="Language" source="MoGrim Hollow - Monster Grimoireal" id="ID_GHMG_LANGUAGE_GNOLL">
+		<supports>Monster</supports>
+		<description>
+			<p>Gnolls are a race of bestial humanoids that resemble hyenas. Most are vicious and sadistic, but some can suppress their darker urges and live amongst other humanoids.</p>
+		</description>
+		<setters>
+			<set name="monster">true</set>
+			<set name="speakers">Gnoll</set>
+			<set name="script"></set>
+		</setters>
+	</element>
+
+</elements>

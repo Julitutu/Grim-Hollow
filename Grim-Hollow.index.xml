@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+  <info>
+    <update version="0.1.0">
+      <file name="Grim-Hollow.index"
+        url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow.index" />
+    </update>
+  </info>
+  <files>
+    <file name="sources.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/source.xml" />
+    <!-- Races -->
+    <file name="race-bugbear.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-bugbear.xml" />
+    <file name="race-disembodied.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-disembodied.xml" />
+    <file name="race-downcast.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-downcast.xml" />
+    <file name="race-dreamer.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-dreamer.xml" />
+    <file name="race-faevlin.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-faevlin.xml" />
+    <file name="race-gnoll.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-gnoll.xml" />
+    <file name="race-grudgel.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-grudgel.xml" />
+    <file name="race-laneshi.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-laneshi.xml" />
+    <file name="race-morbus-kobold.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-morbus-kobold.xml" />
+    <file name="race-race-ogresh.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-race-ogresh.xml" />
+    <file name="race-wechselkind.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-wechselkind.xml" />
+
+    <!-- Subclasses -->
+    <file name="Monk-Leaden-Crown.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Monk-Leaden-Crown.xml" />
+    <file name="Monk-Way-of-Pride.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Monk-Way-of-Pride.xml" />
+    <file name="Paladin-Pestilence.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Paladin-Pestilence.xml" />
+    <file name="Paladin-Zeal.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Paladin-Zeal.xml" />
+    <file name="Ranger-Green-Reaper.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Ranger-Green-Reaper.xml" />
+    <file name="Ranger-Vermin-Lord.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Ranger-Vermin-Lord.xml" />
+    <file name="Rogue-Highway-Rider.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Rogue-Highway-Rider.xml" />
+    <file name="Rogue-Misfortune-Bringer.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Rogue-Misfortune-Bringer.xml" />
+    <file name="Sorcerer-Haunted.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Sorcerer-Haunted.xml" />
+    <file name="Sorcerer-Wretched-Bloodline.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Sorcerer-Wretched-Bloodline.xml" />
+    <file name="Warlock-First-Vampire.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Warlock-First-Vampire.xml" />
+    <file name="Warlock-Parasite.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Warlock-Parasite.xml" />
+    <file name="Wizard-Plague-Doctor.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Wizard-Plague-Doctor.xml" />
+    <file name="Wizard-Sangromancy.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Wizard-Sangromancy.xml" />
+    <file name="Barbarian-Fractured.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Barbarian-Fractured.xml" />
+    <file name="Barbarian-Primal-Spirit.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Barbarian-Primal-Spirit.xml" />
+    <file name="Bard-Adventurers.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Bard-Adventurers.xml" />
+    <file name="Bard-Requiems.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Bard-Requiems.xml" />
+    <file name="Cleric-Eldritch-Domain.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Cleric-Eldritch-Domain.xml" />
+    <file name="Cleric-Inquisition-Domain.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Cleric-Inquisition-Domain.xml" />
+    <file name="Druid-Circle-of-Blood.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Druid-Circle-of-Blood.xml" />
+    <file name="Druid-Circle-of-Mutation.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Druid-Circle-of-Mutation.xml" />
+    <file name="Fighter-Bulwark-Warrior.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Fighter-Bulwark-Warrior.xml" />
+    <file name="Fighter-Living-Crucible.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Subclasses/Fighter-Living-Crucible.xml" />
+
+    <!-- Transfromations -->
+    <file name="aberrant-horror.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/aberrant-horror.xml" />
+    <file name="fey.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/fey.xml" />
+    <file name="fiend.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/fiend.xml" />
+    <file name="lich.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/lich.xml" />
+    <file name="lycanthrope.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/lycanthrope.xml" />
+    <file name="primordial.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/primordial.xml" />
+    <file name="seraph.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/seraph.xml" />
+    <file name="specter.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/specter.xml" />
+    <file name="vampire.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/vampire.xml" />
+
+    <!-- Settings -->
+    <file name="spells.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/spells.xml" />
+    <file name="advanced-weapons.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/advanced-weapons.xml" />
+    <file name="magic-items.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/magic-items.xml" />
+    <file name="optional-race-trait-mechanics.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/optional-race-trait-mechanics.xml" />
+    <file name="Feats.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/Feats.xml" />
+    <file name="Curses.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/Curses.xml" />
+    <file name="option-advanced-backgrounds.xml"
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow-The-Players-Guide/refs/heads/main/Setting/option-advanced-backgrounds.xml" />
+  </files>
+</index>

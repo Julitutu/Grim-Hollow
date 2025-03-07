@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Fey-Blessed</name>
+		<description>Background from Grim Hollow - The Players Guide</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.1.0">
+			<file name="FeyBlessed.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Backgrounds/FeyBlessed.xml" />
+		</update>
+	</info>
+
+	<!-- Fey-Blessed Background -->
+	<element name="Fey-Blessed" type="Background" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_BACKGROUND_FEY_BLESSED">
+		<description>
+			<p>The powerful and fickle fey-folk of your area have taken note of you, and your existence pleases them. Whether you were born under a lucky star, had a favorable run-in with a nature spirit, or simply were in the right place at the right time, the nature spirits favor you with small gifts and boons. You find small trinkets in your shoes when you wake up in the morning. Beasts of the forest and field are more receptive to your presence and your training. Will this blessing somehow turn into a curse later in your life? That remains to be seen!</p>
+			<p class="indent">
+				<b>Skill Proficiency:</b> Animal Handling, Nature</p>
+			<p class="indent">
+				<b>Tool Proficiencies:</b> One musical instrument</p>
+			<p class="indent">
+				<b>Languages:</b> Sylvan and one other common language</p>
+			<p class="indent">
+				<b>Equipment:</b> One musical instrument, 20 gp</p>
+			<div element="ID_GFG_GHPG_BACKGROUND_FEATURE_FORTUNE_OF_THE_FOREST" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>The blessing of the fey may have been granted because of who you are, or you may be who you are because of that blessing. While the blessing is often a boon, those who have the attention of the fey often find that it sometimes comes with some unpredictable and not always positive consequences.</p>
+		</description>
+		<setters>
+			<set name="short">Animal Handling, Nature, one musical instrument, Sylvan, one common language. Fortune of the Forest feature.</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<select type="Proficiency" name="Tool Proficiency (Fey-Blessed)" supports="Musical Instrument" />
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+			<select type="Language" name="Language (Fey-Blessed)" supports="Standard" />
+
+			<grant type="Background Feature" id="ID_GFG_GHPG_BACKGROUND_FEATURE_FORTUNE_OF_THE_FOREST" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+
+			<select type="List" name="Personality Trait (Fey-Blessed)">
+				<item id="1">My grace and joy at the wonders of life are infectious and raise the spirits of those around me.</item>
+				<item id="2">My mood changes to match the weather in my area.</item>
+				<item id="3">I spend every second of my free time playing tunes that I hear in my dreams.</item>
+				<item id="4">I have the personality that matches one of the wild beasts that live in the area.</item>
+				<item id="5">I find my solace in the small times of peace and solitude in an otherwise chaotic world.</item>
+				<item id="6">There is always hope, even when the dread and evil are at their worst.</item>
+			</select>
+
+			<select type="List" name="Ideal (Fey-Blessed)">
+				<item id="1">Nature, and the creatures in it, must be protected at all cost.</item>
+				<item id="2">The blessing of the fey that I received is a power, and like any power it is meant to be exploited.</item>
+				<item id="3">Everything in the world is in balance, and anything that breaks that balance must be destroyed.</item>
+				<item id="4">Individuality is the most important part of life. Those who aren’t free aren’t really alive.</item>
+				<item id="5">We don’t know what others have been through. Judge not.</item>
+				<item id="6">The only beauty is perfection.</item>
+			</select>
+
+			<select type="List" name="Bond (Fey-Blessed)">
+				<item id="1">I care for a small forest creature that is always nearby. It is my best friend.</item>
+				<item id="2">I have a small, tightly knit group of friends that mean the world to me.</item>
+				<item id="3">An older relative has always been my guiding light in this dark world.</item>
+				<item id="4">The love of my life passed on, but I keep a token from them close to me at all times.</item>
+				<item id="5">My commitment to an ideal is the only bond I need. As long as I’m true to that, I’m true to myself.</item>
+				<item id="6">One of my adventuring campaigns is my closest ally. After all, they are the people I must trust to survive.</item>
+			</select>
+
+			<select type="List" name="Flaw (Fey-Blessed)">
+				<item id="1">I’m special, and everyone should know it.</item>
+				<item id="2">I often forget what I’m doing and start daydreaming about a far-off paradise.</item>
+				<item id="3">I know the correct answer to all of life’s problems, and I’m happy to share my wisdom with everyone.</item>
+				<item id="4">I overindulge in some of the less healthy habits.</item>
+				<item id="5">I hold others to high expectations that I could never reach myself.</item>
+				<item id="6">I have trouble deciding on the best course of action, especially in tense situations.</item>
+			</select>
+		</rules>
+	</element>
+
+	<!-- Feature: Fortune of the Forest -->
+	<element name="Feature: Fortune of the Forest" type="Background Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_BACKGROUND_FEATURE_FORTUNE_OF_THE_FOREST">
+		<supports>Background Feature</supports>
+		<description>
+			<p>When you find yourself in the areas of the world outside of civilization, your blessed nature in the eyes of the fey come in handy. When you are lost, or in need of food or water, or trying to build a fire or a makeshift shelter, there’s a 50% chance that you gain assistance from a creature of the wild. This might take for the form of a squirrel leading you to a sheltered cave or a fresh, clean spring.</p>
+		</description>
+		<sheet alt="Fortune of the Forest" />
+	</element>
+</elements>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Downcast</name>
+		<source>Grim Hollow - The Players Guide</source>
+		<update version="0.1.0">
+			<file name="race-downcast.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-downcast.xml" />
+		</update>
+	</info>
+
+	<!-- Downcast Race -->
+	<element name="Downcast" type="Race" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACE_DOWNCAST">
+		<description>
+			<p>With the end of the God-War, the Arch Seraphs of each deity descended upon the world, each taking upon their own shoulders the burden of imposing order on a world cast into disarray. These Arch Seraphs were the most powerful lieutenants among the angelic hosts, strong enough to retain a semblance of their power following the tragedy. The lesser angels were not so lucky. Many found themselves wholly bereft of their powers, cast down to Etharis to live out their now- mortal lives amidst the lesser races.</p>
+            <p>The downcast, as they have come to be called, are far fewer in number than when they first arrived, with a great number of them succumbing to despair and sickness after their fall from grace. Of those who remain, some still serve the Arch Seraphs in their twisted crusades, hoping to reclaim what they have lost. Others have turned their backs on their former comrades to seek their own goals, fully embracing mortal life. Lastly are those who feel embittered by their fall and have been gleefully accepted by the Arch Demons as agents to spread fear and destruction.</p>
+            <p>Physically, the downcast still possess the beauty of their angelic forms, although they no longer shine as brightly as before. The mark of the divine still remains as a visible glow within their eyes, and faint markings on their skin mimic Celestial runes.</p>
+            <p>There is also variation based on the deity that each served in the past. Those who follow Maligant are physically stronger, Galt’s host are hardy and resilient, Ulmyr’s are possessed of a keen intellect, and Aurelia’s kin have softer features and soothing voices.</p>
+            <p>Over time, the downcast have learned to tap into the small shreds of divine power that lie sleeping within their blood. That power still remembers the downcast’s former purpose and can be harnessed in times of great need to aid those who once called upon the gods for their power. This ability is as dangerous as it is powerful, for there are many who would seek to take it by force. Fallen clergy who seek to drain the downcast in order to restore their own failing powers, vampires seeking to drink from a fountain of the tainted divine, even those who treat with powerful entities alien to this world, are all potential predators to a fallen angel. Indeed, there are some who have already discovered this secret and are willing to go to any lengths in order to obtain it.</p>
+            <h4>DOWNCAST TRAITS</h4>
+            <p>Downcast still bear the marks of immortality that have been robbed from them.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Stripped of their immortality, the downcast nevertheless possess incredibly long lifespans, rivalling even those of elven blood. A downcast reaches maturity at the same age as a human, but can live up to 800 years old.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Former servants of the gods, most downcast retain their good alignment, and the particular god they served dictates whether they are more likely to be chaotic or lawful. Galt’s servants are strongly aligned with law, while Ulmyr’s were just as strongly aligned with chaos. Aurelia and Maligant did not imbue their hosts with strong tendencies in either direction, and so they are more often neutral.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Downcast are similar to humans in size, most ranging between 5 to 6 feet tall. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Divine Learning.</em></strong> You gain proficiency in the Religion skill and you know the thaumaturgy cantrip.</p>
+            <p class="indent"><strong><em>Divine Sangromancy.</em></strong> The blood of angels flows in your veins, and you can tap into that blood to boost the power of divine magic. Whenever an allied creature within 30 feet of you regains hit points, you may spend a hit die and add the result to the amount of hit points gained.</p>
+            <p class="indent"><strong><em>Lingering Divinity.</em></strong> You have resistance to necrotic damage.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Celestial and one other language of your choice.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> Downcast are divided into four distinct varieties based on the divine they served. These different types of downcast still retain some of the abilities and traits granted to them by their former patron deity.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="height">5'</set>
+			<set name="weight">120 lb.</set>
+		</setters>
+		<rules>
+			<!-- Ability Score Increase (Wisdom +2) -->
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase (+2 and +1, or three +1's) -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Downcast)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Downcast)" supports="Custom Ability Score Increase 1" number="3" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Size (Medium) -->
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+
+			<!-- Speed (30 ft. walking) -->
+			<stat name="innate speed" value="30" bonus="base" />
+
+            <!-- Divine Learning -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_DIVINE_LEARNING" />
+
+            <!-- Divine Sangromancy -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_DIVINE_SANGROMANCY" />
+
+            <!-- Lingering Divinity -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_LINGERING_DIVINITY" />
+
+			<!-- Languages (Common, +1 other) -->
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Downcast)" supports="Standard||Exotic" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<!-- Tasha's Cauldron of Everything: Customized Language -->
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+
+			<!-- Subrace Selection -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_SUBRACE" />
+		</rules>
+	</element>
+
+	<!-- Divine Learning Trait -->
+	<element name="Divine Learning" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_DIVINE_LEARNING">
+		<description>
+			<p>You gain proficiency in the Religion skill and you know the thaumaturgy cantrip.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency in the Religion skill and you know the thaumaturgy cantrip.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
+		</rules>
+	</element>
+
+    <!-- Divine Sangromancy Trait -->
+	<element name="Divine Sangromancy" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_DIVINE_SANGROMANCY">
+		<description>
+			<p>The blood of angels flows in your veins, and you can tap into that blood to boost the power of divine magic. Whenever an allied creature within 30 feet of you regains hit points, you may spend a hit die and add the result to the amount of hit points gained.</p>
+		</description>
+		<sheet>
+			<description>Whenever an allied creature within 30 feet of you regains hit points, you may spend a hit die and add the result to the amount of hit points gained.</description>
+		</sheet>
+	</element>
+
+    <!-- Lingering Divinity -->
+	<element name="Lingering Divinity" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_LINGERING_DIVINITY">
+		<description>
+			<p>You have resistance to necrotic damage.</p>
+		</description>
+		<sheet display="false">
+			<description>You have resistance to necrotic damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+
+    	<!-- Subrace Trait (Placeholder) -->
+	<element name="Downcast Subrace" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_SUBRACE">
+		<description>
+			<p>Downcast are divided into four distinct varieties based on the divine they served. These different types of downcast still retain some of the abilities and traits granted to them by their former patron deity.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Downcast Subrace" supports="Downcast" />
+		</rules>
+	</element>
+
+	<!-- Aurelian Subrace -->
+	<element name="Aurelian" type="Sub Race" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_SUBRACE_DOWNCAST_AURELIAN">
+		<supports>Downcast</supports>
+		<description>
+			<p>Aurelians exhibit traits linking them to their former master Aurelia.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+            <p class="indent"><strong><em>Hand of Aurelia.</em></strong> You may cast the cure wounds spell at 1st level once with this trait, and regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for this spell.</p>
+        </description>
+		<sheet display="false" />
+		<rules>
+			<!-- Ability Score Increase (Charisma +1) -->
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase +1 -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Aurelian)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Hand of Aurelia -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_AURELIAN_HAND_OF_AURELIA" />
+		</rules>
+	</element>
+
+    <!-- Hand of Aurelia -->
+	<element name="Hand of Aurelia" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_AURELIAN_HAND_OF_AURELIA">
+		<description>
+			<p>You may cast the cure wounds spell at 1st level once with this trait, and regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You may cast the cure wounds spell at 1st level once with this trait, and regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for this spell.</description>
+		</sheet>
+        <rules>
+			<grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" />
+		</rules>
+	</element>
+
+	<!-- Ulmyrite Subrace -->
+	<element name="Ulmyrite" type="Sub Race" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_SUBRACE_DOWNCAST_ULMYRITE">
+		<supports>Downcast</supports>
+		<description>
+			<p>Ulmyrites exhibit traits linking them to their former master Ulmyr.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1.</p>
+            <p class="indent"><strong><em>Ulmyr’s Sight.</em></strong> You may cast the detect magic spell once with this trait, and regain the ability to do so when you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!-- Ability Score Increase (Intelligence +1) -->
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase +1 -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Ulmyrite)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Ulmyr’s Sight -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_ULMYRITE_ULMYRS_SIGHT" />
+		</rules>
+	</element>
+
+    <!-- Ulmyr’s Sight -->
+	<element name="Ulmyr’s Sight" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_ULMYRITE_ULMYRS_SIGHT">
+		<description>
+			<p>You may cast the detect magic spell once with this trait, and regain the ability to do so when you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You may cast the detect magic spell once with this trait, and regain the ability to do so when you finish a long rest.</description>
+		</sheet>
+        <rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" level="1" />
+		</rules>
+	</element>
+
+    <!-- Maliganti Subrace -->
+	<element name="Maliganti" type="Sub Race" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_SUBRACE_DOWNCAST_MALIGANTI">
+		<supports>Downcast</supports>
+		<description>
+			<p>Maliganti exhibit traits linking them to their former master Maligant.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1.</p>
+            <p class="indent"><strong><em>Fury of Maligant.</em></strong> You may cast the branding smite spell as a 1st level spell once with this trait, and regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!-- Ability Score Increase (Strength +1) -->
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase +1 -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Maliganti)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Fury of Maligant -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_MALIGANTI_FURY_OF_MALIGANT" />
+		</rules>
+	</element>
+
+    <!-- Fury of Maligant -->
+	<element name="Fury of Maligant" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_MALIGANTI_FURY_OF_MALIGANT">
+		<description>
+			<p>You may cast the branding smite spell as a 1st level spell once with this trait, and regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You may cast the branding smite spell as a 1st level spell once with this trait, and regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for this spell.</description>
+		</sheet>
+        <rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BRANDING_SMITE" />
+		</rules>
+	</element>
+
+    <!-- Galtian Subrace -->
+	<element name="Galtian" type="Sub Race" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_SUBRACE_DOWNCAST_GALTIAN">
+		<supports>Downcast</supports>
+		<description>
+			<p>Galtians exhibit traits linking them to their former master Galt.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+            <p class="indent"><strong><em>Galt’s Bulwark.</em></strong> You may cast the shield of faith spell once with this trait, and regain the ability to do so when you finish a long rest.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<!-- Ability Score Increase (Constitution +1) -->
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<!-- Tasha's Cauldron of Everything: Custom Ability Score Increase +1 -->
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Galtian)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+
+			<!-- Galt’s Bulwark -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_GALTIAN_GALTS_BULWARK" />
+		</rules>
+	</element>
+
+    <!-- Galt’s Bulwark -->
+	<element name="Galt’s Bulwark" type="Racial Trait" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_RACIAL_TRAIT_DOWNCAST_GALTIAN_GALTS_BULWARK">
+		<description>
+			<p>You may cast the shield of faith spell once with this trait, and regain the ability to do so when you finish a long rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You may cast the shield of faith spell once with this trait, and regain the ability to do so when you finish a long rest.</description>
+		</sheet>
+        <rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SHIELD_OF_FAITH" />
+		</rules>
+	</element>
+</elements>
