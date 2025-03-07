@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
   <info>
-    <update version="0.1.1">
+    <update version="0.1.2">
       <file name="Grim-Hollow.index"
         url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow.index" />
     </update>
@@ -117,6 +117,6 @@
     <file name="Curses.xml"
       url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/Curses.xml" />
     <file name="option-advanced-backgrounds.xml"
-      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow-The-Players-Guide/refs/heads/main/Setting/option-advanced-backgrounds.xml" />
+      url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/option-advanced-backgrounds.xml" />
   </files>
 </index>
