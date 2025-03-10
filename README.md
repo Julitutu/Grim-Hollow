@@ -5,7 +5,7 @@ Hello everyone! I'm releasing GrimHollow for Aurora:
 This repository contains:
 
 * Grim Hollow - Campaing Guide
-* Grim Hollow - The Player's Guid
+* Grim Hollow - The Player's Guide
 * Grim Hollow - Monster Grimoire
 
 Extending Content Go to the Additional Content tab in Aurora, enter the URL of the index file, and have Aurora download the content to the custom folder for you.
