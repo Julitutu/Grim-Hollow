@@ -1,4 +1,4 @@
-# Additional content from Grim-Hollow Setting to extend Aurora.
+# Additional content from Grim Hollow Setting to extend Aurora.
 
 Hello everyone! I'm releasing GrimHollow for Aurora:
 
