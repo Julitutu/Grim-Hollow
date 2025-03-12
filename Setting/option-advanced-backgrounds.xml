@@ -3,7 +3,7 @@
     <info>
         <name>Advanced Backgrounds</name>
         <description>Advanced Backgrounds rules from the Grim Hollow.</description>
-        <update version="0.1.1">
+        <update version="0.1.2">
             <file name="option-advanced-backgrounds.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/option-advanced-backgrounds.xml" />
         </update>
     </info>
@@ -5701,7 +5701,7 @@
     </element>
 
     <!-- Talents -->
-    <element name="Astute Intuition" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Astute Intuition" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_ASTUTE_INTUITION">
         <supports>Clergy, Militarist, Aristocrat</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5716,7 +5716,7 @@
         </sheet>
     </element>
 
-    <element name="Beast Whisperer" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Beast Whisperer" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_BEAST_WHISPERER">
         <supports>Common Folk, Militarist, Outlander, Clan Member</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5730,7 +5730,7 @@
         </sheet>
     </element>
 
-    <element name="Biologist" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Biologist" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_BIOLOGIST">
         <supports>Academic, Common Folk, Outlander, Clan Member</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5744,7 +5744,7 @@
         </sheet>
     </element>
 
-    <element name="Born In the Saddle" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Born In the Saddle" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_BORN_IN_THE_SADDLE">
         <supports>Aristocrat, Militarist, Outlander</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5758,7 +5758,7 @@
         </sheet>
     </element>
 
-    <element name="Botanist" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Botanist" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_BOTANIST">
         <supports>Academic, Common Folk, Outlander, Clan Member</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5772,7 +5772,7 @@
         </sheet>
     </element>
 
-    <element name="Bounty Hunter" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Bounty Hunter" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_BOUNTY_HUNTER">
         <supports>Criminal, Militarist</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5786,7 +5786,7 @@
         </sheet>
     </element>
 
-    <element name="Cabal Lorekeeper" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Cabal Lorekeeper" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_CABAL_LOREKEEPER">
         <supports>Clergy</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5801,7 +5801,7 @@
         </sheet>
     </element>
 
-    <element name="Calloused Hands" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Calloused Hands" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_CALLOUSED_HANDS">
         <supports>Common Folk, Militarist, Outlander, Seafarer, Pauper, Pit Fighter, Clan Member</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5815,7 +5815,7 @@
         </sheet>
     </element>
 
-    <element name="Confessor" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Confessor" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_CONFESSOR">
         <supports>Clergy</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5831,7 +5831,7 @@
         </sheet>
     </element>
 
-    <element name="Contortionist" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Contortionist" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_CONTORTIONIST">
         <supports>Criminal</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5845,7 +5845,7 @@
         </sheet>
     </element>
 
-    <element name="Copycat" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Copycat" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_COPYCAT">
         <supports>Academic, Aristocrat, Clergy, Common Folk, Criminal, Militarist, Seafarer</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5859,7 +5859,7 @@
         </sheet>
     </element>
 
-    <element name="Court Schemer" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Court Schemer" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_COURT_SCHEMER">
         <supports>Aristocrat</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5873,7 +5873,7 @@
         </sheet>
     </element>
 
-    <element name="Diligent Researcher" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Diligent Researcher" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_DILIGENT_RESEARCHER">
         <supports>Academic, Clergy</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5887,7 +5887,7 @@
         </sheet>
     </element>
 
-    <element name="Disciplinarian" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Disciplinarian" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_DISCIPLINARIAN">
         <supports>Academic, Aristocrat, Clergy, Common Folk, Criminal, Militarist, Outlander, Clan
             Member</supports>
@@ -5904,7 +5904,7 @@
         </sheet>
     </element>
 
-    <element name="Drunkard" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Drunkard" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_DRUNKARD">
         <supports>Academic, Aristocrat, Clergy, Common Folk, Criminal, Militarist, Seafarer, Pauper,
             Pit Fighter, Clan Member</supports>
@@ -5919,7 +5919,7 @@
         </sheet>
     </element>
 
-    <element name="Elusive" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Elusive" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_ELUSIVE">
         <supports>Aristocrat, Common Folk, Criminal, Pauper, Pit Fighter</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5934,7 +5934,7 @@
         </sheet>
     </element>
 
-    <element name="Figure of Authority" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Figure of Authority" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_FIGURE_OF_AUTHORITY">
         <supports>Aristocrat, Clergy, Militarist</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5949,7 +5949,7 @@
     </element>
 
     <element name="Flamboyant Presentation" type="Feat Feature"
-        source="Grim Hollow - Campaign Guide" id="ID_GFG_GHCG_FEAT_FLAMBOYANT_PRESENTATION">
+        source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FLAMBOYANT_PRESENTATION">
         <supports>Common Folk, Pauper, Pit Fighter</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
         <description>
@@ -5962,7 +5962,7 @@
         </sheet>
     </element>
 
-    <element name="Forecaster" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Forecaster" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_FORECASTER">
         <supports>Common Folk, Militarist, Outlander, Seafarer, Pauper, Pit Fighter</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -5976,7 +5976,7 @@
         </sheet>
     </element>
 
-    <element name="Gambler" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Gambler" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_GAMBLER">
         <supports>Academic, Aristocrat, Common Folk, Criminal, Militarist, Outlander, Seafarer,
             Pauper, Pit Fighter, Clan Member</supports>
@@ -5993,7 +5993,7 @@
         </sheet>
     </element>
 
-    <element name="Grifter" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Grifter" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_GRIFTER">
         <supports>Criminal</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6007,7 +6007,7 @@
         </sheet>
     </element>
 
-    <element name="Gut Feeling" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Gut Feeling" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_GUT_FEELING">
         <supports>Common Folk, Outlander, Seafarer, Pauper, Pit Fighter</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6021,7 +6021,7 @@
         </sheet>
     </element>
 
-    <element name="Hard-Working" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Hard-Working" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_HARD_WORKING">
         <supports>Common Folk, Militarist, Outlander, Seafarer, Pauper, Pit Fighter, Clan Member</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6036,7 +6036,7 @@
         </sheet>
     </element>
 
-    <element name="Heister" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Heister" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_HEISTER">
         <supports>Criminal</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6050,7 +6050,7 @@
         </sheet>
     </element>
 
-    <element name="Idolist" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Idolist" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_IDOLIST">
         <supports>Clergy</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6064,7 +6064,7 @@
         </sheet>
     </element>
 
-    <element name="Impressionist" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Impressionist" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_IMPRESSIONIST">
         <supports>Aristocrat, Criminal</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6080,7 +6080,7 @@
         </sheet>
     </element>
 
-    <element name="Interrogator" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Interrogator" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_INTERROGATOR">
         <supports>Clergy, Criminal, Militarist</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6094,7 +6094,7 @@
         </sheet>
     </element>
 
-    <element name="Local Historian" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Local Historian" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_LOCAL_HISTORIAN">
         <supports>Academic, Aristocrat, Clergy, Common Folk, Outlander, Clan Member</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6110,7 +6110,7 @@
         </sheet>
     </element>
 
-    <element name="Menacing Presence" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Menacing Presence" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_MENACING_PRESENCE">
         <supports>Clergy, Criminal, Militarist, Seafarer, Pauper, Pit Fighter, Clan Member</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6124,7 +6124,7 @@
         </sheet>
     </element>
 
-    <element name="Mystical Scholar" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Mystical Scholar" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_MYSTICAL_SCHOLAR">
         <supports>Academic, Clergy</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6140,7 +6140,7 @@
         </sheet>
     </element>
 
-    <element name="Navigator" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Navigator" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_NAVIGATOR">
         <supports>Common Folk, Militarist, Outlander, Seafarer</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6153,7 +6153,7 @@
         </sheet>
     </element>
 
-    <element name="Nimble Fingers" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Nimble Fingers" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_NIMBLE_FINGERS">
         <supports>Criminal</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6167,7 +6167,7 @@
         </sheet>
     </element>
 
-    <element name="Passionate Orator" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Passionate Orator" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_PASSIONATE_ORATOR">
         <supports>Academic, Clergy, Militarist</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6181,7 +6181,7 @@
         </sheet>
     </element>
 
-    <element name="Pathologist" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Pathologist" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_PATHOLOGIST">
         <supports>Academic, Clergy</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6195,7 +6195,7 @@
         </sheet>
     </element>
 
-    <element name="Problem Solver" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Problem Solver" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_PROBLEM_SOLVER">
         <supports>Academic, Aristocrat</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6209,7 +6209,7 @@
         </sheet>
     </element>
 
-    <element name="Quick Fingers" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Quick Fingers" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_QUICK_FINGERS">
         <supports>Aristocrat, Criminal</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6225,7 +6225,7 @@
         </sheet>
     </element>
 
-    <element name="Recruiter" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Recruiter" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_RECRUITER">
         <supports>Militarist, Seafarer</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6239,7 +6239,7 @@
         </sheet>
     </element>
 
-    <element name="Renowned" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Renowned" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_RENOWNED">
         <supports>Criminal, Militarist, Outlander, Seafarer</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6253,7 +6253,7 @@
         </sheet>
     </element>
 
-    <element name="Ropesman" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Ropesman" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_ROPESMAN">
         <supports>Criminal, Seafarer</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6267,7 +6267,7 @@
         </sheet>
     </element>
 
-    <element name="Runekeeper" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Runekeeper" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_RUNEKEEPER">
         <supports>Academic</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6283,7 +6283,7 @@
         </sheet>
     </element>
 
-    <element name="Sawbones" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Sawbones" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_SAWBONES">
         <supports>Academic, Clergy</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6297,7 +6297,7 @@
         </sheet>
     </element>
 
-    <element name="Sea Dog" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Sea Dog" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_SEA_DOG">
         <supports>Seafarer</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6311,7 +6311,7 @@
         </sheet>
     </element>
 
-    <element name="Sentry" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Sentry" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_SENTRY">
         <supports>Criminal, Militarist, Seafarer</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6325,7 +6325,7 @@
         </sheet>
     </element>
 
-    <element name="Shrewd Deduction" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Shrewd Deduction" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_SHREWD_DEDUCTION">
         <supports>Clergy, Militarist</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6339,7 +6339,7 @@
         </sheet>
     </element>
 
-    <element name="Translator" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Translator" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_TRANSLATOR">
         <supports>Academic, Aristocrat, Outlander</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6353,7 +6353,7 @@
         </sheet>
     </element>
 
-    <element name="Urban Sprinter" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Urban Sprinter" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_URBAN_SPRINTER">
         <supports>Criminal, Militarist, Pauper, Pit Fighter</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
@@ -6369,7 +6369,7 @@
         </sheet>
     </element>
 
-    <element name="Wayfarer" type="Feat Feature" source="Grim Hollow - Campaign Guide"
+    <element name="Wayfarer" type="Feat Feature" source="Grim Hollow - Campaing Guide"
         id="ID_GFG_GHCG_FEAT_WAYFARER">
         <supports>Common Folk, Militarist, Outlander, Seafarer, Clan Member</supports>
         <requirements>ID_GFG_ADVANCED_BACKGROUNDS</requirements>
