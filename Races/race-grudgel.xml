@@ -3,7 +3,7 @@
 	<info>
 		<name>Grudgel</name>
 		<source>Grim Hollow - Monster Grimoire</source>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="race-grudgel.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-grudgel.xml" />
 		</update>
 	</info>
@@ -89,7 +89,7 @@
 
     	<!-- Grudgel Language -->
 
-	<element name="Grudgel" type="Language" source="Grim Hollow - Monster Grimoireal" id="ID_GHMG_LANGUAGE_GRUDGEL">
+	<element name="Grudgel" type="Language" source="Grim Hollow - Monster Grimoire" id="ID_GHMG_LANGUAGE_GRUDGEL">
 		<supports>Standard</supports>
 		<description>
 			<p>Spoken by the Grudgels.</p>
