@@ -3,7 +3,7 @@
 	<info>
 		<name>Gnoll</name>
 		<source>Grim Hollow - Monster Grimoire</source>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="race-gnoll.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Races/race-gnoll.xml" />
 		</update>
 	</info>
@@ -84,7 +84,7 @@
 
 	<!-- Gnoll Language -->
 
-	<element name="Gnoll" type="Language" source="MoGrim Hollow - Monster Grimoireal" id="ID_GHMG_LANGUAGE_GNOLL">
+	<element name="Gnoll" type="Language" source="Grim Hollow - Monster Grimoire" id="ID_GHMG_LANGUAGE_GNOLL">
 		<supports>Monster</supports>
 		<description>
 			<p>Gnolls are a race of bestial humanoids that resemble hyenas. Most are vicious and sadistic, but some can suppress their darker urges and live amongst other humanoids.</p>
