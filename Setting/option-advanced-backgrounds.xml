@@ -3,7 +3,7 @@
     <info>
         <name>Advanced Backgrounds</name>
         <description>Advanced Backgrounds rules from the Grim Hollow.</description>
-        <update version="0.1.2">
+        <update version="0.1.3">
             <file name="option-advanced-backgrounds.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/option-advanced-backgrounds.xml" />
         </update>
     </info>
@@ -2919,7 +2919,7 @@
         </setters>
         <rules>
             <select type="Proficiency" name="Skill Proficiency (Common Folk)"
-                supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION" />
+                supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION" />
             <select type="Language" name="Language (Common Folk)" supports="Standard" />
             <select type="Proficiency" name="Tool Proficiency (Common Folk)"
                 supports="Tool||Musical Instrument" />
@@ -3981,7 +3981,7 @@
         </setters>
         <rules>
             <select type="Proficiency" name="Skill Proficiency (Militarist)"
-                supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" />
+                supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" />
             <select type="Language" name="Language (Militarist)" supports="Standard" />
             <select type="Proficiency" name="Tool Proficiency (Militarist)" supports="Gaming Set" />
 
@@ -4505,7 +4505,7 @@
         </setters>
         <rules>
             <select type="Proficiency" name="Skill Proficiency (Outlander)"
-                supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" />
+                supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" />
             <select type="Language" name="Language (Outlander)" supports="Standard" />
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
 
