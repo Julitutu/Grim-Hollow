@@ -3,7 +3,7 @@
     <info>
         <name>Advanced Backgrounds</name>
         <description>Advanced Backgrounds rules from the Grim Hollow.</description>
-        <update version="0.1.3">
+        <update version="0.1.4">
             <file name="option-advanced-backgrounds.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Setting/option-advanced-backgrounds.xml" />
         </update>
     </info>
@@ -3451,7 +3451,7 @@
         <rules>
             <select type="Proficiency" name="Skill Proficiency (Criminal)"
                 supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND|ID_PROFICIENCY_SKILL_STEALTH" />
-            <grant type="Language" id="ID_LANGUAGE_THIEVES_CANT" />
+            <grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
             <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
 
             <!-- Feature Selection: Charlatan, Cutthroat or Burglar -->
@@ -6528,3 +6528,4 @@
     </element>
 
 </elements>
+
