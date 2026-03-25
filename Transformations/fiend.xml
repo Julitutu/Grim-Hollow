@@ -3,7 +3,7 @@
 		<name>Fiend Transformation</name>
 		<description>Transformation from Grim Hollow: Campaign Guide</description>
 		<author>Ghostfire Gaming</author>
-    <update version="0.1.0">
+    <update version="0.1.1">
 			<file name="fiend.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/fiend.xml" />
 		</update>
 	</info>
@@ -144,6 +144,9 @@
             <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_GIFTS_OF_DAMNATION" />
             <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_FIENDISH_FORM" />
             <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_PLANAR_BINDING" />
+            
+            <stat name="fiend min" value="1" bonus="base" />
+            <stat name="fiend min" value="charisma:modifier" bonus="base" />
         </rules>
     </element>
     
@@ -235,10 +238,6 @@
             <description>You can brand a creature within 60 feet of you with a fiery mark that diminishes their resolve. The target must make a DC {{fiend:dc}} Wisdom saving throw, and on a failed save they are branded. Whenever a creature branded in this way makes a saving throw, they must roll 1d6 and subtract the result from their saving throw.&#13;
             A creature remains branded this way for 1 minute. The brand disappears if the creature is knocked unconscious, enters hallowed ground, or is targeted by the remove curse spell.</description>
         </sheet>
-        <rules>
-            <stat name="fiend min" value="1" bonus="base" />
-            <stat name="fiend min" value="charisma:modifier" bonus="base" />
-        </rules>
     </element>
     
     <element name="Boon: Brand of the Tyrant’s Hellfire" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_BRAND_OF_THE_TYRANTS_HELLFIRE">

@@ -4,7 +4,7 @@
 		<name>Seraph Transformation</name>
 		<description>Transformation from Grim Hollow: Campaign Guide</description>
 		<author>Ghostfire Gaming</author>
-        <update version="0.1.0">
+        <update version="0.1.1">
 			<file name="seraph.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/seraph.xml" />
 		</update>
 	</info>
@@ -211,6 +211,9 @@
         <rules>
             <select type="Feat Feature" name="Transformation Boon (Level 2)" supports="Seraph Boon" />
             <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_DIVINE_APPEARENCE" />
+
+            <stat name="seraph min" value="1" bonus="base" />
+            <stat name="seraph min" value="wisdom:modifier" bonus="base" />
         </rules>
     </element>
 
@@ -223,10 +226,6 @@
         <sheet action="Reaction" usage="{{seraph min}}/Long Rest">
             <description>When you or an allied creature you can see within 30 feet takes the attack action, you can use your reaction to imbue them with holy zeal. Immediately after the target completes the attack action, they can make an additional attack as a bonus action. On a hit, the hit target takes an additional 1d8 radiant damage.</description>
         </sheet>
-        <rules>
-            <stat name="seraph min" value="1" bonus="base" />
-            <stat name="seraph min" value="wisdom:modifier" bonus="base" />
-        </rules>
     </element>
 
     <element name="Boon: Divine Clemency" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_DIVINE_CLEMENCY">

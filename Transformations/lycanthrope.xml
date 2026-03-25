@@ -3,7 +3,7 @@
 		<name>Lycanthrope Transformation</name>
 		<description>Transformation from Grim Hollow: Campaign Guide</description>
 		<author>Ghostfire Gaming</author>
-        <update version="0.1.0">
+        <update version="0.1.1">
 			<file name="lycanthrope.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/lycanthrope.xml" />
 		</update>
 	</info>
@@ -256,6 +256,9 @@
         <rules>
             <select type="Feat Feature" name="Transformation Boon (Level 2)" supports="Lycanthrope Boon" />
             <grant type="Feat Feature" id="ID_GFG_GHCG_FEAT_FEATURE_SILVER_SENSITIVITY" />
+
+            <stat name="lycan min" value="1" bonus="base" />
+            <stat name="lycan min" value="strength:modifier" bonus="base" />
         </rules>
     </element>
 
@@ -286,10 +289,6 @@
             • Whenever you hit the marked creature with a melee attack, you deal an additional 1d6 damage. This damage is the same type as the attack.&#13;
             • You have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to track your prey.</description>
         </sheet>
-        <rules>
-            <stat name="lycan min" value="1" bonus="base" />
-            <stat name="lycan min" value="strength:modifier" bonus="base" />
-        </rules>
     </element>
 
     <element name="Boon: Kindred Form" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_KINDRED_FORM">

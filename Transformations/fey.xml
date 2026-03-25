@@ -3,7 +3,7 @@
         <name>Fey Transformation</name>
         <description>Transformation from Grim Hollow: Campaign Guide</description>
         <author>Ghostfire Gaming</author>
-        <update version="0.1.0">
+        <update version="0.1.1">
             <file name="fey.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/fey.xml" />
         </update>
     </info>
@@ -155,6 +155,9 @@
         <rules>
             <grant type="Feat Feature" id="ID_GFG_GHPG_FEAT_FEATURE_FEY_FORM" />
             <grant type="Feat Feature" id="ID_GFG_GHPG_FEAT_FEATURE_PLANAR_BINDING_FEY" />
+
+            <stat name="fey min" value="1" bonus="base" />
+            <stat name="fey min" value="charisma:modifier" bonus="base" />
         </rules>
     </element>
 
@@ -225,10 +228,6 @@
             <description>You can magically teleport up to 30 feet to an unoccupied space you can see. Your twilight step also gains an additional feature depending on which court you chose for your Fey Form ability.&#13;
             • Summer. Immediately after using your Twilight Step, one creature of your choice that you can see within 5 feet of you takes {{fey min}} fire damage.</description>
         </sheet>
-        <rules>
-            <stat name="fey min" value="1" bonus="base" />
-            <stat name="fey min" value="charisma:modifier" bonus="base" />
-        </rules>
     </element>
     <element name="Boon: Twilight Step" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_TWILIGHT_STEP_WINTER">
         <supports>Fey Boon</supports>
@@ -247,10 +246,6 @@
             <description>You can magically teleport up to 30 feet to an unoccupied space you can see. Your twilight step also gains an additional feature depending on which court you chose for your Fey Form ability.&#13;
             • Winter. Immediately after using your Twilight Step, one creature of your choice that you can see within 5 feet of you takes {{fey min}} cold damage.</description>
         </sheet>
-        <rules>
-            <stat name="fey min" value="1" bonus="base" />
-            <stat name="fey min" value="charisma:modifier" bonus="base" />
-        </rules>
     </element>
 
     <element name="Flaw: Planar Binding" type="Feat Feature" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_FEAT_FEATURE_PLANAR_BINDING_FEY">
