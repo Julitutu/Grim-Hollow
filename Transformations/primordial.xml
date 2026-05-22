@@ -158,7 +158,7 @@
         <rules>
             <stat name="constitution" value="2" />
             <stat name="wisdom" value="1" />
-            <grant type="Racial Feature" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_ELEMENTAL" />
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_ELEMENTAL" />
         </rules>
     </element>
 

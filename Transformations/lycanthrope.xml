@@ -197,7 +197,7 @@
         <rules>
             <stat name="strength" value="2" />
             <stat name="constitution" value="1" />
-            <grant type="Racial Feature" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_SHAPECHANGER" />
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_SHAPECHANGER" />
         </rules>
     </element>
 

@@ -176,7 +176,7 @@
             <stat name="wisdom" value="2" />
             <stat name="intelligence:max" value="2"/>
             <stat name="wisdom:max" value="2"/>
-            <grant type="Racial Feature" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_UNDEAD" />
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_UNDEAD" />
         </rules>
     </element>
 

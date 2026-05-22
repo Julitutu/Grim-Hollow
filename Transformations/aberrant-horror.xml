@@ -209,7 +209,7 @@
         <rules>
             <stat name="constitution" value="2" />
             <stat name="strength" value="1" />
-            <grant type="Racial Feature" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_ABERRATION" />
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_ABERRATION" />
         </rules>
     </element>
     <element name="Flaw: Unstable Mutations" type="Feat Feature" source="Grim Hollow - Campaing Guide" id="ID_GFG_GHCG_FEAT_FEATURE_UNSTABLE_MUTATIONS">
