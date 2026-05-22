@@ -3,7 +3,7 @@
 		<name>Fiend Transformation</name>
 		<description>Transformation from Grim Hollow: Campaign Guide</description>
 		<author>Ghostfire Gaming</author>
-    <update version="0.1.1">
+    <update version="0.1.2">
 			<file name="fiend.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/fiend.xml" />
 		</update>
 	</info>

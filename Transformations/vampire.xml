@@ -3,7 +3,7 @@
 		<name>Vampire Transformation</name>
 		<description>Transformation from Grim Hollow: Campaign Guide</description>
 		<author>Ghostfire Gaming</author>
-        <update version="0.1.0">
+        <update version="0.1.1">
 			<file name="vampire.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Transformations/vampire.xml" />
 		</update>
 	</info>
