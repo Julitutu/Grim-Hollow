@@ -2,7 +2,7 @@
 <index>
     <info>
         <name></name>
-        <update version="0.0.3">
+        <update version="0.0.4">
             <file name="Grim-Hollow-2025.index" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Grim-Hollow-2025.index" />
         </update>
     </info>
@@ -128,7 +128,7 @@
         <file name="shadowsteel-ghoul.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformation/shadowsteel-ghoul.xml" />
         <file name="seraph.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformation/seraph.xml" />
 
-        <!-- Symbols -->
+        <!-- Symbols 
         <file name="arcanist-inquisition-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Symbols/arcanist-inquisition-emblem.png" />
         <file name="augustine-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Symbols/augustine-emblem.png" />
         <file name="free-swords-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Symbols/free-swords-emblem.png" />
@@ -139,6 +139,6 @@
         <file name="order-of-dawn-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Symbols/order-of-dawn-emblem.png" />
         <file name="prismatic-circle-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Symbols/prismatic-circle-emblem.png" />
         <file name="thaumaturge-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Symbols/thaumaturge-emblem.png" />
-        <file name="watchers-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Symbols/watchers-emblem.png" /> 
+        <file name="watchers-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Symbols/watchers-emblem.png" /> -->
     </files>
 </index>
