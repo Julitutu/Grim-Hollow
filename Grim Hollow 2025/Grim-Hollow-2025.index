@@ -115,18 +115,18 @@
         <file name="items-campaign.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Setting/items-campaign.xml" />
 
         <!-- Transformations -->
-        <file name="primordial.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformations/primordial.xml" />
-        <file name="ooze.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformations/ooze.xml" />
-        <file name="lycanthrope.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformations/lycanthrope.xml" />
-        <file name="lich.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformations/lich.xml" />
-        <file name="hag.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformations/hag.xml" />
-        <file name="fiend.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformations/fiend.xml" />
-        <file name="fey.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformations/fey.xml" />
-        <file name="aberrant-horror.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformations/aberrant-horror.xml" />
-        <file name="vampire.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformations/vampire.xml" />
-        <file name="specter.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformations/specter.xml" />
-        <file name="shadowsteel-ghoul.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformations/shadowsteel-ghoul.xml" />
-        <file name="seraph.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformations/seraph.xml" />
+        <file name="primordial.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformation/primordial.xml" />
+        <file name="ooze.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformation/ooze.xml" />
+        <file name="lycanthrope.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformation/lycanthrope.xml" />
+        <file name="lich.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformation/lich.xml" />
+        <file name="hag.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformation/hag.xml" />
+        <file name="fiend.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformation/fiend.xml" />
+        <file name="fey.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformation/fey.xml" />
+        <file name="aberrant-horror.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformation/aberrant-horror.xml" />
+        <file name="vampire.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformation/vampire.xml" />
+        <file name="specter.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformation/specter.xml" />
+        <file name="shadowsteel-ghoul.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformation/shadowsteel-ghoul.xml" />
+        <file name="seraph.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformation/seraph.xml" />
 
         <!-- Symbols -->
         <file name="arcanist-inquisition-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Symbols/arcanist-inquisition-emblem.png" />
