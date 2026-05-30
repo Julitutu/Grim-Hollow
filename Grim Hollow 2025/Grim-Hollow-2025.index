@@ -86,23 +86,23 @@
         <file name="feats-general.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Feats/feats-general.xml" />
 
         <!-- Heriotage -->
-        <file name="heritage-dhampir.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-dhampir.xml" />
-        <file name="heritage-arisen.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-arisen.xml" />
-        <file name="heritage-accursed.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-accursed.xml" />
-        <file name="heritage-wulven.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-wulven.xml" />
-        <file name="heritage-wechselkind.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-wechselkind.xml" />
-        <file name="heritage-ogresh.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-ogresh.xml" />
-        <file name="heritage-human.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-human.xml" />
-        <file name="heritage-halfling.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-halfling.xml" />
-        <file name="heritage-grudgel.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-grudgel.xml" />
-        <file name="heritage-gnome.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-gnome.xml" />
-        <file name="heritage-elf.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-elf.xml" />
-        <file name="heritage-dwarf.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-dwarf.xml" />
-        <file name="heritage-dreamer.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-dreamer.xml" />
-        <file name="heritage-dragonborn.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-dragonborn.xml" />
-        <file name="heritage-downcast.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-downcast.xml" />
-        <file name="heritage-disembodied.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritages/heritage-disembodied.xml" />
-        <file name="heritage-traits.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Races/heritage-traits.xml" />
+        <file name="heritage-dhampir.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-dhampir.xml" />
+        <file name="heritage-arisen.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-arisen.xml" />
+        <file name="heritage-accursed.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-accursed.xml" />
+        <file name="heritage-wulven.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-wulven.xml" />
+        <file name="heritage-wechselkind.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-wechselkind.xml" />
+        <file name="heritage-ogresh.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-ogresh.xml" />
+        <file name="heritage-human.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-human.xml" />
+        <file name="heritage-halfling.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-halfling.xml" />
+        <file name="heritage-grudgel.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-grudgel.xml" />
+        <file name="heritage-gnome.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-gnome.xml" />
+        <file name="heritage-elf.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-elf.xml" />
+        <file name="heritage-dwarf.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-dwarf.xml" />
+        <file name="heritage-dreamer.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-dreamer.xml" />
+        <file name="heritage-dragonborn.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-dragonborn.xml" />
+        <file name="heritage-downcast.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-downcast.xml" />
+        <file name="heritage-disembodied.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-disembodied.xml" />
+        <file name="heritage-traits.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Heritage/heritage-traits.xml" />
 
         <!-- Settings -->
         <file name="familiars.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Setting/familiars.xml" />
