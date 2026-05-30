@@ -4,7 +4,7 @@
 		<name>Origin Feats</name>
 		<description>Origin Feats from Grim Hollow: Player's Guide (2025)</description>
 		<update version="0.0.1">
-			<file name="feats-origin.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Feats/feats-origin.xml" />
+			<file name="feats-origin.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Feats/feats-origin.xml" />
 		</update>
 	</info>
 

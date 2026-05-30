@@ -5,7 +5,7 @@
 		<description>Familiars from the Grim Hollow: Monster Grimoire 2025.</description>
 		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
 		<update version="0.0.1">
-			<file name="familiars.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Setting/familiars.xml" />
+			<file name="familiars.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Setting/familiars.xml" />
 		</update>
 	</info>
 	<element name="Malikirian Imp" type="Companion" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_MALIKIRIAN_IMP">

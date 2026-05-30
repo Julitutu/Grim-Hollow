@@ -4,7 +4,7 @@
 		<name>Fighting Style Feats</name>
 		<description>Fighting Style Feats from Grim Hollow: Player's Guide (2025)</description>
 		<update version="0.0.1">
-			<file name="feats-fighting-styles.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Feats/feats-fighting-styles.xml" />
+			<file name="feats-fighting-styles.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Feats/feats-fighting-styles.xml" />
 		</update>
 	</info>
 

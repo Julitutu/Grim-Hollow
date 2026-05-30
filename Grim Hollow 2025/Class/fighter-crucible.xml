@@ -5,7 +5,7 @@
 		<description>The Living Crucible subclass from Grim Hollow: Player's Guide (2025).</description>
 		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
 		<update version="0.0.1">
-			<file name="fighter-crucible.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/fighter-crucible.xml" />
+			<file name="fighter-crucible.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Class/fighter-crucible.xml" />
 		</update>
 	</info>
 

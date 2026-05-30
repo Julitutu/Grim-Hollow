@@ -4,7 +4,7 @@
 		<name>Factions</name>
 		<description>Factions from Grim Hollow: Player's Guide (2025).</description>
 		<update version="0.0.1">
-			<file name="factions.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Setting/factions.xml" />
+			<file name="factions.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Setting/factions.xml" />
 		</update>
 	</info>
 

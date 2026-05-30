@@ -5,7 +5,7 @@
         <description>Specter Transformation from Grim Hollow: Player's Guide (2025)</description>
         <author>Ghostfire Gaming</author>
         <update version="0.1.0">
-            <file name="specter.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/specter.xml" />
+            <file name="specter.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Transformations/specter.xml" />
         </update>
     </info>
 
