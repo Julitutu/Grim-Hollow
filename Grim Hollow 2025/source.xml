@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="source.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/source.xml" />
 		</update>
 	</info>
@@ -19,7 +19,7 @@
 		<setters>
 			<set name="abbreviation">GHCG25</set>
 			<set name="url">https://ghostfiregaming.com/product/grim-hollow-campaign-guide-pdf-5-5e/</set>
-			<set name="image">"https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Campaing-Guide.png</set>
+			<set name="image">"https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Campaing-Guide.jpg</set>
 			<set name="author" abbreviation="GFG" url="https://ghostfiregaming.com">Ghostfire Gaming</set>
 			<set name="third-party">true</set>
 		</setters>
@@ -38,7 +38,7 @@
 		<setters>
 			<set name="abbreviation">GHPG25</set>
 			<set name="url">https://ghostfiregaming.com/product/grim-hollow-players-guide-pdf-5-5e/</set>
-			<set name="image">"https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Players-Guide.png</set>
+			<set name="image">"https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Players-Guide.jpg</set>
 			<set name="author" abbreviation="GFG" url="https://ghostfiregaming.com">Ghostfire Gaming</set>
 			<set name="third-party">true</set>
 		</setters>
@@ -51,7 +51,7 @@
 		<setters>
 			<set name="abbreviation">GHMG25</set>
 			<set name="url">https://ghostfiregaming.com/product/grim-hollow-monster-grimoire-pdf-5-5e/</set>
-			<set name="image">"https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Monster-Grimoire.png</set>
+			<set name="image">"https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Monster-Grimoire.jpg</set>
 			<set name="author" abbreviation="GFG" url="https://ghostfiregaming.com">Ghostfire Gaming</set>
 			<set name="third-party">true</set>
 		</setters>
