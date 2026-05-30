@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Living Crucible</name>
+		<description>The Living Crucible subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="fighter-crucible.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/fighter-crucible.xml" />
+		</update>
+	</info>
+
+	<element name="Living Crucible" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FIGHTER_LIVING_CRUCIBLE">
+		<supports>Fighter Subclass</supports>
+		<description>
+			<p class="flavor">Enhance Your Martial Prowess with Alchemy</p>
+			<p>Fighters who become Living Crucibles have discovered an external means of power. While most Fighters train in martial traditions or study the art of war, Living Crucibles hone their craft of alchemy to endure compounds poisonous to others. In exchange for this rigorous physical and mental preparation, these Fighters are able to temporarily push their bodies past their natural limits. Under the influence of their alchemical compounds, these warriors can see in darkness, enhance their speed, inure themselves to magical attacks, and more.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_CREATOR" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_STUDENT_OF_ALCHEMY" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_LIVING_CAULDRON" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_RAPID_CONSUMPTION" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_TOXIN_TRANSMUTATION" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_LIVING_CATALYST" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_CREATOR" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_STUDENT_OF_ALCHEMY" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_LIVING_CAULDRON" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_RAPID_CONSUMPTION" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_TOXIN_TRANSMUTATION" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_LIVING_CATALYST" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Compound Creator" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_CREATOR">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_CRUCIBLE_COMPOUND_CREATOR</requirements>
+		<description>
+			<p>You learn to create alchemical compounds toxic to others but empowering to you.</p>
+			<p class="indent"><strong><em>Compounds.</em></strong> You learn three compounds of your choice from the "Compound Options" section below. You learn two additional compounds of your choice when you reach Fighter levels 7, 10, and 15. Each time you learn new compounds, you can also replace one compound you know with a different one.</p>
+			<p class="indent"><strong><em>Creating.</em></strong> Whenever you finish a Long Rest while holding Alchemist's Supplies, you can use that tool to magically produce any number of compounds. The compound appears in a vial, and the vial vanishes when the compound is consumed or poured out. If any compound remains when you finish a Long Rest, the compound and its vial vanish.</p>
+			<p class="indent"><strong><em>Consuming.</em></strong> As a Bonus Action, you can consume one compound. You can consume a number of compounds up to one plus your Constitution modifier (minimum of one). Once you reach this limit, you cannot benefit from more compounds until you finish a Long Rest.</p>
+			<p class="indent">You can benefit from multiple compounds at the same time, but consuming multiple vials of the same compound provides no additional effects.</p>
+			<p class="indent">Only you can benefit from your compounds. Any other creature that consumes a compound must succeed on a Constitution saving throw (DC 8 plus your Intelligence modifier plus Proficiency Bonus) or have the Poisoned condition for 1 minute.</p>
+            <h5>Compound Options</h5>
+            <p>The compounds are presented here in alphabetical order.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_ADRENAL_INJECTION" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_ALLSENSE_INJECTION" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_ARCANE_EYE_OIL" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_DRAUGHT_OF_BULLS_STRENGTH" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_DRAUGHT_OF_CATS_GRACE" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_DRAUGHT_OF_BEARS_ENDURANCE" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_DRAUGHT_OF_FOXS_CUNNING" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_DRAUGHT_OF_EAGLES_SPLENDOR" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_ELFSIGHT_OIL" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_FLESHKNIT_PHOSPHATE" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_IRONMIND_INJECTION" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_LIQUID_COURAGE" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_LIQUID_RAGE" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_SPELLSHINE_OINTMENT" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_STEELSKIN_OINTMENT" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_TENMEN_TINCTURE" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_STUDENT_OF_ALCHEMY" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_LIVING_CAULDRON" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_RAPID_CONSUMPTION" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_TOXIN_TRANSMUTATION" />
+                <div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_LIVING_CATALYST" />
+            </div>
+		</description>
+		<sheet alt="Compound Creator" action="Bonus Action" usage="{{compound creator:usage}}/Long Rest">
+			<description>You can magically produce any number of your known compounds during a Long Rest. You can consume a compound to gain its benefits. Other creatures consuming them must make a DC{{compound creator:dc}} Con save or be Poisoned for 1 min.</description>
+		</sheet>
+		<rules>
+			<stat name="compound creator:usage" value="1" />
+			<stat name="compound creator:usage" value="constitution:modifier" />
+			
+			<stat name="compound creator:dc" value="8" bonus="base" />
+			<stat name="compound creator:dc" value="proficiency" bonus="proficiency" />
+			<stat name="compound creator:dc" value="intelligence:modifier" bonus="ability" />
+
+			<select type="Archetype Feature" name="Compound (Level 3)" supports="Crucible Compound" number="3" />
+			<select type="Archetype Feature" name="Compound (Level 7)" supports="Crucible Compound" number="2" level="7" />
+			<select type="Archetype Feature" name="Compound (Level 10)" supports="Crucible Compound" number="2" level="10" />
+			<select type="Archetype Feature" name="Compound (Level 15)" supports="Crucible Compound" number="2" level="15" />
+		</rules>
+	</element>
+
+    <!-- Compounds -->
+	<element name="Adrenal Injection" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_ADRENAL_INJECTION">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 1 minute, your Speed increases by 10 feet. In addition, once on each of your turns, you can jump up to 30 feet by spending 10 feet of movement.</p>
+		</description>
+		<sheet>
+			<description>For 1 min, Speed +10 ft. Once/turn, jump up to 30 ft using 10 ft of movement.</description>
+		</sheet>
+	</element>
+	<element name="Allsense Injection" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_ALLSENSE_INJECTION">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 1 minute, you have Blindsight with a range of 30 feet.</p>
+		</description>
+		<sheet>
+			<description>For 1 min, Blindsight 30 ft.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Eye Oil" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_ARCANE_EYE_OIL">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 1 hour, you sense the presence of magical effects within 30 feet of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic.</p>
+			<p class="indent">This sense is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead.</p>
+		</description>
+		<sheet>
+			<description>For 1 hr, sense magic within 30 ft (blocked by 1ft stone/wood, 1in metal, thin lead). Magic action to see aura and learn spell school.</description>
+		</sheet>
+	</element>
+	<element name="Draught of Bull's Strength" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_DRAUGHT_OF_BULLS_STRENGTH">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 10 minutes, you have Advantage on Strength checks and Strength saving throws.</p>
+		</description>
+		<sheet>
+			<description>For 10 mins, Advantage on Str checks/saves.</description>
+		</sheet>
+	</element>
+	<element name="Draught of Cat's Grace" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_DRAUGHT_OF_CATS_GRACE">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 10 minutes, you have Advantage on Dexterity checks and Dexterity saving throws.</p>
+		</description>
+		<sheet>
+			<description>For 10 mins, Advantage on Dex checks/saves.</description>
+		</sheet>
+	</element>
+	<element name="Draught of Bear's Endurance" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_DRAUGHT_OF_BEARS_ENDURANCE">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 10 minutes, you have Advantage on Constitution checks and Constitution saving throws.</p>
+		</description>
+		<sheet>
+			<description>For 10 mins, Advantage on Con checks/saves.</description>
+		</sheet>
+	</element>
+	<element name="Draught of Fox's Cunning" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_DRAUGHT_OF_FOXS_CUNNING">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 10 minutes, you have Advantage on Intelligence checks and Intelligence saving throws.</p>
+		</description>
+		<sheet>
+			<description>For 10 mins, Advantage on Int checks/saves.</description>
+		</sheet>
+	</element>
+	<element name="Draught of Owl's Wisdom" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_DRAUGHT_OF_OWLS_WISDOM">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 10 minutes, you have Advantage on Wisdom checks and Wisdom saving throws.</p>
+		</description>
+		<sheet>
+			<description>For 10 mins, Advantage on Wis checks/saves.</description>
+		</sheet>
+	</element>
+	<element name="Draught of Eagle's Splendor" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_DRAUGHT_OF_EAGLES_SPLENDOR">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 10 minutes, you have Advantage on Charisma checks and Charisma saving throws.</p>
+		</description>
+		<sheet>
+			<description>For 10 mins, Advantage on Cha checks/saves.</description>
+		</sheet>
+	</element>
+	<element name="Elfsight Oil" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_ELFSIGHT_OIL">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 8 hours, you have Darkvision with a range of 120 feet.</p>
+		</description>
+		<sheet>
+			<description>For 8 hrs, Darkvision 120 ft.</description>
+		</sheet>
+	</element>
+	<element name="Fleshknit Phosphate" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_FLESHKNIT_PHOSPHATE">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 1 minute, you regain Hit Points equal to your Proficiency Bonus at the start of each of your turns if you have at least 1 Hit Point.</p>
+		</description>
+		<sheet>
+			<description>For 1 min, regain {{proficiency}} HP at start of turn (if &gt;0 HP).</description>
+		</sheet>
+	</element>
+	<element name="Ironmind Injection" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_IRONMIND_INJECTION">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 1 hour, you have Advantage on saving throws to avoid or end the Charmed or Frightened condition.</p>
+		</description>
+		<sheet>
+			<description>For 1 hr, Advantage on saves vs Charmed/Frightened.</description>
+		</sheet>
+	</element>
+	<element name="Liquid Courage" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_LIQUID_COURAGE">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain Temporary Hit Points equal to twice your Fighter level plus your Constitution modifier. If any of these Temporary Hit Points remain after 1 minute, they vanish.</p>
+		</description>
+		<sheet>
+			<description>Gain {{liquid courage:thp}} THP (vanish after 1 min).</description>
+		</sheet>
+		<rules>
+			<stat name="liquid courage:thp" value="level:fighter" />
+			<stat name="liquid courage:thp" value="level:fighter" />
+			<stat name="liquid courage:thp" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Liquid Rage" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_LIQUID_RAGE">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 1 minute, your attacks with weapons and Unarmed Strikes deal an extra 1d4 damage on hit.</p>
+		</description>
+		<sheet>
+			<description>For 1 min, weapon/Unarmed Strikes deal +1d4 damage.</description>
+		</sheet>
+	</element>
+	<element name="Presto Powder" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_PRESTO_POWDER">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 10 minutes, you have Advantage on Initiative rolls and you can take the Dash or Disengage action as a Bonus Action.</p>
+		</description>
+		<sheet>
+			<description>For 10 mins, Advantage on Initiative, and Dash/Disengage as Bonus Action.</description>
+		</sheet>
+	</element>
+	<element name="Spellshine Ointment" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_SPELLSHINE_OINTMENT">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 1 minute, you have Resistance to Force, Necrotic, Psychic, and Radiant damage.</p>
+		</description>
+		<sheet>
+			<description>For 1 min, Resist Force, Necrotic, Psychic, Radiant damage.</description>
+		</sheet>
+	</element>
+	<element name="Steelskin Ointment" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_STEELSKIN_OINTMENT">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 1 minute, you have Resistance to Bludgeoning, Piercing, and Slashing damage.</p>
+		</description>
+		<sheet>
+			<description>For 1 min, Resist Bludgeoning, Piercing, Slashing damage.</description>
+		</sheet>
+	</element>
+	<element name="Tenmen Tincture" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_COMPOUND_TENMEN_TINCTURE">
+		<supports>Crucible Compound</supports>
+		<compendium display="false" />
+		<description>
+			<p>For 1 hour, you count as one size larger when determining your carrying capacity, and when you attack with a Melee weapon whose mastery property you can use, you can replace that property with the Topple property for that attack.</p>
+		</description>
+		<sheet>
+			<description>For 1 hr, count as 1 size larger for carrying capacity, and can replace Melee weapon mastery with Topple.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Student of Alchemy" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_STUDENT_OF_ALCHEMY">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_CRUCIBLE_STUDENT_OF_ALCHEMY</requirements>
+		<description>
+			<p>You gain Alchemist's Supplies, and you have proficiency with it. In addition, your Proficiency Bonus is doubled for ability checks with Alchemist's Supplies.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+			<grant type="Grants" id="ID_INTERNAL_PROFICIENCY_TOOL_EXPERTISE_ALCHEMISTS_SUPPLIES" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Living Cauldron" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_LIVING_CAULDRON">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_CRUCIBLE_LIVING_CAULDRON</requirements>
+		<description>
+			<p>The number of compounds you can safely consume increases to three plus your Constitution modifier (minimum one).</p>
+			<p class="indent">At Fighter level 18, the number of compounds you can safely consume increases to five plus your Constitution modifier (minimum one).</p>
+		</description>
+		<sheet display="false" />
+        <rules>
+			<stat name="compound creator:usage" value="2" />            
+			<stat name="compound creator:usage" value="2" level="18" />
+        </rules>
+	</element>
+
+	<element name="Level 10: Rapid Consumption" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_RAPID_CONSUMPTION">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_CRUCIBLE_RAPID_CONSUMPTION</requirements>
+		<description>
+			<p>When you use a Bonus Action to drink a compound, you can drink a second compound.</p>
+		</description>
+		<sheet alt="Rapid Consumption">
+			<description>When you use a Bonus Action to drink a compound, you can drink a second compound.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Toxin Transmutation" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_TOXIN_TRANSMUTATION">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_CRUCIBLE_TOXIN_TRANSMUTATION</requirements>
+		<description>
+			<p>You have Resistance to Poison damage. Also, as a Bonus Action, you can end the Poisoned condition on yourself.</p>
+			<p class="indent">When you end the Poisoned condition on yourself in this way, you can choose to gain Temporary Hit Points equal to your Fighter level. You regain the ability to gain these Temporary Hit Points after completing a Long Rest.</p>
+		</description>
+		<sheet alt="Toxin Transmutation" action="Bonus Action">
+			<description>You can end the Poisoned condition on yourself. Once per Long Rest, when you do so, you can gain {{level:fighter}} THP.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+
+	<element name="Level 18: Living Catalyst" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_CRUCIBLE_LIVING_CATALYST">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_CRUCIBLE_LIVING_CATALYST</requirements>
+		<description>
+			<p>When you finish a Long Rest, you can replace one compound you know with another one.</p>
+		</description>
+		<sheet alt="Living Catalyst">
+			<description>When you finish a Long Rest, you can replace one compound you know with another one.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Compound Creator Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_CRUCIBLE_COMPOUND_CREATOR" />
+	<element name="Student of Alchemy Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_CRUCIBLE_STUDENT_OF_ALCHEMY" />
+	<element name="Living Cauldron Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_CRUCIBLE_LIVING_CAULDRON" />
+	<element name="Rapid Consumption Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_CRUCIBLE_RAPID_CONSUMPTION" />
+	<element name="Toxin Transmutation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_CRUCIBLE_TOXIN_TRANSMUTATION" />
+	<element name="Living Catalyst Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_CRUCIBLE_LIVING_CATALYST" />
+
+</elements>

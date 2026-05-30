@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Advanced Weapon Mastery Features</name>
+		<description>Advanced Weapon Mastery Features from the Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="weapon-masteries.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Setting/weapon-masteries.xml" />
+		</update>
+	</info>
+
+	<element name="Brutal" type="Weapon Property" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_PROPERTY_BRUTAL">
+		<description>
+			<p>A Brutal weapon is designed for maximum damage. Brutal weapons score Critical Hits on a natural roll of 19 or 20. If your Critical Range is already increased, instead increase it by 1 point (such as from 19-20 to 18-20). When you score a Critical Hit with a Brutal weapon against a creature, the weapon deals one additional die of damage.</p>
+		</description>
+	</element>
+
+	<element name="Defending" type="Weapon Property" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_PROPERTY_DEFENDING">
+		<description>
+			<p>A Defending weapon is either made for parrying, has advanced techniques for use in parrying, or both. When wielding a Defending weapon, you may use your Reaction when you are hit by a melee attack roll. Roll 1d4 and add the result to your AC, including against the triggering attack.</p>
+		</description>
+	</element>
+
+	<element name="Disarming" type="Weapon Property" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_PROPERTY_DISARMING">
+		<description>
+			<p>A Disarming weapon can catch a foe’s weapon, allowing you to remove it from their grasp. When you take the Attack action on your turn and hit with a Disarming weapon, you can use your Bonus Action later on the same turn to disarm the target. Both you and the attacker must make opposed attack rolls, ignoring any sources of Advantage and Disadvantage. If your result is higher and the weapon is something the target can drop, the weapon falls from the target’s grasp, landing in its space.</p>
+			<p class="indent">If your winning result on the opposed attack roll was a Critical Hit, you can choose for the weapon either to land in a space of your choice up to 15 feet from the target, or to land in your hand if you have a free hand.</p>
+		</description>
+	</element>
+
+	<element name="Entangling" type="Weapon Property" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_PROPERTY_ENTANGLING">
+		<description>
+			<p>When you take the Attack action on your turn and hit with an Entangling weapon, you can use a Bonus Action later on the same turn to entangle the target. The target must succeed on a Dexterity saving throw (DC 10 plus your Proficiency Bonus) or have the Grappled condition until it escapes or until you release the weapon. The target succeeds automatically if it is Huge or larger.</p>
+			<p class="indent">To escape, the target must use an action to make a Strength (Athletics) or Dexterity (Acrobatics) check against the same DC. On a success, the target no longer has the Grappled condition. While a creature is Grappled by this weapon, you can't use it to attack a different creature.</p>
+		</description>
+	</element>
+
+	<element name="Returning" type="Weapon Property" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_PROPERTY_RETURNING">
+		<description>
+			<p>A Returning weapon allows you to hurl the weapon in such a way that it returns to you. When you make a ranged attack with a Returning weapon, the weapon returns to you immediately after hitting or missing the target. You can catch the weapon if you have a hand free to do so.</p>
+		</description>
+	</element>
+
+	<element name="Scatter" type="Weapon Property" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_PROPERTY_SCATTER">
+		<description>
+			<p>Scatter weapons can devastate multiple enemies at once. When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon’s scatter range from the target’s space (or one square the creature occupies if it is Large or larger). Creatures other than the original target that fall within the weapon’s scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2). This damage is of the same type you dealt to the original target.</p>
+		</description>
+	</element>
+
+	<element name="Set" type="Weapon Property" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_PROPERTY_SET">
+		<description>
+			<p>Weapons with the Set property allow you to prepare for an oncoming attack. If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target.</p>
+		</description>
+	</element>
+
+	<element name="Strong-Draw" type="Weapon Property" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_PROPERTY_STRONG_DRAW">
+		<description>
+			<p>A weapon with the Strong-Draw quality requires great strength to use. You have Disadvantage on attack rolls with a Strong-Draw weapon unless your Strength is 13 or higher. You add both your Strength and Dexterity modifiers to damage with a Strong-Draw weapon.</p>
+		</description>
+	</element>
+
+	<element name="Swift" type="Weapon Property" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_PROPERTY_SWIFT">
+		<description>
+			<p>Swift weapons help you recover quickly from missed attacks. When you miss with a Swift weapon, you have Advantage on the first attack roll you make with the weapon against the same target before the end of your next turn. If that attack hits, it also deals an extra 1d4 damage of the weapon’s normal damage type.</p>
+		</description>
+	</element>
+
+
+
+	<!-- Weapon Class Features -->
+	<!-- Melee Weapons -->
+	<element name="Catchpole (Entangling)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_CATCHPOLE_ENTANGLING">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CATCHPOLE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action on your turn and hit with an Entangling weapon, you can use a Bonus Action later on the same turn to entangle the target. The target must succeed on a Dexterity saving throw (DC 10 + PB) or have the Grappled condition until it escapes or until you release the weapon. The target succeeds automatically if it is Huge or larger. To escape, the target must use an action to make a Strength (Athletics) or Dexterity (Acrobatics) check against the same DC. On a success, the target no longer has the Grappled condition. While a creature is Grappled by this weapon, you can't use it to attack a different creature.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you hit, you can entangle the target. The target must succeed on a Dex save (DC 10 + PB) or be Grappled.</description>
+		</sheet>
+	</element>
+	<element name="Cavalry Flail (Swift)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_CAVALRY_FLAIL_SWIFT">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CAVALRY_FLAIL</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you miss with a Swift weapon, you have Advantage on the first attack roll you make with the weapon against the same target before the end of your next turn. If that attack hits, it also deals an extra 1d4 damage of the weapon’s normal damage type.</p>
+		</description>
+		<sheet>
+			<description>When you miss, you gain Advantage on the first attack roll against the same target before the end of your next turn. If it hits, it deals an extra 1d4 damage.</description>
+		</sheet>
+	</element>
+	<element name="Cavalry Hammer (Slow)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_CAVALRY_HAMMER_SLOW">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CAVALRY_HAMMER</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+		</description>
+		<sheet>
+			<description>On a hit, you can reduce the target's Speed by 10 feet until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Cavalry Pick (Sap)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_CAVALRY_PICK_SAP">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CAVALRY_PICK</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>On a hit, the target has Disadvantage on its next attack roll before the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Chakram (Returning)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_CHAKRAM_RETURNING">
+		<supports>Weapon Mastery, Martial, Melee, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you make a ranged attack with a Returning weapon, the weapon returns to you immediately after hitting or missing the target. You can catch the weapon if you have a hand free to do so.</p>
+		</description>
+		<sheet>
+			<description>When you make a ranged attack, the weapon returns to you immediately after the attack.</description>
+		</sheet>
+	</element>
+	<element name="Claymore (Brutal)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_CLAYMORE_BRUTAL">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CLAYMORE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Brutal weapons score Critical Hits on a natural roll of 19 or 20. If your Critical Range is already increased, instead increase it by 1 point (such as from 19-20 to 18-20). When you score a Critical Hit with a Brutal weapon against a creature, the weapon deals one additional die of damage.</p>
+		</description>
+		<sheet>
+			<description>This weapon scores a critical hit on a 19-20. On a critical hit, it deals one additional die of damage.</description>
+		</sheet>
+	</element>
+	<element name="Double Blade (Set)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_DOUBLE_BLADE_SET">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BLADE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a target enters your reach, make a melee attack against it.</description>
+		</sheet>
+	</element>
+	<element name="Double Spear (Set)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_DOUBLE_SPEAR_SET">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_SPEAR</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a target enters your reach, make a melee attack against it.</description>
+		</sheet>
+	</element>
+	<element name="Elite Rapier (Swift)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_ELITE_RAPIER_SWIFT">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_ELITE_RAPIER</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you miss with a Swift weapon, you have Advantage on the first attack roll you make with the weapon against the same target before the end of your next turn. If that attack hits, it also deals an extra 1d4 damage of the weapon’s normal damage type.</p>
+		</description>
+		<sheet>
+			<description>When you miss, you gain Advantage on the first attack roll against the same target before the end of your next turn. If it hits, it deals an extra 1d4 damage.</description>
+		</sheet>
+	</element>
+	<element name="Fighting Chain (Disarming)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_FIGHTING_CHAIN_DISARMING">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action on your turn and hit with a Disarming weapon, you can use your Bonus Action later on the same turn to disarm the target. Both you and the attacker must make opposed attack rolls, ignoring any sources of Advantage and Disadvantage. If your result is higher and the weapon is something the target can drop, the weapon falls from the target’s grasp, landing in its space. If your winning result on the opposed attack roll was a Critical Hit, you can choose for the weapon either to land in a space of your choice up to 15 feet from the target, or to land in your hand if you have a free hand.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>After you hit with an attack, you can attempt to disarm the target (opposed attack roll).</description>
+		</sheet>
+	</element>
+	<element name="Fighting Chain, Brutal (Brutal)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_FIGHTING_CHAIN_BRUTAL_BRUTAL">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN_BRUTAL</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Brutal weapons score Critical Hits on a natural roll of 19 or 20. If your Critical Range is already increased, instead increase it by 1 point (such as from 19-20 to 18-20). When you score a Critical Hit with a Brutal weapon against a creature, the weapon deals one additional die of damage.</p>
+		</description>
+		<sheet>
+			<description>This weapon scores a critical hit on a 19-20. On a critical hit, it deals one additional die of damage.</description>
+		</sheet>
+	</element>
+	<element name="Fighting Chain, Hook (Entangling)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_FIGHTING_CHAIN_HOOK_ENTANGLING">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN_HOOK</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action on your turn and hit with an Entangling weapon, you can use a Bonus Action later on the same turn to entangle the target. The target must succeed on a Dexterity saving throw (DC 10 + PB) or have the Grappled condition until it escapes or until you release the weapon. The target succeeds automatically if it is Huge or larger. To escape, the target must use an action to make a Strength (Athletics) or Dexterity (Acrobatics) check against the same DC. On a success, the target no longer has the Grappled condition. While a creature is Grappled by this weapon, you can't use it to attack a different creature.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you hit, you can entangle the target. The target must succeed on a Dex save (DC 10 + PB) or be Grappled.</description>
+		</sheet>
+	</element>
+	<element name="Fighting Chain, Sickle (Entangling)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_FIGHTING_CHAIN_SICKLE_ENTANGLING">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN_SICKLE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action on your turn and hit with an Entangling weapon, you can use a Bonus Action later on the same turn to entangle the target. The target must succeed on a Dexterity saving throw (DC 10 + PB) or have the Grappled condition until it escapes or until you release the weapon. The target succeeds automatically if it is Huge or larger. To escape, the target must use an action to make a Strength (Athletics) or Dexterity (Acrobatics) check against the same DC. On a success, the target no longer has the Grappled condition. While a creature is Grappled by this weapon, you can't use it to attack a different creature.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you hit, you can entangle the target. The target must succeed on a Dex save (DC 10 + PB) or be Grappled.</description>
+		</sheet>
+	</element>
+	<element name="Gladiator Net (Entangling)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_GLADIATOR_NET_ENTANGLING">
+		<supports>Weapon Mastery, Martial, Melee, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_GLADIATOR_NET</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action on your turn and hit with an Entangling weapon, you can use a Bonus Action later on the same turn to entangle the target. The target must succeed on a Dexterity saving throw (DC 10 + PB) or have the Grappled condition until it escapes or until you release the weapon. The target succeeds automatically if it is Huge or larger. To escape, the target must use an action to make a Strength (Athletics) or Dexterity (Acrobatics) check against the same DC. On a success, the target no longer has the Grappled condition. While a creature is Grappled by this weapon, you can't use it to attack a different creature.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>When you hit, you can entangle the target. The target must succeed on a Dex save (DC 10 + PB) or be Grappled.</description>
+		</sheet>
+	</element>
+	<element name="Guardian Poleaxe (Set)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_GUARDIAN_POLEAXE_SET">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_GUARDIAN_POLEAXE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a target enters your reach, make a melee attack against it.</description>
+		</sheet>
+	</element>
+	<element name="Knightly Lance (Set)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_KNIGHTLY_LANCE_SET">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_KNIGHTLY_LANCE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a target enters your reach, make a melee attack against it.</description>
+		</sheet>
+	</element>
+	<element name="Knightly Sword (Defending)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_KNIGHTLY_SWORD_DEFENDING">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_KNIGHTLY_SWORD</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When wielding a Defending weapon, you may use your Reaction when you are hit by a melee attack roll. Roll 1d4 and add the result to your AC, including against the triggering attack.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When hit by a melee attack, add 1d4 to your AC against that attack.</description>
+		</sheet>
+	</element>
+	<element name="Military Fork (Disarming)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_MILITARY_FORK_DISARMING">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_MILITARY_FORK</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action on your turn and hit with a Disarming weapon, you can use your Bonus Action later on the same turn to disarm the target. Both you and the attacker must make opposed attack rolls, ignoring any sources of Advantage and Disadvantage. If your result is higher and the weapon is something the target can drop, the weapon falls from the target’s grasp, landing in its space. If your winning result on the opposed attack roll was a Critical Hit, you can choose for the weapon either to land in a space of your choice up to 15 feet from the target, or to land in your hand if you have a free hand.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>After you hit with an attack, you can attempt to disarm the target (opposed attack roll).</description>
+		</sheet>
+	</element>
+	<element name="Parrying Dagger (Disarming)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_PARRYING_DAGGER_DISARMING">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_PARRYING_DAGGER</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action on your turn and hit with a Disarming weapon, you can use your Bonus Action later on the same turn to disarm the target. Both you and the attacker must make opposed attack rolls, ignoring any sources of Advantage and Disadvantage. If your result is higher and the weapon is something the target can drop, the weapon falls from the target’s grasp, landing in its space. If your winning result on the opposed attack roll was a Critical Hit, you can choose for the weapon either to land in a space of your choice up to 15 feet from the target, or to land in your hand if you have a free hand.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>After you hit with an attack, you can attempt to disarm the target (opposed attack roll).</description>
+		</sheet>
+	</element>
+	<element name="Polearm (Set)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_POLEARM_SET">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_POLEARM</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a target enters your reach, make a melee attack against it.</description>
+		</sheet>
+	</element>
+	<element name="Punching Dagger (Defending)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_PUNCHING_DAGGER_DEFENDING">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_PUNCHING_DAGGER</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When wielding a Defending weapon, you may use your Reaction when you are hit by a melee attack roll. Roll 1d4 and add the result to your AC, including against the triggering attack.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When hit by a melee attack, add 1d4 to your AC against that attack.</description>
+		</sheet>
+	</element>
+	<element name="Returning Club (Returning)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_RETURNING_CLUB_RETURNING">
+		<supports>Weapon Mastery, Martial, Melee, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_RETURNING_CLUB</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you make a ranged attack with a Returning weapon, the weapon returns to you immediately after hitting or missing the target. You can catch the weapon if you have a hand free to do so.</p>
+		</description>
+		<sheet>
+			<description>When you make a ranged attack, the weapon returns to you immediately after the attack.</description>
+		</sheet>
+	</element>
+	<element name="Sabre (Swift)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_SABRE_SWIFT">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_SABRE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you miss with a Swift weapon, you have Advantage on the first attack roll you make with the weapon against the same target before the end of your next turn. If that attack hits, it also deals an extra 1d4 damage of the weapon’s normal damage type.</p>
+		</description>
+		<sheet>
+			<description>When you miss, you gain Advantage on the first attack roll against the same target before the end of your next turn. If it hits, it deals an extra 1d4 damage.</description>
+		</sheet>
+	</element>
+	<element name="Sheathed Staff (Topple)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_SHEATHED_STAFF_TOPPLE">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_SHEATHED_STAFF</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.</p>
+		</description>
+		<sheet>
+			<description>On a hit, you can force a target to make a Con save (DC 8 + attack mod + PB) or be knocked Prone.</description>
+		</sheet>
+	</element>
+	<element name="Side-handle Baton (Swift)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_SIDE_HANDLE_BATON_SWIFT">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_SIDE_HANDLE_BATON</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you miss with a Swift weapon, you have Advantage on the first attack roll you make with the weapon against the same target before the end of your next turn. If that attack hits, it also deals an extra 1d4 damage of the weapon’s normal damage type.</p>
+		</description>
+		<sheet>
+			<description>When you miss, you gain Advantage on the first attack roll against the same target before the end of your next turn. If it hits, it deals an extra 1d4 damage.</description>
+		</sheet>
+	</element>
+	<element name="Wrath Axe (Brutal)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_WRATH_AXE_BRUTAL">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_WRATH_AXE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Brutal weapons score Critical Hits on a natural roll of 19 or 20. If your Critical Range is already increased, instead increase it by 1 point (such as from 19-20 to 18-20). When you score a Critical Hit with a Brutal weapon against a creature, the weapon deals one additional die of damage.</p>
+		</description>
+		<sheet>
+			<description>This weapon scores a critical hit on a 19-20. On a critical hit, it deals one additional die of damage.</description>
+		</sheet>
+	</element>
+	<element name="Wrath Maul (Brutal)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_WRATH_MAUL_BRUTAL">
+		<supports>Weapon Mastery, Martial, Melee</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_WRATH_MAUL</requirements>
+		<compendium display="false" />
+		<description>
+			<p>Brutal weapons score Critical Hits on a natural roll of 19 or 20. If your Critical Range is already increased, instead increase it by 1 point (such as from 19-20 to 18-20). When you score a Critical Hit with a Brutal weapon against a creature, the weapon deals one additional die of damage.</p>
+		</description>
+		<sheet>
+			<description>This weapon scores a critical hit on a 19-20. On a critical hit, it deals one additional die of damage.</description>
+		</sheet>
+	</element>
+
+	<!-- Ranged Weapons -->
+	<element name="Arbalest (Strong-Draw)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_ARBALEST_STRONG_DRAW">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_ARBALEST</requirements>
+		<compendium display="false" />
+		<description>
+			<p>A weapon with the Strong-Draw quality requires great strength to use. You have Disadvantage on attack rolls with a Strong-Draw weapon unless your Strength is 13 or higher. You add both your Strength and Dexterity modifiers to damage with a Strong-Draw weapon.</p>
+		</description>
+		<sheet>
+			<description>Requires STR 13+, or attacks have Disadvantage. Add both STR and DEX modifiers to damage.</description>
+		</sheet>
+	</element>
+	<element name="Blackpowder Pistol (Vex)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_BLACKPOWDER_PISTOL_VEX">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLACKPOWDER_PISTOL</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>If you hit and deal damage, you have Advantage on your next attack roll against that creature before the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Blackpowder Rifle (Slow)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_BLACKPOWDER_RIFLE_SLOW">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLACKPOWDER_RIFLE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+		</description>
+		<sheet>
+			<description>On a hit, you can reduce the target's Speed by 10 feet until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Blunderbuss (Scatter)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_BLUNDERBUSS_SCATTER">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon’s scatter range (10 ft.) from the target’s space. Creatures other than the original target that fall within the weapon’s scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2).</p>
+		</description>
+		<sheet>
+			<description>On a hit, other creatures within 10 ft. of the target take 1 + DEX mod damage (min 2).</description>
+		</sheet>
+	</element>
+	<element name="Blunderbuss, Hand (Scatter)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_BLUNDERBUSS_HAND_SCATTER">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS_HAND</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon’s scatter range (5 ft.) from the target’s space. Creatures other than the original target that fall within the weapon’s scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2).</p>
+		</description>
+		<sheet>
+			<description>On a hit, other creatures within 5 ft. of the target take 1 + DEX mod damage (min 2).</description>
+		</sheet>
+	</element>
+	<element name="Composite Longbow (Strong-Draw)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_COMPOSITE_LONGBOW_STRONG_DRAW">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_COMPOSITE_LONGBOW</requirements>
+		<compendium display="false" />
+		<description>
+			<p>A weapon with the Strong-Draw quality requires great strength to use. You have Disadvantage on attack rolls with a Strong-Draw weapon unless your Strength is 13 or higher. You add both your Strength and Dexterity modifiers to damage with a Strong-Draw weapon.</p>
+		</description>
+		<sheet>
+			<description>Requires STR 13+, or attacks have Disadvantage. Add both STR and DEX modifiers to damage.</description>
+		</sheet>
+	</element>
+	<element name="Composite Shortbow (Strong-Draw)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_COMPOSITE_SHORTBOW_STRONG_DRAW">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_COMPOSITE_SHORTBOW</requirements>
+		<compendium display="false" />
+		<description>
+			<p>A weapon with the Strong-Draw quality requires great strength to use. You have Disadvantage on attack rolls with a Strong-Draw weapon unless your Strength is 13 or higher. You add both your Strength and Dexterity modifiers to damage with a Strong-Draw weapon.</p>
+		</description>
+		<sheet>
+			<description>Requires STR 13+, or attacks have Disadvantage. Add both STR and DEX modifiers to damage.</description>
+		</sheet>
+	</element>
+	<element name="Dragon Pistol (Scatter)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_DRAGON_PISTOL_SCATTER">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DRAGON_PISTOL</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon’s scatter range (5 ft.) from the target’s space. Creatures other than the original target that fall within the weapon’s scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2).</p>
+		</description>
+		<sheet>
+			<description>On a hit, other creatures within 5 ft. of the target take 1 + DEX mod damage (min 2).</description>
+		</sheet>
+	</element>
+	<element name="Dragon Rifle (Scatter)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_DRAGON_RIFLE_SCATTER">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DRAGON_RIFLE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon’s scatter range (10 ft.) from the target’s space. Creatures other than the original target that fall within the weapon’s scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2).</p>
+		</description>
+		<sheet>
+			<description>On a hit, other creatures within 10 ft. of the target take 1 + DEX mod damage (min 2).</description>
+		</sheet>
+	</element>
+	<element name="Flame Bellows (Scatter)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_FLAME_BELLOWS_SCATTER">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FLAME_BELLOWS</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon’s scatter range (10 ft.) from the target’s space. Creatures other than the original target that fall within the weapon’s scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2).</p>
+		</description>
+		<sheet>
+			<description>On a hit, other creatures within 10 ft. of the target take 1 + DEX mod damage (min 2).</description>
+		</sheet>
+	</element>
+	<element name="Repeater Crossbow (Slow)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_REPEATER_CROSSBOW_SLOW">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_CROSSBOW</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+		</description>
+		<sheet>
+			<description>On a hit, you can reduce the target's Speed by 10 feet until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Repeater Crossbow, Hand (Vex)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_REPEATER_CROSSBOW_HAND_VEX">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_CROSSBOW_HAND</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>If you hit and deal damage, you have Advantage on your next attack roll against that creature before the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Repeater Crossbow, Heavy (Push)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_REPEATER_CROSSBOW_HEAVY_PUSH">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_CROSSBOW_HEAVY</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.</p>
+		</description>
+		<sheet>
+			<description>On a hit, you can push the target up to 10 feet away.</description>
+		</sheet>
+	</element>
+	<element name="Repeater Needler (Vex)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_REPEATER_NEEDLER_VEX">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_NEEDLER</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+		</description>
+		<sheet>
+			<description>If you hit and deal damage, you have Advantage on your next attack roll against that creature before the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Repeater Slinger (Slow)" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MASTERY_PROPERTY_REPEATER_SLINGER_SLOW">
+		<supports>Weapon Mastery, Martial, Ranged</supports>
+		<requirements>ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_SLINGER</requirements>
+		<compendium display="false" />
+		<description>
+			<p>If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+		</description>
+		<sheet>
+			<description>On a hit, you can reduce the target's Speed by 10 feet until the start of your next turn.</description>
+		</sheet>
+	</element>
+	
+</elements>

@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Advanced Weapons and Equipment</name>
+		<description>Items, Gear, and Ammunition from Grim Hollow: Player's Guide (2025).</description>
+		<update version="0.0.1">
+			<file name="items-equipment.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Setting/items-equipment.xml" />
+		</update>
+	</info>
+
+	<!-- Adventuring Gear -->
+	<element name="Blessed Stake" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_BLESSED_STAKE">
+		<description>
+			<p>A Blessed Stake is a necessary tool in the arsenal of vampire hunters everywhere. This wooden spike, roughly a foot in length, has been blessed by a servant of an Arch Seraph in a special ceremony.</p>
+			<p class="indent">As an Attack action, a wielder can make a melee attack using Strength. Against most foes, this deals 1d4 Piercing damage. Against a Vampire that has the Stunned or Incapacitated condition, a successful attack with the Blessed Stake kills the Vampire.</p>
+			<p class="indent">If the Vampire is CR 10 or lower, the Vampire instantly crumbles to dust. If the Vampire is more powerful, its form remains whole for one year before crumbling to dust. If the Blessed Stake is removed before then, the Vampire rises with 1 Hit Point.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Breath of Beleth" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_BREATH_OF_BELETH">
+		<description>
+			<p>Named after the Arch Daemon of Fear, this poison creates an extremely powerful hallucinogenic effect that evokes a victim’s worst fears. The poison is airborne, and victims need only breathe it in to suffer its effects. On the rare occasions it has been used, people in crammed rooms have jumped out of windows or even killed each other out of abject fear.</p>
+			<p class="indent">Rumors say that the poison has been forbidden even by the Ebon Syndicate, deeming it too dangerous, too extravagant, and too conspicuous. Chances are that such a powerful substance wasn’t simply abandoned, however, and other rumors say the Ebon Syndicate still uses a milder version during interrogation.</p>
+			<p class="indent"><strong>Breath of Beleth (Inhaled).</strong> A creature who breathes and is in the same space as an open container of the substance must succeed at a DC 15 Constitution saving throw or have the Poisoned condition for 1 minute.</p>
+			<p class="indent">While Poisoned in this way, a creature has the Frightened condition, and it is Hostile to all creatures it can see. If a creature moves within 5 feet of a creature Poisoned in this way, the Poisoned creature must use the Dash action on its turn to move away. If it cannot move away, it must instead use the Attack action against the adjacent creature.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="0.25">1/4 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Buckler" type="Shield" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_SHIELD_BUCKLER">
+		<description>
+			<p>This small shield is worn on the forearm. While worn, it gives you +1 to AC, and it can be used as a Martial Melee weapon with the Light property that deals 1d4 Bludgeoning damage.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="type">Shield</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="4">4 lbs.</set>
+			<set name="armor-class">1</set>
+		</setters>
+	</element>
+
+	<element name="Concealed Blade" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_CONCEALED_BLADE">
+		<description>
+			<p>A Concealed Blade is a dagger built into a mechanism hidden within a bracer or gauntlet. When you roll Initiative, you can make a Dexterity (Deception) check opposed by others’ Wisdom (Perception) checks. You have Advantage on the first attack made in the first round of combat against any enemy who failed their check.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="type">Simple Weapon</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="2">2 lbs.</set>
+			<set name="damage">1d4</set>
+			<set name="damage type">Piercing</set>
+			<set name="properties">Finesse, Light, Thrown, Range (20/60)</set>
+		</setters>
+	</element>
+
+	<element name="Fire Bomb" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_FIRE_BOMB">
+		<description>
+			<p>You can throw a Fire Bomb by using an Attack action. Target one space you can see within 20 feet. A creature in this space must make on a DC 15 Dexterity saving throw. On a failed save, a creature in that space takes 2d6 Slashing damage and 4d6 Fire damage and starts Burning. Creatures adjacent to the attacked space take half that damage and are not Burning.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="0.5">1/2 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Grappling Gun" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_GRAPPLING_GUN">
+		<description>
+			<p>A Grappling Gun can shoot a Grappling Hook attached to a rope up to 150 feet, and the hook catches with a successful DC 10 Dexterity (Acrobatics) check.</p>
+			<p class="indent">Additionally, if you are falling, you can use a Reaction to shoot the Grappling Gun at an attachable surface to stop your fall. You still must succeed on the check to ensure the Grappling Hook catches on a solid object. On a successful check, you stop your fall.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="3">3 lbs.</set>
+		</setters>
+	</element>
+
+	<element name="Hunter’s Armor Upgrade" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_HUNTERS_ARMOR_UPGRADE">
+		<description>
+			<p>Hunter’s Armor is a favorite of monster hunters across the length and breadth of Etharis. Any type of armor can be constructed as Hunter’s Armor by paying the listed extra cost. This reinforces the most vital areas with adamantine and mithral threads to turn devastating hits into normal wounds.</p>
+			<p class="indent">If a blow would cause a Grievous Wound, roll a d20. On an 11 or higher, the blow does not deliver a Grievous Wound.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Iron Net" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_IRON_NET">
+		<description>
+			<p>This net is comprised of tiny interlocking iron rings. It acts as a normal Net, with the following changes:</p>
+			<ul>
+				<li>The Iron Net’s range is 10 feet.</li>
+				<li>The DC of the Strength (Athletics) check to escape is 15.</li>
+				<li>The Iron Net has AC 13 and 15 HP.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">150</set>
+			<set name="weight" lb="20">20 lbs.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Mastercraft Instrument Upgrade" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_MASTERCRAFT_INSTRUMENT_UPGRADE">
+		<description>
+			<p>These musical instruments are not just the work of the finest luthiers and artisans in Etharis, they have secret embellishments and innovations that can add to a musical performance.</p>
+			<p class="indent">If you are proficient in the instrument and have a Proficiency Bonus of at least +4, all Charisma (Performance) checks made using a Mastercraft Instrument have Advantage.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="0">—</set>
+		</setters>
+	</element>
+
+	<element name="Noisemaker" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_NOISEMAKER">
+		<description>
+			<p>This small mechanical device is a specialty of gnomish crafters. As a Utilize action, you can throw the Noisemaker into a space within 60 feet. When it lands, it makes a loud noise of some kind, depending on the whims of the creator: a musical clash, a whistling, a whirring, a buzzing, etc. This noise can be heard up to half a mile away.</p>
+			<p class="indent">A creature with an Intelligence score of 3 or less that is within 60 feet of the device when it goes off must succeed in a DC 10 Wisdom saving throw. On a failed save, the creature has the Frightened condition for one minute. As an Influence action, another creature who the Frightened creature can see or hear can attempt a DC 20 Wisdom (Handle Animal) or Charisma (Persuasion) check. On a success, the Frightened condition ends on that creature.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="5">5 lbs.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Prosthetic" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_PROSTHETIC">
+		<description>
+			<p>The brutal warfare and vicious monsters prevalent across Etharis leave many with Grievous Wounds, including missing limbs and other potentially debilitating injuries. The engineers and crafters of the world have made great strides in helping those people deal with those injuries through Prosthetics.</p>
+			<p class="indent">When a creature with a Grievous Wound uses a Prosthetic, they ignore the penalties imposed by the Grievous Wound while wearing a Prosthetic that replaces the lost or wounded body part.</p>
+			<p class="indent">Some Prosthetics can be enchanted with magic, giving them even further powers. Rules for Magical Prosthetics can be found in the Grim Hollow Campaign Guide.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="10">10 lbs.</set>
+		</setters>
+	</element>
+
+	<element name="Retractable Shield" type="Shield" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_SHIELD_RETRACTABLE_SHIELD">
+		<description>
+			<p>This mechanized shield retracts into a bracer worn on the forearm. With a quick motion, it can be expanded just as an opponent believes they’ve snuck a blow.</p>
+			<p class="indent">You can wear the Retractable Shield as a bracer on your forearm, and it does not count as having that hand occupied while the shield is retracted. As a Reaction to an attack hitting you, you can extend the shield, giving you a bonus to your Armor Class equal to your Proficiency Bonus against that attack. If this changes the attack from a hit into a miss, you may make one melee attack with a weapon or an Unarmed Strike against the provoking creature if they are within reach. The shield remains extended until the start of your next turn.</p>
+			<p class="indent">As a free interaction with an object on your turn, you can either extend or retract the shield. While the shield is extended, it occupies your hand and confers a +2 bonus to your Armor Class.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="type">Shield</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="weight" lb="6">6 lbs.</set>
+			<!-- Base AC is effectively 0 when retracted, becomes +2 when extended -->
+			<set name="armor-class">0</set> 
+		</setters>
+	</element>
+
+	<element name="Seeing Glass" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_SEEING_GLASS">
+		<description>
+			<p>This ornate silver hand mirror is decorated with a motif of withered roses. The mirror’s reflection always shows the true form of any creature viewed in it as if the viewer had Truesight.</p>
+			<p class="indent">If the Seeing Glass is turned upon a vampire, the glass immediately shatters and is destroyed.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="weight" lb="3">3 lbs.</set>
+		</setters>
+	</element>
+
+	<element name="Shadowsteel Focus" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_SHADOWSTEEL_FOCUS">
+		<description>
+			<p>A Shadowsteel Focus is a Spellcasting Focus that contains some amount of Shadowsteel. Any Spellcasting Focus can be made as a Shadowsteel Focus.</p>
+			<p class="indent">There is no benefit to using a Shadowsteel Focus instead of a Spellcasting Focus; however, a spellcaster with the Shadowsteel Adept and Shadowsteel Master feats can gain the benefits associated with that feat when they use a Shadowsteel Focus.</p>
+		</description>
+		<setters>
+			<set name="category">Spellcasting Focus</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="container">Arcane Focus</set>
+			<set name="slot">onehand</set>
+		</setters>
+	</element>
+
+	<element name="Smoke Bomb" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_SMOKE_BOMB">
+		<description>
+			<p>As a Utilize action, you can throw this smoky glass vial to a space up to 30 feet away. When the vial breaks, the concoction creates a 10-foot-radius Sphere of smoke. The area is Heavily Obscured. The smoke lasts for 1d4 + 2 rounds, or half as long in a windy area.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="3">3 lbs.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Stitching Needle" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_STITCHING_NEEDLE">
+		<description>
+			<p>This black iron needle easily pierces the skin. If a creature’s mouth is sewn shut with a Stitching Needle, it loses the ability to speak and cast spells with verbal components. The creature gains the ability to communicate with telepathy out to a range of 60 feet.</p>
+			<p class="indent">Stitching the mouth of a willing, unconscious, or incapacitated creature takes 10 minutes. Removing the stitches takes 1 minute.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="0.05">1/20 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Tower Shield" type="Shield" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_SHIELD_TOWER_SHIELD">
+		<description>
+			<p>This large shield provides more protection than a typical shield. While wielding a Tower Shield, you gain +3 to Armor Class. If you use an action to set the Tower Shield, you have Three-Quarters Cover until the start of your next turn. Additionally, your Speed becomes 0 and cannot be increased during that time.</p>
+			<p class="indent">To wield a Tower Shield, you must have a Strength of at least 15 and your Speed is reduced by 10 feet while wielding the shield.</p>
+		</description>
+		<setters>
+			<set name="category">Armor</set>
+			<set name="type">Shield</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="weight" lb="50">50 lbs.</set>
+			<set name="armor-class">3</set>
+			<!-- Requirements like STR 15 are traditionally handled by the application logic if supported, or kept in the description -->
+		</setters>
+	</element>
+
+	<element name="Watcher’s Candle" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_WATCHERS_CANDLE">
+		<description>
+			<p>This black tapered candle cannot be lit. When a Celestial, Fey, Fiend, or Undead comes within 120 feet of the candle, its wick ignites and burns with a purple flame. Once the candle has ignited, it burns for one hour, and it cannot be used again. Watcher’s Candles cannot function if they are wrapped in packaging or stowed in a container.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="weight" lb="0.25">1/4 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!-- Ammunition: Arrows and Bolts -->
+	<element name="Arrow, Bludgeoning" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_ARROW_BLUDGEONING">
+		<description>
+			<p>A specialized arrow modified to deal bludgeoning damage.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">5</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bolt, Bludgeoning" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_BOLT_BLUDGEONING">
+		<description>
+			<p>A specialized bolt modified to deal bludgeoning damage.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">5</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Arrow, Ranging" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_ARROW_RANGING">
+		<description>
+			<p>An aerodynamic arrow built for extended ranges.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0.025">1/40 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bolt, Ranging" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_BOLT_RANGING">
+		<description>
+			<p>An aerodynamic bolt built for extended ranges.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0.025">1/40 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Arrow, Slashing" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_ARROW_SLASHING">
+		<description>
+			<p>A broadhead arrow designed to deal slashing damage.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bolt, Slashing" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_BOLT_SLASHING">
+		<description>
+			<p>A broadhead bolt designed to deal slashing damage.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Arrow, Whistling" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_ARROW_WHISTLING">
+		<description>
+			<p>An arrow hollowed to emit a loud whistle during flight, often used as a signal or a distraction.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0.05">1/20 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bolt, Whistling" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_BOLT_WHISTLING">
+		<description>
+			<p>A bolt hollowed to emit a loud whistle during flight, often used as a signal or a distraction.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0.05">1/20 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!-- Ammunition: Sling Bullets -->
+	<element name="Sling Bullet, Piercing" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_SLING_BULLET_PIERCING">
+		<description>
+			<p>A sharply cast or carved sling bullet meant to puncture armor.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">1</set>
+			<set name="weight" lb="0.1">1/10 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Sling Bullet, Ranging" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_SLING_BULLET_RANGING">
+		<description>
+			<p>An aerodynamic sling bullet designed for extended ranges.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">5</set>
+			<set name="weight" lb="0.05">1/20 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Sling Bullet, Whistling" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_SLING_BULLET_WHISTLING">
+		<description>
+			<p>A sling bullet hollowed to emit a loud whistle during flight, often used as a signal.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">5</set>
+			<set name="weight" lb="0.05">1/20 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!-- Ammunition: Other Ranged Ammunition -->
+	<element name="Bellows Cannister" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_BELLOWS_CANNISTER">
+		<description>
+			<p>Ammunition cannister for specific ranged weapons. This cannister provides enough supply for 20 shots.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="4">4 lbs.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Dragon Shot" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_DRAGON_SHOT">
+		<description>
+			<p>Specialized firearm ammunition.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">25</set> <!-- Calculated from 5 GP / 20 = 25 CP -->
+			<set name="weight" lb="0.1">1/10 lb.</set> <!-- Calculated from 2 lb / 20 -->
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Magazine" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_MAGAZINE">
+		<description>
+			<p>Ammunition feed for repeating firearms.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Paper Cartridge Bullet" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_PAPER_CARTRIDGE_BULLET">
+		<description>
+			<p>Standard firearm ammunition wrapped in a paper casing.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="cp">15</set> <!-- Calculated from 3 GP / 20 = 15 CP -->
+			<set name="weight" lb="0.1">1/10 lb.</set> <!-- Calculated from 2 lb / 20 -->
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!-- Ammunition: Alchemical Ammunition -->
+	<element name="Arrow, Alchemical" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_ARROW_ALCHEMICAL">
+		<description>
+			<p>An arrow tipped with a vial of unstable alchemical fluid.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="0.2">1/5 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bolt, Alchemical" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_BOLT_ALCHEMICAL">
+		<description>
+			<p>A bolt tipped with a vial of unstable alchemical fluid.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">75</set>
+			<set name="weight" lb="0.2">1/5 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Sling Bullet, Alchemical" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_SLING_BULLET_ALCHEMICAL">
+		<description>
+			<p>A sling bullet containing a vial of unstable alchemical fluid.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">55</set>
+			<set name="weight" lb="0.2">1/5 lb.</set>
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<!-- Ammunition: Specialized Ammunition -->
+	<element name="Arrow, Specialized" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_ARROW_SPECIALIZED">
+		<description>
+			<p>A mastercrafted arrow designed for specific monstrous vulnerabilities.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">20</set> <!-- Calculated from 100 GP / 5 = 20 GP -->
+			<set name="weight" lb="0.05">1/20 lb.</set> <!-- Calculated from 1/4 lb / 5 -->
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bolt, Specialized" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_BOLT_SPECIALIZED">
+		<description>
+			<p>A mastercrafted bolt designed for specific monstrous vulnerabilities.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">20</set> <!-- Calculated from 100 GP / 5 = 20 GP -->
+			<set name="weight" lb="0.1">1/10 lb.</set> <!-- Calculated from 1/2 lb / 5 -->
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Paper Cartridge Bullet, Specialized" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_PAPER_CARTRIDGE_BULLET_SPECIALIZED">
+		<description>
+			<p>A mastercrafted paper cartridge bullet designed for specific monstrous vulnerabilities.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">25</set> <!-- Calculated from 250 GP / 10 = 25 GP -->
+			<set name="weight" lb="0.05">1/20 lb.</set> <!-- Calculated from 1/2 lb / 10 -->
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Sling Bullet, Specialized" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_SLING_BULLET_SPECIALIZED">
+		<description>
+			<p>A mastercrafted sling bullet designed for specific monstrous vulnerabilities.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="gp">20</set> <!-- Calculated from 100 GP / 5 = 20 GP -->
+			<set name="weight" lb="0.1">1/10 lb.</set> <!-- Calculated from 1/2 lb / 5 -->
+			<set name="type">Ammunition</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+</elements>

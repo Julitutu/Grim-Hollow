@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Daemonologist</name>
+		<description>The Daemonologist subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="wizard-daemonologist.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/wizard-daemonologist.xml" />
+		</update>
+	</info>
+
+	<element name="Daemonologist" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_WIZARD_DAEMONOLOGIST">
+		<supports>Wizard Subclass</supports>
+		<description>
+			<p class="flavor">Steal Scraps of Divine and Infernal Power</p>
+			<p>Through theological study, or perhaps an induction into a secretive cabal, Daemonologists have learned to cast divine magic without the need for faith or bargains. Their spellbooks are scribed with prayer fragments and blasphemous hymns, enabling them to siphon scraps of power from both Arch Seraphs and Arch Daemons. From their heretical research, they've come to believe such otherworldly beings are two sides of the same divine kin.</p>
+			<p class="indent">Daemonology is rarely practiced. If the nature of their abilities is discovered, they risk being persecuted not only by superstitious folk but also by celestial and infernal powers.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DAEMONOLOGIST_FAIR_AND_FOUL" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DAEMONOLOGIST_STOLEN_SECRETS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DAEMONOLOGIST_BORROWED_TONGUES_AND_HIDES" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DAEMONOLOGIST_UNEARTHLY_COUNTENANCE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DAEMONOLOGIST_ETERNAL_WAR_ERUPTION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DAEMONOLOGIST_FAIR_AND_FOUL" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DAEMONOLOGIST_STOLEN_SECRETS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DAEMONOLOGIST_BORROWED_TONGUES_AND_HIDES" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DAEMONOLOGIST_UNEARTHLY_COUNTENANCE" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DAEMONOLOGIST_ETERNAL_WAR_ERUPTION" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Fair and Foul" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DAEMONOLOGIST_FAIR_AND_FOUL">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DAEMONOLOGIST_FAIR_AND_FOUL</requirements>
+		<description>
+			<p>The spells listed below can be added to your spellbook for no cost when you reach the associated level.</p>
+			<p class="indent">Each time you finish a Long Rest, choose whether you are siphoning power from Arch Daemons or Arch Seraphs. Consult the table below that corresponds to your choice; you can prepare the spells listed for your Wizard level and lower, but you can't prepare the ones for the opposite faction. For example, if you choose Arch Daemon as your siphoned power, you can't prepare the spells listed in the Arch Seraph section.</p>
+			<h5>Arch Daemon</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Wizard Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Bane, Toll the Dead</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Fear</em></td></tr>
+				<tr><td style="text-align:center">7</td><td><em>Dark Sacrament</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Geas</em></td></tr>
+			</table>
+			<h5>Arch Seraph</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Wizard Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Aid, Bless, Word of Radiance</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Revivify</em></td></tr>
+				<tr><td style="text-align:center">7</td><td><em>Guardian of Faith</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Greater Restoration</em></td></tr>
+			</table>
+		</description>
+		<sheet alt="Fair and Foul">
+			<description>When you finish a Long Rest, choose to siphon power from Arch Daemons or Arch Seraphs. You can prepare spells from the chosen list (but not the other) based on your level.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BANE" spellcasting="Wizard" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TOLL_THE_DEAD" spellcasting="Wizard" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FEAR" level="5" spellcasting="Wizard" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_DARK_SACRAMENT" level="7" spellcasting="Wizard" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GEAS" level="9" spellcasting="Wizard" />
+			
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AID" spellcasting="Wizard" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLESS" spellcasting="Wizard" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WORD_OF_RADIANCE" spellcasting="Wizard" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_REVIVIFY" level="5" spellcasting="Wizard" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GUARDIAN_OF_FAITH" level="7" spellcasting="Wizard" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREATER_RESTORATION" level="9" spellcasting="Wizard" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Stolen Secrets" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DAEMONOLOGIST_STOLEN_SECRETS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DAEMONOLOGIST_STOLEN_SECRETS</requirements>
+		<description>
+			<p>You have uncovered or stolen secret power from agents of the Arch Daemons and Arch Seraphs. You gain one Eldritch Invocation of your choice.</p>
+			<p class="indent"><strong><em>Prerequisites.</em></strong> If an invocation has a prerequisite, you must meet it to learn that invocation. If an invocation has a Warlock level prerequisite, you use your Wizard level instead. For example, if an invocation requires you to be a level 5+ Warlock, you can select the invocation once you reach Wizard level 5.</p>
+			<p class="indent"><strong><em>Replacing and Gaining Invocations.</em></strong> Whenever you gain a Wizard level, you can replace one of your invocations with another one for which you qualify. You can't replace an invocation if it's a prerequisite for another invocation that you have. You gain an additional invocation when you reach Wizard levels 6 and 14. You can't pick the same invocation more than once unless its description says otherwise.</p>
+			<p class="indent"><strong><em>Intelligent Invocations.</em></strong> You can use your Intelligence modifier instead of your Charisma modifier for your invocations.</p>
+		</description>
+		<sheet alt="Stolen Secrets">
+			<description>You learn Eldritch Invocations (using your Wizard level for prerequisites and Int modifier instead of Cha). You can replace one when you gain a Wizard level.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Eldritch Invocation (Stolen Secrets)" supports="PHB24 Eldritch Invocation||Eldritch Invocation||PHB24 Eldritch Invocation Wizard" />
+			<select type="Class Feature" name="Eldritch Invocation (Stolen Secrets)" supports="PHB24 Eldritch Invocation||Eldritch Invocation||PHB24 Eldritch Invocation Wizard" level="6" />
+			<select type="Class Feature" name="Eldritch Invocation (Stolen Secrets)" supports="PHB24 Eldritch Invocation||Eldritch Invocation||PHB24 Eldritch Invocation Wizard" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Borrowed Tongues and Hides" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DAEMONOLOGIST_BORROWED_TONGUES_AND_HIDES">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DAEMONOLOGIST_BORROWED_TONGUES_AND_HIDES</requirements>
+		<description>
+			<p>Your ability to siphon power from Celestials and Fiends is enhanced. You gain the following benefits.</p>
+			<p class="indent"><strong><em>Arch Daemon Boon.</em></strong> While you are siphoning power from Arch Daemons, you have Resistance to Necrotic damage. In addition, Fiends that know languages can understand your speech and you can understand theirs, even if you do not share a language.</p>
+			<p class="indent"><strong><em>Arch Seraph Boon.</em></strong> While you are siphoning power from Arch Seraphs, you have Resistance to Radiant damage. In addition, Celestials that know languages can understand your speech and you can understand theirs, even if you do not share a language.</p>
+			<p class="indent"><strong><em>Switch Sides.</em></strong> As a Bonus Action, you can change which power you are siphoning from. Once you switch, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Borrowed Tongues and Hides">
+			<description>While siphoning Arch Daemons: Resist Necrotic damage, can communicate with Fiends.&#13;
+			While siphoning Arch Seraphs: Resist Radiant damage, can communicate with Celestials.&#13;
+			Switch Sides (1/Long Rest): As a Bonus Action, change which power you siphon from.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Unearthly Countenance" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DAEMONOLOGIST_UNEARTHLY_COUNTENANCE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DAEMONOLOGIST_UNEARTHLY_COUNTENANCE</requirements>
+		<description>
+			<p>As a Bonus Action, you adopt an infernal or celestial countenance for 10 minutes. For the duration, your appearance gains aspects of the power you choose. You gain the following benefits.</p>
+			<p class="indent"><strong><em>Commanding Presence.</em></strong> You have Advantage on Charisma checks.</p>
+			<p class="indent"><strong><em>Improved Spells.</em></strong> When you expend a spell slot to cast a spell from the Arch Daemon or Arch Seraph table, the spell is cast as if you had spent a spell slot of one level higher.</p>
+			<p class="indent"><strong><em>Unearthly Wings.</em></strong> You gain a Fly Speed of 60 feet.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5+ spell slot (no action required).</p>
+		</description>
+		<sheet alt="Unearthly Countenance" action="Bonus Action" usage="1/Long Rest">
+			<description>Adopt an infernal/celestial form for 10 mins. Gain Advantage on Cha checks, Fly Speed 60 ft, and spells from the Arch Daemon/Seraph tables are cast as if using a spell slot 1 level higher. You can expend a 5th+ level spell slot to restore a use.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Eternal War Eruption" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DAEMONOLOGIST_ETERNAL_WAR_ERUPTION">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DAEMONOLOGIST_ETERNAL_WAR_ERUPTION</requirements>
+		<description>
+			<p>You use the powers at your command to call forth warring celestials and infernals. As a Magic action, you summon a manifestation of the war between Arch Daemons and Arch Seraphs in a 30-foot-radius Sphere centered on a point within 120 feet of yourself.</p>
+			<p class="indent">Each creature in the Sphere must make a Charisma saving throw against your spell save DC. On a failed save, a creature takes 4d10 Necrotic damage, 4d10 Radiant damage, and has the Blinded condition until the end of its next turn. On a successful save, a creature takes half as much damage only.</p>
+			<p class="indent">As part of the same action, you can change the power you are siphoning from, and you also regain 1 Wizard spell slot of your choice of 5th level or lower.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Eternal War Eruption" action="Action" usage="1/Long Rest">
+			<description>Summon a 30-ft Sphere within 120 ft. Creatures make a DC{{wizard:spellcasting:dc}} Cha save. Fail: 4d10 Necrotic + 4d10 Radiant damage and Blinded until end of its next turn. Success: Half damage. You can also change your siphoned power and regain one 5th-level or lower spell slot.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Fair and Foul Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DAEMONOLOGIST_FAIR_AND_FOUL" />
+	<element name="Stolen Secrets Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DAEMONOLOGIST_STOLEN_SECRETS" />
+	<element name="Borrowed Tongues and Hides Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DAEMONOLOGIST_BORROWED_TONGUES_AND_HIDES" />
+	<element name="Unearthly Countenance Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DAEMONOLOGIST_UNEARTHLY_COUNTENANCE" />
+	<element name="Eternal War Eruption Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DAEMONOLOGIST_ETERNAL_WAR_ERUPTION" />
+
+
+	<!-- Eldritch Invocations Without Requirements -->
+	<element name="Agonizing Blast" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_AGONIZING_BLAST">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_AGONIZING_BLAST</requirements>
+		<prerequisite>Level 2+ Warlock, a Warlock Cantrip That Deals Damage</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock, a Warlock Cantrip That Deals Damage</em></p>
+			<p>Choose one of your known Warlock cantrips that deals damage. You can add your Charisma modifier to that spell’s damage rolls.</p>
+			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<sheet>
+			<description>{{agonizing blast:count}} of your cantrips, chosen when you gain this Invocation, gain +{{intelligence:modifier}} bonus to damage.</description>
+		</sheet>
+		<rules>
+			<stat name="agonizing blast:count" value="1" />
+		</rules>
+	</element>
+
+	<element name="Ascendant Step" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_ASCENDANT_STEP">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:5],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ASCENDANT_STEP</requirements>
+		<prerequisite>Level 5+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 5+ Warlock</em></p>
+			<p>You can cast <i>Levitate</i> on yourself without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_LEVITATE" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast Levitate on yourself without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LEVITATE" />
+		</rules>
+	</element>
+
+	<element name="Devil’s Sight" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_DEVILS_SIGHT">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_DEVILS_SIGHT</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock</em></p>
+			<p>You can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself.</p>
+		</description>
+		<sheet>
+			<description>You can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself.</description>
+		</sheet>
+	</element>
+
+	<element name="Devouring Blade" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_DEVOURING_BLADE">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:12],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_THIRSTING_BLADE</requirements>
+		<prerequisite>Level 12+ Warlock, Thirsting Blade Invocation</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 12+ Warlock, Thirsting Blade Invocation</em></p>
+			<p>The Extra Attack of your Thirsting Blade invocation confers two extra attacks rather than one.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Eldritch Smite" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_ELDRITCH_SMITE">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>([level:wizard:5],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_BLADE),!ID_WOTC_XGTE_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SMITE</requirements>
+		<prerequisite>Level 5+ Warlock, Pact of the Blade</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 5+ Warlock, Pact of the Blade</em></p>
+			<p>Once per turn when you hit a creature with your pact weapon, you can expend a Pact Magic spell slot to deal an extra 1d8 Force damage to the target, plus another 1d8 per level of the spell slot, and you can give the target the Prone condition if it is Huge or smaller.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature with your pact weapon, you can expend a Spell slot to deal an extra 1d8 Force damage plus another 1d8 per level of the spell slot, and give the target the Prone condition if it is Huge or smaller.</description>
+		</sheet>
+	</element>
+
+	<element name="Eldritch Spear" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_ELDRITCH_SPEAR">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SPEAR</requirements>
+		<prerequisite>Level 2+ Warlock, a Warlock Cantrip That Deals Damage and has a Range of 10+ Feet</prerequisite>
+		<description>
+			<p><em>Level 2+ Warlock, a Warlock Cantrip That Deals Damage</em></p>
+			<p>Choose one of your known Warlock cantrips that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by a number of feet equal to 30 times your Warlock level.</p>
+			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
+		</description>
+		<sheet>
+			<description>{{eldritch spear:count}} of your cantrips, chosen when you gain this Invocation, gain extra {{eldritch spear:range}}ft. of range.</description>
+		</sheet>
+		<rules>
+			<!-- multiplication set -->
+			<stat name="eldritch spear:multiplication 1" value="level:wizard" />
+			<stat name="eldritch spear:multiplication 1" value="level:wizard" />
+			<stat name="eldritch spear:multiplication 1" value="level:wizard" />
+			<stat name="eldritch spear:multiplication 2" value="eldritch spear:multiplication 1" />
+			<stat name="eldritch spear:multiplication 2" value="eldritch spear:multiplication 1" />
+			<stat name="eldritch spear:multiplication 2" value="eldritch spear:multiplication 1" />
+			<stat name="eldritch spear:multiplication 2" value="eldritch spear:multiplication 1" />
+			<stat name="eldritch spear:multiplication 2" value="eldritch spear:multiplication 1" />
+			<stat name="eldritch spear:range" value="eldritch spear:multiplication 2" />
+			<stat name="eldritch spear:range" value="eldritch spear:multiplication 2" />
+
+			<stat name="eldritch spear:count" value="1" />
+		</rules>
+	</element>
+	<element name="Eldritch Spear" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_ELDRITCH_SPEAR_REPEATABLE">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_ELDRITCH_SPEAR</requirements>
+		<prerequisite>Level 2+ Warlock, a Warlock Cantrip That Deals Damage and has a Range of 10+ Feet</prerequisite>
+		<compendium display="false" />
+		<description>
+			<p><em>Level 2+ Warlock, a Warlock Cantrip That Deals Damage</em></p>
+			<p>Choose one of your known Warlock cantrips that deals damage and has a range of 10+ feet. When you cast that spell, its range increases by a number of feet equal to 30 times your Warlock level.</p>
+			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="eldritch spear:count" value="1" />
+		</rules>
+	</element>
+
+	<element name="Fiendish Vigor" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_FIENDISH_VIGOR">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_FIENDISH_VIGOR</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock</em></p>
+			<p>You can cast <i>False Life</i> on yourself without expending a spell slot. When you cast the spell with this feature, you don’t roll the die for the Temporary Hit Points; you automatically get the highest number on the die.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_FALSE_LIFE" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast False Life on yourself without expending a spell slot, and you always gain the maximum amount of THPs possible when casting the spell in this way.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FALSE_LIFE" />
+		</rules>
+	</element>
+
+	<element name="Gaze of Two Minds" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_GAZE_OF_TWO_MINDS">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:5],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_GAZE_OF_TWO_MINDS</requirements>
+		<prerequisite>Level 5+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 5+ Warlock</em></p>
+			<p>You can use a Bonus Action to touch a willing creature and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can take a Bonus Action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. The connection ends if you don’t maintain it in this way.</p>
+			<p class="indent">While perceiving through the other creature’s senses, you benefit from any special senses possessed by that creature, and you can cast spells as if you were in your space or the other creature’s space if the two of you are within 60 feet of each other.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can touch a willing creature and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can take a Bonus Action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. The connection ends if you don’t maintain it in this way. &#13;
+			While perceiving through the other creature’s senses, you benefit from any special senses possessed by that creature, and you can cast spells as if you were in your space or the other creature’s space if the two of you are within 60 feet of each other.</description>
+		</sheet>
+	</element>
+
+	<element name="Gift of the Depths" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_GIFT_OF_THE_DEPTHS">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:5],!ID_WOTC_XGTE_CLASS_FEATURE_ELDRITCH_INVOCATION_GIFT_OF_THE_DEPTHS</requirements>
+		<prerequisite>Level 5+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 5+ Warlock</em></p>
+			<p>You can breathe underwater, and you gain a Swim Speed equal to your Speed.</p>
+			<p class="indent">You can also cast <i>Water Breathing</i> once without expending a spell slot. You regain the ability to cast it in this way again when you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast Water Breathing without expending a spell slot. &#13;
+			Additionally, you can breathe underwater.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:swim" value="innate speed" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Gift of the Protectors" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_GIFT_OF_THE_PROTECTORS">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>([level:wizard:9],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_TOME),!ID_WOTC_TCOE_CLASS_FEATURE_GIFT_OF_THE_PROTECTORS</requirements>
+		<prerequisite>Level 9+ Warlock, Pact of the Tome Invocation</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 9+ Warlock, Pact of the Tome Invocation</em></p>
+			<p>A new page appears in your <i>Book of Shadows</i> when you conjure it. With your permission, a creature can take an action to write its name on that page, which can contain a number of names equal to your Charisma modifier (minimum of one name).</p>
+			<p class="indent">When any creature whose name is on the page is reduced to 0 Hit Points but not killed outright, the creature magically drops to 1 Hit Point instead. Once this magic is triggered, no creature can benefit from it until you finish a Long Rest.</p>
+			<p class="indent">As a Magic action, you can erase a name on the page by touching it.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>With your permission, up to {{gift of the protectors:count}} creatures can use their action to scribe their names into your Book of Shadows. When any of these creatures is reduced to 0 HP but not killed outright, the creature instead drops to 1 HP, and no other creature can benefit from it until you finish a Long Rest. &#13;
+			As a Magic action, you can erase a name on the page by touching it.</description>
+		</sheet>
+		<rules>
+			<stat name="gift of the protectors:count" value="1" bonus="base" />
+			<stat name="gift of the protectors:count" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Investment of the Chain Master" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_INVESTMENT_OF_THE_CHAIN_MASTER">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>([level:wizard:5],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_CHAIN),!ID_WOTC_TCOE_CLASS_FEATURE_INVESTMENT_OF_THE_CHAIN_MASTER</requirements>
+		<prerequisite>Level 5+ Warlock, Pact of the Chain Invocation</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 5+ Warlock, Pact of the Chain Invocation</em></p>
+			<p>When you cast <i>Find Familiar</i>, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits.</p>
+			<p class="indent"><em><strong>Aerial or Aquatic.</strong></em> The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.</p>
+			<p class="indent"><em><strong>Quick Attack.</strong></em> As a Bonus Action, you can command the familiar to take the Attack action.</p>
+			<p class="indent"><em><strong>Necrotic or Radiant Damage.</strong></em> Whenever the familiar deals Bludgeoning, Piercing, or Slashing damage, you can make it deal Necrotic or Radiant damage instead.</p>
+			<p class="indent"><em><strong>Your Save DC.</strong></em> If the familiar forces a creature to make a saving throw, it uses your spell save DC.</p>
+			<p class="indent"><em><strong>Resistance.</strong></em> When the familiar takes damage, you can take a Reaction to grant it Resistance against that damage.</p>
+		</description>
+		<sheet>
+			<description>Your Find Familiar creature gains the following benefits: &#13;
+			• It gains a Fly or Swim Speed of 40 feet (your choice). &#13;
+			• As a Bonus Action, you can command your familiar to take the Attack action. &#13;
+			• Your familiar can deal Necrotic or Radiant damage instead of its normal damage type. &#13;
+			• If your familiar forces a creature to make a saving throw, the DC is {{warlock:spellcasting:dc}}. &#13;
+			• When your familiar takes damage, you can take a Reaction to grant it Resistance against the damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_LESSONS_OF_THE_FIRST_ONES">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2]</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock</em></p>
+			<p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
+			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Origin Feat (Lessons of the First Ones 1)" supports="Origin" />
+		</rules>
+	</element>
+	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_LESSONS_OF_THE_FIRST_ONES_2">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<compendium display="false" />
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock</em></p>
+			<p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
+			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Origin Feat (Lessons of the First Ones 2)" supports="Origin" />
+		</rules>
+	</element>
+	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_LESSONS_OF_THE_FIRST_ONES_3">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES_2</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<compendium display="false" />
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock</em></p>
+			<p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
+			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Origin Feat (Lessons of the First Ones 3)" supports="Origin" />
+		</rules>
+	</element>
+	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_LESSONS_OF_THE_FIRST_ONES_4">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES_3</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<compendium display="false" />
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock</em></p>
+			<p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
+			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Origin Feat (Lessons of the First Ones 4)" supports="Origin" />
+		</rules>
+	</element>
+	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_LESSONS_OF_THE_FIRST_ONES_5">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES_4</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<compendium display="false" />
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock</em></p>
+			<p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
+			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Origin Feat (Lessons of the First Ones 5)" supports="Origin" />
+		</rules>
+	</element>
+	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_LESSONS_OF_THE_FIRST_ONES_6">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES_5</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<compendium display="false" />
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock</em></p>
+			<p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
+			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Origin Feat (Lessons of the First Ones 6)" supports="Origin" />
+		</rules>
+	</element>
+	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_LESSONS_OF_THE_FIRST_ONES_7">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES_6</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<compendium display="false" />
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock</em></p>
+			<p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
+			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Origin Feat (Lessons of the First Ones 7)" supports="Origin" />
+		</rules>
+	</element>
+	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_LESSONS_OF_THE_FIRST_ONES_8">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES_7</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<compendium display="false" />
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock</em></p>
+			<p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
+			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Origin Feat (Lessons of the First Ones 8)" supports="Origin" />
+		</rules>
+	</element>
+	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_LESSONS_OF_THE_FIRST_ONES_9">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES_8</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<compendium display="false" />
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock</em></p>
+			<p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
+			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Origin Feat (Lessons of the First Ones 9)" supports="Origin" />
+		</rules>
+	</element>
+	<element name="Lessons of the First Ones" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_LESSONS_OF_THE_FIRST_ONES_10">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_LESSONS_OF_THE_FIRST_ONES_9</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<compendium display="false" />
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock</em></p>
+			<p>You have received knowledge from an elder entity of the multiverse, allowing you to gain one Origin feat of your choice.</p>
+			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different Origin feat.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Origin Feat (Lessons of the First Ones 10)" supports="Origin" />
+		</rules>
+	</element>
+	
+	<element name="Lifedrinker" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_LIFEDRINKER">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>([level:wizard:9],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_BLADE),!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_LIFEDRINKER</requirements>
+		<prerequisite>Level 9+ Warlock, Pact of the Blade Invocation</prerequisite>
+		<description>
+			<p><em>Prerequisites: Level 9+ Warlock, Pact of the Blade Invocation</em></p>
+			<p>Once per turn when you hit a creature with your pact weapon, you can deal an extra 1d6 Necrotic, Psychic, or Radiant damage (your choice) to the creature, and you can expend one of your Hit Point Dice to roll it and regain a number of Hit Points equal to the roll plus your Constitution modifier (minimum of 1 Hit Point).</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you hit a creature with your pact weapon, you can deal an extra 1d6 Necrotic, Psychic, or Radiant damage (your choice) to the creature, and you can expend one of your Hit Dice to roll it and regain the rolled number + {{lifedrinker:hp}} HPs.</description>
+		</sheet>
+		<rules>
+			<stat name="lifedrinker:hp" value="0" bonus="base" />
+			<stat name="lifedrinker:hp" value="constitution:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Mask of Many Faces" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_MASK_OF_MANY_FACES">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_MASK_OF_MANY_FACES</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisites: Level 2+ Warlock</em></p>
+			<p>You can cast <i>Disguise Self</i> without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_DISGUISE_SELF" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast Disguise Self without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DISGUISE_SELF" />
+		</rules>
+	</element>
+
+	<element name="Master of Myriad Forms" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_MASTER_OF_MYRIAD_FORMS">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:5],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_MASTER_OF_MYRIAD_FORMS</requirements>
+		<prerequisite>Level 5+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisites: Level 5+ Warlock</em></p>
+			<p>You can cast <em>Alter Self</em> without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_ALTER_SELF" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast Alter Self without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ALTER_SELF" />
+		</rules>
+	</element>
+
+	<element name="Misty Visions" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_MISTY_VISIONS">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_MISTY_VISIONS</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisites: Level 2+ Warlock</em></p>
+			<p>You can cast <em>Silent Image</em> without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_SILENT_IMAGE" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast Silent Image without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SILENT_IMAGE" />
+		</rules>
+	</element>
+
+	<element name="One with Shadows" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_ONE_WITH_SHADOWS">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:5],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_ONE_WITH_SHADOWS</requirements>
+		<prerequisite>Level 5+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisites: Level 5+ Warlock</em></p>
+			<p>While you’re in an area of Dim Light or Darkness, you can cast <i>Invisibility</i> on yourself without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_INVISIBILITY" />
+			</div>
+		</description>
+		<sheet>
+			<description>While you’re in an area of Dim Light or Darkness, you can cast Invisibility on yourself without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INVISIBILITY" />
+		</rules>
+	</element>
+
+	<element name="Otherworldly Leap" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_OTHERWORLDLY_LEAP">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_OTHERWORLDLY_LEAP</requirements>
+		<prerequisite>Level 2+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisites: Level 2+ Warlock</em></p>
+			<p>You can cast <em>Jump</em> on yourself without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_JUMP" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast Jump on yourself without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_JUMP" />
+		</rules>
+	</element>
+	<element name="Repelling Blast" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_REPELLING_BLAST">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:2],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_REPELLING_BLAST</requirements>
+		<prerequisite>Level 2+ Warlock, a Warlock Cantrip That Deals Damage via an Attack Roll</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 2+ Warlock, a Warlock Cantrip That Deals Damage via an Attack Roll</em></p>
+			<p>Choose one of your known Warlock cantrips that requires an attack roll. When you hit a Large or smaller creature with that cantrip, you can push the creature up to 10 feet straight away from you.</p>
+			<p class="indent"><em><strong>Repeatable.</strong></em> You can gain this invocation more than once. Each time you do so, choose a different eligible cantrip.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<sheet>
+			<description>{{repelling blast:count}} of your cantrips, chosen when you gain this Invocation, gain ability to push Large or smaller creatures up to 10ft. straight away from you on hit.</description>
+		</sheet>
+		<rules>
+			<stat name="repelling blast:count" value="1" />
+		</rules>
+	</element>
+
+	<element name="Thirsting Blade" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_THIRSTING_BLADE">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>([level:wizard:5],ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_PACT_OF_THE_BLADE),!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_THIRSTING_BLADE</requirements>
+		<prerequisite>Level 5+ Warlock, Pact of the Blade Invocation</prerequisite>
+		<description>
+			<p><em>Prerequisites: Level 5+ Warlock, Pact of the Blade Invocation</em></p>
+			<p>You gain the Extra Attack feature for your pact weapon only. With that feature, you can attack twice with the weapon instead of once when you take the Attack action on your turn.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<!-- a subelement of the Thirsting Blade so it can be replaced with Devouring Blade -->
+	<element name="Thirsting Blade" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_THIRSTING_BLADE_SUBELEMENT">
+		<supports>PHB24 Thirsting Blade Invocation</supports>
+		<compendium display="false" />
+		<sheet>
+			<description>You can attack twice with your pact weapon when you take the Attack action.</description>
+		</sheet>
+	</element>
+
+	<element name="Visions of Distant Realms" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_VISIONS_OF_DISTANT_REALMS">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:9],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_VISIONS_OF_DISTANT_REALMS</requirements>
+		<prerequisite>Level 9+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 9+ Warlock</em></p>
+			<p>You can cast <i>Arcane Eye</i> without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_ARCANE_EYE" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast Arcane Eye without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ARCANE_EYE" />
+		</rules>
+	</element>
+
+	<element name="Whispers of the Grave" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_WHISPERS_OF_THE_GRAVE">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:7],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_WHISPERS_OF_THE_GRAVE</requirements>
+		<prerequisite>Level 7+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 7+ Warlock</em></p>
+			<p>You can cast <em>Speak with Dead</em> without expending a spell slot.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_SPELL_SPEAK_WITH_DEAD" />
+			</div>
+		</description>
+		<sheet>
+			<description>You can cast Speak with Dead without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPEAK_WITH_DEAD" />
+		</rules>
+	</element>
+
+	<element name="Witch Sight" type="Class Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_CLASS_FEATURE_ELDRITCH_INVOCATION_WIZARD_WITCH_SIGHT">
+		<supports>PHB24 Eldritch Invocation Wizard</supports>
+		<requirements>[level:wizard:15],!ID_WOTC_PHB_CLASS_FEATURE_ELDRITCH_INVOCATION_WITCH_SIGHT</requirements>
+		<prerequisite>Level 15+ Warlock</prerequisite>
+		<description>
+			<p><em>Prerequisite: Level 15+ Warlock</em></p>
+			<p>You have Truesight with a range of 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You have Truesight with a range of 30 feet.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_TRUESIGHT" />
+			<stat name="truesight:range" value="30" bonus="base" />
+		</rules>
+	</element>
+	
+</elements>

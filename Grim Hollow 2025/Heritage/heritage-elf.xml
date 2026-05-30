@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Elf</name>
+		<description>The Elf heritage from Grim Hollow - The Players Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="heritage-elf.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-elf.xml" />
+		</update>
+	</info>
+
+	<element name="Elf" type="Race" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_ELF">
+		<description>
+			<p>The proud and elegant elves were among the first people to dwell in the forests of Etharis. Their long history is entwined with fables from the distant past. Tall, graceful, and extraordinarily beautiful, these ancient folk believe they are descended from the nature spirits who cultivated the mortal realm. The elves claim the forests and river lands of Caer Neiada as their ancestral home, in what is now the Charneault Kingdom. Within those deep woods they created magnificent domains, ever taking guidance and blessing from the ageless spirits of the forest.</p>
+			<p class="indent">Many elves are blessed with keen eyesight and a talent for archery. Their deep knowledge of the woodlands and their affinity with the fey enable them to conceal themselves effortlessly within their own domains. Their deadly and nimble armies made them a force to be reckoned with in the early days of Etharis. However, their unchallenged dominion over the forests combined with their long lives made the elves arrogant, setting themselves above and away from other folk—especially humans, who they considered primitive and barbaric. And so the elves failed to recognize the humans as a plausible threat.</p>
+			<p class="indent">The Era of Expansion cost the elves dearly. Their kingdoms were shattered, with many of their forests reduced to ash and blackened stumps. Though their battle prowess never dimmed, the elves found themselves outnumbered and unable to repel war-hungry armies burning and lumbering their sheltering woodlands. They instead retreated deep into their forests on the outskirts of human civilization, where they believed the Spirits of Nature would still protect them. When the elves eventually reemerged, they formed a pact with humankind that birthed the Charneault Kingdom.</p>
+			<p class="indent">In the end, the sorrow of the elves for their lost paradise empowered them to recreate that beauty in music and arts. They have crafted heartbreaking songs of a lost past that echo among the trees in the night. In these ballads they call themselves the ulufey, meaning mortal fey and the descendants of the fey sidhe. The faerie courts who had once guided the elves were not vanquished in the Era of Expansion and many hope such Spirits of Nature will aid in restoring elven lands to their ancient grace.</p>
+			<h5>ELF BASE TRAITS</h5>
+			<ul class="unstyled">
+				<li><strong>Age.</strong> Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An Elf typically claims adulthood and an adult name around the age of 100, and can live to be 750 years old.</li>
+				<li><strong>Size.</strong> Elves range from under 5 to over 6 feet tall and often have slender builds. Your size is Medium.</li>
+				<li><strong>Speed.</strong> 30 feet.</li>
+			</ul>
+			<h5>TRADITIONAL ELF TRAITS</h5>
+			<p>The ancient traditions followed by many Elves reflect a mastery of mind, body, and magic. If you wish to play a traditional Elf, it is recommended you select from the following traits:</p>
+			<ul>
+				<li><strong>Combat:</strong> Awakened Mind, Focused Mind, Weapon Aptitude</li>
+				<li><strong>Exploration:</strong> Darkvision, Meditative Rest, Shroud of the Wild</li>
+				<li><strong>Roleplaying:</strong> Inborn Perception, Magical Savvy (any cantrip)</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Elf)" supports="GH Heritage Trait" number="8" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			<select type="Racial Trait" name="Heritage Trait (Elf)" supports="GH Heritage Trait" number="6" requirements="ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_AWAKENED_MIND" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_FOCUSED_MIND" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_WEAPON_APTITUDE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_DARKVISION" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_MEDITATIVE_REST" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_SHROUD_OF_THE_WILD" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_INBORN_PERCEPTION" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_MAGICAL_SAVVY" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+		</rules>
+	</element>
+</elements>

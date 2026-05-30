@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Green Reaper</name>
+		<description>The Green Reaper subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="ranger-greenreaper.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/ranger-greenreaper.xml" />
+		</update>
+	</info>
+
+	<element name="Green Reaper" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_RANGER_GREEN_REAPER">
+		<supports>Ranger Subclass</supports>
+		<description>
+			<p class="flavor">Slay with Nature's Venom</p>
+			<p>Green Reapers are assassins who specialize in harnessing the toxic elements of flora and fauna. These Rangers often work as killers for hire utilizing their extensive knowledge to end lives discreetly or with gory panache, depending on the poison used and the client's wishes. Green Reapers exhibit a morbid curiosity when encountering a toxin they're unfamiliar with, typically followed by an enthusiastic application of the substance on their next foe.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_ENVENOMED_ATTACK" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_TOXIC_TRADECRAFT" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_SPELLS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_POISON_CONTROL" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_VARIEGATED_VEXATIONS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_PAIN_TOLERANCE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_ENVENOMED_ATTACK" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_TOXIC_TRADECRAFT" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_POISON_CONTROL" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_VARIEGATED_VEXATIONS" level="11" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_PAIN_TOLERANCE" level="15" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Envenomed Attack" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_ENVENOMED_ATTACK">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_GREEN_REAPER_ENVENOMED_ATTACK</requirements>
+		<description>
+			<p>As a Bonus Action, you can apply a poison dose to a weapon or up to 20 pieces of ammunition. Once applied, the poison retains its potency for 1 minute. Your attacks with the poisoned item deal an extra 1d4 Poison damage on a hit.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent">At Ranger level 11, the extra Poison damage increases to 2d4, and you regain all expended uses when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Envenomed Attack" action="Bonus Action" usage="{{envenomed attack:usage}}/Long Rest">
+			<description>You can apply a poison dose to a weapon or up to 20 pieces of ammunition for 1 minute. Your attacks with the poisoned item deal an extra {{envenomed attack:dice}}d4 Poison damage on a hit.</description>
+			<description level="11" usage="{{envenomed attack:usage}}/Short Rest">You can apply a poison dose to a weapon or up to 20 pieces of ammunition for 1 minute. Your attacks with the poisoned item deal an extra {{envenomed attack:dice}}d4 Poison damage on a hit.</description>
+		</sheet>
+		<rules>
+			<stat name="envenomed attack:usage" value="1" bonus="base" />
+			<stat name="envenomed attack:usage" value="wisdom:modifier" bonus="base" />
+			<stat name="envenomed attack:dice" value="1" bonus="base" />
+			<stat name="envenomed attack:dice" value="2" bonus="base" level="11" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Toxic Tradecraft" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_TOXIC_TRADECRAFT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_GREEN_REAPER_TOXIC_TRADECRAFT</requirements>
+		<description>
+			<p>You gain a Poisoner's Kit, and you have proficiency with it. In addition, your Proficiency Bonus is doubled for ability checks with a Poisoner's Kit. If you lose the kit, you can harvest toxic flora and venomous fauna for 1 hour to magically create a replacement. This harvest can be performed during a Short or Long Rest, and it destroys the previous Poisoner's Kit.</p>
+			<p class="indent">Once per turn when you deal Poison damage to a creature with a weapon attack, you can expend a spell slot (no action required). The attack deals an extra 1d6 Poison damage and the target gains the Poisoned condition until the end of your next turn. You may also add a Toxin Effect, chosen from the appropriate list below. All Toxin Effects last until the end of your next turn, unless its description states otherwise.</p>
+			<h5>Toxin Effects</h5>
+			<p>The following Toxin Effects are presented in order of spell slot level:</p>
+			<p class="indent"><strong>Level 1 Spell Slot Effects</strong></p>
+			<ul>
+				<li><strong><em>Attenuate.</em></strong> While a creature has the Poisoned condition from this toxin, it has Disadvantage on Strength and Dexterity saving throws.</li>
+				<li><strong><em>Befuddled.</em></strong> While a creature has the Poisoned condition from this toxin, it can't speak, read, or write and it has Disadvantage on saving throws made to maintain Concentration on spells.</li>
+				<li><strong><em>Uncoordinated.</em></strong> While a creature has the Poisoned condition from this toxin, it can't take Reactions or the Disengage or Dodge action.</li>
+			</ul>
+			<p class="indent"><strong>Level 2 Spell Slot Effects</strong></p>
+			<ul>
+				<li><strong><em>Debilitate.</em></strong> For 1 minute, the creature can't regain Hit Points.</li>
+				<li><strong><em>Potent.</em></strong> For 1 minute, the creature loses Resistance to Poison damage.</li>
+				<li><strong><em>Suffer.</em></strong> For 1 minute, the first time on each turn the creature takes Poison damage, it takes an extra 1d6 Poison damage.</li>
+			</ul>
+			<p class="indent"><strong>Level 3 Spell Slot Effects</strong></p>
+			<ul>
+				<li><strong><em>Lingering.</em></strong> Instead of ending at the end of your next turn, the creature has the Poisoned condition for 10 minutes. During this time it has Disadvantage on saving throws to end the Poisoned condition on itself. At the end of each of the creature's turns, it can make a Constitution saving throw to end the Poisoned condition.</li>
+				<li><strong><em>Supernatural.</em></strong> When you deal damage to a creature with a poisoned item, the creature loses Immunity to the Poisoned condition and then has the Poisoned condition for 1 minute. At the end of each of the creature's turns, it can make a Constitution saving throw to end the Poisoned condition and regain its Immunity to the Poisoned condition.</li>
+			</ul>
+			<p class="indent"><strong>Level 4 Spell Slot Effects</strong></p>
+			<ul>
+				<li><strong><em>Flesh Eating.</em></strong> For 1 minute, the creature has the Poisoned condition. While a creature has the Posioned condition from this toxin, it takes 2d6 Acid damage at the start of each of its turns.</li>
+				<li><strong><em>Insensate.</em></strong> While a creature has the Poisoned condition from this toxin, it also has the Blinded and Deafened conditions.</li>
+				<li><strong><em>Paraplegia.</em></strong> While a creature has the Poisoned condition from this toxin, its Speed is reduced to 0 and it has Disadvantage on Dexterity saving throws.</li>
+			</ul>
+			<p class="indent"><strong>Level 5 Spell Slot Effects</strong></p>
+			<ul>
+				<li><strong><em>Enhanced.</em></strong> Apply one option from the Level 4 Spell Slot Effects list, and an additional option from either the Level 1 or Level 2 Spell Slot Effects list.</li>
+				<li><strong><em>Stinging Application.</em></strong> For 1 minute, once per turn, when you hit a creature with a poisoned item, the attack deals an extra 5d6 damage. The damage type is your choice of Acid, Necrotic, or Poison.</li>
+			</ul>
+		</description>
+		<sheet alt="Toxic Tradecraft" usage="1/Turn">
+			<description>When you deal Poison damage to a creature with a weapon attack, you can expend a spell slot to deal an extra 1d6 Poison damage and the target is Poisoned until the end of your next turn. You can also add a Toxin Effect based on the spell slot level used (effects last until the end of your next turn unless noted):&#13;
+			• Lvl 1: Attenuate (Disadv. on Str/Dex saves), Befuddled (can't speak/read/write, Disadv. on Concentration), or Uncoordinated (no Reactions, Disengage, or Dodge).&#13;
+			• Lvl 2: Debilitate (1 min: can't regain HP), Potent (1 min: lose Poison Resistance), or Suffer (1 min: first time taking Poison damage each turn, take extra 1d6 Poison).&#13;
+			• Lvl 3: Lingering (Poisoned for 10 mins, Disadv. to save, Con save at end of turns to end), or Supernatural (1 min: lose Poison Immunity, then Poisoned, Con save at end of turns to end/regain Immunity).&#13;
+			• Lvl 4: Flesh Eating (1 min: Poisoned, takes 2d6 Acid at start of turns), Insensate (Poisoned + Blinded &amp; Deafened), or Paraplegia (Poisoned + Speed 0 &amp; Disadv. on Dex saves).&#13;
+			• Lvl 5: Enhanced (One Lvl 4 effect + one Lvl 1 or 2 effect), or Stinging Application (1 min: once/turn on hit with poisoned item, extra 5d6 Acid, Necrotic, or Poison damage).</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+			<grant type="Grants" id="ID_INTERNAL_PROFICIENCY_TOOL_EXPERTISE_POISONERS_KIT" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Green Reaper Spells" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_SPELLS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_GREEN_REAPER_SPELLS</requirements>
+		<description>
+			<p>When you reach a Ranger level specified in the Green Reaper Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Green Reaper Spells</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Ranger Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Detect Poison and Disease</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Hold Person</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Bestow Curse</em></td></tr>
+				<tr><td style="text-align:center">13</td><td><em>Greater Invisibility</em></td></tr>
+				<tr><td style="text-align:center">17</td><td><em>Cloudkill</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_POISON_AND_DISEASE" level="3" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_PERSON" level="5" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BESTOW_CURSE" level="9" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREATER_INVISIBILITY" level="13" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CLOUDKILL" level="17" spellcasting="Ranger" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Poison Control" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_POISON_CONTROL">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_GREEN_REAPER_POISON_CONTROL</requirements>
+		<description>
+			<p>You gain Resistance to Poison damage and have Advantage on saving throws to avoid or end the Poisoned condition.</p>
+			<p class="indent">In addition, you can cast the Protection from Poison spell without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Poison Control" usage="{{poison control:usage}}/Long Rest">
+			<description>You have Advantage on saving throws to avoid or end the Poisoned condition. You can cast Protection from Poison without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PROTECTION_FROM_POISON" />
+			<stat name="poison control:usage" value="1" bonus="base" />
+			<stat name="poison control:usage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 11: Variegated Vexations" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_VARIEGATED_VEXATIONS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_GREEN_REAPER_VARIEGATED_VEXATIONS</requirements>
+		<description>
+			<p>Whenever you would deal Poison damage with a weapon attack, you can change that damage to be either Acid or Necrotic instead.</p>
+		</description>
+		<sheet alt="Variegated Vexations">
+			<description>Whenever you would deal Poison damage with a weapon attack, you can change that damage to be either Acid or Necrotic instead.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Pain Tolerance" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_GREEN_REAPER_PAIN_TOLERANCE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_GREEN_REAPER_PAIN_TOLERANCE</requirements>
+		<description>
+			<p>You have learned to quickly inure yourself against harm. Immediately before you take damage from a creature you can see within 60 feet of yourself, you can take a Reaction to gain Temporary Hit Points equal to the damage you take. If any of these Temporary Hit Points remain at the end of your next turn, they vanish.</p>
+		</description>
+		<sheet alt="Pain Tolerance" action="Reaction">
+			<description>Immediately before you take damage from a creature you can see within 60 ft, you can gain THP equal to the damage you take (vanishes at the end of your next turn).</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Envenomed Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_GREEN_REAPER_ENVENOMED_ATTACK" />
+	<element name="Toxic Tradecraft Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_GREEN_REAPER_TOXIC_TRADECRAFT" />
+	<element name="Green Reaper Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_GREEN_REAPER_SPELLS" />
+	<element name="Poison Control Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_GREEN_REAPER_POISON_CONTROL" />
+	<element name="Variegated Vexations Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_GREEN_REAPER_VARIEGATED_VEXATIONS" />
+	<element name="Pain Tolerance Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_GREEN_REAPER_PAIN_TOLERANCE" />
+
+</elements>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>College of Adventurers</name>
+		<description>The College of Adventurers subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="bard-adventurers.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/bard-adventurers.xml" />
+		</update>
+	</info>
+
+	<element name="College of Adventurers" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_BARD_COLLEGE_OF_ADVENTURERS">
+		<supports>Bard Subclass</supports>
+		<description>
+			<p class="flavor">Be a Master of Classes</p>
+			<p>Bards from the College of Adventurers learn from heroes of old and stories of legend. Bards are jacks of all trades, and, for the College of Adventurers, this statement rings even truer. They combine all the skills of their companions into one, allowing them to be versatile and supportive.</p>
+			<p class="indent">While not having a direct goal, many adventurer-studying Bards live to tell tales of other heroes or seek to create their own. Stories of great deeds, of desperate cunning, of magical anomalies, or of godly might fuel these Bards.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_TALENTED_ADVENTURER" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_PARTY_PLANNER" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_WELL_ROUNDED" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_IMPROVISATIONAL_TALENT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_TALENTED_ADVENTURER" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_PARTY_PLANNER" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_WELL_ROUNDED" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_IMPROVISATIONAL_TALENT" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Talented Adventurer" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_TALENTED_ADVENTURER">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_BARD_ADVENTURERS_TALENTED_ADVENTURER</requirements>
+		<description>
+			<p>You learn an adventurer's talent of your choice from the "Adventurer's Talent Options" section later in this subclass's description. You learn an additional adventurer's talent of your choice when you reach Bard levels 6 and 14.</p>
+			<h5>Adventurer's Talents</h5>
+			<p>The adventurer's talents are listed in alphabetical order:</p>
+			<p class="indent"><strong><em>Barbarian.</em></strong> You've learned to fight with primal ferocity. As a Bonus Action while you aren't wearing Heavy armor, you can enter a rampage for 1 minute. During this time, you have Resistance to Bludgeoning, Piercing, and Slashing damage, and you can't maintain Concentration. Your rampage ends early if you use a Bonus Action or have the Incapacitated condition.</p>
+			<p class="indent">Once you use this talent, you can't use it again until you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Cleric.</em></strong> You've gained the ability to channel divine energy directly from the gods, emboldening allies and sanctifying their attacks. As a Bonus Action, choose a creature within 30 feet of you. For 10 minutes, the target gains Temporary Hit Points equal to half your Bard level plus your Charisma modifier. While a creature has Temporary Hit Points granted by this talent, it can choose to lose all remaining Temporary Hit Points when it hits a creature with an attack made with a weapon or Unarmed Strike, dealing extra Radiant damage equal to the number of Temporary Hit Points lost.</p>
+			<p class="indent">Once you use this talent, you can't use it again until you finish a Short or Long Rest.</p>
+			<p class="indent"><strong><em>Druid.</em></strong> You can cast the Polymorph spell without expending a spell slot. When you cast the Polymorph spell with this talent, you can target yourself only and the maximum Challenge Rating of the Beast you can transform into equals half your Bard level.</p>
+			<p class="indent">Once you cast the spell using this talent, you can't do so again until you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Fighter.</em></strong> You gain proficiency with Martial weapons and training with Shields. In addition, you gain a Fighting Style feat of your choice.</p>
+			<p class="indent"><strong><em>Monk.</em></strong> While you aren't wearing armor or wielding a Shield, your base Armor Class equals 10 plus your Dexterity and Charisma modifiers. You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes, and you can roll 1d6 in place of the normal damage of your Unarmed Strike. In addition, after you cast a spell that has a casting time of an action or take the Attack action, you can make one attack with an Unarmed Strike as a Bonus Action.</p>
+			<p class="indent"><strong><em>Paladin.</em></strong> Once per turn, when you hit a creature with a melee attack using a weapon or Unarmed Strike, you can expend a spell slot to deal an extra 1d6 Radiant damage to the target, plus another 1d6 per level of the spell slot. The damage increases by 1d6 if the target is a Fiend or an Undead.</p>
+			<p class="indent">Once you use this talent, you must finish a Short or Long Rest before you can use it again.</p>
+			<p class="indent"><strong><em>Ranger.</em></strong> You always have the Hunter's Mark spell prepared. You can cast this spell using a level 5 spell slot without expending a spell slot.</p>
+			<p class="indent">Once you cast the spell using this talent, you can't do so again until you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Rogue.</em></strong> You've adopted the quick thinking of heroes who have outsmarted their foes. On your turn, you can take one of the following actions as a Bonus Action: Dash, Disengage, or Hide.</p>
+			<p class="indent"><strong><em>Sorcerer.</em></strong> Choose one of the following Metamagic Options available to the Sorcerer class: Careful Spell, Distant Spell, Empowered Spell, Extended Spell, Seeking Spell, Subtle Spell, or Transmuted Spell. When you cast a Bard spell, you can apply that Metamagic Option as if you had paid its Sorcery Point cost.</p>
+			<p class="indent">Once you use this talent, you can't use it again until you finish a Short or Long Rest.</p>
+			<p class="indent"><strong><em>Warlock.</em></strong> You learn one Eldritch Invocation of your choice. If an invocation has a level requirement, use your Bard level. When you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation for which you qualify.</p>
+			<p class="indent"><strong><em>Wizard.</em></strong> You prepare any two spells from the Wizard spell list that are of a level you can cast. These count as Bard spells for you but do not count against your number of Prepared Spells. When you gain a level in this class, you can choose one of the Wizard spells you have prepared and replace it with another spell from the Wizard spell list of a level you can cast.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Adventurer's Talent" supports="Adventurers Talent" level="3" />
+			<select type="Archetype Feature" name="Adventurer's Talent" supports="Adventurers Talent" level="6" />
+			<select type="Archetype Feature" name="Adventurer's Talent" supports="Adventurers Talent" level="14" />
+		</rules>
+	</element>
+
+	<element name="Barbarian" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_TALENT_BARBARIAN">
+		<supports>Adventurers Talent</supports>
+		<compendium display="false" />
+		<description>
+			<p>You've learned to fight with primal ferocity. As a Bonus Action while you aren't wearing Heavy armor, you can enter a rampage for 1 minute. During this time, you have Resistance to Bludgeoning, Piercing, and Slashing damage, and you can't maintain Concentration. Your rampage ends early if you use a Bonus Action or have the Incapacitated condition.</p>
+			<p class="indent">Once you use this talent, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Barbarian Talent" action="Bonus Action" usage="1/Long Rest">
+			<description>While not wearing Heavy armor, you can enter a rampage for 1 minute. You gain Resistance to Bludgeoning, Piercing, and Slashing damage, but can't maintain Concentration. Ends early if you use a Bonus Action or are Incapacitated.</description>
+		</sheet>
+	</element>
+
+	<element name="Cleric" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_TALENT_CLERIC">
+		<supports>Adventurers Talent</supports>
+		<compendium display="false" />
+		<description>
+			<p>You've gained the ability to channel divine energy directly from the gods, emboldening allies and sanctifying their attacks. As a Bonus Action, choose a creature within 30 feet of you. For 10 minutes, the target gains Temporary Hit Points equal to half your Bard level plus your Charisma modifier. While a creature has Temporary Hit Points granted by this talent, it can choose to lose all remaining Temporary Hit Points when it hits a creature with an attack made with a weapon or Unarmed Strike, dealing extra Radiant damage equal to the number of Temporary Hit Points lost.</p>
+			<p class="indent">Once you use this talent, you can't use it again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Cleric Talent" action="Bonus Action" usage="1/Short Rest">
+			<description>Choose a creature within 30 ft. For 10 minutes, it gains {{cleric talent:thp}} THP. While it has these THP, it can choose to lose all remaining THP when hitting with a weapon/Unarmed Strike to deal extra Radiant damage equal to the THP lost.</description>
+		</sheet>
+		<rules>
+			<stat name="cleric talent:thp" value="level:bard:half" />
+			<stat name="cleric talent:thp" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Druid" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_TALENT_DRUID">
+		<supports>Adventurers Talent</supports>
+		<compendium display="false" />
+		<description>
+			<p>You can cast the Polymorph spell without expending a spell slot. When you cast the Polymorph spell with this talent, you can target yourself only and the maximum Challenge Rating of the Beast you can transform into equals half your Bard level.</p>
+			<p class="indent">Once you cast the spell using this talent, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Druid Talent" usage="1/Long Rest">
+			<description>You can cast Polymorph on yourself without expending a spell slot. The max CR of the Beast is {{level:bard:half}}.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_POLYMORPH" />
+		</rules>
+	</element>
+
+	<element name="Fighter" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_TALENT_FIGHTER">
+		<supports>Adventurers Talent</supports>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency with Martial weapons and training with Shields. In addition, you gain a Fighting Style feat of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<select type="Feat" name="Fighting Style Feat (Fighter Talent)" supports="Fighting Style" />
+		</rules>
+	</element>
+
+	<element name="Monk" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_TALENT_MONK">
+		<supports>Adventurers Talent</supports>
+		<compendium display="false" />
+		<description>
+			<p>While you aren't wearing armor or wielding a Shield, your base Armor Class equals 10 plus your Dexterity and Charisma modifiers. You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes, and you can roll 1d6 in place of the normal damage of your Unarmed Strike. In addition, after you cast a spell that has a casting time of an action or take the Attack action, you can make one attack with an Unarmed Strike as a Bonus Action.</p>
+		</description>
+		<sheet alt="Monk Talent">
+			<description>Your Unarmed Strikes can use Dex instead of Str, deal 1d6 damage, and you can make one as a Bonus Action after casting an action spell or taking the Attack action.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:monk talent" value="10" />
+			<stat name="ac:monk talent" value="dexterity:modifier" />
+			<stat name="ac:monk talent" value="charisma:modifier" />
+			<stat name="ac:calculation" value="ac:monk talent" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Monk Talent" />
+		</rules>
+	</element>
+
+	<element name="Paladin" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_TALENT_PALADIN">
+		<supports>Adventurers Talent</supports>
+		<compendium display="false" />
+		<description>
+			<p>Once per turn, when you hit a creature with a melee attack using a weapon or Unarmed Strike, you can expend a spell slot to deal an extra 1d6 Radiant damage to the target, plus another 1d6 per level of the spell slot. The damage increases by 1d6 if the target is a Fiend or an Undead.</p>
+			<p class="indent">Once you use this talent, you must finish a Short or Long Rest before you can use it again.</p>
+		</description>
+		<sheet alt="Paladin Talent" usage="1/Short Rest">
+			<description>Once per turn when you hit with a melee weapon/Unarmed Strike, you can expend a spell slot to deal an extra 1d6 + 1d6 per slot level Radiant damage (+1d6 if Fiend/Undead).</description>
+		</sheet>
+	</element>
+
+	<element name="Ranger" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_TALENT_RANGER">
+		<supports>Adventurers Talent</supports>
+		<compendium display="false" />
+		<description>
+			<p>You always have the Hunter's Mark spell prepared. You can cast this spell using a level 5 spell slot without expending a spell slot.</p>
+			<p class="indent">Once you cast the spell using this talent, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Ranger Talent" usage="1/Long Rest">
+			<description>You can cast Hunter's Mark as a 5th-level spell without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HUNTERS_MARK" spellcasting="Bard" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Rogue" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_TALENT_ROGUE">
+		<supports>Adventurers Talent</supports>
+		<compendium display="false" />
+		<description>
+			<p>You've adopted the quick thinking of heroes who have outsmarted their foes. On your turn, you can take one of the following actions as a Bonus Action: Dash, Disengage, or Hide.</p>
+		</description>
+		<sheet alt="Rogue Talent" action="Bonus Action">
+			<description>You can take the Dash, Disengage, or Hide action.</description>
+		</sheet>
+	</element>
+
+	<element name="Sorcerer" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_TALENT_SORCERER">
+		<supports>Adventurers Talent</supports>
+		<compendium display="false" />
+		<description>
+			<p>Choose one of the following Metamagic Options available to the Sorcerer class: Careful Spell, Distant Spell, Empowered Spell, Extended Spell, Seeking Spell, Subtle Spell, or Transmuted Spell. When you cast a Bard spell, you can apply that Metamagic Option as if you had paid its Sorcery Point cost.</p>
+			<p class="indent">Once you use this talent, you can't use it again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Sorcerer Talent" usage="1/Short Rest">
+			<description>When you cast a Bard spell, you can apply your chosen Metamagic Option without paying its Sorcery Point cost.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Metamagic Option (Sorcerer Talent)" supports="ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_METAMAGIC_CAREFUL_SPELL|ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_METAMAGIC_DISTANT_SPELL|ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_METAMAGIC_EMPOWERED_SPELL|ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_METAMAGIC_EXTENDED_SPELL|ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_METAMAGIC_SEEKING_SPELL|ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_METAMAGIC_SUBTLE_SPELL|ID_WOTC_PHB24_CLASS_FEATURE_SORCERER_METAMAGIC_TRANSMUTED_SPELL" />
+		</rules>
+	</element>
+
+	<element name="Warlock" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_TALENT_WARLOCK">
+		<supports>Adventurers Talent</supports>
+		<compendium display="false" />
+		<description>
+			<p>You learn one Eldritch Invocation of your choice. If an invocation has a level requirement, use your Bard level. When you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation for which you qualify.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Eldritch Invocation (Warlock Talent)" supports="PHB24 Eldritch Invocation||Eldritch Invocation" />
+		</rules>
+	</element>
+
+	<element name="Wizard" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_TALENT_WIZARD">
+		<supports>Adventurers Talent</supports>
+		<compendium display="false" />
+		<description>
+			<p>You prepare any two spells from the Wizard spell list that are of a level you can cast. These count as Bard spells for you but do not count against your number of Prepared Spells. When you gain a level in this class, you can choose one of the Wizard spells you have prepared and replace it with another spell from the Wizard spell list of a level you can cast.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Spell" name="Wizard Spell (Wizard Talent)" supports="$(spellcasting:slots), Wizard" number="2" spellcasting="Bard" allowReplace="true" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Party Planner" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_PARTY_PLANNER">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_BARD_ADVENTURERS_PARTY_PLANNER</requirements>
+		<description>
+			<p>While a creature has a Bardic Inspiration die from you, it can use a Bonus Action to take the Help action.</p>
+		</description>
+		<sheet alt="Party Planner">
+			<description>While a creature has a Bardic Inspiration die from you, it can use a Bonus Action to take the Help action.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Well-Rounded" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_WELL_ROUNDED">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_BARD_ADVENTURERS_WELL_ROUNDED</requirements>
+		<description>
+			<p>You gain proficiency with one type of Artisan's Tools of your choice, you gain proficiency in one skill of your choice, and you know one language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Artisan's Tools (Well-Rounded)" supports="Artisan tools" />
+			<select type="Proficiency" name="Skill (Well-Rounded)" supports="Skill" />
+			<select type="Language" name="Language (Well-Rounded)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Improvisational Talent" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_BARD_ADVENTURERS_IMPROVISATIONAL_TALENT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_BARD_ADVENTURERS_IMPROVISATIONAL_TALENT</requirements>
+		<description>
+			<p>When you finish a Long Rest, you can choose one adventurer's talent you know and replace it with one you don't.</p>
+		</description>
+		<sheet alt="Improvisational Talent">
+			<description>When you finish a Long Rest, you can replace one adventurer's talent you know with another.</description>
+		</sheet>
+	</element>
+
+	<!-- Feature Replacement Grants -->
+	<element name="Talented Adventurer Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_BARD_ADVENTURERS_TALENTED_ADVENTURER" />
+	<element name="Party Planner Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_BARD_ADVENTURERS_PARTY_PLANNER" />
+	<element name="Well-Rounded Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_BARD_ADVENTURERS_WELL_ROUNDED" />
+	<element name="Improvisational Talent Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_BARD_ADVENTURERS_IMPROVISATIONAL_TALENT" />
+</elements>

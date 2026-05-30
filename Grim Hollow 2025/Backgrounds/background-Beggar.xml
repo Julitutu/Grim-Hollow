@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-Beggar.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Beggar.xml" />
+		</update>
+	</info>
+	<!-- Beggar -->
+	<element name="Beggar" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_BEGGAR">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Strength, Dexterity, Wisdom</li>
+				<li><strong>Feat:</strong> Survivor</li>
+				<li><strong>Skill Proficiencies:</strong> Insight and Persuasion</li>
+				<li><strong>Tool Proficiency:</strong> Disguise Kit</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Dagger, Disguise Kit, Robe, 12 GP; or (B) 50 GP</li>
+			</ul>
+			<p>Many who fall on hard times have no other option than begging for coppers. Considered the lowest rung of society, you are looked down upon in either pity or contempt by other members of society, when they bother to notice you at all. For your part, you see people at their best and at their worst—a more honest representation than they show their peers or superiors.</p>
+			<p>If you are from a major metropolis of Etharis, you might be much more than you appear. You may act as an informant, spy, distraction, or worse—working right under the noses of those who treat you as part of the scenery. This might make you wealthier than you let on, and people in the know treat you with a modicum of respect and caution.</p>
+			<div class="reference">
+				<div element="ID_GFG_GHPG25_FEAT_SURVIVOR" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Strength, Dexterity, Wisdom, Survivor Feat, Insight and Persuasion Skills, Disguise Kit</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_DEX_WIS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_GFG_GHPG25_FEAT_SURVIVOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />	
+		</rules>
+	</element>
+
+</elements>

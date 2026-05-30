@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-InquisitoroftheFaithful.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-InquisitoroftheFaithful.xml" />
+		</update>
+	</info>
+
+	<!-- Inquisitor of the Faithful -->
+	<element name="Inquisitor of the Faithful" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_INQUISITOR_OF_THE_FAITHFUL">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Strength, Wisdom, Charisma</li>
+				<li><strong>Feat:</strong> Convincing Inquisitor</li>
+				<li><strong>Skill Proficiencies:</strong> Intimidation and Religion</li>
+				<li><strong>Tool Proficiency:</strong> Herbalism Kit</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Club, Navigator’s Tools, Book Containing Holy Rites, Holy Symbol, Interrogator’s Tools, Manacles, Traveler’s Clothes, 10 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You are a servant of the Watchers of the Faithful, hunting down heretics and blasphemers within your own faith, cultists of sinister powers, or other threats to your divine order. Divine justice does not discriminate, and you have mercilessly punished crimes both mundane and supernatural—tasks that come with little glory.</p>
+			<p>Your home is the road, and you must travel to wherever rumors of the sinful and the deviant take you. Corruption is just as likely to fester within as without, so you must be ever watchful of those who travel with you. Those found guilty, wherever they hail from and whatever their reason, must be faced without mercy.</p>
+			<div class="reference">
+				<div element="ID_GFG_GHPG25_FEAT_CONVINCING_INQUISITOR" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Strength, Wisdom, Charisma, Convincing Inquisitor Feat, Intimidation and Religion Skills, Healer's Kit</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_WIS_CHA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_GFG_GHPG25_FEAT_CONVINCING_INQUISITOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />	
+		</rules>
+	</element>
+</elements>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Beast Hunter Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-BeastHunter.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-BeastHunter.xml" />
+		</update>
+	</info>
+
+	<!-- Beast Hunter -->
+	<element name="Beast Hunter" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_BEAST_HUNTER">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Strength, Dexterity, Intelligence</li>
+				<li><strong>Feat:</strong> Blood Hound</li>
+				<li><strong>Skill Proficiencies:</strong> Animal Handling and Survival</li>
+				<li><strong>Tool Proficiency:</strong> Leatherworker’s Tools</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Dagger, Spear, Leatherworker’s Tools, Hunting Trap, Traveler’s Clothes, 5 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You make your living by trapping, hunting, and killing vicious beasts. Your efforts might provide meat and furs for settlements or for trade. When a nearby beast is particularly vicious, you become a community’s best defense against the destruction wildlife can cause. While you hunt mundane beasts, you know there are more dangerous and supernatural creatures roaming the darkness.</p>
+			<p>You and your fellow hunters are often as brutish as the creatures you hunt, heavily scarred from close encounters with your prey. In order to take down your prey, you must think and react as they might.</p>
+			<div class="reference">
+				<div element="ID_GFG_GHPG25_FEAT_BLOOD_HOUND" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Strength, Dexterity, Intelligence, Blood Hound Feat, Animal Handling and Survival Skills, Leatherworker’s Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_DEX_INT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_GFG_GHPG25_FEAT_BLOOD_HOUND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS" />	
+		</rules>
+	</element>
+</elements>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Pox-Touched Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-Pox-Touched.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Pox-Touched.xml" />
+		</update>
+	</info>
+
+	<!-- Pox-Touched -->
+	<element name="Pox-Touched" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_POX_TOUCHED">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Constitution, Intelligence, Wisdom</li>
+				<li><strong>Feat:</strong> Triage Expert</li>
+				<li><strong>Skill Proficiencies:</strong> Intimidation and Medicine</li>
+				<li><strong>Tool Proficiency:</strong> Herbalism Kit</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Herbalism Kit, Traveler’s Clothes, 8 GP; or (B) 50 GP</li>
+			</ul>
+			<p>When you fell ill with the Weeping Pox, you assumed you would die from it, as had so many before you. Your neighbors shunned you, fearing that you would spread the disease to them and their families. Then a miracle happened. A stranger came to you and offered to help. The stranger brought forth strange medicines, providing you with curative draughts and elixirs. And just as the disease reached its worst stages, the symptoms began to vanish. Before long, you were cured of the disease.</p>
+			<p>The sores and scars of the disease, however, still play across your body—an unsubtle reminder of the terrible scourge you survived. The stranger left you after the treatments concluded, but you retained some of the knowledge that the healer used while caring for you. Those who marvel at your recovery also fear you: they harbor some suspicion that you made deals with dark powers to drive away the disease.</p>
+			<div class="reference">
+				<div element="ID_GFG_GHPG25_FEAT_TRIAGE_EXPERT" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Constitution, Intelligence, Wisdom, Triage Expert Feat, Intimidation and Medicine Skills, Herbalism Kit</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_CON_INT_WIS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_GFG_GHPG25_FEAT_TRIAGE_EXPERT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />	
+		</rules>
+	</element>
+</elements>

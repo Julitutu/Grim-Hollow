@@ -1,0 +1,87 @@
+<elements>
+	<info>
+		<name>Dwarf</name>
+		<description>The Dwarf heritage from Grim Hollow - The Players Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="heritage-dwarf.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-dwarf.xml" />
+		</update>
+	</info>
+
+	<element name="Dwarf" type="Race" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_DWARF">
+		<description>
+			<p>Ancient and dauntless as the mountains they call home, the dwarves first appeared in Etharis long before recorded history. As talented and diligent crafters, the dwarves forged their kingdoms in the valleys and foothills of the two oldest mountains on the continent: the Rock-Teeth and the Grey Spine. Beneath these vast ranges ran rich veins of mithral and gold. The dwarves who mined and crafted these metals quickly became famous across Etharis.</p>
+			<p class="indent">During the wars of the Era of Expansion, the dwarves barricaded themselves within their greatest capitals: the tiered city of Stehlenwald and the mountain stronghold of Grabenstein. Both fortress cities were once thought impregnable. The dwarves of Grabenstein fought valiantly for their homelands, withstanding multiple sieges until eventually their walls were ruined, their thanedoms uprooted, and their rich mines claimed by human warlords. These conquerors’ descendants would later lay the groundwork for the Bürach Empire.</p>
+			<p class="indent">The dwarven kingdom of Stehlenwald endured. Rather than share the fate of their northern cousins, the Stehlenwald dwarves dug deeper into the heart of the mountain. There, miners laid eyes upon a new metal, impenetrable to the weapons of their enemies: adamantine. With armor and weapons crafted from adamantine, dwarf battalions managed to push the invaders back to their homelands, but at a great cost. The population of Stehlenwald was decimated by war and famine. Isolation within the mountains was the only option for survival for those who remained.</p>
+			<p class="indent">By the time of the rise of human kingdoms, the proud dwarves of Stehlenwald had recovered from war. They emerged from the mountains at last to discover the political landscape had dramatically changed, leaving them surrounded and vastly outnumbered by the armies of the Bürach Empire. Realizing there was only one way for his people to survive and prosper, the dwarf king struck a deal with the Bürach Empire. The dwarves would surrender their lands and become members of the empire, as long as they could govern themselves independently.</p>
+			<p class="indent">Great numbers of dwarves still cannot forgive the great loss of life and sovereignty their ancestors once endured. It’s a common phrase in Etharis that it’s easier to move a mountain than a dwarf. But though deep wounds still exist in the Bürach Empire, dwarves have become among the most prosperous and accepted peoples in all nations of Etharis.</p>
+			<h5>DWARF BASE TRAITS</h5>
+			<ul class="unstyled">
+				<li><strong>Age.</strong> Dwarves physically mature by their late teens, but are considered young until they reach the age of 50. On average, they live about 350 years.</li>
+				<li><strong>Size.</strong> Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.</li>
+				<li><strong>Speed.</strong> 30 feet. Your Speed is not reduced by wearing heavy armor. You can reduce your Speed by 5 feet to gain an extra heritage trait.</li>
+			</ul>
+			<h5>TRADITIONAL DWARF TRAITS</h5>
+			<p>Dwarves are known for their natural resilience and for the degree to which they have adapted to living in the deeps beneath hills and mountains, where few other folks can thrive. If you wish to play a traditional Dwarf, it is recommended you select from the following traits:</p>
+			<ul>
+				<li><strong>Combat:</strong> Damage Resistance (Poison), Toughness, Weapon Aptitude</li>
+				<li><strong>Exploration:</strong> Darkvision, Poison Resilience, Steady</li>
+				<li><strong>Roleplaying:</strong> Artisanal Focus (Brewer’s Supplies, Mason’s Tools, or Smith’s Tools), Crafter’s Eye</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+
+			<!-- Free Choice System -->
+			<select type="Racial Trait" name="Heritage Trait (Dwarf)" supports="GH Heritage Trait" number="8" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			<select type="Racial Trait" name="Stout Build (Optional)" supports="GH Stout Build Option" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			
+			<!-- Max Heritage System -->
+			<select type="Racial Trait" name="Heritage Trait (Dwarf)" supports="GH Heritage Trait" number="6" requirements="ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+
+			<!-- Traditional System -->
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_DAMAGE_RESISTANCE_POISON" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_TOUGHNESS" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_WEAPON_APTITUDE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_DARKVISION" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_POISON_RESILIENCE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_STEADY" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG25_RACE_TRAIT_TRADITIONAL_DWARVEN_CRAFTING" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_CRAFTERS_EYE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+		</rules>
+	</element>
+
+	<element name="No Stout Build" type="Racial Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_TRAIT_DWARF_NO_STOUT_BUILD_OPTION">
+	<supports>GH Stout Build Option</supports>
+		<description>
+			<p>You don't reduce your Speed by 5 feet to gain an extra heritage trait.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Stout Build" type="Racial Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_TRAIT_DWARF_STOUT_BUILD_OPTION">
+	<supports>GH Stout Build Option</supports>
+		<description>
+			<p>You can reduce your Speed by 5 feet to gain an extra heritage trait.</p>
+		</description>
+		<sheet>
+			<description>Your speed is reduced by 5 feet, and you gain one additional heritage trait.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed" value="-5" />
+			<select type="Racial Trait" name="Additional Heritage Trait" supports="GH Heritage Trait" />
+		</rules>
+	</element>
+
+	<element name="Traditional Dwarven Crafting" type="Racial Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_TRAIT_TRADITIONAL_DWARVEN_CRAFTING">
+		<supports>GH Heritage Trait, GH Roleplaying Trait</supports>
+		<description>
+			<p>You revere the crafting skill of ancestors long dead. You have proficiency with your choice of Brewer's Supplies, Mason's Tools, or Smith's Tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Artisan's Tool (Dwarven Crafting)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES||ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS||ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+		</rules>
+	</element>
+</elements>

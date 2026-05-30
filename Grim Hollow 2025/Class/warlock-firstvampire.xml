@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The First Vampire Patron</name>
+		<description>The First Vampire Patron subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="warlock-firstvampire.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/warlock-firstvampire.xml" />
+		</update>
+	</info>
+
+	<element name="The First Vampire Patron" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_WARLOCK_FIRST_VAMPIRE">
+		<supports>Warlock Subclass</supports>
+		<description>
+			<p class="flavor">Wield the Power of Undeath</p>
+			<p>You have made a pact with a powerful vampire cursed by the gods or born as a creature of the night. Hundreds of haunted beings serve this vampire, so why enter a pact with you? Because you can act in the light of day unhindered? To cull weaker vampires?</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_SPELLS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_DRAIN_LIFE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_NOCTURNAL_PREDATOR" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_CREATURE_OF_THE_NIGHT" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_ELDRITCH_APPETITE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_ETERNAL_NIGHT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_DRAIN_LIFE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_NOCTURNAL_PREDATOR" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_CREATURE_OF_THE_NIGHT" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_ELDRITCH_APPETITE" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_ETERNAL_NIGHT" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: First Vampire Spells" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_SPELLS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIRST_VAMPIRE_SPELLS</requirements>
+		<description>
+			<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the First Vampire Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>First Vampire Spells</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Warlock Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Bane, Command, False Life, Fog Cloud</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Conjure Animals (bats, rats, or wolves only), Gaseous Form</em></td></tr>
+				<tr><td style="text-align:center">7</td><td><em>Dominate Person, Seeming</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Little Death, Telekinesis</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BANE" level="3" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COMMAND" level="3" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FALSE_LIFE" level="3" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FOG_CLOUD" level="3" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONJURE_ANIMALS" level="5" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GASEOUS_FORM" level="5" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DOMINATE_PERSON" level="7" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SEEMING" level="7" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_LITTLE_DEATH" level="9" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TELEKINESIS" level="9" spellcasting="Warlock" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Drain Life" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_DRAIN_LIFE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIRST_VAMPIRE_DRAIN_LIFE</requirements>
+		<description>
+			<p>You gain an innate power to drain life from the living. After you take the Attack or Magic action, you can use a Bonus Action to make an Unarmed Strike. On a hit, the Unarmed Strike deals Necrotic damage equal to 1d6 plus your Charisma modifier instead of its normal damage.</p>
+			<p class="indent">When you hit a creature with Drain Life, you can expend a Pact Magic spell slot to deal an extra 1d8 Necrotic damage to the target, plus another 1d8 per level of the spell slot. When you expend a spell slot in this way, you regain Hit Points equal to the amount of damage dealt.</p>
+		</description>
+		<sheet alt="Drain Life" action="Bonus Action">
+			<description>After you take the Attack or Magic action, you can make an Unarmed Strike that deals 1d6+{{charisma:modifier}} Necrotic damage instead of normal damage. When you hit with this attack, you can expend a Pact Magic spell slot to deal an extra 1d8 + 1d8 per spell slot level Necrotic damage, and you regain HP equal to the damage dealt.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Nocturnal Predator" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_NOCTURNAL_PREDATOR">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIRST_VAMPIRE_NOCTURNAL_PREDATOR</requirements>
+		<description>
+			<p>As a predator of the night, you have been blessed with enhanced vision in darkness. You have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="60" bonus="nocturnal predator" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Creature of the Night" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_CREATURE_OF_THE_NIGHT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIRST_VAMPIRE_CREATURE_OF_THE_NIGHT</requirements>
+		<description>
+			<p>You always have the Polymorph spell prepared. With this feature, you can cast it only on yourself without expending a spell slot and without Material components to transform into a Bat, Rat, or Wolf.</p>
+			<p class="indent">Your game statistics are replaced by the Beast's stat block, but you retain your creature type; Hit Points; Hit Point Dice; Intelligence, Wisdom, and Charisma scores; class features; languages; and feats. You also retain your skill and saving throw proficiencies and use your Proficiency Bonus for them, in addition to gaining the proficiencies of the creature. If a skill or saving throw modifier in the Beast's stat block is higher than yours, use the one in the stat block.</p>
+			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Creature of the Night" usage="{{creature of the night:usage}}/Long Rest">
+			<description>You can cast Polymorph on yourself without a spell slot or Material components to transform into a Bat, Rat, or Wolf. You retain your creature type, HP, HD, Int/Wis/Cha, features, languages, feats, and proficiencies (using the Beast's modifier if higher).</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_POLYMORPH" spellcasting="Warlock" prepared="true" />
+			<stat name="creature of the night:usage" value="1" bonus="base" />
+			<stat name="creature of the night:usage" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 10: Eldritch Appetite" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_ELDRITCH_APPETITE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIRST_VAMPIRE_ELDRITCH_APPETITE</requirements>
+		<description>
+			<p>When you reduce an enemy to 0 Hit Points with your Drain Life feature, you can take a Reaction to consume the last of its fleeting mortality. When you do so, you regain one of your expended Pact Magic spell slots.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Eldritch Appetite" action="Reaction" usage="1/Long Rest">
+			<description>When you reduce an enemy to 0 HP with Drain Life, you can regain 1 expended Pact Magic spell slot.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Eternal Night" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIRST_VAMPIRE_ETERNAL_NIGHT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIRST_VAMPIRE_ETERNAL_NIGHT</requirements>
+		<description>
+			<p>Your vampire patron grants you a taste of true immortality. You no longer age, and you gain Resistance to Necrotic damage.</p>
+			<p class="indent">As a Bonus Action, you gain the following benefits for 1 minute:</p>
+			<ul>
+				<li>At the start of each of your turns, you regain 1d6 Hit Points if you have at least 1 Hit Point and you aren't in direct sunlight or running water. If you take Radiant damage, you don't regain Hit Points from this feature at the start of your next turn.</li>
+				<li>When you use your Drain Life feature, you can deal an extra 1d8 Necrotic damage without expending a spell slot.</li>
+			</ul>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Eternal Night" action="Bonus Action" usage="1/Long Rest">
+			<description>You no longer age and have Resistance to Necrotic damage.&#13;
+			As a Bonus Action, for 1 min:&#13;
+			• Start of turn: Regain 1d6 HP (if &gt;0 HP, not in sunlight/running water, and didn't take Radiant damage since last turn).&#13;
+			• Drain Life deals an extra 1d8 Necrotic damage (no spell slot required).</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="First Vampire Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIRST_VAMPIRE_SPELLS" />
+	<element name="Drain Life Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIRST_VAMPIRE_DRAIN_LIFE" />
+	<element name="Nocturnal Predator Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIRST_VAMPIRE_NOCTURNAL_PREDATOR" />
+	<element name="Creature of the Night Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIRST_VAMPIRE_CREATURE_OF_THE_NIGHT" />
+	<element name="Eldritch Appetite Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIRST_VAMPIRE_ELDRITCH_APPETITE" />
+	<element name="Eternal Night Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIRST_VAMPIRE_ETERNAL_NIGHT" />
+
+</elements>

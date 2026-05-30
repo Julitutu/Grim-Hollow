@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Eldritch Domain</name>
+		<description>The Eldritch Domain subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="cleric-eldritch.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/cleric-eldritch.xml" />
+		</update>
+	</info>
+
+	<element name="Eldritch Domain" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_CLERIC_ELDRITCH_DOMAIN">
+		<supports>Cleric Subclass</supports>
+		<description>
+			<p class="flavor">Wield the Power that Killed the Gods</p>
+			<p>Even the most benevolent divine beings operate outside the bounds of mortal comprehension. These eldritch forces sing a siren song that calls to mortal worshippers through lucid dreams and terrible whispers. The Eldritch Domain empowers the followers of the unknown and distant forces of chaos, divine entities of eldritch oblivion, and dead gods.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_SPELLS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_CONTAGION" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_PROPHECY_OF_DOOM" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_OTHERWORLDLY_CALM" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_SING_THE_SONG" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_CONTAGION" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_PROPHECY_OF_DOOM" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_OTHERWORLDLY_CALM" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_SING_THE_SONG" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Eldritch Domain Spells" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_SPELLS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_ELDRITCH_DOMAIN_SPELLS</requirements>
+		<description>
+			<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Eldritch Domain Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Eldritch Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Cleric Level</td><td>Prepared Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Detect Thoughts, Hideous Laughter, See Invisibility, Sleep</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Fear, Tongues</em></td></tr>
+				<tr><td style="text-align:center">7</td><td><em>Confusion, Phantasmal Killer</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Contact Other Plane, Dream</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_THOUGHTS" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TASHAS_HIDEOUS_LAUGHTER" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SEE_INVISIBILITY" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SLEEP" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FEAR" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TONGUES" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONFUSION" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PHANTASMAL_KILLER" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONTACT_OTHER_PLANE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DREAM" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Eldritch Contagion" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_CONTAGION">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_ELDRITCH_DOMAIN_CONTAGION</requirements>
+		<description>
+			<p>You've been gifted with the ability to impart a fleeting taste of the unknowable on others. When you take a Magic action to cast a spell using a spell slot that targets one or more creatures, you can force one target of the original spell to make a Wisdom saving throw against your spell save DC. On a failed save, roll on the Eldritch Effects table, and the target creature suffers that effect for 1 minute. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success. This effect ends early if you use this feature again.</p>
+			<h5>Eldritch Effects</h5>
+			<table>
+				<thead>
+					<tr><td class="col-10">D8</td><td>Effect</td></tr>
+				</thead>
+				<tr><td>1</td><td>The creature can't speak or cast spells that have Verbal components.</td></tr>
+				<tr><td>2</td><td>The creature takes 1d6 Psychic damage at the start of each of its turns.</td></tr>
+				<tr><td>3</td><td>The creature is disoriented. If it uses more than 5 feet of its movement to do anything other than stand, it has the Prone condition.</td></tr>
+				<tr><td>4</td><td>The creature is distracted by visions and voices and has Disadvantage on attack rolls and Wisdom (Perception) checks.</td></tr>
+				<tr><td>5</td><td>The creature is unsure of itself. On its turns, it can take either an action or a Bonus Action, not both, and it can make only one attack if it takes the Attack action.</td></tr>
+				<tr><td>6</td><td>The creature is reckless. It has Advantage on attack rolls, but attack rolls against it have Advantage.</td></tr>
+				<tr><td>7</td><td>The creature has the Deafened condition and can't see anything more than 30 feet away.</td></tr>
+				<tr><td>8</td><td>The creature has the Frightened condition.</td></tr>
+			</table>
+		</description>
+		<sheet alt="Eldritch Contagion">
+			<description>When you cast a spell using a spell slot targeting 1+ creatures, you can force one target to make a DC{{cleric:spellcasting:dc}} Wis save. On a fail, roll 1d8 for an Eldritch Effect lasting 1 min (save ends at end of turns). Ends early if you use this feature again.&#13;
+			1: Can't speak/cast Verbal spells.&#13;
+			2: 1d6 Psychic damage start of turn.&#13;
+			3: Prone if using &gt;5 ft movement to not stand.&#13;
+			4: Disadv. on attacks and Perception.&#13;
+			5: Can take Action OR Bonus Action (not both), max 1 attack.&#13;
+			6: Adv. on attacks, but attacks against it have Adv.&#13;
+			7: Deafened, can't see &gt;30 ft.&#13;
+			8: Frightened.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Prophecy of Doom" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_PROPHECY_OF_DOOM">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_ELDRITCH_DOMAIN_PROPHECY_OF_DOOM</requirements>
+		<description>
+			<p>As a Magic action, you expend a use of your Channel Divinity to choose a point within 120 feet of you that you can see and roll on the Eldritch Effects table. Each creature in a 15-foot-radius Sphere centered on that point must succeed on a Wisdom saving throw against your spell save DC or suffer the rolled effect for 1 minute. At the end of each of its turns, the target repeats the save, ending the effect on itself on a success.</p>
+		</description>
+		<sheet alt="Prophecy of Doom" action="Action" usage="Channel Divinity">
+			<description>Choose a point within 120 ft and roll on the Eldritch Effects table. Each creature in a 15-ft Sphere must make a DC{{cleric:spellcasting:dc}} Wis save or suffer the effect for 1 min (save ends at end of turns).</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Otherworldly Calm" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_OTHERWORLDLY_CALM">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_ELDRITCH_DOMAIN_OTHERWORLDLY_CALM</requirements>
+		<description>
+			<p>You have Resistance to Psychic damage and Advantage on saving throws to avoid or end the Charmed and Frightened conditions.</p>
+			<p class="indent">Additionally, your thoughts can't be read by telepathy or other means unless you allow it. The attempt automatically fails, and the creature must succeed on a Wisdom saving throw against your spell save DC or take Psychic damage equal to your Cleric level.</p>
+		</description>
+		<sheet alt="Otherworldly Calm">
+			<description>You have Advantage on saves vs Charmed/Frightened. Your thoughts can't be read unless you allow it; attempts fail and the creature must make a DC{{cleric:spellcasting:dc}} Wis save or take {{level:cleric}} Psychic damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+
+	<element name="Level 17: Sing the Song that Ends the World" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_ELDRITCH_DOMAIN_SING_THE_SONG">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_ELDRITCH_DOMAIN_SING_THE_SONG</requirements>
+		<description>
+			<p>When a creature fails a Wisdom saving throw against your Prophecy of Doom feature, you can deal 10d10 Psychic damage to it. Once a creature takes damage in this way, it is immune to this effect for 10 minutes, after which it can be affected again.</p>
+		</description>
+		<sheet alt="Sing the Song that Ends the World">
+			<description>When a creature fails a Wis save vs your Prophecy of Doom, you can deal 10d10 Psychic damage to it. A creature is immune to this damage for 10 mins after taking it.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Eldritch Domain Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_ELDRITCH_DOMAIN_SPELLS" />
+	<element name="Eldritch Contagion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_ELDRITCH_DOMAIN_CONTAGION" />
+	<element name="Prophecy of Doom Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_ELDRITCH_DOMAIN_PROPHECY_OF_DOOM" />
+	<element name="Otherworldly Calm Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_ELDRITCH_DOMAIN_OTHERWORLDLY_CALM" />
+	<element name="Sing the Song that Ends the World Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_ELDRITCH_DOMAIN_SING_THE_SONG" />
+
+</elements>

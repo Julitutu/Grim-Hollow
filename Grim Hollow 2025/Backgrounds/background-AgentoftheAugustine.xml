@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Agent of the Augustine Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-AgentoftheAugustine.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-AgentoftheAugustine.xml" />
+		</update>
+	</info>
+
+    <!-- Agent of the Augustine -->
+	<element name="Agent of the Augustine" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_AGENT_OF_THE_AUGUSTINE">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Intelligence, Wisdom, Charisma</li>
+				<li><strong>Feat:</strong> Insightful Collector</li>
+				<li><strong>Skill Proficiencies:</strong> History and Persuasion</li>
+				<li><strong>Tool Proficiency:</strong> Forgery Kit</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Forgery Kit, Book (history), Magnifying Glass, Parchment (10 sheets), Robe, 8 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You’ve used your education and knowledge from working on behalf of the Augustine Trading Company. You’ve been generally held in high regard by those who can use the knowledge you’ve gained, while others look upon your work for the organization as unsavory. Your training, however, makes you a versatile problem-solver.</p>
+			<p>You’ve learned your craft from smugglers, merchants, blackmailers, and brigands who came before you. You may still work for the organization, or your may have had to cut ties for being too honest, too dishonest, or just in the wrong place at the wrong time. Whatever your connections, you have traveled more than most people in Etharis can ever dream of.</p>
+			<div class="reference">
+				<div element="ID_GFG_GHPG25_FEAT_INSIGHTFUL_COLLECTOR" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Intelligence, Wisdom, Charisma, Insightful Collector Feat, History and Persuasion Skills, Forgery Kit</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_INT_WIS_CHA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_GFG_GHPG25_FEAT_INSIGHTFUL_COLLECTOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />	
+		</rules>
+	</element>
+</elements>

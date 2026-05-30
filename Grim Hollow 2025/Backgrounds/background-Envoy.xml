@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-Envoy.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Envoy.xml" />
+		</update>
+	</info>
+    
+	<!-- Envoy -->
+	<element name="Envoy" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_ENVOY">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Strength, Constitution, Charisma</li>
+				<li><strong>Feat:</strong> Skilled</li>
+				<li><strong>Skill Proficiencies:</strong> Insight and Persuasion</li>
+				<li><strong>Tool Proficiency:</strong> Calligrapher’s Supplies</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Dagger, Calligrapher’s Supplies, Diplomatic Papers, Fine Clothes, Signet Ring, 10 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You are the official representative of a government or other powerful group, traveling to further the objectives of the group you represent. You must be ready at a moment’s notice to travel to the next town, or to other parts of the world. Such travel requires not just social skills but also a strong drive and a hardy disposition.</p>
+			<p>Your responsibilities change based on the organization you represent and their goals: forge alliances or maintain existing ones, establish business ties, oversee far-ranging projects, etc. However, many of your tasks are reactive: responding to a noble’s threats, securing defensive pacts in times of conflict, or bolstering border defenses. Everywhere you go, something is at stake.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_FEAT_SKILLED" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Strength, Constitution, Charisma, Skilled Feat, Insight and Persuasion Skills, Calligrapher’s Supplies</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_CON_CHA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<select type="Feat" name="Origin Feat (Envoy)" supports="ID_WOTC_PHB24_FEAT_SKILLED|ID_WOTC_PHB24_FEAT_SKILLED_2" default="ID_WOTC_PHB24_FEAT_SKILLED" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />	
+		</rules>
+	</element>
+</elements>

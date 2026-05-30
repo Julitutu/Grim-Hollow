@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Accursed</name>
+		<description>The Accursed heritage from Grim Hollow - The Players Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="heritage-accursed.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-accursed.xml" />
+		</update>
+	</info>
+
+	<element name="Accursed" type="Race" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_ACCURSED">
+		<description>
+			<p>The accursed are the rarest and least understood of all the heritages of Etharis—because each accursed is effectively a heritage unto themself. Whether created by unique magic, brought to the world through planar gates or extradimensional portals, or representing one of the last members of a heritage thought to have been lost to history, an accursed is a creature whose traits are all freely chosen with a specific character concept in mind.</p>
+			<p class="indent">Accursed are so named not because their birth or creation was the result of magical malfeasance, a hag’s bargain, a corrupted scroll, or any of the other typical senses of “curse” in the game. Rather, accursed reflects the grim sense of how most other folk in the campaign will view such a character, especially those who don’t take the time to learn more about the character’s life and outlook. This heritage is intended to encourage players to decide who their character is with a maximum amount of creativity. It’s a sort of “catch-all” for unique characters who don’t fit into another heritage, but can still fit into Grim Hollow.</p>
+			<p class="indent">Accursed typically don’t represent a people or a culture and are often entirely unique unto themselves. One player might create an accursed character taking the form of a halfling-sized talking raven who hatched from a petrified basilisk egg during a full moon. In all the world, there is no one else quite like them, and the combination of heritage traits chosen by the player of that accursed character reflects as such. Another player might choose the accursed heritage to reflect the form and capabilities of a lizardfolk—a heritage that doesn’t canonically exist in Grim Hollow. Whether that accursed character represents a wanderer who set out from a lost lizardfolk enclave deep in the Black Mire, or a character born to elf parents cursed by an evil mage, their selection of heritage traits defines their unique place in the world.</p>
+			<h5>ACCURSED BASE TRAITS</h5>
+			<ul class="unstyled">
+				<li><strong>Age.</strong> Accursed that strongly resemble other humanoids might have a longevity only slightly different than those other folk. However, unusual Accursed might age quickly or live effectively ageless lives until cut down by tragedy.</li>
+				<li><strong>Size.</strong> Accursed can range in size from under 3 feet to 6 feet or more, with a wide range of body types to match. Your size is Small or Medium, as you determine.</li>
+				<li><strong>Speed.</strong> 30 feet. If you are Small, you can reduce your Speed by 5 feet to gain an extra trait.</li>
+			</ul>
+			<h5>TRADITIONAL ACCURSED TRAITS</h5>
+			<p>The unique nature behind your creation or the evolution of your exceedingly rare kind dictates the traits that define you. If you resemble or once lived as one of the standard heritages of Etharis, you might choose one or more of the traits of that heritage as a starting point. But you are free to choose any traits as you determine, creating a character whose unique nature shapes their experience in the world.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed" value="30" bonus="base" />
+            <select type="Racial Trait" name="Size" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Accursed)" supports="GH Heritage Trait" number="8" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM" />
+			<select type="Racial Trait" name="Heritage Trait (Accursed)" supports="GH Heritage Trait" number="6" requirements="ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM" />
+		</rules>
+	</element>
+
+</elements>

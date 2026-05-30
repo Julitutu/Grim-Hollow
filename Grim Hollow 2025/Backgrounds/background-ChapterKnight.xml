@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-ChapterKnight.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-ChapterKnight.xml" />
+		</update>
+	</info>
+	<!-- Chapter Knight -->
+	<element name="Chapter Knight" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_CHAPTER_KNIGHT">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Strength, Wisdom, Charisma</li>
+				<li><strong>Feat:</strong> Savage Attacker</li>
+				<li><strong>Skill Proficiencies:</strong> Animal Handling and Athletics</li>
+				<li><strong>Tool Proficiency:</strong><i> Choose one kind of Musical Instrument</i></li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Dagger, Shield, Musical Instrument (same as above), Traveler’s Clothes, 6 GP; or (B) 50 GP</li>
+			</ul>
+			<p>Knights of the Charneault Kingdom are more than soldiers. You’re an exemplar of the virtues that maintain peace and prosperity in the realm. Through training and study, you’ve dedicated your life to upholding noble ideals such as strength, bravery, charity, temperance, and tradition. Your shield bears a coat of arms which symbolizes the tenets to which you’re sworn—those of your household or Knight Chapter. If you are still a squire, yet to accomplish your first quest, your shield is blank.</p>
+			<p>You might receive many honors during your journeys, though much will be expected of you. Folk may look to you as a protector, leader, or keeper of traditions—or you may be feared as a stern justiciar of the Crown’s justice. The path of a knight is difficult and perilous, and not all who walk it maintain their virtues.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_FEAT_SAVAGE_ATTACKER" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Strength, Wisdom, Charisma, Savage Attacker Feat, Animal Handling and Athletics Skills, a Musical Instrument</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_WIS_CHA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_WOTC_PHB24_FEAT_SAVAGE_ATTACKER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Proficiency" name="Musical Instrument (Chapter Knight)" supports="Musical Instrument" />
+		</rules>
+	</element>
+</elements>

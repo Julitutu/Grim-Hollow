@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Hag Transformation</name>
+        <description>Hag Transformation from Grim Hollow: Player's Guide (2025)</description>
+        <author>Ghostfire Gaming</author>
+        <update version="0.1.0">
+            <file name="hag.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/hag.xml" />
+        </update>
+    </info>
+
+    <!-- Items -->
+    <element name="Hag Transformation (Stage 1)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_HAG_LEVEL_1">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_HAG" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_HAG" />
+        </rules>
+    </element>
+    <element name="Hag Transformation (Stage 2)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_HAG_LEVEL_2">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_HAG" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_2" requirements="ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_1"/>
+        </rules>
+    </element>
+    <element name="Hag Transformation (Stage 3)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_HAG_LEVEL_3">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_HAG" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_3" requirements="ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_2"/>
+        </rules>
+    </element>
+    <element name="Hag Transformation (Stage 4)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_HAG_LEVEL_4">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_HAG" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_4" requirements="ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_3"/>
+        </rules>
+    </element>
+
+    <!-- Base Feat -->
+    <element name="Hag" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_HAG">
+        <description>
+            <p>In the heart of a forbidden forest, a lost hunter sees a modest cottage nestled among the trees. A bewitching maiden greets the hunter, offering him a bowl of stew to stave off both hunger and the chill night air. Seconds after eating the first spoonful, the hunter begins to feel unnaturally drowsy.</p>
+            <p>In the dark alleyways of the city, a woman hurries home from a long day at the marketplace selling her bread. A feeble man in filthy clothes asks her if she can spare a crust for a down-on-his-luck traveler. She scoffs at the request, spitting a curse toward the vagrant. Before she can round the next corner, she feels a cold shiver wrack her body. She is unable to take another step.</p>
+            <p>Hags of Grim Hollow take many shapes and forms, and their powers and goals are as diverse as any other creature who has connections to the Realm of Faerie. What is true of them all, however, is that they are as fickle as they are dangerous, and they often serve a special form of justice based on their own strange and sometimes contradictory codes of behavior. Hags revel in despoiling purity, whether it resides in nature or a mortal’s soul. While those that do not respect a Hag can find themselves in a stew or forced into service, Hags can be persuaded to forge dark bargains with those who offer polite deference.</p>
+            
+            <h4>Becoming a Hag</h4>
+            <p>Few creatures are born Hags. Humanoids can become a Hag as a result of a ritual or a curse. Sometimes the offspring of a cursed individual becomes a Hag after reaching the age of maturity. Hags have ways of spawning fully mature Hags, but only the most depraved individuals would consider that any sort of birth.</p>
+            <p>Other Fey creatures see Hags as pitiful, revolting creatures who can never enjoy the blessing of an existence in the Realm of Faerie, so cursing a mortal to become a Hag is a particularly harsh consequence for angering a Fey. Hags themselves are fond of creating other Hags to join them and form a coven.</p>
+            <p>Very few people are twisted enough to seek to transform themselves into a Hag. The power it provides is not worth the pain and anguish that comes with it. Yet that power is attractive to some, who seek out the rituals to make the change or entreat Hags to twist them as part of a bargain.</p>
+            
+            <h4>Reversing Hag Traits</h4>
+            <p>The Hag Transformation is one of the few that can be reversed, especially when it is bestowed via a curse rather than sought, but only in its first two stages. Once the creature travels too far down the path of maddening power, the grip has become too strong. Reversing the Transformation, even in its early stages, is an elaborate process that may take months or years, and often only with the assistance of a benevolent fey creature willing to donate some of their magic to the process.</p>
+            <p>The last step of the reversal process requires a powerful Fey creature to participate in a ritual to remove all remnants of the transformative magic. As with most Fey, this participation almost always comes at a steep cost.</p>
+            
+            <h4>Hag Stages</h4>
+            <p>At each stage of this Transformation, follow the instructions provided for that stage.</p>
+            
+            <h4>Achieving a New Stage</h4>
+            <p>To move from one stage to the next higher one in this Transformation, an event or some other notable occurrence tied to the story of the character should take place. The following events are suggestions for ones that might trigger a move to the next stage of the Transformation:</p>
+            <ul>
+                <li>Striking a bargain with a powerful Hag</li>
+                <li>Cursing or killing an innocent being under the new moon</li>
+                <li>Drinking a poisonous draught from a dead Hag’s cauldron</li>
+                <li>Becoming the victim of multiple curses at the same time</li>
+                <li>Consuming the flesh of the innocent</li>
+                <li>Crafting a Hag’s Eye or creating a Gasdra</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You are undergoing the Hag Transformation.</description>
+        </sheet>
+        <rules>
+            <stat name="hag:stage" value="0" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_1" />
+        </rules>
+    </element>
+
+    <!-- Transformation Stage 1 -->
+    <element name="Hag (Stage 1)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_1">
+        <prerequisite>Hag Transformation</prerequisite>
+        <requirements>ID_GFG_GHPG25_FEAT_TRANSFORMATION_HAG</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you initially undergo the Hag Transformation, you gain the Hag Form Boon and one other Stage 1 Boon of your choice. You also gain the Stage 1 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_HAG_FORM" />
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_HIDEOUS_APPEARANCE_HAG" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Hag Form, Sisterhood Boon, Hideous Appearance (Flaw)</description>
+        </sheet>
+        <rules>
+            <stat name="hag:stage" value="1" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_HAG_FORM" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_HIDEOUS_APPEARANCE_HAG" />
+            <select type="Feat Feature" name="Sisterhood (Stage 1 Boon)" supports="Hag 2025 Sisterhood" />
+            <stat name="sisterhood:dc" value="8" />
+            <stat name="sisterhood:dc" value="charisma:modifier" />
+            <stat name="sisterhood:dc" value="hag:stage" />
+        </rules>
+    </element>
+
+    <element name="Boon: Hag Form" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_HAG_FORM">
+        <supports>Hag 2025 Boon</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_1</requirements>
+        <description>
+            <p>Your Creature Type becomes Fey in addition to any other creature type(s) you have.</p>
+            <p>Additionally, your connection with the magic of the natural world provides you with increased defenses. When you are not wearing armor, your Armor Class is 13 plus your Dexterity modifier. Additionally, choose Strength, Intelligence, or Charisma: you are proficient with Saving Throws using that ability score.</p>
+        </description>
+        <sheet display="false" >
+            <description>Your Creature Type is Fey. Unarmored AC is 13 + Dex modifier.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_FEY" />
+            <stat name="ac:hag" value="13" />
+            <stat name="ac:hag" value="dexterity:modifier" />
+            <stat name="ac:calculation" value="ac:hag" bonus="calculation" equipped="[armor:none]" alt="Hag Form" />
+            <select type="Feat Feature" name="Hag Form Saving Throw" supports="Hag 2025 Hag Form" />
+        </rules>
+    </element>
+
+    <element name="Strength" type="Feat Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_FEAT_RESILIENT_STRENGTH">
+		<supports>Hag 2025 Hag Form</supports>
+        <compendium display="false" />
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_STRENGTH</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency with Strength saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+		</rules>
+	</element>
+    <element name="Intelligence" type="Feat Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_FEAT_RESILIENT_INTELLIGENCE">
+		<supports>Hag 2025 Hag Form</supports>
+        <compendium display="false" />
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency with Intelligence saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+		</rules>
+	</element>
+    <element name="Charisma" type="Feat Feature" source="Player’s Handbook (2024)" id="ID_WOTC_PHB24_FEAT_RESILIENT_CHARISMA">
+		<supports>Hag 2025 Hag Form</supports>
+        <compendium display="false" />
+		<requirements>!ID_PROFICIENCY_SAVINGTHROW_CHARISMA</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency with Charisma saving throws.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma:save:proficiency" value="proficiency" bonus="proficiency" alt="Proficiency" />
+		</rules>
+	</element>
+
+    <element name="Boon: The Green Sisterhood" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GREEN_SISTERHOOD">
+        <supports>Hag 2025 Sisterhood</supports>
+        <description>
+            <p>Green Hags are skilled deceivers who collect corrupting magic and secret curses. They use their magic to twist pure into foul, poking at the weaknesses of their foes. Green Hags embrace magical deceptions and are known for their vile recipes. There are no worse cooks in Etharis.</p>
+            <ul>
+                <li>You have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</li>
+                <li>You become Amphibious and can breathe both air and water.</li>
+                <li>You can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations with a Study action and a successful Wisdom (Insight) check with a DC equal to 8 plus your Charisma modifier plus your Transformation Stage.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Amphibious (breathe air and water). Mimic animal/humanoid sounds (Study action, Wis Insight DC {{sisterhood:dc}} to discern).</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <stat name="darkvision:range" value="60" />
+        </rules>
+    </element>
+
+    <element name="Boon: The Red Sisterhood" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_RED_SISTERHOOD">
+        <supports>Hag 2025 Sisterhood</supports>
+        <description>
+            <p>Red Hags are sometimes called the “nice” hags due to their ability to pretend to be helpful, but their kindness is a mask. While they are more subtle than other Hags and may choose to do good deeds, their motives are selfish. They delight in using honeyed words and offering deals that are just too good to pass up.</p>
+            <ul>
+                <li>You have Darkvision with a range of 60 feet.</li>
+                <li>You gain proficiency in Deception and Persuasion. If you are already proficient, you gain Expertise instead.</li>
+                <li>You are immutable. No effect can change your form, and an illusion can disguise you only if the illusion gives you the Invisible condition.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Immutable: No effect can change your form, and an illusion can disguise you only if it gives you the Invisible condition.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <stat name="darkvision:range" value="60" bonus="base" />
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_DECEPTION" />
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERSUASION" />
+        </rules>
+    </element>
+
+    <element name="Boon: The Sea Sisterhood" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SEA_SISTERHOOD">
+        <supports>Hag 2025 Sisterhood</supports>
+        <description>
+            <p>Sea Hags enjoy spreading chaos. They hate order and calm, creating elaborate deceptions that lead to despair when uncovered. Their appearances are especially hideous, and their gaze can cause fear, or even kill. You gain the following benefits.</p>
+            <ul>
+                <li>You have Darkvision with a range of 60 feet.</li>
+                <li>You become Amphibious and can breathe both air and water. You gain a Swim Speed equal to your Speed. If you already have a Swim Speed, it increases by 10 feet.</li>
+                <li>As a Magic action, you can gaze upon a creature you can see within 30 feet. If the creature fails a Wisdom saving throw with a DC equal to 8 plus your Charisma modifier plus your Transformation Stage, it takes 1d8 Psychic damage for each Transformation Stage you have.</li>
+            </ul>
+        </description>
+        <sheet action="Magic Action">
+            <description>Amphibious (breathe air and water). Gaze (30ft): Target makes a DC {{sisterhood:dc}} Wis save or takes {{hag:stage}}d8 Psychic dmg.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <stat name="speed:swim" value="speed" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Hideous Appearance" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_HIDEOUS_APPEARANCE_HAG">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_1</requirements>
+        <description>
+            <p>Your appearance is grotesquely transformed. Your body, hair, and eyes change in ways mortals find abhorrent. Most creatures witnessing your true form become Hostile and no one is likely to trust you, unless the GM decides otherwise. You have Disadvantage on Charisma (Persuasion) checks.</p>
+            <p>You cannot stand to look upon your own reflection. The first time you see your reflection after a Short or Long Rest, you must succeed on a DC 18 Wisdom saving throw or gain 1 Exhaustion level.</p>
+            <p>Your appearance changes based on your Stage 1 Sisterhood Boon:</p>
+            <ul>
+                <li><strong>Green Sisterhood.</strong> You wither or bloat as your body struggles to deal with the ravages of age. Your hair becomes white and several feet in length. Your skin becomes green and covered in warts and boils.</li>
+                <li><strong>Red Sisterhood.</strong> Your eyes have turned entirely red, and your pupils are narrow like a cat’s. Your skin becomes blood red.</li>
+                <li><strong>Sea Sisterhood.</strong> You have slimy scales and the pallid skin of a dead fish that sags from your emaciated body. Your hair resembles seaweed, and your eyes are glassy.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Disadvantage on Charisma (Persuasion) checks. 1st time seeing reflection after Rest: DC 18 Wis save or 1 Exhaustion level. Most creatures become Hostile.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 2 -->
+    <element name="Hag (Stage 2)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_2">
+        <prerequisite>Hag Transformation Stage 1</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 2 of the Hag Transformation, you select one Stage 2 Boon and gain the Stage 2 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_IRON_SENSITIVITY" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 2 Boon. Iron Sensitivity (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="hag:stage" value="2" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 2)" supports="Hag 2025 Boon 2" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_IRON_SENSITIVITY" />
+            <stat name="adept sisterhood:dc" value="12" />
+            <stat name="adept sisterhood:dc" value="hag:stage" />
+        </rules>
+    </element>
+
+    <element name="Boon: Adept of the Green Sisterhood" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ADEPT_GREEN_SISTERHOOD">
+        <supports>Hag 2025 Boon 2</supports>
+        <prerequisite>The Green Sisterhood</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_2, ID_GFG_GHPG25_FEAT_FEATURE_GREEN_SISTERHOOD</requirements>
+        <description>
+            <p>As your connection to your Green Sisterhood grows, your body and your magical skills strengthen.</p>
+            <ul>
+                <li>You gain a Claw attack that deals 1d6 plus your Strength or Dexterity modifier Slashing Damage. You are proficient with this attack, and you add either your Strength or Dexterity modifier to attack and damage rolls. This attack is not an Unarmed Strike, nor can it be used in place of an Unarmed Strike.</li>
+                <li>You can hide yourself from others. As a Magic action, you can cast Invisibility without expending a spell slot. You can use this feature a number of times equal to your Transformation Stage. You regain all uses after finishing a Long Rest.</li>
+            </ul>
+        </description>
+        <sheet action="Magic Action" usage="{{hag:stage}}/Long Rest">
+            <description>Gain Claw attack (1d6 + Str/Dex Slashing). Cast Invisibility without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_INVISIBILITY" />
+        </rules>
+    </element>
+
+    <element name="Boon: Adept of the Red Sisterhood" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ADEPT_RED_SISTERHOOD">
+        <supports>Hag 2025 Boon 2</supports>
+        <prerequisite>The Red Sisterhood</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_2, ID_GFG_GHPG25_FEAT_FEATURE_RED_SISTERHOOD</requirements>
+        <description>
+            <p>As your connection to your Red Sisterhood grows, your body and your magical skills strengthen.</p>
+            <ul>
+                <li>You gain a Claw attack that deals 1d6 plus your Strength or Dexterity modifier Slashing Damage. You are proficient with this attack, and you add either your Strength or Dexterity modifier to attack and damage rolls. This attack is not an Unarmed Strike, nor can it be used in place of an Unarmed Strike.</li>
+                <li>You can sway others to your will. As a Magic action, you can cast Charm Person without expending a spell slot. The spell save DC when cast in this way is 12 plus your Transformation Stage. You can use this feature a number of times equal to your Transformation Stage. You regain all uses after finishing a Long Rest.</li>
+            </ul>
+        </description>
+        <sheet action="Magic Action" usage="{{hag:stage}}/Long Rest">
+            <description>Gain Claw attack (1d6 + Str/Dex Slashing). Cast Charm Person (DC {{adept sisterhood:dc}}) without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_PERSON" />
+        </rules>
+    </element>
+
+    <element name="Boon: Adept of the Sea Sisterhood" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ADEPT_SEA_SISTERHOOD">
+        <supports>Hag 2025 Boon 2</supports>
+        <prerequisite>The Sea Sisterhood</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_2, ID_GFG_GHPG25_FEAT_FEATURE_SEA_SISTERHOOD</requirements>
+        <description>
+            <p>As your connection to your Sea Sisterhood grows, your body and your magical skills strengthen.</p>
+            <ul>
+                <li>You gain a Claw attack that deals 1d6 plus your Strength or Dexterity modifier Slashing Damage. You are proficient with this attack, and you add either your Strength or Dexterity modifier to attack and damage rolls. This attack is not an Unarmed Strike, nor can it be used in place of an Unarmed Strike.</li>
+                <li>You can appear as someone other than yourself. As a Magic action, you can cast Disguise Self without expending a spell slot. The spell save DC when cast in this way is 12 plus your Transformation Stage. You can use this feature a number of times equal to your Transformation Stage. You regain all uses after finishing a Long Rest.</li>
+            </ul>
+        </description>
+        <sheet action="Magic Action" usage="{{hag:stage}}/Long Rest">
+            <description>Gain Claw attack (1d6 + Str/Dex Slashing). Cast Disguise Self (DC {{adept sisterhood:dc}}) without expending a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_DISGUISE_SELF" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Iron Sensitivity" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_IRON_SENSITIVITY">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_2</requirements>
+        <description>
+            <p>Your body and soul connect back to the Realm of Faerie, and iron and steel weapons forged of the mortal realm cause you pain. After each Short or Long Rest, the first time you are damaged by an iron or steel weapon, you must succeed on a DC 15 Constitution saving throw or have the Stunned condition until the end of your next turn.</p>
+        </description>
+        <sheet>
+            <description>1st time damaged by iron/steel weapon after a Rest: DC 15 Con save or Stunned until the end of your next turn.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 3 -->
+    <element name="Hag (Stage 3)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_3">
+        <prerequisite>Hag Transformation Stage 2</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 3 of the Hag Transformation, you select one Stage 3 Boon and gain the Stage 3 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_PURITYS_PAIN" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 3 Boon. Purity's Pain (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="hag:stage" value="3" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 3)" supports="Hag 2025 Boon 3" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_PURITYS_PAIN" />
+            <stat name="master sisterhood:dc" value="14" />
+            <stat name="master sisterhood:dc" value="hag:stage" />
+        </rules>
+    </element>
+
+    <element name="Boon: Master of the Green Sisterhood" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_MASTER_GREEN_SISTERHOOD">
+        <supports>Hag 2025 Boon 3</supports>
+        <prerequisite>Adept of the Green Sisterhood</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_3, ID_GFG_GHPG25_FEAT_FEATURE_ADEPT_GREEN_SISTERHOOD</requirements>
+        <description>
+            <p>You come into your power as a Hag and enhance your abilities.</p>
+            <ul>
+                <li>When you take the Attack action on your turn, you may make an additional Claw attack. Your Claw attacks deal an additional 1d6 Poison damage.</li>
+                <li>You learn a corrupt ritual to create a Hag Eye or a Gasdra companion. The ritual takes four hours and 200 GP to complete. You choose which ritual you know when you select this boon. You can only have one Hag Eye or Gasdra companion at a time, and you cannot have both.</li>
+                <li>As a Magic action, you can recover an expended spell slot by spending Hit Point Dice equal to the spell slot’s level. The spell slot can have a level equal to no more than one third your character level (round up). Once you use this boon, you can’t do so again until you finish a Long Rest.</li>
+            </ul>
+        </description>
+        <sheet action="Magic Action" usage="1/Long Rest">
+            <description>Attack action: make 1 extra Claw attack. Claw deals +1d6 Poison dmg.&#13;
+            Ritual (4 hrs, 200 GP): Create Hag Eye or Gasdra (choose 1). Max 1 active.&#13;
+            Magic Action: Spend HD = spell slot level to recover it (max slot level = 1/3 char level rounded up).</description>
+        </sheet>
+        <rules>
+            <select type="Companion" name="Gasdra Companion" supports="Hag Companion" default="ID_GFG_GHPG25_COMPANION_GASDRA" />
+        </rules>
+    </element>
+
+    <element name="Boon: Master of the Red Sisterhood" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_MASTER_RED_SISTERHOOD">
+        <supports>Hag 2025 Boon 3</supports>
+        <prerequisite>Adept of the Red Sisterhood</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_3, ID_GFG_GHPG25_FEAT_FEATURE_ADEPT_RED_SISTERHOOD</requirements>
+        <description>
+            <p>You come into your power as a Hag and enhance your abilities.</p>
+            <ul>
+                <li>When you take the Attack action on your turn, you may make an additional Claw attack. Your Claw attacks deal an additional 1d4 Psychic damage. You regain Hit Points equal to the Psychic damage dealt.</li>
+                <li>Your banter becomes supernaturally charming. A creature under your magical influence (such as being Charmed by you) who is able to hear you for 1 minute must make a Charisma saving throw with a DC equal to 14 plus your Transformation Stage. On a failed save, when your mental influence ends, the target forgets magic was used to influence it. You regain use of this feature after you finish a Short or Long Rest.</li>
+                <li>As a Bonus action, you can expend a Hit Point Die to cast the Charm Person spell.</li>
+            </ul>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Attack action: make 1 extra Claw attack. Claw deals +1d4 Psychic dmg, heal HP = Psychic dealt.&#13;
+            Banter (1 min, 1/Rest): Magically influenced creature hearing you makes DC {{master sisterhood:dc}} Cha save or forgets magic was used when influence ends.&#13;
+            Bonus Action: Spend 1 HD to cast Charm Person.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Master of the Sea Sisterhood" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_MASTER_SEA_SISTERHOOD">
+        <supports>Hag 2025 Boon 3</supports>
+        <prerequisite>Adept of the Sea Sisterhood</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_3, ID_GFG_GHPG25_FEAT_FEATURE_ADEPT_SEA_SISTERHOOD</requirements>
+        <description>
+            <p>You come into your power as a Hag and enhance your abilities.</p>
+            <ul>
+                <li>When you take the Attack action on your turn, you may make an additional Claw attack. Your Claw attacks deal an additional 1d6 Slashing damage.</li>
+                <li>Your appearance becomes so vile that it terrifies mortal creatures. As a Bonus Action, you gaze upon a Beast or Humanoid within 30 feet that can see your true form. The creature must succeed on a Wisdom saving throw with a DC equal to 14 plus your Charisma modifier. On a failed save, the target has the Frightened condition until the start of its next turn. A target that succeeds is immune to this feature for 24 hours. You regain use of this feature after you finish a Short or Long Rest.</li>
+                <li>As a Magic action, you can expend and roll a Hit Point Die to touch a creature and allow the target to breathe water for a number of minutes equal to the amount rolled.</li>
+            </ul>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short Rest">
+            <description>Attack action: make 1 extra Claw attack. Claw deals +1d6 Slashing dmg.&#13;
+            Bonus Action (Gaze, 30ft): Beast/Humanoid seeing true form makes DC {{master sisterhood:dc}} Wis save or Frightened until start of its next turn (Immune 24h on success).&#13;
+            Magic Action: Expend/roll 1 HD to touch creature; it breathes water for X minutes (X = roll).</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Purity’s Pain" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_PURITYS_PAIN">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_3</requirements>
+        <description>
+            <p>Unspoiled, pure things cause you physical pain to witness. A child hugging their parent, a loyal dog laying its head upon a sick man’s lap, a work of religious art devoted to an Arch Seraph, a baby’s laughter: these things make you physically ill.</p>
+            <p>When you are in the presence of a pure act or object (GM’s discretion) you are wracked with pain. At the start of each of your turns while you can see the cause of your pain, you suffer 3d6 plus your Charisma modifier Psychic damage, and cannot use a Hag Transformation boons until the start of your next turn. The first time you take Psychic damage from this flaw after finishing a Short or Long Rest, you must make a DC 18 Wisdom saving throw. If you fail, you have the Frightened condition as long as you can see the source of your pain.</p>
+        </description>
+        <sheet>
+            <description>Seeing pure act/object: Take 3d6 + {{charisma:modifier}} Psychic dmg at start of turn, cannot use Hag boons until start of next turn. 1st time taking this dmg after Rest: DC 18 Wis save or Frightened while seeing source.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 4 -->
+    <element name="Hag (Stage 4)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_4">
+        <prerequisite>Hag Transformation Stage 3</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 4 of the Hag Transformation, you select one Stage 4 Boon and gain the Stage 4 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_ARCH_CRONES_HUNGER" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 4 Boon. Arch-Crone's Hunger (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="hag:stage" value="4" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 4)" supports="Hag 2025 Boon 4" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_ARCH_CRONES_HUNGER" />
+        </rules>
+    </element>
+
+    <element name="Boon: Evil Eye" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_EVIL_EYE">
+        <supports>Hag 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_4</requirements>
+        <description>
+            <p>Your visage is so horrifying that you can cause creatures to drop dead when your gaze falls upon them. As a Magic action, you gaze upon a Bloodied Beast or Humanoid within 30 feet that can see your true form. The creature must succeed on a Wisdom saving throw with a DC equal to 14 plus your Charisma modifier. If the target fails the save, it drops to 0 Hit Points. On a successful save, the creature takes 6d8 Psychic damage. You regain the use of this feature when you finish a Long Rest.</p>
+        </description>
+        <sheet action="Magic Action" usage="1/Long Rest">
+            <description>Gaze on Bloodied Beast/Humanoid (30ft) seeing true form: DC {{evil eye:dc}} Wis save. Fail: drops to 0 HP. Success: 6d8 Psychic dmg.</description>
+        </sheet>
+        <rules>
+            <stat name="evil eye:dc" value="14" />
+            <stat name="evil eye:dc" value="charisma:modifier" />
+        </rules>
+    </element>
+
+    <element name="Boon: Grandmother’s Curse" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GRANDMOTHERS_CURSE">
+        <supports>Hag 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_4</requirements>
+        <description>
+            <p>You learn one Shadowsteel curse of your choice. You always have it prepared, and it doesn’t count against the number of spells you can prepare each day. You can cast it once per day without using a spell slot or needing spell components.</p>
+        </description>
+        <sheet usage="1/Day">
+            <description>Learn one Shadowsteel curse. Always prepared, doesn't count against max. Cast 1/day without slot/components.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Arch-Crone’s Hunger" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ARCH_CRONES_HUNGER">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_HAG_LEVEL_4</requirements>
+        <description>
+            <p>You develop a taste for strange, cursed, or vile foods, and normal food no longer nourishes you. You must consume one of these unusual foods at least once every day or you gain 1 Exhaustion level, which cannot be removed until you feed your vile hunger. If you are forced to eat or drink normal food, you must succeed on a DC 18 Constitution saving throw or vomit it up and gain 1 Exhaustion level.</p>
+            <p>Examples of vile foods include the following:</p>
+            <ul>
+                <li>The flesh of sapient creatures (Humanoids, Fey, or Celestials)</li>
+                <li>Magical ingredients (rare herbs, dragon’s blood, etc.)</li>
+                <li>The pain and suffering of others</li>
+                <li>Pages of a cursed tome</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Must consume vile food daily or gain 1 Exhaustion (unremovable until fed). Forced to eat normal food: DC 18 Con save or vomit + 1 Exhaustion.</description>
+        </sheet>
+    </element>
+
+    <!-- Gasdra Companion -->
+    <element name="Gasdra" type="Companion" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_GASDRA">
+        <supports>Hag Companion</supports>
+        <description>
+            <p>The gasdra is a small monstrosity created via a corrupt ritual by a Master of the Green Sisterhood.</p>
+        </description>
+        <setters>
+            <set name="strength">8</set>
+            <set name="dexterity">15</set>
+            <set name="constitution">15</set>
+            <set name="intelligence">6</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">7</set>
+            <set name="ac">13</set>
+            <set name="hp">22 (4d6 + 8)</set>
+            <set name="speed">30 ft., Fly 40 ft.</set>
+            <set name="languages">Understands Sylvan but can’t speak</set>
+            <set name="skills">Perception +2</set>
+            <set name="type">Monstrosity</set>
+            <set name="size">Small</set>
+            <set name="alignment">Neutral Evil</set>
+            <set name="challenge">1</set>
+            <set name="traits">ID_GFG_GHPG25_COMPANION_TRAIT_GASDRA_THREE_HEADS,ID_GFG_GHPG25_COMPANION_TRAIT_GASDRA_WAKEFUL</set>
+            <set name="actions">ID_GFG_GHPG25_COMPANION_ACTION_GASDRA_MULTIATTACK,ID_GFG_GHPG25_COMPANION_ACTION_GASDRA_BEAK</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="13" />
+            <stat name="companion:hp:max" value="22" />
+            <stat name="companion:speed" value="30" bonus="base"/>
+            <stat name="companion:speed:fly" value="40" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Three Heads" type="Companion Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_TRAIT_GASDRA_THREE_HEADS">
+        <description>
+            <p>The gasdra has Advantage on Wisdom (Perception) checks and on saving throws to avoid or end the Blinded, Charmed, Deafened, Frightened, Stunned, or Unconscious conditions. The gasdra can take one Reaction for each of its heads. The extra Reactions can be used only for Opportunity Attacks.</p>
+        </description>
+        <sheet>
+            <description>The gasdra has Advantage on Wisdom (Perception) checks and on saving throws to avoid or end the Blinded, Charmed, Deafened, Frightened, Stunned, or Unconscious conditions. The gasdra can take one Reaction for each of its heads. The extra Reactions can be used only for Opportunity Attacks.</description>
+        </sheet>
+    </element>
+    <element name="Wakeful" type="Companion Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_TRAIT_GASDRA_WAKEFUL">
+        <description>
+            <p>While the gasdra sleeps, at least one of its heads is awake.</p>
+        </description>
+        <sheet>
+            <description>While the gasdra sleeps, at least one of its heads is awake.</description>
+        </sheet>
+    </element>
+    <element name="Multiattack" type="Companion Action" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_ACTION_GASDRA_MULTIATTACK">
+        <description>
+            <p>The gasdra makes three Beak attacks.</p>
+        </description>
+        <sheet>
+            <description>The gasdra makes three Beak attacks.</description>
+        </sheet>
+    </element>
+    <element name="Beak" type="Companion Action" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_ACTION_GASDRA_BEAK">
+        <description>
+            <p><i>Melee Weapon Attack:</i> +4 to hit, reach 5 ft., one target. <i>Hit:</i> 5 (1d6 + 2) Bludgeoning damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) Bludgeoning damage.</description>
+        </sheet>
+    </element>
+</elements>

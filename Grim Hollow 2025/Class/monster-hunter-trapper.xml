@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Trapper Guild</name>
+		<description>The Trapper Guild subclass for the Monster Hunter from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="monster-hunter-trapper.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/monster-hunter-trapper.xml" />
+		</update>
+	</info>
+
+	<element name="Trapper Guild" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_MONSTER_HUNTER_TRAPPER_GUILD">
+		<supports>Hunting Guild</supports>
+		<description>
+			<p class="flavor">Dispatch Monsters with Cunning Traps</p>
+			<p>Legends say that the founding members of the Trapper Guild were game hunters who had grown bored of stalking common elk and dreamed of taking down bigger game. Trappers take pride in their kills and the ingenuity exhibited when a trap works perfectly.</p>
+			<p class="indent">The legacy of the Trapper Guild is a consistent testament to the benefits of lying in wait. The element of surprise is paramount to the trapper, whose kit can flourish before the hunter and monster even meet. Preparation is key, and the resourceful trapper has devices to assist in bringing down even the strongest foes.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_SNEAKY_AND_CRAFTY" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_TRAPPER_GADGETS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_AMBUSHERS_ADVANTAGE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_AGILE_RESPONSE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MONSTER_HIDE_ARMOR" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_RAPID_TINKERER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_SNEAKY_AND_CRAFTY" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_TRAPPER_GADGETS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_AMBUSHERS_ADVANTAGE" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_AGILE_RESPONSE" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MONSTER_HIDE_ARMOR" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_RAPID_TINKERER" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Sneaky and Crafty" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_SNEAKY_AND_CRAFTY">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_TRAPPER_GUILD_SNEAKY_AND_CRAFTY</requirements>
+		<description>
+			<p>You gain proficiency in the Stealth skill and with Tinker's Tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Trapper Gadgets" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_TRAPPER_GADGETS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_TRAPPER_GUILD_TRAPPER_GADGETS</requirements>
+		<description>
+			<p>You learn to create gadgets and mechanisms that help you during the hunt.</p>
+			<p class="indent">As part of a Long Rest, you can craft two Trapper Gadgets if you have materials and Tinker's Tools on hand. Also, with 1 hour of work with such a kit and expending 20 GP worth of materials (such as equipment or monster salvage), you can create one Trapper Gadget from the list below.</p>
+			<p class="indent">Some Trapper Gadgets allow your target to make an ability check or saving throw to resist the gadget's effects. The saving throw DC is calculated as follows:</p>
+			<center>
+				<p><strong>Trapper Gadgets Save DC</strong> = 8 + your Intelligence modifier + your Proficiency Bonus</p>
+			</center>
+			<h5>Trapper Gadgets</h5>
+			<p>Trapper Gadgets are listed in alphabetical order.</p>
+			<p class="indent"><strong><em>Dread Venom.</em></strong> A foul-smelling blade oil that causes wounds to hemorrhage and refuse healing. Dread Venom can coat one Slashing or Piercing weapon or up to 10 pieces of Slashing or Piercing ammunition. Applying the oil takes 1 minute and the oil lasts 8 hours once applied. When a creature takes damage from the poisoned item, it can't regain Hit Points until it finishes a Short or Long Rest.</p>
+			<p class="indent"><strong><em>Elemental Ammunition.</em></strong> The head of an arrow or bolt is tipped with poison, loaded with an acid vial, dipped in flammable oil, or coated with another substance. As a Bonus Action, you imbue with elemental power a single piece of ammunition that can be fired from a Longbow, Shortbow, or Crossbow as part of an Attack action. When a Elemental Ammunition is imbued, choose a damage type: Acid, Cold, Fire, Lightning, Poison, or Thunder. When a creature takes damage from the Elemental Ammunition, it takes an additional 2d6 damage of the chosen type.</p>
+			<p class="indent">Elemental Ammunition discharges its energy if it hits, and it can't be recovered. If the attack misses, the Elemental Ammunition can be recovered and used again. Elemental Ammunition retains its power for 48 hours.</p>
+			<p class="indent"><strong><em>Runic Bomb.</em></strong> Runic Bombs are used to hunt creatures resilient to mundane weapons. As a Bonus Action, you can throw the runic bomb at a point within 60 feet that you can see, creating a 20-foot-radius Sphere centered on that point. The Sphere spreads around corners, and its area is Lightly Obscured. It lasts for 1 minute or until a strong wind (such as one created by Gust of Wind) disperses it. Whenever Bludgeoning, Piercing, and Slashing damage is dealt to a creature inside the sphere, that damage is Force damage instead of its normal damage type.</p>
+			<p class="indent">A Runic Bomb is destroyed after a single use.</p>
+			<p class="indent"><strong><em>Scorpion Anchor.</em></strong> This weapon is intended to keep flying foes anchored to the ground or stop monsters from fleeing. The Scorpion Anchor can be fired from a Longbow, Shortbow, or Crossbow as part of an Attack action.</p>
+			<p class="indent">When you hit a creature with an attack roll using a Scorpion Anchor, it has the Restrained condition. A creature Restrained by the Scorpion Anchor can take an action to make a Strength (Athletics) check against your Trapper Gadget save DC. If it succeeds, it is no longer Restrained.</p>
+			<p class="indent">A Scorpion Anchor is destroyed after the Restrained creature escapes or dies.</p>
+			<p class="indent"><strong><em>Terrain Cloak.</em></strong> Composed of local materials, a Terrain Cloak allows wearers to conceal themselves within the environment. Terrain Cloaks can be worn over Light or Medium armor and are donned and doffed with the speed of Light armor.</p>
+			<p class="indent">Creatures have Disadvantage on Wisdom (Perception) checks to see you.</p>
+			<p class="indent">The item lasts until you finish a Long Rest, at which point the item falls apart.</p>
+			<p class="indent"><strong><em>Weretrap.</em></strong> A Weretrap detonates when its fragile exterior is broken. You can take a Utilize action to set the Weretrap in an unoccupied space within 5 feet of you. A creature within 30 feet must succeed on a Wisdom (Perception) check against your Trapper Gadget DC to spot the trap. Creatures have Disadvantage on this check.</p>
+			<p class="indent">A creature that steps into a space containing a Weretrap triggers the trap and makes a Dexterity saving throw. On a failed save, the creature takes 3d10 Bludgeoning damage and has the Prone condition. On a successful save, the creature takes half as much damage only.</p>
+			<p class="indent">The Weretrap can also be used as a Light Ranged weapon with the Finesse and Thrown property. It has a normal range of 20 feet and a long range of 60 feet. On a hit, the Weretrap deals 3d10 Bludgeoning damage and the target has the Prone condition.</p>
+			<p class="indent">The Weretrap is destroyed after it is triggered or thrown, regardless of whether it hits or misses.</p>
+		</description>
+		<sheet alt="Trapper Gadgets">
+			<description>Save DC: {{trapper gadget:dc}}. Craft 2 per Long Rest (with Tinker's Tools). Craft 1 with 1 hr + 20 GP.&#13;
+			• Dread Venom: 1 min apply to 1 Slash/Pierce weapon or 10 ammo. Lasts 8 hr. Target can't heal until Short/Long Rest.&#13;
+			• Elemental Ammo: Bonus Action imbue 1 ammo (Acid, Cold, Fire, Lightning, Poison, Thunder). +2d6 damage. Lasts 48 hr.&#13;
+			• Runic Bomb: Bonus Action throw 60 ft. 20-ft Sphere (Lightly Obscured, 1 min). B/P/S damage inside becomes Force.&#13;
+			• Scorpion Anchor: Fire from bow/crossbow. Hit: Restrained. Action to escape (Athletics vs DC).&#13;
+			• Terrain Cloak: Wear over Light/Med armor. Enemies have Disadv. on Perception to see you. Lasts until Long Rest.&#13;
+			• Weretrap: Utilize to set within 5 ft. Disadv. on Perception vs DC to spot. Trigger: Dex save or 3d10 Bludgeoning + Prone (half on success). OR Light Ranged weapon (Finesse, Thrown 20/60), Hit: 3d10 Bludgeoning + Prone.</description>
+		</sheet>
+		<rules>
+			<stat name="trapper gadget:dc" value="8" bonus="base" />
+			<stat name="trapper gadget:dc" value="proficiency" bonus="proficiency" />
+			<stat name="trapper gadget:dc" value="intelligence:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Ambusher's Advantage" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_AMBUSHERS_ADVANTAGE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_TRAPPER_GUILD_AMBUSHERS_ADVANTAGE</requirements>
+		<description>
+			<p>You have become a ferocious ambusher. When you roll Initiative, you can add your Intelligence modifier to the roll. Additionally, you can't be surprised by enemies that include creature types in your Monster Grimoire.</p>
+		</description>
+		<sheet alt="Ambusher's Advantage">
+			<description>You can't be surprised by enemies that include creature types in your Monster Grimoire.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="intelligence:modifier" />
+		</rules>
+	</element>
+
+	<element name="Level 10: Agile Response" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_AGILE_RESPONSE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_TRAPPER_GUILD_AGILE_RESPONSE</requirements>
+		<description>
+			<p>You can leap aside to avoid enemies rushing toward you. When a creature makes a melee attack roll against you, you can take a Reaction to impose Disadvantage on that roll and use your Studied Response as part of the same Reaction. Whether the attack hits or misses, you can then move up to half your Speed. This movement doesn't provoke Opportunity Attacks.</p>
+		</description>
+		<sheet alt="Agile Response" action="Reaction">
+			<description>When a creature makes a melee attack roll against you, you can impose Disadvantage on that roll and use your Studied Response as part of the same Reaction. Whether the attack hits or misses, you can then move up to half your Speed without provoking Opportunity Attacks.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Monster-Hide Armor" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MONSTER_HIDE_ARMOR">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_TRAPPER_GUILD_MONSTER_HIDE_ARMOR</requirements>
+		<description>
+			<p>You have learned to craft a set of Light or Medium armor by using dragon scales, werewolf hide, troll leather, or a similar monster component. The armor takes on the appearance of your choice, reflecting the component it is made from.</p>
+			<p class="indent">The armor has the same properties as Light or Medium armor (your choice when the armor is crafted) and gains two modifications from the Armor Modifications list. Whenever you gain a Monster Hunter level, you can replace one of these modifications with another modification. Modifications require the armor to be worn to function.</p>
+		</description>
+		<sheet alt="Monster-Hide Armor">
+			<description>You can craft a set of Light or Medium armor with two modifications. Whenever you gain a Monster Hunter level, you can replace one modification with another.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Armor Modification" supports="Monster-Hide Armor Modification" number="2" />
+		</rules>
+	</element>
+
+	<element name="Damage Resistance" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_DAMAGE_RESISTANCE">
+		<supports>Monster-Hide Armor Modification</supports>
+		<compendium display="false" />
+		<description>
+			<p>The monster hide used to craft your armor grants some resistances. You gain Resistance to two of the following damage types of your choice: Acid, Cold, Fire, Lightning, Poison, or Thunder.</p>
+		</description>
+		<sheet>
+			<description>You gain Resistance to two damage types of your choice from: Acid, Cold, Fire, Lightning, Poison, or Thunder.</description>
+		</sheet>
+        <rules>
+            <select type="Archetype Feature" name="Damage Resistance" supports="Monster-Hide Resistance" number="2" />
+        </rules>
+	</element>
+
+	<element name="Elemental Charge" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_ELEMENTAL_CHARGE">
+		<supports>Monster-Hide Armor Modification</supports>
+		<compendium display="false" />
+		<description>
+			<p>You embed your armor with a Construct's gemstone or infuse it with the power of an Elemental. Choose one of the following damage types: Acid, Cold, Fire, Lightning, Poison, or Thunder. When you hit a creature with an attack, you can cause it to deal the chosen damage type rather than its normal damage type, and the attack deals an extra 1d6 of that type.</p>
+		</description>
+		<sheet>
+			<description>When you hit a creature with an attack, you can cause deal {{elemental charge:type}} damage rather than its normal type, and the attack deals an extra 1d6 {{elemental charge:type}} damage.</description>
+		</sheet>
+        <rules>
+            <select type="Archetype Feature" name="Elemental Charge" supports="Monster-Hide Damage" />
+        </rules>
+	</element>
+
+    <element name="Acid" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_RESISTANCE_ACID">
+        <supports>Monster-Hide Resistance</supports>
+        <compendium display="false" />
+        <description>
+            <p>Acid damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+        </rules>
+    </element>
+    <element name="Cold" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_RESISTANCE_COLD">
+        <supports>Monster-Hide Resistance</supports>
+        <compendium display="false" />
+        <description>
+            <p>Cold damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+    <element name="Fire" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_RESISTANCE_FIRE">
+        <supports>Monster-Hide Resistance</supports>
+        <compendium display="false" />
+        <description>
+            <p>Fire damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+    </element>
+    <element name="Lightning" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_RESISTANCE_LIGHTNING">
+        <supports>Monster-Hide Resistance</supports>
+        <compendium display="false" />
+        <description>
+            <p>Lightning damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+        </rules>
+    </element>
+    <element name="Poison" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_RESISTANCE_POISON">
+        <supports>Monster-Hide Resistance</supports>
+        <compendium display="false" />
+        <description>
+            <p>Poison damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+    </element>
+    <element name="Thunder" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_RESISTANCE_THUNDER">
+        <supports>Monster-Hide Resistance</supports>
+        <compendium display="false" />
+        <description>
+            <p>Thunder damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+        </rules>
+    </element>
+
+	<element name="Acid" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_DAMAGE_ACID">
+        <supports>Monster-Hide Damage</supports>
+        <compendium display="false" />
+        <description>
+            <p>Acid damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="elemental charge:type" value="acid" inline="true" />
+        </rules>
+    </element>
+    <element name="Cold" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_DAMAGE_COLD">
+        <supports>Monster-Hide Damage</supports>
+        <compendium display="false" />
+        <description>
+            <p>Cold damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="elemental charge:type" value="Cold" inline="true" />
+        </rules>
+    </element>
+    <element name="Fire" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_DAMAGE_FIRE">
+        <supports>Monster-Hide Damage</supports>
+        <compendium display="false" />
+        <description>
+            <p>Fire damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="elemental charge:type" value="Fire" inline="true" />
+        </rules>
+    </element>
+    <element name="Lightning" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_DAMAGE_LIGHTNING">
+        <supports>Monster-Hide Damage</supports>
+        <compendium display="false" />
+        <description>
+            <p>Lightning damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="elemental charge:type" value="Lightning" inline="true" />
+        </rules>
+    </element>
+    <element name="Poison" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_DAMAGE_POISON">
+        <supports>Monster-Hide Damage</supports>
+        <compendium display="false" />
+        <description>
+            <p>Poison damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="elemental charge:type" value="Poison" inline="true" />
+        </rules>
+    </element>
+    <element name="Thunder" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_DAMAGE_THUNDER">
+        <supports>Monster-Hide Damage</supports>
+        <compendium display="false" />
+        <description>
+            <p>Thunder damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="elemental charge:type" value="Thunder" inline="true" />
+        </rules>
+    </element>
+
+	<element name="Hardened Defense" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_HARDENED_DEFENSE">
+		<supports>Monster-Hide Armor Modification</supports>
+		<compendium display="false" />
+		<description>
+			<p>Hardened scales or magical pelts make your armor difficult to pierce. While wearing your crafted armor, you gain a +2 bonus to Armor Class.</p>
+		</description>
+		<sheet>
+			<description>You gain a +2 bonus to Armor Class.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:misc" value="2" />
+		</rules>
+	</element>
+
+	<element name="Phase Leap" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_PHASE_LEAP">
+		<supports>Monster-Hide Armor Modification</supports>
+		<compendium display="false" />
+		<description>
+			<p>You have powdered your armor with fey dust or sewn a pelt of a phase-shifting monstrosity into it. As a Bonus Action, you teleport up to 60 feet to an unoccupied space you can see.</p>
+			<p class="indent">You can use this feature three times, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="3/Long Rest">
+			<description>You can teleport up to 60 feet to an unoccupied space you can see.</description>
+		</sheet>
+	</element>
+
+	<element name="Regeneration" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_REGENERATION">
+		<supports>Monster-Hide Armor Modification</supports>
+		<compendium display="false" />
+		<description>
+			<p>You reinforce the armor with troll hide or soak it in vampire blood. You have a pool of six d10s. As a Bonus Action, you can expend a die from the pool, roll that die and add your Constitution modifier, and regain a number of Hit Points equal to the roll's total.</p>
+			<p class="indent">You regain all the expended dice when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="6d10/Long Rest">
+			<description>You can expend a die from the pool, roll that die and add +{{constitution:modifier}}, and regain HP equal to the total.</description>
+		</sheet>
+	</element>
+
+	<element name="Stealthy" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_MODIFICATION_STEALTHY">
+		<supports>Monster-Hide Armor Modification</supports>
+		<compendium display="false" />
+		<description>
+			<p>Your armor is draped with a shadowy cloak or made from hide as light as a feather. Your armor doesn't impose Disadvantage on Dexterity (Stealth) checks, even if it would normally. While wearing your armor, creatures have Disadvantage on Wisdom (Perception) checks to see you, and you have Advantage on Wisdom (Perception) checks to notice creatures.</p>
+		</description>
+		<sheet>
+			<description>While wearing your Monster-Hide Armor, it doesn't impose Disadvantage on Stealth checks. Creatures have Disadvantage on Perception checks to see you, and you have Advantage on Perception checks to notice creatures.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Rapid Tinkerer" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_TRAPPER_GUILD_RAPID_TINKERER">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_TRAPPER_GUILD_RAPID_TINKERER</requirements>
+		<description>
+			<p>You have become capable of crafting trapper tools at a much faster rate. You can spend 1 minute to make a Trapper Gadget without spending GP or components.</p>
+			<p class="indent">You can use this feature twice, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Rapid Tinkerer" usage="2/Long Rest">
+			<description>You can spend 1 minute to make a Trapper Gadget without spending GP or components.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Sneaky and Crafty Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_TRAPPER_GUILD_SNEAKY_AND_CRAFTY" />
+	<element name="Trapper Gadgets Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_TRAPPER_GUILD_TRAPPER_GADGETS" />
+	<element name="Ambusher's Advantage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_TRAPPER_GUILD_AMBUSHERS_ADVANTAGE" />
+	<element name="Agile Response Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_TRAPPER_GUILD_AGILE_RESPONSE" />
+	<element name="Monster-Hide Armor Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_TRAPPER_GUILD_MONSTER_HIDE_ARMOR" />
+	<element name="Rapid Tinkerer Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_TRAPPER_GUILD_RAPID_TINKERER" />
+
+</elements>

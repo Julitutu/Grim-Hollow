@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Fighting Style Feats</name>
+		<description>Fighting Style Feats from Grim Hollow: Player's Guide (2025)</description>
+		<update version="0.0.1">
+			<file name="feats-fighting-styles.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Feats/feats-fighting-styles.xml" />
+		</update>
+	</info>
+
+	<element name="Advanced Weapon Proficiency" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_ADVANCED_WEAPON_PROFICIENCY">
+		<supports>Fighting Style, General</supports>
+		<requirements>(ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE||[character:8])||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Fighting Style Feature or Level 8+</prerequisite>
+		<description>
+			<p class="flavor">Fighting Style Feat (Prerequisite: Fighting Style Feature, Special)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Weapon Proficiency.</i></b> You have proficiency with Advanced weapons, and your training allows you to use the mastery properties of those weapons.</p>
+			<p class="indent"><b><i>Special.</i></b> This feat can be taken as a General feat by a character of level 8 or higher.</p>
+		</description>
+		<sheet>
+			<description>You have proficiency with Advanced weapons, and your training allows you to use the mastery properties of those weapons.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_ADVANCED_WEAPONS" />
+		</rules>
+	</element>
+
+	<!-- Internal Proficiency Grant for Advanced Weapons -->
+	<element name="Advanced Weapons" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_ADVANCED_WEAPONS">
+		<compendium display="false" />
+		<setters>
+			<set name="type">Weapon</set>
+		</setters>
+	</element>
+
+	<element name="Close Combat Artillerist" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_CLOSE_COMBAT_ARTILLERIST">
+		<supports>Fighting Style</supports>
+		<requirements>ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Fighting Style Feature</prerequisite>
+		<description>
+			<p class="flavor">Fighting Style Feat (Prerequisite: Fighting Style Feature)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Firing in Melee.</i></b> Being within 5 feet of an enemy doesn’t impose Disadvantage on your attack rolls with Ranged weapons.</p>
+			<p class="indent"><b><i>Point Blank.</i></b> When you hit a creature that is within 5 feet of you with a ranged attack, you gain a +2 bonus to the damage roll.</p>
+		</description>
+		<sheet>
+			<description>Being within 5ft. of an enemy doesn’t impose Disadvantage on your attack rolls with Ranged weapons. &#13;
+			When you hit a creature that is within 5ft. of you with a ranged attack, you gain a +2 bonus to the damage roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Dual Shot" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_DUAL_SHOT">
+		<supports>Fighting Style</supports>
+		<requirements>ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Fighting Style Feature</prerequisite>
+		<description>
+			<p class="flavor">Fighting Style Feat (Prerequisite: Fighting Style Feature)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Dual Shot.</i></b> When you take the Attack action on your turn and attack with a bow or crossbow, you can make one extra attack as part of the same action against a creature that is within 10 feet of the original target that is within the weapon’s range. If you do so, both attacks are made with Disadvantage.</p>
+		</description>
+		<sheet>
+			<description>When you take the Attack action on your turn and attack with a bow or crossbow, you can make one extra attack as part of the same action against a creature that is within 10ft. of the original target that is within the weapon’s range. If you do so, both attacks are made with Disadvantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Flurry" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FLURRY">
+		<supports>Fighting Style</supports>
+		<requirements>ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Fighting Style Feature</prerequisite>
+		<description>
+			<p class="flavor">Fighting Style Feat (Prerequisite: Fighting Style Feature)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Quick Strike.</i></b> Once on each of your turns when you make an attack roll with a weapon or an Unarmed Strike and have Advantage on the roll, you can forgo Advantage on that attack roll. After resolving that attack, you can then make another attack with the same weapon or Unarmed Strike against a different creature. The new target must be within 5 feet of the first target and within the weapon's reach.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you make an attack roll with a weapon or an Unarmed Strike and have Advantage on the roll, you can forgo Advantage on that attack roll. After resolving that attack, you can then make another attack with the same weapon or Unarmed Strike against a different creature. The new target must be within 5ft. of the first target and within the weapon's reach.</description>
+		</sheet>
+	</element>
+
+	<element name="Mobile Combatant" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_MOBILE_COMBATANT">
+		<supports>Fighting Style</supports>
+		<requirements>ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Fighting Style Feature</prerequisite>
+		<description>
+			<p class="flavor">Fighting Style Feat (Prerequisite: Fighting Style Feature)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Slippery.</i></b> When you take the Attack action, your Speed increases by 10 feet and Opportunity Attacks have Disadvantage against you until the end of your turn.</p>
+		</description>
+		<sheet>
+			<description>When you take the Attack action, your Speed increases by 10ft. and Opportunity Attacks have Disadvantage against you until the end of your turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Opportunist" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_OPPORTUNIST">
+		<supports>Fighting Style</supports>
+		<requirements>ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Fighting Style Feature</prerequisite>
+		<description>
+			<p class="flavor">Fighting Style Feat (Prerequisite: Fighting Style Feature)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Exploit Weakness.</i></b> Whenever you make an attack as part of a Reaction, you gain a +2 bonus to the attack and damage rolls.</p>
+		</description>
+		<sheet>
+			<description>Whenever you make an attack as part of a Reaction, you gain a +2 bonus to the attack and damage rolls.</description>
+		</sheet>
+	</element>
+
+	<element name="Prone Defense" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_PRONE_DEFENSE">
+		<supports>Fighting Style</supports>
+		<requirements>ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Fighting Style Feature</prerequisite>
+		<description>
+			<p class="flavor">Fighting Style Feat (Prerequisite: Fighting Style Feature)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Defensive.</i></b> When you have the Prone condition, you don’t have Disadvantage on attack rolls. Attack roll against you doesn’t have Advantage because of the Prone condition.</p>
+			<p class="indent"><b><i>Hop Up.</i></b> When you have the Prone condition, you can right yourself with only 5 feet of movement.</p>
+		</description>
+		<sheet>
+			<description>When you have the Prone condition, you don’t have Disadvantage on attack rolls, and attack rolls against you don’t have Advantage because of the Prone condition. &#13;
+			When you have the Prone condition, you can right yourself with only 5ft. of movement.</description>
+		</sheet>
+	</element>
+
+</elements>

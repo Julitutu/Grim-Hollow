@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Fiend Transformation</name>
+        <description>Fiend Transformation from Grim Hollow: Player's Guide (2025)</description>
+        <author>Ghostfire Gaming</author>
+        <update version="0.1.0">
+            <file name="fiend.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/fiend.xml" />
+        </update>
+    </info>
+
+    <!-- Items -->
+    <element name="Fiend Transformation (Stage 1)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_FIEND_LEVEL_1">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_FIEND" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_FIEND" />
+        </rules>
+    </element>
+    <element name="Fiend Transformation (Stage 2)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_FIEND_LEVEL_2">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_FIEND" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_2" requirements="ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_1"/>
+        </rules>
+    </element>
+    <element name="Fiend Transformation (Stage 3)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_FIEND_LEVEL_3">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_FIEND" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_3" requirements="ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_2"/>
+        </rules>
+    </element>
+    <element name="Fiend Transformation (Stage 4)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_FIEND_LEVEL_4">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_FIEND" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_4" requirements="ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_3"/>
+        </rules>
+    </element>
+
+    <!-- Feat -->
+    <element name="Fiend" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_FIEND">
+        <description>
+            <p>The strange man sat back from the candle on the table. The small flame barely sputtered since he entered the room, yet its glint caught in the man’s dark eyes. The commoner sitting opposite the stranger stared at a parchment on the table, admitting, “I’d like to sign, sir, but I’m afraid I don’t know my letters.” The man’s pale hand entered the candlelight, offering a small needle. “That’s alright,” he spoke softly, “a single drop will do.”</p>
+            <p>A priest screams as the Fiend presses her thumbnail into his forehead. A blasphemous rune burns itself into his skin. She grins at the smell. The priest collapses, horror etched onto his face, his shaking hand reaching for the brand. “Don’t weep,” the Fiend purrs, “to whom did you think you prayed?”</p>
+            <p>Many tales are told in Etharis of the evil of fiends. Folks fear meeting a stranger at the crossroads, lest they be tempted towards the wickedness resting in their own heart. A champion rises from a battlefield of broken bodies, a blood tithe paid for their glory. A fortune is gained by draining wealth from the needy. Fiends are the brokers of bargains that reward only the ruthless, selfish, jealous, and cruel. The true horror is that many Fiends began as mortals who surrendered to that seed of evil nested in their heart.</p>
+            
+            <h4>Becoming a Fiend</h4>
+            <p>A mortal can become a Fiend in a variety of ways. Some forfeit their souls and become one upon death. Others undertake excruciating rituals to be granted forbidding power by an Arch Daemon. Some mortals may become Fiends unintentionally, as a reward or punishment for their life of cruelty and misdeeds. Yet it is rare for a creature to be chosen to join the legions of the Netherworld without first having made a bargain for such a gift.</p>
+            <p>Communicating with your GM about creating deals with mortals in their story is a great way to roleplay your influence within the game world. As a Fiend, you should consider your character’s motivations and which NPCs might serve to achieve their goals.</p>
+            <p>Are you in service of a particular Arch Daemon or dark deity? Do you follow only your own ambitions, making the necessary bargains to do so? What evils will you exact upon the world, and to what ends? Fiends rarely behave without ambition, even if that is simply corrupting as many mortals as you can convince to sign a contract.</p>
+            
+            <h4>Reversing Fiend Traits</h4>
+            <p>Transforming into a Fiend usually requires deeds of great evil. You may have performed blood sacrifices or made bargains that resulted in others suffering. Even magic on the level of the Wish spell could not atone for your actions or redeem your soul. Only once you perform a deed of incredible sacrifice or atonement could such magic remove your Transformation boons and flaws.</p>
+            
+            <h4>Fiend Stages</h4>
+            <p>At each stage of this Transformation, follow the instructions provided for that stage.</p>
+            
+            <h4>Achieving a New Stage</h4>
+            <p>To move from one stage to the next higher one in this Transformation, an event or some other notable occurrence tied to the story of the character should take place. The following events are suggestions for ones that might trigger a move to the next stage of the Transformation:</p>
+            <ul>
+                <li>Defeating a greater rival Fiend and taking their place in the hierarchy.</li>
+                <li>Ensnaring a particularly powerful or influential soul with a contract.</li>
+                <li>Establishing a cult of worshipers who offer their strength to you.</li>
+                <li>Establishing a portal between the material plane and the Netherworld.</li>
+                <li>Killing or corrupting a Seraph.</li>
+            </ul>
+
+            <p><strong>Transformation Save DC:</strong> Some of your abilities require a target to make a saving throw. The DC is calculated as follows:</p>
+            <center>
+                <p><strong>Transformation Save DC</strong> = 8 + your Proficiency Bonus + your Transformation Stage</p>
+            </center>
+        </description>
+        <sheet>
+            <description>Save DC: {{fiend:dc}}</description>
+        </sheet>
+        <rules>
+            <stat name="fiend:stage" value="0" bonus="base" />
+            <stat name="fiend:dc" value="8" />
+            <stat name="fiend:dc" value="proficiency" />
+            <stat name="fiend:dc" value="fiend:stage" />
+
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_1" />
+        </rules>
+    </element>
+
+    <!-- Transformation Stage 1 -->
+    <element name="Fiend (Stage 1)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_1">
+        <prerequisite>Fiend Transformation</prerequisite>
+        <requirements>ID_GFG_GHPG25_FEAT_TRANSFORMATION_FIEND</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you initially undergo the Fiend Transformation, you gain the Fiendish Soul Boon and one other Stage 1 Boon of your choice. You also gain the Stage 1 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_FIENDISH_SOUL" />
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_FIEND_BOUND" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Fiendish Soul, Stage 1 Boon, Fiend Bound (Flaw)</description>
+        </sheet>
+        <rules>
+            <stat name="fiend:stage" value="1" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_FIENDISH_SOUL" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_FIEND_BOUND" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 1)" supports="Fiend 2025 Boon 1" />
+        </rules>
+    </element>
+
+    <element name="Boon: Fiendish Soul" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_FIENDISH_SOUL">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_1</requirements>
+        <description>
+            <p>You become a Fiend in addition to any other creature type(s) you have. You have Advantage on Charisma (Deception) checks.</p>
+            <p>Additionally, choose one of the following damage types and gain Resistance to it: Acid, Cold, or Fire.</p>
+        </description>
+        <sheet>
+            <description>Advantage on Charisma (Deception) checks.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_FIEND" />
+            <select type="Feat Feature" name="Fiendish Soul Resistance" supports="Fiendish Soul 2025 Resistance" />
+        </rules>
+    </element>
+
+    <element name="Acid" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_FIENDISH_SOUL_ACID">
+        <supports>Fiendish Soul 2025 Resistance</supports>
+        <compendium display="false" />
+        <description>
+            <p>You gain Resistance to Acid damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="!ID_GFG_GHPG25_FEAT_FEATURE_ABYSSAL_RESISTANCE" />
+            <stat name="findish soul:damage" value="acid" inline="true" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ACID" requirements="ID_GFG_GHPG25_FEAT_FEATURE_ABYSSAL_RESISTANCE"/>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_GFG_GHPG25_FEAT_FEATURE_ABYSSAL_RESISTANCE"/>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_GFG_GHPG25_FEAT_FEATURE_ABYSSAL_RESISTANCE"/>
+        </rules>
+    </element>
+
+    <element name="Cold" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_FIENDISH_SOUL_COLD">
+        <supports>Fiendish Soul 2025 Resistance</supports>
+        <compendium display="false" />
+        <description>
+            <p>You gain Resistance to Cold damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="!ID_GFG_GHPG25_FEAT_FEATURE_ABYSSAL_RESISTANCE" />
+            <stat name="findish soul:damage" value="cold" inline="true" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" requirements="ID_GFG_GHPG25_FEAT_FEATURE_ABYSSAL_RESISTANCE"/>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="ID_GFG_GHPG25_FEAT_FEATURE_ABYSSAL_RESISTANCE"/>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="ID_GFG_GHPG25_FEAT_FEATURE_ABYSSAL_RESISTANCE"/>
+        </rules>
+    </element>
+
+    <element name="Fire" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_FIENDISH_SOUL_FIRE">
+        <supports>Fiendish Soul 2025 Resistance</supports>
+        <compendium display="false" />
+        <description>
+            <p>You gain Resistance to Fire damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" requirements="!ID_GFG_GHPG25_FEAT_FEATURE_ABYSSAL_RESISTANCE" />
+            <stat name="findish soul:damage" value="fire" inline="true" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" requirements="ID_GFG_GHPG25_FEAT_FEATURE_ABYSSAL_RESISTANCE"/>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" requirements="ID_GFG_GHPG25_FEAT_FEATURE_ABYSSAL_RESISTANCE"/>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_GFG_GHPG25_FEAT_FEATURE_ABYSSAL_RESISTANCE"/>
+        </rules>
+    </element>
+
+    <element name="Boon: Devilish Contractor" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_DEVILISH_CONTRACTOR">
+        <supports>Fiend 2025 Boon 1</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_1</requirements>
+        <description>
+            <p>You have acquired the ability to bind mortal creatures to your will. You can create a contract to bind a mortal Humanoid’s soul to you, feeding on its power. The mortal gains a gift asked for in the contract, and you gain a Gift of Damnation of your choice. (See Gifts of Damnation at the end of this Transformation.)</p>
+            <p>To bind a mortal’s soul to you, you must first create a contract for their desired gift. A contract requires magical ink and paper worth 10 GP for each Transformation Stage you have acquired.</p>
+            <p>You and the mortal must both sign the contract willingly, fully aware of the costs involved. Once signed, daemonic entities give you a Gift of Damnation, and the mortal receives their desired wishes within 7 days. You do not have to provide this boon yourself.</p>
+            <p>For example, upon signing a contract for a Gift of Unfettered Glory, you receive the benefits listed for that gift. The mortal who signs receives their stated desire, provided by the dubious powers of the Netherworld. You cannot benefit directly from the mortal’s desired gift, nor can an ally. No ally of yours can ever sign a contract with you.</p>
+            <p>You may take a Gift of Damnation of the Stage that you have attained or lower. For example, if you are at Stage 2 of the Transformation, you may only take a Stage 1 or Stage 2 Gift of Damnation.</p>
+            <p>There is no limit to the number of contracts you can execute, but you can only have one active Gift of Damnation at a time. When you would gain a second Gift of Damnation, you may replace your active gift with the new one. Also, when you finish a Long Rest you may swap your active Gift of Damnation for any other gift associated with a signed contract.</p>
+        </description>
+        <sheet>
+            <description>Contract requires magical ink/paper worth {{devilish contractor:cost}} GP. You gain a Gift of Damnation, mortal gets their wish in 7 days. Cannot benefit from mortal's gift, nor can allies. Allies cannot sign. Max 1 active Gift. Swap active Gift on Long Rest.</description>
+        </sheet>
+        <rules>
+            <stat name="devilish contractor:cost" value="10" />
+            <stat name="devilish contractor:cost" value="10" requirements="ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_2" />
+            <stat name="devilish contractor:cost" value="10" requirements="ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_3" />
+            <stat name="devilish contractor:cost" value="10" requirements="ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_4" />
+            <select type="Feat Feature" name="Gift of Damnation" supports="Damnation 2025 Gift" />
+        </rules>
+    </element>
+
+    <element name="Boon: Infernal Smite" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_INFERNAL_SMITE">
+        <supports>Fiend 2025 Boon 1</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_1</requirements>
+        <description>
+            <p>Once on each of your turns, you can choose one creature you have just damaged with a weapon attack, an Unarmed Strike, or a cantrip. Deal an extra 1d6 Acid, Cold, or Fire damage to that creature, using the same damage type you chose for Fiendish Soul. You can add this damage a number of times equal to your Proficiency Bonus plus your Transformation Stage, but no more than once per damage roll. You regain all uses of this ability when you finish a Short or Long Rest.</p>
+            <p>At higher Transformation Stages, you do an additional 1d6 of damage per Transformation Stage, for a total of 2d6 at Stage 2, 3d6 at Stage 3, and 4d6 at Stage 4.</p>
+        </description>
+        <sheet usage="{{infernal smite:uses}}/Short Rest">
+            <description>Once per turn, deal an extra {{fiend:stage}}d6 {{findish soul:damage}} damage.</description>
+        </sheet>
+        <rules>
+            <stat name="infernal smite:uses" value="proficiency" />
+            <stat name="infernal smite:uses" value="fiend:stage" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Fiend Bound" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_FIEND_BOUND">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_1</requirements>
+        <description>
+            <p>Your body and soul are bound to the Netherworld. You have Disadvantage on Death Saving Throws as the plane attempts to pull you into it.</p>
+        </description>
+        <sheet>
+            <description>Disadvantage on Death Saving Throws.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 2 -->
+    <element name="Fiend (Stage 2)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_2">
+        <prerequisite>Fiend Transformation Stage 1</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 2 of the Fiend Transformation, you select one Stage 2 Boon and gain the Stage 2 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_FIEND_FORM" />
+        </description>
+        <sheet>
+            <description>Fiend Form Save: Con {{fiend form:dc}} under stress to hide it.</description>
+        </sheet>
+        <rules>
+            <stat name="fiend:stage" value="2" bonus="base" />
+            <stat name="fiend form:dc" value="13" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 2)" supports="Fiend 2025 Boon 1||Fiend 2025 Boon 2" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_FIEND_FORM" />
+        </rules>
+    </element>
+
+    <element name="Boon: Daemonic Brand" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_DAEMONIC_BRAND">
+        <supports>Fiend 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_2</requirements>
+        <description>
+            <p>As a Bonus Action on your turn, you can brand a creature within 60 feet of you that you can see with a fiery mark that remains on them for 1 minute. If the target succeeds on a Wisdom saving throw, they are not branded. The DC of the saving throw is 8 plus your Proficiency Bonus plus your Transformation Stage.</p>
+            <p>If the creature fails the saving throw, you choose one of the following effects that lasts for the duration:</p>
+            <ul>
+                <li>The creature takes a –2 penalty on all saving throws.</li>
+                <li>The first attack against the creature on each turn is made with Advantage.</li>
+                <li>The creature cannot regain Hit Points.</li>
+            </ul>
+            <p>You can use this ability a number of times equal to your Proficiency Bonus, and you regain all uses when you finish a Long Rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+            <description>Target w/in 60ft makes Wis save or branded for 1 min. Choose effect&#13;
+            • -2 to saves.&#13;
+            • 1st attack against it each turn has Adv.&#13;
+            • Cannot regain HP.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Enhanced Contract" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ENHANCED_CONTRACT">
+        <supports>Fiend 2025 Boon 2</supports>
+        <prerequisite>Devilish Contractor</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_2, ID_GFG_GHPG25_FEAT_FEATURE_DEVILISH_CONTRACTOR</requirements>
+        <description>
+            <p>You may switch between your active Gift of Damnation at the end of a Short or Long Rest. In addition, when you switch Gifts of Damnation, you gain Temporary Hit Points equal to 5 times your Transformation Stage.</p>
+        </description>
+        <sheet>
+            <description>Switch active Gift of Damnation on Short or Long Rest. When switching, gain {{enhanced contract:thp}} THP.</description>
+        </sheet>
+        <rules>
+            <stat name="enhanced contract:thp" value="fiend:stage" />
+            <stat name="enhanced contract:thp" value="fiend:stage" />
+            <stat name="enhanced contract:thp" value="fiend:stage" />
+            <stat name="enhanced contract:thp" value="fiend:stage" />
+            <stat name="enhanced contract:thp" value="fiend:stage" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Fiend Form" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_FIEND_FORM">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_2</requirements>
+        <description>
+            <p>Your appearance has grotesquely transformed. Your skin becomes red and leathery, and vicious horns, teeth and nails erupt through the surface of your skin. You can suppress this form and present the appearance of the humanoid you once were, but this is taxing and requires effort. Moments of stress are likely to reveal your true nature. In the following situations your true form may be revealed:</p>
+            <ul>
+                <li>Becoming Bloodied</li>
+                <li>Concentrating on a spell</li>
+                <li>Gaining the Unconscious condition</li>
+                <li>Entering hallowed ground</li>
+                <li>Entering the presence of Celestials or other Fiends</li>
+                <li>Choosing to reveal yourself</li>
+            </ul>
+            <p>In these events, or times of other extreme emotional or physical stress, a GM can call or a Constitution saving throw with a DC based on your current Transformation Stage. If you fail this save, your Horrific Appearance is revealed.</p>
+            <h5>Fiend Form Save DC</h5>
+            <table>
+                <thead>
+                    <tr><td>Stage</td><td>Constitution Save DC</td></tr>
+                </thead>
+                <tr><td>2</td><td>13</td></tr>
+                <tr><td>3</td><td>16</td></tr>
+                <tr><td>4</td><td>20</td></tr>
+            </table>
+            <p>Non-evil creatures that witness your true form become instantly Hostile to you, unless the GM decides otherwise.</p>
+        </description>
+        <sheet>
+            <description>True form revealed if: Bloodied, concentrating on spell, Unconscious, entering hallowed ground, near Celestials/Fiends, or choosing to. Non-evil creatures become Hostile.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 3 -->
+    <element name="Fiend (Stage 3)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_3">
+        <prerequisite>Fiend Transformation Stage 2</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 3 of the Fiend Transformation, you select one Stage 3 Boon and gain the Stage 3 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_PULL_OF_THE_NETHERWORLD" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 3 Boon. Pull of the Netherworld (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="fiend:stage" value="3" bonus="base" />
+            <stat name="fiend form:dc" value="16" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 3)" supports="Fiend 2025 Boon 1||Fiend 2025 Boon 2||Fiend 2025 Boon 3" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_PULL_OF_THE_NETHERWORLD" />
+        </rules>
+    </element>
+
+    <element name="Boon: Devilish Subcontractor" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_DEVILISH_SUBCONTRACTOR">
+        <supports>Fiend 2025 Boon 3</supports>
+        <prerequisite>Enhanced Contract</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_3, ID_GFG_GHPG25_FEAT_FEATURE_ENHANCED_CONTRACT</requirements>
+        <description>
+            <p>You may gain the benefits of two Gifts of Damnation at the same time. You may still only switch one Gift of Damnation after a Short or Long Rest.</p>
+        </description>
+        <sheet>
+            <description>Gain benefits of two Gifts of Damnation simultaneously. Switch one on Short/Long Rest.</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Second Gift of Damnation" supports="Damnation 2025 Gift" />
+        </rules>
+    </element>
+
+    <element name="Boon: Overwhelming Brand" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_OVERWHELMING_BRAND">
+        <supports>Fiend 2025 Boon 3</supports>
+        <prerequisite>Daemonic Brand</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_3, ID_GFG_GHPG25_FEAT_FEATURE_DAEMONIC_BRAND</requirements>
+        <description>
+            <p>You can apply one of the following additional effects to a creature under the effect of your Daemonic Brand.</p>
+            <ul>
+                <li>The creature’s Speed is halved, and you can move the creature up to 10 feet horizontally on your turn (no action required).</li>
+                <li>The creature has the Blinded condition. On your turn, you can choose to remove this condition (no action required).</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Daemonic Brand gains choices:&#13;
+            • Speed halved and you can move it 10ft horizontally on your turn&#13;
+            • Blinded (can remove on your turn).</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Pull of the Netherworld" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_PULL_OF_THE_NETHERWORLD">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_3</requirements>
+        <description>
+            <p>Your new native plane attempts to pull you to it, laying claim to your form. Whenever you roll a natural 1 on a D20 Test, you take 6d6 Psychic damage as the denizens of the fiendish plane attempt to unbind your soul from the Material Plane. This damage can only be taken once per Short Rest, and it ignores all Resistances and Immunities.</p>
+            <p>If this damage reduces your Hit Points to 0, you die and your soul is immediately taken to the Netherworld. You can only be returned to life by spells of 7th level or higher.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>Roll natural 1 on D20 Test: Take 6d6 Psychic damage (ignores res/imm). 0 HP -> die, soul to Netherworld (needs 7th level spell to revive).</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 4 -->
+    <element name="Fiend (Stage 4)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_4">
+        <prerequisite>Fiend Transformation Stage 3</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 4 of the Fiend Transformation, you select one Stage 4 Boon and gain the Stage 4 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_TRUE_NAME" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 4 Boon. True Name (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="fiend:stage" value="4" bonus="base" />
+            <stat name="fiend form:dc" value="20" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 4)" supports="Fiend 2025 Boon 1||Fiend 2025 Boon 2||Fiend 2025 Boon 3||Fiend 2025 Boon 4" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_TRUE_NAME" />
+        </rules>
+    </element>
+
+    <element name="Boon: Abyssal Resistance" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ABYSSAL_RESISTANCE">
+        <supports>Fiend 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_4</requirements>
+        <description>
+            <p>You gain Immunity to the damage type chosen for Fiendish Soul, and you gain Resistance to the other two damage types. Additionally, you have Resistance to damage from nonmagical weapon attacks or Unarmed Strikes.</p>
+        </description>
+        <sheet>
+            <description>Resistance to nonmagical weapon attacks or Unarmed Strikes.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+        </rules>
+    </element>
+
+    <element name="Boon: Infernal Summons" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_INFERNAL_SUMMONS">
+        <supports>Fiend 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_4</requirements>
+        <description>
+            <p>As a Magic action, you can tear open a portal to the Netherworld and summon up to four Fiends of CR 4 or less within 30 feet of you. The Fiends remain for 1 minute before disappearing back to the Netherworld. (The GM can decide what Fiends answer the summons.)</p>
+            <p>The summoned Fiends are Friendly to you and your companions. They act directly after you in the initiative order. They obey any verbal commands that you issue to them (no action required by you). If you don’t issue any commands to them, they use the Dodge action on their turn and take no other movement, Bonus Actions, or Reactions unless it is to protect themselves.</p>
+        </description>
+        <sheet action="Magic Action">
+            <description>Summon up to 4 Fiends CR 4 or less w/in 30ft for 1 min. Friendly, act after you. Obey verbal commands (no action).</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Ultimate Brand" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ULTIMATE_BRAND">
+        <supports>Fiend 2025 Boon 4</supports>
+        <prerequisite>Overwhelming Brand</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_OVERWHELMING_BRAND</requirements>
+        <description>
+            <p>When a creature affected by your Daemonic Brand starts its turn, you can use a Reaction to dictate its move and the action it takes. If you do, the creature repeats the initial Wisdom saving throw at the end of its turn. On a success, you can't use this Reaction again while your brand lasts.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When branded creature starts turn, dictate its move and action. It repeats Wis save at end of turn. On success, can't use Reaction again for this brand.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: True Name" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_TRUE_NAME">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FIEND_LEVEL_4</requirements>
+        <description>
+            <p>Your Fiend transformation is complete, and you are reborn. You are assigned a new name by the denizens of the Netherworld, which becomes your True Name. You receive a talisman of brimstone and brass with your true name inscribed in Infernal on it.</p>
+            <p>A creature with a Challenge Rating of 10 or higher within 10 feet of you that knows your True Name can use a Magic action and speak your True Name. You must succeed on a DC 20 Charisma saving throw or suffer the following effects for 1 minute. You may attempt a Charisma saving throw at the end of each of your turns to end the effects.</p>
+            <ul>
+                <li>You have the Charmed condition, even if you are Immune to being Charmed.</li>
+                <li>As a Bonus Action, the entity that has spoken your True Name can force you to move up to your Speed and use your action to attack with a weapon, use your Unarmed Strike, or cast a cantrip against a target of their choice.</li>
+                <li>All attacks against you have Advantage, and you have Disadvantage on saving throws.</li>
+                <li>You cannot regain Hit Points or have Temporary Hit Points. You immediately lose any Temporary Hit Points you have.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>CR 10+ creature w/in 10ft knowing True Name uses Magic action: Cha save DC 20 or Charmed, forced to move/attack, Adv against you, Disadv on saves, no HP/THP gain for 1 min. Save end of turn.</description>
+        </sheet>
+    </element>
+
+    <!-- Gifts of Damnation -->
+    <element name="Gift of Joyous Life" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GIFT_JOYOUS_LIFE">
+        <supports>Damnation 2025 Gift</supports>
+        <description>
+            <p>At the beginning of your turn, if you are Bloodied, you can choose to roll a Hit Point Die (no action required) and regain a number of Hit Points equal to the roll. If you roll a 1 on this die, you regain no Hit points and take 1 point of Force damage instead. You regain this ability when you finish a Short or Long Rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>Start of turn if Bloodied: Roll HD to regain HP. If 1, regain 0 HP and take 1 Force dmg.</description>
+        </sheet>
+    </element>
+
+    <element name="Gift of Prodigious Talent" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GIFT_PRODIGIOUS_TALENT">
+        <supports>Damnation 2025 Gift</supports>
+        <description>
+            <p>Choose two Skills. Gain Expertise in the chosen skills. If you roll a 1 or 2 on an Ability Check using one of the chosen skills, you immediately lose half your maximum number of Hit Point Dice, rounded down. You do not regain Hit Point Dice lost this way until you finish two Long Rests.</p>
+        </description>
+        <sheet>
+            <description>If you roll a 1 or 2 on an Ability Check using one of the chosen skills, you immediately lose half your maximum number of Hit Point Dice, rounded down. You do not regain Hit Point Dice lost this way until you finish two Long Rests.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Skill Proficiency (Gift of Prodigious Talent)" supports="ID_INTERNAL_SUPPORT_EXPERTISE" number="2" />
+        </rules>
+    </element>
+
+    <element name="Gift of Unsurpassed Fortune" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GIFT_UNSURPASSED_FORTUNE">
+        <supports>Damnation 2025 Gift</supports>
+        <description>
+            <p>When an enemy you can see within 10 feet succeeds on an attack roll or a saving throw, you can use your Reaction to roll d20. On a 6 or higher, the triggering attack or save misses or fails, and you regain the use of your Reaction. Otherwise, you take 1d6 Psychic damage per Transformation Stage, which cannot be reduced. You regain your use of this ability when you finish a Long Rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Long Rest">
+            <description>Enemy w/in 10ft succeeds attack/save: Roll d20. 6+: misses/fails, regain Reaction. 1-5: take {{fiend:stage}}d6 Psychic dmg (cannot be reduced).</description>
+        </sheet>
+    </element>
+
+    <element name="Gift of Liberating Freedom" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GIFT_LIBERATING_FREEDOM">
+        <supports>Damnation 2025 Gift</supports>
+        <requirements>[fiend:stage:2]</requirements>
+        <description>
+            <p>As a Bonus Action while aren't wearing Heavy armor, you can manifest a pair of leathery wings. You gain a Fly Speed equal to half your Speed. These wings recede if you dismiss them as a Bonus Action on your turn, if you have the Unconscious condition, or if you become Bloodied while they are manifested.</p>
+            <p>You can have your wing manifested for 1 hour total, including several shorter stints adding up to 1 hour. You regain your ability to use your wings for an hour after finishing a Long Rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1 Hour/Long Rest">
+            <description>Manifest wings (no H. armor). Fly Speed = half Speed. Recede as BA, Unconscious, or Bloodied.</description>
+        </sheet>
+    </element>
+
+    <element name="Gift of Unfettered Glory" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GIFT_UNFETTERED_GLORY">
+        <supports>Damnation 2025 Gift</supports>
+        <requirements>[fiend:stage:2]</requirements>
+        <description>
+            <p>Each time you damage a creature with a melee attack, an Unarmed Strike, or a cantrip, you can do an additional 2 points Force Damage per Transformation Stage.</p>
+            <p>Each time you roll a Hit Point Die to regain Hit Points during a Short Rest, you regain 2 Hit Points fewer per Hit Die.</p>
+        </description>
+        <sheet>
+            <description>Melee/Unarmed/Cantrip dmg: +{{gift unfettered glory:dmg}} Force dmg. Roll HD on Short Rest: regain 2 fewer HP per HD.</description>
+        </sheet>
+        <rules>
+            <stat name="gift unfettered glory:dmg" value="fiend:stage" />
+            <stat name="gift unfettered glory:dmg" value="fiend:stage" />
+        </rules>
+    </element>
+
+    <element name="Gift of Second Chances" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GIFT_SECOND_CHANCES">
+        <supports>Damnation 2025 Gift</supports>
+        <requirements>[fiend:stage:3]</requirements>
+        <description>
+            <p>When you are reduced to 0 Hit Points, you can use your Reaction to roll a Hit Point Die. If you roll a 2 or better, set your Hit Point total to the result of the roll. If not, you suffer a Death Saving Throw failure. You regain the use of this gift when you finish a Long Rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Long Rest">
+            <description>Reduced to 0 HP: Roll HD. 2+: HP = roll. 1: Death Save failure.</description>
+        </sheet>
+    </element>
+
+    <element name="Gift of Unconditional Love" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GIFT_UNCONDITIONAL_LOVE">
+        <supports>Damnation 2025 Gift</supports>
+        <requirements>[fiend:stage:3]</requirements>
+        <description>
+            <p>When a creature you can see within 30 feet of you fails a saving throw, you can use your Reaction to gain Temporary Hit Points equal to 1d10 plus your Transformation Stage. You regain the use of this gift when you finish a Short or Long Rest.</p>
+            <p>If you roll a 1 on the die, you gain no Temporary Hit Points and instead have the Prone condition.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Short Rest">
+            <description>Creature w/in 30ft fails save: Gain 1d10 + {{fiend:stage}} THP. If roll 1, 0 THP and Prone.</description>
+        </sheet>
+    </element>
+
+    <element name="Gift of Martial Prowess" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GIFT_MARTIAL_PROWESS">
+        <supports>Damnation 2025 Gift</supports>
+        <requirements>[fiend:stage:4]</requirements>
+        <description>
+            <p>Once per turn, when you miss with a weapon attack or Unarmed Strike, you can reroll the attack roll. If the reroll hits, you must spend 3 Hit Point Dice and add the result to the attack’s normal damage as Force damage. If the reroll misses, you must spend 3 Hit Point Dice and take Psychic damage equal to the result. If you have fewer than 3 Hit Point Dice available, you cannot use this gift.</p>
+            <p>Once you hit a target with an attack using a rerolled attack, you cannot use it again until you finish a Long Rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>Miss weapon/Unarmed attack: Reroll. Hit: spend 3 HD, add result as Force dmg. Miss: spend 3 HD, take result as Psychic dmg. Need 3+ HD to use.</description>
+        </sheet>
+    </element>
+
+    <element name="Gift of Unbridled Power" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GIFT_UNBRIDLED_POWER">
+        <supports>Damnation 2025 Gift</supports>
+        <requirements>[fiend:stage:4]</requirements>
+        <description>
+            <p>Upon finishing a Short Rest, you can spend 2 Hit Point Dice and regain a number of spell slot levels equal to the highest number rolled. However, you take Psychic damage equal to twice the total that you rolled. You regain the reuse of this gift when you finish a Long Rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>After Short Rest: Spend 2 HD, regain spell slot levels = highest rolled. Take Psychic dmg = twice total rolled.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Plague Doctor</name>
+		<description>The Plague Doctor subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="wizard-plaguedoctor.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/wizard-plaguedoctor.xml" />
+		</update>
+	</info>
+
+	<element name="Plague Doctor" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_WIZARD_PLAGUE_DOCTOR">
+		<supports>Wizard Subclass</supports>
+		<description>
+			<p class="flavor">Plague Your Enemies with Magical Concoctions</p>
+			<p>Blending spellcasting with science, you distill your magic into concoctions that harm or heal. Plague Doctors often wear grotesque masks protecting them from their toxic ingredients. Many fearfully regard the mask as a sign of pestilence, making Plague Doctors a source of both hope and trepidation.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_POTION_CRAFT" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_GOOD_MEDICINE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_BAD_MEDICINE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_BREATHE_IT_IN" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_MEDICINAL_MASTER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_POTION_CRAFT" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_GOOD_MEDICINE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_BAD_MEDICINE" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_BREATHE_IT_IN" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_MEDICINAL_MASTER" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Potion Craft" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_POTION_CRAFT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PLAGUE_DOCTOR_POTION_CRAFT</requirements>
+		<description>
+			<p>You gain proficiency in the Medicine skill and proficiency with the Herbalism Kit and Alchemist's Supplies.</p>
+			<p class="indent">Additionally, you have learned to create magical potions.</p>
+			<p class="indent"><strong><em>Crafting.</em></strong> With 10 minutes of work or when you finish a Short or Long Rest, you can prepare magical potions if you have an Herbalism Kit or Alchemist's Supplies. When you do so, you must expend a level 1+ spell slot for each potion you create and choose a spell from your spellbook that targets only one creature. The chosen spell must be of an equal or lower level than the expended spell slot.</p>
+			<p class="indent"><strong><em>Consuming.</em></strong> As a Bonus Action, a creature can drink the potion or administer it to another creature within 5 feet of it. When a creature consumes the potion, it becomes the target of the spell as if you had cast it. If the spell requires Concentration, the creature that consumes the potion Concentrates on it.</p>
+			<p class="indent">Unconsumed potions last until you finish a Long Rest or until you use this feature again.</p>
+		</description>
+		<sheet alt="Potion Craft">
+			<description>With 10 mins work or on a Short/Long Rest, using an Herbalism Kit/Alchemist's Supplies, you can expend spell slots to create potions of single-target spells from your spellbook (spell level &lt;= slot level). A creature can drink or administer it as a Bonus Action, becoming the target (and Concentrating if required). Potions last until a Long Rest or until you use this feature again.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Good Medicine" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_GOOD_MEDICINE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PLAGUE_DOCTOR_GOOD_MEDICINE</requirements>
+		<description>
+			<p>When you craft a potion, you can choose to expend a spell slot without choosing a spell to craft a dose of Good Medicine. As a Bonus Action, you can drink the dose or administer it to another creature within 5 feet of yourself. When Good Medicine is consumed, roll a number of d8s equal to the level of the spell slot expended, and the target regains Hit Points equal to the roll's total. If you expended a level 3+ spell slot on this feature, Good Medicine also removes the Poisoned condition.</p>
+		</description>
+		<sheet alt="Good Medicine">
+			<description>When crafting a potion, you can create Good Medicine by expending a spell slot. As a Bonus Action, drink or administer it to heal 1d8 per slot level. If slot is level 3+, it also removes the Poisoned condition.</description>
+			<description level="14">When crafting a potion, you can create Good Medicine by expending a spell slot. As a Bonus Action, drink or administer it to heal 1d8 per slot level + 2d8 extra HP. If slot is level 3+, it also removes the Poisoned condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Bad Medicine" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_BAD_MEDICINE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PLAGUE_DOCTOR_BAD_MEDICINE</requirements>
+		<description>
+			<p>When you craft a potion, you can choose to expend a spell slot without choosing a spell to craft a dose of Bad Medicine. When you create a dose, choose one effect per level of the spell slot expended.</p>
+			<ul>
+				<li>The creature has the Poisoned condition.</li>
+				<li>The creature's Speed is halved.</li>
+				<li>The creature takes an extra 1d4 Necrotic damage the first time it takes damage each turn.</li>
+				<li>The creature takes 1d6 Poison damage each time it takes an action, Bonus Action, or Reaction.</li>
+				<li>The creature takes Acid damage equal to the level of the spell slot expended at the start of each of its turns.</li>
+			</ul>
+			<p class="indent">As a Magic action, you can hurl a dose of Bad Medicine at a point you can see within 30 feet. Creatures within 10 feet of that point must make a Constitution saving throw against your spell save DC. On a failed save, the target suffers one of the chosen effects for 1 minute. On each of its turns, the target can take an action and repeat the save, ending the effect on itself on a success.</p>
+		</description>
+		<sheet alt="Bad Medicine" action="Action">
+			<description>When crafting a potion, you can create Bad Medicine by expending a spell slot. Choose 1 effect per slot level: Poisoned; Speed halved; +1d4 Necrotic damage first time taking damage each turn; 1d6 Poison damage when taking an action/BA/Reaction; or Acid damage = slot level at start of its turns.&#13;
+			Hurl it at a point within 30 ft. Creatures in 10 ft make a DC{{wizard:spellcasting:dc}} Con save or suffer the effects for 1 min (Action to save and end).</description>
+			<description level="14">When crafting a potion, you can create Bad Medicine by expending a spell slot. Choose 1 effect per slot level: Poisoned; Speed halved; +1d4 Necrotic damage first time taking damage each turn; 1d6 Poison damage when taking an action/BA/Reaction; or Acid damage = slot level + 2d8 extra Acid damage at start of its turns.&#13;
+			Hurl it at a point within 30 ft. Creatures in 10 ft make a DC{{wizard:spellcasting:dc}} Con save with Disadvantage or suffer the effects for 1 min (Action to save and end).</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Breathe It In" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_BREATHE_IT_IN">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PLAGUE_DOCTOR_BREATHE_IT_IN</requirements>
+		<description>
+			<p>Being persistently exposed to the deadliest ailments known has given you some small measure of resistance. After you take Necrotic or Poison damage, you gain Temporary Hit Points equal to the damage taken. In addition, you are immune to the Poisoned condition.</p>
+		</description>
+		<sheet alt="Breathe It In">
+			<description>After taking Necrotic or Poison damage, you gain THP equal to the damage taken. You are Immune to the Poisoned condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Medicinal Master" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PLAGUE_DOCTOR_MEDICINAL_MASTER">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PLAGUE_DOCTOR_MEDICINAL_MASTER</requirements>
+		<description>
+			<p>When Good Medicine restores Hit Points to a creature, that creature regains 2d8 additional Hit Points.</p>
+			<p class="indent">When Bad Medicine deals Acid damage to a creature, that creature takes 2d8 extra Acid damage. Additionally, target creatures have Disadvantage on their saving throw.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Potion Craft Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PLAGUE_DOCTOR_POTION_CRAFT" />
+	<element name="Good Medicine Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PLAGUE_DOCTOR_GOOD_MEDICINE" />
+	<element name="Bad Medicine Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PLAGUE_DOCTOR_BAD_MEDICINE" />
+	<element name="Breathe It In Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PLAGUE_DOCTOR_BREATHE_IT_IN" />
+	<element name="Medicinal Master Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PLAGUE_DOCTOR_MEDICINAL_MASTER" />
+
+</elements>

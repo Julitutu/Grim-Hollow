@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Primordial Archer</name>
+		<description>The Primordial Archer subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="ranger-primordialarcher.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/ranger-primordialarcher.xml" />
+		</update>
+	</info>
+
+	<element name="Primordial Archer" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_RANGER_PRIMORDIAL_ARCHER">
+		<supports>Ranger Subclass</supports>
+		<description>
+			<p class="flavor">Channel the Wrath of the Wilds</p>
+			<p>In the areas of Etharis where nature still holds sway, many cling to the ancient customs of woodland hunters and witches. Marking themselves with wild plants and bone needles, theirs is a tradition of cunning, cruelty, and reprisal against all trespassers. Unlike the Druids, these wood witches twist natural magic into hexes, imbuing their weapons with nature's fury.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_ELEMENTAL_ARROWS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_HERBAL_LORE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_SPELLS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_WEAVE_THE_ELEMENTS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_WITCHING_ARROWS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_PRIMORDIAL_MAGIC" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_ELEMENTAL_ARROWS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_HERBAL_LORE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_WEAVE_THE_ELEMENTS" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_WITCHING_ARROWS" level="11" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_PRIMORDIAL_MAGIC" level="15" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Elemental Arrows" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_ELEMENTAL_ARROWS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMORDIAL_ARCHER_ELEMENTAL_ARROWS</requirements>
+		<description>
+			<p>As a Bonus Action, you can imbue a Longbow or Shortbow with elemental energy for 1 minute. Choose one of the following damage types: Acid, Cold, Fire, Lightning, or Thunder. For the duration, the imbued weapon deals damage of the selected type instead of its normal type and deals an extra 1d6 damage of the chosen type when it hits. At the start of each of your turns, you can change this choice.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Elemental Arrows" action="Bonus Action" usage="{{elemental arrows:usage}}/Long Rest">
+			<description>Imbue a Longbow or Shortbow with Acid, Cold, Fire, Lightning, or Thunder energy for 1 min. It deals damage of the selected type instead of normal, and deals an extra 1d6 damage of that type on a hit. You can change the type at the start of each of your turns.</description>
+		</sheet>
+		<rules>
+			<stat name="elemental arrows:usage" value="1" bonus="base" />
+			<stat name="elemental arrows:usage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Herbal Lore" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_HERBAL_LORE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMORDIAL_ARCHER_HERBAL_LORE</requirements>
+		<description>
+			<p>You gain an Herbalism Kit and are proficient with it. You can use the Herbalism Kit as a Bonus Action to stabilize an Unconscious creature within 5 feet of you that has 0 Hit Points as if using a Healer's Kit without needing to make a Wisdom (Medicine) check. If you take a Utilize action, an Unconscious creature within 5 feet of you that has 0 Hit Points gains 1 Hit Point instead.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Herbal Lore" usage="1/Short Rest">
+			<description>You can use an Herbalism Kit as a Bonus Action to stabilize an Unconscious creature within 5 ft at 0 HP. If you take a Utilize action instead, the creature gains 1 HP.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Primordial Archer Spells" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_SPELLS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMORDIAL_ARCHER_SPELLS</requirements>
+		<description>
+			<p>When you reach a Ranger level specified in the Primordial Archer Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Primordial Archer Spells</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Ranger Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Hex</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Blindness/Deafness</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Call Lightning</em></td></tr>
+				<tr><td style="text-align:center">13</td><td><em>Polymorph</em></td></tr>
+				<tr><td style="text-align:center">17</td><td><em>Wall of Stone</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HEX" level="3" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLINDNESS_DEAFNESS" level="5" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CALL_LIGHTNING" level="9" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_POLYMORPH" level="13" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WALL_OF_STONE" level="17" spellcasting="Ranger" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Weave the Elements" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_WEAVE_THE_ELEMENTS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMORDIAL_ARCHER_WEAVE_THE_ELEMENTS</requirements>
+		<description>
+			<p>With 1 hour of work or when you finish a Long Rest, you can use an Herbalism Kit to mark yourself with elemental patterns. You gain Resistance to one of the following damage types of your choice until you finish a Long Rest: Acid, Cold, Fire, Lightning, or Thunder.</p>
+		</description>
+		<sheet alt="Weave the Elements">
+			<description>With 1 hour of work or on a Long Rest (using an Herbalism Kit), you gain Resistance to Acid, Cold, Fire, Lightning, or Thunder damage until you finish a Long Rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Witching Arrows" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_WITCHING_ARROWS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMORDIAL_ARCHER_WITCHING_ARROWS</requirements>
+		<description>
+			<p>You gain the ability to imbue curses into your arrows. Once per turn when you hit a creature with a ranged attack using a Longbow or Shortbow, you can expend a level 1+ spell slot to choose one of the following effects (no action required). The listed damage increases by 2d6 for each spell slot above 1.</p>
+			<p class="indent"><strong><em>Arcing Shot.</em></strong> Electricity crackles around the arrow. Make a ranged attack roll with the same weapon against a second creature within 30 feet of the first that is also within your range. Each creature hit takes 2d6 Lightning damage.</p>
+			<p class="indent"><strong><em>Entangling Shot.</em></strong> The wooden shaft of the arrow sprouts tiny green leaves. The target must succeed on a Strength saving throw against your spell save DC. On a failed save, the target takes 2d6 Piercing damage and has the Restrained condition for 1 minute. On a successful save, the creature takes the damage only. A Restrained creature repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>
+			<p class="indent"><strong><em>Hexing Shot.</em></strong> The magic surrounding your arrow clouds the mind of your target. The target must make a Wisdom saving throw against your spell save DC. On a failed save, the target takes 2d6 Psychic damage and gains the Charmed or Frightened condition for 1 minute (your choice). The creature can repeat the save at the end of each of its turns, ending the effect on a success. On a successful save, the creature takes half as much damage only.</p>
+			<p class="indent"><strong><em>Viper Shot.</em></strong> The arrow transforms into a hissing serpent. The target must make a Constitution saving throw against your spell save DC. On a failed save, the target takes 2d6 Poison damage and has the Poisoned condition for 1 minute. The creature can repeat the save at the end of each of its turns, ending the effect on a success. On a successful save, the creature takes half as much damage only.</p>
+		</description>
+		<sheet alt="Witching Arrows" usage="1/Turn">
+			<description>When you hit with a Longbow or Shortbow, you can expend a 1st-level spell slot for an effect (+2d6 damage per slot level above 1st):&#13;
+			• Arcing Shot: Make another attack vs a creature within 30 ft of the first. Each hit takes 2d6 Lightning.&#13;
+			• Entangling Shot: DC{{ranger:spellcasting:dc}} Str save or take 2d6 Piercing and be Restrained for 1 min (save ends at end of turns). Success: damage only.&#13;
+			• Hexing Shot: DC{{ranger:spellcasting:dc}} Wis save or take 2d6 Psychic and be Charmed/Frightened for 1 min (save ends at end of turns). Success: half damage.&#13;
+			• Viper Shot: DC{{ranger:spellcasting:dc}} Con save or take 2d6 Poison and be Poisoned for 1 min (save ends at end of turns). Success: half damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Primordial Magic" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMORDIAL_ARCHER_PRIMORDIAL_MAGIC">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMORDIAL_ARCHER_PRIMORDIAL_MAGIC</requirements>
+		<description>
+			<p>Taking damage can't break your Concentration on any Ranger spells you cast.</p>
+			<p class="indent">In addition, you can take a Bonus Action to change the damage type you chose for the Weave the Elements feature to a different damage type in the list. When you do, you can choose a creature that you can see within 30 feet of yourself. That creature must succeed on a Constitution saving throw or take 6d6 damage of the either damage type (your choice).</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Primordial Magic" action="Bonus Action" usage="{{primordial magic:usage}}/Long Rest">
+			<description>Taking damage can't break your Concentration on Ranger spells.&#13;
+			You can change your Weave the Elements Resistance type. When you do, a creature you see within 30 ft must make a DC{{ranger:spellcasting:dc}} Con save or take 6d6 damage of the old or new type.</description>
+		</sheet>
+		<rules>
+			<stat name="primordial magic:usage" value="1" bonus="base" />
+			<stat name="primordial magic:usage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Elemental Arrows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMORDIAL_ARCHER_ELEMENTAL_ARROWS" />
+	<element name="Herbal Lore Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMORDIAL_ARCHER_HERBAL_LORE" />
+	<element name="Primordial Archer Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMORDIAL_ARCHER_SPELLS" />
+	<element name="Weave the Elements Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMORDIAL_ARCHER_WEAVE_THE_ELEMENTS" />
+	<element name="Witching Arrows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMORDIAL_ARCHER_WITCHING_ARROWS" />
+	<element name="Primordial Magic Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMORDIAL_ARCHER_PRIMORDIAL_MAGIC" />
+
+</elements>

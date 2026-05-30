@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Factions</name>
+		<description>Factions from Grim Hollow: Player's Guide (2025).</description>
+		<update version="0.0.1">
+			<file name="factions.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Setting/factions.xml" />
+		</update>
+	</info>
+
+    <element name="The Arcanist Inquisition" type="Organization" source="Grim Hollow: Player's Guide (2025)" id="ID_ORGANIZATION_THE_ARCANIST_INQUISITION" />
+    <element name="The Augustine Trading Company" type="Organization" source="Grim Hollow: Player's Guide (2025)" id="ID_ORGANIZATION_THE_AUGUSTINE_TRADING_COMPANY" />
+    <element name="The Company of Free Swords" type="Organization" source="Grim Hollow: Player's Guide (2025)" id="ID_ORGANIZATION_THE_COMPANY_OF_FREE_SWORD" />
+    <element name="The Crimson Court" type="Organization" source="Grim Hollow: Player's Guide (2025)" id="ID_ORGANIZATION_THE_CRIMSON_COURT" />
+    <element name="The Ebon Syndicate" type="Organization" source="Grim Hollow: Player's Guide (2025)" id="ID_ORGANIZATION_THE_EBON_SYNDICATE" />
+    <element name="Monster Hunter Guilds" type="Organization" source="Grim Hollow: Player's Guide (2025)" id="ID_ORGANIZATION_MONSTER_HUNTER_GUILDS" />
+    <element name="Morbus Doctore" type="Organization" source="Grim Hollow: Player's Guide (2025)" id="ID_ORGANIZATION_MORBUS_DOCTORE" />
+    <element name="Order of Dawn" type="Organization" source="Grim Hollow: Player's Guide (2025)" id="ID_ORGANIZATION_ORDER_OF_DAWN" />
+    <element name="The Prismatic Circle" type="Organization" source="Grim Hollow: Player's Guide (2025)" id="ID_ORGANIZATION_THE_PRISMATIC_CIRCLE" />
+    <element name="The Thaumaturge" type="Organization" source="Grim Hollow: Player's Guide (2025)" id="ID_ORGANIZATION_THE_THAUMATURGE" />
+    <element name="The Watchers of the Faithful" type="Organization" source="Grim Hollow: Player's Guide (2025)" id="ID_ORGANIZATION_THE_WATCHERS_OF_THE_FAITHFUL" />
+    
+</elements>

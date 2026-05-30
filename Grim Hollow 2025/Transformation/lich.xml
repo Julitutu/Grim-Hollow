@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Lich Transformation</name>
+        <description>Lich Transformation from Grim Hollow: Player's Guide (2025)</description>
+        <author>Ghostfire Gaming</author>
+        <update version="0.1.0">
+            <file name="lich.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/lich.xml" />
+        </update>
+    </info>
+
+    <!-- Items -->
+    <element name="Lich Transformation (Stage 1)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_LICH_LEVEL_1">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_LICH" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_LICH" />
+        </rules>
+    </element>
+    <element name="Lich Transformation (Stage 2)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_LICH_LEVEL_2">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_LICH" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_2" requirements="ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_1"/>
+        </rules>
+    </element>
+    <element name="Lich Transformation (Stage 3)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_LICH_LEVEL_3">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_LICH" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_3" requirements="ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_2"/>
+        </rules>
+    </element>
+    <element name="Lich Transformation (Stage 4)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_LICH_LEVEL_4">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_LICH" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_4" requirements="ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_3"/>
+        </rules>
+    </element>
+
+    <!-- Feat -->
+    <element name="Lich" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_LICH">
+        <description>
+            <p>The screams of souls torn from their bodies echo over the crackling of forbidden magic. A skeletal form rapidly stitches flesh and muscle to its frame, creating a seemingly living man—a man from an age and kingdom long gone. A man who has conquered death and risen again to enact his insidious will from millennia ago. The screams stop and are replaced with murmurs, as the corpses of the fallen arise as undead.</p>
+            <p>A Lich is to their domain what a king is to their kingdom: undisputed, absolute power. Resting upon a throne of raw, world-rending potential, a Lich comes as close to a god as any mortal could imagine. However, this awe-inspiring power comes at a dear price. Some Liches favor arcane or divine magic, becoming peerless Hierophants. Some are warriors, called Memori Liches, who steal the life force of their vanquished foes to make themselves nigh immortal.</p>
+            <p>Immune to the effects of age but not time, a Lich is destined to exist without living for eternity. While this drives some Liches mad and others to the extremes of pure evil, it also makes them more acute in some areas and weakened in others. Time itself takes their faculties from them until they are a mockery of their past selves.</p>
+            
+            <h4>Becoming a Lich</h4>
+            <p>There are many ways to become a Lich, each determining the type of Lich the mortal becomes. The Ritual of Dread is one of the main methods for arcanists of Etharis. The process of this ritual is a well-guarded secret, entrusted to only a handful of mortals at any one time. The process of the ritual involves several despicable acts including murder, the brewing of a vile concoction, and even one’s own death.</p>
+            <p>For Memori Liches, warriors of great renown who hope to break the cycle of death, the process is less involved but no less gruesome. The skull of a powerful vanquished foe serves at the focus of power, tipping off new opponents they are in for a hellish battle.</p>
+            <p>For Hierophants, the call of the divine is equally strong to the call of mortality. Those who want to spend an eternity with power over both life and death in the name of a powerful divine source.</p>
+            <p>Regardless of the form of lichdom, the process of tearing one’s soul from the body is most despised, for this process involves the sacrifice of something truly dear to a mortal, and no substitute will be accepted. For some, it is the death of a cherished loved one. For others it is a family legacy. Regardless of the sacrifice, unless the dread spirits deem it worthy, lichdom will not be granted.</p>
+            
+            <h4>Reversing Lich Traits</h4>
+            <p>The amount of raw magical energy that goes into becoming a Lich means that undoing it is impossible. The only stage beyond lichdom is annihilation, and even that can only occur if both the physical form of the lich and its soul vessel are both destroyed.</p>
+            
+            <h4>Lich Stages</h4>
+            <p>At each stage of this Transformation, follow the instructions provided for that stage.</p>
+            
+            <h4>Achieving a New Stage</h4>
+            <p>To move from one stage to the next higher one in this Transformation, an event or some other notable occurrence tied to the story of the character should take place. The following events are suggestions for ones that might trigger a move to the next stage of the Transformation:</p>
+            <ul>
+                <li>Discover ancient and dark arcane knowledge</li>
+                <li>Consume the soul of an exceptionally powerful spellcaster</li>
+                <li>Build a monument to your power to serve as a giant arcane focus</li>
+                <li>Create or lead an army of undead</li>
+                <li>Meditate in the glow of a powerful arcane item or location</li>
+                <li>Kill an Arch Daemon or Arch Seraph and absorb their power</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You are undergoing the Lich Transformation.</description>
+        </sheet>
+        <rules>
+            <stat name="lich:stage" value="0" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_1" />
+        </rules>
+    </element>
+
+    <!-- Transformation Stage 1 -->
+    <element name="Lich (Stage 1)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_1">
+        <prerequisite>Lich Transformation</prerequisite>
+        <requirements>ID_GFG_GHPG25_FEAT_TRANSFORMATION_LICH</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you initially undergo the Lich Transformation, you gain the Undead Form Boon and one other Stage 1 Boon of your choice. You also gain the Stage 1 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_UNDEAD_FORM_LICH" />
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_SOUL_VESSEL" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Undead Form, Stage 1 Boon, Soul Vessel (Flaw)</description>
+        </sheet>
+        <rules>
+            <stat name="lich:stage" value="1" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_UNDEAD_FORM_LICH" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_SOUL_VESSEL" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 1)" supports="Lich 2025 Boon 1" />
+        </rules>
+    </element>
+
+    <element name="Boon: Undead Form" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_UNDEAD_FORM_LICH">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_1</requirements>
+        <description>
+            <p>You become an Undead in addition to any other creature type(s). You cannot be excluded from Turn Undead.</p>
+            <p>You also stop aging. You are immune to any effect that would age you, and you cannot die from old age. You do not require air, food, drink, or sleep.</p>
+        </description>
+        <sheet display="false">
+            <description>You cannot be excluded from Turn Undead. You stop aging, are immune to aging effects, and cannot die from old age. You do not require air, food, drink, or sleep.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_UNDEAD" />
+        </rules>
+    </element>
+
+    <element name="Boon: Lich Magica" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_LICH_MAGICA">
+        <supports>Lich 2025 Boon 1</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_1</requirements>
+        <description>
+            <p>You can trade the soul in your soul vessel for increased magical power.</p>
+            <p>On your turn, as a Bonus Action, you can spend the charge in your soul vessel (see the Stage 1 Flaw below) for one of the following effects.</p>
+            <ul>
+                <li>Regain a spell slot equal to or lower than your current Lich Transformation Stage.</li>
+                <li>The next saving throw made before the end of your next turn against one of your spells has Disadvantage.</li>
+                <li>The next time you cast a spell before the end of your next turn, deal an extra 1d6 Necrotic damage per Lich Transformation Stage to a single creature damaged by that spell.</li>
+                <li>The next time you cast a spell before the end of your next turn that restores Hit Points, that spell restores an additional 1d6 Hit Points per Lich Transformation Stage.</li>
+            </ul>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Spend soul vessel charge to choose one:&#13;
+            • Regain spell slot level {{lich:stage}} or lower.&#13;
+            • Next save vs your spell before end of next turn has Disadvantage.&#13;
+            • Next spell before end of next turn deals +{{lich:stage}}d6 Necrotic dmg to one target.&#13;
+            • Next healing spell before end of next turn restores +{{lich:stage}}d6 HP.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Memori Lichdom" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_MEMORI_LICHDOM">
+        <supports>Lich 2025 Boon 1</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_1</requirements>
+        <description>
+            <p>While your soul vessel is charged, you gain the following benefits to your weapon attacks or Unarmed Strikes:</p>
+            <ul>
+                <li>They count as magical.</li>
+                <li>They have Advantage if taken as a Reaction.</li>
+                <li>After you deal damage with a weapon attack or an Unarmed Strike, you can spend a Bonus Action later on that turn and spend a Hit Point Die. Roll the Hit Point Die and deal Necrotic damage equal to the result to one target damaged by the triggering attack or Unarmed Strike.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>While soul vessel charged, weapon/Unarmed Strikes:&#13;
+            • Count as magical.&#13;
+            • Have Advantage if taken as a Reaction.&#13;
+            • After dealing dmg, BA later that turn to spend/roll 1 HD and deal Necrotic dmg equal to result to one target damaged.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Soul Vessel" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SOUL_VESSEL">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_1</requirements>
+        <description>
+            <p>You have successfully torn your soul from your body and trapped it in a suitable object. The object must be a trinket or item no larger than 1 cubic foot in size. This item becomes your soul vessel.</p>
+            <p><strong>Soul Vessel.</strong> A soul vessel is an enchanted vessel containing a Lich’s soul. Additionally, a soul vessel is a conduit for the lich to feed on captured souls. A soul vessel has the following statistics:</p>
+            <ul>
+                <li><strong>Armor Class:</strong> 18</li>
+                <li><strong>Hit Points:</strong> 10 × your Character Level</li>
+                <li><strong>Speed:</strong> 0</li>
+                <li><strong>Damage Immunities:</strong> Poison, Psychic; Bludgeoning, Piercing, and Slashing from non-magical sources</li>
+                <li><strong>Damage Resistances:</strong> Cold, Fire, Lightning, Necrotic, Thunder; Bludgeoning, Piercing, and Slashing from magical sources</li>
+            </ul>
+            <p>While a soul is stored in your soul vessel, the soul vessel is considered charged. The soul contained within the soul vessel must be from a creature whose Challenge Rating is equal to or higher than half your Character Level. The soul vessel can only contain one soul at a time.</p>
+            <p>You can add a soul to the soul vessel 2 times for each of your Transformation Stages. You regain this ability when you complete a Long Rest.</p>
+            <p>To store a soul within the soul vessel, the lich must use a Magic action within 1 minute of a creature’s death, or a Reaction triggered by the creature’s death, while holding the vessel to capture the soul, and the dead creature’s body must be within 60 feet of the vessel when the capture occurs. The creature cannot be returned to life until its soul is removed from your soul vessel.</p>
+            <p>If your soul vessel is reduced to 0 hit points, you must create a new one. Doing so takes a Long Rest. Until you do, you do not gain any of the benefits of having the soul vessel. Also, until you have a soul vessel, you have Disadvantage on the first D20 Test you make after finishing a Short or Long Rest.</p>
+            <p>If you are killed while you control a charged soul vessel on the same plane of existence, your soul vessel’s charge is consumed. You are brought back to life as per the Resurrection spell within 5 feet of your soul vessel 1 day later. If you are killed and your soul vessel is not charged, you are resurrected 7 days later instead.</p>
+        </description>
+        <sheet action="Magic Action / Reaction" usage="{{soul vessel:capacity}}/Long Rest">
+            <description>Capture soul (CR >= half Char Level) w/in 1 min of death or as Reaction to death (body w/in 60ft, holding vessel). Vessel holds 1 soul (charged).&#13;
+            Vessel Stats: AC 18, HP {{soul vessel:hp}}, Speed 0. Immune: Poison, Psychic, non-magical B/P/S. Resist: Cold, Fire, Lightning, Necrotic, Thunder, magical B/P/S.&#13;
+            If vessel 0 HP: create new one (Long Rest). Until then, no vessel benefits, Disadv on 1st D20 Test after Short/Long Rest.&#13;
+            If killed w/ charged vessel on same plane: charge consumed, revived via Resurrection w/in 5ft in 1 day (7 days if uncharged).</description>
+        </sheet>
+        <rules>
+            <stat name="soul vessel:hp" value="level" />
+            <stat name="soul vessel:hp" value="level" />
+            <stat name="soul vessel:hp" value="level" />
+            <stat name="soul vessel:hp" value="level" />
+            <stat name="soul vessel:hp" value="level" />
+            <stat name="soul vessel:hp" value="level" />
+            <stat name="soul vessel:hp" value="level" />
+            <stat name="soul vessel:hp" value="level" />
+            <stat name="soul vessel:hp" value="level" />
+            <stat name="soul vessel:hp" value="level" />
+
+            <stat name="soul vessel:capacity" value="lich:stage" />
+            <stat name="soul vessel:capacity" value="lich:stage" />
+        </rules>
+    </element>
+
+    <!-- Transformation Stage 2 -->
+    <element name="Lich (Stage 2)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_2">
+        <prerequisite>Lich Transformation Stage 1</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 2 of the Lich Transformation, you select one Stage 2 Boon and gain the Stage 2 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_HIDEOUS_APPEARANCE_LICH" />
+        </description>
+        <sheet>
+            <description>Hideous Appearance Save: Con {{hideous appearance:lich:dc}} under stress to hide it.</description>
+        </sheet>
+        <rules>
+            <stat name="lich:stage" value="2" bonus="base" />
+            <stat name="hideous appearance:lich:dc" value="13" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 2)" supports="Lich 2025 Boon 1||Lich 2025 Boon 2" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_HIDEOUS_APPEARANCE_LICH" />
+        </rules>
+    </element>
+
+    <element name="Boon: Acolyte of Undeath" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ACOLYTE_OF_UNDEATH">
+        <supports>Lich 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_2</requirements>
+        <description>
+            <p>When you reduce a Humanoid to 0 Hit Points and it dies, you can use a Reaction to immediately transform it into a Zombie under your control. You can have three such creatures under your control at once. These Zombies act on their own initiative count, following your verbal commands to the best of their ability.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When you reduce a Humanoid to 0 HP and it dies, instantly transform it into a Zombie under your control. Max 3. They act on own initiative, follow verbal commands.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Binding Curse" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_BINDING_CURSE">
+        <supports>Lich 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_2</requirements>
+        <description>
+            <p>You can compel a creature with a binding curse. As a Bonus Action, choose a creature within 30 feet who can see you. That creature makes a Charisma saving throw against a DC of 12 plus your Transformation Stage. On a failed save it cannot move more than 30 feet away from you for 1 minute. Also, during that time, your weapon attacks and Unarmed Strikes against the creature deal an additional 2d6 Necrotic damage.</p>
+            <p>You can use this feature three times, regaining all uses after finishing a Short or Long Rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="3/Short Rest">
+            <description>Creature w/in 30ft seeing you makes DC {{binding curse:dc}} Cha save. Fail: cannot move >30ft away from you for 1 min. During this time, your weapon/Unarmed strikes against it deal +2d6 Necrotic dmg.</description>
+        </sheet>
+        <rules>            
+            <stat name="binding curse:dc" value="12" bonus="base" />
+            <stat name="binding curse:dc" value="lich:stage" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Boon: Corrupting Magic" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_CORRUPTING_MAGIC">
+        <supports>Lich 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_2</requirements>
+        <description>
+            <p>Whenever you kill any creature with a spell, you may apply an additional effect depending on the damage dealt. This ability cannot be used when you kill a Construct, Undead, or any creature without a soul.</p>
+            <p>Choose one of the following effects when you use this ability:</p>
+            <ul>
+                <li><strong>Life Force.</strong> As the soul of your enemy leaves their body, you siphon off part of their life force. You regain 1d6 Hit Points per Transformation Stage.</li>
+                <li><strong>Poison.</strong> Choose a creature within 10 feet of the killed creature. That creature takes 1d6 Poison damage per Transformation Stage.</li>
+                <li><strong>Exhaustion.</strong> Choose a creature within 10 feet of the killed creature. That creature gains one Exhaustion level. A creature may only have one Exhaustion level from this feature at a time.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Kill creature w/ spell (not Construct/Undead/soulless), apply effect:&#13;
+            • Life Force: Regain {{lich:stage}}d6 HP.&#13;
+            • Poison: Creature w/in 10ft of dead takes {{lich:stage}}d6 Poison dmg.&#13;
+            • Exhaustion: Creature w/in 10ft of dead gains 1 Exhaustion level (max 1 from this feature).</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Hideous Appearance" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_HIDEOUS_APPEARANCE_LICH">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_2</requirements>
+        <description>
+            <p>Your appearance has grotesquely transformed. Your flesh withers and contracts around your bones, your eyes become sunken, and you reek of death. Regardless of your true form, you’re horrific to behold.</p>
+            <p>You can suspend this form and manifest the appearance of the humanoid you once were, but this is taxing and requires effort. This form is not permanent, and moments of stress are likely to reveal your true nature. Your true form may be revealed in the following situations:</p>
+            <ul>
+                <li>Becoming Bloodied</li>
+                <li>Concentrating on a spell</li>
+                <li>Having the Unconscious condition</li>
+                <li>Entering hallowed ground</li>
+                <li>Choosing to reveal yourself</li>
+            </ul>
+            <p>In these events, or times of other extreme emotional or physical stress, a GM can call or a Constitution saving throw with a DC based on your current Transformation Stage. If you fail this save, your Horrific Appearance is revealed.</p>
+            <h5>Hideous Appearance Save DC</h5>
+            <table>
+                <thead>
+                    <tr><td>Stage</td><td>Constitution Save DC</td></tr>
+                </thead>
+                <tr><td>2</td><td>13</td></tr>
+                <tr><td>3</td><td>16</td></tr>
+                <tr><td>4</td><td>20</td></tr>
+            </table>
+            <p>Non-evil creatures that witness your true form become instantly Hostile to you, unless the GM decides otherwise.</p>
+        </description>
+        <sheet>
+            <description>True form revealed if: Bloodied, concentrating on spell, Unconscious, entering hallowed ground, or choosing to. Non-evil creatures become Hostile.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 3 -->
+    <element name="Lich (Stage 3)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_3">
+        <prerequisite>Lich Transformation Stage 2</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 3 of the Lich Transformation, you select one Stage 3 Boon and gain the Stage 3 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_NECROMANTIC_DYSTROPHIA" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 3 Boon. Necromantic Dystrophia (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="lich:stage" value="3" bonus="base" />
+            <stat name="hideous appearance:lich:dc" value="16" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 3)" supports="Lich 2025 Boon 1||Lich 2025 Boon 2||Lich 2025 Boon 3" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_NECROMANTIC_DYSTROPHIA" />
+        </rules>
+    </element>
+
+    <element name="Boon: Eldritch Concentration" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ELDRITCH_CONCENTRATION">
+        <supports>Lich 2025 Boon 3</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_3</requirements>
+        <description>
+            <p>Your supernatural ability with magic manifests in new ways. When you cast a spell that requires Concentration, if you are already concentrating on one such spell, you can spend the charge of your soul vessel. If you do this, you do not lose Concentration on the original spell. Instead, you gain 1 Exhaustion level.</p>
+            <p>If you cast a third Concentration spell during this time, or lose Concentration for any other reason, you lose Concentration on both current spells you are concentrating on.</p>
+            <p>Once you use this feature you cannot use it again until you finish a Short or Long Rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When casting a Concentration spell while already concentrating: spend soul vessel charge to keep original spell and gain 1 Exhaustion. Casting a 3rd or losing conc drops both.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Master of Undeath" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_MASTER_OF_UNDEATH">
+        <supports>Lich 2025 Boon 3</supports>
+        <prerequisite>Acolyte of Undeath</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_3, ID_GFG_GHPG25_FEAT_FEATURE_ACOLYTE_OF_UNDEATH</requirements>
+        <description>
+            <p>Undead creatures under your control from a Lich Transformation Boon have Advantage on attack rolls when they are within 5 feet of you.</p>
+            <p>Additionally, whenever an Undead creature you control due to a Lich Transformation Boon is reduced to 0 Hit Points, you can spend the charge of your soul vessel as a Reaction. If you do, that Undead creature is at 1 hit point instead and may immediately move up to its full speed and make an Attack action with Advantage. This feature has no effect if the creature has been reduced to 0 Hit Points by Radiant damage.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Controlled Undead (from Lich boons) have Adv on attacks w/in 5ft of you.&#13;
+            Controlled Undead reduced to 0 HP (not Radiant): spend soul vessel charge to keep it at 1 HP. It immediately moves full speed and Attacks with Adv.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Unholy Healing" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_UNHOLY_HEALING">
+        <supports>Lich 2025 Boon 3</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_3</requirements>
+        <description>
+            <p>Your magical connection to your soul vessel restores your vitality quickly. While your soul vessel is charged, you can use a Magic action to draw healing power from it. At the start of each of your turns for 1 minute, you regain 10 Hit Points. The soul vessel does not lose its charge.</p>
+            <p>You can use this feature three times, and you regain all uses after finishing a Long Rest.</p>
+        </description>
+        <sheet action="Magic Action" usage="3/Long Rest">
+            <description>While soul vessel charged: draw healing power. Regain 10 HP at the start of each turn for 1 min. Vessel keeps charge.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Necromantic Dystrophia" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_NECROMANTIC_DYSTROPHIA">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_3</requirements>
+        <description>
+            <p>When your soul vessel is not charged, you suffer the following effects:</p>
+            <ul>
+                <li>You cannot use the Dash, Dodge, or Disengage actions.</li>
+                <li>You cannot use Reactions.</li>
+                <li>You have Disadvantage on Constitution saving throws.</li>
+                <li>You cannot disguise your Hideous Appearance.</li>
+            </ul>
+            <p>Upon charging your soul vessel with an appropriate soul, you are no longer subject to these effects.</p>
+        </description>
+        <sheet>
+            <description>When soul vessel NOT charged: No Dash/Dodge/Disengage. No Reactions. Disadv on Con saves. Cannot disguise Hideous Appearance.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 4 -->
+    <element name="Lich (Stage 4)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_4">
+        <prerequisite>Lich Transformation Stage 3</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 4 of the Lich Transformation, you select one Stage 4 Boon and gain the Stage 4 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_WEIGHT_OF_THE_AGES" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 4 Boon. Weight of the Ages (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="lich:stage" value="4" bonus="base" />
+            <stat name="hideous appearance:lich:dc" value="20" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 4)" supports="Lich 2025 Boon 1||Lich 2025 Boon 2||Lich 2025 Boon 3||Lich 2025 Boon 4" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_WEIGHT_OF_THE_AGES" />
+        </rules>
+    </element>
+
+    <element name="Boon: Eldritch Omniscience" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ELDRITCH_OMNISCIENCE">
+        <supports>Lich 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_4</requirements>
+        <description>
+            <p>You have better mastered the magical arts. The number of spells you can learn and can have prepared increases by 4. Additionally, whenever you finish a Short or Long Rest you gain 1 additional spell slot of whichever level you choose.</p>
+            <p>If a creature dies as a result of one of your spells, you can instantly draw that soul into your soul vessel without using a Magic action or Reaction.</p>
+        </description>
+        <sheet>
+            <description>Spells known/prepared increases by 4. After Short/Long Rest: gain 1 extra spell slot of any level. Creature dies to your spell: instantly draw soul into vessel (no action).</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Lord of Undeath" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_LORD_OF_UNDEATH">
+        <supports>Lich 2025 Boon 4</supports>
+        <prerequisite>Master of Undeath</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_MASTER_OF_UNDEATH</requirements>
+        <description>
+            <p>When you use Acolyte of Undeath you can choose to transform the target into a Ghoul instead of a Zombie.</p>
+        </description>
+        <sheet>
+            <description>Acolyte of Undeath can transform target into a Ghoul instead of a Zombie.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Soul-Shattering Attack" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SOUL_SHATTERING_ATTACK">
+        <supports>Lich 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_4</requirements>
+        <description>
+            <p>After you make a weapon attack or Unarmed Strike, you can spend the charge in your soul vessel to add the Challenge Rating of the soul within it to the attack roll and damage dealt with that attack. If the creature dies from that attack, you can instantly recharge your soul vessel with the soul that you just expended.</p>
+            <p>You can use this feature a number of times equal to 4 plus your Proficiency Bonus. You regain all uses after finishing a Long Rest.</p>
+        </description>
+        <sheet usage="{{soul shattering:uses}}/Long Rest">
+            <description>After weapon/Unarmed attack: spend soul vessel charge to add soul's CR to attack roll and damage. If target dies, instantly recharge vessel with its soul.</description>
+        </sheet>
+        <rules>
+            <stat name="soul shattering:uses" value="4" />
+            <stat name="soul shattering:uses" value="proficiency" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Weight of the Ages" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_WEIGHT_OF_THE_AGES">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LICH_LEVEL_4</requirements>
+        <description>
+            <p>The weight of time is degrading for your form, and only the magic of your soul vessel holds it together. If your soul vessel is reduced to 0 hit points, your soul is lost; you are killed instantly and your body crumbles to dust.</p>
+        </description>
+        <sheet>
+            <description>If your soul vessel is reduced to 0 HP, your soul is lost; you are killed instantly and your body crumbles to dust.</description>
+        </sheet>
+    </element>
+</elements>

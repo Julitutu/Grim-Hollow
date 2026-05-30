@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Disembodied</name>
+		<description>The Disembodied heritage from Grim Hollow - The Players Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="heritage-disembodied.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-disembodied.xml" />
+		</update>
+	</info>
+
+	<element name="Disembodied" type="Race" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_DISEMBODIED">
+		<description>
+			<p>To allow one’s mind to touch the planes is the ultimate dream of many an arcane spellcaster, and nowhere has that dream come closer to reality than in the lost city of Ulmyr’s Gate. Founded in the Bürach Empire by a group of ambitious wizards who chafed under the limitations imposed upon them by government bureaucracy, Ulmyr’s Gate boasted free study for all mages who sought sanctuary within its walls. The Great College dedicated to magical study in the city quickly became a sanctum for mages of all disciplines from across Etharis, creating a golden age of magic within its walls.</p>
+			<p class="indent">That golden age came crashing down in a single night, when the founding mages of Ulmyr’s Gate attempted an ambitious ritual intended to part the veil and create a permanent portal to the Ethereal Plane. Instead, their magic tore a gaping rift in the fabric of reality, and in an instant the entire city was tipped into the void between worlds. Ulmyr’s Gate and all its citizens were presumed destroyed. The incident triggered another inquisition against hubristic arcanists who tampered in things mortals were not meant to know. Then, life in the empire went on.</p>
+			<p class="indent">Years later, stories began to surface of frightening apparitions sighted in the region where Ulmyr’s Gate once stood. These haunting folk seemed oddly blurred or indistinct. Witnesses reporting that they would vanish as suddenly as they appeared. Gradually, it became clear that these poor souls were the survivors of the Ethereal Rift, now trapped between worlds and trying to retain their tenuous grasp on the Material Plane.</p>
+			<p class="indent">Those residents of lost Ulmyr’s Gate who have mustered the strength to return to the world have been named the disembodied by the sages who have studied them. These rare individuals have left or fled their former home, crossing through the Ethereal Rift to roam the mortal world. Though they resemble the people they once were, they are both more and less—creatures of two realms, often haunted by memories of the city’s destruction, of which they rarely if ever speak.</p>
+			<h5>DISEMBODIED BASE TRAITS</h5>
+			<ul class="unstyled">
+				<li><strong>Age.</strong> The Disembodied mature at a much slower rate than the Humanoids they once were, with their life expectancy doubled or even tripled.</li>
+				<li><strong>Size.</strong> Disembodied appear as translucent versions of their former selves, their nearly insubstantial nature reducing their weight to a quarter of what it was. Your size is Small or Medium, as you determine.</li>
+				<li><strong>Speed.</strong> 30 feet. If your size is Small, you can reduce your Speed by 5 feet to gain an extra traditional trait.</li>
+			</ul>
+			<h5>TRADITIONAL DISEMBODIED TRAITS</h5>
+			<p>Most Disembodied retain a touch of the ethereal magic that marks them as creatures of two worlds. If you wish to play a traditional Disembodied, it is recommended you select from the following traits:</p>
+			<ul>
+				<li><strong>Combat:</strong> Magical Fortification, Master of Distraction, Out of Phase</li>
+				<li><strong>Exploration:</strong> Ethereal Fade, Inured to the Elements</li>
+				<li><strong>Roleplaying:</strong> Magical Insight, Magical Savant (Feather Fall), Magical Savvy (Dancing Lights)</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed" value="30" bonus="base" />
+            <select type="Racial Trait" name="Size" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Disembodied)" supports="GH Heritage Trait" number="8" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			<select type="Racial Trait" name="Heritage Trait (Disembodied)" supports="GH Heritage Trait" number="6" requirements="ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_MAGICAL_FORTIFICATION" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_MASTER_OF_DISTRACTION" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_OUT_OF_PHASE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_ETHEREAL_FADE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_INURED_TO_THE_ELEMENTS" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_MAGICAL_INSIGHT" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG25_RACE_TRAIT_TRADITIONAL_DISEMBODIED_MAGIC" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+		</rules>
+	</element>
+
+	<element name="Traditional Disembodied Magic" type="Racial Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_TRAIT_TRADITIONAL_DISEMBODIED_MAGIC">
+		<supports>GH Heritage Trait, GH Roleplaying Trait</supports>
+		<description>
+			<p>You know the <i>Dancing Lights</i> cantrip. Additionally, you know the <i>Feather Fall</i> spell, which you can cast once per Long Rest without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You know the Dancing Lights cantrip. Additionally, you can cast Feather Fall once per Long Rest without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DANCING_LIGHTS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FEATHER_FALL" />
+		</rules>
+	</element>
+</elements>

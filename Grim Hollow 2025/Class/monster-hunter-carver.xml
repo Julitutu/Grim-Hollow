@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Carver Guild</name>
+		<description>The Carver Guild subclass for the Monster Hunter from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="monster-hunter-carver.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/monster-hunter-carver.xml" />
+		</update>
+	</info>
+
+	<element name="Carver Guild" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_MONSTER_HUNTER_CARVER_GUILD">
+		<supports>Hunting Guild</supports>
+		<description>
+			<p class="flavor">Slay Monsters Fearlessly and Recklessly</p>
+			<p>Since the beginning of time, the brave glared into danger’s ferocious eyes and fought monsters. Those who survived were the ones smart enough to arm themselves properly and know precisely where to strike—or those who knew when to flee and return with a new plan.</p>
+			<p class="indent">Members of the Carver Guild are the Monster Hunters typically called upon when immediate danger threatens a settlement and there is no army or militia available. Carvers stride unflinchingly toward death, armed with years of training and the knowledge passed down from those before them.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_EQUIPPED_FOR_BATTLE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_CLOSE_QUARTERS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_TRUE_GRIT" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_TERRORIZE_THE_TERRORS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_DEADLY_REDIRECT" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_CONTROLLED_FOOTWORK" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_EQUIPPED_FOR_BATTLE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_CLOSE_QUARTERS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_TRUE_GRIT" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_TERRORIZE_THE_TERRORS" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_DEADLY_REDIRECT" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_CONTROLLED_FOOTWORK" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Equipped for Battle" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_EQUIPPED_FOR_BATTLE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_CARVER_GUILD_EQUIPPED_FOR_BATTLE</requirements>
+		<description>
+			<p>You gain training with Heavy armor.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Close Quarters" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_CLOSE_QUARTERS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_CARVER_GUILD_CLOSE_QUARTERS</requirements>
+		<description>
+			<p>Your skill in close combat enables you to inflict crushing blows while keeping your opponent off balance. When you hit a creature with an attack roll using a Melee weapon, you can take a Reaction to deal an extra 1d6 damage of the same type dealt by the weapon. That creature has Disadvantage on its next attack roll before the start of your next turn.</p>
+		</description>
+		<sheet alt="Close Quarters" action="Reaction">
+			<description>When you hit a creature with an attack roll using a Melee weapon, you can deal an extra {{close quarters:damage}}d6 damage of the same type dealt by the weapon. That creature has Disadvantage on its next attack roll before the start of your next turn.</description>
+			<description level="15">When you hit a creature with an attack roll using a Melee weapon, you can deal an extra {{close quarters:damage}}d6 damage of the same type dealt by the weapon. That creature has Disadvantage on all attack rolls until the end of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="close quarters:damage" value="1" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 7: True Grit" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_TRUE_GRIT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_CARVER_GUILD_TRUE_GRIT</requirements>
+		<description>
+			<p>You have Advantage on saving throws you make to avoid or end the Frightened condition, and you are immune to the Frightened condition caused by creature types in your Monster Grimoire.</p>
+			<p class="indent">Additionally, when you hit a creature with an attack as part of a Reaction, you can choose a Frightened creature within 60 feet that can see you (including yourself). The condition ends on that creature.</p>
+		</description>
+		<sheet alt="True Grit">
+			<description>You have Advantage on saving throws to avoid or end the Frightened condition, and you are immune to the Frightened condition caused by creature types in your Monster Grimoire. &#13;
+			Additionally, when you hit a creature with an attack as part of a Reaction, you can choose a Frightened creature within 60 feet that can see you (including yourself) and end the condition on that creature.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Terrorize the Terrors" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_TERRORIZE_THE_TERRORS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_CARVER_GUILD_TERRORIZE_THE_TERRORS</requirements>
+		<description>
+			<p>Your reputation has become such that monsters preying on the fearful have come to fear you. When you hit a creature with an attack as part of a Reaction, you can force the creature to make a Wisdom saving throw or have the Frightened condition until the end of your next turn. The DC for the saving throw equals 8 plus your Intelligence modifier and your Proficiency Bonus.</p>
+		</description>
+		<sheet alt="Terrorize the Terrors">
+			<description>When you hit a creature with an attack as part of a Reaction, you can force the creature to make a DC {{terrorize the terrors:dc}} Wisdom saving throw or have the Frightened condition until the end of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="terrorize the terrors:dc" value="8" bonus="base" />
+			<stat name="terrorize the terrors:dc" value="proficiency" bonus="proficiency" />
+			<stat name="terrorize the terrors:dc" value="intelligence:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Level 15: Deadly Redirect" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_DEADLY_REDIRECT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_CARVER_GUILD_DEADLY_REDIRECT</requirements>
+		<description>
+			<p>Your strikes have become even deadlier. The extra damage of your Close Quarters increases to 3d6.</p>
+			<p class="indent">In addition, if you deal damage to a creature with Close Quarters, the target has Disadvantage on all attack rolls until the end of your next turn.</p>
+		</description>
+		<sheet display="false" />
+        <rules>            
+			<stat name="close quarters:damage" value="3" bonus="base" level="15" />
+        </rules>
+	</element>
+
+	<element name="Level 18: Controlled Footwork" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_CARVER_GUILD_CONTROLLED_FOOTWORK">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_CARVER_GUILD_CONTROLLED_FOOTWORK</requirements>
+		<description>
+			<p>You are such an effective combatant that you are always in control and never off balance. You can take a Reaction twice in a round instead of once.</p>
+		</description>
+		<sheet alt="Controlled Footwork">
+			<description>You can take a Reaction twice in a round instead of once.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Equipped for Battle Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_CARVER_GUILD_EQUIPPED_FOR_BATTLE" />
+	<element name="Close Quarters Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_CARVER_GUILD_CLOSE_QUARTERS" />
+	<element name="True Grit Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_CARVER_GUILD_TRUE_GRIT" />
+	<element name="Terrorize the Terrors Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_CARVER_GUILD_TERRORIZE_THE_TERRORS" />
+	<element name="Deadly Redirect Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_CARVER_GUILD_DEADLY_REDIRECT" />
+	<element name="Controlled Footwork Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_CARVER_GUILD_CONTROLLED_FOOTWORK" />
+
+</elements>

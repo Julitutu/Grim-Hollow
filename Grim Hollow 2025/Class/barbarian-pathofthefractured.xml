@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Fractured Subclass</name>
+		<description>Path of the Fractured subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="barbarian-pathofthefractured.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/barbarian-pathofthefractured.xml" />
+		</update>
+	</info>
+
+	<element name="Path of the Fractured" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_BARBARIAN_FRACTURED">
+		<supports>Barbarian Subclass</supports>
+		<description>
+			<p class="flavor">Two Personalities Are Better than One</p>
+			<p>Barbarians are defined by their rage, channeling it to unleash brief but potent destruction. Few are brave or unwise enough to study esoteric psychological techniques that split their rage from the rest of their psyche, dividing their identity into two parts: ego and id. When their ego is in control, the Fractured—as these Barbarians are known—possess self-control and cunning beyond most other Barbarians. When they allow their id to take control, their countenance turns monstrous and their bodies swell with the power of rage made physically manifest.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_FACE_OF_RAGE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_MASK_OF_CIVILITY" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_BRAINS_AND_BRAWN" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_CUNNING_AND_BRUTAL" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_BETTER_HALF" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_FACE_OF_RAGE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_MASK_OF_CIVILITY" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_BRAINS_AND_BRAWN" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_CUNNING_AND_BRUTAL" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_BETTER_HALF" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Face of Rage" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_FACE_OF_RAGE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FRACTURED_FACE_OF_RAGE</requirements>
+		<description>
+			<p>When you activate your Rage, your countenance distorts and your body swells. Creatures that haven't witnessed your transformation, now or previously, don't recognize you. In addition, while your Rage is active, you gain the following benefits:</p>
+			<ul>
+				<li>You can roll 1d8 in place of the normal damage of your Unarmed Strike, and whenever you deal damage with an Unarmed Strike, it can deal your choice of Force damage or its normal damage type.</li>
+				<li>When you hit a creature with an Unarmed Strike, you can push it 10 feet or force the creature to make a Constitution saving throw (DC 8 plus your Strength modifier and your Proficiency Bonus). On a failed save, the creature has the Prone condition.</li>
+				<li>You count as one size larger when determining the success or failure of a Grapple, and when you make an Unarmed Strike, your reach is 5 feet greater than normal.</li>
+			</ul>
+		</description>
+		<sheet alt="Face of Rage">
+			<description>While your Rage is active, you are unrecognizable to those who haven't seen your transformation. You gain the following benefits:&#13;
+			• Your Unarmed Strikes deal 1d8 damage, and can deal Force damage or normal damage.&#13;
+			• When you hit a creature with an Unarmed Strike, you can push it 10 ft or force a DC{{face of rage:dc}} Con save or fall Prone.&#13;
+			• You count as one size larger for Grapples, and your Unarmed Strike reach increases by 5 ft.</description>
+		</sheet>
+		<rules>
+			<stat name="face of rage:dc" value="8" bonus="base" />
+			<stat name="face of rage:dc" value="proficiency" bonus="proficiency" />
+			<stat name="face of rage:dc" value="strength:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Mask of Civility" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_MASK_OF_CIVILITY">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FRACTURED_MASK_OF_CIVILITY</requirements>
+		<description>
+			<p>You are proficient in one of the following skills of your choice: Arcana, History, Investigation, Medicine, Nature, Persuasion, or Religion. In addition, you gain proficiency with one type of Artisan's Tools of your choice or you know one language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Mask of Civility)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERSUASION|ID_PROFICIENCY_SKILL_RELIGION" />
+			<select type="Proficiency" name="Tool or Language (Mask of Civility)" supports="Mask of Civility" />
+		</rules>
+	</element>
+
+    <element name="Tool" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_MASK_OF_CIVILITY_TOOL">
+        <supports>Mask of Civility</supports>
+        <compendium display="false" />
+        <description>
+            <p>You gain proficiency with one type of Artisan's Tools</p>
+        </description>
+        <sheet display="false" />
+        <rules>            
+			<select type="Proficiency" name="Tool or Language (Mask of Civility)" supports="Artisan tools" />
+        </rules>
+    </element>
+    <element name="Tool" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_MASK_OF_CIVILITY_LANGUAGE">
+        <supports>Mask of Civility</supports>
+        <compendium display="false" />
+        <description>
+            <p>You know one Language of your choice.</p>
+        </description>
+        <sheet display="false" />
+        <rules>            
+            <select type="Language" name="Language (Mask of Civility)" supports="Standard||Exotic" />
+        </rules>
+    </element>
+
+	<element name="Level 6: Brains and Brawn" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_BRAINS_AND_BRAWN">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FRACTURED_BRAINS_AND_BRAWN</requirements>
+		<description>
+			<p>While your Rage is not active, you have Resistance to Psychic damage. While your Rage is active, you have Resistance to every damage type except Force and Psychic.</p>
+		</description>
+		<sheet alt="Brains and Brawn">
+			<description>While your Rage is not active, you have Resistance to Psychic damage. While your Rage is active, you have Resistance to every damage type except Force and Psychic.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Cunning and Brutal" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_CUNNING_AND_BRUTAL">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FRACTURED_CUNNING_AND_BRUTAL</requirements>
+		<description>
+			<p>While your Rage is not active, you can take the Disengage or Help action as a Bonus Action. While your Rage is active, your attack rolls with Unarmed Strikes score a Critical Hit on a roll of 19 or 20 on the d20.</p>
+		</description>
+		<sheet alt="Cunning and Brutal">
+			<description>While your Rage is not active, you can take the Disengage or Help action as a Bonus Action. While your Rage is active, your Unarmed Strikes score a Critical Hit on a 19 or 20.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Better Half" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FRACTURED_BETTER_HALF">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FRACTURED_BETTER_HALF</requirements>
+		<description>
+			<p>When you are reduced to 0 Hit Points and not killed outright, you can drop to 1 Hit Point instead, and you gain Temporary Hit Points equal to half your Hit Point maximum. In addition, if your Rage is active, your Rage ends. If your Rage was not active, you immediately activate your Rage (even if you have no remaining uses of your Rage). If any of these Temporary Hit Points remain after 1 minute, they vanish.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Better Half" usage="1/Long Rest">
+			<description>When you are reduced to 0 HP and not killed outright, you drop to 1 HP instead, and gain {{hp:half}} THP (vanishes after 1 min). If your Rage is active, it ends. If your Rage was not active, you immediately activate it (even if you have no remaining uses).</description>
+		</sheet>
+	</element>
+
+	<!-- Feature Replacement Grants -->
+	<element name="Face of Rage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FRACTURED_FACE_OF_RAGE" />
+	<element name="Mask of Civility Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FRACTURED_MASK_OF_CIVILITY" />
+	<element name="Brains and Brawn Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FRACTURED_BRAINS_AND_BRAWN" />
+	<element name="Cunning and Brutal Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FRACTURED_CUNNING_AND_BRUTAL" />
+	<element name="Better Half Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FRACTURED_BETTER_HALF" />
+</elements>

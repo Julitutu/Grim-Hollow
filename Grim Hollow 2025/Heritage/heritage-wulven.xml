@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wulven</name>
+		<description>The Wulven heritage from Grim Hollow - The Players Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="heritage-wulven.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-wulven.xml" />
+		</update>
+	</info>
+
+	<element name="Wulven" type="Race" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_WULVEN">
+		<description>
+			<p>Across wilderness and settled lands, in forest hamlets and farmsteads, the fear of lycanthropy runs deep. But few folk ever come to realize that the hulking stranger they passed on the trade road at dusk, the forest hermit who appeared from nowhere to warn of unseen danger ahead, or the druidic acolyte protecting a sacred spring do not share their fears. For these folk have already been touched by the lycanthropic curse, and have accepted the bestial gifts it bestows.</p>
+			<p class="indent">Wulven are the natural-born children or descendants of an individual cursed with lycanthropy, not inheriting the curse in full but touched by its feral nature. Those afflicted in this way are commonly associated with werewolves in the minds of commoners, inspiring the name given to them. But wulven are equally likely to be descended from werebears, wererats, wereravens, or even rarer lycanthropes.</p>
+			<p class="indent">The weaker trace of lycanthropy handed down to a wulven means they do not take animal or hybrid form. They are as calm and personable as any folk, suffering no loss of control or mindless bloodlust under the full moon. However, the feral nature of the beast they carry within them drives most wulven to lives of solitude and the quiet of the wilderness.</p>
+			<p class="indent">Wulven embody the mysticism of the primal world, rather than its savagery. Where they wander through forest and scrubland, their wild look and solitary nature sees them often mistaken for fey spirits, druids, or actual lycanthropes. Many make lives for themselves as members of druidic enclaves or as protectors of small, isolated communities. Some become emissaries or champions of the fey courts, though the touch of cursed magic in the wulven makes some fey distrust them. But in the end, most wulven live as outlanders, cautious around folk they don’t know for fear of their solitary nature and subtly bestial features being misunderstood.</p>
+			<h5>WULVEN BASE TRAITS</h5>
+			<ul class="unstyled">
+				<li><strong>Age.</strong> Wulven mature at the same rate as others of their original heritage, but the magic that spawns them lessens the debilitating effects of aging, and they remain fit even in their later years.</li>
+				<li><strong>Size.</strong> Wulven are the same general height as others of their original heritage, but are often stockier, more muscular, or lither, depending on the nature of the curse that touches them. Your size is Small or Medium, as you determine.</li>
+				<li><strong>Speed.</strong> 30 feet. If you are Small, you can reduce your Speed by 5 feet to gain an extra traditional trait.</li>
+			</ul>
+			<h5>TRADITIONAL WULVEN TRAITS</h5>
+			<p>Many Wulven channel the natural instincts—and often the natural fierceness—of the creature their curse links them to. If you wish to play a traditional Wulven, it is recommended you select from the following traits:</p>
+			<ul>
+				<li><strong>Combat:</strong> Hunter’s Instinct, Natural Attack (Claws), Pack Hunter</li>
+				<li><strong>Exploration:</strong> Burst of Speed, Climber</li>
+				<li><strong>Roleplaying:</strong> Athlete’s Spirit, Inborn Perception, Nature’s Voice</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed" value="30" bonus="base" />
+            <select type="Racial Trait" name="Size" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Wulven)" supports="GH Heritage Trait" number="8" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			<select type="Racial Trait" name="Heritage Trait (Wulven)" supports="GH Heritage Trait" number="6" requirements="ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_HUNTERS_INSTINCT" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_NATURAL_ATTACK" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_PACK_HUNTER" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_BURST_OF_SPEED" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_CLIMBER" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_ATHLETES_SPIRIT" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_INBORN_PERCEPTION" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_NATURES_VOICE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+		</rules>
+	</element>
+</elements>

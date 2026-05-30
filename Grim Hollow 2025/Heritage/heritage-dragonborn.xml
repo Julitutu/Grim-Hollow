@@ -1,0 +1,133 @@
+<elements>
+	<info>
+		<name>Dragonborn</name>
+		<description>The Dragonborn heritage from Grim Hollow - The Players Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="heritage-dragonborn.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-dragonborn.xml" />
+		</update>
+	</info>
+
+	<element name="Dragonborn" type="Race" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_DRAGONBORN">
+		<description>
+			<p>Dragonborn walk with pride through a world that greets them with equal parts fear and admiration. Their powerful resemblance to dragons makes them remarkable among other common folk. Thick scales cover their bodies, sharp claws tip their fingers, fangs line their jaws. They do not possess the legendary size or impressive wings of their presumed ancestors, but to be dragonborn is to be blessed with the breath and beauty of a dragon.</p>
+			<p class="indent">Some claim that the dragonborn must be the most ancient among all heritages. During the Era of Expansion, humanity discovered a kingdom already shattered in Etharis’s most southern regions. Not even the dragonborn themselves could recount the history that had led to the destruction of their once-great capital—the granite city of Ember Cairn. When dragonborn prayed, they were met with silence from their gods. They dwelled in the ruins of their own inheritance.</p>
+			<p class="indent">It was not difficult for humans to settle the southern lands that would become Castinella. Disillusion and desperation caused the dragonborn to abandon their ancestral lands and scatter across Etharis, searching for the answers as to why their gods fell silent. It was in this same period human missionaries began teaching their own religions to the dragonborn that remained—of the Aetheric War and the Divine Seraphs. The dragonborn came to believe that their gods had not abandoned them but had been destroyed by the Aether Kindred. With a new faith to fill the void of their lost beliefs, the dragonborn of Castinella became among the most zealous adherents of the Eternal Dogma.</p>
+			<p class="indent">Castinella awarded the dragonborn a small region of their ancestral land to call their own. From this humble start, they rebuilt the ancient city of Ember Cairn. Those who were scattered across the continent began to undertake pilgrimages to the city, where they were encouraged to embrace worship of the Divine Seraphs. With their ancient prayers seemingly answered at last, many dragonborn were drawn to become clerics, missionaries, and inquisitors, spreading their new beliefs with burning passion—and more often than not with burning fire.</p>
+			<h5>DRAGONBORN BASE TRAITS</h5>
+			<ul class="unstyled">
+				<li><strong>Age.</strong> Young Dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. Dragonborn live to be about 80.</li>
+				<li><strong>Size.</strong> Dragonborn are typically tall and solidly built, with most standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium.</li>
+				<li><strong>Speed.</strong> 30 feet.</li>
+			</ul>
+			<h5>TRADITIONAL DRAGONBORN TRAITS</h5>
+			<p>For most Dragonborn, a unique physiology defines and shapes their innate capabilities. If you wish to play a traditional Dragonborn, it is recommended you select from the following traits:</p>
+			<ul>
+				<li><strong>Combat:</strong> Draconic Breath and Resilience (same as Breath Weapon), Menacing Roar</li>
+				<li><strong>Exploration:</strong> Darkvision, Natural Movement, Powerful Build</li>
+				<li><strong>Roleplaying:</strong> Firm Influence, Moved by Faith</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Dragonborn)" supports="GH Heritage Trait" number="8" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			<select type="Racial Trait" name="Heritage Trait (Dragonborn)" supports="GH Heritage Trait" number="6" requirements="ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+
+			<grant type="Racial Trait" id="ID_GFG_GHPG25_RACE_TRAIT_DRACONIC_BREATH_AND_RESILIENCE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG25_RACE_TRAIT_MENACING_ROAR" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG25_RACE_TRAIT_DARKVISION" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG25_RACE_TRAIT_NATURAL_MOVEMENT" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG25_RACE_TRAIT_POWERFUL_BUILD" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG25_RACE_TRAIT_FIRM_INFLUENCE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG25_RACE_TRAIT_MOVED_BY_FAITH" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+		</rules>
+	</element>
+
+	<!-- Combined Trait for Traditional Dragonborn -->
+	<element name="Draconic Breath and Resilience" type="Racial Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_TRAIT_DRACONIC_BREATH_AND_RESILIENCE">
+		<supports>GH Heritage Trait, GH Combat Trait</supports>
+		<description>
+			<p>Your draconic ancestry manifests as a powerful breath weapon and a natural resistance to its energy.</p>
+			<p class="indent">
+				<strong><em>Damage Resistance.</em></strong> You have Resistance to a damage type of your choice: Acid, Cold, Fire, Lightning, Poison, or Thunder.</p>
+			<p class="indent">
+				<strong><em>Breath Weapon.</em></strong> You gain a breath weapon that uses the same damage type as your resistance. Choose an area of effect: a Line that is 5 feet wide and 30 feet long, or a 15-foot Cone.</p>
+			<p class="indent">When you use a Magic action to expel your Breath Weapon, each creature in the area of effect must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your Proficiency Bonus). A target creature takes 1d8 damage of the chosen type on a failed save, or half as much damage on a successful one. This damage increases by 1d8 when you reach character levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>
+			<p class="indent">You can use this feature a number of times equal to your Proficiency Bonus, regaining all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Magic Action" usage="{{proficiency}}/Long Rest">
+			<description>You have Resistance to {{breath-damage}} damage.&#13;
+			You can exhale your Breath Weapon in a {{breath-shape}}. Each creature in the area must make a DC {{breath weapon:dc}} Dexterity saving throw, taking {{breath weapon:dice count}}d8 {{breath-damage}} damage on a failed save, or half as much on a successful one.</description>
+		</sheet>
+		<rules>
+			<select type="Racial Trait" name="Draconic Ancestry" supports="GH Draconic Ancestry" />
+			<select type="Racial Trait" name="Breath Weapon Shape" supports="GH Breath Weapon Shape" />
+			<stat name="breath weapon:dc" value="8" bonus="base" />
+			<stat name="breath weapon:dc" value="constitution:modifier" bonus="ability" />
+			<stat name="breath weapon:dc" value="proficiency" bonus="proficiency" />
+			<stat name="breath weapon:dice count" value="1" level="1" bonus="base" />
+			<stat name="breath weapon:dice count" value="2" level="5" bonus="base" />
+			<stat name="breath weapon:dice count" value="3" level="11" bonus="base" />
+			<stat name="breath weapon:dice count" value="4" level="17" bonus="base" />
+		</rules>
+	</element>
+
+	<!-- Draconic Ancestry Options for the Combined Trait -->
+	<element name="Acid" type="Racial Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_TRAIT_DRACONIC_ANCESTRY_ACID">
+		<supports>GH Draconic Ancestry</supports>
+		<compendium display="false" />
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+			<stat name="breath-damage" value="Acid" inline="true" />
+		</rules>
+	</element>
+	<element name="Cold" type="Racial Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_TRAIT_DRACONIC_ANCESTRY_COLD">
+		<supports>GH Draconic Ancestry</supports>
+		<compendium display="false" />
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<stat name="breath-damage" value="Cold" inline="true" />
+		</rules>
+	</element>
+	<element name="Fire" type="Racial Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_TRAIT_DRACONIC_ANCESTRY_FIRE">
+		<supports>GH Draconic Ancestry</supports>
+		<compendium display="false" />
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<stat name="breath-damage" value="Fire" inline="true" />
+		</rules>
+	</element>
+	<element name="Lightning" type="Racial Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_TRAIT_DRACONIC_ANCESTRY_LIGHTNING">
+		<supports>GH Draconic Ancestry</supports>
+		<compendium display="false" />
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+			<stat name="breath-damage" value="Lightning" inline="true" />
+		</rules>
+	</element>
+	<element name="Poison" type="Racial Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_TRAIT_DRACONIC_ANCESTRY_POISON">
+		<supports>GH Draconic Ancestry</supports>
+		<compendium display="false" />
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<stat name="breath-damage" value="Poison" inline="true" />
+		</rules>
+	</element>
+	<element name="Thunder" type="Racial Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_TRAIT_DRACONIC_ANCESTRY_THUNDER">
+		<supports>GH Draconic Ancestry</supports>
+		<compendium display="false" />
+		<sheet display="false" />
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+			<stat name="breath-damage" value="Thunder" inline="true" />
+		</rules>
+	</element>
+</elements>

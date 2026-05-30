@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Nightwatcher</name>
+		<description>The Nightwatcher subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="fighter-nightwatcher.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/fighter-nightwatcher.xml" />
+		</update>
+	</info>
+
+	<element name="Nightwatcher" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FIGHTER_NIGHTWATCHER">
+		<supports>Fighter Subclass</supports>
+		<description>
+			<p class="flavor">Take Back the Night</p>
+			<p>Nightwatchers come from humble origins, often toiling as guards or investigators. Undaunted by dangers in the darkness, they stand firm against the growing night. Ever vigilant, they use the darkness to surprise and overwhelm foes much greater than themselves.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_SKILLED_GUARDIAN" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_EVER_VIGILANT" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_SIZE_UP" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_NIGHT_STALKER" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_READY_FOR_ACTION" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_BEAT_DOWN" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_SKILLED_GUARDIAN" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_EVER_VIGILANT" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_SIZE_UP" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_NIGHT_STALKER" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_READY_FOR_ACTION" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_BEAT_DOWN" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Skilled Guardian" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_SKILLED_GUARDIAN">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_NIGHTWATCHER_SKILLED_GUARDIAN</requirements>
+		<description>
+			<p>Unraveling mysteries under the cover of night has honed your skills. You gain the following benefits.</p>
+			<p class="indent"><strong><em>Expertise.</em></strong> Choose one of your skill proficiencies with which you lack Expertise. You gain Expertise in that skill.</p>
+			<p class="indent"><strong><em>Skilled.</em></strong> You gain proficiency in two skills of your choice from the following list: Deception, History, Insight, Intimidation, Investigation, Perception, or Stealth.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Expertise (Skilled Guardian)" supports="Skill Expertise" />
+			<select type="Proficiency" name="Skill (Skilled Guardian)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_STEALTH" number="2" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Ever Vigilant" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_EVER_VIGILANT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_NIGHTWATCHER_EVER_VIGILANT</requirements>
+		<description>
+			<p>Your long nights of vigilance have left your senses attuned to signs of danger, granting you the following benefits.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You gain Darkvision with a range of 60 feet. If you already have Darkvision when you gain this feature, its range increases by 60 feet.</p>
+			<p class="indent"><strong><em>Keen Senses.</em></strong> You have Advantage on Initiative rolls and Wisdom (Perception) checks.</p>
+			<p class="indent"><strong><em>Warning Shout.</em></strong> When you make an Initiative roll, you can take a Reaction to warn creatures of your choice within 30 feet of yourself that can see or hear you. Each creature can then take a Reaction to have Advantage on its Initiative roll and move up to half its Speed without provoking Opportunity Attacks.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Ever Vigilant" usage="1/Long Rest">
+			<description>You have Advantage on Initiative and Perception.&#13;
+			Warning Shout (1/Long Rest): When you roll Initiative, take a Reaction to warn creatures within 30 ft. They can take a Reaction to gain Adv. on Initiative and move half Speed without provoking Opportunity Attacks.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="60" bonus="ever vigilant" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Size Up" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_SIZE_UP">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_NIGHTWATCHER_SIZE_UP</requirements>
+		<description>
+			<p>As a Bonus Action, you assess a creature you can see within 30 feet of you. Until the start of your next turn, when that creature makes an attack roll against you or another creature within 5 feet of you, you can take a Reaction to impose Disadvantage on that roll and give Resistance to that damage.</p>
+		</description>
+		<sheet alt="Size Up" action="Bonus Action">
+			<description>Assess a creature within 30 ft. Until start of your next turn, when it attacks you or a creature within 5 ft of you, you can take a Reaction to impose Disadvantage on the attack and give Resistance to its damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Night Stalker" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_NIGHT_STALKER">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_NIGHTWATCHER_NIGHT_STALKER</requirements>
+		<description>
+			<p>You are adept at tracking down enemies in the dead of night, giving you these benefits.</p>
+			<p class="indent"><strong><em>Blindsight.</em></strong> As a Bonus Action, you gain Blindsight with a range of 30 feet for 10 minutes. Once you use this benefit, you can't use it again until you finish a Short or Long Rest.</p>
+			<p class="indent"><strong><em>Slippery.</em></strong> Opportunity Attacks have Disadvantage against you. While entirely within Dim Light or Darkness, your movement doesn't provoke Opportunity Attacks.</p>
+		</description>
+		<sheet alt="Night Stalker">
+			<description>Opportunity Attacks have Disadvantage against you (no Opportunity Attacks if entirely in Dim Light/Darkness).&#13;
+			Blindsight (1/Short Rest): Bonus Action to gain Blindsight 30 ft for 10 mins.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Ready for Action" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_READY_FOR_ACTION">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_NIGHTWATCHER_READY_FOR_ACTION</requirements>
+		<description>
+			<p>When you make an Initiative roll, you can treat a d20 roll of 9 or lower as a 10. When you roll 18-20 on an Initiative roll, you can take one additional action, except the Magic action, on your first turn.</p>
+		</description>
+		<sheet alt="Ready for Action">
+			<description>Treat Initiative rolls of 9 or lower as 10. If you roll 18-20 on Initiative, you can take an extra action (except Magic) on your first turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Beat Down" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_NIGHTWATCHER_BEAT_DOWN">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_NIGHTWATCHER_BEAT_DOWN</requirements>
+		<description>
+			<p>Immediately after you miss a creature under the effect of your Size Up feature with an attack roll, you can take a Bonus Action or Reaction to make a melee attack against that creature if it's within range. You have Advantage on the new attack roll against that creature.</p>
+		</description>
+		<sheet alt="Beat Down">
+			<description>If you miss a creature affected by Size Up, you can use a Bonus Action or Reaction to make a melee attack against it with Advantage.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Skilled Guardian Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_NIGHTWATCHER_SKILLED_GUARDIAN" />
+	<element name="Ever Vigilant Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_NIGHTWATCHER_EVER_VIGILANT" />
+	<element name="Size Up Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_NIGHTWATCHER_SIZE_UP" />
+	<element name="Night Stalker Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_NIGHTWATCHER_NIGHT_STALKER" />
+	<element name="Ready for Action Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_NIGHTWATCHER_READY_FOR_ACTION" />
+	<element name="Beat Down Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_NIGHTWATCHER_BEAT_DOWN" />
+
+</elements>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grudgel</name>
+		<description>The Grudgel heritage from Grim Hollow - The Players Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="heritage-grudgel.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-grudgel.xml" />
+		</update>
+	</info>
+
+	<element name="Grudgel" type="Race" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_GRUDGEL">
+		<description>
+			<p>Legends in Etharis speak of an age of orcs. This ancient heritage has its roots in Etharis’ North, from where history claims they spread to terrorize other cultures. Orcs, as the term has become understood, were formidable warriors with endless thirst for battle. Yet tales of their armies nearly conquering all Etharis are almost certainly the propaganda of fearful outside cultures.</p>
+			<p class="indent">Those same legends speak of how the orcs abandoned their lands en masse—not because of enemy incursions or natural disaster, but because of some mysterious calling from their ancestors to sail west across the sea. While it’s agreed that orcs did flee Etharis in a great fleet, their legacy calling to Thorgard av Holgar a century later, it seems apocryphal that an entire heritage could simply disappear across the sea. Indeed, the truth is more complex than any of those old tales can tell.</p>
+			<p class="indent">The descendants of the orcs call themselves grudgels. Their lack of resemblance to the dreadful legends about their ancestors causes the uneducated to assume orcs and grudgels are different. But what truly separates them is merely time and evolving culture.</p>
+			<p class="indent">Grudgels are an imposing folk whose physical presence has not diminished since the legends of orc warriors. Yet even where they are most populous among the Valikan Clans, grudgels are no more or less predisposed to battle or taking the path of the warrior than any other folk. Grudgels are also talented artisans, wanderers, magic weavers, and star gazers. They alone hold the secrets of forging stryllum, a strange substance that occurs when starlight is solidified into glass. Grudgels are hard-working, peaceable among friends, and have a knack for keeping calm under pressure. But they’re more than capable of defending themselves against the threats of the wilderness and folk looking for a fight.</p>
+			<p class="indent">Outside of the North, grudgels remain rare enough in Etharis that folk are less likely to meet one than hear fearful rumors regarding their kind. While a grudgel working as a bodyguard or mercenary can make use of such rumors, the one thing that seemingly connects all grudgels is a shared disinterest in discussing or hearing the ancient legends of the orcs. But whether this extends from wanting to distance themselves from the violent past of their kin, or from some secret knowledge of why the orcs vanished from Etharis, only they know.</p>
+			<h5>GRUDGEL BASE TRAITS</h5>
+			<ul class="unstyled">
+				<li><strong>Age.</strong> Grudgels reach adulthood at about the age of 16, and can live to their seventh decade or more.</li>
+				<li><strong>Size.</strong> Grudgels are taller and stockier than many other humanoids, typically ranging from 6 to 7 feet in height, and weighing 200 pounds or more. Your size is Medium.</li>
+				<li><strong>Speed.</strong> 30 feet.</li>
+			</ul>
+			<h5>TRADITIONAL GRUDGEL TRAITS</h5>
+			<p>Many Grudgels are shaped by living as wanderers and by a long-held fascination with crafting and magic. If you wish to play a traditional Grudgel, it is recommended you select from the following traits:</p>
+			<ul>
+				<li><strong>Combat:</strong> Battlefield Control, Centered</li>
+				<li><strong>Exploration:</strong> Darkvision, Powerful Build, Tireless</li>
+				<li><strong>Roleplaying:</strong> Artisanal Focus, Impromptu Artisan, Magical Savvy (any cantrip)</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Grudgel)" supports="GH Heritage Trait" number="8" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			<select type="Racial Trait" name="Heritage Trait (Grudgel)" supports="GH Heritage Trait" number="6" requirements="ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_BATTLEFIELD_CONTROL" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_CENTERED" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_DARKVISION" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_POWERFUL_BUILD" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_TIRELESS" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_ARTISANAL_FOCUS" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_IMPROMPTU_ARTISAN" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_MAGICAL_SAVVY" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+		</rules>
+	</element>
+</elements>

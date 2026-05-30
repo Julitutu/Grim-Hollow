@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of Mutation</name>
+		<description>The Circle of Mutation subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="druid-mutation.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/druid-mutation.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of Mutation" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_DRUID_CIRCLE_OF_MUTATION">
+		<supports>Druid Subclass</supports>
+		<description>
+			<p class="flavor">Mutate Into an Apex Predator</p>
+			<p>Druids of the Circle of Mutation believe that nature should be improved in order to compete with the unnatural world. Their order hides in the darkest corners of swamps and forests, conducting experiments to warp the structure of their domain. They go unheard from for months, emerging from the wilds with twisted vines and mutated creatures at their side. These Druids have earned the scorn of other circles, discredited as those who have lost their way. In the eyes of these Druids, those who wish to preserve nature as it is simply fear what change brings.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MUTATION_CIRCLE_FORMS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MUTATION_MUTATE_SHAPE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MUTATION_UNNATURAL_AND_UNNERVING" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MUTATION_ENDLESS_EVOLUTION" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MUTATION_APEX_PREDATOR" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MUTATION_CIRCLE_FORMS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MUTATION_MUTATE_SHAPE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MUTATION_UNNATURAL_AND_UNNERVING" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MUTATION_ENDLESS_EVOLUTION" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MUTATION_APEX_PREDATOR" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Circle Forms" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MUTATION_CIRCLE_FORMS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MUTATION_CIRCLE_FORMS</requirements>
+		<description>
+			<p>You channel the endless possibilities of nature when you assume a Wild Shape form, granting you the benefits below.</p>
+			<p class="indent"><strong><em>Challenge Rating.</em></strong> The maximum Challenge Rating for the form equals your Druid level divided by 3 (rounded down).</p>
+			<p class="indent"><strong><em>Predator's Strike.</em></strong> When you hit a creature with an attack roll using a Beast form's attack in Wild Shape, you add +2 to the damage dealt.</p>
+			<p class="indent"><strong><em>Unpredictable.</em></strong> You can take the Dash, Disengage, or Influence action as a Bonus Action.</p>
+		</description>
+		<sheet alt="Circle Forms">
+			<description>Max CR: {{circle forms:cr}}. While in Wild Shape, you add +2 to the damage of your Beast form's attacks, and you can take the Dash, Disengage, or Influence action as a Bonus Action.</description>
+		</sheet>
+		<rules>
+			<stat name="circle forms:cr" value="1" bonus="base" />
+			<stat name="circle forms:cr" value="2" bonus="base" level="6" />
+			<stat name="circle forms:cr" value="3" bonus="base" level="9" />
+			<stat name="circle forms:cr" value="4" bonus="base" level="12" />
+			<stat name="circle forms:cr" value="5" bonus="base" level="15" />
+			<stat name="circle forms:cr" value="6" bonus="base" level="18" />
+			<grant type="Grants" id="ID_INTERNAL_PHB24_FEATURE_REPLACEMENT_DRUID_WILD_SHAPE" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Mutate Shape" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MUTATION_MUTATE_SHAPE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MUTATION_MUTATE_SHAPE</requirements>
+		<description>
+			<p>When you assume a Wild Shape form, or as a Bonus Action while your Wild Shape is active, you can expend a spell slot to gain Mutation Points equal to the slot's level. These Mutation Points last until they are spent, you gain additional Mutation Points, or you leave the form.</p>
+			<p class="indent">While you have Mutation Points, you can spend them on your turn (no action required by you) to gain a Mutation from the list below. When you do, your body distends and reconstitutes in a gruesome display.</p>
+			<p class="indent">Mutations last until you leave the form or you expend a spell slot to gain Mutation Points.</p>
+			<h5>Mutation Options</h5>
+			<p>A Mutation can be gained only once for each Wildshape use unless its description states otherwise.</p>
+			<p class="indent"><strong><em>Creature of the Sea (Cost: 1 Point).</em></strong> You gain a Swim Speed equal to your Speed, and you can breathe underwater. For an additional 1 Point, you gain a Swim Speed equal to twice your speed.</p>
+			<p class="indent"><strong><em>Creature of the Sky (Cost: 3 Points).</em></strong> You gain a Fly Speed of 30 feet. For an additional 2 Points, your Fly Speed increases to 60 feet.</p>
+			<p class="indent"><strong><em>Darkvision (Cost: 1 Point).</em></strong> You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</p>
+			<p class="indent"><strong><em>Disquieting Voice (Cost: 1 Point).</em></strong> You can comprehend and verbally communicate with Beasts, and you can use any of the Influence action's skill options with them.</p>
+			<p class="indent"><strong><em>Echolocation (Cost: 3 Points).</em></strong> You have Blindsight with a range of 30 feet while you don't have the Deafened condition.</p>
+			<p class="indent"><strong><em>Enlarge (Cost: 2 Points).</em></strong> Your size increases by one category. You can spend an additional 2 Points to increase your size by two categories instead, gaining the benefits of the Enlarge/Reduce spell.</p>
+			<p class="indent"><strong><em>Manipulate Objects (Cost: 1 Point).</em></strong> As a Bonus Action, you can take the Utilize action.</p>
+			<p class="indent"><strong><em>Multiattack (Cost: 2 Points).</em></strong> You can attack twice with a Wild Shape form's attack instead of once whenever you take the Attack action on your turn.</p>
+			<p class="indent"><strong><em>Natural Armor (Cost: 2 Points, Repeatable up to 3x).</em></strong> You gain a +1 bonus to Armor Class.</p>
+			<p class="indent"><strong><em>Reduce (Cost: 1 Point).</em></strong> Your size decreases by one category. You can spend an additional 2 Points to decrease your size by two categories instead, gaining the benefits of the Enlarge/Reduce spell.</p>
+			<p class="indent"><strong><em>Venomous Attacks (Cost: 2 Points, Repeatable up to 3x).</em></strong> Once per turn, a creature you hit with a Wild Shape form's attack takes an extra 2d6 Poison damage, and you can force it to make a Constitution saving throw against your spell save DC or be Poisoned for 1 minute (save ends). Each repeat adds 2d6 Poison damage.</p>
+			<p class="indent"><strong><em>Wall Crawler (Cost: 1 Point).</em></strong> You gain a Climb Speed equal to your speed. For an additional 1 Point, you gain a Climb Speed equal to twice your Speed.</p>
+		</description>
+		<sheet alt="Mutate Shape">
+			<description>When you Wild Shape, or as a Bonus Action while active, you can expend a spell slot to gain Mutation Points equal to the slot's level. Spend points on your turn (no action) to gain mutations. Lasts until you leave form or expend another slot.&#13;
+			• Sea (1-2 pts): Swim Speed (= Speed or 2x Speed), breathe underwater.&#13;
+			• Sky (3-5 pts): Fly Speed (30 ft or 60 ft).&#13;
+			• Darkvision (1 pt): Darkvision 60 ft (or +60 ft).&#13;
+			• Disquieting Voice (1 pt): Speak with Beasts, use Influence on them.&#13;
+			• Echolocation (3 pts): Blindsight 30 ft (unless Deafened).&#13;
+			• Enlarge (2-4 pts): Size +1 or +2 categories (Enlarge/Reduce benefits).&#13;
+			• Manipulate Objects (1 pt): BA Utilize action.&#13;
+			• Multiattack (2 pts): Attack twice with Wild Shape attack when taking Attack action.&#13;
+			• Natural Armor (2 pts, max 3x): +1 AC per purchase.&#13;
+			• Reduce (1-3 pts): Size -1 or -2 categories (Enlarge/Reduce benefits).&#13;
+			• Venomous Attacks (2 pts, max 3x): Once/turn, +2d6 Poison damage (+2d6 per repeat) and DC{{druid:spellcasting:dc}} Con save or Poisoned for 1 min (save ends).&#13;
+			• Wall Crawler (1-2 pts): Climb Speed (= Speed or 2x Speed).</description>
+			<description level="10">When you Wild Shape, or as a Bonus Action while active, you can expend a spell slot to gain Mutation Points equal to the slot's level + {{endless evolution:extra}}. Spend points on your turn (no action) to gain mutations. Lasts until you leave form or expend another slot.&#13;
+			• Sea (1-2 pts): Swim Speed (= Speed or 2x Speed), breathe underwater.&#13;
+			• Sky (3-5 pts): Fly Speed (30 ft or 60 ft).&#13;
+			• Darkvision (1 pt): Darkvision 60 ft (or +60 ft).&#13;
+			• Disquieting Voice (1 pt): Speak with Beasts, use Influence on them.&#13;
+			• Echolocation (3 pts): Blindsight 30 ft (unless Deafened).&#13;
+			• Enlarge (2-4 pts): Size +1 or +2 categories (Enlarge/Reduce benefits).&#13;
+			• Manipulate Objects (1 pt): BA Utilize action.&#13;
+			• Multiattack (2 pts): Attack twice with Wild Shape attack when taking Attack action.&#13;
+			• Natural Armor (2 pts, max 3x): +1 AC per purchase.&#13;
+			• Reduce (1-3 pts): Size -1 or -2 categories (Enlarge/Reduce benefits).&#13;
+			• Venomous Attacks (2 pts, max 3x): Once/turn, +2d6 Poison damage (+2d6 per repeat) and DC{{druid:spellcasting:dc}} Con save or Poisoned for 1 min (save ends).&#13;
+			• Wall Crawler (1-2 pts): Climb Speed (= Speed or 2x Speed).&#13;
+			• Earth (3-5 pts): Tremorsense 30 ft. +2 pts for Burrow Speed equal to Speed.&#13;
+			• Elemental Inurement (2 pts, repeatable): Gain Resistance to Acid, Cold, Fire, Lightning, Poison, or Thunder.&#13;
+			• Eldritch Assault (2 pts, max 3x): +1 to Wild Shape attack and damage rolls per purchase.&#13;
+			• Mystic Monster (3 pts): Cast spells in Wild Shape. (If level 18+, targets have Disadv. on saves vs your spells).&#13;
+			• Rapid Regeneration (5 pts): Start of turn, regain {{wisdom:modifier}} HP (min 1).&#13;
+			• Supernatural Hide (5 pts): Resistance to Bludgeoning, Piercing, and Slashing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Unnatural and Unnerving" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MUTATION_UNNATURAL_AND_UNNERVING">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MUTATION_UNNATURAL_AND_UNNERVING</requirements>
+		<description>
+			<p>When you expend a level 2+ spell slot to gain Mutation Points, you regain one expended spell slot. The slot you regain must be of a level lower than the slot you expended and can't be higher than level 5.</p>
+			<p class="indent">In addition, while in Wild Shape form, you gain the following benefits.</p>
+			<p class="indent"><strong><em>Unnatural Attacks.</em></strong> Each of your attacks in Wild Shape form can deal its normal damage type or Force damage. You make this choice each time you hit with those attacks.</p>
+			<p class="indent"><strong><em>Unnerving Aura.</em></strong> You have Advantage on Charisma (Deception or Intimidation) and Wisdom (Animal Handling) checks.</p>
+		</description>
+		<sheet alt="Unnatural and Unnerving">
+			<description>When you expend a level 2+ slot for Mutation Points, you regain one lower level slot (max level 5). While in Wild Shape, your attacks can deal normal or Force damage, and you have Advantage on Deception, Intimidation, and Animal Handling checks.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Endless Evolution" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MUTATION_ENDLESS_EVOLUTION">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MUTATION_ENDLESS_EVOLUTION</requirements>
+		<description>
+			<p>When you gain Mutation Points, you gain an additional number of Mutation Points equal to your Wisdom modifier (minimum 1). In addition, you can now spend your Mutation Points on the following Mutations.</p>
+			<p class="indent"><strong><em>Creature of Earth (Cost: 3 Points).</em></strong> You have Tremorsense with a range of 30 feet. You can spend 2 additional Mutation Points to gain a Burrow Speed equal to your Speed.</p>
+			<p class="indent"><strong><em>Elemental Inurement (Cost: 2 Points, Repeatable).</em></strong> You gain Resistance to one of the following damage types of your choice: Acid, Cold, Fire, Lightning, Poison, or Thunder. You must choose a different Resistance each time.</p>
+			<p class="indent"><strong><em>Eldritch Assault (Cost: 2 Points, Repeatable up to 3x).</em></strong> You gain a +1 bonus to attack rolls and damage rolls you make with your Wild Shape form's attacks.</p>
+			<p class="indent"><strong><em>Mystic Monster (Cost: 3 Points).</em></strong> You can cast spells while you're in this Wild Shape form. If you have 18 or more Druid levels, creatures have Disadvantage on saving throws against spells you cast while this Mutation is active.</p>
+			<p class="indent"><strong><em>Rapid Regeneration (Cost: 5 Points).</em></strong> At the start of each of your turns, you regain Hit Points equal to your Wisdom modifier (minimum of 1 Hit Point regained).</p>
+			<p class="indent"><strong><em>Supernatural Hide (Cost: 5 Points).</em></strong> You have Resistance to Bludgeoning, Piercing, and Slashing damage.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="endless evolution:extra" value="1" bonus="base" />
+			<stat name="endless evolution:extra" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Apex Predator" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MUTATION_APEX_PREDATOR">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MUTATION_APEX_PREDATOR</requirements>
+		<description>
+			<p>Your mastery of mutation has made you an apex predator, granting you the following benefits.</p>
+			<p class="indent"><strong><em>Evolved Attacks.</em></strong> Once per turn, you can deal an extra 2d10 Force damage to a target you hit with a Wild Shape form's attack.</p>
+			<p class="indent"><strong><em>Mutate Beasts.</em></strong> As a Magic action, you can touch a Beast and expend a spell slot, causing the target to mutate. You gain Mutation Points equal to the slot's level, which you must immediately spend on Mutations for the Beast. Unspent Mutation Points are lost. Mutations remain until the Beast is targeted by this feature again. A Remove Curse, Greater Restoration or similar magic ends the Mutations.</p>
+		</description>
+		<sheet alt="Apex Predator">
+			<description>Once per turn, you deal +2d10 Force damage on a Wild Shape attack hit. As a Magic action, you can touch a Beast and expend a spell slot to mutate it with Mutation Points equal to the slot's level.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Circle Forms Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MUTATION_CIRCLE_FORMS" />
+	<element name="Mutate Shape Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MUTATION_MUTATE_SHAPE" />
+	<element name="Unnatural and Unnerving Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MUTATION_UNNATURAL_AND_UNNERVING" />
+	<element name="Endless Evolution Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MUTATION_ENDLESS_EVOLUTION" />
+	<element name="Apex Predator Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MUTATION_APEX_PREDATOR" />
+
+</elements>

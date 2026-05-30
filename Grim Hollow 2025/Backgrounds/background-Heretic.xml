@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-Heretic.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Heretic.xml" />
+		</update>
+	</info>
+    
+	<!-- Heretic -->
+	<element name="Heretic" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_HERETIC">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Strength, Dexterity, Wisdom</li>
+				<li><strong>Feat:</strong> Magic Initiate (Cleric)</li>
+				<li><strong>Skill Proficiencies:</strong> Deception and Religion</li>
+				<li><strong>Tool Proficiency:</strong> Disguise Kit</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Disguise Kit, Heretical Text, Holy Symbol, Traveler’s Clothes, 10 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You have learned that the dominant religious beliefs of your region are lies. The corrupting forces may be in charge, but you will not rest until you have shown their lies as corrupt and untrue. Your beliefs, and your willingness to speak that truth, have put you in danger from the authorities.</p>
+			<p>You travel the road or live in hiding, trying to stay one step ahead of those who wish to silence you. You sometimes find those who believe as you do, and in those moments of unity you find peace and safety. But it is only a matter of time before your outspoken opposition to the status quo puts you in danger again.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_FEAT_MAGIC_INITIATE" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Strength, Dexterity, Wisdom, Magic Initiate (Cleric) Feat, Deception and Religion Skills, Disguise Kit</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_DEX_WIS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_WOTC_PHB24_FEAT_MAGIC_INITIATE_CLERIC" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />	
+		</rules>
+	</element>
+</elements>

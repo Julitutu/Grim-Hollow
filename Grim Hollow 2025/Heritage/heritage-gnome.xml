@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Gnome</name>
+		<description>The Gnome heritage from Grim Hollow - The Players Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="heritage-gnome.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-gnome.xml" />
+		</update>
+	</info>
+
+	<element name="Gnome" type="Race" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_GNOME">
+		<description>
+			<p>Ingenious and full of energy, gnomes are thought to be distant cousins of the dwarves. Shorter than their dwarf kin and less bulky, these small-framed folk are often known for their ever-working brains and great aptitude for invention. Gnomes are clever, curious, sometimes mischievous, but culturally very diligent.</p>
+			<p class="indent">Gnomes have created some of the most impressive mechanical wonders of Etharis. Cannons, automatons, flintlocks, and explosives are all reputed to be results of gnomish crafting. The process of tinkering is as important as the result. Gnomes create new inventions simply to prove it can be done. It’s said among other folk that if you’re looking for a gnome in a populated city, you need only wait for the explosion to guide your steps.</p>
+			<p class="indent">During the Era of Expansion, gnomes fled their settlements outside the sheltering mountains to seek the protection of dwarf cities such as Stehlenwald. There, they shared the fate of their dwarf cousins as human armies besieged the soaring stone walls of the city. While the dwarves eventually gazed upon adamantine, the ingenious minds of the gnomes hatched other plans with the gifts from the mountains.</p>
+			<p class="indent">Gnome alchemists worked day and night, mixing chemicals and powders, until they invented a new weapon: explosives. As the adamantine-clad dwarves charged the besieging human armies, they were supported by the sound of explosions as gnome artillery hurled cannonballs and dynamite at the enemy. Beneath the barrage, the human forces were quickly broken. The effects of the never-before-seen explosives struck fear into their minds, as if witnessing a new and terrible sorcery. A first great battle had been won, but the losses for both gnomes and dwarves were great.</p>
+			<p class="indent">So did the gnomes follow the dwarves of Stehlenwald into their centuries-long isolation—and when the dwarf king voluntarily brought his people into the Bürach Empire, the gnomes followed.</p>
+			<p class="indent">Curiously, gnomes have an affinity with the natural world. Those who did not flee for the safety of mountains were called back to their ancestral homes deep in Etharis’s forests. Perhaps this suggests a common ancestor with the elves, also.</p>
+			<h5>GNOME BASE TRAITS</h5>
+			<ul class="unstyled">
+				<li><strong>Age.</strong> Gnomes are physically mature by 18, and most are expected to settle down into an adult life by around age 40. They can live to almost 500 years.</li>
+				<li><strong>Size.</strong> Gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small.</li>
+				<li><strong>Speed.</strong> 30 feet. You can reduce your Speed by 5 feet to gain an extra heritage trait.</li>
+			</ul>
+			<h5>TRADITIONAL GNOME TRAITS</h5>
+			<p>For many Gnomes, an instinctive quickness of body and mind shapes their approach to life and learning. If you wish to play a traditional Gnome, it is recommended you select from the following traits:</p>
+			<ul>
+				<li><strong>Combat:</strong> Magical Fortification, Quick Slip</li>
+				<li><strong>Exploration:</strong> Artifice Expertise, Darkvision, Fade Away</li>
+				<li><strong>Roleplaying:</strong> Magical Savvy, Masterful Aptitude, Nature’s Voice</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="30" bonus="base" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Gnome)" supports="GH Heritage Trait" number="8" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			<select type="Racial Trait" name="Stout Build (Optional)" supports="GH Stout Build Option" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Gnome)" supports="GH Heritage Trait" number="6" requirements="ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_MAGICAL_FORTIFICATION" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_QUICK_SLIP" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_ARTIFICE_EXPERTISE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_DARKVISION" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_FADE_AWAY" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_MAGICAL_SAVVY" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_MASTERFUL_APTITUDE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_NATURES_VOICE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+		</rules>
+	</element>
+</elements>

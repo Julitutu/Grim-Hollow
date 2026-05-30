@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Syndicate Smuggler Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-SyndicateSmuggler.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-SyndicateSmuggler.xml" />
+		</update>
+	</info>
+
+	<!-- Syndicate Smuggler -->
+	<element name="Syndicate Smuggler" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_SYNDICATE_SMUGGLER">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Dexterity, Intelligence, Charisma</li>
+				<li><strong>Feat:</strong> Resolution of the Syndicate</li>
+				<li><strong>Skill Proficiencies:</strong> History and Stealth</li>
+				<li><strong>Tool Proficiency:</strong> Forgery Kit</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Forgery Kit, Chest (with False Bottom), Parchment, Costume, 8 GP; or (B) 50 GP</li>
+			</ul>
+			<p>Goods from one side of Etharis often fetch a fair price on the other side. Transporting such goods are a hassle—dealing with the bureaucracy of customs and taxes is an even larger one. Thankfully, as a representative of the Ebon Syndicate, you are there to eliminate at least part of the hassle.</p>
+			<p>Whether you move goods by land, sea, river, or air, crossing borders and avoiding detection are your specialty. Sometimes having a way to hide goods is the game. Other times falsifying paperwork or bribing guards does the trick. However you manage to do it, you get what people want into their hands for the right price.</p>
+			<div class="reference">
+				<div element="ID_GFG_GHPG25_FEAT_RESOLUTION_OF_THE_SYNDICATE" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Intelligence, Charisma, Resolution of the Syndicate Feat, History and Stealth Skills, Forgery Kit</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_DEX_INT_CHA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_GFG_GHPG25_FEAT_RESOLUTION_OF_THE_SYNDICATE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />	
+		</rules>
+	</element>
+</elements>

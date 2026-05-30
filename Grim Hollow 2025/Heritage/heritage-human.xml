@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Human</name>
+		<description>The Human heritage from Grim Hollow - The Players Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="heritage-human.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-human.xml" />
+		</update>
+	</info>
+
+	<element name="Human" type="Race" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_HUMAN">
+		<description>
+			<p>While ancient heritages such as the elves and the dwarves claim to have raised the first kingdoms in Etharis, humans dominate those lands in the current age. Humans can be found everywhere, from the frozen and inhospitable tundra of the North to the scorched plains of the South. First recorded emerging from temperate forests in the lands that are now the Bürach Empire, humans were not considered a threat by the dominant folk of the continent. Left unchecked, their numbers quickly grew. And in the end, the humans’ adaptable nature and adventurous mindset led them to expand beyond their homelands.</p>
+			<p class="indent">The period written in history as the Era of Expansion is often portrayed as an endless eruption of violence that lasted centuries as humans spread to every corner of Etharis. Rather, the Era of Expansion describes many separate conflicts that occurred in the wake of human migration. Humans didn’t send armies initially, but settlers. They cut trees from the Grove Maze to build homes. They journeyed to the reaches of Valika to escape their own kingdoms in the south. When they claimed the lands already populated by other folk, war became inevitable. By the time the great kingdoms of the elves and dwarves recognized the danger of human migration, it was already too late. The bloodshed that followed changed Etharis forever.</p>
+			<p class="indent">The success of humans is owed to their adaptability. They live shorter lives than many other peoples, causing their cultural customs to fade quicker and preventing them from becoming stifled by their own traditions. Every human culture has been touched by another heritage in the lands they’ve come to settle. In the duchies of the Charneault Kingdom, humans pay homage to the Spirits of Nature as taught to them by the elves. The modern fortresses and cities in the Bürach Empire incorporate dwarven stonework and architecture. To this day, humans are considered the dominant folk across all Etharis, controlling most of the land and sea. But their realms are far from homogeneous, each with their own history and mix of folk from other heritages.</p>
+			<p class="indent">Of all human vices, ambition is thought to be the most insidious. Humans still dominate positions of power within their societies. Many have asserted their claim to the High Throne of Altenheim, wishing to control the most powerful empire in the world. Known as the Era of Descent, the years that followed the Era of Expansion have been witness to the decline of each human domain. While many commoners believe it to be the death of the gods that began this downfall, folk of other heritages whisper that it was human hubris. When there were no more realms to conquer, humanity turned their greed, ambition, and violence upon themselves.</p>
+			<h5>HUMAN BASE TRAITS</h5>
+			<ul class="unstyled">
+				<li><strong>Age.</strong> Humans reach adulthood in their late teens and live less than a century.</li>
+				<li><strong>Size.</strong> Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Your size is Medium.</li>
+				<li><strong>Speed.</strong> 30 feet.</li>
+			</ul>
+			<h5>TRADITIONAL HUMAN TRAITS</h5>
+			<p>Though Humans are no more drawn to violence than any other folk, many possess an innate ambition, a hunger for exploration, and a willingness to stand against danger. If you wish to play a traditional Human, it is recommended you select from the following traits:</p>
+			<ul>
+				<li><strong>Combat:</strong> Awesome Critical, First Strike, Weapon Aptitude</li>
+				<li><strong>Exploration:</strong> Helping Hand, Intrinsic Orientation</li>
+				<li><strong>Roleplaying:</strong> Artisanal Focus, Keen Survivor, Skill Prowess</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Human)" supports="GH Heritage Trait" number="8" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			<select type="Racial Trait" name="Heritage Trait (Human)" supports="GH Heritage Trait" number="6" requirements="ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_AWESOME_CRITICAL" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_FIRST_STRIKE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_WEAPON_APTITUDE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_HELPING_HAND" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_INTRINSIC_ORIENTATION" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_ARTISANAL_FOCUS" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_KEEN_SURVIVOR" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_SKILL_PROWESS" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+		</rules>
+	</element>
+</elements>

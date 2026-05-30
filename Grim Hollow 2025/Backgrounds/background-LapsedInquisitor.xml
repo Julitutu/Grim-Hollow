@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-LapsedInquisitor.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-LapsedInquisitor.xml" />
+		</update>
+	</info>
+
+	<!-- Lapsed Inquisitor -->
+	<element name="Lapsed Inquisitor" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_LAPSED_INQUISITOR">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Strength, Wisdom, Charisma</li>
+				<li><strong>Feat:</strong> Convincing Inquisitor</li>
+				<li><strong>Skill Proficiencies:</strong> Persuasion and Religion</li>
+				<li><strong>Tool Proficiency:</strong> Navigator’s Tools</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Club, Navigator’s Tools, Disguise Kit, Traveler’s Clothes, 8 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You spent years traveling the countryside as a member of the Arcanist Inquisition, seeking out heretics and blasphemers, daemons and arcanists. Your work uncovered hidden evil that likely saved the lives of countless innocents. However, on more than one occasion, your or others’ zeal brought low innocents.</p>
+			<p>After a crisis of conscience, you left the ranks of the inquisitors. Leaving the Inquisition is itself a dangerous prospect, but you could no longer abide. Maybe someone you love and care for is starting to show arcane affinities that would have led to their destruction. Maybe you are. Maybe the last investigation you carried out opened your eyes to new realities. Now you are living with a target on your back. Your former peers don’t take kindly to people leaving their ranks. Those you persecuted have not forgotten your deeds. But life must still be lived, and there’s more than one way to find and destroy the evil in the world.</p>
+			<div class="reference">
+				<div element="ID_GFG_GHPG25_FEAT_CONVINCING_INQUISITOR" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Strength, Wisdom, Charisma, Convincing Inquisitor Feat, Persuasion and Religion Skills, Navigator’s Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_WIS_CHA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_GFG_GHPG25_FEAT_CONVINCING_INQUISITOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />	
+		</rules>
+	</element>
+</elements>

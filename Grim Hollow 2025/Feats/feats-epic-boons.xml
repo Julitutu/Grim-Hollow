@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Epic Boon Feats</name>
+		<description>Epic Boon Feats from Grim Hollow: Player's Guide (2025)</description>
+		<update version="0.0.1">
+			<file name="feats-epic-boons.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Feats/feats-epic-boons.xml" />
+		</update>
+	</info>
+
+	<element name="Boon of the Archlich" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_BOON_OF_THE_ARCHLICH">
+		<supports>Epic Boon</supports>
+		<requirements>([character:19],ID_GFG_GHPG25_TRANSFORMATION_LICH)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 19+, Lich Transformation</prerequisite>
+		<description>
+			<p class="flavor">Epic Boon Feat (Prerequisite: Level 19+, Lich Transformation)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p class="indent"><b><i>Vessel of Vitality.</i></b> Whenever you finish a Long Rest, if your Soul Vessel is not charged, it gains a soul and becomes charged.</p>
+		</description>
+		<sheet>
+			<description>Whenever you finish a Long Rest, if your Soul Vessel is not charged, it gains a soul and becomes charged.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Boon of the Archlich)" supports="Boon Ability Score Increase" />
+		</rules>
+	</element>
+
+	<element name="Boon of the Ascended Vampire" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_BOON_OF_THE_ASCENDED_VAMPIRE">
+		<supports>Epic Boon</supports>
+		<requirements>([character:19],ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 19+, Vampire Transformation</prerequisite>
+		<description>
+			<p class="flavor">Epic Boon Feat (Prerequisite: Level 19+, Vampire Transformation)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p class="indent"><b><i>Inured to Sunlight.</i></b> You are no longer affected by sunlight.</p>
+		</description>
+		<sheet>
+			<description>You are no longer affected by sunlight.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Boon of the Ascended Vampire)" supports="Boon Ability Score Increase" />
+		</rules>
+	</element>
+
+	<element name="Boon of the Earthly Tether" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_BOON_OF_THE_EARTHLY_TETHER">
+		<supports>Epic Boon</supports>
+		<requirements>([character:19],ID_GFG_GHPG25_TRANSFORMATION_SPECTER)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 19+, Specter Transformation</prerequisite>
+		<description>
+			<p class="flavor">Epic Boon Feat (Prerequisite: Level 19+, Specter Transformation)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p class="indent"><b><i>Persistent Haunter.</i></b> You are no longer affected by the Fraying Reality Transformation Flaw.</p>
+			<p class="indent"><b><i>Divergent Growth.</i></b> Choose any Specter Transformation Boon that you don’t already have but meet the prerequisites for. You gain that Boon.</p>
+		</description>
+		<sheet>
+			<description>You are no longer affected by the Fraying Reality Transformation Flaw.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Boon of the Earthly Tether)" supports="Boon Ability Score Increase" />
+			<select type="Class Feature" name="Divergent Growth (Boon of the Earthly Tether)" supports="Specter Transformation Boon" />
+		</rules>
+	</element>
+
+	<element name="Boon of the Elder Horror" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_BOON_OF_THE_ELDER_HORROR">
+		<supports>Epic Boon</supports>
+		<requirements>([character:19],ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 19+, Aberrant Horror Transformation</prerequisite>
+		<description>
+			<p class="flavor">Epic Boon Feat (Prerequisite: Level 19+, Aberrant Horror Transformation)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p class="indent"><b><i>Stabilizing Form.</i></b> When you roll a 25 or lower on the Unstable Form table, you can choose to roll again. You must use the new result. Once you use this benefit, you can’t use it again until you finish a Long Rest.</p>
+			<p class="indent"><b><i>Divergent Growth.</i></b> Choose any Aberrant Horror Transformation Boon that you don’t already have but meet the prerequisites for. You gain that Boon.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you roll a 25 or lower on the Unstable Form table, you can choose to roll again. You must use the new result.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Boon of the Elder Horror)" supports="Boon Ability Score Increase" />
+			<select type="Class Feature" name="Divergent Growth (Boon of the Elder Horror)" supports="Aberrant Horror Transformation Boon" />
+		</rules>
+	</element>
+
+	<element name="Boon of the Elder Fey" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_BOON_OF_THE_ELDER_FEY">
+		<supports>Epic Boon</supports>
+		<requirements>([character:19],ID_GFG_GHPG25_TRANSFORMATION_FEY)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 19+, Fey Transformation</prerequisite>
+		<description>
+			<p class="flavor">Epic Boon Feat (Prerequisite: Level 19+, Fey Transformation)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p class="indent"><b><i>Fey Bulwark.</i></b> You are no longer affected by the Weakened Constitution Transformation Flaw.</p>
+			<p class="indent"><b><i>Divergent Growth.</i></b> Choose any Fey Transformation Boon that you don’t already have but meet the prerequisites for. You gain that Boon.</p>
+		</description>
+		<sheet>
+			<description>You are no longer affected by the Weakened Constitution Transformation Flaw.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Boon of the Elder Fey)" supports="Boon Ability Score Increase" />
+			<select type="Class Feature" name="Divergent Growth (Boon of the Elder Fey)" supports="Fey Transformation Boon" />
+		</rules>
+	</element>
+
+	<element name="Boon of the Elder Fiend" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_BOON_OF_THE_ELDER_FIEND">
+		<supports>Epic Boon</supports>
+		<requirements>([character:19],ID_GFG_GHPG25_TRANSFORMATION_FIEND)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 19+, Fiend Transformation</prerequisite>
+		<description>
+			<p class="flavor">Epic Boon Feat (Prerequisite: Level 19+, Fiend Transformation)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p class="indent"><b><i>Free Agent.</i></b> You are no longer affected by the Pull of The Netherworld Transformation Flaw.</p>
+			<p class="indent"><b><i>Divergent Growth.</i></b> Choose any Fiend Transformation Boon that you don’t already have but meet the prerequisites for. You gain that Boon.</p>
+		</description>
+		<sheet>
+			<description>You are no longer affected by the Pull of The Netherworld Transformation Flaw.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Boon of the Elder Fiend)" supports="Boon Ability Score Increase" />
+			<select type="Class Feature" name="Divergent Growth (Boon of the Elder Fiend)" supports="Fiend Transformation Boon" />
+		</rules>
+	</element>
+
+	<element name="Boon of the Elemental Temperance" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_BOON_OF_THE_ELEMENTAL_TEMPERANCE">
+		<supports>Epic Boon</supports>
+		<requirements>([character:19],ID_GFG_GHPG25_TRANSFORMATION_PRIMORDIAL)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 19+, Primordial Transformation</prerequisite>
+		<description>
+			<p class="flavor">Epic Boon Feat (Prerequisite: Level 19+, Primordial Transformation)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p class="indent"><b><i>Controlled Chaos.</i></b> You are no longer affected by the Primordial Chaos Transformation Flaw.</p>
+		</description>
+		<sheet>
+			<description>You are no longer affected by the Primordial Chaos Transformation Flaw.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Boon of the Elemental Temperance)" supports="Boon Ability Score Increase" />
+		</rules>
+	</element>
+
+	<element name="Boon of the High Seraph" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_BOON_OF_THE_HIGH_SERAPH">
+		<supports>Epic Boon</supports>
+		<requirements>([character:19],ID_GFG_GHPG25_TRANSFORMATION_SERAPH)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 19+, Seraph Transformation</prerequisite>
+		<description>
+			<p class="flavor">Epic Boon Feat (Prerequisite: Level 19+, Seraph Transformation)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p class="indent"><b><i>Absolution.</i></b> You are no longer affected by the Seraph Corruption Transformation Flaw.</p>
+			<p class="indent"><b><i>Divergent Growth.</i></b> Choose any Seraph Transformation Boon that you don’t already have but meet the prerequisites for. You gain that Boon.</p>
+		</description>
+		<sheet>
+			<description>You are no longer affected by the Seraph Corruption Transformation Flaw.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Boon of the High Seraph)" supports="Boon Ability Score Increase" />
+			<select type="Class Feature" name="Divergent Growth (Boon of the High Seraph)" supports="Seraph Transformation Boon" />
+		</rules>
+	</element>
+
+	<element name="Boon of Magic Resistance" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_BOON_OF_MAGIC_RESISTANCE">
+		<supports>Epic Boon</supports>
+		<requirements>[character:19]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 19+</prerequisite>
+		<description>
+			<p class="flavor">Epic Boon Feat (Prerequisite: Level 19+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence or Wisdom score by 1, to a maximum of 30.</p>
+			<p class="indent"><b><i>Heroic Resistance.</i></b> If you fail a saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can’t use it again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>If you fail a saving throw, you can cause yourself to succeed instead.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Boon of Magic Resistance)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_BOON_INTELLIGENCE|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_BOON_WISDOM" />
+		</rules>
+	</element>
+
+	<element name="Boon of Perfect Flight" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_BOON_OF_PERFECT_FLIGHT">
+		<supports>Epic Boon</supports>
+		<requirements>[character:19]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 19+</prerequisite>
+		<description>
+			<p class="flavor">Epic Boon Feat (Prerequisite: Level 19+)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 30.</p>
+			<p class="indent"><b><i>Flying.</i></b> You have a Fly Speed of 40 feet and can hover.</p>
+			<p class="indent"><b><i>Graceful Fall.</i></b> If you fall more than 5 feet, your rate of descent slows to 60 feet per round until you land.</p>
+		</description>
+		<sheet>
+			<description>You can hover. If you fall more than 5ft., your rate of descent slows to 60ft. per round until you land.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Boon of Perfect Flight)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_BOON_STRENGTH|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_BOON_DEXTERITY" />
+			<stat name="innate speed:fly" value="40" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Boon of Shadowsteel Mastery" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_BOON_OF_SHADOWSTEEL_MASTERY">
+		<supports>Epic Boon</supports>
+		<requirements>([character:19],ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 19+, Shadowsteel Ghoul Transformation</prerequisite>
+		<description>
+			<p class="flavor">Epic Boon Feat (Prerequisite: Level 19+, Shadowsteel Ghoul Transformation)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p class="indent"><b><i>Strange Bedfellows.</i></b> You are no longer affected by the Friendless Transformation Flaw.</p>
+		</description>
+		<sheet>
+			<description>You are no longer affected by the Friendless Transformation Flaw.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Boon of Shadowsteel Mastery)" supports="Boon Ability Score Increase" />
+		</rules>
+	</element>
+
+	<element name="Boon of the Wilds" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_BOON_OF_THE_WILDS">
+		<supports>Epic Boon</supports>
+		<requirements>([character:19],ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 19+, Lycanthrope Transformation</prerequisite>
+		<description>
+			<p class="flavor">Epic Boon Feat (Prerequisite: Level 19+, Lycanthrope Transformation)</p>
+			<p>You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase one ability score of your choice by 1, to a maximum of 30.</p>
+			<p class="indent"><b><i>Apex Predator.</i></b> When you enter your Hybrid Form, you gain 25 Temporary Hit Points. At the end of each of your turns while in Hybrid Form, if you have no Temporary Hit Points, you gain 10 Temporary Hit Points. While you are in your Hybrid Form and have no Temporary Hit points, you have Advantage on attack rolls.</p>
+		</description>
+		<sheet>
+			<description>When you enter your Hybrid Form, you gain 25 THP. At the end of each of your turns while in Hybrid Form, if you have no THP, you gain 10 THP. While you are in your Hybrid Form and have no THP, you have Advantage on attack rolls.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Boon of the Wilds)" supports="Boon Ability Score Increase" />
+		</rules>
+	</element>
+
+</elements>

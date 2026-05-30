@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Vermin Lord</name>
+		<description>The Vermin Lord subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="ranger-verminlord.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/ranger-verminlord.xml" />
+		</update>
+	</info>
+
+	<element name="Vermin Lord" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_RANGER_VERMIN_LORD">
+		<supports>Ranger Subclass</supports>
+		<description>
+			<p class="flavor">Grow Powerful from Strength in Numbers</p>
+			<p>Vermin Lords cultivate loyal hordes of disease-bearing rodents to help them battle greater evils. For many of these Rangers, that greater evil is some kind of societal ill, but a rare few see their fellow Humanoids as an infestation that threatens the natural world. Regardless of their goal, they make their homes in sewers, slums, and other forgotten places where they are free to plot against their enemies and tend to their verminkin.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_VERMIN_LORD_VERMINKIN" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_VERMIN_LORD_SPELLS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_VERMIN_LORD_FILTH_AND_FORTITUDE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_VERMIN_LORD_INFECTIOUS_SPREAD" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_VERMIN_LORD_STRENGTH_OF_THE_SWARM" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_VERMIN_LORD_VERMINKIN" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_VERMIN_LORD_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_VERMIN_LORD_FILTH_AND_FORTITUDE" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_VERMIN_LORD_INFECTIOUS_SPREAD" level="11" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_VERMIN_LORD_STRENGTH_OF_THE_SWARM" level="15" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Verminkin" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_VERMIN_LORD_VERMINKIN">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_VERMIN_LORD_VERMINKIN</requirements>
+		<description>
+			<p>You can comprehend and verbally communicate with Tiny Beasts.</p>
+			<p class="indent">As a Magic action, you can expend a spell slot to summon vermin swarms. You summon a number of swarms equal to the slot's level for 1 hour. Each swarm is summoned to an unoccupied space you can see within 30 feet of yourself. A swarm uses the Swarm of Vermin stat block.</p>
+            <div element="ID_GFG_GHPG25_INFORMATION_COMPANION_SWARM_OF_VERMIN" />
+			<p class="indent">In combat, each swarm acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action in its stat block or some other action. You can command each swarm with a single Bonus Action.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Short or Long Rest.</p>
+			<p class="indent">As a Bonus Action, you can command all of your swarms to make an Attack action instead of just one. Alternatively, a single swarm can attack twice instead of once when it takes the Attack action.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier plus your Proficiency Bonus, and you regain all expended uses when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Verminkin" action="Action" usage="1/Short Rest">
+			<description>You can communicate with Tiny Beasts.&#13;
+			You can expend a spell slot to summon a number of Swarms of Vermin equal to the slot's level for 1 hr. They act on your turn, taking the Dodge action unless you use a Bonus Action to command them.&#13;
+			Swarming Strikes ({{verminkin:usage}}/Short Rest): As a Bonus Action, command all swarms to Attack, or command one swarm to attack twice.</description>
+		</sheet>
+		<rules>
+			<stat name="verminkin:usage" value="wisdom:modifier" bonus="base" />
+			<stat name="verminkin:usage" value="proficiency" bonus="base" />
+
+            <select type="Companion" name="Swarm of Vermin" supports="Verminkin" default="ID_GFG_GHPG25_COMPANION_SWARM_OF_VERMIN"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Vermin Lord Spells" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_VERMIN_LORD_SPELLS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_VERMIN_LORD_SPELLS</requirements>
+		<description>
+			<p>When you reach a Ranger level specified in the Vermin Lord Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Vermin Lord Spells</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Ranger Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Consumption</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Animal Messenger</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Flash Fever</em></td></tr>
+				<tr><td style="text-align:center">13</td><td><em>Freedom of Movement</em></td></tr>
+				<tr><td style="text-align:center">17</td><td><em>Contagion</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_CONSUMPTION" level="3" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ANIMAL_MESSENGER" level="5" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_FLASH_FEVER" level="9" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Ranger" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONTAGION" level="17" spellcasting="Ranger" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Filth and Fortitude" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_VERMIN_LORD_FILTH_AND_FORTITUDE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_VERMIN_LORD_FILTH_AND_FORTITUDE</requirements>
+		<description>
+			<p>The time you've spent with plague-bearing rodents has rendered you immune to the Poisoned conditions. Additionally, you gain proficiency in Constitution saving throws.</p>
+		</description>
+		<sheet alt="Filth and Fortitude">
+			<description>You are immune to the Poisoned condition.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+		</rules>
+	</element>
+
+	<element name="Level 11: Infectious Spread" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_VERMIN_LORD_INFECTIOUS_SPREAD">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_VERMIN_LORD_INFECTIOUS_SPREAD</requirements>
+		<description>
+			<p>When you use Swarming Strikes, each swarm that takes the Attack action makes one additional attack. Each creature damaged by a swarm's attack during this action has the Poisoned condition until the start of your next turn.</p>
+		</description>
+		<sheet alt="Infectious Spread">
+			<description>When you use Swarming Strikes, each attacking swarm makes 1 extra attack. Creatures damaged by these attacks are Poisoned until the start of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Strength of the Swarm" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_VERMIN_LORD_STRENGTH_OF_THE_SWARM">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_VERMIN_LORD_STRENGTH_OF_THE_SWARM</requirements>
+		<description>
+			<p>You can call on your rodent minions for defense. When you take damage from a creature you can see within 10 feet of yourself, you can take a Reaction to direct the damage toward a swarm you control you can see within 5 feet of yourself.</p>
+		</description>
+		<sheet alt="Strength of the Swarm" action="Reaction">
+			<description>When you take damage from a creature within 10 ft, you can direct the damage to a swarm you control within 5 ft of you.</description>
+		</sheet>
+	</element>
+
+    <!-- Swarm of Vermin Statblock -->
+    <element name="Swarm of Vermin" type="Companion" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_SWARM_OF_VERMIN">
+        <supports>Verminkin</supports>
+		<description>
+        </description>
+        <setters>
+            <set name="size">Medium</set>
+            <set name="type">Swarm of Tiny beasts</set>
+            <set name="alignment">Unaligned</set>
+            <set name="ac">11 + the spell level</set>
+            <set name="hp">5 + 10 x per spell level (the swarm has Hit Dice [d8s] equal to the spell's level)</set>
+            <set name="speed">30 ft., Climb 30 ft. </set>
+            <set name="strength">9</set>
+            <set name="dexterity">13</set>
+            <set name="constitution">12</set>
+            <set name="intelligence">2</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">5</set>
+            <set name="saves">Dex +1, Con +1</set>
+            <set name="resistances">Bludgeoning, Piercing, Slashing</set>
+            <set name="conditionImmunities">Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned</set>            
+            <set name="senses">Darkvision 30 ft., passive Perception 10</set>
+            <set name="languages">Understands the languages you know.</set>
+            <set name="challenge">-</set>
+            <set name="traits">ID_GFG_GHPG25_COMPANION_TRAIT_SWARM_OF_VERMIN_PACK_TACTICS,ID_GFG_GHPG25_COMPANION_TRAIT_SWARM_OF_VERMIN_SWARM</set>
+            <set name="actions">ID_GFG_GHPG25_COMPANION_ACTION_SWARM_OF_VERMIN_BITES</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="11" bonus="base"/>
+
+            <stat name="companion:hp:max" value="5" />
+        </rules>
+	</element>
+
+    <element name="Pact Tactics" type="Companion Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_TRAIT_SWARM_OF_VERMIN_PACK_TACTICS">
+        <description>
+            <p>The swarm has Advantage on an attack roll against a creature if at least one of the swarm's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.</p>
+        </description>
+        <sheet>
+			<description>The swarm has Advantage on an attack roll against a creature if at least one of the swarm's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.</description>
+		</sheet>
+    </element>
+
+    <element name="Swarm" type="Companion Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_TRAIT_SWARM_OF_VERMIN_SWARM">
+        <description>
+            <p>The swarm can enter and occupy the space of another creature and vice versa, and the swarm can move through any opening large enough for a Tiny Beast.</p>
+        </description>
+        <sheet>
+			<description>The swarm can enter and occupy the space of another creature and vice versa, and the swarm can move through any opening large enough for a Tiny Beast.</description>
+		</sheet>
+    </element>
+	<element name="Bites" type="Companion Action" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_ACTION_SWARM_OF_VERMIN_BITES">
+		<description>
+			<p>Melee Attack Roll: Bonus equals your spell attack modifier, reach 0 ft. Hit: 2d6 + 1 + the spell's level Piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: Bonus equals your spell attack modifier, reach 0 ft. Hit: 2d6 + 1 + the spell's level Piercing damage.</description>
+		</sheet>
+	</element>
+    <element name="Swarm of Vermin" type="Information" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_INFORMATION_COMPANION_SWARM_OF_VERMIN">
+		<description>
+			<p style="margin-bottom:5px"><em>Medium Swarm of Tiny beasts, Unaligned</em></p>
+			<ul class="unstyled">
+				<li><strong>AC</strong> 11 + the spell level</li>
+				<li><strong>HP</strong> 5 + 10 per spell level (the swarm has Hit Dice [d8s] equal to the spell's level)</li>
+				<li><strong>Speed</strong> 30 ft., Climb 30 ft.</li>
+			</ul>
+            <table style="text-align:center;margin-top:2px;margin-bottom:10px">
+				<tr style="font-size:8px"><td colspan="2" /><td>MOD</td><td>SAVE</td><td colspan="2" /><td>MOD</td><td>SAVE</td><td colspan="2" /><td>MOD</td><td>SAVE</td></tr>
+				<tr><td><b>STR</b></td><td>9</td><td>-1</td><td>-1</td><td><b>DEX</b></td><td>13</td><td>+1</td><td>+1</td><td><b>CON</b></td><td>12</td><td>+1</td><td>+1</td></tr>
+				<tr><td><b>INT</b></td><td>2</td><td>-4</td><td>-4</td><td><b>WIS</b></td><td>10</td><td>0</td><td>0</td><td><b>CHA</b></td><td>5</td><td>-3</td><td>-3</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Resistances</strong> Bludgeoning, Piercing, Slashing</li>
+				<li><strong>Immunities</strong> Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned</li>
+				<li><strong>Senses</strong> Darkvision 30 ft., passive Perception 10</li>
+				<li><strong>Languages</strong> Understands the languages you know</li>
+				<li><strong>CR</strong> None (XP 0; PB equals your Proficiency Bonus)</li>
+			</ul>
+			<h4 style="margin-top:5px">Traits</h4>
+			<ul class="unstyled">
+				<li><strong><em>Pact Tactics.</em></strong> The swarm has Advantage on an attack roll against a creature if at least one of the swarm's allies is within 5 feet of the creature and the ally doesn't have the Incapacitated condition.</li>
+                <li style="margin-top:5px"><strong><em>Swarm.</em></strong> The swarm can enter and occupy the space of another creature and vice versa, and the swarm can move through any opening large enough for a Tiny Beast.</li>
+			</ul>
+			<h4 style="margin-top:5px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Bites.</strong> Melee Attack Roll:</em> Bonus equals your spell attack modifier, reach 0 ft. <em>Hit:</em> 2d6 + 1 + the spell's level Piercing damage.</li>
+			</ul>
+		</description>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Verminkin Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_VERMIN_LORD_VERMINKIN" />
+	<element name="Vermin Lord Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_VERMIN_LORD_SPELLS" />
+	<element name="Filth and Fortitude Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_VERMIN_LORD_FILTH_AND_FORTITUDE" />
+	<element name="Infectious Spread Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_VERMIN_LORD_INFECTIOUS_SPREAD" />
+	<element name="Strength of the Swarm Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_VERMIN_LORD_STRENGTH_OF_THE_SWARM" />
+
+</elements>

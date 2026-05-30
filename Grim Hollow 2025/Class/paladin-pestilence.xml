@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of Pestilence</name>
+		<description>The Oath of Pestilence subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="paladin-pestilence.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/paladin-pestilence.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of Pestilence" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_PALADIN_OATH_OF_PESTILENCE">
+		<supports>Paladin Subclass</supports>
+		<description>
+			<p class="flavor">Gain Strength Through Suffering</p>
+			<p>Clad in grime-soaked armor and wielding rusting weapons, Oath of Pestilence Paladins spread corruption, disease, and filth. Bound by an oath that infests their bodies with all manner of plagues, these heralds of decay lumber forward with unholy toughness and grim resolve.</p>
+			<p class="indent">These Paladins share the following tenets:</p>
+			<ul>
+				<li>Spread plague to foster strength in the survivors.</li>
+				<li>There is nothing unnatural or immoral about the ending of life.</li>
+				<li>Might makes right.</li>
+			</ul>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_DEBILITATING_FEVER" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_ENTROPIC_INFECTION" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_SPELLS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_AURA_OF_RAMPANT_SICKNESS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_DISGUSTING_RESILIENCE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_PLAGUEBRINGER" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_DEBILITATING_FEVER" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_ENTROPIC_INFECTION" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_AURA_OF_RAMPANT_SICKNESS" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_DISGUSTING_RESILIENCE" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_PLAGUEBRINGER" level="20" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Debilitating Fever" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_DEBILITATING_FEVER">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_PESTILENCE_DEBILITATING_FEVER</requirements>
+		<description>
+			<p>You can inflict disease upon a creature. When you hit a creature with an attack roll using a weapon or Unarmed Strike, you can expend one use of your Channel Divinity to give that creature the Poisoned condition for 1 minute. While Poisoned in this way, the target also has the Incapacitated condition. At the end of each of its turns, the Poisoned target makes a Constitution save, ending the effect on itself on a success.</p>
+		</description>
+		<sheet alt="Debilitating Fever" usage="Channel Divinity">
+			<description>When you hit a creature with a weapon/Unarmed Strike, you can give it the Poisoned and Incapacitated conditions for 1 min. It can make a DC{{paladin:spellcasting:dc}} Con save at the end of each of its turns to end the effect.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Entropic Infection" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_ENTROPIC_INFECTION">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_PESTILENCE_ENTROPIC_INFECTION</requirements>
+		<description>
+			<p>As a Magic action, you can expend one use of your Channel Divinity and select a creature you can see within 30 feet of yourself. For 1 minute, if you deal damage to the target, the target takes an extra 2d6 Necrotic damage. In addition, the target loses Resistance and Immunity to Necrotic damage. The target can make a Constitution save against the Paladin's spell save DC at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<sheet alt="Entropic Infection" action="Action" usage="Channel Divinity">
+			<description>Choose a creature within 30 ft. For 1 min, when you damage it, it takes an extra 2d6 Necrotic damage, and it loses Resistance/Immunity to Necrotic damage. It can make a DC{{paladin:spellcasting:dc}} Con save at the end of each of its turns to end the effect.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Oath of Pestilence Spells" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_SPELLS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_PESTILENCE_SPELLS</requirements>
+		<description>
+			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Pestilence Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Oath of Pestilence Spells</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Bane, Inflict Wounds</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Acid Arrow, Ray of Enfeeblement</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Flash Fever, Stinking Cloud</em></td></tr>
+				<tr><td style="text-align:center">13</td><td><em>Blight, Confusion</em></td></tr>
+				<tr><td style="text-align:center">17</td><td><em>Contagion, Insect Plague</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BANE" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INFLICT_WOUNDS" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MELFS_ACID_ARROW" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_ENFEEBLEMENT" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_FLASH_FEVER" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_STINKING_CLOUD" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLIGHT" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONFUSION" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONTAGION" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INSECT_PLAGUE" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Aura of Rampant Sickness" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_AURA_OF_RAMPANT_SICKNESS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_PESTILENCE_AURA_OF_RAMPANT_SICKNESS</requirements>
+		<description>
+			<p>You emit an aura of contagion and virulence. When a creature within your Aura of Protection is about to make a D20 Test, you can take a Reaction to impose Disadvantage on that D20 Test.</p>
+		</description>
+		<sheet alt="Aura of Rampant Sickness" action="Reaction">
+			<description>When a creature within your Aura of Protection is about to make a D20 Test, you can impose Disadvantage on that roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Disgusting Resilience" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_DISGUSTING_RESILIENCE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_PESTILENCE_DISGUSTING_RESILIENCE</requirements>
+		<description>
+			<p>When you are reduced to 0 Hit Points and not killed outright, you can spend any number of Hit Dice, roll them, and reduce the damage taken by the total rolled on those dice.</p>
+			<p class="indent">In addition, if you are killed, your corpse explodes in a shower of pus and gore. Each creature in a 20-foot Emanation originating from you makes Constitution saving throw gainst the Paladin's spell save DC, taking 8d6 Necrotic damage on a failed save or half as much damage on a successful one.</p>
+		</description>
+		<sheet alt="Disgusting Resilience">
+			<description>When reduced to 0 HP (not killed outright), you can spend any number of Hit Dice and reduce the damage taken by the total rolled. If you are killed, creatures in a 20-ft Emanation make a DC{{paladin:spellcasting:dc}} Con save or take 8d6 Necrotic damage (half on success).</description>
+		</sheet>
+	</element>
+
+	<element name="Level 20: Plaguebringer" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_PESTILENCE_PLAGUEBRINGER">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_PESTILENCE_PLAGUEBRINGER</requirements>
+		<description>
+			<p>As a Bonus Action, you gain the benefits below for 10 minutes, or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>
+			<p class="indent"><strong><em>One with Plague.</em></strong> You are immune to Poison damage and the Poisoned condition, and you have Resistance to Necrotic damage.</p>
+			<p class="indent"><strong><em>Bolstered by Rot.</em></strong> Your Hit Point maximum can't be reduced.</p>
+			<p class="indent"><strong><em>Entropic Radiance.</em></strong> Whenever an enemy starts its turn within your Aura of Protection, it takes Necrotic damage equal to your Charisma modifier plus your Proficiency Bonus.</p>
+		</description>
+		<sheet alt="Plaguebringer" action="Bonus Action" usage="1/Long Rest">
+			<description>For 10 mins, you are immune to Poison damage/condition, resist Necrotic damage, and your HP max can't be reduced. Enemies starting their turn in your Aura of Protection take {{plaguebringer:damage}} Necrotic damage. You can expend a 5th-level spell slot to restore a use.</description>
+		</sheet>
+		<rules>
+			<stat name="plaguebringer:damage" value="charisma:modifier" />
+			<stat name="plaguebringer:damage" value="proficiency" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Debilitating Fever Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_PESTILENCE_DEBILITATING_FEVER" />
+	<element name="Entropic Infection Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_PESTILENCE_ENTROPIC_INFECTION" />
+	<element name="Oath of Pestilence Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_PESTILENCE_SPELLS" />
+	<element name="Aura of Rampant Sickness Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_PESTILENCE_AURA_OF_RAMPANT_SICKNESS" />
+	<element name="Disgusting Resilience Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_PESTILENCE_DISGUSTING_RESILIENCE" />
+	<element name="Plaguebringer Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_PESTILENCE_PLAGUEBRINGER" />
+
+</elements>

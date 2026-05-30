@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Scion of the Thaumaturge Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-ScionoftheThaumaturge.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-ScionoftheThaumaturge.xml" />
+		</update>
+	</info>
+
+	<!-- Scion of the Thaumaturge -->
+	<element name="Scion of the Thaumaturge" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_SCION_OF_THE_THAUMATURGE">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Intelligence, Wisdom, Charisma</li>
+				<li><strong>Feat:</strong> Fortune of the Thaumaturge</li>
+				<li><strong>Skill Proficiencies:</strong> Arcana and Insight</li>
+				<li><strong>Tool Proficiency:</strong> Cartographer’s Tools</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Cartographer’s Tools, Ink and Pen, Parchment, Robe, 8 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You served a mysterious organization simply called the Thaumaturge. You received orders to perform tasks that ranged from the mundane to the inscrutable. Your contact assured you that even if the tasks made no sense, you were serving the greater good of your home, and of all Etharis.</p>
+			<p>Your tasks led you to new locations. You secretly met with other members of the organization, and you looked to the stars to give you signs and portents about the future. You may still be performing these tasks, or years may have passed since your last contact, but you know that there are forces beyond understanding that pull on people’s strings and make them dance.</p>
+			<div class="reference">
+				<div element="ID_GFG_GHPG25_FEAT_FORTUNE_OF_THE_THAUMATURGE" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Intelligence, Wisdom, Charisma, Fortune of the Thaumaturge Feat, Arcana and Insight Skills, Cartographer’s Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_INT_WIS_CHA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_GFG_GHPG25_FEAT_FORTUNE_OF_THE_THAUMATURGE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />	
+		</rules>
+	</element>
+</elements>

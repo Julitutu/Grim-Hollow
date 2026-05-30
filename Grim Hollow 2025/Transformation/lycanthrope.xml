@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Lycanthrope Transformation</name>
+        <description>Lycanthrope Transformation from Grim Hollow: Player's Guide (2025)</description>
+        <author>Ghostfire Gaming</author>
+        <update version="0.1.0">
+            <file name="lycanthrope.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/lycanthrope.xml" />
+        </update>
+    </info>
+
+    <!-- Items -->
+    <element name="Lycanthrope Transformation (Stage 1)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_LYCANTHROPE_LEVEL_1">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_LYCANTHROPE" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_LYCANTHROPE" />
+        </rules>
+    </element>
+    <element name="Lycanthrope Transformation (Stage 2)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_LYCANTHROPE_LEVEL_2">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_LYCANTHROPE" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_2" requirements="ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_1"/>
+        </rules>
+    </element>
+    <element name="Lycanthrope Transformation (Stage 3)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_LYCANTHROPE_LEVEL_3">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_LYCANTHROPE" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_3" requirements="ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_2"/>
+        </rules>
+    </element>
+    <element name="Lycanthrope Transformation (Stage 4)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_LYCANTHROPE_LEVEL_4">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_LYCANTHROPE" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_4" requirements="ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_3"/>
+        </rules>
+    </element>
+
+    <!-- Feat -->
+    <element name="Lycanthrope" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_LYCANTHROPE">
+        <description>
+            <p>A howling call is heard across thatched rooftops, summoning the pack to assemble. Below, a man tears at his clothes as moonlight shines down on him. The hunched figure screams in pain, begging his family to run. With muscles bursting and razor-sharp claws forming, his transformation is underway.</p>
+            <p>Rain pours through the forest canopy as a woman falls to her knees in exhaustion. Unable to run further, she accepts her fate and awaits the monsters of the dark. Instead, she hears a thunderous roar as a hulking figure tears through the undergrowth with impossible strength. The hulking, bear-like figure then turns to the woman and grunts, “Are you lost?” offering a paw in aid.</p>
+            <p>Lycanthropes may appear to be ordinary humanoids, but behind the veneer of humanity there is a pivotal struggle between beast and man. For most, it is a matter of time before they lose this fight and transform into a monstrous hybrid, half-animal and half-humanoid. Most Lycanthropes recall very little of their time transformed, often waking in a strange location, covered in blood and tattered clothes. However, as some Lycanthropes grow, they learn to balance both natures, using their curse as a gift.</p>
+            
+            <h4>Becoming a Lycanthrope</h4>
+            <p>In Etharis, there are two well-known methods of contracting the lycanthropic curse. The first is being bitten by a lycanthrope and not curing the curse before it takes hold. The second is to complete a Druidic ritual known as the Lunar Sacrament. This violent and bloody rite, involving the sacrifice of an innocent person, underscores the ruthless and uncompromising nature of someone willing to do evil in exchange for power.</p>
+            <p>Other means of gaining lycanthropy are possible. The curse of a powerful being, a side effect of a powerful artifact, or eating the raw flesh of a lycanthropic creature: all of these are potential triggers for the Lycanthrope Transformation.</p>
+            <p>Once your character has become a Lycanthrope, consider how they feel about the curse. Do they wish to cure it before it progresses too far? Do they wish to understand it and make peace with the beast that resides within?</p>
+            
+            <h4>Curing Lycanthropy</h4>
+            <p>Once the character reaches Stage 1 of the Lycanthrope Transformation, no typical magic like Remove Curse can cure the character’s lycanthropy. Magic on the level of the Wish spell is needed to completely remove the Transformation and its Boons and Flaws.</p>
+            
+            <h4>Lycanthrope Stages</h4>
+            <p>At each stage of this Transformation, follow the instructions provided for that stage.</p>
+            
+            <h4>Achieving a New Stage</h4>
+            <p>To move from one stage to the next higher one in this Transformation, an event or some other notable occurrence tied to the story of the character should take place. The following events are suggestions for ones that might trigger a move to the next stage of the Transformation:</p>
+            <ul>
+                <li>Making a further bargain with the Fey creature who gifted you with Lycanthropy originally.</li>
+                <li>Killing a powerful creature under the light of a full moon in your hybrid form.</li>
+                <li>Failing two Death Saving Throws.</li>
+                <li>Killing an innocent creature in your hybrid form after failing your saving throw against Lust for the Hunt.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You are undergoing the Lycanthrope Transformation.</description>
+        </sheet>
+        <rules>
+            <stat name="lycanthrope:stage" value="0" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_1" />
+        </rules>
+    </element>
+
+    <!-- Transformation Stage 1 -->
+    <element name="Lycanthrope (Stage 1)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_1">
+        <prerequisite>Lycanthrope Transformation</prerequisite>
+        <requirements>ID_GFG_GHPG25_FEAT_TRANSFORMATION_LYCANTHROPE</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you initially contract lycanthropy, you select one Stage 1 Boon and gain the Stage 1 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_LUST_FOR_THE_HUNT" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 1 Boon. Lust for the Hunt (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="lycanthrope:stage" value="1" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 1)" supports="Lycanthrope 2025 Boon 1" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_LUST_FOR_THE_HUNT" />
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_MONSTROSITY" />
+        </rules>
+    </element>
+
+    <element name="Boon: Hybrid Wolf Form" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_HYBRID_WOLF_FORM">
+        <supports>Lycanthrope 2025 Boon 1</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_1</requirements>
+        <description>
+            <p>You become a Monstrosity in addition to any other creature type(s).</p>
+            <p>As a Magic action, you may voluntarily transform into a hybrid half-wolf creature. While in your hybrid wolf form, the following rules apply:</p>
+            <ul>
+                <li>Your Strength score becomes 18 unless it is higher.</li>
+                <li>Your Speed increases by 10 feet, and you can use the Dash action as a Bonus Action.</li>
+                <li>You can’t cast spells or concentrate on spells. Your ability to speak is reduced to short, basic, guttural responses.</li>
+                <li>While transformed, you can use weapons and equipment as normal, unless specified elsewhere.</li>
+                <li>You gain a Claw or Bite attack that you may use in place of any weapon attack. These attacks deal 1d8 plus your Strength or Dexterity modifier Slashing damage. You are proficient with this attack, and you add either your Strength or Dexterity modifier to attack and damage rolls. This attack is not an Unarmed Strike, nor can it be used in place of an Unarmed Strike.</li>
+                <li>After taking an Attack action, you may take a Bonus Action later in that turn to attack once with either your Claw or Bite.</li>
+            </ul>
+            <p>Your hybrid wolf form lasts 1 hour per Transformation Stage. If you entered your hybrid form voluntarily, you can revert to your normal form by using a Magic action on your turn. (Flaws listed below may override this rule.)</p>
+        </description>
+        <sheet action="Magic Action">
+            <description>Transform into hybrid half-wolf for {{lycanthrope:stage}} hour(s). Revert as Magic Action.&#13;
+            • Str becomes 18 (unless higher).&#13;
+            • Speed +10 ft. BA: Dash.&#13;
+            • No spells/concentration. Speech is guttural.&#13;
+            • Gain Claw/Bite attack (1d8 + Str/Dex Slashing). Not an Unarmed Strike.&#13;
+            • After Attack action, BA to attack once with Claw/Bite.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Hybrid Bear Form" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_HYBRID_BEAR_FORM">
+        <supports>Lycanthrope 2025 Boon 1</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_1</requirements>
+        <description>
+            <p>You become a Monstrosity in addition to any other creature type(s).</p>
+            <p>As a Magic action, you may voluntarily transform into a hybrid half-bear creature. While in your hybrid bear form, the following rules apply:</p>
+            <ul>
+                <li>Your Strength score becomes 20 unless it was higher.</li>
+                <li>You gain a Climb Speed equal to your Speed.</li>
+                <li>You can’t cast spells or concentrate on spells. Your ability to speak is reduced to short, basic, guttural responses.</li>
+                <li>While transformed, you can use weapons and equipment as normal, unless specified elsewhere.</li>
+                <li>You gain a Claw attack that you may use in place of any weapon attack. This attack deals 1d8 plus your Strength or Dexterity modifier Slashing damage. You are proficient with this attack, and you add either your Strength or Dexterity modifier to attack and damage rolls. This attack is not an Unarmed Strike, nor can it be used in place of an Unarmed Strike.</li>
+                <li>Immediately after hitting a target with a Claw attack, you can take a Bonus Action to grab the creature with that hand, as long as it is no more than one size category larger than you. The grabbed target has the Grappled condition. The escape DC is 8 plus your Strength modifier plus your Proficiency Bonus.</li>
+            </ul>
+            <p>Your hybrid bear form lasts 1 hour per Transformation Stage. If you entered your hybrid form voluntarily, you can revert to your normal form by using a Magic action on your turn. (Flaws listed below may override this rule.)</p>
+        </description>
+        <sheet action="Magic Action">
+            <description>Transform into hybrid half-bear for {{lycanthrope:stage}} hour(s). Revert as Magic Action.&#13;
+            • Str becomes 20 (unless higher).&#13;
+            • Climb Speed = Speed.&#13;
+            • No spells/concentration. Speech is guttural.&#13;
+            • Gain Claw attack (1d8 + Str/Dex Slashing). Not an Unarmed Strike.&#13;
+            • After hitting with Claw, BA to grapple target (max 1 size larger). Escape DC {{hybrid bear:dc}}.</description>
+        </sheet>
+        <rules>
+            <stat name="hybrid bear:dc" value="8" />
+            <stat name="hybrid bear:dc" value="strength:modifier" />
+            <stat name="hybrid bear:dc" value="proficiency" />
+        </rules>
+    </element>
+
+    <element name="Boon: Hybrid Rat Form" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_HYBRID_RAT_FORM">
+        <supports>Lycanthrope 2025 Boon 1</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_1</requirements>
+        <description>
+            <p>You become a Monstrosity in addition to any other creature type(s).</p>
+            <p>As a Magic action, you may voluntarily transform into a hybrid half-rat creature. While in your hybrid rat form, the following rules apply:</p>
+            <ul>
+                <li>Your Dexterity score becomes 18 unless it was higher.</li>
+                <li>You can Hide or Disengage as a Bonus Action.</li>
+                <li>You gain proficiency with Stealth, and you can double your Proficiency Bonus when making a Dexterity (Stealth) check.</li>
+                <li>You can’t cast spells or concentrate on spells. Your ability to speak is reduced to short, basic, guttural responses.</li>
+                <li>While transformed, you can use weapons and equipment as normal, unless specified elsewhere.</li>
+                <li>You gain a Claw or Bite attack that you may use in place of any weapon attack. This attack deals 1d6 plus your Strength or Dexterity modifier Slashing damage. You are proficient with this attack, and you add either your Strength or Dexterity modifier to attack and damage rolls. This attack is not an Unarmed Strike, nor can it be used in place of an Unarmed Strike.</li>
+                <li>After taking an Attack action, you may take a Bonus Action later in that turn to attack once with either your Claw or Bite.</li>
+                <li>If you target a creature that is within 5 feet of one of its enemies, you have Advantage on Claw or Bite attacks made against the target.</li>
+            </ul>
+            <p>Your hybrid rat form lasts 1 hour per Transformation Stage. If you entered your hybrid form voluntarily, you can revert to your normal form by using a Magic action on your turn. (Flaws listed below may override this rule.)</p>
+        </description>
+        <sheet action="Magic Action">
+            <description>Transform into hybrid half-rat for {{lycanthrope:stage}} hour(s). Revert as Magic Action.&#13;
+            • Dex becomes 18 (unless higher).&#13;
+            • BA: Hide or Disengage.&#13;
+            • Expertise in Stealth.&#13;
+            • No spells/concentration. Speech is guttural.&#13;
+            • Gain Claw/Bite attack (1d6 + Str/Dex Slashing). Not an Unarmed Strike.&#13;
+            • After Attack action, BA to attack once with Claw/Bite.&#13;
+            • Adv on Claw/Bite if target is w/in 5ft of its enemy.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_PROFICIENCY_SKILL_EXPERTISE_STEALTH" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Lust for the Hunt" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_LUST_FOR_THE_HUNT">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_1</requirements>
+        <description>
+            <p>The savage nature of your curse sometimes causes you to lose control. These ferocious tendencies are a constant struggle between you and the beast within.</p>
+            <p>The first time you become Bloodied after finishing a Short or Long Rest, you must succeed on a DC 10 Wisdom saving throw. If you are in the light of a full moon, you automatically fail this saving throw.</p>
+            <p>If you fail this saving throw, you are subjected to the following rules until you can end the hybrid form:</p>
+            <ul>
+                <li>You immediately enter your hybrid form. You go completely feral, and you cannot use any of your equipment or class features.</li>
+                <li>On your turn while in hybrid form, you must move toward the closest creature you can see, smell, or hear, prioritizing Bloodied creatures. If you end your movement and no creature is within 5 feet of you, you must use the Dash action to move toward the closest one.</li>
+                <li>If there is a creature within 5 feet of you and you have not used your action, you must make an Attack action using your Claw attack.</li>
+                <li>When you damage a creature on your turn and it is not reduced to 0 Hit Points, you must use further attacks that turn against that creature.</li>
+            </ul>
+            <p>If you are at full Hit Points at the start of your turn, you can make a DC 10 Wisdom saving throw. On a success, you return to your normal form. You also return to your normal form if Remove Curse is cast on you, or after 1 hour passes.</p>
+        </description>
+        <sheet>
+            <description>1st time Bloodied after Rest: DC 10 Wis save (auto-fail in full moon). Fail: go feral in hybrid form.&#13;
+            • No equipment/class features.&#13;
+            • Must move to closest creature (prioritize Bloodied). If none w/in 5ft, Dash to closest.&#13;
+            • If creature w/in 5ft, must Attack with Claw.&#13;
+            • Must focus attacks on damaged creature not at 0 HP.&#13;
+            At start of turn if full HP: DC 10 Wis save to revert. Also reverts via Remove Curse or after 1 hour.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 2 -->
+    <element name="Lycanthrope (Stage 2)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_2">
+        <prerequisite>Lycanthrope Transformation Stage 1</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 2 of lycanthropy, you select one Stage 2 Boon and gain the Stage 2 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_SILVER_SENSITIVITY" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 2 Boon. Silver Sensitivity (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="lycanthrope:stage" value="2" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 2)" supports="Lycanthrope 2025 Boon 2" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_SILVER_SENSITIVITY" />
+        </rules>
+    </element>
+
+    <element name="Boon: Hunter’s Focus" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_HUNTERS_FOCUS">
+        <supports>Lycanthrope 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_2</requirements>
+        <description>
+            <p>While in hybrid form, you can use a Bonus Action to mark one creature within 60 feet as your prey. A creature remains marked this way for 1 hour, or until it dies. You may only have 1 creature marked at a time.</p>
+            <p>While a creature is marked as your prey, you gain the following benefits:</p>
+            <ul>
+                <li>Whenever you hit the marked creature with a melee attack, you deal an additional 1d6 damage of that attack's type.</li>
+                <li>You have Advantage on any Wisdom (Perception or Survival) check you make to find it.</li>
+            </ul>
+        </description>
+        <sheet action="Bonus Action">
+            <description>In hybrid form: mark 1 creature w/in 60ft as prey for 1 hour/until it dies.&#13;
+            • Melee attacks against it deal +1d6 dmg (same type).&#13;
+            • Adv on Wis (Perception/Survival) to find it.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Iron Pelt" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_IRON_PELT">
+        <supports>Lycanthrope 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_2</requirements>
+        <description>
+            <p>While in hybrid form, you have Resistance to Bludgeoning, Piercing, and Slashing damage. Magical and silvered weapons ignore this resistance.</p>
+        </description>
+        <sheet>
+            <description>In hybrid form: Resistance to Bludgeoning, Piercing, and Slashing damage (ignored by magical/silvered weapons).</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Kindred Form" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_KINDRED_FORM">
+        <supports>Lycanthrope 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_2</requirements>
+        <description>
+            <p>You gain the ability to transform into the animal form representative of your Lycanthropy type, known as your Kindred Form. Use the stat block of the creature your lycanthropy corresponds with and follow the rules of the Polymorph spell:</p>
+            <ul>
+                <li>Werebear: Black Bear</li>
+                <li>Wererat: Giant Rat</li>
+                <li>Werewolf: Wolf</li>
+            </ul>
+            <p>You are indistinguishable from other creatures of that type, and you can communicate with those creatures. You cannot speak, but you can understand languages you know. All equipment you wear and carry falls off you when transforming.</p>
+        </description>
+        <sheet display="false" >
+            <description>Transform into Kindred Form (Black Bear/Giant Rat/Wolf) via Polymorph rules. Indistinguishable/can communicate with that animal type. Cannot speak. Equipment falls off.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_KINDRED_FORM_BLACK_BEAR" requirements="ID_GFG_GHPG25_FEAT_FEATURE_HYBRID_BEAR_FORM"/>     
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_KINDRED_FORM_GIANT_RAT" requirements="ID_GFG_GHPG25_FEAT_FEATURE_HYBRID_RAT_FORM" />   
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_KINDRED_FORM_WOLF" requirements="ID_GFG_GHPG25_FEAT_FEATURE_HYBRID_WOLF_FORM" />
+        </rules>
+    </element>
+    <element name="Kindred Form: Black Bear" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_KINDRED_FORM_BLACK_BEAR">
+        <requirements>ID_GFG_GHPG25_FEAT_FEATURE_KINDRED_FORM,ID_GFG_GHPG25_FEAT_FEATURE_HYBRID_BEAR_FORM</requirements>
+        <compendium display="false" />
+        <description>
+            <p>You gain the ability to transform into the animal form representative of your Lycanthropy type, known as your Kindred Form. Use the stat block of the creature your lycanthropy corresponds with and follow the rules of the Polymorph spell:</p>
+            <ul>
+                <li>Werebear: Black Bear</li>
+            </ul>
+            <p>You are indistinguishable from other creatures of that type, and you can communicate with those creatures. You cannot speak, but you can understand languages you know. All equipment you wear and carry falls off you when transforming.</p>
+        </description>
+        <sheet>
+            <description>Transform into a Black Bear via Polymorph rules.</description>
+        </sheet>
+    </element>
+    <element name="Kindred Form: Giant Rat" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_KINDRED_FORM_GIANT_RAT">
+        <requirements>ID_GFG_GHPG25_FEAT_FEATURE_KINDRED_FORM,ID_GFG_GHPG25_FEAT_FEATURE_HYBRID_RAT_FORM</requirements>
+        <compendium display="false" />
+        <description>
+            <p>You gain the ability to transform into the animal form representative of your Lycanthropy type, known as your Kindred Form. Use the stat block of the creature your lycanthropy corresponds with and follow the rules of the Polymorph spell:</p>
+            <ul>
+                <li>Wererat: Giant Rat</li>
+            </ul>
+            <p>You are indistinguishable from other creatures of that type, and you can communicate with those creatures. You cannot speak, but you can understand languages you know. All equipment you wear and carry falls off you when transforming.</p>
+        </description>
+        <sheet>
+            <description>Transform into a Giant Rat via Polymorph rules.</description>
+        </sheet>
+    </element>
+    <element name="Kindred Form: Wolf" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_KINDRED_FORM_WOLF">
+        <requirements>ID_GFG_GHPG25_FEAT_FEATURE_KINDRED_FORM,ID_GFG_GHPG25_FEAT_FEATURE_HYBRID_WOLF_FORM</requirements>
+        <compendium display="false" />
+        <description>
+            <p>You gain the ability to transform into the animal form representative of your Lycanthropy type, known as your Kindred Form. Use the stat block of the creature your lycanthropy corresponds with and follow the rules of the Polymorph spell:</p>
+            <ul>
+                <li>Werewolf: Wolf</li>
+            </ul>
+            <p>You are indistinguishable from other creatures of that type, and you can communicate with those creatures. You cannot speak, but you can understand languages you know. All equipment you wear and carry falls off you when transforming.</p>
+        </description>
+        <sheet>
+            <description>Transform into a Wolf via Polymorph rules.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Silver Sensitivity" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SILVER_SENSITIVITY">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_2</requirements>
+        <description>
+            <p>You have developed a debilitating sensitivity to silver. In all forms, you have Vulnerability to Bludgeoning, Piercing, or Slashing damage from silvered weapons. In addition, you cannot have Resistance to damage inflicted by silvered weapons.</p>
+        </description>
+        <sheet>
+            <description>Vulnerability to B/P/S dmg from silvered weapons. Cannot resist silvered weapon dmg.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 3 -->
+    <element name="Lycanthrope (Stage 3)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_3">
+        <prerequisite>Lycanthrope Transformation Stage 2</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 3 of lycanthropy, you select one Stage 3 Boon and gain the Stage 3 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_FRAYED_THOUGHTS" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 3 Boon. Frayed Thoughts (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="lycanthrope:stage" value="3" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 3)" supports="Lycanthrope 2025 Boon 2||Lycanthrope 2025 Boon 3" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_FRAYED_THOUGHTS" />
+        </rules>
+    </element>
+
+    <element name="Boon: Bestial Vigor" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_BESTIAL_VIGOR">
+        <supports>Lycanthrope 2025 Boon 3</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_3</requirements>
+        <description>
+            <p>Your Hit Point Maximum increases by an amount equal to your character level, and it increases by 1 every time you gain a character level.</p>
+            <p>Additionally, when in your hybrid form, you gain 5 Temporary Hit Points at the start of each of your turns.</p>
+        </description>
+        <sheet>
+            <description>In hybrid form: Gain 5 THP at start of each turn.</description>
+        </sheet>
+        <rules>
+            <stat name="hp" value="level" />
+        </rules>
+    </element>
+
+    <element name="Boon: Shapeshifter’s Savagery" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SHAPESHIFTERS_SAVAGERY">
+        <supports>Lycanthrope 2025 Boon 3</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_3</requirements>
+        <description>
+            <p>You have embraced the animalistic side of your transformation. While in your hybrid form, you gain the following benefits:</p>
+            <ul>
+                <li>Your Claw and Bite attacks deal an additional 1d8 Slashing damage.</li>
+                <li>You have Immunity to the Charmed and Frightened conditions.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>In hybrid form: Claw/Bite deal +1d8 Slashing dmg. Immune to Charmed and Frightened.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Frayed Thoughts" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_FRAYED_THOUGHTS">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_3</requirements>
+        <description>
+            <p>You suffer the effects of sharing a mind with two personalities. Memories of less practical significance are lost to new ones of midnight hunts. You have Disadvantage on Intelligence ability checks and saving throws.</p>
+        </description>
+        <sheet>
+            <description>Disadvantage on Intelligence ability checks and saving throws.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 4 -->
+    <element name="Lycanthrope (Stage 4)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_4">
+        <prerequisite>Lycanthrope Transformation Stage 3</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 4 of lycanthropy, you select a Stage 4 Boon and gain the Stage 4 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_ULTIMATE_PREDATOR" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 4 Boon. Ultimate Predator (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="lycanthrope:stage" value="4" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 4)" supports="Lycanthrope 2025 Boon 2||Lycanthrope 2025 Boon 3||Lycanthrope 2025 Boon 4" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_ULTIMATE_PREDATOR" />
+        </rules>
+    </element>
+
+    <element name="Boon: Hybrid Form Affinity" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_HYBRID_FORM_AFFINITY">
+        <supports>Lycanthrope 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_4</requirements>
+        <description>
+            <p>You have achieved a state of equilibrium that most Lycanthropes never find. You gain the following benefits while you are voluntarily in your hybrid form:</p>
+            <ul>
+                <li>You can speak normally.</li>
+                <li>You can cast spells without needing to provide their Verbal or Somatic components. Additionally, you can cast spells without needing to provide material components, provided they do not have a GP value listed.</li>
+                <li>Allies within 20 feet of you have Advantage on Wisdom ability checks and saving throws.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Voluntarily in hybrid form: Can speak. Cast spells w/o V/S/M (if no GP cost). Allies w/in 20ft have Adv on Wis checks/saves.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Savage Instincts" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SAVAGE_INSTINCTS">
+        <supports>Lycanthrope 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_4</requirements>
+        <description>
+            <p>You have developed an unrelenting thirst for bloodshed and carnage. While in your hybrid form, if you hit a Bloodied creature with a Claw or Bite attack, the attack deals an additional 1d8 Slashing damage.</p>
+        </description>
+        <sheet>
+            <description>In hybrid form: Hit Bloodied creature w/ Claw/Bite deals +1d8 Slashing dmg.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Ultimate Predator" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ULTIMATE_PREDATOR">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_LYCANTHROPE_LEVEL_4</requirements>
+        <description>
+            <p>You realize the true cost of your transformation. The beast within has gained more control of your body than you have. While you can control it at times, you know it cannot be contained forever—and when it breaks free, it delights in any slaughter it can find.</p>
+            <p>You gain the following features:</p>
+            <ul>
+                <li>If you can see, hear or smell a Bloodied creature, you have Disadvantage on Wisdom saving throws.</li>
+                <li>At the start of your turn, if you can see, hear or smell a creature with the Unconscious condition, you must make a DC 15 Wisdom saving throw. On a failure, you transform into your hybrid form, or, if already in hybrid form you go feral as described under Lust for Hunt, above. On a success, you are immune to this effect until you finish a Long Rest.</li>
+                <li>Whenever you kill a creature while in your hybrid form, you cannot transform back into your normal form until dawn the next day.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>See/hear/smell Bloodied creature: Disadv on Wis saves.&#13;
+            Start of turn, see/hear/smell Unconscious creature: DC 15 Wis save. Fail: transform to hybrid/go feral. Success: Immune until Long Rest.&#13;
+            Kill creature in hybrid form: Cannot revert until dawn.</description>
+        </sheet>
+    </element>
+</elements>

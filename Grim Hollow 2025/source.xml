@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1.0">
+			<file name="source.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/source.xml" />
+		</update>
+	</info>
+	<element name="Grim Hollow: Campaign Guide (2025)" type="Source" source="Core" id="ID_LT_SOURCE_GHCG25">
+		<description>
+			<h4><strong>Welcome to Grim Hollow!</strong></h4>
+			<p>Bound within these pages are countless stories of darkness, tragedy, and horror waiting to be told. If you’re reading this, then you likely share our love of grim tales and dark fantasy—a storytelling genre which invites its audience to explore perilous worlds of violence and monsters.</p>
+			<p class="indent">Grim Hollow is a dark fantasy setting designed to tell such stories in the world of Etharis. Here, battles are hard fought. Choices are difficult. Characters may be forced to decide between rescuing innocent lives, defeating their enemies, and compromising their values. The path to justice is difficult to tread. Characters who explore this world may themselves be corrupted by an evil desire, vile curse, or traumatic past. Etharis leaves none unscathed.</p>
+			<p class="indent">Grim Hollow encapsulates many styles of dark fantasy, whether you wish to explore realms of gothic horror, twisted fairy tales, or eldritch dread. You might craft stories in which the greatest acts of evil are those humanity inflicts upon each other. Or you might create scenarios where survival is never guaranteed within a hostile landscape, and the only way to persist is by stealing what others have.</p>
+			<p class="indent">Despite the difficult circumstances the characters of your world face, their choices remain their own. It isn’t the role of a storyteller to judge the actions of those partaking in the tale. We merely facilitate situations where dark themes are safely explored. Your characters might answer intolerance with wrath, greed with cruelty, or violence with overwhelming reprisal. Your role as Game Master is simply to enact the consequences of actions taken in a world that so rarely rewards heroic deeds.</p>
+			<p class="indent">Nevertheless, roleplaying games are intended for fun. Grim Hollow offers your players a different kind of power fantasy, where they’ll face terrifying dangers and fight desperate battles only to achieve the smallest victories. But each victory should bring a small glimmer of hope into your broken world. The strength of your characters is in choosing to fight on, despite the challenges set against them, and the daemons they grapple within themselves.</p>
+			<p class="indent">It’s now time to dim the lights. You’ve no fear of the darkness, for it’s the very thing with which you will weave your tales of dread and woe.</p>
+			<p>Welcome to Etharis. This world is now your own!.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">GHCG25</set>
+			<set name="url">https://ghostfiregaming.com/product/grim-hollow-campaign-guide-pdf-5-5e/</set>
+			<set name="image">"https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Campaing-Guide.png</set>
+			<set name="author" abbreviation="GFG" url="https://ghostfiregaming.com">Ghostfire Gaming</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+	<element name="Grim Hollow: Player's Guide (2025)" type="Source" source="Core" id="ID_LT_SOURCE_GHPG25">
+		<description>
+			<h4><strong>Welcome to Grim Hollow!</strong></h4>
+			<p>This book was born from a desire to tell stories about imperfect heroes fighting terrible monsters—in every guise they take. Monsters have existed in tales since the earliest humans gathered around fires. They’re an expression of our greatest fears about the world, used to explain terrifying phenomena from predators to natural disasters to disease. Yet monsters are also a reflection of what we fear most about ourselves.</p>
+			<p class="indent">Unlike many other fantasy settings, Grim Hollow asks you to consider the monster within, as much as those prowling the shadows of Etharis. Your characters may be antiheroes, opportunists, and survivalists, rather than traditional paragons. Within these pages, you will find the means to create characters who are flawed, nuanced, and oftentimes monstrous themselves—figuratively and literally. You will choose traits, skills, magic, and equipment that arm you against the darkness, but by their nature make you an imperfect hero.</p>
+			<p class="indent">You might take on the role of a professional monster slayer, defending those who can’t protect themselves; yet your strength is derived from consuming your prey, which mutates your body and makes you feared among common folk. Or your heritage could mark you as unnatural, built from flesh and metal, with only terrifying nightmares remaining of the memories of your previous life.</p>
+			<p class="indent">You must consider your actions carefully. If you choose to fight against injustice, what is the cost of wielding power? If you choose to follow your own ambitions, what havoc are you willing to unleash? Grim Hollow invites you to explore humanity through the medium of roleplaying games and asks, genuinely, “What is a monster?”</p>
+			<p class="indent">Grim Hollow offers players a different kind of power fantasy. Etharis is a world where you’ll face terrifying dangers and fight desperate battles to achieve the smallest victories. Your strength lies in choosing to fight on nevertheless. You are the glimmer of hope within the impenetrable darkness, and if you so choose, can defeat monsters while battling those within yourself.</p>
+			<p class="indent">It’s now time to lock your doors and draw your shutters. Gather ‘round the light, but keep your eyes on the shadows. You’re entering a world of darkness and horror.</p>
+			<p>Welcome to Etharis—where adventure is a given, but survival is not.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">GHPG25</set>
+			<set name="url">https://ghostfiregaming.com/product/grim-hollow-players-guide-pdf-5-5e/</set>
+			<set name="image">"https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Players-Guide.png</set>
+			<set name="author" abbreviation="GFG" url="https://ghostfiregaming.com">Ghostfire Gaming</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+	<element name="Grim Hollow: Monster Grimoire (2025)" type="Source" source="Core" id="ID_LT_SOURCE_GHMG25">
+		<description>
+			<p>Grim Hollow Monster Grimoire is the third installment in the Grim Hollow series of setting books. The Monster Grimoire together with the two other tomes—Grim Hollow Campaign Guide and Grim Hollow Player’s Guide—form the complete set of books for Game Masters to run dark fantasy and horror campaigns in the Grim Hollow setting.</p>
+			<p class="indent">The Grim Hollow setting takes place in a world known as Etharis, a dark and gritty environment where the vicious, terrible, horrifying monsters that hide in the shadowy alleyways and remote wildernesses are only the start of the peril. As much as the monsters of the world threaten the citizenry, the dark figures that entice those who seek power are just as dangerous. Blood magic, undeath, lycanthropy, fey magic, fell sorcery, and other temptations: would-be heroes are always one wrong step away from becoming the villains they claim to fight.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">GHMG25</set>
+			<set name="url">https://ghostfiregaming.com/product/grim-hollow-monster-grimoire-pdf-5-5e/</set>
+			<set name="image">"https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Monster-Grimoire.png</set>
+			<set name="author" abbreviation="GFG" url="https://ghostfiregaming.com">Ghostfire Gaming</set>
+			<set name="third-party">true</set>
+		</setters>
+	</element>
+</elements>

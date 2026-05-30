@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Apocalypse Sorcery</name>
+		<description>The Apocalypse Sorcery subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="sorcerer-apocalypse.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/sorcerer-apocalypse.xml" />
+		</update>
+	</info>
+
+	<element name="Apocalypse Sorcery" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_SORCERER_APOCALYPSE_SORCERY">
+		<supports>Sorcerer Subclass</supports>
+		<description>
+			<p class="flavor">Hasten or Stall the End of the World</p>
+			<p>Apocalypse Sorcerers have seen the shape of things to come. They may have visions of the Great Beast ushering in the end of Etharis or dreams of Gormadraug waking and devouring the land.</p>
+			<p class="indent">These prophecies besiege Apocalypse Sorcerers, plaguing and empowering in equal measure. Some find relief in putting these revelations into writing, producing texts that read as incoherent but slowly seep into the mind as sensible, even inevitable. When the apocalypse-bringer is freed to travel across Etharis unburdened, undoing the works of gods and men, magic will swell and pool, ripe for the taking. This sign of the end is also their gift.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_SPELLS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_UNHINGED_ASSERVATIONS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_BEAR_WITNESS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_ARCANE_APOCRYPHA" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_FORBIDDEN_MAGIC" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_THE_END_IS_NIGH" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_UNHINGED_ASSERVATIONS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_BEAR_WITNESS" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_ARCANE_APOCRYPHA" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_FORBIDDEN_MAGIC" level="14" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_THE_END_IS_NIGH" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Apocalyptic Spells" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_SPELLS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_APOCALYPSE_SPELLS</requirements>
+		<description>
+			<p>When you reach a Sorcerer level specified in the Apocalyptic Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Apocalyptic Spells</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Augury, Comprehend Languages, Hellish Rebuke, Ray of Enfeeblement</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Bestow Curse, Revivify</em></td></tr>
+				<tr><td style="text-align:center">7</td><td><em>Banishment, Divination</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Contagion, Insect Plague</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AUGURY" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COMPREHEND_LANGUAGES" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HELLISH_REBUKE" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_ENFEEBLEMENT" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BESTOW_CURSE" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_REVIVIFY" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BANISHMENT" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DIVINATION" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONTAGION" level="9" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INSECT_PLAGUE" level="9" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Unhinged Asservations" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_UNHINGED_ASSERVATIONS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_APOCALYPSE_UNHINGED_ASSERVATIONS</requirements>
+		<description>
+			<p>You are obsessed with documenting your visions. You gain proficiency with Calligrapher's Supplies and you can create Spell Scrolls in half the time and at half the cost in GP.</p>
+			<p class="indent">In addition, when you create a Spell Scroll, you can ensorcell it. When you ensorcell a Spell Scroll, you must expend a spell slot equal to or greater than the spell's level and you can spend Sorcery Points to apply one of your Metamagic options. Any creature that knows at least one language can use your ensorcelled Spell Scroll, which casts the spell with the benefit of the Metamagic option you chose. The Spell Scroll remains ensorcelled until it is used or you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Unhinged Asservations">
+			<description>You create Spell Scrolls in half the time and GP cost. When creating a Spell Scroll, you can ensorcell it by expending a spell slot (level &gt;= spell's level) and spending Sorcery Points for a Metamagic option. Any creature knowing a language can use it, casting the spell with the Metamagic. It remains ensorcelled until used or you finish a Long Rest.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Bear Witness" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_BEAR_WITNESS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_APOCALYPSE_BEAR_WITNESS</requirements>
+		<description>
+			<p>You have prepared your entire life for the end of the world. While your Innate Sorcery feature is active, you gain the following benefits.</p>
+			<p class="indent"><strong><em>Apocalyptic Inurement.</em></strong> You have Resistance to Force damage.</p>
+			<p class="indent"><strong><em>Recite Scripture.</em></strong> Once per active Innate Sorcery, as a Bonus action you can use a Spell Scroll that has a spell with a casting time of Action.</p>
+			<p class="indent"><strong><em>Unflappable.</em></strong> You are immune to the Frightened condition.</p>
+		</description>
+		<sheet alt="Bear Witness">
+			<description>While Innate Sorcery is active, you have Resistance to Force damage, Immunity to the Frightened condition, and once per activation, you can use a Bonus Action to use an action-casting Spell Scroll.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Arcane Apocrypha" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_ARCANE_APOCRYPHA">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_APOCALYPSE_ARCANE_APOCRYPHA</requirements>
+		<description>
+			<p>Your obsessive reflections on the end of existence inspire your writing. Whenever you finish a Long Rest, you can create one Spell Scroll at no cost. It must be a spell of level 5 or lower that you can cast. This Spell Scroll disintegrates when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Arcane Apocrypha" usage="1/Long Rest">
+			<description>When you finish a Long Rest, you can create one free Spell Scroll (level 5 or lower spell you can cast). It disintegrates on your next Long Rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Forbidden Magic" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_FORBIDDEN_MAGIC">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_APOCALYPSE_FORBIDDEN_MAGIC</requirements>
+		<description>
+			<p>The end of Etharis is a time when magic is unbound and magical powers long hidden are unearthed. When you cast a Sorcerer spell using a spell slot, you can choose one option below.</p>
+			<p class="indent"><strong><em>Excessive.</em></strong> If the spell requires a Material component with a cost, you can cast the spell without the Material component. You take Force damage equal to four times the level of the spell slot immediately after you cast it. This damage ignores Resistance and Immunity.</p>
+			<p class="indent"><strong><em>Inexorable.</em></strong> Taking damage can't break your Concentration on the spell. When the spell ends, you gain 1 Exhaustion level.</p>
+			<p class="indent"><strong><em>Pyrrhic.</em></strong> If the spell requires an attack roll, the spell automatically hits and the attack roll is a Critical Hit. Your Hit Point maximum is reduced by an amount equal to four times the level of the spell slot immediately after you cast it. When you finish a Long Rest, your Hit Point maximum returns to normal.</p>
+		</description>
+		<sheet alt="Forbidden Magic">
+			<description>When you cast a Sorcerer spell using a spell slot, you can choose one:&#13;
+			• Excessive: Ignore costly Material components. Take Force damage = 4x slot level (ignores Resistance/Immunity).&#13;
+			• Inexorable: Damage can't break Concentration on this spell. Gain 1 Exhaustion when it ends.&#13;
+			• Pyrrhic: If it requires an attack roll, it auto-hits as a Critical Hit. Your HP max is reduced by 4x slot level until a Long Rest.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: The End is Nigh" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_APOCALYPSE_THE_END_IS_NIGH">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_APOCALYPSE_THE_END_IS_NIGH</requirements>
+		<description>
+			<p>You loudly proclaim what will come to pass when the world ends. As a Magic action, you describe the end of days. When you do so, each creature of your choice in a 30-foot Emanation originating from you must make a Wisdom saving throw against your spell save DC. On a failed save, a creature takes 6d6 Psychic damage and 6d6 Force damage and has the Frightened condition for 1 minute. On a successful save, the creature takes half as much damage only. A Frightened creature can repeat the saving throw at the end of each of its turns, ending the Frightened condition on a successful save. If this damage reduces a creature to 0 Hit Points, the creature can be revived only by a True Resurrection or a Wish spell.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a Long Rest unless you spend 6 Sorcery Points (no action required) to restore your use of it.</p>
+		</description>
+		<sheet alt="The End is Nigh" action="Action" usage="1/Long Rest">
+			<description>Creatures of your choice in a 30-ft Emanation make a DC{{sorcerer:spellcasting:dc}} Wis save. Fail: 6d6 Psychic + 6d6 Force damage and Frightened for 1 min (save ends at end of turns). Success: Half damage. Creatures reduced to 0 HP by this can only be revived by True Resurrection or Wish.&#13;
+			You can spend 6 Sorcery Points to restore a use of this feature.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Apocalyptic Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_APOCALYPSE_SPELLS" />
+	<element name="Unhinged Asservations Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_APOCALYPSE_UNHINGED_ASSERVATIONS" />
+	<element name="Bear Witness Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_APOCALYPSE_BEAR_WITNESS" />
+	<element name="Arcane Apocrypha Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_APOCALYPSE_ARCANE_APOCRYPHA" />
+	<element name="Forbidden Magic Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_APOCALYPSE_FORBIDDEN_MAGIC" />
+	<element name="The End is Nigh Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_APOCALYPSE_THE_END_IS_NIGH" />
+
+</elements>

@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Advanced Melee Weapons</name>
+		<description>Advanced Melee Weapons from the Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Setting/items-weapons.xml" />
+		</update>
+	</info>
+
+    <!-- Melee Advanced Weapons -->
+	<element name="Catchpole" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_CATCHPOLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_ENTANGLING</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Entangling.</b> When you take the Attack action on your turn and hit with an Entangling weapon, you can use a Bonus Action later on the same turn to entangle the target. The target must succeed on a Dexterity saving throw (DC 10 plus your Proficiency Bonus) or have the Grappled condition until it escapes or until you release the weapon. The target succeeds automatically if it is Huge or larger.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CATCHPOLE</set>
+		</setters>
+	</element>
+
+	<element name="Cavalry Flail" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_CAVALRY_FLAIL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM, ID_GFG_GHPG25_WEAPON_PROPERTY_SWIFT</supports>
+		<description>
+			<p><b>Momentum Dice:</b> 1d12</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Swift.</b> When you miss with a Swift weapon, you have Advantage on the first attack roll you make with the weapon against the same target before the end of your next turn. If that attack hits, it also deals an extra 1d4 damage of the weapon’s normal damage type.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="bludgeoning">1d8</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CAVALRY_FLAIL</set>
+		</setters>
+	</element>
+
+	<element name="Cavalry Hammer" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_CAVALRY_HAMMER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG25_WEAPON_PROPERTY_ARMOR_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM, ID_WOTC_PHB24_WEAPON_PROPERTY_SLOW</supports>
+		<description>
+			<p><b>Momentum Dice:</b> 1d12</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Slow.</b> If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="bludgeoning">1d8</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CAVALRY_HAMMER</set>
+		</setters>
+	</element>
+
+	<element name="Cavalry Pick" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_CAVALRY_PICK">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_ARMOR_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM, ID_WOTC_PHB24_WEAPON_PROPERTY_SAP</supports>
+		<description>
+			<p><b>Momentum Dice:</b> 1d12</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Sap.</b> If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CAVALRY_PICK</set>
+		</setters>
+	</element>
+
+	<element name="Chakram" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_CHAKRAM">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_GFG_GHPG25_WEAPON_PROPERTY_RETURNING</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Returning.</b> When you make a ranged attack with a Returning weapon, the weapon returns to you immediately after hitting or missing the target. You can catch the weapon if you have a hand free to do so.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="slashing">1d6</set>
+			<set name="range">30/120</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM</set>
+		</setters>
+	</element>
+
+	<element name="Claymore" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_CLAYMORE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_BRUTAL</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Brutal.</b> Brutal weapons score Critical Hits on a natural roll of 19 or 20. If your Critical Range is already increased, instead increase it by 1 point (such as from 19-20 to 18-20). When you score a Critical Hit with a Brutal weapon against a creature, the weapon deals one additional die of damage.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="slashing">2d6</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CLAYMORE</set>
+		</setters>
+	</element>
+
+	<element name="Double Blade" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_DOUBLE_BLADE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG25_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_SET</supports>
+		<description>
+			<p><b>Momentum Dice:</b> 1d10</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Set.</b> If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="slashing">1d6</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BLADE</set>
+		</setters>
+	</element>
+
+	<element name="Double Spear" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_DOUBLE_SPEAR">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_SET</supports>
+		<description>
+			<p><b>Momentum Dice:</b> 1d10</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Set.</b> If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_SPEAR</set>
+		</setters>
+	</element>
+
+	<element name="Elite Rapier" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_ELITE_RAPIER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_GFG_GHPG25_WEAPON_PROPERTY_SWIFT</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Swift.</b> When you miss with a Swift weapon, you have Advantage on the first attack roll you make with the weapon against the same target before the end of your next turn. If that attack hits, it also deals an extra 1d4 damage of the weapon’s normal damage type.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_ELITE_RAPIER</set>
+		</setters>
+	</element>
+
+	<element name="Fighting Chain" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_FIGHTING_CHAIN">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG25_WEAPON_PROPERTY_DOUBLE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_DISARMING</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Disarming.</b> When you take the Attack action on your turn and hit with a Disarming weapon, you can use your Bonus Action later on the same turn to disarm the target. Both you and the attacker must make opposed attack rolls, ignoring any sources of Advantage and Disadvantage. If your result is higher and the weapon is something the target can drop, the weapon falls from the target’s grasp, landing in its space.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN</set>
+		</setters>
+	</element>
+
+	<element name="Fighting Chain, Brutal" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_FIGHTING_CHAIN_BRUTAL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG25_WEAPON_PROPERTY_DOUBLE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_BRUTAL</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Brutal.</b> Brutal weapons score Critical Hits on a natural roll of 19 or 20. If your Critical Range is already increased, instead increase it by 1 point (such as from 19-20 to 18-20). When you score a Critical Hit with a Brutal weapon against a creature, the weapon deals one additional die of damage.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="slashing">1d6</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN_BRUTAL</set>
+		</setters>
+	</element>
+
+	<element name="Fighting Chain, Hook" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_FIGHTING_CHAIN_HOOK">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG25_WEAPON_PROPERTY_DAMAGE, ID_GFG_GHPG25_WEAPON_PROPERTY_DOUBLE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_ENTANGLING</supports>
+		<description>
+			<p><b>Damage Property:</b> Bludgeoning or Piercing.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Entangling.</b> When you take the Attack action on your turn and hit with an Entangling weapon, you can use a Bonus Action later on the same turn to entangle the target. The target must succeed on a Dexterity saving throw (DC 10 plus your Proficiency Bonus) or have the Grappled condition until it escapes or until you release the weapon. The target succeeds automatically if it is Huge or larger.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN_HOOK</set>
+		</setters>
+	</element>
+
+	<element name="Fighting Chain, Sickle" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_FIGHTING_CHAIN_SICKLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG25_WEAPON_PROPERTY_DAMAGE, ID_GFG_GHPG25_WEAPON_PROPERTY_DOUBLE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_ENTANGLING</supports>
+		<description>
+			<p><b>Damage Property:</b> Bludgeoning or Slashing.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Entangling.</b> When you take the Attack action on your turn and hit with an Entangling weapon, you can use a Bonus Action later on the same turn to entangle the target. The target must succeed on a Dexterity saving throw (DC 10 plus your Proficiency Bonus) or have the Grappled condition until it escapes or until you release the weapon. The target succeeds automatically if it is Huge or larger.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN_SICKLE</set>
+		</setters>
+	</element>
+
+	<element name="Gladiator Net" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_GLADIATOR_NET">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_GFG_GHPG25_WEAPON_PROPERTY_ENTANGLING</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Entangling.</b> When you take the Attack action on your turn and hit with an Entangling weapon, you can use a Bonus Action later on the same turn to entangle the target. The target must succeed on a Dexterity saving throw (DC 10 plus your Proficiency Bonus) or have the Grappled condition until it escapes or until you release the weapon. The target succeeds automatically if it is Huge or larger.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="range">10/30</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="cost" currency="gp">350</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_GLADIATOR_NET</set>
+		</setters>
+	</element>
+
+	<element name="Guardian Poleaxe" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_GUARDIAN_POLEAXE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG25_WEAPON_PROPERTY_DAMAGE, ID_GFG_GHPG25_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_SET</supports>
+		<description>
+			<p><b>Damage Property:</b> Slashing or Piercing.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Set.</b> If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="slashing">1d10</set>
+			<set name="weight" lb="9">9 lb.</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_GUARDIAN_POLEAXE</set>
+		</setters>
+	</element>
+
+	<element name="Knightly Lance" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_KNIGHTLY_LANCE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_GFG_GHPG25_WEAPON_PROPERTY_SET</supports>
+		<description>
+			<p><b>Momentum Dice:</b> 2d10</p>
+			<p>You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren’t mounted.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Set.</b> If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_KNIGHTLY_LANCE</set>
+		</setters>
+	</element>
+
+	<element name="Knightly Sword" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_KNIGHTLY_SWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_GFG_GHPG25_WEAPON_PROPERTY_DEFENDING</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Defending.</b> When wielding a Defending weapon, you may use your Reaction when you are hit by a melee attack roll. Roll 1d4 and add the result to your AC, including against the triggering attack.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_KNIGHTLY_SWORD</set>
+		</setters>
+	</element>
+
+	<element name="Military Fork" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_MILITARY_FORK">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_DISARMING</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Disarming.</b> When you take the Attack action on your turn and hit with a Disarming weapon, you can use your Bonus Action later on the same turn to disarm the target. Both you and the attacker must make opposed attack rolls, ignoring any sources of Advantage and Disadvantage. If your result is higher and the weapon is something the target can drop, the weapon falls from the target’s grasp, landing in its space.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="weight" lb="8">8 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_MILITARY_FORK</set>
+		</setters>
+	</element>
+
+	<element name="Parrying Dagger" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_PARRYING_DAGGER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_GFG_GHPG25_WEAPON_PROPERTY_DISARMING</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Disarming.</b> When you take the Attack action on your turn and hit with a Disarming weapon, you can use your Bonus Action later on the same turn to disarm the target. Both you and the attacker must make opposed attack rolls, ignoring any sources of Advantage and Disadvantage. If your result is higher and the weapon is something the target can drop, the weapon falls from the target’s grasp, landing in its space.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1d4</set>
+			<set name="range">20/60</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">350</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_PARRYING_DAGGER</set>
+		</setters>
+	</element>
+
+	<element name="Polearm" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_POLEARM">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_SET</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Set.</b> If a target enters your reach while you wield a weapon with this property, you can use your Reaction to make a melee attack with the weapon against that target.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1d12</set>
+			<set name="weight" lb="12">12 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_POLEARM</set>
+		</setters>
+	</element>
+
+	<element name="Punching Dagger" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_PUNCHING_DAGGER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_ARMOR_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG25_WEAPON_PROPERTY_DEFENDING</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Defending.</b> When wielding a Defending weapon, you may use your Reaction when you are hit by a melee attack roll. Roll 1d4 and add the result to your AC, including against the triggering attack.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1d4</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_PUNCHING_DAGGER</set>
+		</setters>
+	</element>
+
+	<element name="Returning Club" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_RETURNING_CLUB">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_GFG_GHPG25_WEAPON_PROPERTY_RETURNING</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Returning.</b> When you make a ranged attack with a Returning weapon, the weapon returns to you immediately after hitting or missing the target. You can catch the weapon if you have a hand free to do so.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="range">20/60</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_RETURNING_CLUB</set>
+		</setters>
+	</element>
+
+	<element name="Sabre" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_SABRE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_GFG_GHPG25_WEAPON_PROPERTY_SWIFT</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Swift.</b> When you miss with a Swift weapon, you have Advantage on the first attack roll you make with the weapon against the same target before the end of your next turn. If that attack hits, it also deals an extra 1d4 damage of the weapon’s normal damage type.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_SABRE</set>
+		</setters>
+	</element>
+
+	<element name="Sheathed Staff" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_SHEATHED_STAFF">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG25_WEAPON_PROPERTY_DOUBLE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_WOTC_PHB24_WEAPON_PROPERTY_TOPPLE</supports>
+		<description>
+			<p>This weapon has the Monk property.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Topple.</b> If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ability modifier used to make the attack roll and your Proficiency Bonus). On a failed save, the creature has the Prone condition.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="bludgeoning">1d6</set>
+			<set name="versatile">1d8</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_SHEATHED_STAFF</set>
+		</setters>
+	</element>
+
+	<element name="Side-handle Baton" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_SIDE_HANDLE_BATON">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG25_WEAPON_PROPERTY_SWIFT</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Swift.</b> When you miss with a Swift weapon, you have Advantage on the first attack roll you make with the weapon against the same target before the end of your next turn. If that attack hits, it also deals an extra 1d4 damage of the weapon’s normal damage type.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_SIDE_HANDLE_BATON</set>
+		</setters>
+	</element>
+
+	<element name="Wrath Axe" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_WRATH_AXE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG25_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_BRUTAL</supports>
+		<description>
+			<p><b>Momentum Dice:</b> 2d8</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Brutal.</b> Brutal weapons score Critical Hits on a natural roll of 19 or 20. If your Critical Range is already increased, instead increase it by 1 point (such as from 19-20 to 18-20). When you score a Critical Hit with a Brutal weapon against a creature, the weapon deals one additional die of damage.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="slashing">2d6</set>
+			<set name="weight" lb="12">12 lb.</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_WRATH_AXE</set>
+		</setters>
+	</element>
+
+	<element name="Wrath Maul" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_WRATH_MAUL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG25_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_BRUTAL</supports>
+		<description>
+			<p><b>Momentum Dice:</b> 2d8</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Brutal.</b> Brutal weapons score Critical Hits on a natural roll of 19 or 20. If your Critical Range is already increased, instead increase it by 1 point (such as from 19-20 to 18-20). When you score a Critical Hit with a Brutal weapon against a creature, the weapon deals one additional die of damage.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="bludgeoning">2d6</set>
+			<set name="weight" lb="15">15 lb.</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_WRATH_MAUL</set>
+		</setters>
+	</element>
+
+    <!-- Ranged Advanced Weapons -->
+	<element name="Arbalest" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_ARBALEST">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_STRONG_DRAW</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Strong-Draw.</b> You have Disadvantage on attack rolls with a Strong-Draw weapon unless your Strength is 13 or higher. You add both your Strength and Dexterity modifiers to damage with a Strong-Draw weapon.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="range">80/300; Bolt</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_ARBALEST</set>
+		</setters>
+	</element>
+
+	<element name="Blackpowder Pistol" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_BLACKPOWDER_PISTOL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_WOTC_PHB24_WEAPON_PROPERTY_VEX</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Vex.</b> If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d4</set>
+			<set name="range">20/80; Paper Cartridge Bullet</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="cost" currency="gp">200</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLACKPOWDER_PISTOL</set>
+		</setters>
+	</element>
+
+	<element name="Blackpowder Rifle" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_BLACKPOWDER_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_WOTC_PHB24_WEAPON_PROPERTY_SLOW</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Slow.</b> If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="range">80/300; Paper Cartridge Bullet</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLACKPOWDER_RIFLE</set>
+		</setters>
+	</element>
+
+	<element name="Blunderbuss" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_BLUNDERBUSS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_BLACKPOWDER, ID_GFG_GHPG25_WEAPON_PROPERTY_CUMBERSOME, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_SCATTER</supports>
+		<description>
+			<p><b>Scatter Range:</b> 10 ft.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Scatter.</b> When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon’s scatter range from the target’s space. Creatures other than the original target that fall within the weapon’s scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2).</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="range">30/90; Paper Cartridge Bullet</set>
+			<set name="weight" lb="10">10 lb.</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS</set>
+		</setters>
+	</element>
+
+	<element name="Blunderbuss, Hand" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_BLUNDERBUSS_HAND">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG25_WEAPON_PROPERTY_SCATTER</supports>
+		<description>
+			<p><b>Scatter Range:</b> 5 ft.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Scatter.</b> When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon’s scatter range from the target’s space. Creatures other than the original target that fall within the weapon’s scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2).</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d4</set>
+			<set name="range">15/60; Paper Cartridge Bullet</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS_HAND</set>
+		</setters>
+	</element>
+
+	<element name="Composite Longbow" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_COMPOSITE_LONGBOW">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_STRONG_DRAW</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Strong-Draw.</b> You have Disadvantage on attack rolls with a Strong-Draw weapon unless your Strength is 13 or higher. You add both your Strength and Dexterity modifiers to damage with a Strong-Draw weapon.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="range">200/600; Arrow</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_COMPOSITE_LONGBOW</set>
+		</setters>
+	</element>
+
+	<element name="Composite Shortbow" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_COMPOSITE_SHORTBOW">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_STRONG_DRAW</supports>
+		<description>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Strong-Draw.</b> You have Disadvantage on attack rolls with a Strong-Draw weapon unless your Strength is 13 or higher. You add both your Strength and Dexterity modifiers to damage with a Strong-Draw weapon.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="range">100/400; Arrow</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="cost" currency="gp">400</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_COMPOSITE_SHORTBOW</set>
+		</setters>
+	</element>
+
+	<element name="Dragon Pistol" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_DRAGON_PISTOL">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG25_WEAPON_PROPERTY_SCATTER</supports>
+		<description>
+			<p><b>Scatter Range:</b> 5 ft.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Scatter.</b> When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon’s scatter range from the target’s space. Creatures other than the original target that fall within the weapon’s scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2).</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d4</set>
+			<set name="range">20; Dragon Shot</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="cost" currency="gp">350</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DRAGON_PISTOL</set>
+		</setters>
+	</element>
+
+	<element name="Dragon Rifle" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_DRAGON_RIFLE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG25_WEAPON_PROPERTY_SCATTER</supports>
+		<description>
+			<p><b>Scatter Range:</b> 10 ft.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Scatter.</b> When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon’s scatter range from the target’s space. Creatures other than the original target that fall within the weapon’s scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2).</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="range">30; Dragon Shot</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DRAGON_RIFLE</set>
+		</setters>
+	</element>
+
+	<element name="Flame Bellows" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_FLAME_BELLOWS">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_CUMBERSOME, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG25_WEAPON_PROPERTY_MAGAZINE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_GFG_GHPG25_WEAPON_PROPERTY_SCATTER</supports>
+		<description>
+			<p><b>Magazine:</b> 20<br/><b>Scatter Range:</b> 10 ft.</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Scatter.</b> When you take the Attack action and hit a creature with a Scatter weapon, measure the weapon’s scatter range from the target’s space. Creatures other than the original target that fall within the weapon’s scatter range take damage equal to your 1 + your Dexterity modifier (minimum 2).</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="fire">2d6</set>
+			<set name="range">15; Bellows Cannister</set>
+			<set name="weight" lb="11">11 lb.</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FLAME_BELLOWS</set>
+		</setters>
+	</element>
+
+	<element name="Repeater Crossbow" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_REPEATER_CROSSBOW">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG25_WEAPON_PROPERTY_REPEATER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_WOTC_PHB24_WEAPON_PROPERTY_SLOW</supports>
+		<description>
+			<p><b>Magazine:</b> 6</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Slow.</b> If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="range">80/300; Bolt</set>
+			<set name="weight" lb="7">7 lb.</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_CROSSBOW</set>
+		</setters>
+	</element>
+
+	<element name="Repeater Crossbow, Hand" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_REPEATER_CROSSBOW_HAND">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG25_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG25_WEAPON_PROPERTY_REPEATER, ID_WOTC_PHB24_WEAPON_PROPERTY_VEX</supports>
+		<description>
+			<p><b>Magazine:</b> 3</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Vex.</b> If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="range">30/120; Bolt</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_CROSSBOW_HAND</set>
+		</setters>
+	</element>
+
+	<element name="Repeater Crossbow, Heavy" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_REPEATER_CROSSBOW_HEAVY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG25_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG25_WEAPON_PROPERTY_REPEATER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_WOTC_PHB24_WEAPON_PROPERTY_PUSH</supports>
+		<description>
+			<p><b>Magazine:</b> 9</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Push.</b> If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1d10</set>
+			<set name="range">100/400; Bolt</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="cost" currency="gp">1000</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_CROSSBOW_HEAVY</set>
+		</setters>
+	</element>
+
+	<element name="Repeater Needler" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_REPEATER_NEEDLER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG25_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG25_WEAPON_PROPERTY_REPEATER, ID_WOTC_PHB24_WEAPON_PROPERTY_VEX</supports>
+		<description>
+			<p><b>Magazine:</b> 6</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Vex.</b> If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="piercing">1</set>
+			<set name="range">30/120; Blowgun Needle</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_NEEDLER</set>
+		</setters>
+	</element>
+
+	<element name="Repeater Slinger" type="Weapon" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_WEAPON_REPEATER_SLINGER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG25_WEAPON_PROPERTY_REPEATER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_WOTC_PHB24_WEAPON_PROPERTY_SLOW</supports>
+		<description>
+			<p><b>Magazine:</b> 9</p>
+			<div class="sidebar" style="margin-top:10px">
+				<h5>MASTERY</h5>
+				<p><b>Slow.</b> If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of your next turn. If the creature is hit more than once by weapons that have this property, the Speed reduction doesn't exceed 10 feet.</p>
+			</div>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="damage" type="bludgeoning">1d8</set>
+			<set name="range">80/300; Bullet</set>
+			<set name="weight" lb="9">9 lb.</set>
+			<set name="cost" currency="gp">750</set>
+			<set name="slot">twohand</set>
+			<set name="proficiency">ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_SLINGER</set>
+		</setters>
+	</element>
+
+    <!-- Weapons Properties -->
+    <!-- GROUP PROFICIENCIES -->
+	<element name="Weapon Proficiency (Advanced Weapons)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_ADVANCED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_ADVANCED_MELEE_WEAPONS" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_ADVANCED_RANGED_WEAPONS" />
+		</rules>
+	</element>
+
+	<element name="Weapon Proficiency (Advanced Melee Weapons)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_ADVANCED_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CATCHPOLE" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CAVALRY_FLAIL" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CAVALRY_HAMMER" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CAVALRY_PICK" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CLAYMORE" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BLADE" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_SPEAR" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_ELITE_RAPIER" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN_BRUTAL" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN_HOOK" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN_SICKLE" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_GLADIATOR_NET" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_GUARDIAN_POLEAXE" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_KNIGHTLY_LANCE" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_KNIGHTLY_SWORD" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_MILITARY_FORK" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_PARRYING_DAGGER" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_POLEARM" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_PUNCHING_DAGGER" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_RETURNING_CLUB" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_SABRE" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_SHEATHED_STAFF" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_SIDE_HANDLE_BATON" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_WRATH_AXE" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_WRATH_MAUL" />
+		</rules>
+	</element>
+	<element name="Weapon Proficiency (Advanced Ranged Weapons)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_ADVANCED_RANGED_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_ARBALEST" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLACKPOWDER_PISTOL" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLACKPOWDER_RIFLE" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS_HAND" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_COMPOSITE_LONGBOW" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_COMPOSITE_SHORTBOW" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DRAGON_PISTOL" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DRAGON_RIFLE" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FLAME_BELLOWS" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_CROSSBOW" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_CROSSBOW_HAND" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_CROSSBOW_HEAVY" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_NEEDLER" />
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_SLINGER" />
+		</rules>
+	</element>
+
+	<!-- INDIVIDUAL WEAPON PROFICIENCIES -->
+    <!-- Melee Weapons -->
+	<element name="Weapon Proficiency (Catchpole)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CATCHPOLE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Cavalry Flail)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CAVALRY_FLAIL">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Cavalry Hammer)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CAVALRY_HAMMER">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG25_WEAPON_PROPERTY_ARMOR_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Cavalry Pick)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CAVALRY_PICK">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_ARMOR_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Chakram)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CHAKRAM">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Claymore)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_CLAYMORE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Double Blade)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_BLADE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG25_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Double Spear)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DOUBLE_SPEAR">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_DOUBLE, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Elite Rapier)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_ELITE_RAPIER">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Fighting Chain)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG25_WEAPON_PROPERTY_DOUBLE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Fighting Chain, Brutal)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN_BRUTAL">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG25_WEAPON_PROPERTY_DOUBLE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Fighting Chain, Hook)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN_HOOK">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG25_WEAPON_PROPERTY_DAMAGE, ID_GFG_GHPG25_WEAPON_PROPERTY_DOUBLE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Fighting Chain, Sickle)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FIGHTING_CHAIN_SICKLE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG25_WEAPON_PROPERTY_DAMAGE, ID_GFG_GHPG25_WEAPON_PROPERTY_DOUBLE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Gladiator Net)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_GLADIATOR_NET">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Guardian Poleaxe)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_GUARDIAN_POLEAXE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG25_WEAPON_PROPERTY_DAMAGE, ID_GFG_GHPG25_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Knightly Lance)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_KNIGHTLY_LANCE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Knightly Sword)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_KNIGHTLY_SWORD">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Military Fork)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_MILITARY_FORK">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Parrying Dagger)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_PARRYING_DAGGER">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Polearm)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_POLEARM">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Punching Dagger)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_PUNCHING_DAGGER">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_GFG_GHPG25_WEAPON_PROPERTY_ARMOR_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Returning Club)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_RETURNING_CLUB">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Sabre)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_SABRE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Sheathed Staff)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_SHEATHED_STAFF">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG25_WEAPON_PROPERTY_DOUBLE, Monk, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Side-handle Baton)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_SIDE_HANDLE_BATON">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Wrath Axe)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_WRATH_AXE">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_GFG_GHPG25_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+	<element name="Weapon Proficiency (Wrath Maul)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_WRATH_MAUL">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_GFG_GHPG25_WEAPON_PROPERTY_HAFTED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG25_WEAPON_PROPERTY_MOMENTUM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+
+    <!-- Ranged Weapons -->
+    <element name="Weapon Proficiency (Arbalest)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_ARBALEST">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+	<element name="Weapon Proficiency (Blackpowder Pistol)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLACKPOWDER_PISTOL">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
+	</element>
+	<element name="Weapon Proficiency (Blackpowder Rifle)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLACKPOWDER_RIFLE">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+	<element name="Weapon Proficiency (Blunderbuss)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_BLACKPOWDER, ID_GFG_GHPG25_WEAPON_PROPERTY_CUMBERSOME, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+	<element name="Weapon Proficiency (Blunderbuss, Hand)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLUNDERBUSS_HAND">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
+	</element>
+	<element name="Weapon Proficiency (Composite Longbow)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_COMPOSITE_LONGBOW">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+	<element name="Weapon Proficiency (Composite Shortbow)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_COMPOSITE_SHORTBOW">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+	<element name="Weapon Proficiency (Dragon Pistol)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DRAGON_PISTOL">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
+	</element>
+	<element name="Weapon Proficiency (Dragon Rifle)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_DRAGON_RIFLE">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_BLACKPOWDER, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
+	</element>
+	<element name="Weapon Proficiency (Flame Bellows)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_FLAME_BELLOWS">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_FIRE, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_CUMBERSOME, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_GFG_GHPG25_WEAPON_PROPERTY_MAGAZINE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+	<element name="Weapon Proficiency (Repeater Crossbow)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_CROSSBOW">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG25_WEAPON_PROPERTY_REPEATER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+	<element name="Weapon Proficiency (Repeater Crossbow, Hand)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_CROSSBOW_HAND">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG25_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG25_WEAPON_PROPERTY_REPEATER</supports>
+	</element>
+	<element name="Weapon Proficiency (Repeater Crossbow, Heavy)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_CROSSBOW_HEAVY">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG25_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG25_WEAPON_PROPERTY_REPEATER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+	<element name="Weapon Proficiency (Repeater Needler)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_NEEDLER">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_GFG_GHPG25_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG25_WEAPON_PROPERTY_REPEATER</supports>
+	</element>
+	<element name="Weapon Proficiency (Repeater Slinger)" type="Proficiency" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_REPEATER_SLINGER">
+		<supports>Weapon, Martial, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG25_WEAPON_PROPERTY_MAGAZINE, ID_GFG_GHPG25_WEAPON_PROPERTY_REPEATER, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+	</element>
+</elements>

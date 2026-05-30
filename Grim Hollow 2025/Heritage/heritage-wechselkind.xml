@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Wechselkind</name>
+		<description>The Wechselkind heritage from Grim Hollow - The Players Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="heritage-wechselkind.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-wechselkind.xml" />
+		</update>
+	</info>
+
+	<element name="Wechselkind" type="Race" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_WECHSELKIND">
+		<description>
+			<p>A mother hears a sound in the night and worriedly checks on her sleeping toddler. Nothing appears amiss. But weeks later, an unseen glamour fades and a horror is revealed: the child has been stolen by the faerie, and a wechselkind is left in their place. For the faerie are callous and unchanging beings, and nothing inspires their fascination—and their envy—more than the malleable, bright spark of a young humanoid child.</p>
+			<p class="indent">A wechselkind is a construct crafted of wood, clay, and ceramic in the form of a small child, animated by faerie magic and concealed in illusion that makes them appear identical to a stolen mortal babe. Once that glamour fades and the lie is revealed, a wechselkind is most often cast out by the stolen child’s family, if not destroyed. Occasionally, though, a family takes pity on the poor creature and attempts to raise them, only to find that while their mind develops normally, a wechselkind is forever bound in the unchanging form of a childlike doll.</p>
+			<p class="indent">Whether nurtured or shunned, most wechselkind eventually find themselves living as outcasts, and learning to fend for themselves as best they can. The residual magic of their faerie glamour allows a wechselkind to conceal themself for short periods, whether in the guise of the child they replaced or an adult halfling, gnome, or other person of similar stature. With few physical needs, a wechselkind can easily wander from settlement to settlement, watching the people they encounter with envious eyes, and hoping for a place to finally fit in.</p>
+			<p class="indent">With the spread of the Weeping Pox, many wechselkind have emerged from hiding. With their immunity to disease, they’re able to aid healers in plague-stricken regions, gaining a measure of respect—or even admiration—from those able to see beyond their tragic origins. However, even wechselkind who are accepted among other folk often remain wary, fearing that once their usefulness is at an end, they might be cast out once more.</p>
+			<h5>WECHSELKIND BASE TRAITS</h5>
+			<ul class="unstyled">
+				<li><strong>Age.</strong> Wechselkind do not age as normal creatures do, forever trapped in the doll-like visage of their creation. Their maximum age is a function of natural wear and damage, and they are immune to magical aging effects.</li>
+				<li><strong>Size.</strong> Built to resemble a child, Wechselkind are between 2 and 3 feet tall and weigh between 35 and 55 pounds. Your size is Small.</li>
+				<li><strong>Speed.</strong> 30 feet. You can reduce your Speed by 5 feet to gain an extra traditional trait.</li>
+			</ul>
+			<h5>TRADITIONAL WECHSELKIND TRAITS</h5>
+			<p>The magical and artificial nature shapes the aptitudes and innate features of all Wechselkind. If you wish to play a traditional Wechselkind, it is recommended you select from the following traits:</p>
+			<ul>
+				<li><strong>Combat:</strong> Creature Cover, Magical Fortification</li>
+				<li><strong>Exploration:</strong> Artificial Form, Helping Hand, Pass Through</li>
+				<li><strong>Roleplaying:</strong> Magical Savant (Disguise Self), Magical Savvy (Minor Illusion), Intuitive Acrobat</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="30" bonus="base" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Wechselkind)" supports="GH Heritage Trait" number="8" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			<select type="Racial Trait" name="Stout Build (Optional)" supports="GH Stout Build Option" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Wechselkind)" supports="GH Heritage Trait" number="6" requirements="ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_CREATURE_COVER" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_MAGICAL_FORTIFICATION" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_ARTIFICIAL_FORM" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_HELPING_HAND" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_PASS_THROUGH" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG25_RACE_TRAIT_TRADITIONAL_WECHSELKIND_MAGIC" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_INTUITIVE_ACROBAT" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+		</rules>
+	</element>
+
+	<element name="Traditional Wechselkind Magic" type="Racial Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_TRAIT_TRADITIONAL_WECHSELKIND_MAGIC">
+		<supports>GH Heritage Trait, GH Roleplaying Trait</supports>
+		<description>
+			<p>You know the <i>Minor Illusion</i> cantrip. Additionally, you know the <i>Disguise Self</i> spell, which you can cast once per Long Rest without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You know the Minor Illusion cantrip. Additionally, you can cast Disguise Self once per Long Rest without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MINOR_ILLUSION" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DISGUISE_SELF" />
+		</rules>
+	</element>
+</elements>

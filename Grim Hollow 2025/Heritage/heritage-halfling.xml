@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Halfling</name>
+		<description>The Halfling heritage from Grim Hollow - The Players Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="heritage-halfling.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-halfling.xml" />
+		</update>
+	</info>
+
+	<element name="Halfling" type="Race" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_HALFLING">
+		<description>
+			<p>Over the centuries in which humankind proved an unstoppable force in conquering Etharis, humans earned the enmity of most other folk. All who tried to oppose them were met with violence. One group, however, chose not to contest human ascendancy and instead survived by adapting to human hegemony.</p>
+			<p class="indent">The Era of Expansion did not affect the halflings of Etharis as it did the folk of other heritages. Halflings hold less value for mundane riches like gold or jewels and were therefore happy paying tithes to stronger and better-armed humans who offered them protection. Though brave and spirited, halflings lack the ambition for nation building. Their humble shires easily adapted to becoming breadbaskets for human-made empires and kingdoms. Halflings also fit into human culture perfectly by acquiring useful positions such as merchants, advisors, teachers, or scholars. Even though the halflings did not agree with the violent ways of humans, they kept their silence and ensured their survival.</p>
+			<p class="indent">Halflings are a resilient but peaceful people. What most of these tiny folk seek in life is a quiet place to settle, far away from conflict and war. They enjoy good music, fine food, and a good laugh when they can, and have a passion for lore, learning, and wild tales. But this does not mean that halflings are unable to fend for themselves in a dangerous world. They’re courageous folk when standing against foes they cannot elude or escape, and accounts of halfling adventurers seeking ancient and hidden knowledge are some of the most famous stories among their kind.</p>
+			<p class="indent">Halflings have long used the lore they gather to build impressive libraries on specific subjects. Within the countless volumes of these libraries lie generations of knowledge pertaining to the interests and passions of these folk, including domestic crafts, nature, and history.</p>
+			<h5>HALFLING BASE TRAITS</h5>
+			<ul class="unstyled">
+				<li><strong>Age.</strong> A Halfling reaches adulthood at the age of 20 and generally lives into the middle of their second century.</li>
+				<li><strong>Size.</strong> Halflings average about 3 feet tall and weigh about 40 pounds. Your size is Small.</li>
+				<li><strong>Speed.</strong> 30 feet. You can reduce your Speed by 5 feet to gain an extra heritage trait.</li>
+			</ul>
+			<h5>TRADITIONAL HALFLING TRAITS</h5>
+			<p>Many Halflings possess innate instincts of courage and curiosity, even if only a few get the chance to use them. If you wish to play a traditional Halfling, it is recommended you select from the following traits:</p>
+			<ul>
+				<li><strong>Combat:</strong> Brave, Creature Cover, Lucky</li>
+				<li><strong>Exploration:</strong> Helping Hand, Pass Through, Power Nap</li>
+				<li><strong>Roleplaying:</strong> Artisanal Focus (Brewer’s Supplies, Cook’s Utensils, or Potter’s Tools), Embrace the Past</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<stat name="innate speed" value="30" bonus="base" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Halfling)" supports="GH Heritage Trait" number="8" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			<select type="Racial Trait" name="Stout Build (Optional)" supports="GH Stout Build Option" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Halfling)" supports="GH Heritage Trait" number="6" requirements="ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_BRAVE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_CREATURE_COVER" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_LUCKY" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_HELPING_HAND" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_PASS_THROUGH" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_POWER_NAP" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG25_RACE_TRAIT_TRADITIONAL_HALFLING_CRAFTING" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG25_RACE_TRAIT_EMBRACE_THE_PAST" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+		</rules>
+	</element>
+
+	<element name="Traditional Halfling Crafting" type="Racial Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_TRAIT_TRADITIONAL_HALFLING_CRAFTING">
+		<supports>GH Heritage Trait, GH Roleplaying Trait</supports>
+		<description>
+			<p>You revere the crafting skill of ancestors long dead. You have proficiency with your choice of Brewer's Supplies, Cook's Utensils, or Potter's Tools.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Artisan's Tool (Halfling Crafting)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES||ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS||ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS" />
+		</rules>
+	</element>
+</elements>

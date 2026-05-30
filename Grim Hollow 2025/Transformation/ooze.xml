@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Ooze Transformation</name>
+        <description>Ooze Transformation from Grim Hollow: Player's Guide (2025)</description>
+        <author>Ghostfire Gaming</author>
+        <update version="0.1.0">
+            <file name="ooze.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/ooze.xml" />
+        </update>
+    </info>
+
+    <!-- Items -->
+    <element name="Ooze Transformation (Stage 1)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_OOZE_LEVEL_1">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_OOZE" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_OOZE" />
+        </rules>
+    </element>
+    <element name="Ooze Transformation (Stage 2)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_OOZE_LEVEL_2">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_OOZE" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_2" requirements="ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_1"/>
+        </rules>
+    </element>
+    <element name="Ooze Transformation (Stage 3)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_OOZE_LEVEL_3">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_OOZE" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_3" requirements="ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_2"/>
+        </rules>
+    </element>
+    <element name="Ooze Transformation (Stage 4)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_OOZE_LEVEL_4">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_OOZE" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_4" requirements="ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_3"/>
+        </rules>
+    </element>
+
+    <!-- Base Feat -->
+    <element name="Ooze" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_OOZE">
+        <description>
+            <p>The Weeping Pox eats away at the flesh of a suffering victim, their life force slowly draining away day after day and hour after excruciating hour. Then, when all hope is gone, the victim’s family notices gradual improvement until they’re back on their feet. A day later, however, the newly cured person finds their body bending in strange ways, much to the horror of their loved ones.</p>
+            <p>A stooped figure in a plague mask mutters to herself as she hobbles around the figure strapped to a table. The physician applies several different ointments to the figure’s flesh, ignoring the screams of pain that accompany each application. Finally, the doctor sighs in satisfaction as the patient’s flesh turns translucent.</p>
+            <p>An adventurer falls into a pit, causing his companions to rush forth. The slime at the bottom of the pit coalesces around the poor rogue, seeping past the edges of his armor. The allies pull the rogue out and burn away the corrosive slime, but the rogue faints. When he awakens, he feels better. And he is half the size he was.</p>
+            <p>The horror of the unknown in Grim Hollow is strong, and people perhaps know the least about the disgusting and mysterious Oozes. Only one thing might be as terrifying as being slowly killed by an Ooze: becoming one. You become the slime-covered monster of nightmares. And they want to kill you.</p>
+            
+            <h4>Becoming an Ooze</h4>
+            <p>It may seem like Oozes are monsters that only appear in the deepest, dankest recesses of dungeons and cave complexes that never see the light. While they certainly do haunt those places, Oozes in Etharis are never far away. Urban areas with poor sanitation are breeding ground for Oozes, as are pastoral locations with proximity to the Fey Realms.</p>
+            <p>And while some Ooze creatures may only devour and destroy, there are just as many — especially those who have been created or experimented on by the curious and the morbid — who seek to spread their oozy nature to others.</p>
+            <p>It is rumored by sage and peasant alike that the Filth Grazer, the force allegedly behind the creation and spread of the Weeping Pox, devours organic life by reducing it first into a putrescent sludge. Mortals are but food for aetheric horrors, and the Filth Grazer prefers theirs gurgling, gooey, and foul.</p>
+            <p>The truly mad might seek to gain the benefits of becoming an Ooze, thinking that being formless would provide power. Regardless of how it happens, people who become an Ooze find themselves in a terrible race: which will they lose first, their body or their mind?</p>
+            
+            <h4>Reversing Ooze Traits</h4>
+            <p>Ooze features are terrible and difficult to undo once they have taken hold. Excruciating experimental trials might be able to alleviate some of the symptoms for a while, but a complete cure would take decades of knowledge and wealth that few in Etharis possess. Even then, it would still require a great deal of luck.</p>
+            
+            <h4>Ooze Stages</h4>
+            <p>At each stage of this Transformation, follow the instructions provided for that stage.</p>
+            
+            <h4>Achieving a New Stage</h4>
+            <p>To move from one stage to the next higher one in this Transformation, an event or some other notable occurrence tied to the story of the character should take place. The following events are suggestions for ones that might trigger a move to the next stage of the Transformation:</p>
+            <ul>
+                <li>Become Bloodied or Unconscious by the attacks of an Ooze</li>
+                <li>Undergo experimentation by an arcanist or diabolist</li>
+                <li>Suffer from the Weeping Pox or other disease</li>
+                <li>Study an ancient tome from the time when Oozes first came to Etharis</li>
+                <li>Consume a recently slain Ooze</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You are undergoing the Ooze Transformation.</description>
+        </sheet>
+        <rules>
+            <stat name="ooze:stage" value="0" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_1" />
+        </rules>
+    </element>
+
+    <!-- Transformation Stage 1 -->
+    <element name="Ooze (Stage 1)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_1">
+        <prerequisite>Ooze Transformation</prerequisite>
+        <requirements>ID_GFG_GHPG25_FEAT_TRANSFORMATION_OOZE</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you initially undergo the Ooze Transformation, you gain the Ooze Form Boon and one other Stage 1 Boon of your choice. You also gain the Stage 1 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_OOZE_FORM" />
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_SLUGGISH" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Ooze Form, Stage 1 Boon, Sluggish (Flaw)</description>
+        </sheet>
+        <rules>
+            <stat name="ooze:stage" value="1" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_OOZE_FORM" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_SLUGGISH" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 1)" supports="Ooze 2025 Boon 1" />
+        </rules>
+    </element>
+
+    <element name="Boon: Ooze Form" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_OOZE_FORM">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_1</requirements>
+        <description>
+            <p>You become an Ooze in addition to any other creature type(s) you are. You gain Blindsight with a range of 30 feet. If you already have Blindsight, your range increases by 30 feet.</p>
+            <p>You can will your body to melt and flow, becoming more fluid than solid. As a Bonus Action, you manifest your Ooze Form. You become amorphous, able to move through a space as narrow as 1 inch without expending extra movement, and you are immune to the Grappled and Restrained conditions. You remain in Ooze Form for 1 minute or until you use your Bonus Action to return to normal.</p>
+            <p>You can manifest your Ooze Form a number of times equal to your Proficiency Bonus plus your Transformation stage. You regain all uses of this feature after finishing a Long Rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{ooze form:uses}}/Long Rest">
+            <description>Manifest Ooze Form for 1 minute (or end as BA). Amorphous (move through 1-inch spaces), immune to Grappled and Restrained.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_OOZE" />
+            <grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+            <stat name="blindsight:range" value="30" bonus="base" />
+            <stat name="ooze form:uses" value="proficiency" />
+            <stat name="ooze form:uses" value="ooze:stage" />
+        </rules>
+    </element>
+
+    <element name="Boon: Mutable Corpus" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_MUTABLE_CORPUS">
+        <supports>Ooze 2025 Boon 1</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_1</requirements>
+        <description>
+            <p>You have abundant control over your Ooze Form. Each time you manifest your Ooze Form, you can choose to augment it with one of the following options:</p>
+            <ul>
+                <li><strong>Breathless.</strong> You do not need to breath.</li>
+                <li><strong>Disguise.</strong> You remold your features and body to look different. You can change your apparent species, seem 1 foot shorter or taller, and appear heavier or lighter. You must adopt a form that has the same basic arrangement of limbs as you have. To discern that you are disguised, a creature must take the Study action to inspect your appearance and succeed on an Intelligence (Investigation) check with a DC equal to 10 plus your Constitution modifier plus your Transformation Stage.</li>
+                <li><strong>Transparent.</strong> You body becomes transparent. You have Advantage on Dexterity (Stealth) checks.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When manifesting Ooze Form, augment it with one:&#13;
+            • Breathless: Do not need to breathe.&#13;
+            • Disguise: Remold features (Study action vs DC {{mutable corpus:dc}} Int (Investigation) to discern).&#13;
+            • Transparent: Advantage on Dex (Stealth) checks.</description>
+        </sheet>
+        <rules>
+            <stat name="mutable corpus:dc" value="10" />
+            <stat name="mutable corpus:dc" value="constitution:modifier" />
+            <stat name="mutable corpus:dc" value="ooze:stage" />
+        </rules>
+    </element>
+
+    <element name="Boon: Slimy Mien" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SLIMY_MIEN">
+        <supports>Ooze 2025 Boon 1</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_1</requirements>
+        <description>
+            <p>While manifesting your Ooze Form, you gain the following additional benefits:</p>
+            <ul>
+                <li>You are immune to the Charmed condition.</li>
+                <li>The range of your Blindsight increases by 30 feet.</li>
+                <li>You can communicate with Oozes within 30 feet as if you shared a common language. While Oozes are not automatically Friendly to you, they do not see you as food. You can ask them simple questions, and they may choose to respond if they are not Hostile.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>While in Ooze Form: Immune to Charmed, Blindsight range +30 ft, and can communicate with Oozes within 30 ft.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Sluggish" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SLUGGISH">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_1</requirements>
+        <description>
+            <p>Your body frequently shifts and melts without control, making you sluggish. Your speed decreases by 5 feet for every Transformation Stage you achieve.</p>
+            <p>In addition, your skin glistens with oozy droplets leaving a trail anywhere you go. Ability checks made to follow your tracks are made with Advantage.</p>
+        </description>
+        <sheet>
+            <description>Ability checks to follow your tracks have Advantage.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:misc" value="-5" />
+            <stat name="speed:misc" value="-5" requirements="ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_2" />
+            <stat name="speed:misc" value="-5" requirements="ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_3" />
+            <stat name="speed:misc" value="-5" requirements="ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_4" />
+        </rules>
+    </element>
+
+    <!-- Transformation Stage 2 -->
+    <element name="Ooze (Stage 2)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_2">
+        <prerequisite>Ooze Transformation Stage 1</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 2 of the Ooze Transformation, you select one Stage 2 Boon and gain the Stage 2 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_MELTED_APPEARANCE" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 2 Boon. Melted Appearance (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="ooze:stage" value="2" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 2)" supports="Ooze 2025 Boon 1||Ooze 2025 Boon 2" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_MELTED_APPEARANCE" />
+        </rules>
+    </element>
+
+    <element name="Boon: Elastic Limbs" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ELASTIC_LIMBS">
+        <supports>Ooze 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_2</requirements>
+        <description>
+            <p>Your limbs have become elastic and tacky, allowing you to reach distant enemies and climb walls.</p>
+            <p>Your reach increases by 5 feet and you gain a Climb Speed equal to your Speed. You can move up, down, and across vertical surfaces and along ceilings, while leaving your hands free. Creatures you are grappling have Disadvantage on Strength (Athletics) and Dexterity (Acrobatics) checks to escape.</p>
+        </description>
+        <sheet>
+            <description>Reach +5 ft. Climb Speed = Speed (can climb walls/ceilings hands-free). Creatures you grapple have Disadvantage to escape.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:climb" value="speed" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Boon: Viscous Durability" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_VISCOUS_DURABILITY">
+        <supports>Ooze 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_2</requirements>
+        <description>
+            <p>Your mind and body become even more Ooze-like. You have Immunity to the Frightened condition and Acid damage.</p>
+            <p>When you gain this Boon, choose Cold, Fire, or Lightning. Gain resistance to the chosen damage type.</p>
+        </description>
+        <sheet>
+            <description>Immune to Frightened condition and Acid damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_ACID" />
+            <select type="Feat Feature" name="Viscous Durability Resistance" supports="Ooze 2025 Resistance" />
+        </rules>
+    </element>
+
+    <element name="Cold" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_VISCOUS_DURABILITY_COLD">
+        <supports>Ooze 2025 Resistance</supports>
+        <compendium display="false" />
+        <description>
+            <p>You gain Resistance to Cold damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+
+    <element name="Fire" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_VISCOUS_DURABILITY_FIRE">
+        <supports>Ooze 2025 Resistance</supports>
+        <compendium display="false" />
+        <description>
+            <p>You gain Resistance to Fire damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+    </element>
+
+    <element name="Lightning" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_VISCOUS_DURABILITY_LIGHTNING">
+        <supports>Ooze 2025 Resistance</supports>
+        <compendium display="false" />
+        <description>
+            <p>You gain Resistance to Lightning damage.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Melted Appearance" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_MELTED_APPEARANCE">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_2</requirements>
+        <description>
+            <p>Your body is now a hideous lump of dripping flesh excreting foul smelling slime. While your form remains roughly humanoid, the horror of what you are is clear to anyone that looks upon your molten face. You have Disadvantage when you use the Influence action to make Charisma-based ability checks made against creatures that are not Aberrations or Oozes.</p>
+            <p>In addition, your Transformation to an Ooze has liquefied many of your organs and dimmed your senses. Your eyes melt and run down your face and there is nothing but flesh where your ears once were. You permanently have the Blinded condition beyond the range of your Blindsight.</p>
+        </description>
+        <sheet>
+            <description>Disadvantage on Charisma (Influence) checks vs non-Aberrations/Oozes. Permanently Blinded beyond Blindsight range.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 3 -->
+    <element name="Ooze (Stage 3)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_3">
+        <prerequisite>Ooze Transformation Stage 2</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 3 of the Ooze Transformation, you select one Stage 3 Boon and gain the Stage 3 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_PHYSICAL_DETERIORATION" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 3 Boon. Physical Deterioration (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="ooze:stage" value="3" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 3)" supports="Ooze 2025 Boon 1||Ooze 2025 Boon 2||Ooze 2025 Boon 3" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_PHYSICAL_DETERIORATION" />
+        </rules>
+    </element>
+
+    <element name="Boon: Corrosive Membrane" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_CORROSIVE_MEMBRANE">
+        <supports>Ooze 2025 Boon 3</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_3</requirements>
+        <description>
+            <p>When you manifest your Ooze Form, it lasts for 10 minutes.</p>
+            <p>While manifesting your Ooze Form, you are covered with a sheen of acidic slime. When a creature hits you with a melee attack, it takes Acid damage equal to 1d6 plus your Transformation Stage. Nonmagical ammunition is destroyed immediately after hitting you and dealing damage.</p>
+            <p>Any nonmagical weapon takes a cumulative −1 penalty to attack rolls immediately after dealing damage or coming into contact with you. The weapon is destroyed if the penalty reaches −5. The penalty can be removed by casting the Mending spell on the weapon.</p>
+            <p>Additionally, you can eat through 2 feet of nonmagical wood or metal in 1 minute simply by touching it.</p>
+        </description>
+        <sheet>
+            <description>Ooze Form lasts 10 mins. While in Ooze Form:&#13;
+            • Melee attackers take 1d6 + {{ooze:stage}} Acid dmg.&#13;
+            • Nonmagical ammo destroyed on hit.&#13;
+            • Nonmagical weapons take cumulative -1 to attack rolls on hit/contact (destroyed at -5, Mending removes).&#13;
+            • Can eat through 2ft of nonmagical wood/metal in 1 min by touching.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Engulf" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ENGULF">
+        <supports>Ooze 2025 Boon 3</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_3</requirements>
+        <description>
+            <p>When you manifest your Ooze Form, it lasts for 10 minutes.</p>
+            <p>While manifesting your Ooze Form, you can envelop your foes in your gooey body. As a Magic action, you can try to engulf a creature of your size category or smaller that is within 5 feet of you. The target makes a Strength saving throw, with a DC equal to 10 plus your Strength modifier plus your Transformation Stage. On a failure, the creature is engulfed.</p>
+            <p>While engulfed, a target has Total Cover against attacks and other effects outside of you, and when you move, the engulfed target moves with you. While engulfed, a creature takes 4d6 Acid damage at the start of each of its turns, is suffocating, has the Restrained condition, and repeats the save at the end of each of its turns, ending the effect on a success. An engulfed creature that is reduced to 0 Hit Points is fully digested, leaving no body or nonmagical equipment behind.</p>
+        </description>
+        <sheet action="Magic Action">
+            <description>Ooze Form lasts 10 mins. While in Ooze Form:&#13;
+            • Engulf target (your size or smaller, w/in 5ft). Target makes DC {{engulf:dc}} Str save. Fail: Engulfed.&#13;
+            • Engulfed: Total Cover from outside, moves w/ you, takes 4d6 Acid dmg at start of its turns, suffocating, Restrained. Repeats save at end of its turns. 0 HP = fully digested.</description>
+        </sheet>
+        <rules>
+            <stat name="engulf:dc" value="10" />
+            <stat name="engulf:dc" value="strength:modifier" />
+            <stat name="engulf:dc" value="ooze:stage" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Physical Deterioration" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_PHYSICAL_DETERIORATION">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_3</requirements>
+        <description>
+            <p>Your skin sloughs away in thick, syrupy sheets and your bones become like melted wax. The sun itself burns you, and holy light becomes lethal. Now your reactions slow as much as your pace.</p>
+            <p>You are Vulnerable to Radiant damage, and you have Disadvantage on Dexterity ability checks and saving throws.</p>
+        </description>
+        <sheet>
+            <description>Disadvantage on Dexterity ability checks and saving throws.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_RADIANT" />
+        </rules>
+    </element>
+
+    <!-- Transformation Stage 4 -->
+    <element name="Ooze (Stage 4)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_4">
+        <prerequisite>Ooze Transformation Stage 3</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 4 of the Ooze Transformation, you select one Stage 4 Boon and gain the Stage 4 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_SLIPPERY_EGO" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 4 Boon. Slippery Ego (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="ooze:stage" value="4" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 4)" supports="Ooze 2025 Boon 1||Ooze 2025 Boon 2||Ooze 2025 Boon 3||Ooze 2025 Boon 4" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_SLIPPERY_EGO" />
+        </rules>
+    </element>
+
+    <element name="Boon: Legion of Slime" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_LEGION_OF_SLIME">
+        <supports>Ooze 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_4</requirements>
+        <description>
+            <p>When you manifest your Ooze Form, it lasts until you finish a Short or Long Rest.</p>
+            <p>While you are manifesting your Ooze Form and you are hit by an attack that causes you to become Bloodied, you can use a Reaction to split into two identical Oozes. Each Ooze uses your game statistics, except that they are one size category smaller than your normal size, and your remaining Hit Points and Hit Point Maximum are divided evenly between the two Oozes (round down). Your equipment is not duplicated; all of it remains on one of the Oozes.</p>
+            <p>Each Ooze acts on your Initiative. They can each move independently, but they can only collectively take one action and Bonus Action on your turn and one Reaction per round.</p>
+            <p>After you use this feature, you cannot use it again until after you finish a Long Rest.</p>
+        </description>
+        <sheet action="Reaction" usage="1/Long Rest">
+            <description>Ooze Form lasts until Short/Long Rest.&#13;
+            While in Ooze Form, if hit by attack causing you to become Bloodied: split into two identical Oozes (1 size smaller, HP/Max HP divided evenly, equipment on one). Act on your Initiative, move independently, but share 1 Action, 1 BA, 1 Reaction per round.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Mimic Object" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_MIMIC_OBJECT">
+        <supports>Ooze 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_4</requirements>
+        <description>
+            <p>When you manifest your Ooze Form, it lasts until you finish a Short or Long Rest.</p>
+            <p>While manifesting your Ooze Form, you can use a Magic action to transform into an object of your size or up to two sizes smaller. Any equipment worn or carried is dropped in your space. While mimicking an object, you retain your statistics.</p>
+            <p>While mimicking an object, you are indistinguishable from the object and you can take a Reaction when you are touched to adhere to the creature that touches you. The creature has the Grappled condition. The DC to escape is equal to DC equal to 8 plus your Constitution modifier plus your Transformation Stage. Ability checks made to escape this grapple have Disadvantage.</p>
+        </description>
+        <sheet action="Magic Action">
+            <description>Ooze Form lasts until Short/Long Rest.&#13;
+            While in Ooze Form: transform into object (your size or up to 2 sizes smaller). Drop equipment. Indistinguishable from object.&#13;
+            Reaction when touched: adhere to creature (Grappled, escape DC {{mimic object:dc}}, Disadv on escape checks).</description>
+        </sheet>
+        <rules>
+            <stat name="mimic object:dc" value="8" />
+            <stat name="mimic object:dc" value="constitution:modifier" />
+            <stat name="mimic object:dc" value="ooze:stage" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Slippery Ego" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SLIPPERY_EGO">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_OOZE_LEVEL_4</requirements>
+        <description>
+            <p>As your brain becomes just one more part of the gooey mass that is you, and your sense of self becomes ever more tentative, the slightest distraction can cause you to forget who you were.</p>
+            <p>The first time you become Bloodied after a Long Rest, or whenever you roll a 1 on a saving throw, the pain or surprise causes you lose your grip on your mind. You can’t cast spells, activate magic items, understand language, or communicate in any intelligible way. You are overwhelmed with hunger and take the Attack action on your next turn to make melee attacks against a random creature within reach. If there are no creatures within reach, you move until you are adjacent to the nearest creature, using the Dash action if necessary.</p>
+            <p>You may attempt a DC 18 Wisdom saving throw at the end of each of your turns to regain your sense of self. This effect ends automatically when you finish a Short or Long Rest.</p>
+        </description>
+        <sheet>
+            <description>1st time Bloodied after Long Rest OR roll 1 on saving throw: lose mind. Can't cast, use items, understand/communicate. Must Attack random creature in reach next turn (or Dash to nearest). DC 18 Wis save at end of turns to regain self. Ends on Short/Long Rest.</description>
+        </sheet>
+    </element>
+</elements>

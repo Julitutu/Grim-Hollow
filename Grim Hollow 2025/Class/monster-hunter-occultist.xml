@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Occultist Guild</name>
+		<description>The Occultist Guild subclass for the Monster Hunter from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="monster-hunter-occultist.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/monster-hunter-occultist.xml" />
+		</update>
+	</info>
+
+	<element name="Occultist Guild" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_MONSTER_HUNTER_OCCULTIST_GUILD">
+		<supports>Hunting Guild</supports>
+		<description>
+			<p class="flavor">Hunt Mages and Magical Adversaries</p>
+			<p>In Etharis, there are those who fear magic, and those who seek to understand it. Monster Hunters from the Occultist Guild know folk from both sides are equally dangerous. An Occultist investigates the arcane, the supernatural, and the uncanny, while avoiding the influence of superstition or ideology. Despite their reputation as mage hunters, Occultists don't burn their enemies at the stake—Occultists put them to the sword, as that's what swords are for.</p>
+			<p class="indent">Knowledge and magic give Occultists an edge over their mystical adversaries. Their spells are used to detect and defend against dangerous arcana, and, above all, magic is used to destroy monsters that can't be harmed by steel.</p>
+			<h5>Occultist Spellcasting</h5>
+			<table class="class-features">
+				<tr style="font-weight: bold">
+					<td rowspan="2">Level</td>
+					<td rowspan="2">Cantrips Known</td>
+					<td rowspan="2">Prepared Spells</td>
+					<td colspan="4" style="vertical-align:bottom; border-bottom: 0px">Spell Slots per Spell Level</td>
+				</tr>
+				<tr style="font-weight: bold"><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+				<tr><td>3</td><td>2</td><td>3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>4</td><td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>5</td><td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>6</td><td>2</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td>7</td><td>2</td><td>5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>8</td><td>2</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>9</td><td>2</td><td>6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10</td><td>3</td><td>7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11</td><td>3</td><td>8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12</td><td>3</td><td>8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13</td><td>3</td><td>9</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>14</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16</td><td>3</td><td>11</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>17</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_ACOLYTE_OF_THE_OCCULT" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_SPELLCASTING" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_ARCANE_INTERFERENCE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_MAGE_HUNTER" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_OCCULT_KNOWLEDGE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_MAGICAL_AEGIS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_ARCANE_RESPONSE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_ACOLYTE_OF_THE_OCCULT" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_SPELLCASTING" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_ARCANE_INTERFERENCE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_MAGE_HUNTER" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_OCCULT_KNOWLEDGE" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_MAGICAL_AEGIS" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_ARCANE_RESPONSE" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Acolyte of the Occult" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_ACOLYTE_OF_THE_OCCULT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_OCCULTIST_GUILD_ACOLYTE_OF_THE_OCCULT</requirements>
+		<description>
+			<p>You gain proficiency in the Arcana skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Spellcasting" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_SPELLCASTING">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_OCCULTIST_GUILD_SPELLCASTING</requirements>
+		<description>
+			<p>Your study of the occult gives you the ability to cast spells.</p>
+			<p class="indent"><strong><em>Cantrips.</em></strong> You learn two cantrips of your choice from the Wizard spell list. Whenever you gain a Monster Hunter level, you can replace one of these cantrips with another of your choice from the Wizard spell list.</p>
+			<p class="indent">When you reach Monster Hunter level 10, you learn another Wizard cantrip of your choice.</p>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Occultist Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended spell slots when you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Prepared Spells of Level 1+.</em></strong> You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 Wizard spells. <em>Burning Hands</em>, <em>Detect Magic</em>, and <em>Protection from Evil and Good</em> are recommended.</p>
+			<p class="indent">The number of spells on your list increases as you gain Monster Hunter levels, as shown in the Prepared Spells column of the Occultist Spellcasting table. Whenever that number increases, choose additional spells from the Wizard spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 7 Monster Hunter, your list of prepared spells can include five Wizard spells of levels 1 and 2 in any combination.</p>
+			<p class="indent"><strong><em>Changing Your Prepared Spells.</em></strong> Whenever you gain a Monster Hunter level, you can replace one spell on your list with another Wizard spell.</p>
+			<p class="indent"><strong><em>Spellcasting Ability.</em></strong> Intelligence is your spellcasting ability for your Wizard spells.</p>
+			<p class="indent"><strong><em>Spellcasting Focus.</em></strong> You can use an Arcane Focus as Spellcasting Focus for your Wizard spells.</p>
+		</description>
+		<sheet alt="Spellcasting">
+			<description>Whenever you gain a Monster Hunter level, you can replace one of your chosen cantrips or prepared spells with another Wizard spell of your choice.</description>
+		</sheet>
+		<spellcasting name="Occultist" ability="Intelligence" allowReplace="true">
+			<list>Wizard</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			
+			<stat name="occultist:spellcasting:slots:1" value="2" level="3" />
+			<stat name="occultist:spellcasting:slots:1" value="1" level="4" />
+			<stat name="occultist:spellcasting:slots:1" value="1" level="7" />
+			<stat name="occultist:spellcasting:slots:2" value="2" level="7" />
+			<stat name="occultist:spellcasting:slots:2" value="1" level="10" />
+			<stat name="occultist:spellcasting:slots:3" value="2" level="14" />
+			<stat name="occultist:spellcasting:slots:3" value="1" level="17" />
+			<stat name="occultist:spellcasting:slots:4" value="1" level="19" />
+
+			<select type="Spell" name="Cantrip (Occultist)" supports="$(spellcasting:list), 0" number="2" spellcasting="Occultist" />
+			<select type="Spell" name="Cantrip (Occultist)" supports="$(spellcasting:list), 0" level="10" spellcasting="Occultist" />
+			
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="3" spellcasting="Occultist" />
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Occultist"/>
+			<select type="Spell" name="Spell (Occultist)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" spellcasting="Occultist"/>
+		</rules>
+	</element>
+
+	<element name="Level 3: Arcane Interference" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_ARCANE_INTERFERENCE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_OCCULTIST_GUILD_ARCANE_INTERFERENCE</requirements>
+		<description>
+			<p>You have Advantage on saving throws against spells cast by creature types in your Monster Grimoire. Additionally, when a creature you can see within 60 feet of you casts a spell or makes a spell attack, you can use Studied Response against that creature before the spell is cast.</p>
+		</description>
+		<sheet alt="Arcane Interference">
+			<description>You have Advantage on saving throws against spells cast by creature types in your Monster Grimoire. Additionally, when a creature you can see within 60 feet of you casts a spell or makes a spell attack, you can use Studied Response against that creature before the spell is cast.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 7: Mage Hunter" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_MAGE_HUNTER">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_OCCULTIST_GUILD_MAGE_HUNTER</requirements>
+		<description>
+			<p>You consider Humanoids that can cast spells as being a creature type in your Monster Grimoire.</p>
+			<p class="indent">Additionally, when you damage a creature type in your Monster Grimoire that is concentrating, it has Disadvantage on the saving throw it makes to maintain its Concentration.</p>
+		</description>
+		<sheet alt="Mage Hunter">
+			<description>Humanoids that can cast spells count as a creature type in your Monster Grimoire. When you damage a creature type in your Monster Grimoire that is concentrating, it has Disadvantage on the saving throw to maintain its Concentration.</description>
+		</sheet>
+	</element>
+
+	 <element name="Level 10: Occult Knowledge" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_OCCULT_KNOWLEDGE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_OCCULTIST_GUILD_OCCULT_KNOWLEDGE</requirements>
+		<description>
+			<p>Your knowledge of magic has increased so that you learn to cast Rituals. You can cast any spell as a Ritual if that spell has the Ritual tag and it's a spell you have prepared.</p>
+			<p class="indent">In addition, you learn two spells of your choice. These spells can come from the Cleric, Druid, or Wizard spell list or any combination thereof (see a class's section for its spell list). A spell you choose must have the Ritual tag.</p>
+			<p class="indent">When you reach Monster Hunter level 14, you can replace one of the spells you know from this feature with another spell of your choice from any spell list. The new spell must have the Ritual tag.</p>
+		</description>
+		<sheet alt="Occult Knowledge">
+			<description>You can cast any prepared spell as a Ritual if it has the Ritual tag. You also learn 2 Ritual spells from the Cleric, Druid, or Wizard spell lists.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Ritual Spell (Occult Knowledge)" supports="Ritual, (Cleric||Druid||Wizard)" number="2" spellcasting="Occultist" allowReplace="true" />
+		</rules>
+	</element>
+
+	<element name="Level 15: Magical Aegis" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_MAGICAL_AEGIS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_OCCULTIST_GUILD_MAGICAL_AEGIS</requirements>
+		<description>
+			<p>You gain the ability to extend a protective charm. You radiate an unseeable aura in a 20-foot Emanation that originates from you. The aura is inactive while you have the Incapacitated condition. You and allies in your aura have Advantage on saving throws against spells cast by creature types in your Monster Grimoire.</p>
+			<p class="indent">Additionally, you always have the Counterspell spell prepared. You can cast Counterspell once without expending a spell slot. Once you cast the spell with this feature, you can't do so in this way again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Magical Aegis" usage="1/Long Rest">
+			<description>You radiate a 20-foot Emanation (inactive while Incapacitated). You and allies in the aura have Advantage on saving throws against spells cast by creature types in your Monster Grimoire. &#13;
+			You can cast Counterspell once without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COUNTERSPELL" spellcasting="Occultist" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 18: Arcane Response" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_OCCULTIST_GUILD_ARCANE_RESPONSE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_OCCULTIST_GUILD_ARCANE_RESPONSE</requirements>
+		<description>
+			<p>You have learned to anticipate your enemies well enough to rapidly cast spells in response to their attacks. When you use Studied Response, you can cast a spell. The spell must have a casting time of an action and must target only that creature.</p>
+		</description>
+		<sheet alt="Arcane Response">
+			<description>When you use Studied Response, you can cast a spell with a casting time of 1 action that targets only that creature.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Acolyte of the Occult Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_OCCULTIST_GUILD_ACOLYTE_OF_THE_OCCULT" />
+	<element name="Spellcasting Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_OCCULTIST_GUILD_SPELLCASTING" />
+	<element name="Arcane Interference Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_OCCULTIST_GUILD_ARCANE_INTERFERENCE" />
+	<element name="Mage Hunter Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_OCCULTIST_GUILD_MAGE_HUNTER" />
+	<element name="Occult Knowledge Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_OCCULTIST_GUILD_OCCULT_KNOWLEDGE" />
+	<element name="Magical Aegis Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_OCCULTIST_GUILD_MAGICAL_AEGIS" />
+	<element name="Arcane Response Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_OCCULTIST_GUILD_ARCANE_RESPONSE" />
+
+</elements>

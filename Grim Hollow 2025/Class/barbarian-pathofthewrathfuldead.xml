@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Wrathful Dead Subclass</name>
+		<description>Path of the Wrathful Dead subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="barbarian-pathofthewrathfuldead.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/barbarian-pathofthewrathfuldead.xml" />
+		</update>
+	</info>
+
+	<element name="Path of the Wrathful Dead" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_BARBARIAN_WRATHFUL_DEAD">
+		<supports>Barbarian Subclass</supports>
+		<description>
+			<p class="flavor">Channel the Rage of the Unquiet Dead</p>
+			<p>Barbarians who walk the Path of the Wrathful Dead commune with the spirits of the deceased and channel their spectral powers. These Barbarians are often preoccupied with the dead whispering in their ears, which urge them to act upon the whims and emotions of the haunting spirits.</p>
+			<p class="indent">Some who walk this path learn to master the powers gifted to them; others find they've become servants to the unending chorus clamoring for their attention.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_WRATHFUL_DEAD_RAGE_OF_THE_DEAD" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_WRATHFUL_DEAD_FINAL_NIGHT_CATHARSIS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_WRATHFUL_DEAD_DARK_DOOM_REVISITED" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_WRATHFUL_DEAD_DEATH_IS_BUT_A_DOOR" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_WRATHFUL_DEAD_POWERED_BY_PATHOS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_WRATHFUL_DEAD_RAGE_OF_THE_DEAD" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_WRATHFUL_DEAD_FINAL_NIGHT_CATHARSIS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_WRATHFUL_DEAD_DARK_DOOM_REVISITED" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_WRATHFUL_DEAD_DEATH_IS_BUT_A_DOOR" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_WRATHFUL_DEAD_POWERED_BY_PATHOS" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Rage of the Dead" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_WRATHFUL_DEAD_RAGE_OF_THE_DEAD">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_WRATHFUL_DEAD_RAGE_OF_THE_DEAD</requirements>
+		<description>
+			<p>Your Rage taps into the endless fury of the unquiet dead. While your Rage is active, you take on aspects of restless spirits and you gain the following benefits.</p>
+			<p class="indent"><strong><em>Shadow Form.</em></strong> You ignore Difficult Terrain. In addition, you can move through the space of any creature, but you can't end your move in an occupied space.</p>
+			<p class="indent"><strong><em>Shadowy Sidestep.</em></strong> Your Speed increases by 10 feet, and Opportunity Attacks have Disadvantage against you.</p>
+			<p class="indent"><strong><em>Spectral Sight.</em></strong> You see creatures and objects within 120 feet that have the Invisible condition as if they were visible, and you can see into the Ethereal Plane.</p>
+		</description>
+		<sheet alt="Rage of the Dead">
+			<description>While your Rage is active, you gain the following benefits:&#13;
+			• You ignore Difficult Terrain and can move through the space of any creature (can't end there).&#13;
+			• Your Speed increases by 10 feet, and Opportunity Attacks have Disadvantage against you.&#13;
+			• You see Invisible creatures/objects within 120 feet as if visible, and can see into the Ethereal Plane.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Final Night Catharsis" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_WRATHFUL_DEAD_FINAL_NIGHT_CATHARSIS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_WRATHFUL_DEAD_FINAL_NIGHT_CATHARSIS</requirements>
+		<description>
+			<p>You are overcome by an emotion a nearby spirit experienced at its death. You gain one of the following options of your choice. Whenever you finish a Long Rest, you can change your choice.</p>
+		</description>
+		<sheet alt="Final Night Catharsis">
+            <description>You gain one of the following options of your choice. Whenever you finish a Long Rest, you can change your choice.&#13;
+                • Hate: When you miss with an attack roll against a creature, you have Advantage on the next attack roll you make against it before the end of your next turn.&#13;
+                • Jealousy: When a creature you have Grappled is about to make an ability check to end the Grappled condition on itself, you can impose Disadvantage on that roll.&#13;
+                • Terror: While you are Bloodied, you can take a Bonus Action to take the Dash or Disengage action.
+            </description>
+			<description level="14"> You gain one of the following options of your choice. Whenever you finish a Long Rest, you can change your choice.&#13;
+                • Hate: When you miss with an attack roll against a creature, you have Advantage on the next attack roll you make against it before the end of your next turn. While your Rage is active, your attacks with weapons and Unarmed Strikes score a Critical Hit on a roll of 19 or 20.&#13;
+                • Jealousy: When a creature you have Grappled is about to make an ability check to end the Grappled condition on itself, you can impose Disadvantage on that roll. Whenever a creature you can see starts its turn within 30 feet of you while your Rage is active, you can take a Reaction to force it to make a DC{{wrathful dead:dc:con}} Str/Dex save. On a failure, it is Grappled until the end of its turn. On a success, each foot of movement costs it 1 extra foot until the end of its turn.&#13;
+                • Terror: While you are Bloodied, you can take a Bonus Action to take the Dash or Disengage action. Whenever a creature you can see starts its turn within 30 feet of you while your Rage is active, you can take a Reaction to make it terrified until the start of its next turn. A terrified creature's Speed is halved and Opportunity Attacks against it have Advantage.
+            </description>
+        </sheet>
+	</element>
+
+	<element name="Level 6: Dark Doom Revisited" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_WRATHFUL_DEAD_DARK_DOOM_REVISITED">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_WRATHFUL_DEAD_DARK_DOOM_REVISITED</requirements>
+		<description>
+			<p>Once per active Rage, you can take a Magic action to channel a traumatic death. When you do, choose one of the following options.</p>
+			<p class="indent"><strong><em>Contamination.</em></strong> At the start of their turn, each creature of your choice in a 10-foot Emanation originating from you must make a Constitution saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus) or take Poison damage and gain the Poisoned condition for 1 minute.</p>
+			<p class="indent">To determine the Poison damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. An affected creature can use an action to end the Poisoned condition on itself.</p>
+			<p class="indent"><strong><em>Hypothermia.</em></strong> At the start of their turn, each creature of your choice in a 10-foot Emanation originating from you must make a Constitution saving throw (DC 8 plus your Strength modifier and Proficiency Bonus) or take Cold damage and have its Speed halved for 1 minute.</p>
+			<p class="indent">To determine the Cold damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. A creature can use an action to end this effect on itself.</p>
+			<p class="indent"><strong><em>Immolation.</em></strong> At the start of their turn, each creature of your choice in a 15-foot Emanation originating from you must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus) or take Fire damage.</p>
+			<p class="indent">To determine the Fire damage, roll a number of d6s equal to your Rage Damage bonus, and add them together. As an action, a creature can extinguish the fire on itself by giving itself the Prone condition and rolling on the ground. The fire also goes out if it is doused, submerged, or suffocated.</p>
+		</description>
+		<sheet alt="Dark Doom Revisited" action="Action" usage="1/Rage">
+			<description>You channel a traumatic death, choosing one option:&#13;
+			• Contamination: 10-ft Emanation. Start of turn, chosen creatures make DC{{wrathful dead:dc:con}} Con save or take {{barbarian rage:damage}}d6 Poison damage and are Poisoned for 1 min (Action to end).&#13;
+			• Hypothermia: 10-ft Emanation. Start of turn, chosen creatures make DC{{wrathful dead:dc:str}} Con save or take {{barbarian rage:damage}}d6 Cold damage and Speed halved for 1 min (Action to end).&#13;
+			• Immolation: 15-ft Emanation. Start of turn, chosen creatures make DC{{wrathful dead:dc:con}} Dex save or take {{barbarian rage:damage}}d6 Fire damage (Action to drop Prone and roll to end, or doused).</description>
+		</sheet>
+		<rules>
+			<stat name="wrathful dead:dc:con" value="8" bonus="base" />
+			<stat name="wrathful dead:dc:con" value="proficiency" bonus="proficiency" />
+			<stat name="wrathful dead:dc:con" value="constitution:modifier" bonus="ability" />
+			
+			<stat name="wrathful dead:dc:str" value="8" bonus="base" />
+			<stat name="wrathful dead:dc:str" value="proficiency" bonus="proficiency" />
+			<stat name="wrathful dead:dc:str" value="strength:modifier" bonus="ability" />
+		</rules>
+	</element>
+
+	<element name="Level 10: Death Is but a Door" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_WRATHFUL_DEAD_DEATH_IS_BUT_A_DOOR">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_WRATHFUL_DEAD_DEATH_IS_BUT_A_DOOR</requirements>
+		<description>
+			<p>Your familiarity with death has left you resistant to its call. You gain the following benefits.</p>
+			<p class="indent"><strong><em>Hard to Kill.</em></strong> You have Advantage on Death Saving Throws. In addition, you must fail four Death Saving Throws to die instead of three as normal.</p>
+			<p class="indent"><strong><em>Return the Spirit.</em></strong> You can call the spirits of the deceased to restore life essence to a nearby creature. You can cast the Cure Wounds, Raise Dead, or Revivify spell without providing Material components. When you do, you gain 1 Exhaustion level for Cure Wounds, 2 Exhuastion levels for Revivify, and 3 Exhaustion levels for Raise Dead. Constitution is your spellcasting ability for this feature.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest unless you expend two uses of your Rage (no action required) to restore your use of it.</p>
+		</description>
+		<sheet alt="Death Is but a Door" usage="1/Long Rest">
+			<description>You have Advantage on Death Saving Throws and must fail 4 to die.&#13;
+			You can cast Cure Wounds (1 Exhaustion), Revivify (2 Exhaustion), or Raise Dead (3 Exhaustion) without Material components. Constitution is your spellcasting ability. You can expend 2 Rage uses to restore a use of this feature.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CURE_WOUNDS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_REVIVIFY" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAISE_DEAD" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Powered by Pathos" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_WRATHFUL_DEAD_POWERED_BY_PATHOS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_WRATHFUL_DEAD_POWERED_BY_PATHOS</requirements>
+		<description>
+			<p>Your Rage is empowered by the overwhelming emotions of the unquiet dead. Your Final Night Catharsis feature grants an additional effect based on the chosen emotion.</p>
+			<p class="indent"><strong><em>Hate.</em></strong> While your Rage is active, your attacks with weapons and Unarmed Strikes score a Critical Hit on a roll of 19 or 20 on the d20.</p>
+			<p class="indent"><strong><em>Jealousy.</em></strong> Whenever a creature you can see starts its turn within 30 feet of you while your Rage is active, you can take a Reaction to summon spectral assailants to Grapple the creature. The creature makes a Strength or Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failure, the creature has the Grappled condition until the end of its turn. On a successful save, the creature is not Grappled; however, each foot of movement costs 1 extra foot for that creature until the end of its turn.</p>
+			<p class="indent"><strong><em>Terror.</em></strong> Whenever a creature you can see starts its turn within 30 feet of you while your Rage is active, you can take a Reaction to make that creature terrified until the start of its next turn. A terrified creature's Speed is halved and Opportunity Attacks against it have Advantage.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<!-- Feature Replacement Grants -->
+	<element name="Rage of the Dead Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_WRATHFUL_DEAD_RAGE_OF_THE_DEAD" />
+	<element name="Final Night Catharsis Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_WRATHFUL_DEAD_FINAL_NIGHT_CATHARSIS" />
+	<element name="Dark Doom Revisited Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_WRATHFUL_DEAD_DARK_DOOM_REVISITED" />
+	<element name="Death Is but a Door Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_WRATHFUL_DEAD_DEATH_IS_BUT_A_DOOR" />
+	<element name="Powered by Pathos Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_WRATHFUL_DEAD_POWERED_BY_PATHOS" />
+
+</elements>

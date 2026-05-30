@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-OneoftheTaken.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-OneoftheTaken.xml" />
+		</update>
+	</info>
+
+	<!-- One of the Taken -->
+	<element name="One of the Taken" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_ONE_OF_THE_TAKEN">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Dexterity, Wisdom, Charisma</li>
+				<li><strong>Feat:</strong> Magic Initiate (Druid)</li>
+				<li><strong>Skill Proficiencies:</strong> Arcana and Nature</li>
+				<li><strong>Tool Proficiency:</strong> Woodcarver’s Tools</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Woodcarver’s Tools, Herbalism Kit, Traveler’s Clothes, 8 GP; or (B) 50 GP</li>
+			</ul>
+			<p>On the fringes of the civilized world, parents warn their children not to wander away from their homes, especially at night. The many creatures that haunt the forests, from the faerie-folk to the minions of the Great Beast, spell doom for the innocent who stray too far into the darkness. You failed to heed your parents’ warnings, and you were taken. In fact, those who know of your experience use that word to describe you: Taken.</p>
+			<p>You do not remember what happened to you while you were away, but through some mysterious and possibly fortunate circumstances, you wandered back into town after months or years of going missing. Maybe the fairies whisked you off to some magical realm. Maybe evil cultists of an Arch Daemon held you prisoner, planning to sacrifice you to their dark leader when the time was right, and you found a way to escape. Maybe one of the Beast’s warped and feral minions took a liking to you and kept you as a pet. Whatever your story, you can’t remember your time away. But that doesn’t mean you weren’t changed by it.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_FEAT_MAGIC_INITIATE" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Wisdom, Charisma, Magic Initiate (Druid) Feat, Arcana and Nature Skills, Woodcarver’s Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_DEX_WIS_CHA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_WOTC_PHB24_FEAT_MAGIC_INITIATE_DRUID" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />	
+		</rules>
+	</element>
+</elements>

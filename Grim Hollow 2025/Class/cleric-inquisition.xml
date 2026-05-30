@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Inquisition Domain</name>
+		<description>The Inquisition Domain subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="cleric-inquisition.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/cleric-inquisition.xml" />
+		</update>
+	</info>
+
+	<element name="Inquisition Domain" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_CLERIC_INQUISITION_DOMAIN">
+		<supports>Cleric Subclass</supports>
+		<description>
+			<p class="flavor">Cleanse the Heretics</p>
+			<p>The Inquisition Domain reflects the order of the multiverse and the rejection of tainted magic—so far as certain celestial powers see it. Only the divine casters are pure and fit for use.</p>
+			<p class="indent">Since arcane magic is strong enough to challenge the gods, divine beings of this domain, such as the Arch Seraph Empyreus, demand magic-using mortals be kept in check. Most zealots root out all arcanists, while some strike fragile truces when complete removal isn't feasible.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_SPELLS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_WITCH_HUNTERS_STRIKE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_SPELL_SHIELD" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_REBUKE_INVOKER" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_SUPERNAL_SAFEGUARD" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_WITCH_HUNTERS_STRIKE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_SPELL_SHIELD" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_REBUKE_INVOKER" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_SUPERNAL_SAFEGUARD" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Inquisition Domain Spells" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_SPELLS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_INQUISITION_DOMAIN_SPELLS</requirements>
+		<description>
+			<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Inquisition Domain Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Inquisition Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Cleric Level</td><td>Prepared Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>See Invisibility, Silence</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Dispel Magic, Remove Curse</em></td></tr>
+				<tr><td style="text-align:center">7</td><td><em>Arcane Eye, Locate Creature</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Creation, Hallow</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SEE_INVISIBILITY" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SILENCE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DISPEL_MAGIC" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_REMOVE_CURSE" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ARCANE_EYE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LOCATE_CREATURE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CREATION" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HALLOW" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Witch Hunter's Strike" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_WITCH_HUNTERS_STRIKE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_INQUISITION_DOMAIN_WITCH_HUNTERS_STRIKE</requirements>
+		<description>
+			<p>When you hit a creature with a weapon attack or Unarmed Strike, you can deal an extra 1d8 Force damage to the target. If the creature is concentrating on a spell, you deal an extra 2d8 Force damage instead. At Cleric level 14, the extra Force damage increases to 2d8, or 3d8 if the creature is concentrating on a spell.</p>
+			<p class="indent">If a creature fails its saving throw to maintain Concentration as a result of taking damage from this feature, you gain Temporary Hit Points equal to the extra Force damage dealt.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Witch Hunter's Strike" usage="{{witch hunters strike:usage}}/Long Rest">
+			<description>When you hit with a weapon/Unarmed Strike, you can deal an extra 1d8 Force damage (or 2d8 if target is concentrating). If the target fails its Concentration save from this damage, you gain THP equal to the extra Force damage dealt.</description>
+            <description level="14">When you hit with a weapon/Unarmed Strike, you can deal an extra 2d8 Force damage (or 3d8 if target is concentrating). If the target fails its Concentration save from this damage, you gain THP equal to the extra Force damage dealt.</description>
+		</sheet>
+		<rules>
+			<stat name="witch hunters strike:usage" value="1" bonus="base" />
+			<stat name="witch hunters strike:usage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Spell Shield" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_SPELL_SHIELD">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_INQUISITION_DOMAIN_SPELL_SHIELD</requirements>
+		<description>
+			<p>As a Bonus Action, you can expend one use of your Channel Divinity to bestow a temporary resilience against arcane harm for 10 minutes. Choose a creature you can see (including yourself) within 30 feet of yourself. The chosen creature gains Temporary Hit Points equal to 1d10 plus your Cleric level. While a creature has Temporary Hit Points granted by your Spell Shield, the creature has Advantage on saving throws against spells, and it has Resistance to the damage of spells. If any of these Temporary Hit Points remain when Spell Shield ends, they vanish.</p>
+		</description>
+		<sheet alt="Spell Shield" action="Bonus Action" usage="Channel Divinity">
+			<description>Choose a creature within 30 ft. It gains 1d10+{{level:cleric}} THP for 10 mins. While it has these THP, it has Advantage on saves vs spells and Resistance to spell damage.</description>
+			<description level="17">Choose up to {{spell shield:targets}} creatures within 30 ft. They gain 1d10+{{level:cleric}} THP for 10 mins. While they have these THP, they have Advantage on saves vs spells and Resistance to spell damage.</description>
+		</sheet>
+		<rules>
+			<stat name="spell shield:targets" value="1" bonus="base" />
+			<stat name="spell shield:targets" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Rebuke Invoker" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_REBUKE_INVOKER">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_INQUISITION_DOMAIN_REBUKE_INVOKER</requirements>
+		<description>
+			<p>As a Reaction in response to a creature you can see within 60 feet of yourself using a Magic action to cast a spell, you can force the creature to make a Constitution saving throw against your spell save DC. On a failed save, the creature takes 1d8 Force damage, plus another 1d8 per level of the spell slot the creature expended. Cantrips are considered level 1 spells for this ability. On a successful save, the creature takes half as much damage instead.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum once). You regain all expended uses of this feature when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Rebuke Invoker" action="Reaction" usage="{{rebuke invoker:usage}}/Long Rest">
+			<description>When a creature within 60 ft casts a spell, you can force a DC{{cleric:spellcasting:dc}} Con save. On a fail, it takes 1d8 Force damage + 1d8 per spell level (cantrips count as lvl 1). Half damage on success.</description>
+		</sheet>
+		<rules>
+			<stat name="rebuke invoker:usage" value="1" bonus="base" />
+			<stat name="rebuke invoker:usage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 17: Supernal Safeguard" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_INQUISITION_DOMAIN_SUPERNAL_SAFEGUARD">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_INQUISITION_DOMAIN_SUPERNAL_SAFEGUARD</requirements>
+		<description>
+			<p>Spell Shield can target a number of creatures up to your Wisdom modifier (minimum of one creature).</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Inquisition Domain Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_INQUISITION_DOMAIN_SPELLS" />
+	<element name="Witch Hunter's Strike Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_INQUISITION_DOMAIN_WITCH_HUNTERS_STRIKE" />
+	<element name="Spell Shield Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_INQUISITION_DOMAIN_SPELL_SHIELD" />
+	<element name="Rebuke Invoker Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_INQUISITION_DOMAIN_REBUKE_INVOKER" />
+	<element name="Supernal Safeguard Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_INQUISITION_DOMAIN_SUPERNAL_SAFEGUARD" />
+
+</elements>

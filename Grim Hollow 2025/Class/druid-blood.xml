@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of Blood</name>
+		<description>The Circle of Blood subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="druid-blood.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/druid-blood.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of Blood" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_DRUID_CIRCLE_OF_BLOOD">
+		<supports>Druid Subclass</supports>
+		<description>
+			<p class="flavor">Wreak Bloody Havoc</p>
+			<p>The Circle of Blood is a keeper of the old ways. They remember how ancient Druids performed sacrificial rituals under a blood-red moon to appease the uncaring forces of nature. These Druids trade blood for life in a delicate balance to bolster their allies and destroy their enemies.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_BLOOD_SPELLS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_BLOOD_RITE_OF_THE_BLOOD_MOON" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_BLOOD_BLOOD_BOON" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_BLOOD_BLOOD_LUST" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_BLOOD_EXSANGUINATE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_BLOOD_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_BLOOD_RITE_OF_THE_BLOOD_MOON" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_BLOOD_BLOOD_BOON" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_BLOOD_BLOOD_LUST" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_BLOOD_EXSANGUINATE" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Circle of Blood Spells" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_BLOOD_SPELLS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_BLOOD_SPELLS</requirements>
+		<description>
+			<p>When you reach a Druid level specified in the Circle of Blood Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Circle of Blood Spells</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Druid Level</td><td>Prepared Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Blood Rush, Crimson Lash, Sense Lifeblood</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Blood Bound, Sanguine Poppet</em></td></tr>
+				<tr><td style="text-align:center">7</td><td><em>Circle of Scarlet, Dark Sacrament</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Dominate Person, Mortality</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_BLOOD_RUSH" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_CRIMSON_LASH" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_SENSE_LIFEBLOOD" level="3" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_BLOOD_BOND" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_SANGUINE_POPPET" level="5" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_CIRCLE_OF_SCARLET" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_DARK_SACRAMENT" level="7" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DOMINATE_PERSON" level="9" spellcasting="Druid" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_MORTALITY" level="9" spellcasting="Druid" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Rite of the Blood Moon" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_BLOOD_RITE_OF_THE_BLOOD_MOON">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_BLOOD_RITE_OF_THE_BLOOD_MOON</requirements>
+		<description>
+			<p>As a Bonus Action, you can expend a use of your Wild Shape to adopt the violent savagery of the Blood Moon for 10 minutes. During this time, you gain the following benefits:</p>
+			<p class="indent"><strong><em>Red Resilience.</em></strong> You gain Temporary Hit Points equal to three times your Druid level.</p>
+			<p class="indent"><strong><em>Speed Increased.</em></strong> Your Speed increases by 10 feet, and you can take the Dash action as a Bonus Action.</p>
+			<p class="indent"><strong><em>Violent Strikes.</em></strong> When you hit a creature with a weapon or Unarmed Strike, you can deal an extra 1d6 Necrotic damage to the target.</p>
+		</description>
+		<sheet alt="Rite of the Blood Moon" action="Bonus Action" usage="Wild Shape">
+			<description>You adopt the savagery of the Blood Moon for 10 minutes. You gain {{rite of the blood moon:thp}} THP, your Speed increases by 10 ft, and you can Dash as a Bonus Action. When you hit a creature with a weapon or Unarmed Strike, you deal an extra {{rite of the blood moon:damage}}d6 Necrotic damage.</description>
+		</sheet>
+		<rules>
+			<stat name="rite of the blood moon:thp" value="level:druid" />
+			<stat name="rite of the blood moon:thp" value="level:druid" />
+			<stat name="rite of the blood moon:thp" value="level:druid" />
+			<stat name="rite of the blood moon:damage" value="1" bonus="base" />
+			<stat name="rite of the blood moon:damage" value="2" bonus="base" level="10" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Blood Boon" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_BLOOD_BLOOD_BOON">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_BLOOD_BLOOD_BOON</requirements>
+		<description>
+			<p>Whenever a creature you can see within 60 feet of you is reduced to 0 Hit Points, you can take a Reaction to claim the last vestiges of its vitality. You regain 1 spent Hit Die and grant a creature you can see within 60 feet of you Temporary Hit Points equal to your Druid level.</p>
+			<p class="indent">You can use this feature a number of times equal to your Wisdom modifier (minimum once). You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Blood Boon" action="Reaction" usage="{{blood boon:usage}}/Long Rest">
+			<description>When a creature you can see within 60 ft is reduced to 0 HP, you regain 1 spent Hit Die and grant a creature within 60 ft {{level:druid}} THP. You regain 1 expended use on a Short Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="blood boon:usage" value="1" bonus="base" />
+			<stat name="blood boon:usage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 10: Blood Lust" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_BLOOD_BLOOD_LUST">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_BLOOD_BLOOD_LUST</requirements>
+		<description>
+			<p>While your Blood Moon is active, you gain the following benefits:</p>
+			<p class="indent"><strong><em>Improved Violent Strikes.</em></strong> The extra Necrotic damage from your Violent Strikes increases to 2d6.</p>
+			<p class="indent"><strong><em>Red Rage.</em></strong> You have Resistance to Bludgeoning, Piercing, and Slashing damage.</p>
+		</description>
+		<sheet alt="Blood Lust">
+			<description>While your Blood Moon is active, your Violent Strikes deal 2d6 Necrotic damage, and you have Resistance to Bludgeoning, Piercing, and Slashing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Exsanguinate" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_BLOOD_EXSANGUINATE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_BLOOD_EXSANGUINATE</requirements>
+		<description>
+			<p>When you use your Blood Boon, you regain spent Hit Dice equal to half your Druid level and give Temporary Hit Points equal to twice your Druid level to a number of creatures up to your Wisdom modifier (minimum of one creature) that you can see within 60 feet of yourself.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Exsanguinate" usage="1/Long Rest">
+			<description>When you use your Blood Boon, you regain {{level:druid:half}} spent Hit Dice and give {{blood boon:thp:14}} THP to up to {{blood boon:usage}} creatures within 60 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="blood boon:thp:14" value="level:druid" />
+			<stat name="blood boon:thp:14" value="level:druid" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Circle of Blood Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_BLOOD_SPELLS" />
+	<element name="Rite of the Blood Moon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_BLOOD_RITE_OF_THE_BLOOD_MOON" />
+	<element name="Blood Boon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_BLOOD_BLOOD_BOON" />
+	<element name="Blood Lust Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_BLOOD_BLOOD_LUST" />
+	<element name="Exsanguinate Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_BLOOD_EXSANGUINATE" />
+</elements>

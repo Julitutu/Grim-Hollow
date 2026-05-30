@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Vampire Transformation</name>
+        <description>Vampire Transformation from Grim Hollow: Player's Guide (2025)</description>
+        <author>Ghostfire Gaming</author>
+        <update version="0.1.0">
+            <file name="vampire.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/vampire.xml" />
+        </update>
+    </info>
+
+    <!-- Items -->
+    <element name="Vampire Transformation (Stage 1)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_VAMPIRE_LEVEL_1">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_VAMPIRE" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_VAMPIRE" />
+        </rules>
+    </element>
+    <element name="Vampire Transformation (Stage 2)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_VAMPIRE_LEVEL_2">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_VAMPIRE" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_2" requirements="ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_1"/>
+        </rules>
+    </element>
+    <element name="Vampire Transformation (Stage 3)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_VAMPIRE_LEVEL_3">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_VAMPIRE" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_3" requirements="ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_2"/>
+        </rules>
+    </element>
+    <element name="Vampire Transformation (Stage 4)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_VAMPIRE_LEVEL_4">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_VAMPIRE" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_4" requirements="ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_3"/>
+        </rules>
+    </element>
+
+    <!-- Base Feat -->
+    <element name="Vampire" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_VAMPIRE">
+        <description>
+            <p>A twisted figure lurks in the shadows of a castle wall as the roaring infantry charges through a breach. In a flash of black mist, the figure appears in front of the soldiers, one by one, striking them down with inhuman speed.</p>
+            <p>Candlelight flickers as a hooded advisor leans over an ornate throne, whispering machinations into her lord’s ensnarled mind. The chamber erupts into commotion as the lord announces further powers be granted to the resident merchants’ guild.</p>
+            <p>A terrified villager flees through the forest, hoping to outrun his pursuer. His eyes burn with tears, sweat, and blood. He stops, listening for the sounds of footsteps behind. His sigh of relief is stopped before it escapes his throat, as fangs sink deep into his neck.</p>
+            <p>Vampires are creatures of accursed blood and tragic existence. Exquisite food, a warm summer breeze, and growing old surrounded by loved ones: these are luxuries a Vampire will never experience. Unable to enjoy many of life’s pleasures as they once knew them, Vampires often become bitter creatures, filled with hate for everything they once loved.</p>
+            
+            <h4>Becoming a Vampire</h4>
+            <p>Vampires are spawned into the world when a mortal contracts the Sanguine Curse, dies, and is reborn undead. There are a variety of ways to contract the curse. A Vampire may have offered their blood to a loyal servant, powerful ally, or loved one they wished to elevate. More commonly, a Vampire may bite a victim, who survives the attack long enough to contract the Sanguine Curse before perishing and being reborn.</p>
+            <p>Other methods of becoming a Vampire include ancient and dark magic, as well as powerful but cursed magical artifacts. Vampirism may be passed along when an ancient Vampire allows a beloved plaything to drink blood from the Undead creature’s cursed veins. Regardless of how you have become a Vampire, you should discuss with your GM what type of Vampire you might become and how it can be implemented in the campaign.</p>
+            
+            <h4>Curing Vampirism</h4>
+            <p>Once the character reaches Stage 1 of the Vampire Transformation, no typical magic like Remove Curse can remove the affliction. Magic on the level of the Wish spell is needed to completely remove the Transformation and its Boons and Flaws.</p>
+            
+            <h4>Vampire Stages</h4>
+            <p>At each stage of this Transformation, follow the instructions provided for that stage.</p>
+            
+            <h4>Achieving a New Stage</h4>
+            <p>To move from one stage to the next higher one in this Transformation, an event or some other notable occurrence tied to the story of the character should take place. The following events are suggestions for ones that might trigger a move to the next stage of the Transformation:</p>
+            <ul>
+                <li>Severing a tie to your mortal life, such as discarding a sentimental trinket or abandoning a loved one.</li>
+                <li>Making a further bargain with the Vampire who gifted you with the Sanguine Curse.</li>
+                <li>Drinking the blood of another, more ancient, Vampire.</li>
+                <li>Failing two Death Saving Throws.</li>
+                <li>Performing a blood ritual using Sangromancy.</li>
+            </ul>
+
+            <p><strong>Transformation Save DC:</strong> Some of your abilities require a target to make a saving throw. The DC is calculated as follows:</p>
+            <center>
+                <p><strong>Transformation Save DC</strong> = 8 + your Proficiency Bonus + your Transformation Stage</p>
+            </center>
+        </description>
+        <sheet>
+            <description>Save DC: {{vampire:dc}}</description>
+        </sheet>
+        <rules>
+            <stat name="vampire:stage" value="0" bonus="base" />
+            <stat name="vampire:dc" value="8" />
+            <stat name="vampire:dc" value="proficiency" />
+            <stat name="vampire:dc" value="vampire:stage" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_1" />
+        </rules>
+    </element>
+
+    <!-- Transformation Stage 1 -->
+    <element name="Vampire (Stage 1)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_1">
+        <prerequisite>Vampire Transformation</prerequisite>
+        <requirements>ID_GFG_GHPG25_FEAT_TRANSFORMATION_VAMPIRE</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you initially contract vampirism, you gain the Fanged Bite Boon and one other Stage 1 Boon. You also gain the Stage 1 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_FANGED_BITE" />
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_THE_SANGUINE_CURSE" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Fanged Bite, Stage 1 Boon, The Sanguine Curse (Flaw)</description>
+        </sheet>
+        <rules>
+            <stat name="vampire:stage" value="1" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_FANGED_BITE" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_THE_SANGUINE_CURSE" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 1)" supports="Vampire 2025 Bloodline" />
+        </rules>
+    </element>
+
+    <element name="Boon: Fanged Bite" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_FANGED_BITE">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_1</requirements>
+        <description>
+            <p>As an Attack action, you can make a Bite attack. You are considered proficient with this attack, and you can use Strength or Dexterity as the ability. This attack deals Piercing damage equal to 1d6 plus your Strength or Dexterity modifier. This Bite attack is not a weapon or an Unarmed Strike.</p>
+            <p>If the attack hits a creature that has blood, the target must succeed on a Constitution saving throw or take an additional 1d6 Necrotic damage. You regain Hit Points equal to the Necrotic damage dealt this way. The DC is 8 plus your Proficiency Bonus plus your Transformation Stage.</p>
+        </description>
+        <sheet action="Action">
+            <description>Make a Bite attack (+{{fanged bite:attack}}, {{fanged bite:dice}} + {{fanged bite:ability}} Piercing dmg). Not a weapon/Unarmed Strike.&#13;
+            If hits creature w/ blood: target makes DC {{vampire:dc}} Con save or takes +{{fanged bite:necrotic}}d8 Necrotic dmg (you heal HP = Necrotic dmg dealt).</description>
+        </sheet>
+        <rules>
+            <stat name="fanged bite:dice" value="1d6" inline="true"/>
+            <stat name="fanged bite:ability" value="strength:modifier" bonus="base" />
+            <stat name="fanged bite:ability" value="dexterity:modifier" bonus="base" />
+            
+            <stat name="fanged bite:attack" value="proficiency" />
+            <stat name="fanged bite:attack" value="fanged bite:ability" />
+
+            <stat name="fanged bite:necrotic" value="1" />
+        </rules>
+    </element>
+
+    <element name="Boon: Soman Bloodline" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SOMAN_BLOODLINE">
+        <supports>Vampire 2025 Bloodline</supports>
+        <description>
+            <p>Your vampirism follows the Soman bloodline, the most prevalent in Etharis. You gain the following features:</p>
+            <ul>
+                <li>Your Strength and Dexterity scores increase by 1. Neither score can exceed 19 with this feature.</li>
+                <li>You have Advantage on attack rolls with Fanged Bite.</li>
+                <li>The Necrotic damage dealt by Fanged Bite increases to 1d8.</li>
+                <li>You gain a Climb Speed equal to your Speed.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Advantage on Fanged Bite attack rolls. Fanged Bite Necrotic dmg is 1d8. Climb Speed = Speed.</description>
+        </sheet>
+        <rules>
+            <stat name="strength" value="1" />
+            <stat name="dexterity" value="1" />
+            <stat name="speed:climb" value="innate speed" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Boon: Fzeg Bloodline" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_FZEG_BLOODLINE">
+        <supports>Vampire 2025 Bloodline</supports>
+        <description>
+            <p>Your vampirism follows the Fzeg bloodline, a line of vampires that combines the affliction with lycanthropy. You gain the following features:</p>
+            <ul>
+                <li>Your Strength score increases by 2. Your Strength score cannot exceed 20 with this feature.</li>
+                <li>You gain a Claw attack. This attack deals 1d8 plus your Strength modifier Slashing damage, using your Strength modifier and Proficiency Bonus on attack rolls. This Claw attack is not a weapon or an Unarmed Strike.</li>
+                <li>When you take the Attack action to make the Claw attack, you may use a Bonus Action to make a Bite attack from Fanged Bite.</li>
+                <li>Your Speed increases by 10 feet.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Gain Claw attack (+{{fzeg claw:attack}}, {{fzeg claw:dice}}d6 + {{strength:modifier}} Slashing dmg). Not a weapon/Unarmed Strike.&#13;
+            If you Attack w/ Claw, can use BA to make Fanged Bite attack.</description>
+        </sheet>
+        <rules>
+            <stat name="strength" value="2" />
+            <stat name="speed:misc" value="10" />
+            
+            <stat name="fzeg claw:attack" value="proficiency" />
+            <stat name="fzeg claw:attack" value="strength:modifier" />
+
+            <stat name="fzeg claw:dice" value="1" />
+        </rules>
+    </element>
+
+    <element name="Boon: Strigoi Bloodline" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_STRIGOI_BLOODLINE">
+        <supports>Vampire 2025 Bloodline</supports>
+        <description>
+            <p>Your vampirism follows the Strigoi bloodline. Your speed and guile almost match your ferocity. You gain the following features:</p>
+            <ul>
+                <li>Your Dexterity score increases by 2. Your Dexterity score cannot exceed 20 with this feature.</li>
+                <li>If you make your Fanged Bite attack with Advantage, the Piercing damage increases to 2d4 plus your Strength or Dexterity modifier.</li>
+                <li>You can take the Hide action as a Bonus Action, and you can use the Hide action anywhere that is not in sunlight.</li>
+                <li>You have proficiency with the Stealth skill. If you are already proficient in Stealth, you gain Expertise in Stealth instead.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>If Fanged Bite has Adv.&#13;
+            BA: Hide (can Hide anywhere not in sunlight).</description>
+        </sheet>
+        <rules>
+            <stat name="fanged bite:dice" value="2d4" inline="true"/>
+            <stat name="dexterity" value="2" />
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_STEALTH" />
+        </rules>
+    </element>
+
+    <element name="Flaw: The Sanguine Curse" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_THE_SANGUINE_CURSE">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_1</requirements>
+        <description>
+            <p>The Sanguine Curse has taken hold of you. As a result, you gain the following features:</p>
+            <ul>
+                <li>You cannot enter a private residence that you do not own without one of the occupants inviting you. Once invited, you can enter without penalty as long as the inviter resides there. If you do enter uninvited, you have Disadvantage on all D20 Tests while in the residence. Additionally, you take 1d4 Psychic damage at the start of each of your turns. You cannot be Resistant or Immune to Psychic damage while inside such a residence uninvited.</li>
+                <li>You must feed at least once within seven days of your last feeding. See the Feeding sidebar for more information.</li>
+            </ul>
+            <h5>Feeding</h5>
+            <p>As a Vampire transforms further and further from its mortal form, its metabolic requirements change. The first change is a need for mortal blood. This need is approximately 1 pint of blood from a Humanoid, Beast, or other creature with mortal blood.</p>
+            <p>As an action, you can bite a living creature within 5 feet that is Charmed by you, or that has the Incapacitated, Paralyzed, Restrained, or Unconscious condition. You drain the target of one pint of blood (or similar life-giving substance), leaving a visible bite mark on that creature. The bitten creature gains one Exhaustion level.</p>
+            <p>A Vampire that does not feed within the required time enters a rabid feeding frenzy under the GM’s control. They attack the nearest creature they could feed from. A Vampire remains in this state until they have drained a creature completely (killing them), at which point the Vampire falls unconscious for 4 hours.</p>
+        </description>
+        <sheet>
+            <description>Uninvited in private residence: Disadv on all D20 Tests, take 1d4 Psychic dmg at start of turns (cannot resist/immune).&#13;
+            Must feed every 7 days (or 4 days at Stage 2, 2 days at Stage 3, 1 day at Stage 4). Fail: Rabid feeding frenzy (GM control).&#13;
+            Feeding (Action): Bite living creature w/in 5ft (Charmed/Incapacitated/Paralyzed/Restrained/Unconscious). Target gains 1 Exhaustion level.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 2 -->
+    <element name="Vampire (Stage 2)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_2">
+        <prerequisite>Vampire Transformation Stage 1</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 2 of vampirism, you select two Stage 2 Boons and gain the Stage 2 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_GREATER_SANGUINE_CURSE" />
+        </description>
+        <sheet display="false">
+            <description>Choose two Stage 2 Boons. Greater Sanguine Curse (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="vampire:stage" value="2" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 2)" supports="Vampire 2025 Boon 1||Vampire 2025 Boon 2" number="2" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_GREATER_SANGUINE_CURSE" />
+        </rules>
+    </element>
+
+    <element name="Boon: Eyes of the Night" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_EYES_OF_THE_NIGHT">
+        <supports>Vampire 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_2</requirements>
+        <description>
+            <p>You gain Darkvision out to 60 feet. If you already have Darkvision, the range increases by 60 feet.</p>
+        </description>
+        <sheet display="false">
+            <description>Darkvision +60 ft.</description>
+        </sheet>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <stat name="darkvision:range" value="60" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Boon: Grave-Touched Soul" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GRAVE_TOUCHED_SOUL">
+        <supports>Vampire 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_2</requirements>
+        <description>
+            <p>You gain Resistance to Necrotic damage. If you already have Resistance to Necrotic damage, you gain Immunity instead.</p>
+        </description>
+        <sheet display="false">
+            <description>Resistance to Necrotic damage (or Immunity if already resistant).</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" requirements="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC" requirements="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+    </element>
+
+    <element name="Boon: Inhuman Reflexes" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_INHUMAN_REFLEXES">
+        <supports>Vampire 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_2</requirements>
+        <description>
+            <p>You have Advantage on Dexterity saving throws.</p>
+        </description>
+        <sheet>
+            <description>Advantage on Dexterity saving throws.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Undead Resilience" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_UNDEAD_RESILIENCE">
+        <supports>Vampire 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_2</requirements>
+        <description>
+            <p>You become supernaturally tough to kill. When you are reduced to 0 Hit Points by any type of damage except Radiant, you can choose to be reduced to 1 Hit Point instead.</p>
+            <p>Once you use this feature, you cannot use it again until you finish a Long Rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>Reduced to 0 HP (not Radiant dmg): Drop to 1 HP instead.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Greater Sanguine Curse" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GREATER_SANGUINE_CURSE">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_2</requirements>
+        <description>
+            <p>Your curse has taken a stronger hold onto you. You gain the following features:</p>
+            <ul>
+                <li>You have Disadvantage on all D20 Tests when you are in sunlight.</li>
+                <li>You must feed every 4 days.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Disadvantage on all D20 Tests in sunlight. Must feed every 4 days.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 3 -->
+    <element name="Vampire (Stage 3)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_3">
+        <prerequisite>Vampire Transformation Stage 2</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 3 of vampirism, you select two Stage 3 Boons and gain the Stage 3 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_SUPREME_SANGUINE_CURSE" />
+        </description>
+        <sheet>
+            <description>Supreme Sanguine Curse: {{supreme sanguine curse:dc}} Con save.</description>
+        </sheet>
+        <rules>
+            <stat name="vampire:stage" value="3" bonus="base" />
+            <stat name="supreme sanguine curse:dc" value="16" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 3)" supports="Vampire 2025 Boon 1||Vampire 2025 Boon 2||Vampire 2025 Boon 3" number="2" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_SUPREME_SANGUINE_CURSE" />
+        </rules>
+    </element>
+
+    <element name="Boon: Beguiler’s Charm" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_BEGUILERS_CHARM">
+        <supports>Vampire 2025 Boon 3</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_3</requirements>
+        <description>
+            <p>You gain the ability to manipulate the mind of a creature with your unearthly charm. As a Magic action, you can choose a Humanoid or Beast within 30 feet of you that can see you. The creature must succeed on a Charisma saving throw with a DC of 8 plus your Charisma modifier plus your Proficiency Bonus.</p>
+            <p>On a failed save, the creature has the Charmed condition for 24 hours. At the end of the 24 hours, you can choose to automatically renew the Charmed condition on that creature with no saving throw. You may only have one creature Charmed in this manner at a time. If you use this feature on another creature, or you or an ally damages the creature, the Charmed condition ends on the previous creature immediately.</p>
+        </description>
+        <sheet action="Magic Action">
+            <description>Humanoid/Beast w/in 30ft seeing you makes DC {{beguilers charm:dc}} Cha save. Fail: Charmed for 24 hrs. Can automatically renew at end of 24 hrs. Max 1 creature. Ends if you/ally damage it or use this on another.</description>
+        </sheet>
+        <rules>
+            <stat name="beguilers charm:dc" value="8" />
+            <stat name="beguilers charm:dc" value="charisma:modifier" />
+            <stat name="beguilers charm:dc" value="proficiency" />
+        </rules>
+    </element>
+
+    <element name="Boon: Improved Fanged Bite" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_IMPROVED_FANGED_BITE">
+        <supports>Vampire 2025 Boon 3</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_3</requirements>
+        <description>
+            <p>As an Attack action, you can make 2 Fanged Bite attacks.</p>
+            <p>Additionally, you can make a Fanged Bite attack as a Bonus Action if you don't make a Fanged Bite attack as part of an Attack action on the same turn.</p>
+        </description>
+        <sheet>
+            <description>Attack action: 2 Fanged Bite attacks.&#13;
+            Bonus Action: 1 Fanged Bite attack (if not used in Attack action this turn).</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Mist Form" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_MIST_FORM">
+        <supports>Vampire 2025 Boon 3</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_3</requirements>
+        <description>
+            <p>You can cast the Gaseous Form spell a number of times equal to your Vampire Transformation Stage without using a spell slot or needing to use Verbal, Somatic, or Material components. You regain all uses of this feature when you finish a Long Rest.</p>
+            <p>You can cast this spell as an Action on your turn, or as a Reaction when you would take Bludgeoning, Piercing, or Slashing damage. You cast the spell before taking the damage.</p>
+        </description>
+        <sheet action="Action / Reaction" usage="{{vampire:stage}}/Long Rest">
+            <description>Cast Gaseous Form w/o slot or V/S/M components. Can cast as Reaction when taking B/P/S dmg (cast before taking dmg).</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_GASEOUS_FORM" />
+        </rules>
+    </element>
+
+    <element name="Boon: Sangromancy Specialist" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SANGROMANCY_SPECIALIST">
+        <supports>Vampire 2025 Boon 3</supports>
+        <prerequisite>Spellcaster who can cast cantrips</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_3, (ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE||ID_INTERNAL_GRANTS_PACT_MAGIC_FEATURE)</requirements>
+        <description>
+            <p>Your magic is tinged with the blood that you crave. You gain the following features:</p>
+            <ul>
+                <li>You gain an extra 1d12 Sangromancy Hit Point Dice per Vampire Transformation. You can use those dice on Sangromancy spells. You regain all spent Sangromancy Dice when you finish a Long Rest.</li>
+                <li>When you successfully restore Hit Points using Fanged Bite, you regain one spent Sangromancy Die.</li>
+                <li>Any cantrip you cast that does Necrotic damage can be enhanced by your Sangromancy Dice. You can spend up to 2 Hit Point Dice (including your Sangromancy Dice) to deal extra Necrotic damage with those cantrips. You can decide to spend these Hit Point Dice after you know if the cantrip affects the target(s).</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Gain {{vampire:stage}}d12 Sangromancy HD (use for Sangromancy spells, regain on Long Rest).&#13;
+            Fanged Bite heals you: regain 1 spent Sangromancy Die.&#13;
+            Cantrip dealing Necrotic dmg: spend up to 2 HD to deal extra Necrotic dmg (decide after knowing if it affects target).</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Supreme Sanguine Curse" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SUPREME_SANGUINE_CURSE">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_3</requirements>
+        <description>
+            <p>Your curse continues to transform you, bringing about further debilitations. You gain the following features:</p>
+            <ul>
+                <li>If you start your turn in sunlight, you take 1d10 Radiant damage. You cannot have Immunity or Resistance to this Radiant Damage.</li>
+                <li>Your appearance begins to resemble that of a true vampire. In stressful conditions, as determined by you or the GM, your appearance changes outside of your control. When you do, anyone observing you knows your true nature.</li>
+                <li>You must feed every 2 days.</li>
+            </ul>
+            <p>You can hide your true appearance and disguise yourself as the humanoid you once were by concentrating on your composure. However, moments of bloodlust or stress are likely to reveal your true nature, including the following situations:</p>
+            <ul>
+                <li>Becoming Bloodied</li>
+                <li>Concentrating on a spell</li>
+                <li>Taking Radiant damage from sunlight</li>
+                <li>Entering a feeding frenzy</li>
+                <li>Having the Unconscious condition</li>
+                <li>Entering hallowed ground</li>
+                <li>Choosing to reveal yourself</li>
+            </ul>
+            <p>In these events, or times of other extreme emotional or physical stress, a GM can call or a Constitution saving throw with a DC based on your current Transformation Stage. If you fail this save, your Sanguine Curse is revealed.</p>
+            <h5>Supreme Sanguine Curse Save DC</h5>
+            <table>
+                <thead>
+                    <tr><td>Stage</td><td>Constitution Save DC</td></tr>
+                </thead>
+                <tr><td>3</td><td>16</td></tr>
+                <tr><td>4</td><td>20</td></tr>
+            </table>
+            <p>Non-evil creatures that witness your true form become instantly Hostile to you, unless the GM decides otherwise.</p>
+        </description>
+        <sheet>
+            <description>Start turn in sunlight: take 1d10 Radiant dmg (cannot resist/immune). Must feed every 2 days.&#13;
+            True form revealed if: Bloodied, concentrating on spell, Radiant dmg from sunlight, feeding frenzy, Unconscious, entering hallowed ground, or choosing to. Non-evil creatures become Hostile.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 4 -->
+    <element name="Vampire (Stage 4)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_4">
+        <prerequisite>Vampire Transformation Stage 3</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 4 of vampirism, you gain the Regeneration Boon and one other Stage 4 Boon of your choice. You also gain the Stage 4 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_REGENERATION_VAMPIRE" />
+            </div>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_ULTIMATE_SANGUINE_CURSE" />
+        </description>
+        <sheet display="false">
+            <description>Regeneration, Choose one Stage 4 Boon. Ultimate Sanguine Curse (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="vampire:stage" value="4" bonus="base" />
+            <stat name="supreme sanguine curse:dc" value="20" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_REGENERATION_VAMPIRE" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 4)" supports="Vampire 2025 Boon 1||Vampire 2025 Boon 2||Vampire 2025 Boon 3||Vampire 2025 Boon 4" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_ULTIMATE_SANGUINE_CURSE" />
+        </rules>
+    </element>
+
+    <element name="Boon: Final Soman Bloodline" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_FINAL_SOMAN_BLOODLINE">
+        <supports>Vampire 2025 Boon 4</supports>
+        <prerequisite>Soman Bloodline</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_SOMAN_BLOODLINE</requirements>
+        <description>
+            <p>You reach the full manifestation of your Soman Bloodline. You gain the following features:</p>
+            <ul>
+                <li>Your Strength and Dexterity scores increase by 1 to a maximum of 20.</li>
+                <li>Fanged Bite’s Necrotic damage increases to 3d8.</li>
+                <li>When a Humanoid creature is reduced to 0 Hit Points by your Fanged Bite attack or through your feeding, it rises as a Vampire Spawn 24 hours later unless the body is destroyed or undergoes rituals to prevent its rising. You can have two Vampire Spawns created this way under your control, and they follow your verbal commands to the best of their abilities. If you take control of a third Vampire Spawn, you choose one of the other Vampire Spawn you currently control to no longer follow your commands.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Humanoid reduced to 0 HP by Fanged Bite/feeding rises as Vampire Spawn in 24 hrs. Max 2 controlled.</description>
+        </sheet>
+        <rules>
+            <stat name="strength" value="1" />
+            <stat name="dexterity" value="1" />
+            <stat name="fanged bite:necrotic" value="2" />
+        </rules>
+    </element>
+
+    <element name="Boon: Final Fzeg Bloodline" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_FINAL_FZEG_BLOODLINE">
+        <supports>Vampire 2025 Boon 4</supports>
+        <prerequisite>Fzeg Bloodline</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_FZEG_BLOODLINE</requirements>
+        <description>
+            <p>You reach the full manifestation of your Fzeg Bloodline. You have the following features:</p>
+            <ul>
+                <li>Your Strength score increases by 2 points to a maximum of 20.</li>
+                <li>The damage done by your Claw attack becomes 3d6 plus your Strength modifier Slashing damage, using your Strength modifier and Proficiency Bonus on attack rolls. You can also make three Claw attacks with an Attack action.</li>
+                <li>You are Resistant to Bludgeoning, Piercing, and Slashing damage. Magic and silvered weapons ignore this Resistance.</li>
+                <li>Your Speed increases by 10 feet.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Attack action: 3 Claw attacks. Resist B/P/S dmg (ignored by magic/silvered).</description>
+        </sheet>
+        <rules>
+            <stat name="strength" value="2" />
+            <stat name="speed:misc" value="10" />
+            <stat name="fzeg claw:dice" value="2" />
+        </rules>
+    </element>
+
+    <element name="Boon: Final Strigoi Bloodline" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_FINAL_STRIGOI_BLOODLINE">
+        <supports>Vampire 2025 Boon 4</supports>
+        <prerequisite>Strigoi Bloodline Form</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_STRIGOI_BLOODLINE</requirements>
+        <description>
+            <p>You reach the full manifestation of your Strigoi Bloodline. You have the following features:</p>
+            <ul>
+                <li>Your Dexterity score increases by 2 points to a maximum of 20.</li>
+                <li>You can summon 2d4 Swarms of Rats, Swarms of Bats, or Wolves as a Bonus Action. They appear at the start of your next turn within 60 feet of you. They follow your verbal or mental commands. They disperse after 1 hour, when you are reduced to 0 Hit Points, or when you dismiss them with a Bonus Action. You regain this ability after finishing a Short or Long Rest.</li>
+                <li>You can cast the Misty Step spell up to four times without using a spell slot. You can also cast a spell in this way as a Reaction when you are targeted with a weapon attack. You cast the spell before taking damage. You regain this ability after finishing a Long Rest.</li>
+            </ul>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short Rest">
+            <description>Summon 2d4 Swarms of Rats/Bats or Wolves (appear start of next turn w/in 60ft, follow commands, last 1 hr).&#13;
+            Cast Misty Step 4/Long Rest w/o slot (can cast as Reaction when targeted by weapon attack, before taking dmg).</description>
+        </sheet>
+        <rules>
+            <stat name="dexterity" value="2" />
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_MISTY_STEP" />
+        </rules>
+    </element>
+
+    <element name="Boon: Regeneration" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_REGENERATION_VAMPIRE">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_4</requirements>
+        <description>
+            <p>The vampiric blood that flows in your veins gives you regenerative powers. You regain 15 Hit Points at the start of your turn if you have at least 1 Hit Point but less than 60 Hit Points. This feature has no effect if you are in sunlight or have taken Radiant damage since the end of your last turn.</p>
+        </description>
+        <sheet>
+            <description>Regain 15 HP at start of turn if 1 &lt;= HP &lt; 60. No effect in sunlight or if took Radiant dmg since end of last turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Ultimate Sanguine Curse" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ULTIMATE_SANGUINE_CURSE">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_VAMPIRE_LEVEL_4</requirements>
+        <description>
+            <p>Your transformation into a creature of the night is complete. And with that transformation comes susceptibilities. You gain the following features:</p>
+            <ul>
+                <li>One strike may end your existence forever. When you are Incapacitated, Stunned, or Unconscious, and you are struck by a Critical Hit with a Piercing Weapon made of wood or silver, you must succeed on a DC 20 Constitution saving throw. On a failed save, you die and are reduced to ash. Only a True Resurrection or Wish spell can resurrect you.</li>
+                <li>You must feed every day.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Incapacitated/Stunned/Unconscious and struck by Crit from Piercing wood/silver weapon: DC 20 Con save. Fail: die and reduced to ash (needs True Res/Wish).&#13;
+            Must feed every day.</description>
+        </sheet>
+    </element>
+</elements>

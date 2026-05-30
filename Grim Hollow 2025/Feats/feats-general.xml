@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>General Feats</name>
+		<description>General Feats from Grim Hollow: Player's Guide (2025)</description>
+		<update version="0.0.1">
+			<file name="feats-general.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Feats/feats-general.xml" />
+		</update>
+	</info>
+
+	<element name="Blackpowder Pistol Expert" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_BLACKPOWDER_PISTOL_EXPERT">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You have become practiced with the use of Blackpowder Pistols. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Dexterity, Constitution, or Intelligence score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Deadeye.</i></b> Attacking at long range doesn’t impose Disadvantage on your attack rolls with a Blackpowder Pistol.</p>
+			<p class="indent"><b><i>Quick Load.</i></b> You ignore the Loading property of the Blackpowder Pistol.</p>
+			<p class="indent"><b><i>Trick Shot.</i></b> Immediately after a creature within 5 feet of you moves, you can take a Reaction to make a ranged attack with a Blackpowder Pistol against that creature.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Attacking at long range doesn’t impose Disadvantage on your attack rolls with a Blackpowder Pistol, and you ignore its Loading property. &#13;
+			Immediately after a creature within 5ft. of you moves, you can make a ranged attack with a Blackpowder Pistol against that creature.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Blackpowder Pistol Expert)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_DEXTERITY|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CONSTITUTION|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_INTELLIGENCE" />
+		</rules>
+	</element>
+
+	<element name="Expanded Grip" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_EXPANDED_GRIP">
+		<supports>General</supports>
+		<requirements>([character:4],[str:13])||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Strength 13+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Strength 13+)</p>
+			<p>Your natural ability with larger weapons lets you use them in a way others can’t. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>One-Handed Grip.</i></b> When you use a Versatile weapon with one hand, the weapon deals the damage in parentheses when used to make a melee attack.</p>
+			<p class="indent"><b><i>Zealous Grasp.</i></b> If an effect forces you to drop what you are holding, you can make a DC 15 Strength saving throw to maintain your grip. When you are subjected to an effect that allows you to make a saving throw to maintain your grip, you have Advantage on the saving throw.</p>
+		</description>
+		<sheet>
+			<description>When you use a Versatile weapon with one hand, the weapon deals the damage in parentheses when used to make a melee attack. &#13;
+			If an effect forces you to drop what you are holding, you can make a DC 15 Strength saving throw to maintain your grip. You have Advantage on saving throws to maintain your grip.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Expanded Grip)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_STRENGTH|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_DEXTERITY|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CONSTITUTION" />
+		</rules>
+	</element>
+
+	<element name="Hulking Figure" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_HULKING_FIGURE">
+		<supports>General</supports>
+		<requirements>([character:4],[str:13])||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Strength 13+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Strength 13+)</p>
+			<p>Either from extensive training or a natural build, you have a broad and formidable size for your species. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Constitution score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Brutal.</i></b> Once per turn, you can deal an extra 1d4 Bludgeoning damage to a target you hit with an Unarmed Strike.</p>
+			<p class="indent"><b><i>Intimidating.</i></b> When you make a Charisma (Intimidation, Performance, or Persuasion) check, you can also add your Strength modifier to the roll.</p>
+			<p class="indent"><b><i>Powerful.</i></b> You count as one size larger (to a maximum size of Large) when determining your carrying capacity.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>You can deal an extra 1d4 Bludgeoning damage to a target you hit with an Unarmed Strike. &#13;
+			When you make a Charisma (Intimidation, Performance, or Persuasion) check, you can also add {{strength:modifier}} to the roll. You count as one size larger (max Large) when determining carrying capacity.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Hulking Figure)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_STRENGTH|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CONSTITUTION" />
+			<stat name="carrying capacity:multiplier" value="2" />
+		</rules>
+	</element>
+
+	<element name="Iron Gut" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_IRON_GUT">
+		<supports>General</supports>
+		<requirements>([character:4],[con:13])||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Constitution 13+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Constitution 13+)</p>
+			<p>You can eat like a hill giant and drink like a fish. Years of punishing your stomach and liver have led to a powerful fortitude. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength, Constitution, or Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Inured to Poison.</i></b> You have Advantage on saving throws you make to avoid or end the Poisoned condition.</p>
+			<p class="indent"><b><i>Everything Looks Delicious.</i></b> You have Advantage on Wisdom (Survival) checks to forage for food.</p>
+			<p class="indent"><b><i>Quick to Recover.</i></b> As a Bonus Action, you can expend one of your Hit Point Dice, roll the die and add your Constitution modifier, and regain a number of Hit Points equal to the roll’s total. Once you use this benefit, you can’t use it again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You can expend one of your Hit Dice, roll the die and add {{constitution:modifier}}, and regain a number of HP equal to the roll’s total. &#13;
+			You have Advantage on saving throws to avoid or end the Poisoned condition, and Advantage on Wisdom (Survival) checks to forage for food.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Iron Gut)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_STRENGTH|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CONSTITUTION|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Lightning Caster" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_LIGHTNING_CASTER">
+		<supports>General</supports>
+		<requirements>([character:4],(ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE||ID_INTERNAL_GRANTS_PACT_MAGIC_FEATURE))||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Spellcasting or Pact Magic Feature</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Spellcasting or Pact Magic Feature)</p>
+			<p>Your rapid-fire style of casting cantrips allows you to weave magic with uncanny speed. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Dual Target.</i></b> When you cast a cantrip with a casting time of an action that targets a single creature, you can use a Bonus Action to target a second creature within the cantrip’s range.</p>
+			<p class="indent"><b><i>Immediate Response.</i></b> When you cast a spell as a Reaction, that spell doesn’t expend a spell slot. Once you use this benefit, you can’t use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet>
+			<description>When you cast a cantrip with a casting time of an action that targets a single creature, you can use a Bonus Action to target a second creature within the cantrip’s range. &#13;
+			Once per Long Rest, when you cast a spell as a Reaction, that spell doesn’t expend a spell slot.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Lightning Caster)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_INTELLIGENCE|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Medician of the Morbus Doctore" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_MEDICIAN_OF_THE_MORBUS_DOCTORE">
+		<supports>General</supports>
+		<requirements>([character:4],ID_GFG_GHPG25_FEAT_TRIAGE_EXPERT)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Triage Expert Feat</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Triage Expert Feat)</p>
+			<p>You are a master of the medical sciences because of your association with a medical institute. You gain the following benefits.</p>
+			<p class="indent"><b><i>Adept Medic.</i></b> When you use the Blood and Bone benefit of the Triage Expert feat, the creature can spend up to three Hit Point Dice instead of one.</p>
+			<p class="indent"><b><i>Battle Surgeon.</i></b> When you use the Blood and Bone benefit of the Triage Expert feat, the creature can spend three Hit Point Dice to end one of the following conditions on itself instead of regaining Hit Points: Blinded, Deafened, Paralyzed, Poisoned, or Stunned. Alternatively, you can cure one Grievous Wound affecting the creature.</p>
+		</description>
+		<sheet>
+			<description>When you use the Blood and Bone benefit of the Triage Expert feat, the creature can spend up to 3 Hit Dice instead of 1. &#13;
+			Alternatively, the creature can spend 3 Hit Dice to end one of the following conditions on itself instead of regaining HP: Blinded, Deafened, Paralyzed, Poisoned, or Stunned, or you can cure one Grievous Wound affecting the creature.</description>
+		</sheet>
+	</element>
+
+	<element name="Nimble Physique" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_NIMBLE_PHYSIQUE">
+		<supports>General</supports>
+		<requirements>([character:4],[dex:13])||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Dexterity 13+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Dexterity 13+)</p>
+			<p>You are small and thin for your species. You have a mysterious and consistent ability to avoid danger. You gain the following benefits:</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Dodgy.</i></b> While you aren’t wearing armor or wielding a Shield, you can take the Dodge action as a Bonus Action.</p>
+			<p class="indent"><b><i>Slippery.</i></b> While you are Grappled or Restrained, your attacks don’t have Disadvantage and attacks against you don’t have Advantage.</p>
+		</description>
+		<sheet>
+			<description>While you aren’t wearing armor or wielding a Shield, you can take the Dodge action as a Bonus Action. &#13;
+			While you are Grappled or Restrained, your attacks don’t have Disadvantage and attacks against you don’t have Advantage.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Nimble Physique)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_STRENGTH|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_DEXTERITY|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CONSTITUTION" />
+		</rules>
+	</element>
+
+	<element name="Sangromantic Initiate" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_SANGROMANTIC_INITIATE">
+		<supports>General</supports>
+		<requirements>([character:4],(ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE||ID_INTERNAL_GRANTS_PACT_MAGIC_FEATURE))||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Spellcasting or Pact Magic Feature</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Spellcasting or Pact Magic Feature)</p>
+			<p>You have become adept enough with weaving blood magic to mitigate some of the harm of Sangromancy. You gain the following benefits.</p>
+			<p class="indent"><b><i>Blood Magic.</i></b> Choose a Sangromancy spell from any spell list of a level for which you have spell slots. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slot you have.</p>
+			<p class="indent"><b><i>Sanguine Potency.</i></b> You have a pool of two d12s that you can expend instead of Hit Point Dice when you cast Sangromancy spells. Your pool regains all expended dice when you finish a Long Rest.</p>
+		</description>
+		<sheet usage="2/Long Rest">
+			<description>You have a pool of 2d12s that you can expend instead of Hit Dice when you cast Sangromancy spells. Your pool regains all expended dice when you finish a Long Rest. &#13;
+			You can cast your chosen Sangromancy spell once without a spell slot, regaining the ability to do so after a Long Rest.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Sangromancy Spell (Sangromantic Initiate)" supports="Sangromancy" />
+		</rules>
+	</element>
+
+	<element name="Shadowsteel Adept" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_SHADOWSTEEL_ADEPT">
+		<supports>General</supports>
+		<requirements>([character:4],(ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE||ID_INTERNAL_GRANTS_PACT_MAGIC_FEATURE))||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Spellcasting or Pact Magic Feature</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Spellcasting or Pact Magic Feature)</p>
+			<p>You have learned to tap into the dangerous but powerful art of Shadowsteel casting. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Curse Caster.</i></b> You always have Shadowsteel curses prepared, and you can cast them with any spell slots you have.</p>
+			<p class="indent"><b><i>Shadowsteel’s Bite.</i></b> While holding your Shadowsteel Focus, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your spells.</p>
+			<p class="indent"><b><i>Shadowsteel Weapon.</i></b> If your Shadowsteel Focus is also a weapon, that weapon has a +1 bonus to weapon attack rolls and damage rolls.</p>
+		</description>
+		<sheet>
+			<description>You always have Shadowsteel curses prepared, and you can cast them with any spell slots you have. &#13;
+			While holding your Shadowsteel Focus, you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your spells. If your Shadowsteel Focus is also a weapon, that weapon has a +1 bonus to weapon attack rolls and damage rolls.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Shadowsteel Adept)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_INTELLIGENCE|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Shadowsteel Master" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_SHADOWSTEEL_MASTER">
+		<supports>General</supports>
+		<requirements>([character:8],ID_GFG_GHPG25_FEAT_SHADOWSTEEL_ADEPT)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 8+, Shadowsteel Adept Feat</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 8+, Shadowsteel Adept Feat)</p>
+			<p>Your mastery over Shadowsteel grows stronger. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Necrotic Harmony.</i></b> While holding your Shadowsteel Focus, when you cast a spell that targets one or more creatures and requires an attack roll or saving throw, you can choose one target you hit or who failed the saving throw to also take 1d4 Necrotic damage for each spell slot level expended to cast the spell.</p>
+			<p class="indent"><b><i>Necrotic Weapon.</i></b> If your Shadowsteel Focus is also a weapon, that weapon has a +2 bonus to weapon attack rolls and damage rolls. Additionally, once on each of your turns, when you hit a creature with a weapon attack roll using your Shadowsteel Focus, you can cause the target to take an extra 2d8 Necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>While holding your Shadowsteel Focus, when you cast a spell that targets one or more creatures and requires an attack roll or saving throw, you can choose one target you hit or who failed the saving throw to also take 1d4 Necrotic damage for each spell slot level expended to cast the spell. &#13;
+			If your Shadowsteel Focus is also a weapon, that weapon has a +2 bonus to weapon attack rolls and damage rolls. Additionally, once on each of your turns, when you hit a creature with a weapon attack roll using your Shadowsteel Focus, you can cause the target to take an extra 2d8 Necrotic damage.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Shadowsteel Master)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_INTELLIGENCE|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CHARISMA" />
+		</rules>
+	</element>
+
+	<element name="Syndicate Spy" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_SYNDICATE_SPY">
+		<supports>General</supports>
+		<requirements>([character:4],ID_GFG_GHPG25_BACKGROUND_SYNDICATE_SMUGGLER)||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Syndicate Smuggler background</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Syndicate Smuggler background)</p>
+			<p>Rising in the ranks of the Ebon Syndicate has taught you the clandestine skills of spycraft, valuable in your trade as a racketeer. You gain the following benefits.</p>
+			<p class="indent"><b><i>Locksmith.</i></b> You have proficiency with Thieves’ Tools. While holding Thieves’ Tools, you can craft a key to a lock by spending 10 minutes with that lock.</p>
+			<p class="indent"><b><i>Master of Disguise.</i></b> You have proficiency with a Disguise Kit. If you spend 10 minutes donning a Costume, you decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and other distinguishing characteristics. You can make yourself appear as a member of another species, though none of your statistics change. You can’t appear as a creature of a different size, and your basic shape stays the same; if you’re bipedal, you can’t use this benefit to become quadrupedal, for instance.</p>
+			<p class="indent"><b><i>Master Calligrapher.</i></b> You have proficiency with a Forgery Kit. You aren’t limited to 10 or fewer words when mimicking someone else’s handwriting.</p>
+			<p class="indent"><b><i>Blending In.</i></b> When using the Hide action to conceal yourself from creatures that aren't Hostile to you, you need only be Lightly Obscured and you may use Charisma instead of Dexterity for the check.</p>
+		</description>
+		<sheet>
+			<description>While holding Thieves’ Tools, you can craft a key to a lock by spending 10 minutes with that lock. &#13;
+			If you spend 10 minutes donning a Costume with a Disguise Kit, you decide what you look like (height, weight, facial features, voice, hair, coloration, species). You can’t change your size or basic shape. &#13;
+			You aren’t limited to 10 or fewer words when mimicking handwriting with a Forgery Kit. &#13;
+			When using the Hide action to conceal yourself from non-Hostile creatures, you need only be Lightly Obscured and you may use Charisma instead of Dexterity for the check.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
+		</rules>
+	</element>
+
+	<element name="Thrown Weapon Master" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_THROWN_WEAPON_MASTER">
+		<supports>General</supports>
+		<requirements>([character:4],([str:13]||[dex:13]))||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+, Strength or Dexterity 13+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+, Strength or Dexterity 13+)</p>
+			<p>You excel at thrown weapons. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength or Dexterity score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Multithrow.</i></b> After you take the Attack action to make a ranged attack roll using a Simple weapon that has the Thrown property, you can make two additional ranged attacks using Simple weapons that have the Thrown property as a Bonus Action.</p>
+			<p class="indent"><b><i>Quick Hands.</i></b> As a Bonus Action, you can retrieve and stow or wield all Simple weapons with the Thrown property that are within 5 feet of you. You need a free hand to perform this maneuver.</p>
+			<p class="indent"><b><i>Returning.</i></b> Simple weapons with the Thrown property that you are proficient with also have the Returning property.</p>
+		</description>
+		<sheet>
+			<description>After you take the Attack action to make a ranged attack roll using a Simple weapon that has the Thrown property, you can make two additional ranged attacks using Simple weapons that have the Thrown property as a Bonus Action. &#13;
+			As a Bonus Action, you can retrieve and stow or wield all Simple weapons with the Thrown property that are within 5ft. of you (requires a free hand). &#13;
+			Simple weapons with the Thrown property that you are proficient with also have the Returning property.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Thrown Weapon Master)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_STRENGTH|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_DEXTERITY" />
+		</rules>
+	</element>
+
+	<element name="Witch Hunter" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_WITCH_HUNTER">
+		<supports>General</supports>
+		<requirements>[character:4]||ID_WOTC_PHB24_GRANTS_FEAT_UNLOCKER</requirements>
+		<prerequisite>Level 4+</prerequisite>
+		<description>
+			<p class="flavor">General Feat (Prerequisite: Level 4+)</p>
+			<p>You have honed and perfected your skills fighting against spellcasters, possibly from your background hunting mages as part of the Arcanist Inquisition. You gain the following benefits.</p>
+			<p class="indent"><b><i>Ability Score Increase.</i></b> Increase your Strength, Constitution, or Wisdom score by 1, to a maximum of 20.</p>
+			<p class="indent"><b><i>Dodge Spells.</i></b> You can take a Reaction to avoid a spell that is targeting only you and doesn’t create an area of effect. Make a Wisdom saving throw against the spellcaster’s spell save DC. On a successful save, the creature must choose a new target or the spell is canceled. A canceled spell dissipates with no effect, and any resources used to cast it are wasted.</p>
+			<p class="indent"><b><i>Keep Your Enemies Close.</i></b> When you hit a target that can cast spells with an attack roll using a Melee weapon or an Unarmed Strike, you can reduce its Speed by 15 feet until the start of your next turn.</p>
+			<p class="indent"><b><i>Resist Curses.</i></b> You have Advantage on saving throws against all Shadowsteel curses, and also against spells with a duration of more than 10 minutes.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>You can avoid a spell that is targeting only you and doesn’t create an area of effect. Make a Wisdom saving throw against the spellcaster’s spell save DC. On a successful save, the creature must choose a new target or the spell is canceled (resources wasted). &#13;
+			When you hit a target that can cast spells with an attack roll using a Melee weapon or an Unarmed Strike, you can reduce its Speed by 15ft. until the start of your next turn. &#13;
+			You have Advantage on saving throws against all Shadowsteel curses, and also against spells with a duration of more than 10 minutes.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Witch Hunter)" supports="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_STRENGTH|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_CONSTITUTION|ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_FEAT_WISDOM" />
+		</rules>
+	</element>
+
+</elements>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Misfortune Bringer</name>
+		<description>The Misfortune Bringer subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="rogue-misfortunebringer.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/rogue-misfortunebringer.xml" />
+		</update>
+	</info>
+
+	<element name="Misfortune Bringer" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_ROGUE_MISFORTUNE_BRINGER">
+		<supports>Rogue Subclass</supports>
+		<description>
+			<p class="flavor">Curse Those You're About to Strike</p>
+			<p>You've matched your penchant for illicit activities with the ability to mark your enemies for mishap and misfortune. Whether you were imbued with magic by spending time among the Fey or you learned the art of cursing from a long line of hedge Wizards, you are a Misfortune Bringer.</p>
+			<p class="indent">Although not universal, many Misfortune Bringers possess heterochromia iridum, eyes of two different colors, and they use only one when glaring at targets they intend to curse.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_EVIL_EYE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNIST" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_STEAL_LUCK" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_CURSE_CASTER" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_IMPROVED_STEAL_LUCK" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_EVIL_EYE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNIST" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_STEAL_LUCK" level="9" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_CURSE_CASTER" level="13" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_IMPROVED_STEAL_LUCK" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Evil Eye" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_EVIL_EYE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MISFORTUNE_BRINGER_EVIL_EYE</requirements>
+		<description>
+			<p>You can place a minor curse with a glance. As a Bonus Action, choose a creature you can see within 60 feet of yourself to be cursed by your Evil Eye. While a creature is cursed by your Evil Eye, you can deal Sneak Attack damage to the creature if you don't have Disadvantage on the attack roll.</p>
+			<p class="indent">The creature remains cursed by your Evil Eye for 1 minute or until you curse a different creature with your Evil Eye, whichever comes first.</p>
+		</description>
+		<sheet alt="Evil Eye" action="Bonus Action">
+			<description>You curse a creature you can see within 60 feet of yourself. While cursed, you can deal Sneak Attack damage to it if you don't have Disadvantage on the attack roll. The curse lasts for 1 minute or until you curse a different creature.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Misfortunist" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNIST">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MISFORTUNE_BRINGER_MISFORTUNIST</requirements>
+		<description>
+			<p>You learn Misfortunes that you can inflict on those cursed by your Evil Eye.</p>
+			<p class="indent"><strong><em>Misfortunes.</em></strong> You learn two Misfortunes of your choice, which are detailed under "Misfortunes" below. You learn an additional Misfortune of your choice when you reach Rogue levels 9, 13, and 17. When you finish a Long Rest, you can replace one Misfortune you know with a different one.</p>
+			<p class="indent"><strong><em>Jinx Points.</em></strong> You have 4 Jinx Points. You gain 2 additional Jinx Points at Rogue level 13. To use a Misfortune option, you must spend the number of Jinx Points that it costs. You regain all expended Jinx Points when you finish a Short or Long Rest.</p>
+			<p class="indent"><strong><em>Saving Throws.</em></strong> If a Misfortune requires a saving throw, the DC equals 8 + your Charisma or Intelligence modifier (your choice) + your Proficiency Bonus.</p>
+		</description>
+		<sheet alt="Misfortunist" usage="{{jinx points:amount}}/Short Rest">
+			<description>You can spend Jinx Points to inflict Misfortunes on targets cursed by your Evil Eye. Save DC: {{misfortune:dc}}.</description>
+		</sheet>
+		<rules>
+			<stat name="jinx points:amount" value="4" bonus="base" />
+			<stat name="jinx points:amount" value="2" bonus="base" level="13" />
+
+			<stat name="misfortune:dc" value="8" bonus="base" />
+			<stat name="misfortune:dc" value="proficiency" bonus="proficiency" />
+			<stat name="misfortune:dc" value="misfortune:dc:ability" />
+
+            <select type="Archetype Feature" name="Misfortunist Ability" supports="Misfortunist Ability" />
+
+			<select type="Archetype Feature" name="Misfortune" supports="Misfortune" number="2" />
+			<select type="Archetype Feature" name="Misfortune" supports="Misfortune" level="9" />
+			<select type="Archetype Feature" name="Misfortune" supports="Misfortune" level="13" />
+			<select type="Archetype Feature" name="Misfortune" supports="Misfortune" level="17" />
+		</rules>
+	</element>
+    <element name="Intelligence" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNIST_INT">
+        <supports>Misfortunist Ability</supports>
+        <compendium display="false" />
+        <description>
+            <p>Intelligence</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="misfortune:dc:ability" value="intelligence:modifier" bonus="ability" />            
+        </rules>
+    </element>
+    <element name="Charisma" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_MISFORTUNIST_CHA">
+        <supports>Misfortunist Ability</supports>
+        <compendium display="false" />
+        <description>
+            <p>Intelligence</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+			<stat name="misfortune:dc:ability" value="charisma:modifier" bonus="ability" />         
+        </rules>
+    </element>
+
+	<element name="Level 9: Steal Luck" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_STEAL_LUCK">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MISFORTUNE_BRINGER_STEAL_LUCK</requirements>
+		<description>
+			<p>When a creature you can see within 30 feet of yourself is about to make a D20 Test with Advantage, you can take a Reaction to prevent the roll from being affected by Advantage. When you do so, you regain 1 expended Jinx Point.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Steal Luck" action="Reaction" usage="1/Short Rest">
+			<description>When a creature you can see within 30 ft is about to make a D20 Test with Advantage, you can prevent the roll from being affected by Advantage. When you do so, you regain 1 expended Jinx Point.</description>
+			<description level="17" usage="3/Long Rest">When a creature you can see within 30 ft is about to make a D20 Test with Advantage, you can prevent the roll from being affected by Advantage. When you do so, you regain 1 expended Jinx Point.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 13: Curse Caster" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_CURSE_CASTER">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MISFORTUNE_BRINGER_CURSE_CASTER</requirements>
+		<description>
+			<p>You can take a Magic action and spend 3 Jinx Points to cast Bestow Curse.</p>
+		</description>
+		<sheet alt="Curse Caster" action="Action" usage="3 Jinx Points">
+			<description>You can cast Bestow Curse.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BESTOW_CURSE" />
+		</rules>
+	</element>
+
+	<element name="Level 17: Improved Steal Luck" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_BRINGER_IMPROVED_STEAL_LUCK">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MISFORTUNE_BRINGER_IMPROVED_STEAL_LUCK</requirements>
+		<description>
+			<p>You can use your Steal Luck feature three times, and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<!-- Misfortunes -->
+	<element name="Curse of the Befuddled" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_CURSE_OF_THE_BEFUDDLED">
+		<supports>Misfortune</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a Magic action, choose a creature that you can see within 60 feet of yourself that is cursed by your Evil Eye and spend 2 Jinx Points. The target must make a Wisdom saving throw. On a failed save, the creature has the Charmed condition for 10 minutes or until you or your allies damage it. When the effect ends, the target knows it was Charmed by you.</p>
+			<p class="indent">After you use this Misfortune, the creature is no longer cursed by your Evil Eye.</p>
+		</description>
+		<sheet alt="Curse of the Befuddled" action="Action" usage="2 Jinx Points">
+			<description>Target cursed by Evil Eye within 60 ft makes a DC{{misfortune:dc}} Wis save. Fail: Charmed for 10 mins (or until damaged by you/allies). Target knows it was Charmed. Ends Evil Eye.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Clumsy" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_CURSE_OF_THE_CLUMSY">
+		<supports>Misfortune</supports>
+		<compendium display="false" />
+		<description>
+			<p>When a creature cursed by your Evil Eye moves at least 5 feet on its turn, you can take a Reaction and spend 3 Jinx Points to cause the creature to have the Prone condition and have its Speed reduced to 0 until the end of its turn.</p>
+			<p class="indent">After you use this Misfortune, the creature is no longer cursed by your Evil Eye.</p>
+		</description>
+		<sheet alt="Curse of the Clumsy" action="Reaction" usage="3 Jinx Points">
+			<description>When a creature cursed by Evil Eye moves at least 5 ft on its turn, it falls Prone and its Speed is 0 until the end of its turn. Ends Evil Eye.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Debilitated" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_CURSE_OF_THE_DEBILITATED">
+		<supports>Misfortune</supports>
+		<compendium display="false" />
+		<description>
+			<p>When a creature cursed by your Evil Eye takes damage, you can take a Reaction and spend 1 Jinx point to roll 1d12. The creature takes Necrotic damage equal to the roll.</p>
+			<p class="indent">After you use this Misfortune, the creature is no longer cursed by your Evil Eye.</p>
+		</description>
+		<sheet alt="Curse of the Debilitated" action="Reaction" usage="1 Jinx Point">
+			<description>When a creature cursed by Evil Eye takes damage, you deal 1d12 Necrotic damage to it. Ends Evil Eye.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Doomed" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_CURSE_OF_THE_DOOMED">
+		<supports>Misfortune</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you miss with an attack roll against a creature cursed by your Evil Eye, you can take a Reaction and spend 1 Jinx Point to reroll the attack. You must use the new roll.</p>
+			<p class="indent">After you use this Misfortune, the creature is no longer cursed by your Evil Eye.</p>
+		</description>
+		<sheet alt="Curse of the Doomed" action="Reaction" usage="1 Jinx Point">
+			<description>When you miss an attack against a creature cursed by Evil Eye, reroll the attack and use the new roll. Ends Evil Eye.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Fearful" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_CURSE_OF_THE_FEARFUL">
+		<supports>Misfortune</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a Magic action, choose a creature that you can see within 60 feet of yourself that is cursed by your Evil Eye and spend 2 Jinx Points. The target must make a Wisdom saving throw. On a failed save, the creature has the Frightened condition for 1 minute. At the end of each of its turns, the Frightened target repeats the save, ending the Misfortune on itself on a success.</p>
+			<p class="indent">After you use this Misfortune, the creature is no longer cursed by your Evil Eye.</p>
+		</description>
+		<sheet alt="Curse of the Fearful" action="Action" usage="2 Jinx Points">
+			<description>Target cursed by Evil Eye within 60 ft makes a DC{{misfortune:dc}} Wis save. Fail: Frightened for 1 min (save ends at end of turns). Ends Evil Eye.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Inept" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_CURSE_OF_THE_INEPT">
+		<supports>Misfortune</supports>
+		<compendium display="false" />
+		<description>
+			<p>After a creature you can see that is cursed by your Evil Eye makes a D20 Test, you can take a Reaction and spend 1 Jinx Point to make the target reroll, and it must use the new roll.</p>
+			<p class="indent">After you use this Misfortune, the creature is no longer cursed by your Evil Eye.</p>
+		</description>
+		<sheet alt="Curse of the Inept" action="Reaction" usage="1 Jinx Point">
+			<description>After a creature cursed by Evil Eye makes a D20 Test, force it to reroll and use the new roll. Ends Evil Eye.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Insensate" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_CURSE_OF_THE_INSENSATE">
+		<supports>Misfortune</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a Magic action, choose a creature that you can see that is cursed by your Evil Eye and spend 3 Jinx Points. The target must make a Wisdom saving throw. On a failed save, the creature has the Blinded and Deafened conditions for 1 minute. At the end of each of its turns, the target repeats the save, ending the Misfortune on itself on a success.</p>
+			<p class="indent">After you use this Misfortune, the creature is no longer cursed by your Evil Eye.</p>
+		</description>
+		<sheet alt="Curse of the Insensate" action="Action" usage="3 Jinx Points">
+			<description>Target cursed by Evil Eye makes a DC{{misfortune:dc}} Wis save. Fail: Blinded and Deafened for 1 min (save ends at end of turns). Ends Evil Eye.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Maimed" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_CURSE_OF_THE_MAIMED">
+		<supports>Misfortune</supports>
+		<compendium display="false" />
+		<description>
+			<p>When you hit a creature cursed by your Evil Eye with an attack roll using a weapon or Unarmed Strike and roll a 19 or 20 on the d20, you can take a Reaction and spend 2 Jinx Points to score a Critical Hit.</p>
+			<p class="indent">After you use this Misfortune, the creature is no longer cursed by your Evil Eye.</p>
+		</description>
+		<sheet alt="Curse of the Maimed" action="Reaction" usage="2 Jinx Points">
+			<description>When you hit a creature cursed by Evil Eye with a weapon/Unarmed Strike rolling a 19 or 20, you can score a Critical Hit. Ends Evil Eye.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Marked" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_CURSE_OF_THE_MARKED">
+		<supports>Misfortune</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a Bonus Action, you can spend 2 Jinx Points to increase the duration of your Evil Eye to 1 hour or until you mark a different creature with your Evil Eye, whichever comes first.</p>
+			<p class="indent">Additionally, while a creature is affected by this curse, you always know the direction and distance to the creature while the two of you are on the same plane of existence.</p>
+		</description>
+		<sheet alt="Curse of the Marked" action="Bonus Action" usage="2 Jinx Points">
+			<description>Increase the duration of your Evil Eye to 1 hour. While affected, you know the direction and distance to the creature if on the same plane.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Plagued" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_CURSE_OF_THE_PLAGUED">
+		<supports>Misfortune</supports>
+		<compendium display="false" />
+		<description>
+			<p>When a creature you can see that is cursed by your Evil Eye would regain Hit Points, you can take a Reaction and spend 1 Jinx Point to halve the number of Hit Points regained. Afterward, the creature can't regain Hit Points until the start of your next turn.</p>
+			<p class="indent">After you use this Misfortune, the creature is no longer cursed by your Evil Eye.</p>
+		</description>
+		<sheet alt="Curse of the Plagued" action="Reaction" usage="1 Jinx Point">
+			<description>When a creature cursed by Evil Eye regains HP, halve the HP regained. It can't regain HP until the start of your next turn. Ends Evil Eye.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Somnolent" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_CURSE_OF_THE_SOMNOLENT">
+		<supports>Misfortune</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a Magic action, choose a creature you can see that is cursed by your Evil Eye and spend 3 Jinx Points. The target must make a Wisdom saving throw. On a failed save, the creature has the Unconscious condition for 1 minute. The condition ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the Misfortune's effect.</p>
+			<p class="indent">Creatures that don't sleep, such as elves, or that have Immunity to the Exhaustion condition automatically succeed on saves against this Misfortune.</p>
+			<p class="indent">After you use this Misfortune, the creature is no longer cursed by your Evil Eye.</p>
+		</description>
+		<sheet alt="Curse of the Somnolent" action="Action" usage="3 Jinx Points">
+			<description>Target cursed by Evil Eye makes a DC{{misfortune:dc}} Wis save (auto-succeeds if immune to sleep/Exhaustion). Fail: Unconscious for 1 min (damage or an action to shake awake ends). Ends Evil Eye.</description>
+		</sheet>
+	</element>
+
+	<element name="Curse of the Unlucky" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_MISFORTUNE_CURSE_OF_THE_UNLUCKY">
+		<supports>Misfortune</supports>
+		<compendium display="false" />
+		<description>
+			<p>As a Bonus Action, you can spend 3 Jinx Points to put a pox on a creature cursed by your Evil Eye. Whenever the creature is about to make an attack roll or saving throw, you can roll 1d4 and subtract the number rolled from the total. This Misfortune ends when the creature is no longer cursed by your Evil Eye.</p>
+		</description>
+		<sheet alt="Curse of the Unlucky" action="Bonus Action" usage="3 Jinx Points">
+			<description>Put a pox on a creature cursed by Evil Eye. Whenever it makes an attack roll or save, roll 1d4 and subtract it from the total. Ends when Evil Eye ends.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Evil Eye Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MISFORTUNE_BRINGER_EVIL_EYE" />
+	<element name="Misfortunist Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MISFORTUNE_BRINGER_MISFORTUNIST" />
+	<element name="Steal Luck Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MISFORTUNE_BRINGER_STEAL_LUCK" />
+	<element name="Curse Caster Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MISFORTUNE_BRINGER_CURSE_CASTER" />
+	<element name="Improved Steal Luck Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MISFORTUNE_BRINGER_IMPROVED_STEAL_LUCK" />
+
+</elements>

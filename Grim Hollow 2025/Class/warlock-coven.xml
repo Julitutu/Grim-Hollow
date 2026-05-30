@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The Coven</name>
+		<description>The Coven subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="warlock-coven.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/warlock-coven.xml" />
+		</update>
+	</info>
+
+	<element name="The Coven" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_WARLOCK_THE_COVEN">
+		<supports>Warlock Subclass</supports>
+		<description>
+			<p class="flavor">Curse and Befuddle with Hag Magic</p>
+			<p>Hags dwell in the deep places of Etharis, from the primordial forests of Valika to the putrid streets of Liesech. These creatures, though rarely benevolent, are willing to bargain with mortals in exchange for furthering their own capricious goals.</p>
+			<p class="indent">Warlocks often find themselves with a single Hag as a sponsor. Should this Hag have a coven, it can lead to the peculiar situation of Warlock agents acting against other Hags or their Warlocks within the coven. But such is the politics of the Realm of Faerie.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_COVEN_COVEN_SPELLS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_COVEN_HAGS_EYE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_COVEN_HAGS_GUILE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_COVEN_HAGS_VISAGE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_COVEN_HAGS_CRAFT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_COVEN_COVEN_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_COVEN_HAGS_EYE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_COVEN_HAGS_GUILE" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_COVEN_HAGS_VISAGE" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_COVEN_HAGS_CRAFT" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Coven Spells" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_COVEN_COVEN_SPELLS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_COVEN_COVEN_SPELLS</requirements>
+		<description>
+			<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Coven Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Coven Spells</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Warlock Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Hold Person, Identify, Locate Object, Ray of Sickness</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Bestow Curse, Counterspell</em></td></tr>
+				<tr><td style="text-align:center">7</td><td><em>Phantasmal Killer, Polymorph</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Divination, Locate Creature</em></td></tr>
+				<tr><td style="text-align:center">17</td><td><em>Contact Other Plane, Scrying</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_PERSON" level="3" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_IDENTIFY" level="3" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LOCATE_OBJECT" level="3" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_SICKNESS" level="3" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BESTOW_CURSE" level="5" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_COUNTERSPELL" level="5" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PHANTASMAL_KILLER" level="7" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_POLYMORPH" level="7" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DIVINATION" level="9" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LOCATE_CREATURE" level="9" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONTACT_OTHER_PLANE" level="17" spellcasting="Warlock" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SCRYING" level="17" spellcasting="Warlock" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Hag's Eye" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_COVEN_HAGS_EYE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_COVEN_HAGS_EYE</requirements>
+		<description>
+			<p>As an agent of a Hag, you have been gifted with a magical item known as a Hag's Eye. Crafted from a real eye and fitted into a ring, pendant, or other accessory, this item can be used as an Arcane Focus for your Warlock spells. The Hag can see through the eye, and the destruction of the item can cause the Hag actual pain, so any pawn who loses this talisman often invokes the Hag's ire.</p>
+			<p class="indent">While you possess the eye, you can cast Hex a number of times equal to your Charisma modifier (minimum of once) without expending a spell slot, and you regain all expended uses of this ability when you finish a Long Rest.</p>
+			<p class="indent">In addition, when you reach Warlock level 10, you can use the eye to cast Bestow Curse once without expending a spell slot, and you regain the ability to do so once you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Hag's Eye" usage="{{hags eye:usage}}/Long Rest">
+			<description>You possess a Hag's Eye that acts as an Arcane Focus. While you possess it, you can cast Hex without expending a spell slot.</description>
+			<description level="10">You possess a Hag's Eye that acts as an Arcane Focus. While you possess it, you can cast Hex without expending a spell slot. Additionally, you can cast Bestow Curse once per Long Rest without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HEX" />
+			<stat name="hags eye:usage" value="1" bonus="base" />
+			<stat name="hags eye:usage" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Hag's Guile" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_COVEN_HAGS_GUILE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_COVEN_HAGS_GUILE</requirements>
+		<description>
+			<p>Hags delight in deceiving and manipulating others, and you gain some of their skill in doing so. You know the Minor Illusion cantrip. If you already know it, you learn a different Warlock cantrip of your choice. The cantrip doesn't count against your number of cantrips known.</p>
+			<p class="indent">Additionally, if a creature takes a Study action to examine an illusion you have created, you can take a Reaction to impose Disadvantage on the check.</p>
+			<p class="indent">Also, the first time a creature takes a Study action to examine an illusion spell you have cast and succeeds on the Intelligence (Investigation) check, you can cause the illusion to deal Psychic damage. The damage equals 1d6 plus 1d6 for each spell slot used to cast the spell.</p>
+			<p class="indent">You can do damage a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Hag's Guile" action="Reaction" usage="{{hags guile:usage}}/Short Rest">
+			<description>You can impose Disadvantage when a creature takes a Study action to examine your illusion. Also, the first time a creature succeeds on an Investigation check to examine your illusion spell, you can cause it to deal 1d6 + 1d6 per spell slot level Psychic damage.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Hag's Guile)" supports="0, Warlock" spellcasting="Warlock" default="ID_WOTC_PHB24_SPELL_MINOR_ILLUSION" />
+			<stat name="hags guile:usage" value="1" bonus="base" />
+			<stat name="hags guile:usage" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 10: Hag's Visage" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_COVEN_HAGS_VISAGE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_COVEN_HAGS_VISAGE</requirements>
+		<description>
+			<p>As a Magic action, you twist your face into a horrifying mask resembling your Hag patron. It lasts for 1 minute, but it ends early if you dismiss it (no action required) or have the Incapacitated condition. While this effect lasts, you gain the benefits listed below.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Horrifying Gaze.</em></strong> As a Bonus Action, choose one Humanoid that you can see and that can see you within 30 feet of you. The creature must make a Wisdom saving throw against your spell save DC or have the Frightened condition for 1 minute. The Frightened target repeats the save at the end of each of its turns, ending the effect on itself on a success. A creature that can see you has Disadvantage on this save.</p>
+			<p class="indent"><strong><em>Paralyzing Gaze.</em></strong> As a Magic Action, choose one Humanoid that you can see and that can see you within 30 feet of you that has the Frightened condition. The creature must make a Wisdom saving throw against your spell save DC or have the Paralyzed condition.</p>
+			<p class="indent">On a successful save, the creature takes Necrotic damage equal to your Warlock level, it is no longer Frightened, and it can't be targeted by your Hag's Visage again until you finish a Long Rest.</p>
+			<p class="indent"><strong><em>Death Gaze.</em></strong> As a Magic Action, choose one Humanoid that you can see and that can see you within 30 feet of you that has the Paralyzed condition. The creature must make a Wisdom saving throw with Advantage against your spell save DC or be reduced to 0 Hit Points.</p>
+			<p class="indent">On a successful save, the creature takes Necrotic damage equal to twice your Warlock level, it is no longer Paralyzed, and it can't be targeted by your Hag's Visage again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Hag's Visage" action="Action" usage="1/Long Rest">
+			<description>You twist your face into a horrifying mask for 1 min (ends if Incapacitated or dismissed). While active:&#13;
+			• Horrifying Gaze (Bonus Action): Target Humanoid within 30 ft that can see you makes a DC{{warlock:spellcasting:dc}} Wis save (Disadvantage if it can see you) or is Frightened for 1 min (save ends at end of turns).&#13;
+			• Paralyzing Gaze (Magic Action): Target Frightened Humanoid within 30 ft that can see you makes a DC{{warlock:spellcasting:dc}} Wis save. Fail: Paralyzed. Success: Takes {{level:warlock}} Necrotic damage, no longer Frightened, immune to Hag's Visage until Long Rest.&#13;
+			• Death Gaze (Magic Action): Target Paralyzed Humanoid within 30 ft that can see you makes a DC{{warlock:spellcasting:dc}} Wis save with Advantage. Fail: Reduced to 0 HP. Success: Takes {{hags visage:damage}} Necrotic damage, no longer Paralyzed, immune to Hag's Visage until Long Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="hags visage:damage" value="level:warlock" />
+			<stat name="hags visage:damage" value="level:warlock" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Hag's Craft" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_COVEN_HAGS_CRAFT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_COVEN_HAGS_CRAFT</requirements>
+		<description>
+			<p>The Hag imparts the knowledge to craft two magic items.</p>
+			<p class="indent">You can temporarily turn a normal vessel into a Hag's Cauldron by expending a spell slot. This magical cauldron lasts for 10 minutes. During that time, you can take the Magic to pour out three Common, two Uncommon, or one Rare potion. The potions lose efficacy at the end of your next Short or Long Rest. You regain this ability at the end of a Long Rest.</p>
+			<p class="indent">Additionally, when you finish a Long Rest, you can expend a spell slot and imbue a gemstone worth at least 10 GP with magic, turning it into a Minor Heartstone. This magic item grants the bearer Immunity to the Poisoned condition and the ability to cast Blink once without expending a spell slot. The magic within the gemstone fades after 24 hours and the gem crumbles into dust.</p>
+		</description>
+		<sheet alt="Hag's Craft">
+			<description>Hag's Cauldron (1/Long Rest): Expend a spell slot to turn a vessel into a Hag's Cauldron for 10 mins. Magic action to pour out 3 Common, 2 Uncommon, or 1 Rare potion (lose efficacy on Short/Long Rest).&#13;
+			Minor Heartstone: On a Long Rest, expend a spell slot and a 10+ GP gem to create a Minor Heartstone. Bearer is Immune to Poisoned condition and can cast Blink once without a spell slot. Gem crumbles after 24 hrs.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Coven Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_COVEN_COVEN_SPELLS" />
+	<element name="Hag's Eye Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_COVEN_HAGS_EYE" />
+	<element name="Hag's Guile Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_COVEN_HAGS_GUILE" />
+	<element name="Hag's Visage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_COVEN_HAGS_VISAGE" />
+	<element name="Hag's Craft Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_COVEN_HAGS_CRAFT" />
+
+</elements>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Familiars</name>
+		<description>Familiars from the Grim Hollow: Monster Grimoire 2025.</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="familiars.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Setting/familiars.xml" />
+		</update>
+	</info>
+	<element name="Malikirian Imp" type="Companion" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_MALIKIRIAN_IMP">
+		<supports>Variant Familiar</supports>
+		<description>
+			<p><i>“I can give you anything, mortal. Riches? Accolades? To be important, for once? Whisper your secrets to me. I will tell you the secrets of your rivals. They all dance with me.”</i></p>
+			<p class="indent"><b><i>Prideful Purpose.</i></b> A minor daemon of Malikir, Arch Daemon of Pride, the Malikirian imp was created to tempt mortals into acting on their base desires and soothe their guilty consciouses with rapturous feelings of entitlement and certainty. It is said the Angel of Empyreus keeps one chained to elicit confessions and goad mortals into the very acts of sin the Angel of Empyreus seeks to punish.</p>
+			<p class="indent"><b><i>A Decrepit Devil.</i></b> An individual imp's appearance varies, but it often appears as a wretched, bruised, shriveled creature that would almost inspire pity, were it not unmistakably fiendish. Its diminutive head is crowned with horns, and its sinuous body is covered in cracked and haggard scales.</p>
+			<p class="indent"><b><i>Infernal Intelligence.</i></b> Before the Godswar, these imps would be exchanged as gifts and familiars by agents of Malikir to influential mages or court advisors to inspire selfishness, war, and hunger for power. They are spies experts at gaining secrets and revealing them for maximum damage.</p>
+
+			<h5>Salvage</h5>
+			<p>If caught alone with a hostile foe, the imp pleads for its life and pledges to serve its new master. It gives its name, which a caster can use when casting Find Familiar to summon and bind the imp as their familiar.</p>
+			<p class="indent">An imp's scales and bones can be used to create a Potion of Fire Resistance with a DC 15 Intelligence (Arcana) ability check from a character proficient in alchemist's supplies. This takes 2 hours and 10 GP of materials. However, there's a 10% chance that the person taking the potion will have Vulnerability to all other damage.</p>
+			<p class="indent">Eating the Malikirian imp's heart grants the ability to cast Suggestion once without using a spell slot. The DC to resist this spell is 10.</p>
+			
+			<h5>Lore</h5>
+			<ul>
+				<li><b>DC 10 Intelligence (Religion):</b> Beware the multitudinous throngs of Malikir's progeny, for they can corrupt even the most pure-hearted and spur them to acts of sin and moral decay.</li>
+				<li><b>DC 15 Intelligence (History):</b> Many a foolish warlock thought they had the upper hand when they received such a pathetic creature as their familiar, but they underestimated the imp at their peril.</li>
+				<li><b>DC 20 Intelligence (Arcana):</b> Despite archmages' divinations, no one quite knows how the Angel of Empyreus came to hold the chains of a Malikirian imp. This cannot be good news.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="size">Tiny</set>
+			<set name="type">Fiend</set>
+			<set name="alignment">Lawful Evil</set>
+			<set name="ac">11</set>
+			<set name="hp">15 (6d4)</set>
+			<set name="speed">20 ft., Fly 40 ft.</set>
+			<set name="strength">7</set>
+			<set name="dexterity">13</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">11</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">14</set>
+			<set name="saves">Wis +3, Cha +4</set>
+			<set name="skills">Deception +4, Insight +3, Stealth +3</set>
+			<set name="resistances">Cold</set>
+			<set name="immunities">Fire, Poison</set>
+			<set name="conditionImmunities">Poisoned</set>
+			<set name="senses">Darkvision 120 ft.; Passive Perception 11</set>
+			<set name="languages">Infernal plus two other languages</set>
+			<set name="challenge">1</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_GFG_GHMG25_COMPANION_TRAIT_MALIKIRIAN_IMP_CREEPING_CORRUPTION,ID_GFG_GHMG25_COMPANION_TRAIT_MALIKIRIAN_IMP_MAGIC_RESISTANCE</set>
+			<set name="actions">ID_GFG_GHMG25_COMPANION_ACTION_MALIKIRIAN_IMP_BITE,ID_GFG_GHMG25_COMPANION_ACTION_MALIKIRIAN_IMP_SPELLCASTING</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="11" bonus="base" />
+			<stat name="companion:hp:max" value="15" bonus="base" />
+			<stat name="companion:speed" value="20" bonus="base" />
+			<stat name="companion:speed:fly" value="40" bonus="base" />
+			<stat name="companion:saving_throw:wisdom:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:saving_throw:charisma:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:deception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:insight:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Creeping Corruption" type="Companion Trait" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_TRAIT_MALIKIRIAN_IMP_CREEPING_CORRUPTION">
+		<compendium display="false" />
+		<description>
+			<p>A creature that starts its turn within 30 feet of the imp is subjected to the following effect. <i>Charisma Saving Throw:</i> DC 12 (a creature with Immunity to the Charmed condition automatically succeeds). <i>First Failure:</i> The creature acts in accordance with its most selfish, venal, and ruthless impulses to the best of its ability. After 24 hours, the target repeats the save, ending the effect on itself on a success. <i>Second Failure:</i> The compulsion lasts until removed by a <i>Remove Curse</i> spell or similar magic.</p>
+		</description>
+		<sheet>
+			<description>A creature that starts its turn within 30 feet of the imp is subjected to the following effect. Charisma Saving Throw: DC 12 (a creature with Immunity to the Charmed condition automatically succeeds). First Failure: The creature acts in accordance with its most selfish, venal, and ruthless impulses to the best of its ability. After 24 hours, the target repeats the save, ending the effect on itself on a success. Second Failure: The compulsion lasts until removed by a Remove Curse spell or similar magic.</description>
+		</sheet>
+	</element>
+
+	<element name="Magic Resistance" type="Companion Trait" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_TRAIT_MALIKIRIAN_IMP_MAGIC_RESISTANCE">
+		<compendium display="false" />
+		<description>
+			<p>The imp has Advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+			<description>The imp has Advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+	</element>
+
+	<element name="Bite" type="Companion Action" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_ACTION_MALIKIRIAN_IMP_BITE">
+		<compendium display="false" />
+		<description>
+			<p><i>Melee Attack Roll:</i> -1, reach 0 ft. <i>Hit:</i> 1 (1d4 - 2) Piercing damage. <i>Constitution Saving Throw:</i> DC 10. <i>Failure:</i> 7 (2d6) Poison damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: -1, reach 0 ft. Hit: 1 (1d4 - 2) Piercing damage. Constitution Saving Throw: DC 10. Failure: 7 (2d6) Poison damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Spellcasting" type="Companion Action" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_ACTION_MALIKIRIAN_IMP_SPELLCASTING">
+		<compendium display="false" />
+		<description>
+			<p>The imp casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 12):</p>
+			<p class="indent">At Will: <i>Invisibility</i> (self only), <i>Minor Illusion</i></p>
+			<p class="indent">1/Day Each: <i>Detect Thoughts</i>, <i>Sleep</i>, <i>Suggestion</i></p>
+		</description>
+		<sheet>
+			<description>The imp casts one of the following spells, requiring no Material components and using Charisma as the spellcasting ability (spell save DC 12)&#13;
+                At Will: Invisibility (self only), Minor Illusion&#13;
+                1/Day Each: Detect Thoughts, Sleep, Suggestion</description>
+		</sheet>
+	</element>
+
+    <element name="Mjork Sootling" type="Companion" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_MJORK_SOOTLING">
+		<supports>Variant Familiar</supports>
+		<description>
+			<p><i>“Is it just me, or does the darkness seem thicker? And did it just get really warm in here?”</i></p>
+			<p class="indent"><b><i>Sootling Spawned.</i></b> Where the powers of fire and earth meet, sparks of elemental energy can ignite a faint light of sentience between the two elements. These sootlings are amorphous creatures, folding and stretching into various beastlike shapes. If allowed to thrive between the elements of fire and earth, the sootling eventually grows into a mjork unless magic keeps its development halted.</p>
+			<p class="indent"><b><i>Volcanic Elementals.</i></b> A mjork is a creature as filled with chaos as the fires that fueled it, and as solid as the rock that gave it shape. The elemental looks like a humanoid of volcanic rock, moving with a jagged, stilted gait. Small cracks accent its surface, revealing a pulsating flame within. Heat emanates from the mjork's body, burning those who come too close and leaving singed, sooty tracks where it moves.</p>
+			<p class="indent">As they grow larger, mjorks specialize. Some focus on their solid, rocky shape and charging through foes. Others emphasize fire, allowing their internal flames to sheathe the body. Still others embrace smoke and ash. Some of these ashers grow from sootlings who barely survived their emergence and became attached to their sooty origins.</p>
+			<p class="indent"><b><i>A World of Ash.</i></b> Mjorks have a narrow worldview, having been raised in the grind and heat of volcanic stone. To them, the environment they spawned from is the only place of safety they have known, and they wish to spread it across the world. To bring about this ideal, mjorks wander sparsely inhabited areas where they spread fires and watch the world around them burn. These expeditions of destruction last until the mjork returns to the volcanic area that gave it life.</p>
+			<p class="indent"><b><i>Elemental Nature.</i></b> A mjork doesn't require food, drink, or sleep.</p>
+
+			<h5>Salvage</h5>
+			<p>Within every mjork is a heart of ash hardened into smoky crystal. This crystal might already be broken in the remains of a slain mjork, making it useless. An intact crystal can be broken or hurled at a point up to 60 feet away as an action. When it breaks, which it does upon landing if hurled, the crystal releases a 20-foot-radius sphere of sooty smoke, centered on a point in the breaker's space or on the point where the crystal landed. The smoke spreads around corners, and its area is Heavily Obscured. It lasts for 1 minute, but a moderate wind (at least 10 miles per hour) disperses it in 4 rounds. A strong wind (20 or more miles per hour) disperses the smoke in 1 round. These crystals sell for 15gp or more each.</p>
+			<p class="indent">The smaller crystals from sootlings or broken mjork crystals are like smoky quartz. These gems can be worth from 1 sp to 1 GP each, or more to collectors who believe they are mjork crystals. Someone who polishes them using Jeweler's Tools can increase their value as semiprecious stones.</p>
+			
+			<h5>Lore</h5>
+			<ul>
+				<li><b>DC 10 Intelligence (Nature):</b> Mjorks are made from earth and fire clashing together. These elementals often dwell near volcanoes.</li>
+				<li><b>DC 15 Intelligence (Arcana):</b> Mjorks have Vulnerability to Thunder damage, which cracks their rocky skin. They can also sense through smoke as if the haze provided them Blindsight.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="size">Tiny</set>
+			<set name="type">Elemental</set>
+			<set name="alignment">Chaotic Neutral</set>
+			<set name="ac">12</set>
+			<set name="hp">10 (3d4 + 3)</set>
+			<set name="speed">25 ft.</set>
+			<set name="strength">4</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">12</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">3</set>
+			<set name="vulnerabilities">Thunder</set>
+			<set name="immunities">Fire, Poison</set>
+			<set name="conditionImmunities">Exhaustion, Paralyzed, Petrified, Poisoned, Unconscious</set>
+			<set name="senses">Darkvision 60 ft.; Passive Perception 10</set>
+			<set name="languages">Understands Primordial (Ignan) and Primordial (Terran) but can't speak</set>
+			<set name="challenge">1/4</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_GFG_GHMG25_COMPANION_TRAIT_MJORK_SOOTLING_HEATED_BODY,ID_GFG_GHMG25_COMPANION_TRAIT_MJORK_SOOTLING_SMOKE_SENSE,ID_GFG_GHMG25_COMPANION_TRAIT_MJORK_SOOTLING_WATER_SUSCEPTIBILITY</set>
+			<set name="actions">ID_GFG_GHMG25_COMPANION_ACTION_MJORK_SOOTLING_BURN</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" bonus="base" />
+			<stat name="companion:hp:max" value="10" bonus="base" />
+			<stat name="companion:speed" value="25" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Heated Body" type="Companion Trait" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_TRAIT_MJORK_SOOTLING_HEATED_BODY">
+		<compendium display="false" />
+		<description>
+			<p>A creature that ends its turn in a grapple with the sootling takes 1 Fire damage.</p>
+		</description>
+		<sheet>
+			<description>A creature that ends its turn in a grapple with the sootling takes 1 Fire damage.</description>
+		</sheet>
+	</element>
+	<element name="Smoke Sense" type="Companion Trait" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_TRAIT_MJORK_SOOTLING_SMOKE_SENSE">
+		<compendium display="false" />
+		<description>
+			<p>A mjork sootling in contact with smoke has Blindsight in that smoke's area, to a range of 120 feet.</p>
+		</description>
+		<sheet>
+			<description>A mjork sootling in contact with smoke has Blindsight in that smoke's area, to a range of 120 feet.</description>
+		</sheet>
+	</element>
+	<element name="Water Susceptibility" type="Companion Trait" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_TRAIT_MJORK_SOOTLING_WATER_SUSCEPTIBILITY">
+		<compendium display="false" />
+		<description>
+			<p>For every 5 feet the mjork sootling moves in water, or for every gallon of water splashed on it, the mjork sootling takes 1 Cold damage.</p>
+		</description>
+		<sheet>
+			<description>For every 5 feet the mjork sootling moves in water, or for every gallon of water splashed on it, the mjork sootling takes 1 Cold damage.</description>
+		</sheet>
+	</element>
+	<element name="Burn" type="Companion Action" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_ACTION_MJORK_SOOTLING_BURN">
+		<compendium display="false" />
+		<description>
+			<p><i>Melee Attack Roll:</i> +4, reach 5 ft. <i>Hit:</i> 4 (1d4 + 2) Fire damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +4, reach 5 ft. Hit: 4 (1d4 + 2) Fire damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Withered Steed" type="Companion" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_WITHERED_STEED">
+		<supports>Mount, Companion</supports>
+		<description>
+			<p><i>“Against the lightning, a tan horse dripping tattered flesh rears, its antlers and empty skull reflecting the light. Saddleless, it lowers its head to pull its master onto its back.”</i></p>
+			<p class="indent"><b><i>Rider-Bonded.</i></b> Thought to have originated in Grarjord, the withered steed is a rare sight due to the difficulty of creating one. Withered steeds are the most loyal of all the summoned and created steeds in Etharis, living only as long as their creator.</p>
+			<p class="indent"><b><i>Ritual Creation.</i></b> To create a withered steed, a spellcaster must have at least one 4th-level spell slot and materials worth 5,000 GP, which the ritual consumes. The ritualist must remove and consume a living horse's heart under a full moon. In its place, a living raven encaged in tree roots must be inserted. The body must be buried with its head removed and a stag skull in its place. The creator pours 1 pint of their own blood over the body and places a rope necklace inscribed with runes of summoning magic placed around the corpse's throat. The ritual takes 6 hours. By the new moon, the withered steed frees itself from its grave.</p>
+			<p class="indent"><b><i>Constructed Nature.</i></b> A withered steed doesn't require air, food, drink, or sleep.</p>
+
+			<h5>Salvage</h5>
+			<p>When a withered steed dies, it becomes a mass of gore with a deer skull and a cage containing an undead raven. If someone frees the raven and cares for it for 10 days, it becomes bound to that person who can then summon it with a Find Familiar spell, provided the keeper is able to cast that spell by some means. This undead raven has the Immutable Form trait, and the damage and condition immunities of a withered steed.</p>
+			
+			<h5>Lore</h5>
+			<ul>
+				<li><b>DC 15 Intelligence (Arcana):</b> A withered steed is a construct with related Immunities.</li>
+				<li><b>DC 20 Intelligence (Arcana):</b> The steed's form can't be changed. If its master is slain, the steed is instantly destroyed.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="size">Large</set>
+			<set name="type">Construct</set>
+			<set name="alignment">Neutral</set>
+			<set name="ac">13</set>
+			<set name="hp">60 (8d10 + 16)</set>
+			<set name="speed">60 ft.</set>
+			<set name="strength">18</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">5</set>
+			<set name="wisdom">13</set>
+			<set name="charisma">5</set>
+			<set name="immunities">Necrotic, Poison</set>
+			<set name="conditionImmunities">Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned</set>
+			<set name="senses">Darkvision 60 ft.; Passive Perception 11</set>
+			<set name="languages">Understands one language known by its creator but can't speak</set>
+			<set name="challenge">3</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_GFG_GHMG25_COMPANION_TRAIT_WITHERED_STEED_IMMUTABLE_FORM</set>
+			<set name="actions">ID_GFG_GHMG25_COMPANION_ACTION_WITHERED_STEED_HOOVES</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" bonus="base" />
+			<stat name="companion:hp:max" value="60" bonus="base" />
+			<stat name="companion:speed" value="60" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Immutable Form" type="Companion Trait" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_TRAIT_WITHERED_STEED_IMMUTABLE_FORM">
+		<compendium display="false" />
+		<description>
+			<p>The withered steed can't shape-shift.</p>
+		</description>
+		<sheet>
+			<description>The withered steed can't shape-shift.</description>
+		</sheet>
+	</element>
+	<element name="Hooves" type="Companion Action" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_ACTION_WITHERED_STEED_HOOVES">
+		<compendium display="false" />
+		<description>
+			<p><i>Melee Attack Roll:</i> +6, reach 5 ft. <i>Hit:</i> 9 (2d4 + 4) Bludgeoning damage plus 7 (2d6) Cold damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +6, reach 5 ft. Hit: 9 (2d4 + 4) Bludgeoning damage plus 7 (2d6) Cold damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Vooran" type="Companion" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_VOORAN">
+		<supports>Variant Familiar</supports>
+		<description>
+			<p><i>“When your pet stares at you, you never know if you are looking into the eyes of your beloved companion or the eyes of a vooran.”</i></p>
+			<p class="indent"><b><i>Flesh Riding.</i></b> Vooran are uncontrollable incorporeal woodland spirits that experience the world by possessing small animals, causing those usually harmless creatures to behave strangely, even tamed ones.</p>
+			<p class="indent"><b><i>Familiars.</i></b> Voorans can serve as familiars, though they generally only do so for those who offer it different animals to inhabit.</p>
+			<p class="indent"><b><i>Ethereal Hedonist.</i></b> Voorans naturally inhabit the Ethereal plane and can only affect the mortal world for one hour a day while possessing a small animal; an hour they use to live life to the fullest.</p>
+
+			<h5>Salvage</h5>
+			<p>If a vooran is destroyed while possessing an animal, the animal's blood takes on an opalescent hue and gains momentary magical properties. If a living creature drinks the creature's blood within 1 minute of its death, it acts as a Potion of Healing.</p>
+			
+			<h5>Lore</h5>
+			<ul>
+				<li><b>DC 10 Intelligence (History):</b> Vooran are fey spirits from the Ethereal Plane that possess small animals.</li>
+				<li><b>DC 15 Intelligence (Nature):</b> Vooran are nearly indestructible on the Material plane and make excellent spies.</li>
+				<li><b>DC 20 Intelligence (Arcana):</b> A spellcaster capable of casting Find Familiar can form a bond with a vooran.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="size">Tiny</set>
+			<set name="type">Fey</set>
+			<set name="alignment">Chaotic Neutral</set>
+			<set name="ac">13</set>
+			<set name="hp">7 (3d4)</set>
+			<set name="speed">0 ft., Fly 40 ft. (Hover)</set>
+			<set name="strength">5</set>
+			<set name="dexterity">16</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">11</set>
+			<set name="skills">Perception +3, Stealth +5</set>
+			<set name="resistances">Acid, Fire, Lightning, Thunder</set>
+			<set name="immunities">Cold, Necrotic, Poison</set>
+			<set name="conditionImmunities">Charmed, Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained</set>
+			<set name="senses">Darkvision 60 ft.; Passive Perception 13</set>
+			<set name="languages">Understands Sylvan but can't speak</set>
+			<set name="challenge">1/8</set>
+			<set name="proficiency">2</set>
+			<set name="traits">ID_GFG_GHMG25_COMPANION_TRAIT_VOORAN_ETHEREAL_SIGHT,ID_GFG_GHMG25_COMPANION_TRAIT_VOORAN_ETHEREALNESS,ID_GFG_GHMG25_COMPANION_TRAIT_VOORAN_INCORPOREAL_MOVEMENT,ID_GFG_GHMG25_COMPANION_TRAIT_VOORAN_FAMILIAR</set>
+			<set name="actions">ID_GFG_GHMG25_COMPANION_ACTION_VOORAN_ANIMAL_POSSESSION</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" bonus="base" />
+			<stat name="companion:hp:max" value="7" bonus="base" />
+			<stat name="companion:speed" value="0" bonus="base" />
+			<stat name="companion:speed:fly" value="40" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Ethereal Sight" type="Companion Trait" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_TRAIT_VOORAN_ETHEREAL_SIGHT">
+		<compendium display="false" />
+		<description>
+			<p>The vooran can see 60 feet into the Ethereal Plane when on other planes, and vice versa.</p>
+		</description>
+		<sheet>
+			<description>The vooran can see 60 feet into the Ethereal Plane when on other planes, and vice versa.</description>
+		</sheet>
+	</element>
+	<element name="Etherealness" type="Companion Trait" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_TRAIT_VOORAN_ETHEREALNESS">
+		<compendium display="false" />
+		<description>
+			<p>The vooran lives entirely on the Ethereal Plane and can only enter other planes by possessing a Beast. It is not visible outside of the Ethereal Plane.</p>
+		</description>
+		<sheet>
+			<description>The vooran lives entirely on the Ethereal Plane and can only enter other planes by possessing a Beast. It is not visible outside of the Ethereal Plane.</description>
+		</sheet>
+	</element>
+	<element name="Incorporeal Movement" type="Companion Trait" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_TRAIT_VOORAN_INCORPOREAL_MOVEMENT">
+		<compendium display="false" />
+		<description>
+			<p>The vooran can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.</p>
+		</description>
+		<sheet>
+			<description>The vooran can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.</description>
+		</sheet>
+	</element>
+	<element name="Familiar" type="Companion Trait" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_TRAIT_VOORAN_FAMILIAR">
+		<compendium display="false" />
+		<description>
+			<p>A vooran can connect with another creature to serve as a familiar, forming a telepathic bond with its willing master. While the two are bonded, the master can sense what the vooran senses if they are within 1 mile of each other. When bonded, the master can see the vooran as a ghostly form.</p>
+		</description>
+		<sheet>
+			<description>A vooran can connect with another creature to serve as a familiar, forming a telepathic bond with its willing master. While the two are bonded, the master can sense what the vooran senses if they are within 1 mile of each other. When bonded, the master can see the vooran as a ghostly form.</description>
+		</sheet>
+	</element>
+	<element name="Animal Possession (1/Day)" type="Companion Action" source="Grim Hollow: Monster Grimoire (2025)" id="ID_GFG_GHMG25_COMPANION_ACTION_VOORAN_ANIMAL_POSSESSION">
+		<compendium display="false" />
+		<description>
+			<p><i>Charisma Saving Throw:</i> DC 12, one Beast of CR 1/8 or lower that the vooran can see within 5 feet. <i>Failure:</i> The target is possessed by the vooran. The vooran disappears, and the target has the Incapacitated condition and loses control of its body. The vooran now controls the body, but the target retains awareness. The vooran can't be targeted by any attack, spell, or other effect, except ones that specifically target Fey. The vooran's game statistics are the same, except it uses the target's Speed, as well as the target's Strength, Dexterity, and Constitution modifiers.</p>
+			<p class="indent">The possession lasts for 1 hour, ending early if the body drops to 0 Hit Points or the vooran ends it as a Bonus Action. When the possession ends, the vooran is forced back into the Ethereal Plane, and the target is immune to this vooran's Animal Possession for 24 hours. If an animal is killed while the vooran possesses it, the vooran must succeed on a DC 10 Charisma saving throw or it is permanently destroyed.</p>
+			<p class="indent"><i>Success:</i> The target is immune to this vooran's Possession for 24 hours.</p>
+		</description>
+		<sheet alt="Animal Possession" usage="1/Day">
+			<description>Charisma Saving Throw: DC 12, one Beast of CR 1/8 or lower that the vooran can see within 5 feet. Failure: The target is possessed by the vooran. The vooran disappears, and the target has the Incapacitated condition and loses control of its body. The vooran now controls the body, but the target retains awareness. The vooran can't be targeted by any attack, spell, or other effect, except ones that specifically target Fey. The vooran's game statistics are the same, except it uses the target's Speed, as well as the target's Strength, Dexterity, and Constitution modifiers. The possession lasts for 1 hour, ending early if the body drops to 0 Hit Points or the vooran ends it as a Bonus Action. When the possession ends, the vooran is forced back into the Ethereal Plane, and the target is immune to this vooran's Animal Possession for 24 hours. If an animal is killed while the vooran possesses it, the vooran must succeed on a DC 10 Charisma saving throw or it is permanently destroyed. Success: The target is immune to this vooran's Possession for 24 hours.</description>
+		</sheet>
+	</element>
+</elements>

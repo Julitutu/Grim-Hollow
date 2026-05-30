@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Bulwark Warrior</name>
+		<description>The Bulwark Warrior subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="fighter-bulwark.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/fighter-bulwark.xml" />
+		</update>
+	</info>
+
+	<element name="Bulwark Warrior" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FIGHTER_BULWARK_WARRIOR">
+		<supports>Fighter Subclass</supports>
+		<description>
+			<p class="flavor">Provoke Your Enemies, Protect Your Allies</p>
+			<p>Those who learn the fighting prowess of the Bulwark Warriors protect their allies from certain death. Bulwark Warriors guard their allies by provoking their enemies. With endurance and strength as their primary skills, these warriors are prepared to take lethal strikes for their compatriots.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_PROTECTIVE_TAUNT" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_WEATHER_THE_STORM" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_THREATENING_PRESENCE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_AGGRESSIVE_DEFENSE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_IMPROVED_SECOND_WIND" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_HALT_THE_ASSAULT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_PROTECTIVE_TAUNT" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_WEATHER_THE_STORM" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_THREATENING_PRESENCE" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_AGGRESSIVE_DEFENSE" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_IMPROVED_SECOND_WIND" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_HALT_THE_ASSAULT" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Protective Taunt" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_PROTECTIVE_TAUNT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_BULWARK_PROTECTIVE_TAUNT</requirements>
+		<description>
+			<p>Once per turn when you hit a creature with a melee attack using a weapon or Unarmed Strike, you can taunt it. Until the start of your next turn or until you have the Incapacitated condition, the target has Disadvantage on attack rolls against targets other than you. A creature can only be affected by one Taunt at a time.</p>
+		</description>
+		<sheet alt="Protective Taunt" usage="1/Turn">
+			<description>When you hit a creature with a melee weapon/Unarmed Strike, you can taunt it. Until the start of your next turn or you are Incapacitated, it has Disadvantage on attacks against targets other than you.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Weather the Storm" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_WEATHER_THE_STORM">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_BULWARK_WEATHER_THE_STORM</requirements>
+		<description>
+			<p>You have grown accustomed to being battered and bruised. As a Bonus Action, you toughen up for 1 minute. At the end of each of your turns, you gain Temporary Hit Points equal to your Fighter level plus your Constitution modifier.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Weather the Storm" action="Bonus Action" usage="1/Short Rest">
+			<description>For 1 min, at the end of each of your turns, you gain {{weather the storm:thp}} THP.</description>
+		</sheet>
+		<rules>
+			<stat name="weather the storm:thp" value="level:fighter" />
+			<stat name="weather the storm:thp" value="constitution:modifier" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Threatening Presence" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_THREATENING_PRESENCE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_BULWARK_THREATENING_PRESENCE</requirements>
+		<description>
+			<p>You can provoke your enemies into single-minded hatred of you. As a Magic action, each creature of your choice that can hear you in a 30-foot Emanation originating from you must make a Wisdom saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, the creature takes 5d6 Psychic damage and has Disadvantage on attack rolls against targets other than you. When you use this feature, you restore your use of Weather the Storm.</p>
+			<p class="indent">You can use this feature twice. You regain all expended uses when you finish a Long Rest.</p>
+			<p class="indent">When you reach Fighter level 15, you gain another use of this feature.</p>
+		</description>
+		<sheet alt="Threatening Presence" action="Action" usage="{{threatening presence:usage}}/Long Rest">
+			<description>Each creature of your choice in a 30-ft Emanation that can hear you must make a DC{{threatening presence:dc}} Wis save. Fail: 5d6 Psychic damage and Disadvantage on attacks against targets other than you. Using this restores your use of Weather the Storm.</description>
+		</sheet>
+		<rules>
+			<stat name="threatening presence:dc" value="8" bonus="base" />
+			<stat name="threatening presence:dc" value="proficiency" bonus="proficiency" />
+			<stat name="threatening presence:dc" value="constitution:modifier" bonus="ability" />
+			<stat name="threatening presence:usage" value="2" bonus="base" />
+			<stat name="threatening presence:usage" value="3" bonus="base" level="15" />
+		</rules>
+	</element>
+
+	<element name="Level 10: Aggressive Defense" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_AGGRESSIVE_DEFENSE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_BULWARK_AGGRESSIVE_DEFENSE</requirements>
+		<description>
+			<p>You know when to switch from defense to offense. Once on each of your turns when you hit a creature with an attack roll using a Melee weapon or Unarmed Strike, you can lose Temporary Hit Points equal to no more than half your Fighter level (round down) to deal extra damage to the target equal to the number of Temporary Hit Points lost in this way.</p>
+		</description>
+		<sheet alt="Aggressive Defense" usage="1/Turn">
+			<description>When you hit with a melee weapon/Unarmed Strike, you can lose up to {{level:fighter:half}} THP to deal extra damage equal to the THP lost.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Improved Second Wind" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_IMPROVED_SECOND_WIND">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_BULWARK_IMPROVED_SECOND_WIND</requirements>
+		<description>
+			<p>Your endurance is unrivaled. When you regain Hit Points from Second Wind, you gain a number of Temporary Hit Points equal to the roll's total.</p>
+		</description>
+		<sheet alt="Improved Second Wind">
+			<description>When you use Second Wind, you also gain THP equal to the HP regained.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Halt the Assault" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_FIGHTER_BULWARK_HALT_THE_ASSAULT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_BULWARK_HALT_THE_ASSAULT</requirements>
+		<description>
+			<p>When another creature you can see within 5 feet of you is hit by an attack roll, you can take a Reaction to change the target to yourself. You have Resistance to all damage against that attack.</p>
+		</description>
+		<sheet alt="Halt the Assault" action="Reaction">
+			<description>When another creature you can see within 5 ft is hit by an attack, you can change the target to yourself. You have Resistance to all damage from that attack.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Protective Taunt Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_BULWARK_PROTECTIVE_TAUNT" />
+	<element name="Weather the Storm Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_BULWARK_WEATHER_THE_STORM" />
+	<element name="Threatening Presence Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_BULWARK_THREATENING_PRESENCE" />
+	<element name="Aggressive Defense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_BULWARK_AGGRESSIVE_DEFENSE" />
+	<element name="Improved Second Wind Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_BULWARK_IMPROVED_SECOND_WIND" />
+	<element name="Halt the Assault Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_FIGHTER_BULWARK_HALT_THE_ASSAULT" />
+
+</elements>

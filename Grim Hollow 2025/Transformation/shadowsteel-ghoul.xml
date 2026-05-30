@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Shadowsteel Ghoul Transformation</name>
+        <description>Shadowsteel Ghoul Transformation from Grim Hollow: Player's Guide (2025)</description>
+        <author>Ghostfire Gaming</author>
+        <update version="0.1.0">
+            <file name="shadowsteel-ghoul.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/shadowsteel-ghoul.xml" />
+        </update>
+    </info>
+
+    <!-- Items -->
+    <element name="Shadowsteel Ghoul Transformation (Stage 1)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_1">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SHADOWSTEEL_GHOUL" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SHADOWSTEEL_GHOUL" />
+        </rules>
+    </element>
+    <element name="Shadowsteel Ghoul Transformation (Stage 2)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_2">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SHADOWSTEEL_GHOUL" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_2" requirements="ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_1"/>
+        </rules>
+    </element>
+    <element name="Shadowsteel Ghoul Transformation (Stage 3)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_3">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SHADOWSTEEL_GHOUL" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_3" requirements="ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_2"/>
+        </rules>
+    </element>
+    <element name="Shadowsteel Ghoul Transformation (Stage 4)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_4">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SHADOWSTEEL_GHOUL" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_4" requirements="ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_3"/>
+        </rules>
+    </element>
+
+    <!-- Base Feat -->
+    <element name="Shadowsteel Ghoul" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SHADOWSTEEL_GHOUL">
+        <description>
+            <p>The cloaked figure hunches over a dusty tome, incanting words of power. At intervals, the figure caresses a dark rod with a sharp point, then jabs themself, causing a sharp gasp of pain. The victim of the figure’s curse, sleeping across town, rolls over in his sleep. He will soon suffer the ravages of a Shadowsteel curse. But the curser has a much worse fate awaiting them.</p>
+            <p>In Etharis, sometimes the metal of the earth itself carries an enormous, vile power. Such is the case with Shadowsteel, a material that has absorbed corrupt power. This makes the substance perfect for warping the magic that passes through it, making it perfect for cursing or enhancing spells.</p>
+            <p>Cursing an enemy, however, requires an enormous amount of work and personal power. These efforts, though enhanced when passing through Shadowsteel, take a toll upon the magic-wielders handling it. By using it, spellcasters and ritualists bind their soul, a bit at a time, to the energies of the fell metal. Those who use Shadowsteel often feel its effects as they move closer and closer to undeath.</p>
+            
+            <h4>Becoming a Shadowsteel Ghoul</h4>
+            <p>Curses are wrought from and woven with intense feelings of loathing, spite, and bitterness. Humanoids who choose to wield such deeply evil magic leave an indelible mark upon their own soul. When enough of these marks pollute a person, their spirit begins to rot.</p>
+            <p>A creature who uses a Spellcasting Focus made of Shadowsteel, particularly to cast curses, risks acquiring the Shadowsteel Ghoul curse. Being attuned to a Shadowsteel magic item or wielding a Shadowsteel weapon for a prolonged period also carries a similar danger.</p>
+            
+            <h4>Curing Shadowsteel Ghoul Curses</h4>
+            <p>Once the character reaches Stage 1 of the Shadowsteel Ghoul Transformation, no typical magic like Remove Curse can remove the affliction. Magic on the level of the Wish spell is needed to completely remove the Transformation and its Boons and Flaws.</p>
+            
+            <h4>Shadowsteel Ghoul Stages</h4>
+            <p>At each stage of this Transformation, follow the instructions provided for that stage.</p>
+            
+            <h4>Achieving a New Stage</h4>
+            <p>To move from one stage to the next higher one in this Transformation, an event or some other notable occurrence tied to the story of the character should take place. The following events are suggestions for ones that might trigger a move to the next stage of the Transformation:</p>
+            <ul>
+                <li>Casting a Shadowsteel curse on a powerful creature that later reaches culmination.</li>
+                <li>Casting a ritual that consumes a Shadowsteel magic item, allowing you to absorb its power.</li>
+                <li>Making a bargain with a Fiend who gifts you with a new object made of Shadowsteel.</li>
+                <li>Casting a 7th-level or higher spell for the first time using a Shadowsteel Focus.</li>
+                <li>Slaying a powerful foe with a weapon forged from Shadowsteel.</li>
+                <li>Failing two Death Saving Throws.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You are undergoing the Shadowsteel Ghoul Transformation.</description>
+        </sheet>
+        <rules>
+            <stat name="shadowsteel ghoul:stage" value="0" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_1" />
+        </rules>
+    </element>
+
+    <!-- Transformation Stage 1 -->
+    <element name="Shadowsteel Ghoul (Stage 1)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_1">
+        <prerequisite>Shadowsteel Ghoul Transformation</prerequisite>
+        <requirements>ID_GFG_GHPG25_FEAT_TRANSFORMATION_SHADOWSTEEL_GHOUL</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you initially contract the Shadowsteel Ghoul curse, you select one Stage 1 Boon and gain the Stage 1 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_DEBILITATING_MAGIC" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 1 Boon. Debilitating Magic (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="shadowsteel ghoul:stage" value="1" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 1)" supports="Shadowsteel Ghoul 2025 Boon 1" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_DEBILITATING_MAGIC" />
+        </rules>
+    </element>
+
+    <element name="Boon: Shadowsteel Curser" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_CURSER">
+        <supports>Shadowsteel Ghoul 2025 Boon 1</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_1</requirements>
+        <description>
+            <p>If you do not already have it, you gain the Shadowsteel Adept feat.</p>
+            <p>Additionally, when you cast a Shadowsteel curse, the casting time is reduced by half, and the saving throw DC increases by 1.</p>
+        </description>
+        <sheet>
+            <description>When you cast a Shadowsteel curse, the casting time is reduced by half, and the saving throw DC increases by 1.</description>
+        </sheet>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_FEAT_SHADOWSTEEL_ADEPT" requirements="!ID_GFG_GHPG25_FEAT_SHADOWSTEEL_ADEPT"/>
+        </rules>
+    </element>
+
+    <element name="Boon: Shadowsteel Weapon" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_WEAPON">
+        <supports>Shadowsteel Ghoul 2025 Boon 1</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_1</requirements>
+        <description>
+            <p>During a Long Rest, you focus upon a Melee weapon within your reach, imbuing it with a fragment of your Shadowsteel corruption. This Shadowsteel weapon is considered magical.</p>
+            <p>When you reduce a creature to 0 Hit Points with a melee attack made with your Shadowsteel weapon, you gain 1d8 Temporary Hit Points for 1 hour.</p>
+            <p>You can repeat the process described above to imbue a different weapon with Shadowsteel. This removes the effect from your existing Shadowsteel weapon.</p>
+        </description>
+        <sheet>
+            <description>During a Long Rest, imbue a melee weapon to make it a magical Shadowsteel weapon. When you reduce a creature to 0 HP with it, gain 1d8 THP for 1 hour.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Debilitating Magic" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_DEBILITATING_MAGIC">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_1</requirements>
+        <description>
+            <p>Choose one ability score. You lose 2 points in that ability as the power of the Shadowsteel slowly eats away at your body, soul, or both.</p>
+        </description>
+        <sheet display="false">
+            <description>You lose 2 points in one ability score.</description>
+        </sheet>
+        <rules>
+            <select type="Feat Feature" name="Debilitating Magic Penalty" supports="Shadowsteel Ghoul 2025 Debilitating" />
+        </rules>
+    </element>
+
+    <element name="Strength" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_DEBILITATING_MAGIC_STR">
+        <supports>Shadowsteel Ghoul 2025 Debilitating</supports>
+        <compendium display="false" />
+        <description>
+            <p>You lose 2 points in Strength.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="strength" value="-2" />
+        </rules>
+    </element>
+    <element name="Dexterity" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_DEBILITATING_MAGIC_DEX">
+        <supports>Shadowsteel Ghoul 2025 Debilitating</supports>
+        <compendium display="false" />
+        <description>
+            <p>You lose 2 points in Dexterity.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="-2" />
+        </rules>
+    </element>
+    <element name="Constitution" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_DEBILITATING_MAGIC_CON">
+        <supports>Shadowsteel Ghoul 2025 Debilitating</supports>
+        <compendium display="false" />
+        <description>
+            <p>You lose 2 points in Constitution.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="-2" />
+        </rules>
+    </element>
+    <element name="Intelligence" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_DEBILITATING_MAGIC_INT">
+        <supports>Shadowsteel Ghoul 2025 Debilitating</supports>
+        <compendium display="false" />
+        <description>
+            <p>You lose 2 points in Intelligence.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="intelligence" value="-2" />
+        </rules>
+    </element>
+    <element name="Wisdom" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_DEBILITATING_MAGIC_WIS">
+        <supports>Shadowsteel Ghoul 2025 Debilitating</supports>
+        <compendium display="false" />
+        <description>
+            <p>You lose 2 points in Wisdom.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="-2" />
+        </rules>
+    </element>
+    <element name="Charisma" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_DEBILITATING_MAGIC_CHA">
+        <supports>Shadowsteel Ghoul 2025 Debilitating</supports>
+        <compendium display="false" />
+        <description>
+            <p>You lose 2 points in Charisma.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="charisma" value="-2" />
+        </rules>
+    </element>
+
+    <!-- Transformation Stage 2 -->
+    <element name="Shadowsteel Ghoul (Stage 2)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_2">
+        <prerequisite>Shadowsteel Ghoul Transformation Stage 1</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 2 of the Shadowsteel Ghoul curse, you select two Stage 2 Boons and gain the Stage 2 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_FRIENDLESS" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Choose two Stage 2 Boons. Friendless (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="shadowsteel ghoul:stage" value="2" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 2)" supports="Shadowsteel Ghoul 2025 Boon 1||Shadowsteel Ghoul 2025 Boon 2" number="2" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_FRIENDLESS" />
+        </rules>
+    </element>
+
+    <element name="Boon: Magic Resistance" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_MAGIC_RESISTANCE">
+        <supports>Shadowsteel Ghoul 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_2</requirements>
+        <description>
+            <p>You have Advantage on saving throws against spells.</p>
+        </description>
+        <sheet>
+            <description>Advantage on saving throws against spells.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Shadowsteel Absorption" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_ABSORPTION">
+        <supports>Shadowsteel Ghoul 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_2</requirements>
+        <description>
+            <p>As the Shadowsteel courses through you, it begins to harden your flesh. Your Armor Class increases by 1 when you aren’t wearing armor.</p>
+        </description>
+        <sheet>
+            <description>+1 AC when not wearing armor.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:misc" value="1" equipped="[armor:none]" />
+        </rules>
+    </element>
+
+    <element name="Boon: Shadowsteel Caster" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_CASTER">
+        <supports>Shadowsteel Ghoul 2025 Boon 2</supports>
+        <prerequisite>Shadowsteel Curser</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_2, ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_CURSER</requirements>
+        <description>
+            <p>If you do not already have it, you gain the Shadowsteel Master feat.</p>
+            <p>Additionally, when you use a Shadowsteel component to cast a spell using a spell slot, you can spend a Hit Die to regain that spell slot. The spell slot level cannot be greater than twice your Shadowsteel Ghoul Transformation Stage.</p>
+            <p>You can use this feature a number of times equal to your spellcasting ability modifier. You regain all uses of this feature after finishing a Long Rest.</p>
+        </description>
+        <sheet usage="{{spellcasting:ability}}/Long Rest">
+            <description>When you use a Shadowsteel component to cast a spell using a slot, spend a Hit Die to regain that slot (Max slot level: {{shadowsteel caster:max slot}}).</description>
+        </sheet>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_FEAT_SHADOWSTEEL_MASTER" requirements="!ID_GFG_GHPG25_FEAT_SHADOWSTEEL_MASTER"/>
+            <stat name="shadowsteel caster:max slot" value="shadowsteel ghoul:stage" />
+            <stat name="shadowsteel caster:max slot" value="shadowsteel ghoul:stage" />
+
+            <select type="Feat Feature" name="Spellcasting Ability" supports="Shadowsteel Ghoul Spellcasting Ability" />
+        </rules>
+    </element>
+    <element name="Intelligence" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_CASTER_INT">
+        <supports>Shadowsteel Ghoul Spellcasting Ability</supports>
+        <compendium display="false" />
+        <description>
+            <p>If you do not already have it, you gain the Shadowsteel Master feat.</p>
+            <p>Additionally, when you use a Shadowsteel component to cast a spell using a spell slot, you can spend a Hit Die to regain that spell slot. The spell slot level cannot be greater than twice your Shadowsteel Ghoul Transformation Stage.</p>
+            <p>You can use this feature a number of times equal to your Intelligence modifier. You regain all uses of this feature after finishing a Long Rest.</p>
+        </description>
+        <sheet display="false">
+            <description>When you use a Shadowsteel component to cast a spell using a slot, spend a Hit Die to regain that slot (Max slot level: {{shadowsteel caster:max slot}}).</description>
+        </sheet>
+        <rules>
+			<stat name="spellcasting:ability" value="intelligence:modifier"/>
+        </rules>
+    </element>
+     <element name="Wisdom" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_CASTER_WIS">
+        <supports>Shadowsteel Ghoul Spellcasting Ability</supports>
+        <compendium display="false" />
+        <description>
+            <p>If you do not already have it, you gain the Shadowsteel Master feat.</p>
+            <p>Additionally, when you use a Shadowsteel component to cast a spell using a spell slot, you can spend a Hit Die to regain that spell slot. The spell slot level cannot be greater than twice your Shadowsteel Ghoul Transformation Stage.</p>
+            <p>You can use this feature a number of times equal to your Wisdom modifier. You regain all uses of this feature after finishing a Long Rest.</p>
+        </description>
+        <sheet display="false">
+            <description>When you use a Shadowsteel component to cast a spell using a slot, spend a Hit Die to regain that slot (Max slot level: {{shadowsteel caster:max slot}}).</description>
+        </sheet>
+        <rules>
+			<stat name="spellcasting:ability" value="wisdom:modifier" />
+        </rules>
+    </element>
+     <element name="Charisma" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_CASTER_CHA">
+        <supports>Shadowsteel Ghoul Spellcasting Ability</supports>
+        <compendium display="false" />
+        <description>
+            <p>If you do not already have it, you gain the Shadowsteel Master feat.</p>
+            <p>Additionally, when you use a Shadowsteel component to cast a spell using a spell slot, you can spend a Hit Die to regain that spell slot. The spell slot level cannot be greater than twice your Shadowsteel Ghoul Transformation Stage.</p>
+            <p>You can use this feature a number of times equal to your Charisma modifier. You regain all uses of this feature after finishing a Long Rest.</p>
+        </description>
+        <sheet display="false">
+            <description>When you use a Shadowsteel component to cast a spell using a slot, spend a Hit Die to regain that slot (Max slot level: {{shadowsteel caster:max slot}}).</description>
+        </sheet>
+        <rules>
+			<stat name="spellcasting:ability" value="charisma:modifier"  />
+        </rules>
+    </element>
+
+    <element name="Boon: Shadowsteel Weapon Master" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_WEAPON_MASTER">
+        <supports>Shadowsteel Ghoul 2025 Boon 2</supports>
+        <prerequisite>Shadowsteel Weapon</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_2, ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_WEAPON</requirements>
+        <description>
+            <p>You gain a +4 bonus to damage rolls made with your Shadowsteel weapon.</p>
+        </description>
+        <sheet>
+            <description>+4 bonus to damage rolls made with your Shadowsteel weapon.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Friendless" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_FRIENDLESS">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_2</requirements>
+        <description>
+            <p>You are no longer able to connect with other creatures on a social level. You prefer isolation and twisted contemplation to friendship and camaraderie.</p>
+            <p>You cannot be considered an ally to any Humanoids or Beasts, and no living creature can be Friendly toward you.</p>
+            <p>You also have Disadvantage on all Charisma ability checks.</p>
+        </description>
+        <sheet>
+            <description>Cannot be an ally to Humanoids/Beasts, no living creature can be Friendly toward you. Disadvantage on all Charisma ability checks.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 3 -->
+    <element name="Shadowsteel Ghoul (Stage 3)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_3">
+        <prerequisite>Shadowsteel Ghoul Transformation Stage 2</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 3 of the Shadowsteel Ghoul Transformation, you gain the Stage 3 Boon and the Stage 3 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_CURSED_CLAW" />
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_HEALING_RESISTANCE" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Cursed Claw (Boon), Healing Resistance (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="shadowsteel ghoul:stage" value="3" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_CURSED_CLAW" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_HEALING_RESISTANCE" />
+        </rules>
+    </element>
+
+    <element name="Boon: Cursed Claw" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_CURSED_CLAW">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_3</requirements>
+        <description>
+            <p>You gain a Claw attack. This attack uses either your Strength or Dexterity for attack and damage rolls.</p>
+            <p>You can use this attack twice as part of an Attack action, or once as a Bonus Action. The Claw attack deals 2d6 plus your Strength or Dexterity modifier.</p>
+            <p>Additionally, when the Claw attack hits, the target must succeed on a Constitution saving throw or be afflicted with a random Shadowsteel curse at Stage 1. The saving throw DC is 8 plus your Constitution modifier plus your Proficiency Bonus. A creature already afflicted with a Shadowsteel curse cannot gain another Shadowsteel curse with this attack.</p>
+        </description>
+        <sheet>
+            <description>Claw attack (+{{cursed claw:attack}}, 2d6 + {{cursed claw:ability}}). Use twice as Attack action, or once as Bonus Action. On hit: target makes DC {{cursed claw:dc}} Con save or afflicted with random Stage 1 Shadowsteel curse (if not already afflicted).</description>
+        </sheet>
+        <rules>
+            <stat name="cursed claw:dc" value="8" />
+            <stat name="cursed claw:dc" value="constitution:modifier" />
+            <stat name="cursed claw:dc" value="proficiency" />
+            
+			<stat name="cursed claw:ability" value="strength:modifier" bonus="base" />
+			<stat name="cursed claw:ability" value="dexterity:modifier" bonus="base" />
+            
+            <stat name="cursed claw:attack" value="proficiency" />
+            <stat name="cursed claw:attack" value="cursed claw:ability" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Healing Resistance" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_HEALING_RESISTANCE">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_3</requirements>
+        <description>
+            <p>You heal at a slower rate than normal, whether that healing is magical or natural. Whenever you regain Hit Points, you regain half as many Hit Points as you should. You still recover all Hit Points at the end of a Long Rest.</p>
+        </description>
+        <sheet>
+            <description>Whenever you regain Hit Points, you regain half as many Hit Points as you should (except at the end of a Long Rest).</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 4 -->
+    <element name="Shadowsteel Ghoul (Stage 4)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_4">
+        <prerequisite>Shadowsteel Ghoul Transformation Stage 3</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 4 of the Shadowsteel Ghoul Transformation, you select one Stage 4 Boon and gain the Stage 4 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_EXPLOSION" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 4 Boon. Shadowsteel Explosion (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="shadowsteel ghoul:stage" value="4" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 4)" supports="Shadowsteel Ghoul 2025 Boon 1||Shadowsteel Ghoul 2025 Boon 2||Shadowsteel Ghoul 2025 Boon 4" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_EXPLOSION" />
+        </rules>
+    </element>
+
+    <element name="Boon: Shadowsteel Arcane Vessel" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_ARCANE_VESSEL">
+        <supports>Shadowsteel Ghoul 2025 Boon 4</supports>
+        <prerequisite>Shadowsteel Caster</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_CASTER</requirements>
+        <description>
+            <p>When you cast a spell using a spell slot, the power of your Shadowsteel infection emanates from you. One creature targeted by the spell within 60 feet of you has Disadvantage on the saving throw to resist the spell, or you have Advantage on the spell attack roll.</p>
+            <p>You can use this feature a number of times equal to your Proficiency Bonus, and you regain all uses after you finish a Long Rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>When you cast a spell using a spell slot, one target within 60ft has Disadvantage on the saving throw, or you have Advantage on the spell attack roll.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Shadowsteel Fury" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_FURY">
+        <supports>Shadowsteel Ghoul 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_4</requirements>
+        <description>
+            <p>When you use the Attack action to attack with your Shadowsteel weapon or Cursed Claw, you can use a Bonus Action to make an additional attack with the same weapon or Claw. This extra attack carries with it the power of the Shadowsteel infection.</p>
+            <p>When you hit with this attack, the target must succeed on a Constitution saving throw or gain a 1 Exhaustion level. The saving throw DC is 8 plus the ability modifier used in the attack plus your Transformation Stage.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>When you Attack with Shadowsteel weapon or Cursed Claw, make an extra attack with it. On hit: target makes a {{shadowsteel fury:dc}} Con save or gains 1 Exhaustion level.</description>
+        </sheet>
+        <rules>
+           <stat name="shadowsteel fury:dc" value="8" />
+           <stat name="shadowsteel fury:dc" value="cursed claw:ability" />
+           <stat name="shadowsteel fury:dc" value="shadowsteel ghoul:stage" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Shadowsteel Explosion" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SHADOWSTEEL_EXPLOSION">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SHADOWSTEEL_GHOUL_LEVEL_4</requirements>
+        <description>
+            <p>The Shadowsteel that suffuses your flesh responds to stress, and you can do nothing to control it. The first time you are Bloodied or reduced to 0 Hit Points after you finish a Short or Long Rest, you risk hurting everyone around you.</p>
+            <p>When these events occur, all living creatures within 60 feet of you must succeed on a DC 20 Constitution saving throw. On a failed save, creatures in the area suffer 4d10 Force damage and have the Stunned condition until the end of their next turn. On a successful save, a target takes half damage and is not Stunned.</p>
+        </description>
+        <sheet>
+            <description>1st time Bloodied or 0 HP after a Rest: All living creatures w/in 60ft make DC 20 Con save. Fail: 4d10 Force dmg and Stunned until end of their next turn. Success: Half dmg, no Stun.</description>
+        </sheet>
+    </element>
+
+</elements>

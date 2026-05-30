@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Fey Transformation</name>
+        <description>Fey Transformation from Grim Hollow: Player's Guide (2025)</description>
+        <author>Ghostfire Gaming</author>
+        <update version="0.1.0">
+            <file name="fey.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/fey.xml" />
+        </update>
+    </info>
+
+    <!-- Items -->
+    <element name="Fey Transformation (Stage 1)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_FEY_LEVEL_1">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_FEY" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_FEY" />
+        </rules>
+    </element>
+    <element name="Fey Transformation (Stage 2)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_FEY_LEVEL_2">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_FEY" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_2" requirements="ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_1"/>
+        </rules>
+    </element>
+    <element name="Fey Transformation (Stage 3)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_FEY_LEVEL_3">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_FEY" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_3" requirements="ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_2"/>
+        </rules>
+    </element>
+    <element name="Fey Transformation (Stage 4)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_FEY_LEVEL_4">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_FEY" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_4" requirements="ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_3"/>
+        </rules>
+    </element>
+
+    <!-- Feat -->
+    <element name="Fey" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_FEY">
+        <description>
+            <p>The soft strumming of a harp draws the children ever deeper into the dark wood. As they reach a moonlit clearing, they see a beautiful maid dressed in a gown of starlight. She turns her soft gaze upon them at the sounds of their gasps. “Welcome, little ones. Be not afraid.” She beckons them forward with a long, lithe hand. “Step into the ring so we may dance and play.”</p>
+            <p>An elfin man with pale blue skin leans his forehead against the dying tree. As he softly hums, the shriveled leaves turn green once again, and the ancient bow begins to straighten. The man lets out a sigh of relief, which momentarily chills the air.</p>
+            <p>The Fey of Grim Hollow are mercurial and malleable beings of great power and even greater danger. No two Fey are quite alike, but their ties to the natural world and the Realm of Faerie are universal. Mortals cannot comprehend the level of true freedom the faerie people feel. To know such freedom is to change entirely—and to care not for the change such freedom brings to others.</p>
+            
+            <h4>Becoming a Fey</h4>
+            <p>Becoming a Fey requires a direct connection to the Realm of Faerie. Many mortals who become Fey are stolen from the mortal realm as children. These children, known as changelings, transform rapidly after a few days trapped in the Realm of Faerie. A changeling’s transition is often painful or strange, for a child altered in this way does not have a say in what type of Fey creature they ultimately become.</p>
+            <p>Others might be born mortal but have the taint of Fey blood coursing through their veins. As they mature, their Fey features slowly manifest. More than a few innocent folks quickly learn of their Fey destinies immediately after a joyous birthday celebration.</p>
+            <p>A creature who voluntarily seeks to become a Fey can strike a deal with a Fey or beseech the court of a Faerie Queens. These pathways to transformation are as dangerous as the Realm of Faerie itself, and it requires a quick wit and sharp awareness to get the best of Feykind.</p>
+            
+            <h4>Reversing Fey Traits</h4>
+            <p>The hold of the Fey over a mortal being is strong, but it’s even stronger when the mortal begins to show signs of Fey heritage. The rituals to reverse the Fey Transformation are dangerous and rarely successful.</p>
+            
+            <h4>Fey Stages</h4>
+            <p>At each stage of this Transformation, follow the instructions provided for that stage.</p>
+            
+            <h4>Achieving a New Stage</h4>
+            <p>To move from one stage to the next higher one in this Transformation, an event or some other notable occurrence tied to the story of the character should take place.</p>
+            <p>The following events are suggestions for ones that might trigger a move to the next stage of the Transformation:</p>
+            <ul>
+                <li>Striking a bargain with a greater Fey creature</li>
+                <li>Performing a great deed in the name of a Fey Queen</li>
+                <li>Establishing a new faerie ring or bridge to the Realm of Faerie</li>
+                <li>Defeating a powerful agent from your rival Fey Court</li>
+                <li>Earning a domain or title in the Realm of Faerie</li>
+                <li>Being born with Fey blood that starts manifesting Fey traits on the day of maturation</li>
+            </ul>
+
+            <p><strong>Transformation Save DC:</strong> Some of your abilities require a target to make a saving throw. The DC is calculated as follows:</p>
+            <center>
+                <p><strong>Transformation Save DC</strong> = 8 + your Proficiency Bonus + your Transformation Stage</p>
+            </center>
+        </description>
+        <sheet>
+            <description>Save DC: {{fey:dc}}</description>
+        </sheet>
+        <rules>
+            <stat name="fey:stage" value="0" bonus="base" />
+            <stat name="fey:dc" value="8" />
+            <stat name="fey:dc" value="proficiency" />
+            <stat name="fey:dc" value="fey:stage" />
+
+            <stat name="two-faced:dc" value="8" />
+            <stat name="two-faced:dc" value="charisma:modifier" />
+            <stat name="two-faced:dc" value="fey:stage" />
+
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_1" />
+        </rules>
+    </element>
+
+    <!-- Transformation Stage 1 -->
+    <element name="Fey (Stage 1)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_1">
+        <prerequisite>Fey Transformation</prerequisite>
+        <requirements>ID_GFG_GHPG25_FEAT_TRANSFORMATION_FEY</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you initially undergo the Fey Transformation, you gain the Fey Form Boon and one other Stage 1 Boon of your choice. You also gain the Stage 1 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_FEY_FORM" />
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_PLANAR_BINDING_FEY" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Fey Form, Court Boon, Planar Binding (Flaw)</description>
+        </sheet>
+        <rules>
+            <stat name="fey:stage" value="1" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_FEY_FORM" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_PLANAR_BINDING_FEY" />
+            <select type="Feat Feature" name="Fey Court (Stage 1 Boon)" supports="Fey 2025 Court" />
+        </rules>
+    </element>
+
+    <element name="Boon: Fey Form" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_FEY_FORM">
+        <supports>Fey 2025 Boon</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_1</requirements>
+        <description>
+            <p>Your creature type becomes Fey in addition to any other creature type(s) you have.</p>
+            <p>Also, after you finish a Long Rest, pick a damage type from the following list: Acid, Cold, Fire, Lightning, Psychic, or Thunder. You gain Resistance to that damage type until you finish a Long Rest.</p>
+        </description>
+        <sheet>
+            <description>After a Long Rest, pick a damage type: Acid, Cold, Fire, Lightning, Psychic, or Thunder. You gain Resistance to that damage type until you finish a Long Rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_FEY" />
+        </rules>
+    </element>
+
+    <element name="Boon: Servant of the Spring Court" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_SPRING_COURT">
+        <supports>Fey 2025 Court</supports>
+        <description>
+            <p>The Spring Court embodies carnal desires, rebirth, and the planting and sowing season. The Fey creatures of Spring tend to be capricious, unreliable, and quick to flare their emotions. This is the court most associated with satyrs and nymphs. Creatures of the Spring Court hide savage intentions and uncontrollable urges behind gentle words.</p>
+            <p>As a Bonus Action, you can magically teleport up to 30 feet to an unoccupied space you can see. One creature of your choice that you can see within 5 feet of your starting or ending space takes 1d6 Thunder damage. You can use this ability a number of times equal to your Proficiency Bonus, and you regain all uses when you finish a Long Rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+            <description>You can magically teleport up to 30 feet to an unoccupied space you can see. One creature of your choice that you can see within 5 feet of your starting or ending space takes 1d6 Thunder damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Servant of the Summer Court" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_SUMMER_COURT">
+        <supports>Fey 2025 Court</supports>
+        <description>
+            <p>The Summer Court embodies the lush warmth and manic celebration of the growing season. The Fey creatures of Summer tend toward joviality, excess, and vanity. This is the court most associated with dryads and pixies. Creatures of the Summer Court often hide their narcissism and cruelty behind beautiful façades.</p>
+            <p>As a Bonus Action, you can magically teleport up to 30 feet to an unoccupied space you can see. One creature of your choice that you can see within 5 feet of your starting or ending space takes 1d6 Fire damage. You can use this ability a number of times equal to your Proficiency Bonus, and you regain all uses when you finish a Long Rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+            <description>You can magically teleport up to 30 feet to an unoccupied space you can see. One creature of your choice that you can see within 5 feet of your starting or ending space takes 1d6 Fire damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Servant of the Autumn Court" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_AUTUMN_COURT">
+        <supports>Fey 2025 Court</supports>
+        <description>
+            <p>The Autumn Court embodies the careful scheming and approaching rot of the harvesting season. The Fey creatures of Autumn tend to be devious, scheming, and full of secrets. This is the court most associated with treants and other plant fey. Creatures of the Autumn Court often appear beautiful and helpful, but in truth their forms are hideous and methods vile.</p>
+            <p>As a Bonus Action, you can magically teleport up to 30 feet to an unoccupied space you can see. One creature of your choice that you can see within 5 feet of your starting or ending space takes 1d6 Poison damage. You can use this ability a number of times equal to your Proficiency Bonus, and you regain all uses when you finish a Long Rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+            <description>You can magically teleport up to 30 feet to an unoccupied space you can see. One creature of your choice that you can see within 5 feet of your starting or ending space takes 1d6 Poison damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Servant of the Winter Court" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_WINTER_COURT">
+        <supports>Fey 2025 Court</supports>
+        <description>
+            <p>The winter court embodies the stillness, darkness, and death of the coldest season. The Fey creatures of Winter tend to be serious, cruel, and reflective. Creatures of the Winter Court are often terrifying to behold and very direct about their intentions.</p>
+            <p>As a Bonus Action, you can magically teleport up to 30 feet to an unoccupied space you can see. One creature of your choice that you can see within 5 feet of your starting or ending space takes 1d6 Cold damage. You can use this ability a number of times equal to your Proficiency Bonus, and you regain all uses when you finish a Long Rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+            <description>Teleport (30 feet. 1 creature: choice, 5 feet (starting or ending space) 1d6 Cold damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Planar Binding" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_PLANAR_BINDING_FEY">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_1</requirements>
+        <description>
+            <p>Your body and soul have been saturated with the magical energy of the Realm of Faerie. Rather than inuring you to the essence of magic, it has made you more susceptible. After finishing a Short or Long Rest, you have Disadvantage on the first saving throw you make against a spell originating from an enemy.</p>
+        </description>
+        <sheet>
+            <description>After a Rest, Disadvantage on the 1st Save against a spell (from an enemy).</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 2 -->
+    <element name="Fey (Stage 2)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_2">
+        <prerequisite>Fey Transformation Stage 1</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 2 of the Fey Transformation, you select one Stage 2 Boon and gain the Stage 2 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_QUEENS_COMMAND" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 2 Boon. Queen's Command (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="fey:stage" value="2" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 2)" supports="Fey 2025 Boon 2" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_QUEENS_COMMAND" />
+        </rules>
+    </element>
+
+    <element name="Boon: Two-Faced (Spring)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_TWO_FACED_SPRING">
+        <supports>Fey 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_2, ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_SPRING_COURT</requirements>
+        <description>
+            <p>You can transform your face into a vision of enchantment or horror that affects creatures around you, based on the Fey Court you serve. As a Magic action, you take on this visage. Creatures within 30 feet who can see you must succeed on a Charisma saving throw with a DC equal to 8 plus your Charisma modifier plus your Transformation Stage or be affected for 1 minute.</p>
+            <p>You can do this a number of times equal to your Proficiency Bonus, and you regain all uses after finishing a Long Rest.</p>
+            <p><strong>Spring.</strong> Any creature that fails the saving throw has the Stunned condition. The creature can attempt a Constitution saving throw at the end of each of their turns to end the condition. This effect ends early on a creature if you or an ally deal damage to it or take other harmful actions.</p>
+        </description>
+        <sheet action="Magic Action" usage="{{proficiency}}/Long Rest">
+            <description>Cha save (30 ft), failed: Stunned (1 min). Con save end of their turns: end the condition. Ends early if deals damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Two-Faced (Summer)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_TWO_FACED_SUMMER">
+        <supports>Fey 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_2, ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_SUMMER_COURT</requirements>
+        <description>
+            <p>You can transform your face into a vision of enchantment or horror that affects creatures around you, based on the Fey Court you serve. As a Magic action, you take on this visage. Creatures within 30 feet who can see you must succeed on a Charisma saving throw with a DC equal to 8 plus your Charisma modifier plus your Transformation Stage or be affected for 1 minute.</p>
+            <p>You can do this a number of times equal to your Proficiency Bonus, and you regain all uses after finishing a Long Rest.</p>
+            <p><strong>Summer.</strong> Any creature that fails the saving throw gains the Charmed condition. This effect ends early on a creature if you or an ally deal damage to it or take other harmful actions.</p>
+        </description>
+        <sheet action="Magic Action" usage="{{proficiency}}/Long Rest">
+            <description>Cha save (30 ft), failed: Charmed (1 min). Ends early if deals damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Two-Faced (Autumn)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_TWO_FACED_AUTUMN">
+        <supports>Fey 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_2, ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_AUTUMN_COURT</requirements>
+        <description>
+            <p>You can transform your face into a vision of enchantment or horror that affects creatures around you, based on the Fey Court you serve. As a Magic action, you take on this visage. Creatures within 30 feet who can see you must succeed on a Charisma saving throw with a DC equal to 8 plus your Charisma modifier plus your Transformation Stage or be affected for 1 minute.</p>
+            <p>You can do this a number of times equal to your Proficiency Bonus, and you regain all uses after finishing a Long Rest.</p>
+            <p><strong>Autumn.</strong> Any creature that fails the saving throw gains the Poisoned condition. The creature can attempt a Constitution saving throw at the end of each of their turns to end the condition.</p>
+        </description>
+        <sheet action="Magic Action" usage="{{proficiency}}/Long Rest">
+            <description>Cha save (30 ft), failed: Poisoned (1 min). Con save end of their turns: end the condition. Ends early if deals damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Two-Faced (Winter)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_TWO_FACED_WINTER">
+        <supports>Fey 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_2, ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_WINTER_COURT</requirements>
+        <description>
+            <p>You can transform your face into a vision of enchantment or horror that affects creatures around you, based on the Fey Court you serve. As a Magic action, you take on this visage. Creatures within 30 feet who can see you must succeed on a Charisma saving throw with a DC equal to 8 plus your Charisma modifier plus your Transformation Stage or be affected for 1 minute.</p>
+            <p>You can do this a number of times equal to your Proficiency Bonus, and you regain all uses after finishing a Long Rest.</p>
+            <p><strong>Winter.</strong> Any creature that fails the saving throw becomes Frightened of you. This effect ends early if a creature affected by this ability ends its turn out of your line of sight.</p>
+        </description>
+        <sheet action="Magic Action" usage="{{proficiency}}/Long Rest">
+            <description>Cha save (30 ft), failed: Frightened (1 min). Ends early if ends its turn out of your line of sight.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Magic Tricks (Spring)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_MAGIC_TRICKS_SPRING">
+        <supports>Fey 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_2, ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_SPRING_COURT</requirements>
+        <description>
+            <p>Your Fey masters provide you with the ability to weave magic based on your Fey Court allegiance. You gain the ability to cast one cantrip, one level 1 spell, and one level 2 spell. You can cast each of these once without using a spell slot or needing spell components. You regain the ability to cast these spells when you finish a Long Rest. The DC for these spells is 8 plus your Proficiency Bonus plus your Transformation Stage.</p>
+            <p><strong>Spring.</strong> Your cantrip is Poison Spray, and your spells are Fog Cloud and Misty Step.</p>
+        </description>
+        <sheet usage="1 each/Long Rest">
+            <description>Cast Poison Spray, Fog Cloud, and Misty Step without using a spell slot or needing spell components.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_POISON_SPRAY" />
+            <grant type="Spell" id="ID_WOTC_PHB24_FOG_CLOUD" />
+            <grant type="Spell" id="ID_WOTC_PHB24_MISTY_STEP" />
+        </rules>
+    </element>
+
+    <element name="Boon: Magic Tricks (Summer)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_MAGIC_TRICKS_SUMMER">
+        <supports>Fey 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_2, ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_SUMMER_COURT</requirements>
+        <description>
+            <p>Your Fey masters provide you with the ability to weave magic based on your Fey Court allegiance. You gain the ability to cast one cantrip, one level 1 spell, and one level 2 spell. You can cast each of these once without using a spell slot or needing spell components. You regain the ability to cast these spells when you finish a Long Rest. The DC for these spells is 8 plus your Proficiency Bonus plus your Transformation Stage.</p>
+            <p><strong>Summer.</strong> Your cantrip is Fire Bolt, and your spells are Burning Hands and Flame Blade.</p>
+        </description>
+        <sheet usage="1 each/Long Rest">
+            <description>Cast Fire Bolt, Burning Hands, and Flame Blade without using a spell slot or needing spell components.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIRE_BOLT" />
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_BURNING_HANDS" />
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_FLAME_BLADE" />
+        </rules>
+    </element>
+
+    <element name="Boon: Magic Tricks (Autumn)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_MAGIC_TRICKS_AUTUMN">
+        <supports>Fey 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_2, ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_AUTUMN_COURT</requirements>
+        <description>
+            <p>Your Fey masters provide you with the ability to weave magic based on your Fey Court allegiance. You gain the ability to cast one cantrip, one level 1 spell, and one level 2 spell. You can cast each of these once without using a spell slot or needing spell components. You regain the ability to cast these spells when you finish a Long Rest. The DC for these spells is 8 plus your Proficiency Bonus plus your Transformation Stage.</p>
+            <p><strong>Autumn.</strong> Your cantrip is Shillelagh, and your spells are Thunderwave and Ray of Enfeeblement.</p>
+        </description>
+        <sheet usage="1 each/Long Rest">
+            <description>Cast Shillelagh, Thunderwave, and Ray of Enfeeblement without using a spell slot or needing spell components.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHILLELAGH" />
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_THUNDERWAVE" />
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_ENFEEBLEMENT" />
+        </rules>
+    </element>
+
+    <element name="Boon: Magic Tricks (Winter)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_MAGIC_TRICKS_WINTER">
+        <supports>Fey 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_2, ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_WINTER_COURT</requirements>
+        <description>
+            <p>Your Fey masters provide you with the ability to weave magic based on your Fey Court allegiance. You gain the ability to cast one cantrip, one level 1 spell, and one level 2 spell. You can cast each of these once without using a spell slot or needing spell components. You regain the ability to cast these spells when you finish a Long Rest. The DC for these spells is 8 plus your Proficiency Bonus plus your Transformation Stage.</p>
+            <p><strong>Winter.</strong> Your cantrip is Ray of Frost, and your spells are Ice Knife and Darkness.</p>
+        </description>
+        <sheet usage="1 each/Long Rest">
+            <description>Cast Ray of Frost, Ice Knife, and Darkness without using a spell slot or needing spell components.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_RAY_OF_FROST" />
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_DARKNESS" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Queen’s Command" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_QUEENS_COMMAND">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_2</requirements>
+        <description>
+            <p>The Fey court lends you its power, and in exchange you must pay regular tribute to maintain your freedom. Twice a year, at times relevant to the Fey Court that you serve—such as the solstices or the equinoxes—you must deliver a treasure or other significant tribute to your ruling Fey Queen.</p>
+            <p>If your queen considers the tribute lacking, you are immediately notified of your failure and are given detailed instructions on how to atone. You have Disadvantage on all D20 Tests until you rectify the situation. If you do not satisfy your queen’s demand in one week’s time, your queen transports you immediately to her Fey Court, where you must answer for your insolence. Once transported in this way, you must remain in the Realm of Faerie for 100 years, or until you strike a bargain with your queen to let you return to the Material Plane.</p>
+            <p>Your GM will tell you what constitutes an appropriate tribute to the court. Some Fey Queens prefer magic items while others wish for long-kept secrets, the capture of Fey criminals, or Humanoid servants.</p>
+        </description>
+        <sheet usage="Twice/year">
+            <description>Must deliver a treasure or other significant tribute to your ruling Fey Queen. If lacking, you have Disadvantage on all D20 Tests until you rectify the situation.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 3 -->
+    <element name="Fey (Stage 3)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_3">
+        <prerequisite>Fey Transformation Stage 2</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 3 of the Fey Transformation, you select one Stage 3 Boon and gain the Stage 3 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_WEAKENED_CONSTITUTION" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 3 Boon. Weakened Constitution (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="fey:stage" value="3" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 3)" supports="Fey 2025 Boon 2||Fey 2025 Boon 3" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_WEAKENED_CONSTITUTION" />
+        </rules>
+    </element>
+
+    <element name="Boon: Illusionary Cloak" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ILLUSIONARY_CLOAK">
+        <supports>Fey 2025 Boon 3</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_3</requirements>
+        <description>
+            <p>You can use a Magic action to wrap yourself in an illusionary cloak for up to 1 hour. During this time, you can make yourself look like another creature of your general size and humanoid shape. This illusion ends when you use a Bonus Action to end it, or if you die or gain the Unconscious condition.</p>
+            <p>A creature can pierce the illusion by taking the Study action and succeeding on a DC 20 Intelligence (Investigation) check, thus seeing your true form.</p>
+        </description>
+        <sheet action="Magic Action">
+            <description>Illusionary cloak (up to 1 hour). You can make yourself look like another creature of your general size and humanoid shape. Ends with Bonus Action, die, Unconscious. Study action DC 20 Intelligence (Investigation) check.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Tooth and Claw" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_TOOTH_AND_CLAW">
+        <supports>Fey 2025 Boon 3</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_3</requirements>
+        <description>
+            <p>You can manifest fangs, tusks, claws, or other means of harming your enemies. These manifestations also deliver a powerful magic jolt.</p>
+            <p>As a Bonus Action, you manifest some natural defense mechanism for 1 minute. This gives you the following benefits:</p>
+            <ul>
+                <li>You manifest a Claw, Bite, or Gore attack that you may use in place of any weapon attack. This manifested attack deals 1d6 plus your Strength or Dexterity modifier Slashing damage. You are proficient with this attack, and you add either your Strength or Dexterity modifier to attack and damage rolls. This attack is not an Unarmed Strike, nor can it be used in place of an Unarmed Strike.</li>
+                <li>After taking an Attack action that did not use your manifested attack, you may take a Bonus Action later in that turn to use your manifested attack once.</li>
+                <li>Once per round, when you hit a target with a manifested attack, you can choose to deal an additional 2d6 Psychic damage to the target. The creature must succeed on a Constitution saving throw or have the Stunned condition until the end of its next turn. The DC is 8 plus your Proficiency Bonus plus your Transformation Stage.</li>
+            </ul>
+            <p>You can use this ability a number of times equal to your Proficiency Bonus plus your Transformation Stage. You regain all uses of this ability after completing a Long Rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{tooth and claw:uses}}/Long Rest">
+            <description>Manifest natural defenses for 1 minute.&#13;
+            • Gain Claw/Bite/Gore attack (1d6 + Str/Dex Slashing). Not an Unarmed Strike.&#13;
+            • Attack action without using this attack, you can make 1 attack with it as a Bonus Action.&#13;
+            • 1/round on hit: +2d6 Psychic damage and target makes a Con save or is Stunned until the end of its next turn.</description>
+        </sheet>
+        <rules>
+            <stat name="tooth and claw:uses" value="proficiency" />
+            <stat name="tooth and claw:uses" value="fey:stage" />
+        </rules>
+    </element>
+
+    <element name="Boon: Dreams and Nightmares" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_DREAMS_AND_NIGHTMARES">
+        <supports>Fey 2025 Boon 3</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_3</requirements>
+        <description>
+            <p>You gain the ability to manipulate the mind of mortal beings. As a Bonus Action, choose a Humanoid you can see within 30 feet of you. That creature must succeed on a Wisdom saving throw. The DC is 8 plus your Proficiency Bonus plus your Transformation Stage.</p>
+            <p>On a failed saving throw, the creature has the Paralyzed condition, as it is stuck in a blissful dream or a terrifying nightmare. The condition lasts for 1 minute. The target can attempt the Constitution saving throw at the end of each of its turns and each time it takes damage.</p>
+            <p>You can choose to concentrate on the effect as you would a spell. If you are concentrating on the effect when the target attempts its saving throw, the target has Disadvantage on the saving throw.</p>
+            <p>You can use this ability a number of times equal to your Proficiency Bonus, and you regain all uses of this ability when you finish a Long Rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{proficiency}}/Long Rest">
+            <description>Humanoid 30 feet:Wis save or Paralyzed (1 min). Con save end of their turns: end the condition. Concentrate to give Disadvantage.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Weakened Constitution" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_WEAKENED_CONSTITUTION">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_3</requirements>
+        <description>
+            <p>Your connection to the Fey Courts has granted you tremendous power but also an inherent fragility. When you become Bloodied for the first time after you roll Initiative, you must succeed on a DC 20 Constitution saving throw. On a failed save, you gain a level of Exhaustion.</p>
+            <p>As a Magic action, you can expend a number of Hit Point Dice equal to your Transformation Stage to remove one level of Exhaustion gained in this manner. You gain no other benefit from those expended Hit Point Dice.</p>
+        </description>
+        <sheet acttion="Magic Action">
+            <description>1st/Bloodied after Initiative, Con Save (DC 20) or gain a level of Exhaustion. You can expend {{fey:stage}} HP Dice to remove one level of Exhaustion.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 4 -->
+    <element name="Fey (Stage 4)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_4">
+        <prerequisite>Fey Transformation Stage 3</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 4 of the Fey Transformation, you select one Stage 4 Boon and gain the Stage 4 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_SEASONALLY_AFFECTED" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 4 Boon. Seasonally Affected (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="fey:stage" value="4" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 4)" supports="Fey 2025 Boon 2||Fey 2025 Boon 3||Fey 2025 Boon 4" />
+            
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_SEASONALLY_AFFECTED_SPRING" requirements="ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_SPRING_COURT" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_SEASONALLY_AFFECTED_SUMMER" requirements="ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_SUMMER_COURT" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_SEASONALLY_AFFECTED_AUTUMN" requirements="ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_AUTUMN_COURT" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_SEASONALLY_AFFECTED_WINTER" requirements="ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_WINTER_COURT" />
+        </rules>
+    </element>
+
+    <element name="Boon: Greater Magic Tricks (Spring)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GREATER_MAGIC_TRICKS_SPRING">
+        <supports>Fey 2025 Boon 4</supports>
+        <prerequisite>Magic Tricks</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_MAGIC_TRICKS_SPRING</requirements>
+        <description>
+            <p>Your Fey masters provide even further magical abilities. You gain the ability to cast one level 3 spell, one level 4 spell, and one level 5 spell. You can cast each of these once without using a spell slot or needing spell components. You regain the ability to cast these spells when you finish a Long Rest. The DC for these spells is 8 plus your Proficiency Bonus plus your Transformation Stage.</p>
+            <p><strong>Spring.</strong> Your spells are Stinking Cloud, Vitriolic Sphere, and Cloudkill.</p>
+        </description>
+        <sheet usage="1 each/Long Rest">
+            <description>Cast Stinking Cloud, Vitriolic Sphere, and Cloudkill without using a spell slot or needing spell components.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_STINKING_CLOUD" />
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_CLOUDKILL" />
+        </rules>
+    </element>
+
+    <element name="Boon: Greater Magic Tricks (Summer)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GREATER_MAGIC_TRICKS_SUMMER">
+        <supports>Fey 2025 Boon 4</supports>
+        <prerequisite>Magic Tricks</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_MAGIC_TRICKS_SUMMER</requirements>
+        <description>
+            <p>Your Fey masters provide even further magical abilities. You gain the ability to cast one level 3 spell, one level 4 spell, and one level 5 spell. You can cast each of these once without using a spell slot or needing spell components. You regain the ability to cast these spells when you finish a Long Rest. The DC for these spells is 8 plus your Proficiency Bonus plus your Transformation Stage.</p>
+            <p><strong>Summer.</strong> Your spells are Fireball, Fire Shield, and Dream.</p>
+        </description>
+        <sheet usage="1 each/Long Rest">
+            <description>Cast Fireball, Fire Shield, and Dream without using a spell slot or needing spell components.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIREBALL" />
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIRE_SHIELD" />
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_DREAM" />
+        </rules>
+    </element>
+
+    <element name="Boon: Greater Magic Tricks (Autumn)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GREATER_MAGIC_TRICKS_AUTUMN">
+        <supports>Fey 2025 Boon 4</supports>
+        <prerequisite>Magic Tricks</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_MAGIC_TRICKS_AUTUMN</requirements>
+        <description>
+            <p>Your Fey masters provide even further magical abilities. You gain the ability to cast one level 3 spell, one level 4 spell, and one level 5 spell. You can cast each of these once without using a spell slot or needing spell components. You regain the ability to cast these spells when you finish a Long Rest. The DC for these spells is 8 plus your Proficiency Bonus plus your Transformation Stage.</p>
+            <p><strong>Autumn.</strong> Your spells are Lightning Bolt, Blight, and Hold Monster.</p>
+        </description>
+        <sheet usage="1 each/Long Rest">
+            <description>Cast Lightning Bolt, Blight, and Hold Monster without using a spell slot or needing spell components.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_LIGHTNING_BOLT" />
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLIGHT" />
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_MONSTER" />
+        </rules>
+    </element>
+
+    <element name="Boon: Greater Magic Tricks (Winter)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GREATER_MAGIC_TRICKS_WINTER">
+        <supports>Fey 2025 Boon 4</supports>
+        <prerequisite>Magic Tricks</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_MAGIC_TRICKS_WINTER</requirements>
+        <description>
+            <p>Your Fey masters provide even further magical abilities. You gain the ability to cast one level 3 spell, one level 4 spell, and one level 5 spell. You can cast each of these once without using a spell slot or needing spell components. You regain the ability to cast these spells when you finish a Long Rest. The DC for these spells is 8 plus your Proficiency Bonus plus your Transformation Stage.</p>
+            <p><strong>Winter.</strong> Your spells are Vampiric Touch, Ice Storm, and Cone of Cold.</p>
+        </description>
+        <sheet usage="1 each/Long Rest">
+            <description>Cast Vampiric Touch, Ice Storm, and Cone of Cold without using a spell slot or needing spell components.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_VAMPIRIC_TOUCH" />
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_ICE_STORM" />
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_CONE_OF_COLD" />
+        </rules>
+    </element>
+
+    <element name="Boon: Twilight Glamour" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_TWILIGHT_GLAMOUR">
+        <supports>Fey 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_4</requirements>
+        <description>
+            <p>As a Magic action, you gain the Invisible condition for 1 hour or until you end it as a Bonus Action. If you make an attack roll, deal damage, or cast a spell that causes the target to make a saving throw, the remaining duration changes to 1 minute.</p>
+            <p>You can use this ability twice, and you regain all uses after finishing a Long Rest.</p>
+        </description>
+        <sheet action="Magic Action" usage="2/Long Rest">
+            <description>Invisible (1hr or end as a BA). If attack, deal damage, or cast a spell (the target must make a save), Duration changes to 1 min.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Seasonally Affected (Spring)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SEASONALLY_AFFECTED_SPRING">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_SPRING_COURT</requirements>
+        <description>
+            <p>Your connection to the Realm of Fey has a stronger pull on you. You have Disadvantage on Death Saving Throws as the Fey Court attempts to claim your soul as their own.</p>
+            <p>Additionally, you gain Vulnerability to a certain damage type based on the Fey Court that you are pledged to. You cannot benefit from Resistance or Immunity to that damage.</p>
+            <p><strong>Spring.</strong> You are Vulnerable to Necrotic damage.</p>
+        </description>
+        <sheet>
+            <description>Disadvantage on Death Saving Throws. Cannot benefit from Necrotic Resistance or Immunity.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_NECROTIC" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Seasonally Affected (Summer)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SEASONALLY_AFFECTED_SUMMER">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_SUMMER_COURT</requirements>
+        <description>
+            <p>Your connection to the Realm of Fey has a stronger pull on you. You have Disadvantage on Death Saving Throws as the Fey Court attempts to claim your soul as their own.</p>
+            <p>Additionally, you gain Vulnerability to a certain damage type based on the Fey Court that you are pledged to. You cannot benefit from Resistance or Immunity to that damage.</p>
+            <p><strong>Summer.</strong> You are Vulnerable to Cold damage.</p>
+        </description>
+        <sheet>
+            <description>Disadvantage on Death Saving Throws.  Cannot benefit from Cold Resistance or Immunity.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_COLD" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Seasonally Affected (Autumn)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SEASONALLY_AFFECTED_AUTUMN">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_AUTUMN_COURT</requirements>
+        <description>
+            <p>Your connection to the Realm of Fey has a stronger pull on you. You have Disadvantage on Death Saving Throws as the Fey Court attempts to claim your soul as their own.</p>
+            <p>Additionally, you gain Vulnerability to a certain damage type based on the Fey Court that you are pledged to. You cannot benefit from Resistance or Immunity to that damage.</p>
+            <p><strong>Autumn.</strong> You are Vulnerable to Radiant damage.</p>
+        </description>
+        <sheet>
+            <description>Disadvantage on Death Saving Throws. Cannot benefit from Radiant Resistance or Immunity.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_RADIANT" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Seasonally Affected (Winter)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SEASONALLY_AFFECTED_WINTER">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_FEY_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_SERVANT_WINTER_COURT</requirements>
+        <description>
+            <p>Your connection to the Realm of Fey has a stronger pull on you. You have Disadvantage on Death Saving Throws as the Fey Court attempts to claim your soul as their own.</p>
+            <p>Additionally, you gain Vulnerability to a certain damage type based on the Fey Court that you are pledged to. You cannot benefit from Resistance or Immunity to that damage.</p>
+            <p><strong>Winter.</strong> You are Vulnerable to Fire damage.</p>
+        </description>
+        <sheet>
+            <description>Disadvantage on Death Saving Throws. Cannot benefit from Fire Resistance or Immunity to it.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_VULNERABILITY_FIRE" />
+        </rules>
+    </element>
+</elements>

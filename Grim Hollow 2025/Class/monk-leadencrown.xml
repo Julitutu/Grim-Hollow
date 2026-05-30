@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Warrior of the Leaden Crown</name>
+		<description>The Warrior of the Leaden Crown subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="monk-leadencrown.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/monk-leadencrown.xml" />
+		</update>
+	</info>
+
+	<element name="Warrior of the Leaden Crown" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_MONK_WARRIOR_OF_THE_LEADEN_CROWN">
+		<supports>Monk Subclass</supports>
+		<description>
+			<p class="flavor">Harness the Will to Resist</p>
+			<p>In contrast to the esoteric ideals of other orders, Warriors of the Leaden Crown have practical aims: the self-governance of all people. These Monks see history as a series of clashes between groups of powerful beings where Humanoids are at best collateral damage and at worst disposable pawns. To break this cycle of dependence and destruction, Warriors of the Leaden Crown master mental abilities to fight against the otherworldly powers of the multiverse and protect Humanoid sovereignty.</p>
+			<p class="indent">One component of this plan involves training to do battle with powerful planar foes. The other equally important component is ensuring that Humanoid societies are prepared to overthrow those already dominating them. To that end, these Monks seek political positions that place them in or near decision-making roles where they can influence others to fight back against Arch Seraphs, Arch Daemons, and Primordials.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_LEADEN_CROWN_SUBTLE_HAND" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_LEADEN_CROWN_PSIONIC_PROWESS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_LEADEN_CROWN_UNSUBTLE_STRIKE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_LEADEN_CROWN_PSYCHIC_CRUSH" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_LEADEN_CROWN_PSIONIC_MASTERY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_LEADEN_CROWN_SUBTLE_HAND" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_LEADEN_CROWN_PSIONIC_PROWESS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_LEADEN_CROWN_UNSUBTLE_STRIKE" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_LEADEN_CROWN_PSYCHIC_CRUSH" level="11" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_LEADEN_CROWN_PSIONIC_MASTERY" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Subtle Hand" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_LEADEN_CROWN_SUBTLE_HAND">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_LEADEN_CROWN_SUBTLE_HAND</requirements>
+		<description>
+			<p>Your martial arts are enhanced by a capacity for telekinetic strikes. During your turn, your reach is 5 feet greater with Unarmed Strikes. In addition, when you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can choose to have it deal your choice of Psychic damage or its normal damage type.</p>
+		</description>
+		<sheet alt="Subtle Hand">
+			<description>During your turn, your Unarmed Strike reach increases by 5 feet. When you hit with an Unarmed Strike via the Attack action, you can deal Psychic damage instead of normal damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Psionic Prowess" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_LEADEN_CROWN_PSIONIC_PROWESS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_LEADEN_CROWN_PSIONIC_PROWESS</requirements>
+		<description>
+			<p>Your psychic powers have manifested in the ability to cast certain spells. You know the Mage Hand cantrip. You can cast it without Verbal or Somatic components, and you can make the spectral hand Invisible.</p>
+			<p class="indent">In addition, you can cast certain spells by expending Focus Points. You can take a Magic action and expend 1 Focus Point to cast Detect Evil and Good or Protection from Evil and Good. You can also take a Magic action and expend 2 Focus Points to cast Hold Person, Levitate, or Shatter. Wisdom is your spellcasting ability for these spells, and you can cast them without Material components.</p>
+		</description>
+		<sheet alt="Psionic Prowess">
+			<description>You know Mage Hand (no V/S components, can be Invisible). You can cast Detect Evil and Good or Protection from Evil and Good for 1 Focus Point. You can cast Hold Person, Levitate, or Shatter for 2 Focus Points. Wisdom is your spellcasting ability, no Material components required.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_MAGE_HAND" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_EVIL_AND_GOOD" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_PERSON" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LEVITATE" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHATTER" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Unsubtle Strike" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_LEADEN_CROWN_UNSUBTLE_STRIKE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_LEADEN_CROWN_UNSUBTLE_STRIKE</requirements>
+		<description>
+			<p>Once on each of your turns when you hit a creature with your Unarmed Strike or Monk weapon, you can force it to make a Strength saving throw against your Focus Point save DC. On a failed save, you can move the target up to 10 feet toward or away from you.</p>
+		</description>
+		<sheet alt="Unsubtle Strike" usage="1/Turn">
+			<description>When you hit with an Unarmed Strike or Monk weapon, you can force the target to make a DC{{monks focus:dc}} Str save or be moved up to 10 feet toward or away from you.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Psychic Crush" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_LEADEN_CROWN_PSYCHIC_CRUSH">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_LEADEN_CROWN_PSYCHIC_CRUSH</requirements>
+		<description>
+			<p>Each time you hit a creature with an Unarmed Strike, it gains a Pressure Point. A creature loses all Pressure Points if you cause a different creature to gain a Pressure Point or after 1 minute, whichever comes first. As a Bonus Action, you can expend 1 Focus Point to telekinetically crush a creature with 1 or more of your Pressure Points. The creature loses all Pressure Points and must make a Strength saving throw against your Focus Point save DC. On a failed save, the creature takes 1d8 Force damage per Pressure Point, and it has the Restrained condition until the end of your next turn. On a successful save, the creature takes half as much damage only.</p>
+		</description>
+		<sheet alt="Psychic Crush" action="Bonus Action" usage="1 Focus Point">
+			<description>Hits with Unarmed Strikes add a Pressure Point to the target (lost after 1 min or if you hit a new target). You can crush a target with Pressure Points: it loses all points and makes a DC{{monks focus:dc}} Str save. Fail: 1d8 Force damage per point and Restrained until end of next turn. Success: Half damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Psionic Mastery" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_LEADEN_CROWN_PSIONIC_MASTERY">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_LEADEN_CROWN_PSIONIC_MASTERY</requirements>
+		<description>
+			<p>After much training, you have mastered the psionic disciplines necessary to defend mortals from planar threats. As a Magic action, you can spend 5 Focus Points to cast Dispel Evil and Good, Hold Monster, Telekinesis, or Wall of Force. Wisdom is your spellcasting ability for these spells, and you can cast them without Material components.</p>
+		</description>
+		<sheet alt="Psionic Mastery" action="Action" usage="5 Focus Points">
+			<description>You can cast Dispel Evil and Good, Hold Monster, Telekinesis, or Wall of Force without Material components.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DISPEL_EVIL_AND_GOOD" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_MONSTER" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TELEKINESIS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WALL_OF_FORCE" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Subtle Hand Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_LEADEN_CROWN_SUBTLE_HAND" />
+	<element name="Psionic Prowess Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_LEADEN_CROWN_PSIONIC_PROWESS" />
+	<element name="Unsubtle Strike Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_LEADEN_CROWN_UNSUBTLE_STRIKE" />
+	<element name="Psychic Crush Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_LEADEN_CROWN_PSYCHIC_CRUSH" />
+	<element name="Psionic Mastery Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_LEADEN_CROWN_PSIONIC_MASTERY" />
+</elements>

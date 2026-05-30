@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dhampir</name>
+		<description>The Dhampir heritage from Grim Hollow - The Players Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="heritage-dhampir.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-dhampir.xml" />
+		</update>
+	</info>
+
+	<element name="Dhampir" type="Race" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_DHAMPIR">
+		<description>
+			<p>A dhampir is marked by a forbidding birthright—a humanoid half-cursed with vampirism, living as a mortal but touched by a dreaded immortal power. A dhampir possesses many of the grim features of their undead sires, but their mortal nature lets them avoid vampiric vulnerabilities. Like their creators, dhampir crave the blood of the living, but are not controlled by such cravings if their will is strong enough to resist it.</p>
+			<p class="indent">Always spawned from creatures of other heritages, dhampir are incredibly rare and vary widely in form and temperament. The only thing all dhampir truly share is the legacy of their unnatural creation. True vampires are the embodiment of death, mimicking life by twisting cadavers into undead or spreading their curse to spawn more of their own kind. But vampires cannot naturally reproduce or create anything truly living. Dhampir are thus most often the result of some form of necromantic accident—a dying child revived by fell magic, an apothecary mixing herbs with vampire blood, or a failed attempt to find a cure for vampirism.</p>
+			<p class="indent">Whatever their origins, most dhampir experience an existence rooted in trauma, and often pervaded by loneliness. Commoners who fear dhampir view them as blood-hungry monsters, despite the fact that most sustain their life with normal food and drink. At the same time, vampires revile them as thin-blooded weaklings. A dhampir’s life is thus usually spent searching for somewhere to belong, whether fitting into mortal society or trying to appease their blood-drinking forebears.</p>
+			<p class="indent">A dhampir who chooses life among mortals is often wracked by guilt. Their craving for blood can come to feel all-consuming as they cling to their humanity and empathy. Dhampir are made to feel like monsters by those who are superstitious of them. Yet commoners who care for a dhampir as family can never truly understand their struggle against the monster within.</p>
+			<p class="indent">Other dhampir decide to indulge their bloodlust. They may even vie for position among the nobility of Ostoya. Despite lacking conventional parentage, a dhampir may form a familial bond with the vampire they regard as their sire. Vampires who exploit this relationship can gain a valuable ward who is able to walk in sunlight and blend more easily with mortal society. A dhampir in this position may become a spy, steward, or herald of their master. But they understand that they will never achieve positions of actual power in vampire society.</p>
+			<h5>DHAMPIR BASE TRAITS</h5>
+			<ul class="unstyled">
+				<li><strong>Age.</strong> The curse that creates a Dhampir makes them ageless, letting them ignore the passage of time—though they can succumb to death in many other ways.</li>
+				<li><strong>Size.</strong> A Dhampir is the same size as the humanoid they were spawned from. You are Small or Medium, as you determine.</li>
+				<li><strong>Speed.</strong> 30 feet. If you are Small, you can reduce your Speed by 5 feet to gain an extra traditional trait.</li>
+			</ul>
+			<h5>TRADITIONAL DHAMPIR TRAITS</h5>
+			<p>The vampiric features they inherit inevitably mark the Dhampir as who they are. If you wish to play a traditional Dhampir, it is recommended you select from the following traits:</p>
+			<ul>
+				<li><strong>Combat:</strong> Draining Attack, Natural Attack (Fangs), Well Protected</li>
+				<li><strong>Exploration:</strong> Climber, Darkvision</li>
+				<li><strong>Roleplaying:</strong> Eager Deceiver, Magical Savant (Charm Person), Magical Savvy (Friends)</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed" value="30" bonus="base" />
+            <select type="Racial Trait" name="Size" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Dhampir)" supports="GH Heritage Trait" number="8" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			<select type="Racial Trait" name="Heritage Trait (Dhampir)" supports="GH Heritage Trait" number="6" requirements="ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_DRAINING_ATTACK" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_NATURAL_ATTACK" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_WELL_PROTECTED" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_CLIMBER" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_DARKVISION" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_EAGER_DECEIVER" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG25_RACE_TRAIT_TRADITIONAL_DHAMPIR_MAGIC" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+		</rules>
+	</element>
+
+	<element name="Traditional Dhampir Magic" type="Racial Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_TRAIT_TRADITIONAL_DHAMPIR_MAGIC">
+		<supports>GH Heritage Trait, GH Roleplaying Trait</supports>
+		<description>
+			<p>You know the <i>Friends</i> cantrip. Additionally, you know the <i>Charm Person</i> spell, which you can cast once per Long Rest without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You know the Friends cantrip. Additionally, you can cast Charm Person once per Long Rest without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FRIENDS" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHARM_PERSON" />
+		</rules>
+	</element>
+</elements>

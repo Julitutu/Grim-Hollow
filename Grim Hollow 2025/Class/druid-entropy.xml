@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Circle of Entropy</name>
+		<description>The Circle of Entropy subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="druid-entropy.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/druid-entropy.xml" />
+		</update>
+	</info>
+
+	<element name="Circle of Entropy" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_DRUID_CIRCLE_OF_ENTROPY">
+		<supports>Druid Subclass</supports>
+		<description>
+			<p class="flavor">Become an Instrument of Decay and Ruin</p>
+			<p>Druids of the Circle of Entropy see doom as a constant of the natural world. Lives end, works erode, and the civilizations of Etharis ultimately come to ruin. The inevitable end of the old brings opportunity for the new. These fatalistic Druids see themselves as agents of ruin, ending those whose time has passed to make space for those whose time has yet to come.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_ENTROPY_CATASTROPHIC_POWER" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_ENTROPY_RUIN_INCARNATE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_ENTROPY_MANY_ROADS_TO_RUIN" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_ENTROPY_SHAKE_THE_EARTH" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_ENTROPY_ENTROPYS_APEX" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_ENTROPY_CATASTROPHIC_POWER" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_ENTROPY_RUIN_INCARNATE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_ENTROPY_MANY_ROADS_TO_RUIN" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_ENTROPY_SHAKE_THE_EARTH" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_ENTROPY_ENTROPYS_APEX" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Catastrophic Power" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_ENTROPY_CATASTROPHIC_POWER">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_ENTROPY_CATASTROPHIC_POWER</requirements>
+		<description>
+			<p>You have mastered talents, both magical and martial, in your pursuit of the inevitable destruction of mortals and their works. When you finish a Short or Long Rest, you gain one of the following benefits until you finish your next Short or Long Rest.</p>
+			<p class="indent"><strong><em>Elemental Cataclysm.</em></strong> As a Magic action, you can expend a spell slot to cause elemental energy to burst in a 10-foot-radius Sphere centered on a point within 60 feet of yourself. Choose a damage type: Acid, Cold, Fire, or Lightning.</p>
+			<p class="indent">Each creature in the Sphere must make a Dexterity saving throw against your spell save DC. On a failed save, a creature takes 1d6 damage of the chosen type per level of the spell slot expended, and then has Vulnerability to that damage type for 1 minute. On a successful save, a creature takes half as much damage only. The target repeats the save at the end of each of its turns, ending the Vulnerability on a success.</p>
+			<p class="indent"><strong><em>Ruinous Smite.</em></strong> Once per turn when you deal damage with an attack with a weapon or an Unarmed Strike, you can choose to expend a spell slot to deal an extra 1d8 Necrotic damage, plus another 1d8 per level of the spell slot.</p>
+			<p class="indent"><strong><em>Weapon Mastery.</em></strong> Your supernatural connection to destruction allows you to use the mastery property of one kind of weapon of your choice with which you have proficiency, such as Shortbows or Quarterstaffs. Whenever you finish a Long Rest, you can change the kind of weapon you choose. For example, you could switch to using the mastery property of Slings or Greatclubs.</p>
+		</description>
+		<sheet alt="Catastrophic Power">
+			<description>When you finish a Short or Long Rest, you gain one benefit until your next rest:&#13;
+			• Elemental Cataclysm: Magic Action, expend spell slot. 10-ft Sphere within 60 ft. Acid, Cold, Fire, or Lightning. DC{{druid:spellcasting:dc}} Dex save. Fail: 1d6/slot level damage + Vulnerability to type for 1 min (save ends at end of turns). Success: half damage.&#13;
+			• Ruinous Smite: Once per turn on hit, expend spell slot for 1d8 + 1d8/slot level extra Necrotic damage.&#13;
+			• Weapon Mastery: Use the mastery property of one weapon you are proficient with (can change on Long Rest).</description>
+			<description level="14">When you finish a Short or Long Rest, you gain one benefit until your next rest:&#13;
+			• Elemental Cataclysm: Magic Action, expend spell slot. 10-ft Sphere within 60 ft. Acid, Cold, Fire, or Lightning. DC{{druid:spellcasting:dc}} Dex save. Fail: 1d6/slot level damage + Vulnerability to type for 1 min (save ends at end of turns). Success: half damage.&#13;
+			• Ruinous Smite: Once per turn on hit, expend spell slot for 1d8 + 1d8/slot level extra Necrotic damage. Until the end of your next turn, the target suffers a Critical Hit on a 19-20.&#13;
+			• Weapon Mastery: Use the mastery property of one weapon you are proficient with (can change on Long Rest).</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Ruin Incarnate" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_ENTROPY_RUIN_INCARNATE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_ENTROPY_RUIN_INCARNATE</requirements>
+		<description>
+			<p>As a Bonus Action, you can expend a use of your Wild Shape to adopt an aspect of entropy and the inevitable end of all things for 10 minutes. You gain the following benefits.</p>
+			<p class="indent"><strong><em>All Things Pass.</em></strong> You have Advantage on attack rolls against Bloodied creatures.</p>
+			<p class="indent"><strong><em>Inexorable Onslaught.</em></strong> You can attack twice instead of once whenever you take the Attack action on your turn.</p>
+			<p class="indent"><strong><em>Ironskin Armor.</em></strong> Your base AC becomes 17 plus your Wisdom modifier (minimum of +1) if your AC is lower than that.</p>
+		</description>
+		<sheet alt="Ruin Incarnate" action="Bonus Action" usage="Wild Shape">
+			<description>You adopt an aspect of entropy for 10 minutes. You gain Advantage on attacks against Bloodied creatures, can attack twice when you take the Attack action, and your base AC becomes {{ac:ruin incarnate}} (if higher than your normal AC).</description>
+			<description level="6">You adopt an aspect of entropy for 10 minutes. You gain Advantage on attacks against Bloodied creatures, can attack twice when you take the Attack action, and your base AC becomes {{ac:ruin incarnate}} (if higher than your normal AC). Your weapon/unarmed strikes can deal Acid, Cold, Fire, Lightning, or Necrotic damage. You add +{{wisdom:modifier}} to Str and Dex saves.</description>
+			<description level="14">You adopt an aspect of entropy for 10 minutes. You gain Advantage on attacks against Bloodied creatures, can attack three times when you take the Attack action, and your base AC becomes {{ac:ruin incarnate}} (if higher than your normal AC). Your weapon/unarmed strikes can deal Acid, Cold, Fire, Lightning, or Necrotic damage. You add +{{wisdom:modifier}} to Str and Dex saves.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:ruin incarnate" value="17" bonus="base" />
+            <stat name="ac:ruin incarnate" value="ac:ruin incarnate:wisdom" />
+            <stat name="ac:ruin incarnate:wisdom" value="1" bonus="base" />
+			<stat name="ac:ruin incarnate:wisdom" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Many Roads to Ruin" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_ENTROPY_MANY_ROADS_TO_RUIN">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_ENTROPY_MANY_ROADS_TO_RUIN</requirements>
+		<description>
+			<p>Your mystic connection to catastrophe and destruction grows stronger. You gain the following benefits.</p>
+			<p class="indent"><strong><em>Elemental Assault.</em></strong> While your Ruin Incarnate feature is active, whenever you hit with a weapon or an Unarmed Strike, you can cause it to deal your choice of Acid, Cold, Fire, Lightning, or Necrotic damage rather than its normal damage type.</p>
+			<p class="indent"><strong><em>Increased Might.</em></strong> While your Ruin Incarnate feature is active, you can add your Wisdom modifier (minimum bonus of +1) to your Strength and Dexterity saving throws.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<element name="Level 10: Shake the Earth" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_ENTROPY_SHAKE_THE_EARTH">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_ENTROPY_SHAKE_THE_EARTH</requirements>
+		<description>
+			<p>As a Magic action, you can strike the earth with a thunderous tremor and grow. When you do so, your size increases by one category (from Medium to Large, for example) for 10 minutes. In addition, each creature in a 30-foot Emanation originating from your new form must make a Dexterity saving throw against your spell save DC or have the Prone condition. The tremor deals Bludgeoning damage to each structure in contact with the ground in the area. To determine this damage, roll a number of d10s equal to your Druid level, and add them together.</p>
+			<p class="indent">While your size is increased by this feature, your attacks with weapons and Unarmed Strikes deal an extra 1d4 damage on a hit.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Shake the Earth" action="Action" usage="1/Long Rest">
+			<description>You increase your size by one category for 10 mins. Creatures in a 30-ft Emanation must make a DC{{druid:spellcasting:dc}} Dex save or fall Prone. Structures touching the ground in the area take {{level:druid}}d10 Bludgeoning damage. While enlarged, your weapon/unarmed strikes deal an extra 1d4 damage.</description>
+			<description level="14">You increase your size by one category for 10 mins. Creatures in a 30-ft Emanation must make a DC{{druid:spellcasting:dc}} Dex save or fall Prone. Structures touching the ground in the area take {{level:druid}}d10 Bludgeoning damage. While enlarged, your weapon/unarmed strikes deal an extra 1d4 damage. (Recharges on Short or Long Rest).</description>
+		</sheet>
+	</element>
+
+	<element name="Level 14: Entropy's Apex" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_DRUID_ENTROPY_ENTROPYS_APEX">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_ENTROPY_ENTROPYS_APEX</requirements>
+		<description>
+			<p>You have mastered the ability to hasten the inevitable slide toward entropy. You gain the following benefits.</p>
+			<p class="indent"><strong><em>Enhanced Ruinous Smite.</em></strong> Until the end of your next turn, any creature affected by your Ruinous Smite suffers a Critical Hit on a roll of 19-20 on the d20.</p>
+			<p class="indent"><strong><em>Improved Inexorable Onslaught.</em></strong> While your Ruin Incarnate feature is active, you can attack with a weapon or an Unarmed Strike three times instead of once whenever you take the Attack action on your turn.</p>
+			<p class="indent"><strong><em>World Breaker.</em></strong> You regain your use of your Shake the Earth feature when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Catastrophic Power Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_ENTROPY_CATASTROPHIC_POWER" />
+	<element name="Ruin Incarnate Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_ENTROPY_RUIN_INCARNATE" />
+	<element name="Many Roads to Ruin Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_ENTROPY_MANY_ROADS_TO_RUIN" />
+	<element name="Shake the Earth Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_ENTROPY_SHAKE_THE_EARTH" />
+	<element name="Entropy's Apex Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_DRUID_ENTROPY_ENTROPYS_APEX" />
+
+</elements>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Highway Rider</name>
+		<description>The Highway Rider subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="rogue-highwayrider.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/rogue-highwayrider.xml" />
+		</update>
+	</info>
+
+	<element name="Highway Rider" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_ROGUE_HIGHWAY_RIDER">
+		<supports>Rogue Subclass</supports>
+		<description>
+			<p class="flavor">A Steed Makes the Best Partner in Crime</p>
+			<p>Stalking the backroads, the Highway Rider strikes fear into the heart of every traveler and penny-pinching merchant. They run down their prize astride a swift and loyal steed—and then make a quick getaway.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_HAIR_TRIGGER" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_TRUSTY_MOUNT" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_RIDE_THEM_DOWN" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_HORSE_LORD" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_TRUE_GRIT" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_DESPERADO" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_HAIR_TRIGGER" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_TRUSTY_MOUNT" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_RIDE_THEM_DOWN" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_HORSE_LORD" level="9" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_TRUE_GRIT" level="13" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_DESPERADO" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Hair Trigger" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_HAIR_TRIGGER">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HIGHWAY_RIDER_HAIR_TRIGGER</requirements>
+		<description>
+			<p>You gain proficiency with Blackpowder Pistols. In addition, when you roll Initiative and don't have Disadvantage on that roll, you can immediately take a Reaction for one of the following options:</p>
+			<ul>
+				<li>Make one attack with a weapon or Unarmed Strike.</li>
+				<li>Move up to your Speed without provoking Opportunity Attacks.</li>
+				<li>A controlled mount moves up to its Speed without provoking Opportunity Attacks.</li>
+				<li>Take the Dodge or Utilize action.</li>
+			</ul>
+		</description>
+		<sheet alt="Hair Trigger" action="Reaction">
+			<description>When you roll Initiative without Disadvantage, you can take a Reaction to do one of the following: make a weapon/Unarmed Strike attack, move your Speed without Opportunity Attacks, have a controlled mount move its Speed without Opportunity Attacks, or take the Dodge/Utilize action.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_GFG_GHPG25_PROFICIENCY_WEAPON_PROFICIENCY_BLACKPOWDER_PISTOL" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Trusty Mount" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_TRUSTY_MOUNT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HIGHWAY_RIDER_TRUSTY_MOUNT</requirements>
+		<description>
+			<p>You always have the Find Steed spell prepared. With this feature, you can cast it without a spell slot or components, and your spellcasting ability for it is Intelligence.</p>
+			<p class="indent">Once you cast the spell with this feature, you can't do so in this way again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Trusty Mount" usage="1/Long Rest">
+			<description>You can cast Find Steed without a spell slot or components (Intelligence is your spellcasting ability).</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIND_STEED" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Ride Them Down" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_RIDE_THEM_DOWN">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HIGHWAY_RIDER_RIDE_THEM_DOWN</requirements>
+		<description>
+			<p>You don't need Advantage on the attack roll to Sneak Attack if you or a controlled mount you ride moves at least 20 feet, and you don't have Disadvantage on the attack roll.</p>
+		</description>
+		<sheet alt="Ride Them Down">
+			<description>You don't need Advantage to Sneak Attack if you or your controlled mount moves at least 20 ft, and you don't have Disadvantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 9: Horse Lord" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_HORSE_LORD">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HIGHWAY_RIDER_HORSE_LORD</requirements>
+		<description>
+			<p>You can spend 1 minute grooming and caring for your mount, at the end of which it gains a number of Temporary Hit Points equal to twice your Rogue level.</p>
+			<p class="indent">In addition, your cunning extends to your steed. While you control a mount, it can take one of the following actions as a Bonus Action: Dash, Disengage, or Dodge.</p>
+		</description>
+		<sheet alt="Horse Lord">
+			<description>Spend 1 min grooming your mount to grant it {{horse lord:thp}} THP. While you control a mount, it can Dash, Disengage, or Dodge as a Bonus Action.</description>
+		</sheet>
+		<rules>
+			<stat name="horse lord:thp" value="level:rogue" />
+			<stat name="horse lord:thp" value="level:rogue" />
+		</rules>
+	</element>
+
+	<element name="Level 13: True Grit" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_TRUE_GRIT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HIGHWAY_RIDER_TRUE_GRIT</requirements>
+		<description>
+			<p>You gain proficiency in Constitution saving throws. In addition, when you are subjected to an effect that allows you to make a Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+		</description>
+		<sheet alt="True Grit">
+			<description>When an effect allows a Con save for half damage, you take no damage on a success and half damage on a failure.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+		</rules>
+	</element>
+
+	<element name="Level 17: Desperado" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HIGHWAY_RIDER_DESPERADO">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HIGHWAY_RIDER_DESPERADO</requirements>
+		<description>
+			<p>When you are reduced to 0 Hit Points and not killed outright, you can use your Hair Trigger feature immediately before you fall Unconscious.</p>
+		</description>
+		<sheet alt="Desperado">
+			<description>When reduced to 0 HP (not killed outright), you can use Hair Trigger immediately before falling Unconscious.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Hair Trigger Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HIGHWAY_RIDER_HAIR_TRIGGER" />
+	<element name="Trusty Mount Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HIGHWAY_RIDER_TRUSTY_MOUNT" />
+	<element name="Ride Them Down Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HIGHWAY_RIDER_RIDE_THEM_DOWN" />
+	<element name="Horse Lord Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HIGHWAY_RIDER_HORSE_LORD" />
+	<element name="True Grit Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HIGHWAY_RIDER_TRUE_GRIT" />
+	<element name="Desperado Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HIGHWAY_RIDER_DESPERADO" />
+
+</elements>

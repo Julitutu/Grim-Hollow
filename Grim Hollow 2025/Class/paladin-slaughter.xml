@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of Slaughter</name>
+		<description>The Oath of Slaughter subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="paladin-slaughter.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/paladin-slaughter.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of Slaughter" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_PALADIN_OATH_OF_SLAUGHTER">
+		<supports>Paladin Subclass</supports>
+		<description>
+			<p class="flavor">Revel in Unbridled Violence</p>
+			<p>The only truth of war is death. The only virtue is to kill. The only victory is to survive. Heroism, honor, and glory are illusions. This is the creed of Tormach, Arch Daemon of Wrath, but this philosophy rings true for all warriors who devote themselves, body and soul, to the thrill of combat and the delight of bloodshed. Such champions find themselves at the forefront of armies, using the most violent methods at their disposal to bring battles to a swift close … or drawing out the war to sate their own appetites.</p>
+			<p class="indent">Paladins who take the Oath of Slaughter share the following tenets:</p>
+			<ul>
+				<li>Violence is the end, not the means.</li>
+				<li>Break the body to break the spirit.</li>
+				<li>Revel in bloodshed, whether friend or foe.</li>
+			</ul>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_SLAUGHTER_FRENZIED_SLAUGHTER" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_SLAUGHTER_SPELLS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_SLAUGHTER_BLOODTHIRST_AURA" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_SLAUGHTER_FOLLOW_THROUGH" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_SLAUGHTER_BLOOD_KNIGHT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_SLAUGHTER_FRENZIED_SLAUGHTER" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_SLAUGHTER_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_SLAUGHTER_BLOODTHIRST_AURA" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_SLAUGHTER_FOLLOW_THROUGH" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_SLAUGHTER_BLOOD_KNIGHT" level="20" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Frenzied Slaughter" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_SLAUGHTER_FRENZIED_SLAUGHTER">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_SLAUGHTER_FRENZIED_SLAUGHTER</requirements>
+		<description>
+			<p>You can harness the rush of battle to drive you to even greater acts of violence. As a Bonus Action, you can expend one use of your Channel Divinity to enter a battle frenzy. You gain the following benefits while this feature is active.</p>
+			<p class="indent"><strong><em>Reflexive Attack.</em></strong> When you miss with an attack roll using a Melee weapon or Unarmed Strike, you can take a Reaction to make another attack with the same weapon.</p>
+			<p class="indent"><strong><em>Condition Resistance.</em></strong> You have Advantage on saving throws to avoid or end the Charmed, Frightened, and Stunned conditions.</p>
+			<p class="indent"><strong><em>Duration.</em></strong> Frenzied Slaughter lasts until the end of your next turn, and it ends early if you have the Incapacitated condition. If your Frenzied Slaughter is still active on your next turn, you can extend it for another round by doing one of the following:</p>
+			<ul>
+				<li>Make an attack roll against an enemy.</li>
+				<li>Force an enemy to make a saving throw.</li>
+				<li>You are Bloodied at the end of your turn.</li>
+			</ul>
+			<p class="indent">Each time Frenzied Slaughter is extended, it lasts until the end of your next turn. You can maintain it for up to 1 minute.</p>
+		</description>
+		<sheet alt="Frenzied Slaughter" action="Bonus Action" usage="Channel Divinity">
+			<description>Enter a battle frenzy until the end of your next turn (ends if Incapacitated). Extend it 1 round if you attack an enemy, force a save, or are Bloodied at end of turn (max 1 min). While active:&#13;
+			• Reflexive Attack: Miss with a melee weapon/Unarmed Strike? Take a Reaction to attack again with it.&#13;
+			• Adv. on saves vs Charmed, Frightened, Stunned.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Oath of Slaughter Spells" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_SLAUGHTER_SPELLS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_SLAUGHTER_SPELLS</requirements>
+		<description>
+			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Slaughter Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Oath of Slaughter Spells</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Crimson Lash, Inflict Wounds</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Bloodletter, Shatter</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Fear, Suffocate</em></td></tr>
+				<tr><td style="text-align:center">13</td><td><em>Consume Mind, Supernal Smite</em></td></tr>
+				<tr><td style="text-align:center">17</td><td><em>Destructive Wave, Incite Riot</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_CRIMSON_LASH" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INFLICT_WOUNDS" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_BLOODLETTER" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SHATTER" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FEAR" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_SUFFOCATE" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_CONSUME_MIND" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_SUPERNAL_SMITE" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DESTRUCTIVE_WAVE" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_INCITE_RIOT" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Bloodthirst Aura" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_SLAUGHTER_BLOODTHIRST_AURA">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_SLAUGHTER_BLOODTHIRST_AURA</requirements>
+		<description>
+			<p>Your lust for blood infects those around you. When a Bloodied ally within your Aura of Protection makes an attack with a weapon or an Unarmed Strike, it gains a bonus to damage. The bonus equals your Charisma modifier.</p>
+			<p class="indent">Additionally, when a Bloodied creature within your Aura of Protection makes a saving throw against a Sangromancy spell, you can take a Reaction to impose Disadvantage on the save.</p>
+		</description>
+		<sheet alt="Bloodthirst Aura">
+			<description>Bloodied allies in your Aura of Protection deal +{{charisma:modifier}} damage with weapon/Unarmed Strikes. You can take a Reaction to impose Disadvantage when a Bloodied creature in the aura saves vs a Sangromancy spell.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Follow Through" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_SLAUGHTER_FOLLOW_THROUGH">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_SLAUGHTER_FOLLOW_THROUGH</requirements>
+		<description>
+			<p>When a creature in your Aura of Protection becomes Bloodied, you can take a Reaction to move up to half your Speed and make an attack with a Melee weapon or Unarmed Strike. This movement doesn't provoke Opportunity Attacks, and you have Advantage on the attack roll.</p>
+		</description>
+		<sheet alt="Follow Through" action="Reaction">
+			<description>When a creature in your Aura of Protection becomes Bloodied, you can move up to half your Speed (no Opportunity Attacks) and make a melee weapon/Unarmed Strike with Advantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 20: Blood Knight" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_SLAUGHTER_BLOOD_KNIGHT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_SLAUGHTER_BLOOD_KNIGHT</requirements>
+		<description>
+			<p>Your bloodthirst imbues you with preternatural strength and resilience, allowing you to keep sowing slaughter. As a Bonus Action, you gain the benefits below for 10 minutes or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required).</p>
+			<p class="indent"><strong><em>Crimson Armor.</em></strong> When a creature within your Aura of Protection becomes Bloodied by an enemy, you gain 30 Temporary Hit Points.</p>
+			<p class="indent"><strong><em>Seeing Red.</em></strong> When a creature hits you with an attack roll, you can take a Reaction to make one melee attack against that creature, using a weapon or an Unarmed Strike.</p>
+			<p class="indent"><strong><em>Wanton Slaughter.</em></strong> When you hit a creature with a melee attack roll using a weapon or an Unarmed Strike, you can choose any number of creatures within 5 feet of the original target and within your reach. Each chosen creature takes Force damage equal to your Charisma modifier (minimum of +1) plus your Proficiency Bonus.</p>
+		</description>
+		<sheet alt="Blood Knight" action="Bonus Action" usage="1/Long Rest">
+			<description>For 10 mins:&#13;
+			• Crimson Armor: Gain 30 THP when a creature in your Aura of Protection becomes Bloodied by an enemy.&#13;
+			• Seeing Red: Reaction to make a melee attack against a creature that hits you.&#13;
+			• Wanton Slaughter: On a melee hit, deal {{wanton slaughter:damage}} Force damage to any number of creatures within 5 ft of the target and your reach.&#13;
+			You can expend a 5th-level spell slot to restore a use.</description>
+		</sheet>
+		<rules>
+			<stat name="wanton slaughter:damage" value="1" bonus="base" />
+			<stat name="wanton slaughter:damage" value="charisma:modifier" bonus="base" />
+			<stat name="wanton slaughter:damage" value="proficiency" bonus="proficiency" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Frenzied Slaughter Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_SLAUGHTER_FRENZIED_SLAUGHTER" />
+	<element name="Oath of Slaughter Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_SLAUGHTER_SPELLS" />
+	<element name="Bloodthirst Aura Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_SLAUGHTER_BLOODTHIRST_AURA" />
+	<element name="Follow Through Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_SLAUGHTER_FOLLOW_THROUGH" />
+	<element name="Blood Knight Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_SLAUGHTER_BLOOD_KNIGHT" />
+
+</elements>

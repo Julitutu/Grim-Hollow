@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Purification Domain</name>
+		<description>The Purification Domain subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="cleric-purification.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/cleric-purification.xml" />
+		</update>
+	</info>
+
+	<element name="Purification Domain" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_CLERIC_PURIFICATION_DOMAIN">
+		<supports>Cleric Subclass</supports>
+		<description>
+			<p class="flavor">Purge Sickness with Suffering</p>
+			<p>The Purification Domain believes sickness, mutation, and other forms of bodily corruption are signs of a corresponding spiritual malady. Virtue can't exist alongside impurity.</p>
+			<p class="indent">The wickedness of humanity and other mortal, sentient creatures is a contagion that manifests plagues such as the Weeping Pox. When there's a risk of such corruption spreading, there's only one surefire way to contain the rot and atone for the sins that led to this point: Burn it out.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PURIFICATION_DOMAIN_CLEANSE_WITH_FIRE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PURIFICATION_DOMAIN_SPELLS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PURIFICATION_DOMAIN_UNCLEAN_BRAND" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PURIFICATION_DOMAIN_WARD_AGAINST_CORRUPTION" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PURIFICATION_DOMAIN_SEAR_IMPERFECTIONS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PURIFICATION_DOMAIN_CLEANSE_WITH_FIRE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PURIFICATION_DOMAIN_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PURIFICATION_DOMAIN_UNCLEAN_BRAND" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PURIFICATION_DOMAIN_WARD_AGAINST_CORRUPTION" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PURIFICATION_DOMAIN_SEAR_IMPERFECTIONS" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Cleanse with Fire" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PURIFICATION_DOMAIN_CLEANSE_WITH_FIRE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PURIFICATION_DOMAIN_CLEANSE_WITH_FIRE</requirements>
+		<description>
+			<p>When you deal damage with a cantrip or an attack with a weapon or Unarmed Strike, you can deal an additional 1d8 Fire damage. You can use this feature a number of times equal to your Wisdom modifier plus your Proficiency Bonus (minimum of once), and you regain all expended uses when you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Cleanse with Fire" usage="{{cleanse with fire:usage}}/Short Rest">
+			<description>When you deal damage with a cantrip, weapon attack, or Unarmed Strike, you can deal an additional 1d8 Fire damage.</description>
+		</sheet>
+		<rules>
+			<stat name="cleanse with fire:usage" value="1" bonus="base" />
+			<stat name="cleanse with fire:usage" value="wisdom:modifier" bonus="base" />
+			<stat name="cleanse with fire:usage" value="proficiency" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Purification Domain Spells" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PURIFICATION_DOMAIN_SPELLS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PURIFICATION_DOMAIN_SPELLS</requirements>
+		<description>
+			<p>Your connection to this divine domain ensures you always have certain spells ready. When you reach a Cleric level specified in the Purification Domain Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Purification Domain Spells</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Cleric Level</td><td>Prepared Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Detect Poison and Disease, Flame Blade</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Fear, Flash Fever</em></td></tr>
+				<tr><td style="text-align:center">7</td><td><em>Aura of Purity, Wall of Fire</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Flame Strike, Hold Monster</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_POISON_AND_DISEASE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FLAME_BLADE" level="3" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FEAR" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_FLASH_FEVER" level="5" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_AURA_OF_PURITY" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_WALL_OF_FIRE" level="7" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FLAME_STRIKE" level="9" spellcasting="Cleric" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HOLD_MONSTER" level="9" spellcasting="Cleric" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Unclean Brand" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PURIFICATION_DOMAIN_UNCLEAN_BRAND">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PURIFICATION_DOMAIN_UNCLEAN_BRAND</requirements>
+		<description>
+			<p>When you hit a creature with a melee attack with a weapon or Unarmed Strike, instead of dealing the strike's normal damage, you can expend one use of your Channel Divinity to sear a symbol into the creature's flesh, marking it with a glowing brand for 1 minute. During that time, the creature has Disadvantage on saving throws against your spells. Additionally, the creature gains Vulnerability to Fire damage you deal, even if it normally has Resistance or Immunity to Fire damage.</p>
+		</description>
+		<sheet alt="Unclean Brand" usage="Channel Divinity">
+			<description>When you hit with a melee weapon/Unarmed Strike, instead of normal damage, you can brand the target for 1 min. It has Disadv. on saves vs your spells and Vulnerability to your Fire damage (ignoring Resistance/Immunity).</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Ward Against Corruption" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PURIFICATION_DOMAIN_WARD_AGAINST_CORRUPTION">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PURIFICATION_DOMAIN_WARD_AGAINST_CORRUPTION</requirements>
+		<description>
+			<p>You have Advantage on saving throws to avoid or end diseases and against any effect that would change your form, such as the Polymorph spell.</p>
+			<p class="indent">As a Magic action, you can touch a willing creature to grant this benefit, but the creature takes Fire damage equal to your Wisdom modifier (minimum of 1). This damage ignores Resistance and Immunity. Once you grant this benefit, it lasts for 1 hour or until you grant this benefit again.</p>
+		</description>
+		<sheet alt="Ward Against Corruption" action="Action">
+			<description>You have Advantage on saves vs diseases and form-changing effects. You can touch a willing creature to grant this benefit for 1 hr (or until used again); they take {{ward against corruption:damage}} Fire damage (ignores Resistance/Immunity).</description>
+		</sheet>
+		<rules>
+			<stat name="ward against corruption:damage" value="1" bonus="base" />
+			<stat name="ward against corruption:damage" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 17: Sear Imperfections" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PURIFICATION_DOMAIN_SEAR_IMPERFECTIONS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PURIFICATION_DOMAIN_SEAR_IMPERFECTIONS</requirements>
+		<description>
+			<p>You can cast Lesser Restoration and Greater Restoration on a willing creature without expending spell slots and without Material components, but the target takes 1d6 Fire damage for each level of the spell slot immediately after you cast it. This damage ignores Resistance and Immunity.</p>
+		</description>
+		<sheet alt="Sear Imperfections">
+			<description>You can cast Lesser Restoration and Greater Restoration on a willing creature without spell slots or Material components. The target takes 1d6 Fire damage per spell level (ignores Resistance/Immunity).</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Cleanse with Fire Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PURIFICATION_DOMAIN_CLEANSE_WITH_FIRE" />
+	<element name="Purification Domain Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PURIFICATION_DOMAIN_SPELLS" />
+	<element name="Unclean Brand Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PURIFICATION_DOMAIN_UNCLEAN_BRAND" />
+	<element name="Ward Against Corruption Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PURIFICATION_DOMAIN_WARD_AGAINST_CORRUPTION" />
+	<element name="Sear Imperfections Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PURIFICATION_DOMAIN_SEAR_IMPERFECTIONS" />
+
+</elements>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+    <info>
+        <name></name>
+        <update version="0.0.1">
+            <file name="Grim-Hollow-2025.index" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Grim-Hollow-2025.index" />
+        </update>
+    </info>
+    <files>
+        <file name="source.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/source.xml" />
+
+        <!-- Backgrounds -->
+        <file name="background-Antiquarian.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Antiquarian.xml" />
+        <file name="background-Prisoner.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Prisoner.xml" />
+        <file name="background-AgentoftheAugustine.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-AgentoftheAugustine.xml" />
+        <file name="background-SyndicateSmuggler.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-SyndicateSmuggler.xml" />
+        <file name="background-ScionoftheThaumaturge.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-ScionoftheThaumaturge.xml" />
+        <file name="background-ReleasedThrall.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-ReleasedThrall.xml" />
+        <file name="background-Pox-Touched.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Pox-Touched.xml" />
+        <file name="background-PitFighter.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-PitFighter.xml" />
+        <file name="background-Pioneer.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Pioneer.xml" />
+        <file name="background-Physician.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Physician.xml" />
+        <file name="background-OneoftheTaken.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-OneoftheTaken.xml" />
+        <file name="background-LapsedInquisitor.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-LapsedInquisitor.xml" />
+        <file name="background-InquisitoroftheFaithful.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-InquisitoroftheFaithful.xml" />
+        <file name="background-Heretic.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Heretic.xml" />
+        <file name="background-FreeSwordsMercenary.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-FreeSwordsMercenary.xml" />
+        <file name="background-Fey-Blessed.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Fey-Blessed.xml" />
+        <file name="background-Exterminator.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Exterminator.xml" />
+        <file name="background-Explorer.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Explorer.xml" />
+        <file name="background-Executioner.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Executioner.xml" />
+        <file name="background-Envoy.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Envoy.xml" />
+        <file name="background-DisgracedRaider.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-DisgracedRaider.xml" />
+        <file name="background-Courtier.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Courtier.xml" />
+        <file name="background-ChapterKnight.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-ChapterKnight.xml" />
+        <file name="background-Beggar.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Beggar.xml" />
+        <file name="background-BeastHunter.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-BeastHunter.xml" />
+
+        <!-- Classes/Subclasses -->
+        <file name="class-monster-hunter.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/class-monster-hunter.xml" />
+        <file name="monster-hunter-devourer.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/monster-hunter-devourer.xml" />
+        <file name="monster-hunter-carver.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/monster-hunter-carver.xml" />
+        <file name="monster-hunter-trapper.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/monster-hunter-trapper.xml" />
+        <file name="monster-hunter-occultist.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/monster-hunter-occultist.xml" />
+        <file name="monk-regret.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/monk-regret.xml" />
+        <file name="monk-pride.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/monk-pride.xml" />
+        <file name="monk-leadencrown.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/monk-leadencrown.xml" />
+        <file name="fighter-nightwatcher.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/fighter-nightwatcher.xml" />
+        <file name="fighter-crucible.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/fighter-crucible.xml" />
+        <file name="fighter-bulwark.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/fighter-bulwark.xml" />
+        <file name="druid-mutation.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/druid-mutation.xml" />
+        <file name="druid-entropy.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/druid-entropy.xml" />
+        <file name="druid-blood.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/druid-blood.xml" />
+        <file name="cleric-purification.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/cleric-purification.xml" />
+        <file name="cleric-inquisition.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/cleric-inquisition.xml" />
+        <file name="cleric-eldritch.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/cleric-eldritch.xml" />
+        <file name="bard-requiems.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/bard-requiems.xml" />
+        <file name="bard-fools.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/bard-fools.xml" />
+        <file name="bard-adventurers.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/bard-adventurers.xml" />
+        <file name="barbarian-pathofthewrathfuldead.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/barbarian-pathofthewrathfuldead.xml" />
+        <file name="barbarian-pathoftheprimalspirit.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/barbarian-pathoftheprimalspirit.xml" />
+        <file name="barbarian-pathofthefractured.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/barbarian-pathofthefractured.xml" />
+        <file name="wizard-sangromancer.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/wizard-sangromancer.xml" />
+        <file name="wizard-plaguedoctor.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/wizard-plaguedoctor.xml" />
+        <file name="wizard-daemonologist.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/wizard-daemonologist.xml" />
+        <file name="warlock-parasite.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/warlock-parasite.xml" />
+        <file name="warlock-firstvampire.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/warlock-firstvampire.xml" />
+        <file name="warlock-coven.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/warlock-coven.xml" />
+        <file name="sorcerer-wretched.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/sorcerer-wretched.xml" />
+        <file name="sorcerer-haunted.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/sorcerer-haunted.xml" />
+        <file name="sorcerer-apocalypse.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/sorcerer-apocalypse.xml" />
+        <file name="rogue-sanguinethief.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/rogue-sanguinethief.xml" />
+        <file name="rogue-misfortunebringer.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/rogue-misfortunebringer.xml" />
+        <file name="rogue-highwayrider.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/rogue-highwayrider.xml" />
+        <file name="ranger-verminlord.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/ranger-verminlord.xml" />
+        <file name="ranger-primordialarcher.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/ranger-primordialarcher.xml" />
+        <file name="ranger-greenreaper.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/ranger-greenreaper.xml" />
+        <file name="paladin-zeal.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/paladin-zeal.xml" />
+        <file name="paladin-slaughter.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/paladin-slaughter.xml" />
+        <file name="paladin-pestilence.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/paladin-pestilence.xml" />
+
+        <!-- Feats -->
+        <file name="feats-fighting-styles.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Feats/feats-fighting-styles.xml" />
+        <file name="feats-epic-boons.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Feats/feats-epic-boons.xml" />
+        <file name="feats-origin.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Feats/feats-origin.xml" />
+        <file name="feats-general.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Feats/feats-general.xml" />
+
+        <!-- Heriotage -->
+        <file name="heritage-dhampir.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-dhampir.xml" />
+        <file name="heritage-arisen.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-arisen.xml" />
+        <file name="heritage-accursed.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-accursed.xml" />
+        <file name="heritage-wulven.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-wulven.xml" />
+        <file name="heritage-wechselkind.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-wechselkind.xml" />
+        <file name="heritage-ogresh.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-ogresh.xml" />
+        <file name="heritage-human.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-human.xml" />
+        <file name="heritage-halfling.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-halfling.xml" />
+        <file name="heritage-grudgel.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-grudgel.xml" />
+        <file name="heritage-gnome.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-gnome.xml" />
+        <file name="heritage-elf.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-elf.xml" />
+        <file name="heritage-dwarf.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-dwarf.xml" />
+        <file name="heritage-dreamer.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-dreamer.xml" />
+        <file name="heritage-dragonborn.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-dragonborn.xml" />
+        <file name="heritage-downcast.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-downcast.xml" />
+        <file name="heritage-disembodied.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-disembodied.xml" />
+        <file name="heritage-traits.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Races/heritage-traits.xml" />
+
+        <!-- Settings -->
+        <file name="familiars.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Setting/familiars.xml" />
+        <file name="factions.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Setting/factions.xml" />
+        <file name="advanced-weapon-properties.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Setting/advanced-weapon-properties.xml" />
+        <file name="weapon-masteries.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Setting/weapon-masteries.xml" />
+        <file name="spells.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Setting/spells.xml" />
+        <file name="items-weapons.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Setting/items-weapons.xml" />
+        <file name="items-equipment.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Setting/items-equipment.xml" />
+        <file name="items-campaign.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Setting/items-campaign.xml" />
+
+        <!-- Transformations -->
+        <file name="primordial.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/primordial.xml" />
+        <file name="ooze.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/ooze.xml" />
+        <file name="lycanthrope.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/lycanthrope.xml" />
+        <file name="lich.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/lich.xml" />
+        <file name="hag.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/hag.xml" />
+        <file name="fiend.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/fiend.xml" />
+        <file name="fey.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/fey.xml" />
+        <file name="aberrant-horror.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/aberrant-horror.xml" />
+        <file name="vampire.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/vampire.xml" />
+        <file name="specter.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/specter.xml" />
+        <file name="shadowsteel-ghoul.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/shadowsteel-ghoul.xml" />
+        <file name="seraph.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/seraph.xml" />
+
+        <!-- Symbols -->
+        <file name="arcanist-inquisition-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Symbols/arcanist-inquisition-emblem.png" />
+        <file name="augustine-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Symbols/augustine-emblem.png" />
+        <file name="free-swords-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Symbols/free-swords-emblem.png" />
+        <file name="crimson-court-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Symbols/crimson-court-emblem.png" />
+        <file name="ebon-syndicate.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Symbols/ebon-syndicate.png" />
+        <file name="monster-hunter-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Symbols/monster-hunter-emblem.png" />
+        <file name="morbius-doctore-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Symbols/morbius-doctore-emblem.png" />
+        <file name="order-of-dawn-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Symbols/order-of-dawn-emblem.png" />
+        <file name="prismatic-circle-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Symbols/prismatic-circle-emblem.png" />
+        <file name="thaumaturge-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Symbols/thaumaturge-emblem.png" />
+        <file name="watchers-emblem.png" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Symbols/watchers-emblem.png" />
+    </files>
+</index>

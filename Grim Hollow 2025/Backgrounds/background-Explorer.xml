@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-Explorer.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Explorer.xml" />
+		</update>
+	</info>
+
+	<!-- Explorer -->
+	<element name="Explorer" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_EXPLORER">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Strength, Constitution, Wisdom</li>
+				<li><strong>Feat:</strong> Alert</li>
+				<li><strong>Skill Proficiencies:</strong> Athletics and Survival</li>
+				<li><strong>Tool Proficiency:</strong> Navigator’s Tools</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Dagger, Navigator’s Tools, Maps, Traveler’s Clothes, 8 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You pursue a life traversing the wilds, driven by wanderlust or the orders of a distant patron. For you, there is no greater pursuit than to discover the lost, forgotten, and unseen reaches of the world. You may travel unaccompanied or lead companions, establishing encampments in remote areas or living completely off the land. You might lead pioneers looking to settle uncharted lands.</p>
+			<p>You may help establish settlements in the areas you explore, but before long, your attention wanders, and the call of the unknown beckons too strongly to ignore. And when that happens, you blaze a new trail into the darkness, rushing headlong into whatever thrills await.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_FEAT_ALERT" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Strength, Constitution, Wisdom, Alert Feat, Athletics and Survival Skills, Navigator’s Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_CON_WIS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_WOTC_PHB24_FEAT_ALERT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />	
+		</rules>
+	</element>
+</elements>

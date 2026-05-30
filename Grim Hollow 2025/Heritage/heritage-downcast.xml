@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Downcast</name>
+		<description>The Downcast heritage from Grim Hollow - The Players Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="heritage-downcast.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-downcast.xml" />
+		</update>
+	</info>
+
+	<element name="Downcast" type="Race" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_DOWNCAST">
+		<description>
+			<p>At the conclusion of the Gods’ End, a thousand souls fell to Etharis like burning stars from the sky. The downcast had once been part of the celestial legions, but the death of the gods sent shockwaves through the heavens. Cast down to the mortal realm, these former angels found themselves bereft of power and left to live out their now-mortal existence among the people of the world.</p>
+			<p class="indent">In the absence of the gods, the Arch Seraphs of each deity descended upon the mortal realm, taking upon themselves the burden of imposing order on a world cast into disarray. The Arch Seraphs were the most powerful lieutenants among the angelic hosts, strong enough to retain a semblance of their divine power following the tragedy. But an angel is not a god. An Arch Seraph cannot embody every aspect of a divine domain. Some became consumed with enforcing narrow virtues. Others have turned from grace entirely, choosing to embody vice rather than virtue, and becoming feared as Arch Daemons.</p>
+			<p class="indent">The downcast, are far fewer in number than when they first arrived. Many succumbed to despair and sickness after their fall from grace. Of those who remain, some still serve the Arch Seraphs in their twisted crusades, hoping to reclaim what they have lost. Others have turned their backs on their former comrades to seek their own goals, fully embracing mortal life. And more than a few feel embittered enough by their fall that they have been gleefully accepted by the Arch Daemons as agents to spread fear and destruction in the world.</p>
+			<p class="indent">Physically, the downcast still possess the beauty of their angelic forms, although they no longer shine as brightly as before. For most, the mark of the divine still lingers as a visible glow within their eyes, or faintly glowing Celestial runes on their otherwise unblemished skin. Others have been marked by their shift in morality, manifesting cracked skin or devilish horns.</p>
+			<h5>DOWNCAST BASE TRAITS</h5>
+			<ul class="unstyled">
+				<li><strong>Age.</strong> Stripped of their immortality, the Downcast nevertheless possess long lifespans to rival even the elves. A Downcast reaches maturity in their late teens, but can live up to 800 years.</li>
+				<li><strong>Size.</strong> Downcast generally range from 5 to 6 feet tall and have a wide range of body types. Your size is Medium.</li>
+				<li><strong>Speed.</strong> 30 feet.</li>
+			</ul>
+			<h5>TRADITIONAL DOWNCAST TRAITS</h5>
+			<p>Many Downcast channel magic driven by the vestiges of celestial power that still flow through them. If you wish to play a traditional Downcast, it is recommended you select from the following traits:</p>
+			<ul>
+				<li><strong>Combat:</strong> Divine Sangromancy, Touch of Life</li>
+				<li><strong>Exploration:</strong> Inured to the Elements, Meditative Rest, Tireless</li>
+				<li><strong>Roleplaying:</strong> Magical Savant (Cleric spells only), Magical Savvy (Thaumaturgy), Moved by Faith</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Downcast)" supports="GH Heritage Trait" number="8" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			<select type="Racial Trait" name="Heritage Trait (Downcast)" supports="GH Heritage Trait" number="6" requirements="ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_DIVINE_SANGROMANCY" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_TOUCH_OF_LIFE" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_INURED_TO_THE_ELEMENTS" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_MEDITATIVE_REST" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_TIRELESS" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG25_RACE_TRAIT_TRADITIONAL_DOWNCAST_MAGIC" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_MOVED_BY_FAITH" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+		</rules>
+	</element>
+
+	<element name="Traditional Downcast Magic" type="Racial Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_TRAIT_TRADITIONAL_DOWNCAST_MAGIC">
+		<supports>GH Heritage Trait, GH Roleplaying Trait</supports>
+		<description>
+			<p>You know the <i>Thaumaturgy</i> cantrip. Additionally, you learn one 1st-level Cleric spell of your choice, which you can cast once per Long Rest without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>You know the Thaumaturgy cantrip. Additionally, you can cast your chosen 1st-level Cleric spell once per Long Rest without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_THAUMATURGY" />
+			<select type="Spell" name="Cleric Spell (Traditional Downcast)" supports="Cleric, 1" />
+		</rules>
+	</element>
+</elements>

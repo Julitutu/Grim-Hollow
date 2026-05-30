@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-Fey-Blessed.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Fey-Blessed.xml" />
+		</update>
+	</info>
+
+	<!-- Fey-Blessed -->
+	<element name="Fey-Blessed" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_FEY_BLESSED">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Dexterity, Constitution, Charisma</li>
+				<li><strong>Feat:</strong> Magic Initiate (Wizard)</li>
+				<li><strong>Skill Proficiencies:</strong> Arcana and Performance</li>
+				<li><strong>Tool Proficiency:</strong><i> Choose one kind of Musical Instrument</i></li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Dagger, Musical Instrument (same as above), Traveler’s Clothes, 8 GP; or (B) 50 GP</li>
+			</ul>
+			<p>The powerful and fickle faerie-folk of your area have taken note of you, and your existence pleases them. Whether you were born under a lucky star, had a favorable run-in with a nature spirit, or simply were in the right place at the right time, the fey favor you with small gifts and boons. You find small trinkets in your shoes when you wake up in the morning. Beasts of the forest and field are more receptive to your presence and your training. Will this blessing somehow turn into a curse later in your life?</p>
+			<p>People you encounter instantly recognize your connection with the Realm of Faerie. Sometimes this works to your favor, as folks seem entranced by your glowing personality. Others see your power as a curse just waiting to seep into their lives. And they may not be wrong!</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_FEAT_MAGIC_INITIATE" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Constitution, Charisma, Magic Initiate (Wizard) Feat, Arcana and Performance Skills, a Musical Instrument</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_DEX_CON_CHA" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_WOTC_PHB24_FEAT_MAGIC_INITIATE_WIZARD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Proficiency" name="Musical Instrument (Fey-Blessed)" supports="Musical Instrument" />
+		</rules>
+	</element>
+</elements>

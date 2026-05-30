@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-DisgracedRaider.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-DisgracedRaider.xml" />
+		</update>
+	</info>
+
+	<!-- Disgraced Raider -->
+	<element name="Disgraced Raider" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_DISGRACED_RAIDER">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Strength, Constitution, Wisdom</li>
+				<li><strong>Feat:</strong> Savage Attacker</li>
+				<li><strong>Skill Proficiencies:</strong> Athletics and Nature</li>
+				<li><strong>Tool Proficiency:</strong> Navigator’s Tools</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Spear, Navigator’s Tools, Dilapidated Rowboat, Traveler’s Clothes, 8 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You were a raider associated with one of the greatly feared Valikan clans. The terror you and your allies struck within sailing distance of your homeland was massive and palpable. The risks were great, but the respect was undeniable.</p>
+			<p>You lost that respect, however, when something went wrong. Perhaps you lost your nerve and fled the battlefield. Perhaps you lost your mind and killed when you were only supposed to capture. Perhaps you saw the terror you inspired in others as a moral failing rather than a point of honor. Regardless, you were cast out of your clan and told never to return. You now travel Etharis having to live with what you’ve done and the shame (or honor) of your clan’s shunning.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_FEAT_SAVAGE_ATTACKER" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Strength, Constitution, Wisdom, Savage Attacker Feat, Athletics and Nature Skills, Navigator’s Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_CON_WIS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_WOTC_PHB24_FEAT_SAVAGE_ATTACKER" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />	
+		</rules>
+	</element>
+</elements>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Oath of Zeal</name>
+		<description>The Oath of Zeal subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="paladin-zeal.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/paladin-zeal.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of Zeal" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_PALADIN_OATH_OF_ZEAL">
+		<supports>Paladin Subclass</supports>
+		<description>
+			<p class="flavor">Eliminate Threats to Ideological Purity</p>
+			<p>The Oath of Zeal is taken by paladins consumed by hatred for a specific group or ideology. Zealots, as these Paladins are sometimes called, pursue an inquisition against their enemies at all costs. They abandon compassion and honor as impediments to the more important work of ridding the world of those they deem dangerous or heretical.</p>
+			<p class="indent">These Paladins share the following tenets:</p>
+			<ul>
+				<li>Reveal heresy and destroy those who practice it.</li>
+				<li>Show unwavering conviction and unflinching resolve.</li>
+				<li>Perform any sacrifice necessary to stop wickedness.</li>
+			</ul>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_ZEAL_MARK_OF_THE_HERETIC" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_ZEAL_SPELLS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_ZEAL_AURA_OF_CLARITY" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_ZEAL_COMPEL_CONFESSION" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_ZEAL_APOCALYPTIC_REVELATION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_ZEAL_MARK_OF_THE_HERETIC" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_ZEAL_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_ZEAL_AURA_OF_CLARITY" level="7" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_ZEAL_COMPEL_CONFESSION" level="15" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_ZEAL_APOCALYPTIC_REVELATION" level="20" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Mark of the Heretic" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_ZEAL_MARK_OF_THE_HERETIC">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_ZEAL_MARK_OF_THE_HERETIC</requirements>
+		<description>
+			<p>As a Bonus Action, you can expend one use of your Channel Divinity to mark a creature you can see within 30 feet of yourself as a heretic.</p>
+			<p class="indent">For 1 minute, your weapon attacks and Unarmed Strikes against the chosen creature can score a Critical Hit on a roll of 19 or 20 on the d20. In addition, whenever the target starts its turn, you can take a Reaction to make a melee attack against that creature if it's within reach.</p>
+		</description>
+		<sheet alt="Mark of the Heretic" action="Bonus Action" usage="Channel Divinity">
+			<description>Mark a creature within 30 ft as a heretic for 1 min. Your weapon/Unarmed Strikes against it crit on a 19-20. When it starts its turn, you can take a Reaction to make a melee attack against it if in reach.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Oath of Zeal Spells" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_ZEAL_SPELLS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_ZEAL_SPELLS</requirements>
+		<description>
+			<p>The magic of your oath ensures you always have certain spells ready; when you reach a Paladin level specified in the Oath of Zeal Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Oath of Zeal Spells</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Detect Evil and Good, Hunter's Mark</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Detect Thoughts, Knock</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Fear, Tongues</em></td></tr>
+				<tr><td style="text-align:center">13</td><td><em>Divination, Locate Creature</em></td></tr>
+				<tr><td style="text-align:center">17</td><td><em>Insect Plague, Scrying</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_EVIL_AND_GOOD" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_HUNTERS_MARK" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DETECT_THOUGHTS" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_KNOCK" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FEAR" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TONGUES" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DIVINATION" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_LOCATE_CREATURE" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INSECT_PLAGUE" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SCRYING" level="17" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 7: Aura of Clarity" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_ZEAL_AURA_OF_CLARITY">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_ZEAL_AURA_OF_CLARITY</requirements>
+		<description>
+			<p>You and your allies have Immunity to the Blinded condition while in your Aura of Protection. If a Blinded ally enters the aura, that condition has no effect on that ally while there. Additionally, you can see Invisible creatures within your Aura of Protection.</p>
+		</description>
+		<sheet alt="Aura of Clarity">
+			<description>You and allies in your Aura of Protection are immune to the Blinded condition. You can see Invisible creatures within the aura.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 15: Compel Confession" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_ZEAL_COMPEL_CONFESSION">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_ZEAL_COMPEL_CONFESSION</requirements>
+		<description>
+			<p>You can cast Zone of Truth without expending a spell slot. In addition, a creature that succeeds on its saving throw takes 1d6 Psychic damage at the start of each of its turns while in your Zone of Truth until it chooses to fail its saving throw instead.</p>
+		</description>
+		<sheet alt="Compel Confession">
+			<description>You can cast Zone of Truth without a spell slot. A creature that succeeds on its save against it takes 1d6 Psychic damage at the start of each of its turns in the zone until it chooses to fail the save.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ZONE_OF_TRUTH" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 20: Apocalyptic Revelation" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PALADIN_ZEAL_APOCALYPTIC_REVELATION">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_ZEAL_APOCALYPTIC_REVELATION</requirements>
+		<description>
+			<p>As a Bonus Action, you can reveal the true nature of your enemies for 1 minute. Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required). You gain the following benefits.</p>
+			<p class="indent"><strong><em>Blinding Glory.</em></strong> Enemies that start their turn within 5 feet of you must make a Constitution saving throw against the Paladin's spell save DC. On a failed save, the creature has the Blinded condition until the start of its next turn.</p>
+			<p class="indent"><strong><em>See the Truth.</em></strong> You have Truesight with a range of 60 feet.</p>
+			<p class="indent"><strong><em>Smite the Heretic.</em></strong> As a Bonus Action, you can choose a creature within 60 feet of yourself and reveal its weaknesses. You and your allies have Advantage on attack rolls against that creature.</p>
+		</description>
+		<sheet alt="Apocalyptic Revelation" action="Bonus Action" usage="1/Long Rest">
+			<description>For 1 min:&#13;
+			• Blinding Glory: Enemies starting their turn within 5 ft make a DC{{paladin:spellcasting:dc}} Con save or are Blinded until the start of their next turn.&#13;
+			• See the Truth: Truesight 60 ft.&#13;
+			• Smite the Heretic: Bonus Action to give you and allies Advantage on attacks against a creature within 60 ft.&#13;
+			You can expend a 5th-level spell slot to restore a use.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Mark of the Heretic Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_ZEAL_MARK_OF_THE_HERETIC" />
+	<element name="Oath of Zeal Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_ZEAL_SPELLS" />
+	<element name="Aura of Clarity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_ZEAL_AURA_OF_CLARITY" />
+	<element name="Compel Confession Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_ZEAL_COMPEL_CONFESSION" />
+	<element name="Apocalyptic Revelation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PALADIN_ZEAL_APOCALYPTIC_REVELATION" />
+
+</elements>

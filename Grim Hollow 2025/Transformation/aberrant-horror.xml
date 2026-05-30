@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Aberrant Horror Transformation</name>
+        <description>Aberrant Horror Transformation from Grim Hollow: Player's Guide (2025)</description>
+        <author>Ghostfire Gaming</author>
+        <update version="0.1.0">
+            <file name="aberrant-horror.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/aberrant-horror.xml" />
+        </update>
+    </info>
+
+    <!-- Items -->
+    <element name="Aberrant Horror Transformation (Stage 1)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_ABERRANT_HORROR" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_ABERRANT_HORROR" />
+        </rules>
+    </element>
+    <element name="Aberrant Horror Transformation (Stage 2)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_ABERRANT_HORROR" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2" requirements="ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1"/>
+        </rules>
+    </element>
+    <element name="Aberrant Horror Transformation (Stage 3)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_ABERRANT_HORROR" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3" requirements="ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2"/>
+        </rules>
+    </element>
+    <element name="Aberrant Horror Transformation (Stage 4)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_ABERRANT_HORROR_LEVEL_4">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_ABERRANT_HORROR" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_4" requirements="ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3"/>
+        </rules>
+    </element>
+
+    <!-- Feat -->
+    <element name="Aberrant Horror" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_ABERRANT_HORROR">
+        <description>
+            <p>A cloaked figure flees through the dimly lit city streets. The guards appear to have the upper hand, until she turns to greet them—a hulking mass of spines, claws, and gnashing maws.</p>
+            <p>Lightning cracks. A mad doctor bellows in triumph as a fresh corpse rises. With three fleshy tentacles sprouting from her back, the doctor’s newest creation is complete. Thunder booms as the woman approaches the doctor menacingly, tendrils extended. Not all successful experiments end well.</p>
+            <p>Aberrant Horrors are the result of a Humanoid becoming an Aberration. Able to break free from the physical restrictions imposed upon them by the natural laws of the world, they shift the components of their form at a whim. This makes Aberrant Horrors terrifying to behold, especially in battle. Many adversaries are caught off-guard when a seemingly defenseless opponent suddenly sprouts rows of gruesome spines.</p>
+            
+            <h4>Becoming an Aberrant Horror</h4>
+            <p>Every Aberrant Horror begins with a defining question: what happened to them? Some individuals make pacts with ancient entities for powers that have unforeseen effects. Others awaken after defeating an unnatural monster, surprised that they survived, only to feel something writhing in their stomach. Many tropes of body horror can be used as inspiration for an Aberrant Horror’s creation.</p>
+            <p>Once you've established your origin, consider your character’s motivations regarding their Transformation. As their power grows and manifests, they may feel they have lost what makes them fundamentally themselves. Perhaps they decide to take revenge on the entity responsible for their Transformation, or perhaps they perceive their mutation as a gift.</p>
+            
+            <h4>Reversing Aberrant Horror Traits</h4>
+            <p>Once the character reaches Stage 1 of the Aberrant Horror Transformation, the Boons and Flaws they’ve received cannot be removed by normal or even typical magical means. Some magic might slow or halt the mutations that the character endures, but magic on the level of the Wish spell is needed to completely remove the Transformation and its Boons and Flaws.</p>
+            
+            <h4>Aberrant Horror Stages</h4>
+            <p>At each stage of this Transformation, follow the instructions provided for that stage.</p>
+            
+            <h4>Achieving a New Stage</h4>
+            <p>To move from one stage to the next higher one in this Transformation, an event or some other notable occurrence tied to the story of the character should take place.</p>
+            <p>The following events are suggestions for ones that might trigger a move to the next stage of the Transformation:</p>
+            <ul>
+                <li>Become exposed to magic of an unearthly or transformational nature</li>
+                <li>Rest in the vicinity of a cursed item or site</li>
+                <li>Offer prayers to an Aether Kindred and fulfil the quest they show you in your dreams</li>
+                <li>Drink the blood or other fluids of an Aberration that is still alive</li>
+            </ul>
+
+            <p><strong>Transformation Save DC:</strong> Some of your abilities require a target to make a saving throw. The DC is calculated as follows:</p>
+            <center>
+                <p><strong>Transformation Save DC</strong> = 8 + your Proficiency Bonus + your Transformation Stage</p>
+            </center>
+        </description>
+        <sheet>
+            <description>Save DC: {{aberrant horror:dc}}</description>
+        </sheet>
+        <rules>
+            <stat name="aberrant horror:stage" value="0" bonus="base" />
+            <stat name="aberrant horror:dc" value="8" />
+            <stat name="aberrant horror:dc" value="proficiency" />
+            <stat name="aberrant horror:dc" value="aberrant horror:stage" />
+
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1" />
+        </rules>
+    </element>
+
+    <!-- Transformation Stage 1 -->
+    <element name="Aberrant Horror (Stage 1)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1">
+        <prerequisite>Aberrant Horror Transformation</prerequisite>
+        <requirements>ID_GFG_GHPG25_FEAT_TRANSFORMATION_ABERRANT_HORROR</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you initially undergo the Aberrant Horror Transformation, you gain both Stage 1 Boons and the Stage 1 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_ABERRANT_FORM" />
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_ABERRANT_MUTATION" />
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_FORM_1" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Aberrant Form, Aberrant Mutation, Unstable Form (Flaw)</description>
+        </sheet>
+        <rules>
+            <stat name="aberrant horror:stage" value="1" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_ABERRANT_FORM" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_ABERRANT_MUTATION" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_FORM_1" requirements="!ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_FORM_2,!ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_FORM_3,!ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_FORM_4"/>
+        </rules>
+    </element>
+
+    <element name="Boon: Aberrant Form" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ABERRANT_FORM">
+        <supports>Aberrant Horror 2025 Boon</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1</requirements>
+        <description>
+            <p>Your creature type becomes Aberration in addition to any other creature types you have.</p>
+            <p>Also, the first time you become Bloodied after a Short or Long Rest, you gain a number of Temporary Hit Points equal to your Proficiency Bonus plus your current Transformation Stage.</p>
+        </description>
+        <sheet usage="1/Rest">
+            <description>1st time Bloodied/Rest: Gain {{aberrant form:thp}} THP.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_ABERRATION" />
+            <stat name="aberrant form:thp" value="proficiency" />
+            <stat name="aberrant form:thp" value="aberrant horror:stage" />
+        </rules>
+    </element>
+
+    <element name="Boon: Aberrant Mutation" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ABERRANT_MUTATION">
+        <supports>Aberrant Horror 2025 Boon</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1</requirements>
+        <description>
+            <p>Your body can twist and reshape itself as you will it, changing body parts into dangerous or useful tools and regenerating after taking damage. These abilities are represented by Aberrant Mutations. You can manifest an Aberrant Mutation listed below a number of times equal to your Proficiency Bonus plus your current Transformation Stage.</p>
+            <p>Each of these Aberrant Mutations last for 1 minute, and you can end them early by spending a Bonus Action to remove them or take on a different mutation. If you choose another Aberrant Mutation, you must spend another use of this feature.</p>
+            <p>You regain all uses of this ability when you finish a Short or Long Rest.</p>
+            <ul>
+                <li><strong>Chitinous Shell.</strong> As a Bonus Action, you grow a hard, crustacean-like shell. While this mutation is active and are not wearing heavy armor, your Armor Class increases by 2. While you maintain this shell, your Speed is reduced by 10 feet.</li>
+                <li><strong>Eldritch Limbs.</strong> As a Bonus Action, you transform one or both of your arms into thick muscle, scything claws, or sharpened bone. When you use the Attack action, you can replace or or more attacks with melee attacks made with your eldritch limb. You are considered proficient with this attack, and it uses either Strength or Dexterity (your choice). On a hit, the attack deals 1d8 damage (either Bludgeoning, Piercing, or Slashing, chosen each time you manifest the mutation). As a Bonus Action, you can make a melee attack with your eldritch limb. Your eldritch limbs cannot hold weapons, shields, or other items. They are not considered weapons or Unarmed Strikes.</li>
+                <li><strong>Slimy Form.</strong> As a Bonus Action, you cover yourself in a slippery slime. You have Advantage on ability checks to escape a grapple, and you can use the Dash action as a Bonus Action. You also gain Resistance to Acid, Fire, and Cold damage while in this form.</li>
+            </ul>
+        </description>
+        <sheet action="Bonus Action" usage="{{aberrant mutation:uses}}/Short Rest">
+            <description>Lasts 1 min. End/change as BA (costs 1 use).&#13;
+            • Chitinous Shell: +2 AC (no H. armor), Speed -10 ft.&#13;
+            • Eldritch Limbs: Replaces attacks. Uses Str/Dex. 1d8 B/P/S. BA: 1 attack. Cannot hold items.&#13;
+            • Slimy Form: Adv. to escape grapples. BA: Dash. Resist Acid/Fire/Cold.</description>
+        </sheet>
+        <rules>
+            <stat name="aberrant mutation:uses" value="proficiency" />
+            <stat name="aberrant mutation:uses" value="aberrant horror:stage" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Unstable Form (Stage 1)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_FORM_1">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1</requirements>
+        <description>
+            <p>Your body becomes malleable and struggles to maintain any one physical shape. Upon completing a Long Rest after an adventuring day in which you took damage, you must roll 1d100 on the Unstable Form table and apply the corresponding mutation based on current your Transformation Stage. This mutation lasts until you finish another Long Rest.</p>
+            <p><strong>Unstable Form Table</strong></p>
+			<table>
+				 <thead>
+                    <tr><th>Stage 1</th><th>Effect</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>01–05</td><td>Your body’s metabolism quickly drains your energy. You gain 2 Exhaustion levels.</td></tr>
+                    <tr><td>06–10</td><td>You have trouble processing what is happening. After rolling Initiative, you have the Stunned condition until the end of your first turn.</td></tr>
+                    <tr><td>11–15</td><td>Your limbs weaken. Your Speed (in all modes of movement) decreases by 15 feet and cannot be increased.</td></tr>
+                    <tr><td>16–24</td><td>Your body does not react quickly to mental commands. You cannot take Reactions.</td></tr>
+                    <tr><td>25–32</td><td>You are distracted by your changing form. You have Disadvantage on Wisdom (Perception) checks.</td></tr>
+                    <tr><td>33–40</td><td>Your body becomes unable to fight off attacks. You have Disadvantage on Constitution saving throws.</td></tr>
+                    <tr><td>41–48</td><td>You become clumsy. You have Disadvantage on Dexterity saving throws and Dexterity ability checks.</td></tr>
+                    <tr><td>49–56</td><td>You lose blood or other vital fluids during your mutations. You cannot add your Constitution modifier to any Hit Point Dice spent to regain Hit Points.</td></tr>
+                    <tr><td>57–64</td><td>Speaking is difficult. You can only utter one word during each turn. This does not hamper spellcasting.</td></tr>
+                    <tr><td>65–79</td><td>No effect.</td></tr>
+                    <tr><td>80–87</td><td>Your lower limbs become more powerful. Your Speed increases by 5 feet.</td></tr>
+                    <tr><td>88–93</td><td>Your flesh becomes more hardy. You start the day with 4 Temporary Hit Points per Transformation Stage.</td></tr>
+                    <tr><td>94–100</td><td>Your body’s systems are enhanced. You have Advantage on Death Saving Throws.</td></tr>
+                </tbody>
+			</table>
+        </description>
+        <sheet>
+            <description>After Long Rest following a day you took dmg: Roll 1d100 on Unstable Form table. Lasts until next Long Rest.</description>
+        </sheet>
+    </element>
+    <element name="Flaw: Unstable Form (Stage 2)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_FORM_2">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2</requirements>
+        <description>
+            <p>Your body becomes malleable and struggles to maintain any one physical shape. Upon completing a Long Rest after an adventuring day in which you took damage, you must roll 1d100 on the Unstable Form table and apply the corresponding mutation based on current your Transformation Stage. This mutation lasts until you finish another Long Rest.</p>
+             <p><strong>Unstable Form Table</strong></p>
+			<table>
+				 <thead>
+                    <tr><th>Stage 2</th><th>Effect</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>01</td><td>Your body starts to lose cohesion. You have Disadvantage on all D20 Tests.</td></tr>
+                    <tr><td>02–03</td><td>Your body’s metabolism quickly drains your energy. You gain 2 Exhaustion levels.</td></tr>
+                    <tr><td>04–06</td><td>You have trouble processing what is happening. After rolling Initiative, you have the Stunned condition until the end of your first turn.</td></tr>
+                    <tr><td>07–24</td><td>Your limbs weaken. Your Speed (in all modes of movement) decreases by 15 feet and cannot be increased.</td></tr>
+                    <tr><td>25–32</td><td>Your body does not react quickly to mental commands. You cannot take Reactions.</td></tr>
+                    <tr><td>33–40</td><td>You are distracted by your changing form. You have Disadvantage on Wisdom (Perception) checks.</td></tr>
+                    <tr><td>41–48</td><td>Your body becomes unable to fight off attacks. You have Disadvantage on Constitution saving throws.</td></tr>
+                    <tr><td>49–56</td><td>You become clumsy. You have Disadvantage on Dexterity saving throws and Dexterity ability checks.</td></tr>
+                    <tr><td>57–64</td><td>You lose blood or other vital fluids during your mutations. You cannot add your Constitution modifier to any Hit Point Dice spent to regain Hit Points.</td></tr>
+                    <tr><td>65–79</td><td>Speaking is difficult. You can only utter one word during each turn. This does not hamper spellcasting.</td></tr>
+                    <tr><td>80–87</td><td>No effect.</td></tr>
+                    <tr><td>88–93</td><td>Your lower limbs become more powerful. Your Speed increases by 5 feet.</td></tr>
+                    <tr><td>94–100</td><td>Your flesh becomes more hardy. You start the day with 4 Temporary Hit Points per Transformation Stage.</td></tr>
+                </tbody>
+			</table>
+        </description>
+        <sheet>
+            <description>After Long Rest following a day you took dmg: Roll 1d100 on Unstable Form table. Lasts until next Long Rest.</description>
+        </sheet>
+    </element>
+    <element name="Flaw: Unstable Form (Stage 3)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_FORM_3">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3</requirements>
+        <description>
+            <p>Your body becomes malleable and struggles to maintain any one physical shape. Upon completing a Long Rest after an adventuring day in which you took damage, you must roll 1d100 on the Unstable Form table and apply the corresponding mutation based on current your Transformation Stage. This mutation lasts until you finish another Long Rest.</p>
+             <p><strong>Unstable Form Table</strong></p>
+			<table>
+				 <thead>
+                    <tr><th>Stage 3</th><th>Effect</th></tr>
+                </thead>
+                <tbody>
+                     <tr><td>01</td><td>Your form becomes fragile. Your Hit Point Maximum is half your normal maximum.</td></tr>
+                    <tr><td>02–03</td><td>Your body starts to lose cohesion. You have Disadvantage on all D20 Tests.</td></tr>
+                    <tr><td>05–06</td><td>Your body’s metabolism quickly drains your energy. You gain 2 Exhaustion levels.</td></tr>
+                    <tr><td>07–24</td><td>You have trouble processing what is happening. After rolling Initiative, you have the Stunned condition until the end of your first turn.</td></tr>
+                    <tr><td>25–32</td><td>Your limbs weaken. Your Speed (in all modes of movement) decreases by 15 feet and cannot be increased.</td></tr>
+                    <tr><td>33–40</td><td>Your body does not react quickly to mental commands. You cannot take Reactions.</td></tr>
+                    <tr><td>41–48</td><td>You are distracted by your changing form. You have Disadvantage on Wisdom (Perception) checks.</td></tr>
+                    <tr><td>49–56</td><td>Your body becomes unable to fight off attacks. You have Disadvantage on Constitution saving throws.</td></tr>
+                    <tr><td>57–64</td><td>You become clumsy. You have Disadvantage on Dexterity saving throws and Dexterity ability checks.</td></tr>
+                    <tr><td>65–79</td><td>You lose blood or other vital fluids during your mutations. You cannot add your Constitution modifier to any Hit Point Dice spent to regain Hit Points.</td></tr>
+                    <tr><td>80–87</td><td>Speaking is difficult. You can only utter one word during each turn. This does not hamper spellcasting.</td></tr>
+                    <tr><td>88–93</td><td>No effect.</td></tr>
+                    <tr><td>94–100</td><td>Your lower limbs become more powerful. Your Speed increases by 5 feet.</td></tr>
+                </tbody>
+			</table>
+        </description>
+        <sheet>
+            <description>After Long Rest following a day you took dmg: Roll 1d100 on Unstable Form table. Lasts until next Long Rest.</description>
+        </sheet>
+    </element>
+    <element name="Flaw: Unstable Form (Stage 4)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_FORM_4">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2</requirements>
+        <description>
+            <p>Your body becomes malleable and struggles to maintain any one physical shape. Upon completing a Long Rest after an adventuring day in which you took damage, you must roll 1d100 on the Unstable Form table and apply the corresponding mutation based on current your Transformation Stage. This mutation lasts until you finish another Long Rest.</p>
+            <p><strong>Unstable Form Table</strong></p>
+			<table>
+				 <thead>
+                    <tr><th>Stage 4</th><th>Effect</th></tr>
+                </thead>
+                <tbody>
+                     <tr><td>01–02</td><td>The stress of your Transformation becomes too much. You die. You cannot restored to life by any spell below level 5.</td></tr>
+                    <tr><td>03–04</td><td>Your form becomes fragile. Your Hit Point Maximum is half your normal maximum.</td></tr>
+                    <tr><td>05-06</td><td>Your body starts to lose cohesion. You have Disadvantage on all D20 Tests.</td></tr>
+                    <tr><td>07–24</td><td>Your body’s metabolism quickly drains your energy. You gain 2 Exhaustion levels.</td></tr>
+                    <tr><td>25–32</td><td>You have trouble processing what is happening. After rolling Initiative, you have the Stunned condition until the end of your first turn.</td></tr>
+                    <tr><td>33–40</td><td>Your limbs weaken. Your Speed (in all modes of movement) decreases by 15 feet and cannot be increased.</td></tr>
+                    <tr><td>41–48</td><td>Your body does not react quickly to mental commands. You cannot take Reactions.</td></tr>
+                    <tr><td>49–56</td><td>You are distracted by your changing form. You have Disadvantage on Wisdom (Perception) checks.</td></tr>
+                    <tr><td>57–64</td><td>Your body becomes unable to fight off attacks. You have Disadvantage on Constitution saving throws.</td></tr>
+                    <tr><td>65–79</td><td>You become clumsy. You have Disadvantage on Dexterity saving throws and Dexterity ability checks.</td></tr>
+                    <tr><td>80–87</td><td>You lose blood or other vital fluids during your mutations. You cannot add your Constitution modifier to any Hit Point Dice spent to regain Hit Points.</td></tr>
+                    <tr><td>88–93</td><td>Speaking is difficult. You can only utter one word during each turn. This does not hamper spellcasting.</td></tr>
+                    <tr><td>94–100</td><td>No effect.</td></tr>
+                </tbody>
+			</table>
+        </description>
+        <sheet>
+            <description>After Long Rest following a day you took dmg: Roll 1d100 on Unstable Form table. Lasts until next Long Rest.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 2 -->
+    <element name="Aberrant Horror (Stage 2)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2">
+        <prerequisite>Aberrant Horror Transformation Stage 1</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 2 of the Aberrant Horror Transformation, you select one Stage 2 Boon and gain the Stage 2 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_EFFICIENT_KILLER" />
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_WRITHING_TENDRILS" />
+            </div>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_HIDEOUS_APPEARANCE" />
+        </description>
+        <sheet>
+            <description>Hideous Appearance Save: Con {{hideous appearance:dc}} under stress to hide it.</description>
+        </sheet>
+        <rules>
+            <stat name="aberrant horror:stage" value="2" bonus="base" />
+            <stat name="hideous appearance:dc" value="13" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 2)" supports="Aberrant Horror 2025 Boon 2" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_HIDEOUS_APPEARANCE" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_FORM_2" requirements="!ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_FORM_3,!ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_FORM_4"/>
+        </rules>
+    </element>
+
+    <element name="Boon: Efficient Killer" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_EFFICIENT_KILLER">
+        <supports>Aberrant Horror 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2</requirements>
+        <description>
+            <p>When you make an attack with your eldritch limbs, you can gain an added ability based on the damage type you have chosen.</p>
+            <ul>
+                <li><strong>Piercing.</strong> You may replace any attack made with your eldritch limb with a razor-sharp barb hurled at the target. You are considered proficient with this barb, which has a Range of 20/60, has the Finesse and Thrown properties, and deals 2d6 Piercing damage on a hit.</li>
+                <li><strong>Bludgeoning.</strong> You manifest a long tentacle, tipped with a hardened bone club. Your eldritch limb attack deals an additional 1d8 Bludgeoning damage. Also, the attack uses the Slow Weapon Property, which you have Mastery with.</li>
+                <li><strong>Slashing.</strong> Your arm forms a row of viciously hooked claws and talons. Your eldritch limb attack deals an additional 1d8 Slashing damage. Also, the attack uses the Graze Weapon Property, which you have Mastery with.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Eldritch Limbs gain:&#13;
+            • Piercing: Range 20/60, Finesse, Thrown, 2d6 Piercing.&#13;
+            • Bludgeoning: +1d8 Bludgeoning, Slow property.&#13;
+            • Slashing: +1d8 Slashing, Graze property.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Writhing Tendrils" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_WRITHING_TENDRILS">
+        <supports>Aberrant Horror 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2</requirements>
+        <description>
+            <p>You gain the ability to grow long, tendril-like appendages out of your body. As a Bonus Action, these tendrils sprout from you. While you maintain these tendrils, you gain the following benefits:</p>
+            <ul>
+                <li>When a creature moves to within 5 feet of you, you can try to push it back as a Reaction. Unless the creature succeeds on a Strength saving throw, it is pushed 5 feet away from you and its Speed is reduced to 0 until the start of your next turn. The DC of the saving throw is 8 plus your Proficiency Bonus plus your Transformation Stage.</li>
+                <li>Your tendrils can protect you if you move. You can use a Bonus Action to Disengage.</li>
+                <li>As a Reaction to being targeted with a melee attack, you can cause that creature to have Disadvantage on all melee attacks it makes that turn.</li>
+            </ul>
+            <p>The tendrils last for 1 minute. You can use a Bonus Action to retract your tendrils.</p>
+            <p>You can use this ability a number of times equal to your Proficiency Bonus, and you regain all uses when you finish a Short or Long Rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{proficiency}}/Short Rest">
+            <description>Lasts 1 min. Retract as BA. While active:&#13;
+            • Reaction (creature moves w/in 5ft): Str save or pushed 5ft and Speed 0 until your next turn.&#13;
+            • BA: Disengage.&#13;
+            • Reaction (targeted by melee): Attacker gets Disadv. on all melee attacks this turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Hideous Appearance" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_HIDEOUS_APPEARANCE">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2</requirements>
+        <description>
+            <p>Your appearance has grotesquely transformed. You may have turned into a hulking mass of flesh adorned with countless eyes, or a bone-and-tusk-covered behemoth. Regardless of your true form, you’re horrific to behold. You can suspend this form and take on the appearance of the humanoid you once were, but this is taxing and requires effort. This form is not permanent, and moments of stress are likely to reveal your true nature. Your true form may be revealed in the following situations:</p>
+            <ul>
+                <li>Becoming Bloodied</li>
+                <li>Concentrating on a spell</li>
+                <li>Gaining the Unconscious condition</li>
+                <li>Entering hallowed ground</li>
+                <li>Choosing to reveal yourself</li>
+            </ul>
+            <p>In these events, or times of other extreme emotional or physical stress, a GM can call or a Constitution saving throw with a DC based on your current Transformation Stage. If you fail this save, your Horrific Appearance is revealed.</p>
+            <h5>Hideous Appearance DCs:</h5>
+            <table>
+                <thead>
+                    <tr><td>Stage</td><td>Constitution Save DC</td></tr>
+                </thead>
+                <tr><td>2</td><td>13</td></tr>
+                <tr><td>3</td><td>16</td></tr>
+                <tr><td>4</td><td>20</td></tr>
+            </table>
+            <p>Non-evil creatures that witness your true form become instantly Hostile to you, unless the GM decides otherwise.</p>
+        </description>
+        <sheet>
+            <description>True form revealed if: Bloodied, concentrating on spell, Unconscious, entering hallowed ground, or choosing to.  Non-evil creatures become Hostile.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 3 -->
+    <element name="Aberrant Horror (Stage 3)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3">
+        <prerequisite>Aberrant Horror Transformation Stage 2</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 3 of the Aberrant Horror Transformation, you select one Stage 3 Boon and gain the Stage 3 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_TERRIFYING_VISAGE" />
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_CONSTRICTING_TENDRILS" />
+            </div>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_EXISTENCE" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 3 Boon. Unstable Existence (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="aberrant horror:stage" value="3" bonus="base" />
+            <stat name="hideous appearance:dc" value="16" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 3)" supports="Aberrant Horror 2025 Boon 2||Aberrant Horror 2025 Boon 3" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_EXISTENCE" requirements="!ID_GFG_GHPG25_FEAT_FEATURE_ENTROPIC_ABOMINATION"/>
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_FORM_3" requirements="!ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_FORM_4"/>
+        </rules>
+    </element>
+
+    <element name="Boon: Terrifying Visage" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_TERRIFYING_VISAGE">
+        <supports>Aberrant Horror 2025 Boon 3</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3</requirements>
+        <description>
+            <p>Your mutations and unearthly appearance can unsettle even the bravest creatures. When you invoke your Aberrant Mutations or Writhing Tendrils, you choose one creature within 30 feet that can see you. That creature must succeed on a Wisdom saving throw or gain the Frightened condition for 1 minute. The DC for the saving throw is 8 plus your Proficiency Bonus plus your Transformation Stage. A creature that makes its saving throw is immune to this effect for 24 hours.</p>
+        </description>
+        <sheet>
+            <description>Invoking Mutations/Tendrils: 1 target w/in 30ft makes Wis save or Frightened for 1 min. Success: Immune 24 hrs.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Constricting Tendrils" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_CONSTRICTING_TENDRILS">
+        <supports>Aberrant Horror 2025 Boon 3</supports>
+        <prerequisite>Writhing Tendrils</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3, ID_GFG_GHPG25_FEAT_FEATURE_WRITHING_TENDRILS</requirements>
+        <description>
+            <p>You gain an additional option for your Writing Tendrils mutation.</p>
+            <p>As a Bonus Action while Writhing Tentacles is active, you can attempt to restrain a creature within 5 feet of you with your tendrils. The creature must succeed on a Strength or Dexterity saving throw or gain the Restrained condition. The DC is 8 plus your Proficiency Bonus plus your Transformation Stage. A Restrained creature can take an action to make a Strength (Athletics) check against this DC, ending the condition on itself on a success. The Restrained condition ends if you are Incapacitated, you move from your current position, if you retract your tendrils, or if you use your tendrils to perform another ability.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>While Tendrils active: Target w/in 5ft makes Str/Dex save or Restrained. Action to escape (Athletics vs DC). Ends if incapacitated, move, retract tendrils, or use tendrils for else.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Unstable Existence" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_EXISTENCE">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3</requirements>
+        <description>
+            <p>Magic causes your physical form to unravel. Whenever you roll a natural 1 or 2 on a saving throw against a spell, you reveal your Hideous Appearance and must roll again on the Unstable Form table. If the result is less than your current Unstable Form effect, replace it with the new result.</p>
+        </description>
+        <sheet>
+            <description>Roll natural 1 or 2 on save vs spell: Reveal Hideous Appearance and roll on Unstable Form table.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 4 -->
+    <element name="Aberrant Horror (Stage 4)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_4">
+        <prerequisite>Aberrant Horror Transformation Stage 3</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 4 of the Aberrant Horror Transformation, you select one Stage 4 Boon and gain the Stage 4 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_ELDRITCH_ABERRATION" />
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_POISON_TENDRILS" />
+            </div>
+            <p>In addition, you also gain this stage’s Transformation Flaw, which replaces the Stage 3 Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_ENTROPIC_ABOMINATION" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 4 Boon. Entropic Abomination (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="aberrant horror:stage" value="4" bonus="base" />
+            <stat name="hideous appearance:dc" value="20" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 4)" supports="Aberrant Horror 2025 Boon 2||Aberrant Horror 2025 Boon 3||Aberrant Horror 2025 Boon 4" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_ENTROPIC_ABOMINATION" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_UNSTABLE_FORM_4" />            
+        </rules>
+    </element>
+
+    <element name="Boon: Eldritch Aberration" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ELDRITCH_ABERRATION">
+        <supports>Aberrant Horror 2025 Boon 4</supports>
+        <prerequisite>Has Spell Slots</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_4, (ID_INTERNAL_GRANTS_SPELLCASTING_FEATURE||ID_INTERNAL_GRANTS_PACT_MAGIC_FEATURE)</requirements>
+        <description>
+            <p>You gain the ability to deliver jolts of magical energy with your eldritch limbs. Once per turn, when you hit a creature with an attack using your eldritch limbs, you can expend a spell slot to deal additional damage equal to 1d6 per spell level expended. You can choose for this additional damage to be of any of the following types: Acid, Cold, Fire, Force, Lightning, or Thunder. If any of these extra dice show a 6 when rolled, the target has the Prone condition.</p>
+        </description>
+        <sheet usage="1/Turn">
+            <description>Hit w/ Eldritch Limb: Expend spell slot for +1d6 dmg/slot level (Acid/Cold/Fire/Force/Lightning/Thunder). If any extra die rolls a 6, target is Prone.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Poison Tendrils" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_POISON_TENDRILS">
+        <supports>Aberrant Horror 2025 Boon 4</supports>
+        <prerequisite>Writhing Tendrils</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_WRITHING_TENDRILS</requirements>
+        <description>
+            <p>You have Resistance to Poison damage and are Immune to the Poisoned condition.</p>
+            <p>While your Writhing Tendrils are active, any creature you choose that starts its turn within 5 feet of you takes 3d6 Poison damage unless they succeed on a Constitution saving throw. The DC for this saving throw is 8 plus your Proficiency Bonus plus your Transformation Stage.</p>
+        </description>
+        <sheet>
+            <description>While Tendrils active: Chosen creatures starting turn w/in 5ft make Con save or take 3d6 Poison dmg.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISONED" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Entropic Abomination" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ENTROPIC_ABOMINATION">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_ABERRANT_HORROR_LEVEL_4</requirements>
+        <description>
+            <p><em>This Flaw replaces the Stage 3 Flaw: Unstable Existence.</em></p>
+            <p>The very essence of magic and the effect of stress aggravates the unstable nature of your aberrant body. Each time you fail a saving throw, or the first time you become Bloodied after finishing a Long Rest, you must roll on the Unstable Form table. If the result is less than your current Unstable Form effect, replace it with the new result.</p>
+        </description>
+        <sheet>
+            <description>Fail a save or 1st time Bloodied after Long Rest: Roll on Unstable Form table.</description>
+        </sheet>
+    </element>
+</elements>

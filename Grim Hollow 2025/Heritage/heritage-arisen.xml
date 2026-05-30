@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Arisen</name>
+		<description>The Arisen heritage from Grim Hollow - The Players Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="heritage-arisen.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Heritages/heritage-arisen.xml" />
+		</update>
+	</info>
+
+	<element name="Arisen" type="Race" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_RACE_ARISEN">
+		<description>
+			<p>The arisen are spoken of in fearful whispers across Etharis, all too often proclaimed unnatural entities that can be neither trusted nor redeemed. For although they are humanoids, each arisen is a unique construct created by magic, mysterious science, or both.</p>
+			<p class="indent">Arisen are never born in their current form. They are not undead, nor have they been raised from death by divine magic. Rather, each arisen is constructed and given the gift of life, usually by a creator. Arisen are people, to be sure. They have unique personalities, intellects, and experiences, as all humanoids. But do they possess souls? That is an existential question that all arisen must grapple with.</p>
+			<p class="indent">Arisen are made from mostly organic matter. They are not machines, though many possess mechanical parts in small or large measures. One arisen may have a single mechanized limb, while another’s organs are held in a cluster of jars. An arisen may have wires protruding from their body that connect to an arcane power supply grafted into their back, while another appears entirely mundane save for some scars and the arcane gems held within their eye sockets.</p>
+			<p class="indent">Some arisen are entirely constructed, built according to some specification or plan. Others start out innocuously through experimentation to replace living limbs or organs, with repeated experiments inexorably pushing a creature to lose all connection to themself. Still others might be the result of a living creature who died or was grievously injured before being “reassembled.” But no matter the process that spawned them, the creation of an arisen is often traumatic, typically held as fractured memories of arcane laboratories and the first flickering of consciousness, or as the vague nightmares that are all that remains of a former life.</p>
+			<p class="indent">Their rarity among the peoples of Etharis and the grim rumors that swirl around them most often leave arisen socially isolated. But not all arisen are driven to nihilism by the bleakness of their creation and their lives. For from that trauma, many develop a sense of introspection that drives an intense curiosity and a philosophical viewpoint on matters of life, mortality, and their own place in the world.</p>
+			<h5>ARISEN BASE TRAITS</h5>
+			<ul class="unstyled">
+				<li><strong>Age.</strong> Some Arisen age slowly, the artificial nature of their bodies sloughing off the worst effects of age to leave them hale even into their second or third century. Others age more quickly, worn down by the unnatural magic that imbues them well before their sixtieth year.</li>
+				<li><strong>Size.</strong> Arisen can be any size, from compact constructs 2 feet tall, to towering figures topping 7 feet. Your size is Small or Medium, as you determine.</li>
+				<li><strong>Speed.</strong> 30 feet. If you are Small, you can reduce your Speed by 5 feet to gain an extra traditional trait.</li>
+			</ul>
+			<h5>TRADITIONAL ARISEN TRAITS</h5>
+			<p>The artificial forms that all Arisen share often establish the baseline of their talents and instincts. If you wish to play a traditional Arisen, it is recommended you select from the following traits:</p>
+			<ul>
+				<li><strong>Combat:</strong> Magical Fortification, Tenacious, Toughness</li>
+				<li><strong>Exploration:</strong> Artificial Form, Inured to the Elements</li>
+				<li><strong>Roleplaying:</strong> Embrace the Past, Magical Insight, Unnatural Healer</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed" value="30" bonus="base" />
+            <select type="Racial Trait" name="Size" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			
+			<select type="Racial Trait" name="Heritage Trait (Arisen)" supports="GH Heritage Trait" number="8" requirements="!ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+			<select type="Racial Trait" name="Heritage Trait (Arisen)" supports="GH Heritage Trait" number="6" requirements="ID_GFG_GHPG25_OPTION_MAX_HERITAGE_SYSTEM, !ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM" />
+
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_MAGICAL_FORTIFICATION" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_TENACIOUS" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_TOUGHNESS" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_ARTIFICIAL_FORM" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_INURED_TO_THE_ELEMENTS" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_EMBRACE_THE_PAST" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_MAGICAL_INSIGHT" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+			<grant type="Racial Trait" id="ID_GFG_GHPG24_RACE_TRAIT_UNNATURAL_HEALER" requirements="ID_GFG_GHPG25_OPTION_TRADITIONAL_HERITAGE_SYSTEM"/>
+		</rules>
+	</element>
+</elements>

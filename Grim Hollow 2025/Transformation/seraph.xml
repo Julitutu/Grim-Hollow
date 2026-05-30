@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Seraph Transformation</name>
+        <description>Seraph Transformation from Grim Hollow: Player's Guide (2025)</description>
+        <author>Ghostfire Gaming</author>
+        <update version="0.1.0">
+            <file name="seraph.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/seraph.xml" />
+        </update>
+    </info>
+
+    <!-- Items -->
+    <element name="Seraph Transformation (Stage 1)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_SERAPH_LEVEL_1">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SERAPH" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SERAPH" />
+        </rules>
+    </element>
+    <element name="Seraph Transformation (Stage 2)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_SERAPH_LEVEL_2">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SERAPH" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_2" requirements="ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_1"/>
+        </rules>
+    </element>
+    <element name="Seraph Transformation (Stage 3)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_SERAPH_LEVEL_3">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SERAPH" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_3" requirements="ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_2"/>
+        </rules>
+    </element>
+    <element name="Seraph Transformation (Stage 4)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_SERAPH_LEVEL_4">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SERAPH" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_4" requirements="ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_3"/>
+        </rules>
+    </element>
+
+    <!-- Base Feat -->
+    <element name="Seraph" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SERAPH">
+        <description>
+            <p>Incense burns dimly as muffled coughs echo through the musty room. Loved ones hold each other as a bedridden woman exhales a final breath, her scarred face bearing the mortifying lesions of the Weeping Pox. Her family sobs, too lost in their sorrow to notice how the smoldering embers radiate and shine. A woman with flowing robes and platinum hair approaches from the shadows, radiant energy emanating from her folded, angelic wings. “Hold on for but a moment, my child,” she whispers. “Mercy has been granted.”</p>
+            <p>With a thunderous boom, a Seraph’s hammer collides with a clot of writhing corpses. Scraps of bone and offal scatter across the dilapidated chapel floor as voices wail in pain. Gritting her teeth, the angelic figure proclaims, “You foul spirits are dead. Begone! I condemn your cadavers to dust!” Golden fire erupts from her hammer as she prepares for another strike.</p>
+            <p>Seraphs are mortals transformed into Celestial representations of a virtue or ideal. Exalted by a higher power, Seraphs are selected by divine beings after long and patient observation, confirming that the mortal displays pure character. Seraphs are selected from noble martyrs, tireless crusaders, or other exemplary individuals prepared to become the physical manifestation of righteousness.</p>
+            
+            <h4>Becoming a Seraph</h4>
+            <p>To be chosen by an Arch Seraph is to become a vessel for the principles they uphold. This is a charge not to be taken lightly, and those who display righteousness with the intention of becoming a Seraph are usually overlooked for this reason. When becoming a Seraph, consider why your character was chosen. Do you display hidden merit? Are you devoted to a cause they will value?</p>
+            
+            <h4>Relinquishing Divinity</h4>
+            <p>Characters who reach Stage 1 of the Seraph Transformation do not typically seek power without righteous cause. The Transformation’s Boons and Flaws can be removed at any time by relinquishing divinity, as a warrior retires their sword when the war is over. Regaining such power may not be so easy.</p>
+            
+            <h4>Seraph Stages</h4>
+            <p>At each stage of this Transformation, follow the instructions provided for that stage.</p>
+            
+            <h4>Achieving a New Stage</h4>
+            <p>To move from one stage to the next higher one in this Transformation, an event or some other notable occurrence tied to the story of the character should take place. The following events are suggestions for ones that might trigger a move to the next stage of the Transformation:</p>
+            <ul>
+                <li>Defeat a powerful force of darkness.</li>
+                <li>Create a hallowed landmark for pilgrims.</li>
+                <li>Establish a parish of worshipers who uphold your virtue.</li>
+                <li>Redeem a soul that was considered beyond redemption.</li>
+            </ul>
+
+            <p><strong>Transformation Save DC:</strong> Some of your abilities require a target to make a saving throw. The DC is calculated as follows:</p>
+            <center>
+                <p><strong>Transformation Save DC</strong> = 8 + your Proficiency Bonus + your Transformation Stage</p>
+            </center>
+        </description>
+        <sheet>
+            <description>Save DC: {{seraph:dc}}</description>
+        </sheet>
+        <rules>
+            <stat name="seraph:stage" value="0" bonus="base" />
+            <stat name="seraph:dc" value="8" />
+            <stat name="seraph:dc" value="proficiency" />
+            <stat name="seraph:dc" value="seraph:stage" />
+
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_1" />
+        </rules>
+    </element>
+
+    <!-- Transformation Stage 1 -->
+    <element name="Seraph (Stage 1)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_1">
+        <prerequisite>Seraph Transformation</prerequisite>
+        <requirements>ID_GFG_GHPG25_FEAT_TRANSFORMATION_SERAPH</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you initially undergo the Seraph Transformation, you gain Celestial Form and one other Stage 1 Boon of your choice. You also gain the Stage 1 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_CELESTIAL_FORM" />
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_PLANAR_BINDING_SERAPH" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Celestial Form, Stage 1 Boon, Planar Binding (Flaw)</description>
+        </sheet>
+        <rules>
+            <stat name="seraph:stage" value="1" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_CELESTIAL_FORM" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_PLANAR_BINDING_SERAPH" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 1)" supports="Seraph 2025 Boon 1" />
+        </rules>
+    </element>
+
+    <element name="Boon: Celestial Form" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_CELESTIAL_FORM">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_1</requirements>
+        <description>
+            <p>You become a Celestial in addition to any other creature type(s) you are. Additionally, you have Resistance to Radiant Damage.</p>
+        </description>
+        <sheet display="false">
+            <description>You have Resistance to Radiant Damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_CELESTIAL" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+        </rules>
+    </element>
+
+    <element name="Boon: Angelic Wings" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ANGELIC_WINGS">
+        <supports>Seraph 2025 Boon 1</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_1</requirements>
+        <description>
+            <p>As a Bonus Action, you can manifest feathered wings for 1 hour. While they are manifested, you have a Fly Speed equal to your Speed when you are not wearing heavy armor.</p>
+            <p>You can manifest these wings a number of times equal to your Transformation Stage, and you regain all uses after finishing a Short or Long Rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{seraph:stage}}/Short Rest">
+            <description>Manifest feathered wings for 1 hour.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:fly" value="innate speed" bonus="base" equipped="![armor:heavy]" />
+        </rules>
+    </element>
+
+    <element name="Boon: Holy Strikes" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_HOLY_STRIKES">
+        <supports>Seraph 2025 Boon 1</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_1</requirements>
+        <description>
+            <p>When you hit with a weapon or an Unarmed Strike or damage a creature with a cantrip, you can add 1d6 Radiant damage to that attack. You can add this damage a number of times equal to your Proficiency Bonus plus your Transformation Stage. You regain all uses of this feature when you finish a Short or Long Rest.</p>
+            <p>At higher Transformation Stages, you deal an additional 1d6 Radiant damage per Transformation Stage, for a total of 2d6 at Stage 2, 3d6 at Stage 3, and 4d6 at Stage 4.</p>
+        </description>
+        <sheet usage="{{holy strikes:uses}}/Short Rest">
+            <description>Hit or damage a creature, add {{seraph:stage}}d6 Radiant damage.</description>
+        </sheet>
+        <rules>
+            <stat name="holy strikes:uses" value="proficiency" />
+            <stat name="holy strikes:uses" value="seraph:stage" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Planar Binding" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_PLANAR_BINDING_SERAPH">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_1</requirements>
+        <description>
+            <p>Your body and soul are bound to the higher planes of good. You have Disadvantage on Death Saving Throws as the plane attempts to pull your soul into its place of final reward.</p>
+        </description>
+        <sheet>
+            <description>Disadvantage on Death Saving Throws.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 2 -->
+    <element name="Seraph (Stage 2)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_2">
+        <prerequisite>Seraph Transformation Stage 1</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 2 of the Seraph Transformation, you select one Stage 2 Boon and gain the Stage 2 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_BLINDING_RADIANCE" />
+        </description>
+        <sheet display="false">
+            <description>Blinding Radiance Save: Con {{blinding radiance:dc}} under stress to hide it.</description>
+        </sheet>
+        <rules>
+            <stat name="seraph:stage" value="2" bonus="base" />
+            <stat name="blinding radiance:dc" value="13" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 2)" supports="Seraph 2025 Boon 1||Seraph 2025 Boon 2" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_BLINDING_RADIANCE" />
+        </rules>
+    </element>
+
+    <element name="Boon: Divine Clemency" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_DIVINE_CLEMENCY">
+        <supports>Seraph 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_2</requirements>
+        <description>
+            <p>When an ally within 30 feet of you that you can see takes damage, you can use a Reaction to cast Healing Word at first level on that ally without using a spell slot.</p>
+            <p>You can do this a number of times equal to your Transformation Stage. You regain all uses of this feature after finishing a Long Rest.</p>
+        </description>
+        <sheet action="Reaction" usage="{{seraph:stage}}/Long Rest">
+            <description>When an ally w/in 30ft takes damage, cast Healing Word at 1st level on them without using a spell slot.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_HEALING_WORD" />
+        </rules>
+    </element>
+
+    <element name="Boon: Sacred Retribution" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SACRED_RETRIBUTION">
+        <supports>Seraph 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_2</requirements>
+        <description>
+            <p>When an ally you can see within 30 feet takes the Attack action with a weapon or Unarmed Strike, you can use your Reaction to imbue them with holy zeal, allowing them to make one additional attack. On a hit, the target takes an additional 1d8 Radiant damage. You may use this feature a number of times equal to your Transformation Stage. You regain all uses of this feature when you finish a Long Rest.</p>
+        </description>
+        <sheet action="Reaction" usage="{{seraph:stage}}/Long Rest">
+            <description>When an ally w/in 30ft takes the Attack action, they can make 1 additional attack. On a hit, it deals +1d8 Radiant damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Blinding Radiance" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_BLINDING_RADIANCE">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_2</requirements>
+        <description>
+            <p>Your Transformation into a Seraph brings with it changes to your physical features. Your body radiates a divine glow, your eyes may become hollow braziers of celestial light, or your many sets of wings may appear unsettling to mortal creatures.</p>
+            <p>You can suspend this form and manifest the appearance of the humanoid you once were, but this is taxing and requires effort. This form is not permanent, and moments of stress or wrath are likely to reveal your true nature. This might occur under the following circumstances:</p>
+            <ul>
+                <li>Becoming Bloodied</li>
+                <li>Having the Unconscious condition</li>
+                <li>Witnessing an act of evil</li>
+                <li>Encountering Fiendish creatures or powers</li>
+                <li>Using your Seraph Transformation powers for the first time after a Short or Long Rest</li>
+            </ul>
+            <p>In these events, or times of other extreme emotional or physical stress, a GM can call or a Constitution saving throw with a DC based on your current Transformation Stage. If you fail this save, your Blinding Radiance is revealed.</p>
+            <h5>Blinding Radiance Save DC</h5>
+            <table>
+                <thead>
+                    <tr><td>Stage</td><td>Constitution Save DC</td></tr>
+                </thead>
+                <tr><td>2</td><td>13</td></tr>
+                <tr><td>3</td><td>16</td></tr>
+                <tr><td>4</td><td>20</td></tr>
+            </table>
+            <p>When your true nature is revealed this way, all non-enemy creatures within 30 feet of you who can see you must succeed on a DC 15 Charisma saving throw or have the Blinded condition for 1 minute. Additionally, for the next minute, attacks against you have Advantage.</p>
+        </description>
+        <sheet>
+            <description>Under stress (Bloodied, Unconscious, witnessing evil, near Fiends, using Seraph powers 1st time after Rest): Non-enemies w/in 30ft make DC 15 Cha save or Blinded for 1 min. Attacks against you have Advantage for 1 min.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 3 -->
+    <element name="Seraph (Stage 3)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_3">
+        <prerequisite>Seraph Transformation Stage 2</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 3 of the Seraph Transformation, you select one Stage 3 Boon and gain the Stage 3 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_BEACON_TO_DARKNESS" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 3 Boon. Beacon to Darkness (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="seraph:stage" value="3" bonus="base" />
+            <stat name="blinding radiance:dc" value="16" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 3)" supports="Seraph 2025 Boon 1||Seraph 2025 Boon 2||Seraph 2025 Boon 3" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_BEACON_TO_DARKNESS" />
+        </rules>
+    </element>
+
+    <element name="Boon: Cleanse Affliction" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_CLEANSE_AFFLICTION">
+        <supports>Seraph 2025 Boon 3</supports>
+        <prerequisite>Divine Clemency</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_3, ID_GFG_GHPG25_FEAT_FEATURE_DIVINE_CLEMENCY</requirements>
+        <description>
+            <p>When you use Divine Clemency on a creature, they gain the following additional benefits:</p>
+            <ul>
+                <li>They gain Temporary Hit Points equal to the amount of damage healed by Healing Word.</li>
+                <li>They have Advantage on their next D20 Test made within the next minute.</li>
+                <li>You end one of the following conditions on it: Blinded, Deafened, Paralyzed, or Poisoned.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Divine Clemency also grants THP equal to healing, Advantage on their next D20 Test w/in 1 min, and ends Blinded, Deafened, Paralyzed, or Poisoned.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Protective Wings" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_PROTECTIVE_WINGS">
+        <supports>Seraph 2025 Boon 3</supports>
+        <prerequisite>Angelic Wings</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_3, ID_GFG_GHPG25_FEAT_FEATURE_ANGELIC_WINGS</requirements>
+        <description>
+            <p>While you are manifesting your Angelic Wings, you gain the following benefits:</p>
+            <ul>
+                <li>As a Reaction, when you or an ally within 5 feet of you is targeted by a weapon attack, you can impose Disadvantage on that attack. If the attack hits the ally, you take half the attack’s damage (rounded up) and the original target takes the other half.</li>
+                <li>You have Advantage on saving throws or ability checks to avoid having the Grappled condition or to escape a Grapple.</li>
+                <li>Your Fly Speed is increased by 10 feet.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>While Angelic Wings manifested: Fly Speed +10ft. Adv on checks/saves vs Grapple.&#13;
+            Reaction (when you/ally w/in 5ft targeted by weapon attack): Impose Disadv. If it hits ally, you take half dmg (rounded up), ally takes other half.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:fly" value="10" />
+        </rules>
+    </element>
+
+    <element name="Boon: Bow of Celestial Judgement" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_BOW_OF_CELESTIAL_JUDGEMENT">
+        <supports>Seraph 2025 Boon 3</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_3</requirements>
+        <description>
+            <p>You can use a Bonus Action to manifest a powerful bow made of divine light. The Bow of Celestial Judgement lasts for 1 minute and grants you the following abilities while manifested:</p>
+            <ul>
+                <li>You can use a Magic action to target a creature you can see within 120 feet with your bow. The creature must succeed on a Dexterity saving throw against a DC equal to 8 plus your Proficiency Bonus plus your Transformation Stage. On a failed save, the creature takes 6d6 Radiant damage, or 10d6 if it is a Fey, Fiend, or Undead. On a success, the creature takes half damage.</li>
+                <li>You have Resistance to Necrotic damage.</li>
+                <li>You gain 5 Temporary Hit Points at the start of each of your turns.</li>
+            </ul>
+            <p>You can use this feature a number of times equal to your Transformation Stage, and you regain all uses after finishing a Long Rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="{{seraph:stage}}/Long Rest">
+            <description>Manifest bow for 1 min. While manifested:&#13;
+            • Resist Necrotic dmg.&#13;
+            • Gain 5 THP at start of your turns.&#13;
+            • Magic Action: Target w/in 120ft makes DC {{seraph:dc}} Dex save. Fail: 6d6 Radiant dmg (10d6 if Fey/Fiend/Undead). Success: half dmg.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" requirements="!ID_GFG_GHPG25_FEAT_FEATURE_BOW_OF_CELESTIAL_DOMINATION" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Beacon to Darkness" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_BEACON_TO_DARKNESS">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_3</requirements>
+        <description>
+            <p>You are now a Seraph of noted virtue and divinity, becoming a target for the world's evil. Whenever you or an ally within 30 feet commits an evil act, such as murdering innocents, you acquire a trace of darkness and you are Corrupted. GMs determine what constitutes an evil act.</p>
+            <p>While you are Corrupted, whenever you make an attack roll against an evil creature or a saving throw against a spell or effect from an evil creature, you have Disadvantage on the check. Also, if an ally is the one who caused your Corruption, they cannot be considered your ally or you theirs until the Corruption is removed.</p>
+            <p>You can remove the Corrupted condition by finishing a Short or Long Rest, during which you must pray for at least 1 hour and burn holy incense or donate wealth to a local good cause worth at least 100 GP times your Transformation Stage.</p>
+        </description>
+        <sheet>
+            <description>If you or ally w/in 30ft commits an evil act, you are Corrupted.&#13;
+            While Corrupted: Disadv on attacks vs evil creatures and saves vs their spells/effects. Ally who caused it is no longer your ally.&#13;
+            Remove: Short/Long Rest + pray 1 hr + donate/burn incense worth 100 x Transformation Stage GP.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 4 -->
+    <element name="Seraph (Stage 4)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_4">
+        <prerequisite>Seraph Transformation Stage 3</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 4 of the Seraph Transformation, you select one Stage 4 Boon and gain the Stage 4 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_SERAPH_CORRUPTION" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 4 Boon. Seraph Corruption (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="seraph:stage" value="4" bonus="base" />
+            <stat name="blinding radiance:dc" value="20" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 4)" supports="Seraph 2025 Boon 1||Seraph 2025 Boon 2||Seraph 2025 Boon 3||Seraph 2025 Boon 4" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_SERAPH_CORRUPTION" />
+        </rules>
+    </element>
+
+    <element name="Boon: Aura of Holy Purge" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_AURA_OF_HOLY_PURGE">
+        <supports>Seraph 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_4</requirements>
+        <description>
+            <p>You emit an aura of righteous fervor in a 20-foot Emanation centered on you, except when you have the Unconscious condition. When an ally within your aura hits with a weapon attack, the ally can use their Reaction to cause the hit to be a Critical Hit. If they do, you and the ally each gain a level of Exhaustion. After an ally uses this Reaction, that ally can't use it again until after they finish a Long Rest.</p>
+        </description>
+        <sheet>
+            <description>20-ft Emanation (while conscious). Ally w/in aura hits w/ weapon attack: can use Reaction to make it a Critical Hit. If they do, you both gain 1 Exhaustion. Ally can't use again until Long Rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Aura of Righteous Mercy" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_AURA_OF_RIGHTEOUS_MERCY">
+        <supports>Seraph 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_4</requirements>
+        <description>
+            <p>You emit an aura of peaceful resolution in a 20-foot Emanation centered on you, except when you have the Unconscious condition. When an ally within your aura would be reduced to 0 Hit Points, they can use their Reaction to drop to 1 Hit Point instead. If they do, you and the ally each gain a level of Exhaustion. After an ally uses this Reaction, that ally can't use it again until after they finish a Long Rest.</p>
+        </description>
+        <sheet>
+            <description>20-ft Emanation (while conscious). Ally w/in aura reduced to 0 HP: can use Reaction to drop to 1 HP instead. If they do, you both gain 1 Exhaustion. Ally can't use again until Long Rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Bow of Celestial Domination" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_BOW_OF_CELESTIAL_DOMINATION">
+        <supports>Seraph 2025 Boon 4</supports>
+        <prerequisite>Bow of Celestial Judgement</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_4, ID_GFG_GHPG25_FEAT_FEATURE_BOW_OF_CELESTIAL_JUDGEMENT</requirements>
+        <description>
+            <p>While your Bow of Celestial Judgement is manifested, you gain these additional benefits:</p>
+            <ul>
+                <li>When you use a Magic action to target a creature you can see within 120 feet, you can also affect one other creature with 10 feet of the original target.</li>
+                <li>You have Immunity to Necrotic damage instead of Resistance.</li>
+                <li>You gain 15 Temporary Hit Points at the start of each of your turns instead of 5.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Bow of Celestial Judgement upgraded:&#13;
+            • Magic action targets 1 extra creature w/in 10ft of original.&#13;
+            • Immune to Necrotic dmg.&#13;
+            • Gain 15 THP at start of turns instead of 5.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Seraph Corruption" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SERAPH_CORRUPTION">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SERAPH_LEVEL_4</requirements>
+        <description>
+            <p>The weight of evil in the world encumbers you more and more heavily as the days pass. Sometimes it becomes too much, and your celestial form is wracked with pain and doubt.</p>
+            <p>Whenever you roll a natural 1 on a saving throw, you suffer the following effects for 1 minute:</p>
+            <ul>
+                <li>At the start of each of your turns, you take 1d10 Psychic damage. This damage cannot be reduced in any way.</li>
+                <li>You cannot regain Hit Points or have Temporary Hit Points.</li>
+                <li>You have Disadvantage on the first attack you make every round.</li>
+                <li>Once per round, the first creature you force to make a saving throw against your spell has Advantage on the saving throw.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Roll natural 1 on a saving throw: For 1 minute:&#13;
+            • Take 1d10 Psychic dmg (unreducible) at start of your turns.&#13;
+            • Cannot regain HP or have THP.&#13;
+            • Disadv on first attack each round.&#13;
+            • 1/round, first creature forced to make save vs your spell has Advantage.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Origin Feats</name>
+		<description>Origin Feats from Grim Hollow: Player's Guide (2025)</description>
+		<update version="0.0.1">
+			<file name="feats-origin.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Feats/feats-origin.xml" />
+		</update>
+	</info>
+
+	<element name="Blood Hound" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_BLOOD_HOUND">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>Your senses are heightened beyond those of most folk. Whether these senses were strengthened through training or the loss of other senses, or they simply matured as you did, you are a master of finding those whom you seek. You gain the following benefits.</p>
+			<p class="indent"><b><i>Motion Sensor.</i></b> Whenever a creature that is Small or larger moves within 10 feet of you while you do not have the Unconscious condition, you immediately become aware of its presence.</p>
+			<p class="indent"><b><i>No Hiding.</i></b> You have Advantage on Wisdom (Perception) checks that rely on sound or smell.</p>
+		</description>
+		<sheet>
+			<description>Whenever a Small or larger creature moves within 10ft. of you while you do not have the Unconscious condition, you immediately become aware of its presence. &#13;
+			Additionally, you have Advantage on Wisdom (Perception) checks that rely on sound or smell.</description>
+		</sheet>
+	</element>
+
+	<element name="Convincing Inquisitor" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_CONVINCING_INQUISITOR">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>You know how to spot a liar, and you can get people to see your way, whether through charm, reasonable arguments, or force of will. You gain the following benefits.</p>
+			<p class="indent"><b><i>Charming Presence.</i></b> When you take the Influence action, you don’t have Disadvantage on checks to influence Hostile creatures, and you have Advantage on checks to influence Indifferent creatures.</p>
+			<p class="indent"><b><i>Multiple Paths.</i></b> You can use any ability modifier when you take the Influence action to make an Intimidation or Persuasion check.</p>
+			<p class="indent"><b><i>Zealous Insight.</i></b> When you succeed on a Search action’s Wisdom (Insight) check to detect lies or evasive answers, you have Advantage on Initiative rolls involving combat against that creature for 1 hour.</p>
+		</description>
+		<sheet>
+			<description>When you take the Influence action, you don’t have Disadvantage to influence Hostile creatures, and you have Advantage to influence Indifferent creatures. You can also use any ability modifier for Intimidation or Persuasion checks during this action. &#13;
+			When you succeed on a Search action’s Wisdom (Insight) check to detect lies or evasive answers from a creature, you have Advantage on Initiative rolls involving combat against that creature for 1 hour.</description>
+		</sheet>
+	</element>
+
+	<element name="Deathbound" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_DEATHBOUND">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>You have seen death many times, up close and personal, and sometimes at your own hand. These experiences have affected you deeply, teaching you about life and death. You gain the following benefits.</p>
+			<p class="indent"><b><i>One Last Breath.</i></b> If you have two Death Saving Throw failures, you have Advantage on Death Saving Throws until you are no longer at 0 Hit Points.</p>
+			<p class="indent"><b><i>Recuperation.</i></b> When you spend a Hit Point Die during a Short Rest to recover Hit Points, you can roll the Hit Point Die twice and use the higher roll.</p>
+		</description>
+		<sheet>
+			<description>If you have two Death Saving Throw failures, you have Advantage on Death Saving Throws until you are no longer at 0 HP. &#13;
+			When you spend a Hit Die during a Short Rest to recover HP, you can roll the die twice and use the higher roll.</description>
+		</sheet>
+	</element>
+
+	<element name="Fortune of the Thaumaturge" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FORTUNE_OF_THE_THAUMATURGE">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>Your connection to the Thaumaturge puts you in touch with forces outside mortal understanding, making others think you were born under a fortunate moon. You gain the following benefits.</p>
+			<p class="indent"><b><i>Fortune’s Fortitude.</i></b> When you fail a D20 Test, you can expend and roll one Hit Point Die, adding that number to your result. You can do this only once per D20 Test. You can use this benefit a number of times equal to your Proficiency Bonus, and you regain all uses of this ability when you finish a Long Rest.</p>
+			<p class="indent"><b><i>Fortune of the Unknown.</i></b> When using the Fortune’s Fortitude benefit, if you roll the highest or lowest number on the Hit Point Die, you regain that Hit Point Die. It still counts as a use of Fortune’s Fortitude.</p>
+		</description>
+		<sheet usage="{{proficiency}}/Long Rest">
+			<description>When you fail a D20 Test, you can expend and roll one Hit Die, adding that number to your result (once per test). If you roll the highest or lowest number on the Hit Die, you regain that Hit Die.</description>
+		</sheet>
+	</element>
+
+	<element name="Free Sword Mercenary’s Will" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FREE_SWORD_MERCENARYS_WILL">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>Your training with the Company of Free Swords has given you an increased stamina and an attitude that make you less likely to succumb to hardships. You gain the following benefits.</p>
+			<p class="indent"><b><i>Hold the Ground.</i></b> When you are moved without using your movement by a creature, you can take a Reaction to reduce the distance you are moved by up to your Speed.</p>
+			<p class="indent"><b><i>Resolute.</i></b> You have Advantage on saving throws that would apply a condition.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on saving throws that would apply a condition. &#13;
+			When you are moved without using your movement by a creature, you can take a Reaction to reduce the distance you are moved by up to your Speed.</description>
+		</sheet>
+	</element>
+
+	<element name="Resolution of the Syndicate" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_RESOLUTION_OF_THE_SYNDICATE">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>Membership in the Ebon Syndicate provides perks—one of which is the motivation that comes with the understanding that the Syndicate kills those who fail too often. You gain the following benefits.</p>
+			<p class="indent"><b><i>Quick Strike.</i></b> On your first turn after an Initiative roll, add 1d4 to the first damage roll you make. This extra damage increases to 2d4 at character level 9, and to 4d4 at character level 16.</p>
+			<p class="indent"><b><i>Resilient.</i></b> Your Hit Point maximum increases by an amount equal to your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 1 Hit Point.</p>
+		</description>
+		<sheet>
+			<description>On your first turn after an Initiative roll, add 1d4 to the first damage roll you make. This extra damage increases to 2d4 at level 9, and to 4d4 at level 16.</description>
+		</sheet>
+		<rules>
+			<stat name="hp" value="level" />
+		</rules>
+	</element>
+
+	<element name="Survivor" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_SURVIVOR">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>Your ability to make the best out of a bad situation has served you well. You gain the following benefits.</p>
+			<p class="indent"><b><i>Hardy.</i></b> You need half the amount of food per day based on your size.</p>
+			<p class="indent"><b><i>Intuitive.</i></b> When you take the Study action, you have Advantage on Intelligence checks made when taking the Study action.</p>
+			<p class="indent"><b><i>Shake It Off.</i></b> Whenever you finish a Short Rest, your Exhaustion level, if any, decreases by 1. Additionally, when you finish a Long Rest, your Exhaustion level decreases by 2.</p>
+		</description>
+		<sheet>
+			<description>You need half the amount of food per day based on your size. When you take the Study action, you have Advantage on Intelligence checks made for it. &#13;
+			Whenever you finish a Short Rest, your Exhaustion level decreases by 1. When you finish a Long Rest, your Exhaustion level decreases by 2.</description>
+		</sheet>
+	</element>
+
+	<element name="Triage Expert" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_TRIAGE_EXPERT">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>You are trained in dealing with injuries on the battlefield, and with the saving of lives afterward. You gain the following benefits.</p>
+			<p class="indent"><b><i>Bedside Manner.</i></b> Whenever you cause a creature to regain Hit Points or the Blood and Bone benefit, you can roll one extra die and discard the lowest die.</p>
+			<p class="indent"><b><i>Blood and Bone.</i></b> Taking the Utilize action and expending the use of a Healer’s Kit lets you heal a creature within 5 feet of you. The creature can expend and roll a Hit Point Die and regain that number of Hit Points.</p>
+		</description>
+		<sheet>
+			<description>Taking the Utilize action and expending the use of a Healer’s Kit lets you heal a creature within 5ft. of you. The creature can expend and roll a Hit Die and regain that number of HP. &#13;
+			Whenever you cause a creature to regain HP or use the benefit above, you can roll one extra die and discard the lowest die.</description>
+		</sheet>
+	</element>
+
+	<element name="Insightful Collector" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_INSIGHTFUL_COLLECTOR">
+		<supports>Origin</supports>
+		<description>
+			<p class="flavor">Origin Feat</p>
+			<p>Your expeditions, transactions, and mercantile activities on behalf of the Augustine Trading Company have put you in contact with collectors of historical artifacts, relics, and tomes. You gain the following benefits.</p>
+			<p class="indent"><b><i>Object Intuition.</i></b> You can take a Study action to examine one magical object and learn its properties and how to use it without attuning to it or taking a Short Rest in physical contact with it, but you don't learn any curse the item might bear. There is a cumulative 5% chance for every rarity above Common that you misidentify the nature and the power of the object.</p>
+			<p class="indent"><b><i>Rare Find.</i></b> You begin play in possession of a Common magic item. Work with your GM to decide on which object fits your character and the campaign.</p>
+		</description>
+		<sheet>
+			<description>You can take a Study action to examine one magical object and learn its properties and how to use it without attuning to it or taking a Short Rest in physical contact with it, but you don't learn any curse the item might bear. There is a cumulative 5% chance for every rarity above Common that you misidentify the nature and the power of the object.</description>
+		</sheet>
+	</element>
+</elements>

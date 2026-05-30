@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Monster Hunter</name>
+		<description>The Monster Hunter class from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="class-monster-hunter.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/class-monster-hunter.xml" />
+		</update>
+	</info>
+
+	<element name="Monster Hunter" type="Class" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_MONSTER_HUNTER">
+		<description>
+			<p>Monster Hunters are skilled professionals, specializing in identifying, tracking, and slaying monsters that threaten the lives and the livelihoods of the people of Etharis.</p>
+			<p class="indent">Each Monster Hunter trains in a different method for these tasks. Some hunters don heavy armor and carry shields to protect against crushing jaws and scything claws, others deploy cunning traps to keep a safe distance from the horrors they hunt, some assume the traits and powers of their enemies to better slay them, and others dabble in magic to supplement martial prowess with arcane wrath.</p>
+			<div class="sidebar">
+				<h5>CORE MONSTER HUNTER TRAITS</h5>
+				<table>
+					<tr><td><b>Primary Ability</b></td><td class="left">Strength or Dexterity, Intelligence</td></tr>
+					<tr><td><b>Hit Point Die</b></td><td class="left">D10 per Monster Hunter level</td></tr>
+					<tr><td><b>Saving Throw Proficiencies</b></td><td class="left">Dexterity and Intelligence</td></tr>
+					<tr><td><b>Skill Proficiencies</b></td><td class="left"><i>Choose 3:</i> Athletics, History, Investigation, Medicine, Nature, Perception, Religion, or Survival</td></tr>
+					<tr><td><b>Weapon Proficiencies</b></td><td class="left">Simple weapons and Martial weapons</td></tr>
+					<tr><td><b>Armor Training</b></td><td class="left">Light and Medium armor and Shields</td></tr>
+					<tr><td><b>Starting Equipment</b></td><td class="left"><i>Choose A, B, or C:</i> (A) Scale Mail, Longsword, Light Crossbow, 20 Bolts, Dungeoneer's Pack, and 5 GP; (B) Studded Leather Armor, Scimitar, Shortsword, Longbow, 20 Arrows, Quiver, Dungeoneer's Pack, and 10 GP; or (C) 160 GP</td></tr>
+				</table>
+			</div>
+			<h4>BECOMING A MONSTER HUNTER ...</h4>
+			<h5 style="margin-top:-2em">AS A LEVEL 1 CHARACTER</h5>
+			<ul style="margin-top:-1em; margin-bottom: 0.5em">
+				<li>Gain all the traits in the Core Monster Hunter Traits table.</li>
+				<li>Gain the Monster Hunter's level 1 features, which are listed in the Monster Hunter Features table.</li>
+			</ul>
+			<h5 style="margin-top: 0px">AS A MULTICLASS CHARACTER</h5>
+			<ul style="margin-top:-1em">
+				<li>Gain the following traits from the Core Monster Hunter Traits table: Hit Point Die, proficiency with Martial weapons, and training with Light and Medium armor and Shields.</li>
+				<li>Gain the Monster Hunter's level 1 features, which are listed in the Monster Hunter Features table.</li>
+			</ul>
+			<h5>MONSTER HUNTER FEATURES</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td>Proficiency Bonus</td><td class="left">Features</td><td>Weapon Mastery</td></tr>
+				</thead>
+				<tr><td> 1</td><td>+2</td><td class="left">Monster Grimoire, Weapon Mastery</td><td>2</td></tr>
+				<tr><td> 2</td><td>+2</td><td class="left">Fighting Style, Studied Response</td><td>2</td></tr>
+				<tr><td> 3</td><td>+2</td><td class="left">Monster Hunter Subclass: Hunting Guild</td><td>2</td></tr>
+				<tr><td> 4</td><td>+2</td><td class="left">Ability Score Improvement</td><td>2</td></tr>
+				<tr><td> 5</td><td>+3</td><td class="left">Expert Strike</td><td>3</td></tr>
+				<tr><td> 6</td><td>+3</td><td class="left">Improved Monster Grimoire</td><td>3</td></tr>
+				<tr><td> 7</td><td>+3</td><td class="left">Hunting Guild feature</td><td>3</td></tr>
+				<tr><td> 8</td><td>+3</td><td class="left">Ability Score Improvement</td><td>3</td></tr>
+				<tr><td> 9</td><td>+4</td><td class="left">Knowledgeable Defense</td><td>3</td></tr>
+				<tr><td>10</td><td>+4</td><td class="left">Hunting Guild feature</td><td>3</td></tr>
+				<tr><td>11</td><td>+4</td><td class="left">Extra Attack</td><td>4</td></tr>
+				<tr><td>12</td><td>+4</td><td class="left">Ability Score Improvement</td><td>4</td></tr>
+				<tr><td>13</td><td>+5</td><td class="left">Improved Monster Grimoire</td><td>4</td></tr>
+				<tr><td>14</td><td>+5</td><td class="left">Lair Sense</td><td>4</td></tr>
+				<tr><td>15</td><td>+5</td><td class="left">Hunting Guild feature</td><td>4</td></tr>
+				<tr><td>16</td><td>+5</td><td class="left">Ability Score Improvement</td><td>4</td></tr>
+				<tr><td>17</td><td>+6</td><td class="left">Slayer's Aid</td><td>5</td></tr>
+				<tr><td>18</td><td>+6</td><td class="left">Hunting Guild feature</td><td>5</td></tr>
+				<tr><td>19</td><td>+6</td><td class="left">Epic Boon</td><td>5</td></tr>
+				<tr><td>20</td><td>+6</td><td class="left">Grave Strike</td><td>5</td></tr>
+			</table>
+			<h4>MONSTER HUNTER CLASS FEATURES</h4>
+			<p>As a Monster Hunter, you gain the following class features when you reach the specified Monster Hunter levels. These features are listed in the Monster Hunter Features table.</p>
+			<div element="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_MONSTER_GRIMOIRE" />
+			<div element="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_WEAPON_MASTERY" />
+			<div element="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_FIGHTING_STYLE" />
+			<div element="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_STUDIED_RESPONSE" />
+			<div element="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_HUNTING_GUILD" />
+			<div element="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_ABILITY_SCORE_IMPROVEMENT" />
+			<div element="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_EXPERT_STRIKE" />
+			<div element="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_IMPROVED_MONSTER_GRIMOIRE_6" />
+			<div element="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_KNOWLEDGEABLE_DEFENSE" />
+			<div element="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_EXTRA_ATTACK" />
+			<div element="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_IMPROVED_MONSTER_GRIMOIRE_13" />
+			<div element="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_LAIR_SENSE" />
+			<div element="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_SLAYERS_AID" />
+			<div element="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_EPIC_BOON" />
+			<div element="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_GRAVE_STRIKE" />
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="short">A professional specialized in identifying, tracking, and slaying monsters.</set>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_GFG_GHPG25_MULTICLASS_MONSTER_HUNTER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_GFG_GHPG25_MULTICLASS_MONSTER_HUNTER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_GFG_GHPG25_MULTICLASS_MONSTER_HUNTER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_GFG_GHPG25_MULTICLASS_MONSTER_HUNTER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_GFG_GHPG25_MULTICLASS_MONSTER_HUNTER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_GFG_GHPG25_MULTICLASS_MONSTER_HUNTER"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_GFG_GHPG25_MULTICLASS_MONSTER_HUNTER"/>
+			<select type="Proficiency" name="Skill Proficiency (Monster Hunter)" supports="ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SURVIVAL" number="3" requirements="!ID_GFG_GHPG25_MULTICLASS_MONSTER_HUNTER" />
+
+			<grant type="Class Feature" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_MONSTER_GRIMOIRE" level="1" />
+			<grant type="Class Feature" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_WEAPON_MASTERY" level="1" />
+			<grant type="Class Feature" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_FIGHTING_STYLE" level="2" />
+			<grant type="Class Feature" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_STUDIED_RESPONSE" level="2" />
+			<grant type="Class Feature" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_HUNTING_GUILD" level="3" />
+			<grant type="Class Feature" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_ABILITY_SCORE_IMPROVEMENT" level="4" />
+			<grant type="Class Feature" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_EXPERT_STRIKE" level="5" />
+			<grant type="Class Feature" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_IMPROVED_MONSTER_GRIMOIRE_6" level="6" />
+			<grant type="Class Feature" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_KNOWLEDGEABLE_DEFENSE" level="9" />
+			<grant type="Class Feature" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_EXTRA_ATTACK" level="11" />
+			<grant type="Class Feature" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_IMPROVED_MONSTER_GRIMOIRE_13" level="13" />
+			<grant type="Class Feature" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_LAIR_SENSE" level="14" />
+			<grant type="Class Feature" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_SLAYERS_AID" level="17" />
+			<grant type="Class Feature" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_EPIC_BOON" level="19" />
+			<grant type="Class Feature" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_GRAVE_STRIKE" level="20" />
+		</rules>
+		<multiclass id="ID_GFG_GHPG25_MULTICLASS_MONSTER_HUNTER">
+			<prerequisite>Strength 13 or Dexterity 13, and Intelligence 13</prerequisite>
+			<requirements>(([str:13]||[dex:13]),[int:13],!(ID_GFG_GHPG25_CLASS_MONSTER_HUNTER||ID_GFG_GHPG25_MULTICLASS_MONSTER_HUNTER))||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Martial weapons, Light armor, Medium armor, Shields</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			</rules>
+		</multiclass>
+	</element>
+
+	<element name="Level 1: Monster Grimoire" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_MONSTER_GRIMOIRE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_MONSTER_GRIMOIRE</requirements>
+		<description>
+			<p>You create or inherit a repository of knowledge known as a Monster Grimoire. Each Monster Hunter carries a grimoire, a manual on dangerous creatures. A Monster Hunter's grimoire is an object entirely unique to each hunter. It may be a leather tome recovered from a dusty library with notes made in the margins, a set of blood-stained scrolls inherited from a previous hunter, or a precious stone with a communing spirit held within.</p>
+			<p class="indent">If a Monster Hunter ever loses a grimoire, the hunter has retained enough knowledge to not suffer immediate drawbacks. However, the hunter can't add to the grimoire until it is restored and therefore can't take another Monster Hunter level until a lost grimoire has been replaced. A grimoire can be recreated by spending 8 hours and 50 GP worth of materials such as books, scrolls, and ink.</p>
+			<p class="indent">Choose two types of creatures that you are specialized in hunting from the following list: Aberrations, Beasts, Celestials, Constructs, Dragons, Elementals, Fey, Fiends, Giants, Monstrosities, Oozes, Plants, or Undead.</p>
+			<p class="indent">You add your Proficiency Bonus to Intelligence and Wisdom checks you make that relate to the creature types in your grimoire. For example, if Undead are in your grimoire, you add your Proficiency Bonus to an Intelligence (History) check to recall lore about an Undead creature you're investigating or a Wisdom (Medicine) check to identify claw marks left on a corpse by an Undead creature. If you are already proficient in a skill when asked to make an Intelligence or Wisdom ability check relating to the monster types in your grimoire, you add double your Proficiency Bonus instead.</p>
+			<p class="indent">When you gain this feature, you also learn one language based on the chart below. (You can add languages to this chart based on your own campaign world.)</p>
+			<table>
+				<thead>
+					<tr><td>Monster Type</td><td>Language</td></tr>
+				</thead>
+				<tr><td>Aberration</td><td>Deep Speech or Undercommon</td></tr>
+				<tr><td>Beast</td><td>Sylvan</td></tr>
+				<tr><td>Celestial</td><td>Celestial</td></tr>
+				<tr><td>Construct</td><td>Draconic</td></tr>
+				<tr><td>Dragon</td><td>Draconic</td></tr>
+				<tr><td>Elemental</td><td>Primordial</td></tr>
+				<tr><td>Fey</td><td>Sylvan</td></tr>
+				<tr><td>Fiend</td><td>Abyssal or Infernal</td></tr>
+				<tr><td>Giant</td><td>Giant</td></tr>
+				<tr><td>Monstrosity</td><td>Deep Speech</td></tr>
+				<tr><td>Ooze</td><td>Deep Speech or Undercommon</td></tr>
+				<tr><td>Plant</td><td>Sylvan</td></tr>
+				<tr><td>Undead</td><td>Abyssal or Infernal</td></tr>
+			</table>
+		</description>
+		<sheet alt="Monster Grimoire">
+			<description>You add your Proficiency Bonus to Intelligence and Wisdom checks related to the creature types in your grimoire (double your Proficiency Bonus if you are already proficient in the skill used).</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Monster Grimoire (Monster Hunter 1)" supports="Monster Grimoire" number="2" />
+		</rules>
+	</element>
+
+	<!-- Monster Grimoire Options -->
+	<element name="Aberration" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_GRIMOIRE_ABERRATION">
+		<supports>Monster Grimoire</supports>
+		<compendium display="false" />
+		<description>
+			<p>You add Aberrations to your Monster Grimoire. You learn Deep Speech or Undercommon.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Language (Aberration)" supports="ID_LANGUAGE_DEEP_SPEECH|ID_LANGUAGE_UNDERCOMMON" />
+		</rules>
+	</element>
+	<element name="Beast" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_GRIMOIRE_BEAST">
+		<supports>Monster Grimoire</supports>
+		<compendium display="false" />
+		<description>
+			<p>You add Beasts to your Monster Grimoire. You learn Sylvan.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+		</rules>
+	</element>
+	<element name="Celestial" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_GRIMOIRE_CELESTIAL">
+		<supports>Monster Grimoire</supports>
+		<compendium display="false" />
+		<description>
+			<p>You add Celestials to your Monster Grimoire. You learn Celestial.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+		</rules>
+	</element>
+	<element name="Construct" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_GRIMOIRE_CONSTRUCT">
+		<supports>Monster Grimoire</supports>
+		<compendium display="false" />
+		<description>
+			<p>You add Constructs to your Monster Grimoire. You learn Draconic.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+		</rules>
+	</element>
+	<element name="Dragon" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_GRIMOIRE_DRAGON">
+		<supports>Monster Grimoire</supports>
+		<compendium display="false" />
+		<description>
+			<p>You add Dragons to your Monster Grimoire. You learn Draconic.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+		</rules>
+	</element>
+	<element name="Elemental" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_GRIMOIRE_ELEMENTAL">
+		<supports>Monster Grimoire</supports>
+		<compendium display="false" />
+		<description>
+			<p>You add Elementals to your Monster Grimoire. You learn Primordial.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_PRIMORDIAL" />
+		</rules>
+	</element>
+	<element name="Fey" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_GRIMOIRE_FEY">
+		<supports>Monster Grimoire</supports>
+		<compendium display="false" />
+		<description>
+			<p>You add Fey to your Monster Grimoire. You learn Sylvan.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+		</rules>
+	</element>
+	<element name="Fiend" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_GRIMOIRE_FIEND">
+		<supports>Monster Grimoire</supports>
+		<compendium display="false" />
+		<description>
+			<p>You add Fiends to your Monster Grimoire. You learn Abyssal or Infernal.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Language (Fiend)" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_INFERNAL" />
+		</rules>
+	</element>
+	<element name="Giant" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_GRIMOIRE_GIANT">
+		<supports>Monster Grimoire</supports>
+		<compendium display="false" />
+		<description>
+			<p>You add Giants to your Monster Grimoire. You learn Giant.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_GIANT" />
+		</rules>
+	</element>
+	<element name="Monstrosity" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_GRIMOIRE_MONSTROSITY">
+		<supports>Monster Grimoire</supports>
+		<compendium display="false" />
+		<description>
+			<p>You add Monstrosities to your Monster Grimoire. You learn Deep Speech.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
+		</rules>
+	</element>
+	<element name="Ooze" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_GRIMOIRE_OOZE">
+		<supports>Monster Grimoire</supports>
+		<compendium display="false" />
+		<description>
+			<p>You add Oozes to your Monster Grimoire. You learn Deep Speech or Undercommon.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Language (Ooze)" supports="ID_LANGUAGE_DEEP_SPEECH|ID_LANGUAGE_UNDERCOMMON" />
+		</rules>
+	</element>
+	<element name="Plant" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_GRIMOIRE_PLANT">
+		<supports>Monster Grimoire</supports>
+		<compendium display="false" />
+		<description>
+			<p>You add Plants to your Monster Grimoire. You learn Sylvan.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+		</rules>
+	</element>
+	<element name="Undead" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_GRIMOIRE_UNDEAD">
+		<supports>Monster Grimoire</supports>
+		<compendium display="false" />
+		<description>
+			<p>You add Undead to your Monster Grimoire. You learn Abyssal or Infernal.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Language (Undead)" supports="ID_LANGUAGE_ABYSSAL|ID_LANGUAGE_INFERNAL" />
+		</rules>
+	</element>
+
+	<element name="Level 1: Weapon Mastery" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_WEAPON_MASTERY">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_WEAPON_MASTERY</requirements>
+		<description>
+			<p>Your training with weapons allows you to use the mastery properties of two kinds of weapons of your choice with which you have proficiency, such as Longbows and Longswords. Whenever you finish a Long Rest, you can practice weapon drills and change one of those weapon choices.</p>
+			<p class="indent">When you reach certain Monster Hunter levels, you gain the ability to use the mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Monster Hunter Features table.</p>
+		</description>
+		<sheet alt="Weapon Mastery">
+			<description>Whenever you finish a Long Rest, you can change one of the weapon masteries you have to a different one.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Weapon Mastery (Monster Hunter 1)" supports="Weapon Mastery" number="2" />
+			<select type="Class Feature" name="Weapon Mastery (Monster Hunter 5)" supports="Weapon Mastery" level="5" />
+			<select type="Class Feature" name="Weapon Mastery (Monster Hunter 11)" supports="Weapon Mastery" level="11" />
+			<select type="Class Feature" name="Weapon Mastery (Monster Hunter 17)" supports="Weapon Mastery" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 2: Fighting Style" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_FIGHTING_STYLE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_FIGHTING_STYLE</requirements>
+		<description>
+			<p>You gain a Fighting Style feat of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_FIGHTING_STYLE_FEATURE" />
+			<select type="Feat" name="Fighting Style (Monster Hunter 2)" supports="Fighting Style" />
+		</rules>
+	</element>
+
+	<element name="Level 2: Studied Response" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_STUDIED_RESPONSE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_STUDIED_RESPONSE</requirements>
+		<description>
+			<p>You have learned the most effective way to slay a monster is to strike its most vulnerable area at the right moment. Too early, and your attack glances away. Too late, and the monster may eviscerate you.</p>
+			<p class="indent">When a creature you can see within 60 feet of you targets you or another creature with a melee or ranged attack, you can take a Reaction before the attack roll to make one attack with a weapon or an Unarmed Strike against that creature. If the attack misses, you regain the use of your Reaction.</p>
+		</description>
+		<sheet alt="Studied Response" action="Reaction">
+			<description>When a creature you can see within 60 feet targets you or another creature with a melee or ranged attack, you can make one attack with a weapon or an Unarmed Strike against that creature before its attack roll. If your attack misses, you regain the use of your Reaction.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 3: Hunting Guild" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_HUNTING_GUILD">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_HUNTING_GUILD</requirements>
+		<description>
+			<p>You gain a Monster Hunter subclass of your choice. The Carver Guild, Devourer Guild, Occultist Guild, and Trapper Guild subclasses are detailed below. A subclass is a specialization that grants you features at certain Monster Hunter levels. The guild you choose grants you features when you reach Monster Hunter levels 3, 7, 10, 15, and 18.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Hunting Guild" supports="Hunting Guild" />
+		</rules>
+	</element>
+
+	<element name="Level 4: Ability Score Improvement" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_ABILITY_SCORE_IMPROVEMENT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_ABILITY_SCORE_IMPROVEMENT</requirements>
+		<compendium display="false" />
+		<description>
+			<p>You gain the Ability Score Improvement feat or another feat of your choice for which you qualify. You gain this feature again at Monster Hunter levels 8, 12, 16, and 19.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Ability Score Improvement (Monster Hunter 4)" level="4" />
+			<select type="Feat" name="Ability Score Improvement (Monster Hunter 8)" level="8" />
+			<select type="Feat" name="Ability Score Improvement (Monster Hunter 12)" level="12" />
+			<select type="Feat" name="Ability Score Improvement (Monster Hunter 16)" level="16" />
+		</rules>
+	</element>
+
+	<element name="Level 5: Expert Strike" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_EXPERT_STRIKE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_EXPERT_STRIKE</requirements>
+		<description>
+			<p>You learn the weaknesses of monsters so that you know exactly where to strike to inflict the most damage. You can add your Intelligence modifier to the attack and damage rolls of your weapons and Unarmed Strikes.</p>
+		</description>
+		<sheet>
+			<description>You can add +{{intelligence:modifier}} to the attack and damage rolls of your weapons and Unarmed Strikes</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Improved Monster Grimoire" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_IMPROVED_MONSTER_GRIMOIRE_6">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_IMPROVED_MONSTER_GRIMOIRE_6</requirements>
+		<description>
+			<p>You have expanded your Monster Grimoire with your experience and knowledge.</p>
+			<p class="indent">You can select a third creature type to add to your Monster Grimoire from the following list: Aberrations, Beasts, Celestials, Constructs, Dragons, Elementals, Fey, Fiends, Giants, Monstrosities, Oozes, Plants, or Undead. You can't choose a creature type you have chosen before. All the benefits you gain from your Monster Grimoire now also apply to this new type.</p>
+			<p class="indent">Additionally, your attack rolls with weapons and Unarmed Strikes against creature types in your Monster Grimoire can score a Critical Hit on a roll of 19 or 20 on the d20.</p>
+		</description>
+		<sheet alt="Improved Monster Grimoire">
+			<description>Your attack rolls with weapons and Unarmed Strikes against creature types in your Monster Grimoire can score a Critical Hit on a roll of 19 or 20 on the d20.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Monster Grimoire (Monster Hunter 6)" supports="Monster Grimoire" />
+		</rules>
+	</element>
+
+	<element name="Level 9: Knowledgeable Defense" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_KNOWLEDGEABLE_DEFENSE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_KNOWLEDGEABLE_DEFENSE</requirements>
+		<description>
+			<p>You can rely on your knowledge to anticipate a monster's actions and summon your best defense.</p>
+			<p class="indent">Whenever a creature type in your Monster Grimoire forces you to make a saving throw, you can make an Intelligence saving throw in place of that saving throw instead.</p>
+		</description>
+		<sheet alt="Knowledgeable Defense">
+			<description>Whenever a creature type in your Monster Grimoire forces you to make a saving throw, you can make an Intelligence saving throw in place of that saving throw instead.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Extra Attack" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_EXTRA_ATTACK">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_EXTRA_ATTACK</requirements>
+		<description>
+			<p>You can attack twice instead of once whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="extra attack:count" value="2" bonus="extra attack" />
+		</rules>
+	</element>
+
+	<element name="Level 13: Improved Monster Grimoire" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_IMPROVED_MONSTER_GRIMOIRE_13">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_IMPROVED_MONSTER_GRIMOIRE_13</requirements>
+		<description>
+			<p>Your Monster Grimoire is further expanded by your encounters and studies.</p>
+			<p class="indent">You can select a fourth creature type to add to your Monster Grimoire from the following list: Aberrations, Beasts, Constructs, Celestials, Dragons, Elementals, Fey, Fiends, Giants, Monstrosities, Oozes, Plants, or Undead. You can't choose a monster type you have chosen before. All the benefits you gain from your Monster Grimoire now also apply to this new monster type.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Monster Grimoire (Monster Hunter 13)" supports="Monster Grimoire" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Lair Sense" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_LAIR_SENSE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_LAIR_SENSE</requirements>
+		<description>
+			<p>You are experienced at navigating the threats that arise near a monster's lair. You have Advantage on saving throws and Resistance to the damage of lair actions and regional effects caused by creatures. In addition, you have Advantage on saving throws and Resistance to damage against the Legendary Actions of creature types in your Monster Grimoire.</p>
+		</description>
+		<sheet alt="Lair Sense">
+			<description>You have Advantage on saving throws and Resistance to the damage of lair actions and regional effects caused by creatures. In addition, you have Advantage on saving throws and Resistance to damage against the Legendary Actions of creature types in your Monster Grimoire.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Slayer's Aid" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_SLAYERS_AID">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_SLAYERS_AID</requirements>
+		<description>
+			<p>You're able to coordinate with your allies to quickly slay dangerous monsters.</p>
+			<p class="indent">When you use Studied Response, choose a Friendly creature that can see or hear you. That creature can use its Reaction to make one attack with a weapon or Unarmed Strike against the creature that triggered your Studied Response. If the ally does not have their Reaction, they regain it but then must use it to make the attack. Your ally's attack occurs after yours but before the target creature rolls its own attack. This ability refreshes at the start of your turn.</p>
+		</description>
+		<sheet alt="Slayer's Aid">
+			<description>When you use Studied Response, choose a Friendly creature that can see or hear you. That creature can use its Reaction to make one attack with a weapon or Unarmed Strike against the triggering creature. If they do not have their Reaction, they regain it but must use it to make the attack. Their attack occurs after yours but before the target's attack roll. This ability refreshes at the start of your turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 19: Epic Boon" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_EPIC_BOON">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_EPIC_BOON</requirements>
+		<description>
+			<p>You gain an Epic Boon feat or another feat of your choice for which you qualify.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat" name="Epic Boon (Monster Hunter 19)" level="19" />
+		</rules>
+	</element>
+
+	<element name="Level 20: Grave Strike" type="Class Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_CLASS_FEATURE_MONSTER_HUNTER_GRAVE_STRIKE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_GRAVE_STRIKE</requirements>
+		<description>
+			<p>You gain the ability to strike mortal blows against the creatures you have studied.</p>
+			<p class="indent">Your attack rolls with weapons and Unarmed Strikes against creature types in your Monster Grimoire can now score a Critical Hit on a roll of 18 through 20 on the d20.</p>
+			<p class="indent">When you score a Critical Hit against a creature type in your Monster Grimoire, the creature must make a Constitution saving throw. The DC equals the damage taken, up to a maximum DC of 30. On a failed save, the creature drops to 0 Hit Points. On a successful save, the creature takes the attack's normal damage.</p>
+			<p class="indent">You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Grave Strike" usage="{{grave strike:uses}}/Long Rest">
+			<description>Your attack rolls with weapons and Unarmed Strikes against creature types in your Monster Grimoire can score a Critical Hit on a roll of 18-20. When you score a Critical Hit against a creature type in your Monster Grimoire, the creature must make a Constitution saving throw (DC equals the damage taken, max 30) or drop to 0 Hit Points. On a successful save, the creature takes the attack's normal damage.</description>
+		</sheet>
+		<rules>
+			<stat name="grave strike:uses" value="1" bonus="base" />
+			<stat name="grave strike:uses" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<!-- Feature Replacement Grants -->
+	<element name="Monster Grimoire Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_MONSTER_GRIMOIRE" />
+	<element name="Weapon Mastery Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_WEAPON_MASTERY" />
+	<element name="Fighting Style Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_FIGHTING_STYLE" />
+	<element name="Studied Response Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_STUDIED_RESPONSE" />
+	<element name="Hunting Guild Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_HUNTING_GUILD" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_ABILITY_SCORE_IMPROVEMENT" />
+	<element name="Expert Strike Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_EXPERT_STRIKE" />
+	<element name="Improved Monster Grimoire 6 Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_IMPROVED_MONSTER_GRIMOIRE_6" />
+	<element name="Knowledgeable Defense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_KNOWLEDGEABLE_DEFENSE" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_EXTRA_ATTACK" />
+	<element name="Improved Monster Grimoire 13 Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_IMPROVED_MONSTER_GRIMOIRE_13" />
+	<element name="Lair Sense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_LAIR_SENSE" />
+	<element name="Slayer's Aid Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_SLAYERS_AID" />
+	<element name="Epic Boon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_EPIC_BOON" />
+	<element name="Grave Strike Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_MONSTER_HUNTER_GRAVE_STRIKE" />
+
+</elements>

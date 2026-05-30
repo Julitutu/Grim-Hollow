@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Physician Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-Physician.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Physician.xml" />
+		</update>
+	</info>
+
+	<!-- Physician -->
+	<element name="Physician" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_PHYSICIAN">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Dexterity, Intelligence, Wisdom</li>
+				<li><strong>Feat:</strong> Triage Expert</li>
+				<li><strong>Skill Proficiencies:</strong> Medicine and Nature</li>
+				<li><strong>Tool Proficiency:</strong> Herbalism Kit</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Dagger (scalpel), Healer’s Kit, Herbalism Kit, Bandages, Book of Remedies, Jar of Leeches, Robe, 10 GP; or (B) 50 GP</li>
+			</ul>
+			<p>Your skills treating the sick and injured have given you a vast knowledge of illnesses and remedies based on the latest science—or the most recent theories from those who like to push the limits of what science might allow.</p>
+			<p>You may have come into the field in a variety of ways and with a variety of specialties. You might have learned at an institute with the finest medical minds in all of Etharis. Or you might have learned your skills through trial and error, as the poor residents of the surrounding area come to you based on rumors of your preternatural healing powers that are rather mundane.</p>
+			<div class="reference">
+				<div element="ID_GFG_GHPG25_FEAT_TRIAGE_EXPERT" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Intelligence, Wisdom, Triage Expert Feat, Medicine and Nature Skills, Herbalism Kit</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_DEX_INT_WIS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_GFG_GHPG25_FEAT_TRIAGE_EXPERT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />	
+		</rules>
+	</element>
+</elements>

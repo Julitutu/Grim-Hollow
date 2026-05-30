@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Warrior of Pride</name>
+		<description>The Warrior of Pride subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="monk-pride.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/monk-pride.xml" />
+		</update>
+	</info>
+
+	<element name="Warrior of Pride" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_MONK_WARRIOR_OF_PRIDE">
+		<supports>Monk Subclass</supports>
+		<description>
+			<p class="flavor">Prove Your Superiority</p>
+			<p>Monks who become Warriors of Pride value themselves above all. These monks focus on mastering their form, ego, and their destructive power. They display monastic aesthetics publicly with the intention of gaining the respect and admiration of "lesser beings."</p>
+			<p class="indent">The prideful traditions of this order include adorning themselves with jewelry, hiding their scars, and commanding respect from those who would oppose them.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_TALL_TALES" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_BRUISED_EGO" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_ASSERTIVE_ATTACKER" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_IRRATIONAL_RETALIATION" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_REDOUBLED_EFFORTS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_EVER_PRIDEFUL" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_EGOTISTICAL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_TALL_TALES" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_BRUISED_EGO" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_ASSERTIVE_ATTACKER" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_IRRATIONAL_RETALIATION" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_REDOUBLED_EFFORTS" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_EVER_PRIDEFUL" level="11" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_EGOTISTICAL" level="17" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Tall Tales" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_TALL_TALES">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIDE_TALL_TALES</requirements>
+		<description>
+			<p>You have gained a knack for telling embellished tales of your past achievements. You gain proficiency in one of the following skills of your choice: Deception, Intimidation, Performance, or Persuasion.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Tall Tales)" supports="ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Bruised Ego" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_BRUISED_EGO">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIDE_BRUISED_EGO</requirements>
+		<description>
+			<p>Your ego strengthens you as you fight to prove your value. When you expend a Focus Point, you can also gain Temporary Hit Points equal to your Wisdom modifier (minimum of 1 Temporary Hit Point). While you are Bloodied, you gain twice that amount instead.</p>
+		</description>
+		<sheet alt="Bruised Ego">
+			<description>When you expend a Focus Point, you gain {{bruised ego:thp}} THP. If you are Bloodied, you gain {{bruised ego:thp:bloodied}} THP instead.</description>
+		</sheet>
+		<rules>
+			<stat name="bruised ego:thp" value="1" bonus="base" />
+			<stat name="bruised ego:thp" value="wisdom:modifier" bonus="base" />
+			<stat name="bruised ego:thp:bloodied" value="bruised ego:thp" />
+			<stat name="bruised ego:thp:bloodied" value="bruised ego:thp" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Assertive Attacker" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_ASSERTIVE_ATTACKER">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIDE_ASSERTIVE_ATTACKER</requirements>
+		<description>
+			<p>While you are Bloodied, you add your Wisdom modifier to the damage you deal with Unarmed Strikes and Monk weapons.</p>
+		</description>
+		<sheet alt="Assertive Attacker">
+			<description>While Bloodied, you add +{{wisdom:modifier}} to the damage of Unarmed Strikes and Monk weapons.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Irrational Retaliation" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_IRRATIONAL_RETALIATION">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIDE_IRRATIONAL_RETALIATION</requirements>
+		<description>
+			<p>Damage dealt to you is damage dealt to your pride, and that is something you simply can't allow. Whenever a creature deals damage to you, you can take a Reaction and expend 1 Focus Point. You have Advantage on attack rolls against that creature until the end of your next turn.</p>
+		</description>
+		<sheet alt="Irrational Retaliation" action="Reaction" usage="1 Focus Point">
+			<description>When a creature damages you, you can gain Advantage on attack rolls against it until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Redoubled Efforts" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_REDOUBLED_EFFORTS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIDE_REDOUBLED_EFFORTS</requirements>
+		<description>
+			<p>When you score a Critical Hit while you are Bloodied, you can roll one additional damage die when determining the extra damage dealt by the attack.</p>
+		</description>
+		<sheet alt="Redoubled Efforts">
+			<description>While Bloodied, your Critical Hits deal one extra damage die.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 11: Ever Prideful" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_EVER_PRIDEFUL">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIDE_EVER_PRIDEFUL</requirements>
+		<description>
+			<p>When you are reduced to 0 Hit Points and not killed outright, you can expend 1 Focus Point to enter a trance. While in this trance, you have the following effects:</p>
+			<ul>
+				<li>You are immune to the Unconscious condition.</li>
+				<li>You can't speak.</li>
+				<li>You can't cast or concentrate on spells.</li>
+				<li>You suffer 1 Death Saving Throw failure from damage from a Critical Hit instead of 2.</li>
+			</ul>
+			<p class="indent">Whenever you start your turn with 0 Hit Point, you must expend 1 Focus Point to maintain a trance, and you make Death Saving Throws as normal.</p>
+		</description>
+		<sheet alt="Ever Prideful" usage="1 Focus Point">
+			<description>When reduced to 0 HP (not killed outright), enter a trance: Immune to Unconscious, can't speak/cast/concentrate, and Critical Hits cause 1 Death Save failure instead of 2. Must expend 1 Focus Point at start of turn to maintain trance (still make Death Saves).</description>
+		</sheet>
+	</element>
+
+	<element name="Level 17: Egotistical" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIDE_EGOTISTICAL">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIDE_EGOTISTICAL</requirements>
+		<description>
+			<p>Injuries to your pride enrage you. You are considered Bloodied if your current Hit Points are below your Hit Point maximum.</p>
+		</description>
+		<sheet alt="Egotistical">
+			<description>You count as Bloodied whenever your HP is below your maximum.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Tall Tales Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIDE_TALL_TALES" />
+	<element name="Bruised Ego Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIDE_BRUISED_EGO" />
+	<element name="Assertive Attacker Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIDE_ASSERTIVE_ATTACKER" />
+	<element name="Irrational Retaliation Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIDE_IRRATIONAL_RETALIATION" />
+	<element name="Redoubled Efforts Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIDE_REDOUBLED_EFFORTS" />
+	<element name="Ever Prideful Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIDE_EVER_PRIDEFUL" />
+	<element name="Egotistical Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIDE_EGOTISTICAL" />
+</elements>

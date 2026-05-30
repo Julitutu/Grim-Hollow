@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-Exterminator.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Exterminator.xml" />
+		</update>
+	</info>
+
+	<!-- Exterminator -->
+	<element name="Exterminator" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_EXTERMINATOR">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Dexterity, Constitution, Intelligence</li>
+				<li><strong>Feat:</strong> Magic Initiate (Druid)</li>
+				<li><strong>Skill Proficiencies:</strong> Animal Handling and Medicine</li>
+				<li><strong>Tool Proficiency:</strong> Poisoner’s Kit</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Dagger, Poisoner’s Kit, Hunting Trap, Traveler’s Clothes, 8 GP; or (B) 50 GP</li>
+			</ul>
+			<p>Etharis is overrun with vermin, but you focus on the pests of the four-legged variety. In the cities these are generally rats and other rodents. In the country, the pests might come in the form of raccoons or other critters that steal food and destroy structures piece by piece.</p>
+			<p>You’ve trained in the arts of getting pests away from people and coin away from clients. You may run an honest business, helping farmers and shop owners eliminate potentially life-threatening pests. Or you may introduce those pests in the first place, then solve the problem you created, skipping town before your ploy is discovered.</p>
+			<div class="reference">
+				<div element="ID_WOTC_PHB24_FEAT_MAGIC_INITIATE" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Dexterity, Constitution, Intelligence, Magic Initiate (Druid) Feat, Animal Handling and Medicine Skills, Poisoner’s Kit</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_DEX_CON_INT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_WOTC_PHB24_FEAT_MAGIC_INITIATE_DRUID" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />	
+		</rules>
+	</element>
+</elements>

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Path of the Primal Spirit Subclass</name>
+		<description>Path of the Primal Spirit Subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="barbarian-pathoftheprimalspirit.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/barbarian-pathoftheprimalspirit.xml" />
+		</update>
+	</info>
+	
+	<element name="Path of the Primal Spirit" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_BARBARIAN_PRIMAL_SPIRIT">
+		<supports>Barbarian Subclass</supports>
+		<description>
+			<p class="flavor">Rage Alongside a Bestial Spirit</p>
+			<p>Many Barbarians are in tune with the natural world, but few are as mystically intertwined with it as those who walk the Path of the Primal Spirit. These Barbarians forge powerful connections with beasts and nature spirits, inspiring such ethereal beings to manifest and journey on far-flung adventures.</p>
+			<p class="indent">Barbarians who follow this path have a deep reverence for the cycle of the natural world. Such Barbarians are as likely to accept quests and pleas for aid from local wildlife as they are from people. This respect for animals and spirits doesn't cross into naivety—few understand the delicate balance between the needs of predator and prey better than those who walk the Path of the Primal Spirit.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_PRIMAL_COMPANION" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SHARED_RAGE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_KIN_TO_BEASTS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SKINRIDERS_TRANCE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SHAPE_OF_THE_WILD" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_PRIMAL_COMPANION" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SHARED_RAGE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_KIN_TO_BEASTS" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SKINRIDERS_TRANCE" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SHAPE_OF_THE_WILD" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Primal Companion" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_PRIMAL_COMPANION">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMAL_SPIRIT_PRIMAL_COMPANION</requirements>
+		<description>
+			<p>You magically summon a primal spirit that adopts the form of a beast and accompanies you on your adventures. Choose its stat block: Primal Guardian or Primal Striker. In addition, choose an environment that will modify the creature's stat block: Land, Sea, or Sky. You also determine the kind of animal it is, choosing a kind appropriate for the stat block. Whatever companion you choose, it bears eldritch markings indicating its otherworldly origin.</p>
+			<p class="indent">The companion is Friendly to you and your allies and obeys your commands. It vanishes if you die.</p>
+			<p class="indent"><strong><em>The Beast in Combat.</em></strong> In combat, the companion acts during your turn. It can move and use its Reaction on its own, but the only action it takes is the Dodge action unless you take a Bonus Action to command it to take an action in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the beast to take the Beast's Strike action. If you have the Incapacitated condition, the companion acts on its own and isn't limited to the Dodge action.</p>
+			<p class="indent"><strong><em>Restoring or Replacing the Beast.</em></strong> If the companion has died within the last hour, you can take a Magic action to touch it and expend a use of your Rage. The companion returns to life immediately with all its Hit Points restored.</p>
+			<p class="indent">Whenever you finish a Long Rest, you can summon a different primal companion, which appears in an unoccupied space within 5 feet of you. You choose its stat block and appearance. If you already have a beast from this feature, the old one vanishes when the new one appears.</p>
+		</description>
+		<sheet alt="Primal Companion">
+			<description>You magically summon a primal spirit (Guardian or Striker; Land, Sea, or Sky). It obeys your commands and acts during your turn. It takes the Dodge action unless you use a Bonus Action to command it, or sacrifice one of your attacks to command it to take the Beast's Strike action. If you are Incapacitated, it acts on its own.&#13;
+			If it died within the last hour, you can use a Magic action and expend 1 Rage use to revive it with full HP. You can summon a different companion at the end of a Long Rest.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Primal Companion" supports="ID_GFG_GHPG25_COMPANION_PRIMAL_GUARDIAN_LAND|ID_GFG_GHPG25_COMPANION_PRIMAL_GUARDIAN_SEA|ID_GFG_GHPG25_COMPANION_PRIMAL_GUARDIAN_SKY|ID_GFG_GHPG25_COMPANION_PRIMAL_STRIKER_LAND|ID_GFG_GHPG25_COMPANION_PRIMAL_STRIKER_SEA|ID_GFG_GHPG25_COMPANION_PRIMAL_STRIKER_SKY" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Shared Rage" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SHARED_RAGE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMAL_SPIRIT_SHARED_RAGE</requirements>
+		<description>
+			<p>While your Rage is active, your primal companion has Resistance to Bludgeoning, Piercing, and Slashing damage.</p>
+		</description>
+		<sheet alt="Shared Rage">
+			<description>While your Rage is active, your primal companion has Resistance to Bludgeoning, Piercing, and Slashing damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 6: Kin to Beasts" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_KIN_TO_BEASTS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMAL_SPIRIT_KIN_TO_BEASTS</requirements>
+		<description>
+			<p>You always have the Animal Friendship and Speak with Animals spells prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Short or Long Rest. You can also cast these spells using spell slots you have of the appropriate level. Constitution is your spellcasting ability for them.</p>
+		</description>
+		<sheet alt="Kin to Beasts" usage="1 each/Rest">
+			<description>You can cast Animal Friendship and Speak with Animals without expending a spell slot. Constitution is your spellcasting ability for them.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_ANIMAL_FRIENDSHIP" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPEAK_WITH_ANIMALS" />
+		</rules>
+	</element>
+
+	<element name="Level 10: Skinrider's Trance" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SKINRIDERS_TRANCE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMAL_SPIRIT_SKINRIDERS_TRANCE</requirements>
+		<description>
+			<p>You take a Magic action to enter a trance and choose your primal companion or one Beast currently under the effect of your Animal Friendship spell within 60 feet of yourself. For the duration of this trance, you possess the chosen creature.</p>
+			<p class="indent">Once you possess a creature's body, you control it. Your Hit Points, Hit Point Dice, Strength, Dexterity, Constitution, Speed, and senses are replaced by the creature's. You otherwise keep your game statistics. This possession ends if you choose to exit the trance (no action required by you), if the Beast you're possessing is reduced to 0 Hit Points, or if you and the Beast are on different planes of existence.</p>
+			<p class="indent">While in this trance, your body falls into a catatonic state. You can't move or take Reactions, and you're unaware of your surroundings. You can remain in the trance for a number of hours up to half your Barbarian level plus your Constitution modifier.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending one use of your Rage (no action required).</p>
+		</description>
+		<sheet alt="Skinrider's Trance" action="Action" usage="1/Long Rest">
+			<description>You enter a trance to possess your primal companion or a Beast under your Animal Friendship spell within 60 ft. You control it, replacing your HP, HD, Str, Dex, Con, Speed, and senses with its own. Your body is catatonic. Lasts up to {{skinriders trance:duration}} hours. Ends if you exit (no action), the Beast drops to 0 HP, or you are on different planes.&#13;
+			You can expend 1 Rage use to restore a use of this feature.</description>
+		</sheet>
+		<rules>
+			<stat name="skinriders trance:duration" value="level:barbarian:half" />
+			<stat name="skinriders trance:duration" value="constitution:modifier" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Shape of the Wild" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PRIMAL_SPIRIT_SHAPE_OF_THE_WILD">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMAL_SPIRIT_SHAPE_OF_THE_WILD</requirements>
+		<description>
+			<p>As a Bonus Action, you can choose a new form for your primal companion, causing it to transform instantaneously. When you cause your primal companion to transform in this way, its current Hit Points change to its new Hit Point maximum.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Short or Long Rest. You can also restore your use of it by expending one use of your Rage (no action required).</p>
+		</description>
+		<sheet alt="Shape of the Wild" action="Bonus Action" usage="1/Short Rest">
+			<description>You can choose a new form for your primal companion, transforming it instantly. Its current HP changes to its new HP maximum.&#13;
+			You can expend 1 Rage use to restore a use of this feature.</description>
+		</sheet>
+	</element>
+
+	<!-- Primal Companion Stat Blocks -->
+	<!-- Guardian Land -->
+	<element name="Primal Guardian (Land)" type="Companion" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_PRIMAL_GUARDIAN_LAND">
+		<compendium display="false" />
+		<setters>
+			<set name="size">Medium</set>
+			<set name="type">Beast</set>
+			<set name="alignment">Neutral</set>
+			<set name="ac">12 + your Constitution modifier</set>
+			<set name="hp">6 + six times your Barbarian level (the beast has Hit Dice [d10s] equal to your Barbarian level)</set>
+			<set name="speed">30 ft.</set>
+			<set name="strength">15</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">16</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">6</set>
+			<set name="senses">Darkvision 60 ft., Passive Perception 11</set>
+			<set name="languages">Understands the languages you know</set>
+			<set name="challenge">—</set>
+			<set name="traits">ID_GFG_GHPG25_COMPANION_TRAIT_PROTECTIVE_INSTINCT,ID_GFG_GHPG25_COMPANION_TRAIT_VIGILANT,ID_GFG_GHPG25_COMPANION_TRAIT_WILD_BOND</set>
+			<set name="actions">ID_GFG_GHPG25_COMPANION_ACTION_GUARDIAN_NATURAL_WEAPON</set>
+			<set name="reactions">ID_GFG_GHPG25_COMPANION_REACTION_BODY_BLOCK</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" bonus="base" />
+			<stat name="companion:ac" value="constitution:modifier" bonus="ability" />
+			<stat name="companion:hp:max" value="6" bonus="base" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
+			<grant type="Companion Trait" id="ID_GFG_GHPG25_COMPANION_TRAIT_WILD_BOND" />
+		</rules>
+	</element>
+	<!-- Guardian Sea -->
+	<element name="Primal Guardian (Sea)" type="Companion" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_PRIMAL_GUARDIAN_SEA">
+		<compendium display="false" />
+		<setters>
+			<set name="size">Large</set>
+			<set name="type">Beast</set>
+			<set name="alignment">Neutral</set>
+			<set name="ac">12 + your Constitution modifier</set>
+			<set name="hp">6 + six times your Barbarian level (the beast has Hit Dice [d10s] equal to your Barbarian level)</set>
+			<set name="speed">30 ft., Swim 40 ft.</set>
+			<set name="strength">15</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">16</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">6</set>
+			<set name="senses">Darkvision 60 ft., Passive Perception 11</set>
+			<set name="languages">Understands the languages you know</set>
+			<set name="challenge">—</set>
+			<set name="traits">ID_GFG_GHPG25_COMPANION_TRAIT_PROTECTIVE_INSTINCT,ID_GFG_GHPG25_COMPANION_TRAIT_VIGILANT,ID_GFG_GHPG25_COMPANION_TRAIT_WILD_BOND</set>
+			<set name="actions">ID_GFG_GHPG25_COMPANION_ACTION_GUARDIAN_NATURAL_WEAPON</set>
+			<set name="reactions">ID_GFG_GHPG25_COMPANION_REACTION_BODY_BLOCK</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" bonus="base" />
+			<stat name="companion:ac" value="constitution:modifier" bonus="ability" />
+			<stat name="companion:hp:max" value="6" bonus="base" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:speed:swim" value="40" bonus="base" />
+			<stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
+			<grant type="Companion Trait" id="ID_GFG_GHPG25_COMPANION_TRAIT_WILD_BOND" />
+		</rules>
+	</element>
+	<!-- Guardian Sky -->
+	<element name="Primal Guardian (Sky)" type="Companion" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_PRIMAL_GUARDIAN_SKY">
+		<compendium display="false" />
+		<setters>
+			<set name="size">Medium</set>
+			<set name="type">Beast</set>
+			<set name="alignment">Neutral</set>
+			<set name="ac">12 + your Constitution modifier</set>
+			<set name="hp">6 + six times your Barbarian level (the beast has Hit Dice [d10s] equal to your Barbarian level)</set>
+			<set name="speed">30 ft., Fly 40 ft.</set>
+			<set name="strength">15</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">16</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">6</set>
+			<set name="senses">Darkvision 60 ft., Passive Perception 11</set>
+			<set name="languages">Understands the languages you know</set>
+			<set name="challenge">—</set>
+			<set name="traits">ID_GFG_GHPG25_COMPANION_TRAIT_PROTECTIVE_INSTINCT,ID_GFG_GHPG25_COMPANION_TRAIT_VIGILANT,ID_GFG_GHPG25_COMPANION_TRAIT_WILD_BOND</set>
+			<set name="actions">ID_GFG_GHPG25_COMPANION_ACTION_GUARDIAN_NATURAL_WEAPON</set>
+			<set name="reactions">ID_GFG_GHPG25_COMPANION_REACTION_BODY_BLOCK</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" bonus="base" />
+			<stat name="companion:ac" value="constitution:modifier" bonus="ability" />
+			<stat name="companion:hp:max" value="6" bonus="base" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:speed:fly" value="40" bonus="base" />
+			<stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
+			<grant type="Companion Trait" id="ID_GFG_GHPG25_COMPANION_TRAIT_WILD_BOND" />
+		</rules>
+	</element>
+
+	<!-- Striker Land -->
+	<element name="Primal Striker (Land)" type="Companion" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_PRIMAL_STRIKER_LAND">
+		<compendium display="false" />
+		<setters>
+			<set name="size">Medium</set>
+			<set name="type">Beast</set>
+			<set name="alignment">Neutral</set>
+			<set name="ac">12 + your Constitution modifier</set>
+			<set name="hp">5 + four times your Barbarian level (the beast has Hit Dice [d6s] equal to your Barbarian level)</set>
+			<set name="speed">40 ft.</set>
+			<set name="strength">15</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">7</set>
+			<set name="senses">Darkvision 60 ft., Passive Perception 11</set>
+			<set name="languages">Understands the languages you know</set>
+			<set name="challenge">—</set>
+			<set name="traits">ID_GFG_GHPG25_COMPANION_TRAIT_ENRAGED_STRIKES,ID_GFG_GHPG25_COMPANION_TRAIT_WILD_BOND</set>
+			<set name="actions">ID_GFG_GHPG25_COMPANION_ACTION_STRIKER_NATURAL_WEAPON</set>
+			<set name="reactions">ID_GFG_GHPG25_COMPANION_REACTION_HARRY</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" bonus="base" />
+			<stat name="companion:ac" value="constitution:modifier" bonus="ability" />
+			<stat name="companion:hp:max" value="5" bonus="base" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
+			<grant type="Companion Trait" id="ID_GFG_GHPG25_COMPANION_TRAIT_WILD_BOND" />
+		</rules>
+	</element>
+	<!-- Striker Sea -->
+	<element name="Primal Striker (Sea)" type="Companion" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_PRIMAL_STRIKER_SEA">
+		<compendium display="false" />
+		<setters>
+			<set name="size">Medium</set>
+			<set name="type">Beast</set>
+			<set name="alignment">Neutral</set>
+			<set name="ac">12 + your Constitution modifier</set>
+			<set name="hp">5 + four times your Barbarian level (the beast has Hit Dice [d6s] equal to your Barbarian level)</set>
+			<set name="speed">40 ft., Swim 60 ft.</set>
+			<set name="strength">15</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">7</set>
+			<set name="senses">Darkvision 60 ft., Passive Perception 11</set>
+			<set name="languages">Understands the languages you know</set>
+			<set name="challenge">—</set>
+			<set name="traits">ID_GFG_GHPG25_COMPANION_TRAIT_AQUATIC_ASSAULT,ID_GFG_GHPG25_COMPANION_TRAIT_ENRAGED_STRIKES,ID_GFG_GHPG25_COMPANION_TRAIT_WILD_BOND</set>
+			<set name="actions">ID_GFG_GHPG25_COMPANION_ACTION_STRIKER_NATURAL_WEAPON</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" bonus="base" />
+			<stat name="companion:ac" value="constitution:modifier" bonus="ability" />
+			<stat name="companion:hp:max" value="5" bonus="base" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:speed:swim" value="60" bonus="base" />
+			<stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
+			<grant type="Companion Trait" id="ID_GFG_GHPG25_COMPANION_TRAIT_WILD_BOND" />
+		</rules>
+	</element>
+	<!-- Striker Sky -->
+	<element name="Primal Striker (Sky)" type="Companion" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_PRIMAL_STRIKER_SKY">
+		<compendium display="false" />
+		<setters>
+			<set name="size">Medium</set>
+			<set name="type">Beast</set>
+			<set name="alignment">Neutral</set>
+			<set name="ac">12 + your Constitution modifier</set>
+			<set name="hp">5 + four times your Barbarian level (the beast has Hit Dice [d6s] equal to your Barbarian level)</set>
+			<set name="speed">40 ft., Fly 60 ft.</set>
+			<set name="strength">15</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">4</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">7</set>
+			<set name="senses">Darkvision 60 ft., Passive Perception 11</set>
+			<set name="languages">Understands the languages you know</set>
+			<set name="challenge">—</set>
+			<set name="traits">ID_GFG_GHPG25_COMPANION_TRAIT_FLYBY,ID_GFG_GHPG25_COMPANION_TRAIT_ENRAGED_STRIKES,ID_GFG_GHPG25_COMPANION_TRAIT_WILD_BOND</set>
+			<set name="actions">ID_GFG_GHPG25_COMPANION_ACTION_STRIKER_NATURAL_WEAPON</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" bonus="base" />
+			<stat name="companion:ac" value="constitution:modifier" bonus="ability" />
+			<stat name="companion:hp:max" value="5" bonus="base" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:hp:max" value="level:barbarian" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:speed:fly" value="60" bonus="base" />
+			<stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:proficiency" value="-2" bonus="base companion PB removal"/>
+			<grant type="Companion Trait" id="ID_GFG_GHPG25_COMPANION_TRAIT_WILD_BOND" />
+		</rules>
+	</element>
+
+	<!-- Companion Traits & Actions -->
+	<element name="Protective Instinct" type="Companion Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_TRAIT_PROTECTIVE_INSTINCT">
+		<description>
+			<p>When the guardian becomes Bloodied, it gains Temporary Hit Points equal to half of its maximum Hit Points and is enraged for 10 minutes. While enraged, Hostile creatures within 5 feet have Disadvantage on attack rolls against creatures other than the guardian.</p>
+		</description>
+		<sheet>
+			<description>When the guardian becomes Bloodied, it gains THP equal to half of its maximum HP and is enraged for 10 minutes. While enraged, Hostile creatures within 5 feet have Disadvantage on attack rolls against creatures other than the guardian.</description>
+		</sheet>
+	</element>
+	<element name="Vigilant" type="Companion Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_TRAIT_VIGILANT">
+		<description>
+			<p>The guardian can't be surprised.</p>
+		</description>
+		<sheet>
+			<description>The guardian can't be surprised.</description>
+		</sheet>
+	</element>
+	<element name="Wild Bond" type="Companion Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_TRAIT_WILD_BOND">
+		<description>
+			<p>Add your Proficiency Bonus to any ability check, attack roll, or saving throw the beast makes.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="companion:acrobatics:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:animal handling:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:arcana:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:athletics:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:deception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:history:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:insight:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:intimidation:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:investigation:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:medicine:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:nature:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:performance:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:persuasion:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:religion:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:sleight of hand:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:survival:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:strength:save:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Aquatic Assault" type="Companion Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_TRAIT_AQUATIC_ASSAULT">
+		<description>
+			<p>While the beast is submerged in water, it has Advantage on attack rolls against creatures without a Swim Speed submerged in water.</p>
+		</description>
+		<sheet>
+			<description>While the beast is submerged in water, it has Advantage on attack rolls against creatures without a Swim Speed submerged in water.</description>
+		</sheet>
+	</element>
+	<element name="Enraged Strikes" type="Companion Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_TRAIT_ENRAGED_STRIKES">
+		<description>
+			<p>While your Rage is active, the beast's attack rolls have Advantage.</p>
+		</description>
+		<sheet>
+			<description>While your Rage is active, the beast's attack rolls have Advantage.</description>
+		</sheet>
+	</element>
+	<element name="Flyby" type="Companion Trait" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_TRAIT_FLYBY">
+		<description>
+			<p>The beast doesn't provoke Opportunity Attacks when it flies out of an enemy's reach.</p>
+		</description>
+		<sheet>
+			<description>The beast doesn't provoke Opportunity Attacks when it flies out of an enemy's reach.</description>
+		</sheet>
+	</element>
+	<element name="Natural Weapon" type="Companion Action" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_ACTION_GUARDIAN_NATURAL_WEAPON">
+		<description>
+			<p><i>Melee Attack Roll:</i> Bonus equals your attack modifier using Strength, reach 5 ft. <i>Hit:</i> 1d4 + 2 plus your Rage Damage bonus Bludgeoning, Piercing, or Slashing damage (your choice when you summon the beast).</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: Your attack modifier using Strength to hit, reach 5 ft. Hit: 1d4 + 2 + {{barbarian rage:damage}} Bludgeoning, Piercing, or Slashing damage (your choice at summon).</description>
+		</sheet>
+	</element>
+	<element name="Natural Weapon" type="Companion Action" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_ACTION_STRIKER_NATURAL_WEAPON">
+		<description>
+			<p><i>Melee Attack Roll:</i> Bonus equals your attack modifier using Strength, reach 5 ft. <i>Hit:</i> 1d8 + 2 plus your Rage Damage bonus Bludgeoning, Piercing, or Slashing damage (your choice when you summon the beast).</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: Your attack modifier using Strength to hit, reach 5 ft. Hit: 1d8 + 2 + {{barbarian rage:damage}} Bludgeoning, Piercing, or Slashing damage (your choice at summon).</description>
+		</sheet>
+	</element>
+	<element name="Body Block" type="Companion Reaction" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_REACTION_BODY_BLOCK">
+		<description>
+			<p><i>Trigger:</i> When a creature the beast can see attacks a target other than itself that is within 5 feet of it. <i>Response:</i> The guardian takes the damage instead of the target.</p>
+		</description>
+		<sheet>
+			<description>Trigger: When a creature the beast can see attacks a target other than itself that is within 5 feet of it. Response: The guardian takes the damage instead of the target.</description>
+		</sheet>
+	</element>
+	<element name="Harry" type="Companion Reaction" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_COMPANION_REACTION_HARRY">
+		<description>
+			<p><i>Trigger:</i> When a creature the beast can see within 5 feet of it makes an attack roll. <i>Response:</i> The triggering attack roll has Advantage.</p>
+		</description>
+		<sheet>
+			<description>Trigger: When a creature the beast can see within 5 feet of it makes an attack roll. Response: The triggering attack roll has Advantage.</description>
+		</sheet>
+	</element>
+
+	<!-- Feature Replacement Grants -->
+	<element name="Primal Companion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMAL_SPIRIT_PRIMAL_COMPANION" />
+	<element name="Shared Rage Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMAL_SPIRIT_SHARED_RAGE" />
+	<element name="Kin to Beasts Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMAL_SPIRIT_KIN_TO_BEASTS" />
+	<element name="Skinrider's Trance Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMAL_SPIRIT_SKINRIDERS_TRANCE" />
+	<element name="Shape of the Wild Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PRIMAL_SPIRIT_SHAPE_OF_THE_WILD" />
+</elements>

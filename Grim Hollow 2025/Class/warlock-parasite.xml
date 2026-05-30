@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>The Parasite Patron</name>
+		<description>The Parasite Patron subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="warlock-parasite.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/warlock-parasite.xml" />
+		</update>
+	</info>
+
+	<element name="The Parasite Patron" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_WARLOCK_THE_PARASITE">
+		<supports>Warlock Subclass</supports>
+		<description>
+			<p class="flavor">Become One with a Cosmic Being</p>
+			<p>Your patron is a cosmic parasite, draining the vitality of entire peoples and worlds. Upon forging a pact with such a patron, you become host to one of its nascent offspring. As you grow in power, the boundary between your identity and the parasitic larva within blurs.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PARASITE_SPELL_SIPHON" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PARASITE_PHYSICAL_SPECIMEN" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PARASITE_SYMBIOTIC_SENTINEL" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PARASITE_SPAWN_PAWN" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PARASITE_LARVAL_REGENERATION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PARASITE_SPELL_SIPHON" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PARASITE_PHYSICAL_SPECIMEN" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PARASITE_SYMBIOTIC_SENTINEL" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PARASITE_SPAWN_PAWN" level="10" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PARASITE_LARVAL_REGENERATION" level="14" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Spell Siphon" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PARASITE_SPELL_SIPHON">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PARASITE_SPELL_SIPHON</requirements>
+		<description>
+			<p>Your patron has taught you to siphon magic from your enemies and make it your own. Immediately after a creature you can see within 60 feet of you casts a spell, you can take a Reaction to force the creature to make a Charisma saving throw. The DC equals your spell save DC. On a failed save, that creature can't cast a spell again until 8 hours have passed. While this effect lasts, if the spell was at least level 1 and of a level you can cast, you have that spell prepared.</p>
+			<p class="indent">The maximum number of spell levels you can have siphoned at once equals 1 plus your Charisma modifier (minimum of 1). If you have the Incapacitated condition or die, you lose all siphoned spells. When you finish a Long Rest, you lose all siphoned spells.</p>
+		</description>
+		<sheet alt="Spell Siphon" action="Reaction">
+			<description>When a creature within 60 ft casts a spell, force a DC{{warlock:spellcasting:dc}} Cha save. Fail: It can't cast spells for 8 hrs. If the spell was level 1+ and you can cast it, you have it prepared for the duration.&#13;
+			Max siphoned spell levels at once: {{spell siphon:max levels}}. You lose siphoned spells if Incapacitated, die, or finish a Long Rest.</description>
+		</sheet>
+		<rules>
+			<stat name="spell siphon:max levels" value="1" bonus="base" />
+			<stat name="spell siphon:max levels" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Physical Specimen" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PARASITE_PHYSICAL_SPECIMEN">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PARASITE_PHYSICAL_SPECIMEN</requirements>
+		<description>
+			<p>Your patron has enhanced your physical form to improve your utility as a host and pawn. As a Bonus Action, once per Long Rest, choose a number of the following benefits up to your Charisma modifier (minimum of one) that lasts until you finish a Long Rest. Whenever you finish a Short Rest, you can choose one of your selected benefits and replace it with another from this list.</p>
+			<ul>
+				<li>Your Hit Point maximum increases by an amount equal to your Warlock level.</li>
+				<li>You gain Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.</li>
+				<li>You Speed increases by 5 feet.</li>
+				<li>You have Advantage on saving throws to avoid or end the Poisoned condition.</li>
+				<li>Your jump distance is tripled, and you gain a Climb Speed equal to your Speed.</li>
+				<li>Add your Charisma modifier to your Strength (Athletics) check or Dexterity (Acrobatics) checks.</li>
+			</ul>
+		</description>
+		<sheet alt="Physical Specimen" action="Bonus Action" usage="1/Long Rest">
+			<description>Choose up to {{physical specimen:benefits}} benefits until a Long Rest. On a Short Rest, you can replace one benefit with another.&#13;
+			• HP max increases by {{level:warlock}}.&#13;
+			• Darkvision 60 ft (or +60 ft).&#13;
+			• Speed +5 ft.&#13;
+			• Adv. on saves vs Poisoned.&#13;
+			• Jump distance tripled, Climb Speed = Speed.&#13;
+			• Add +{{charisma:modifier}} to Athletics/Acrobatics checks.</description>
+		</sheet>
+		<rules>
+			<stat name="physical specimen:benefits" value="1" bonus="base" />
+			<stat name="physical specimen:benefits" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Symbiotic Sentinel" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PARASITE_SYMBIOTIC_SENTINEL">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PARASITE_SYMBIOTIC_SENTINEL</requirements>
+		<description>
+			<p>Your patron remains alert to threats to its host at all times. You can't be surprised and you have Advantage on Initiative rolls. You also have Advantage on saving throws to avoid or end the Charmed and Frightened conditions.</p>
+		</description>
+		<sheet alt="Symbiotic Sentinel">
+			<description>You can't be surprised. You have Advantage on Initiative rolls and on saves vs Charmed/Frightened.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 10: Spawn Pawn" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PARASITE_SPAWN_PAWN">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PARASITE_SPAWN_PAWN</requirements>
+		<description>
+			<p>You always have the Dominate Person spell prepared. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a Long Rest.</p>
+			<p class="indent">In addition, taking damage can't break your Concentration on Dominate Person. When a creature succeeds on its saving throw, it takes Psychic damage equal to your Warlock level.</p>
+		</description>
+		<sheet alt="Spawn Pawn" usage="1/Long Rest">
+			<description>You can cast Dominate Person without a spell slot. Damage doesn't break Concentration on it. If a creature succeeds on its save against it, it takes {{level:warlock}} Psychic damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DOMINATE_PERSON" spellcasting="Warlock" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Larval Regeneration" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_PARASITE_LARVAL_REGENERATION">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PARASITE_LARVAL_REGENERATION</requirements>
+		<description>
+			<p>When you die, a larval parasite bursts from your corpse. You control the parasite. The parasite uses the Rat stat block except it has your Hit Points; Hit Point Dice; Intelligence, Wisdom, and Charisma scores; class features; languages; and feats. It can't cast spells. In addition, it has the following ability:</p>
+			<p class="indent"><strong><em>Burrowing Possession.</em></strong> As a Magic action, the parasite can cause a Humanoid within 5 feet of it to make a Strength or Dexterity saving throw (your choice) against your Warlock spell save DC. On a failed save, the parasite burrows into the creature, dealing Piercing damage equal to your Warlock level. While burrowed inside a creature, the parasite can't take any action, Bonus Action, or Reaction, has Total Cover, and has Immunity to all damage except Psychic damage.</p>
+			<p class="indent">On each of the creature's subsequent turns, it can use its action to make a Constitution saving throw against your Warlock spell save DC. If the creature succeeds, the parasite is ejected from its body and into an unoccupied space of the creature's choice within 5 feet of it. If the parasite is burrowed inside the creature when the creature's turn ends, the creature takes Necrotic damage equal to twice your Warlock level. If this damage reduces the creature to 0 Hit Points, it immediately dies, the parasite disappears, and you take over the body of the Humanoid as if you had been targeted by the Reincarnate spell and rolled the species the Humanoid had been.</p>
+			<p class="indent">If you are returned to life, such as by the Revivify spell, your parasite immediately disappears.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Larval Regeneration" usage="1/Long Rest">
+			<description>When you die, you control a larval parasite (Rat stat block, your HP/HD/Int/Wis/Cha/features/languages/feats, can't cast spells).&#13;
+			Burrowing Possession (Magic Action): Target Humanoid within 5 ft makes a DC{{warlock:spellcasting:dc}} Str/Dex save. Fail: Parasite burrows in, dealing {{level:warlock}} Piercing. While burrowed, parasite has Total Cover, Immunity to all but Psychic damage, and can't take actions.&#13;
+			Target can use an action to make a DC{{warlock:spellcasting:dc}} Con save to eject it. If burrowed at end of target's turn, target takes {{larval regeneration:damage}} Necrotic damage. If reduced to 0 HP, target dies, parasite vanishes, and you take over the body (as Reincarnate).</description>
+		</sheet>
+		<rules>
+			<stat name="larval regeneration:damage" value="level:warlock" />
+			<stat name="larval regeneration:damage" value="level:warlock" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Spell Siphon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PARASITE_SPELL_SIPHON" />
+	<element name="Physical Specimen Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PARASITE_PHYSICAL_SPECIMEN" />
+	<element name="Symbiotic Sentinel Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PARASITE_SYMBIOTIC_SENTINEL" />
+	<element name="Spawn Pawn Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PARASITE_SPAWN_PAWN" />
+	<element name="Larval Regeneration Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_PARASITE_LARVAL_REGENERATION" />
+
+</elements>

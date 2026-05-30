@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-Executioner.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-Executioner.xml" />
+		</update>
+	</info>
+    
+    <!-- Executioner -->
+	<element name="Executioner" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_EXECUTIONER">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Strength, Constitution, Intelligence</li>
+				<li><strong>Feat:</strong> Deathbound</li>
+				<li><strong>Skill Proficiencies:</strong> Athletics and Medicine</li>
+				<li><strong>Tool Proficiency:</strong> Smith’s Tools</li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Dagger, Smith’s Tools, Someone Else’s Journal, Traveler’s Clothes, 10 GP; or (B) 50 GP</li>
+			</ul>
+			<p>You were employed as an executioner by some group or organization in a position of power. Your legally sanctioned murders have given you a strong arm and a knowledge of death and fatal blows.</p>
+			<p>You may have worked for the Crimson Court, dispatching those who work against the nobility (if their blood is not worth draining). You may have worked for the Arcanist Inquisition, putting unrepentant mages to death. You may have carried out sanctioned sacrifices for the Prismatic Circle.</p>
+			<p>For some reason, you left your career: maybe you were wracked by guilt, maybe the group you worked for fell out of power, maybe you displeased your bosses, or maybe you decided to move on to a different occupation. But your actions have stayed with you, and your time as a dealer of death have made a lasting impact.</p>
+			<div class="reference">
+				<div element="ID_GFG_GHPG25_FEAT_DEATHBOUND" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Strength, Constitution, Intelligence, Deathbound Feat, Athletics and Medicine Skills, Smith’s Tools</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_STR_CON_INT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_GFG_GHPG25_FEAT_DEATHBOUND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />	
+		</rules>
+	</element>
+</elements>

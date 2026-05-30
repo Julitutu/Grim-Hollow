@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Grim Hollow: Player's Guide (2025) Backgrounds</name>
+		<description>Released Thrall Backgrounds from the Grim Hollow: Player's Guide (2025).</description>
+		<author>Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="background-ReleasedThrall.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Backgrounds/background-ReleasedThrall.xml" />
+		</update>
+	</info>
+
+	<!-- Released Thrall -->
+	<element name="Released Thrall" type="Background" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_BACKGROUND_RELEASED_THRALL">
+		<description>
+			<ul class="unstyled" style="text-indent:-1em; margin-left:1em; margin-bottom:5px">
+				<li><strong>Ability Scores:</strong> Constitution, Intelligence, Wisdom</li>
+				<li><strong>Feat:</strong> Survivor</li>
+				<li><strong>Skill Proficiencies:</strong> Perception and Stealth</li>
+				<li><strong>Tool Proficiency:</strong><i> Choose one kind of Artisan’s Tools</i></li>
+				<li><strong>Equipment:</strong><i> Choose A or B:</i> (A) Dagger, Artisan’s Tools (same as above), Bag of Trinkets from your travels, Traveler’s Clothes, 8 GP; or (B) 50 GP</li>
+			</ul>
+			<p>Valikan raiders search for many things: food, goods, weapons, and thralls. You were one of those taken by the clans because you had skills that the clan lacked in their cold northern home. Once you arrived, you were given a choice: join the clan or find your own way home. You chose the latter.</p>
+			<p>You then had to find your way through the cold and dangerous lands of Valika—and whatever other lands separated you from your home. You had to be ever watchful of other threats, hiding when danger presented itself. No place is safe, and you must take every opportunity to advance toward your goals.</p>
+			<div class="reference">
+				<div element="ID_GFG_GHPG25_FEAT_SURVIVOR" />
+			</div>
+		</description>
+		<setters>
+			<set name="short">Constitution, Intelligence, Wisdom, Survivor Feat, Perception and Stealth Skills, an Artisan’s Tool</set>
+		</setters>
+		<rules>
+			<grant type="Ability Score Improvement" id="ID_INTERNAL_ABILITY_SCORE_IMPROVEMENT_COMBINATION_CON_INT_WIS" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option" supports="Custom Ability Score Improvement Option" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI,!ID_INTERNAL_GRANTS_BACKGROUND_ASI" />
+			<grant type="Feat" id="ID_GFG_GHPG25_FEAT_SURVIVOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" /> 
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_BACKGROUND_ASI" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<select type="Proficiency" name="Tool Proficiency (Released Thrall)" supports="Tool, Artisan tools" />
+		</rules>
+	</element>
+</elements>

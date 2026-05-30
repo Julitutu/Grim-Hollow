@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Specter Transformation</name>
+        <description>Specter Transformation from Grim Hollow: Player's Guide (2025)</description>
+        <author>Ghostfire Gaming</author>
+        <update version="0.1.0">
+            <file name="specter.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Transformations/specter.xml" />
+        </update>
+    </info>
+
+    <!-- Items -->
+    <element name="Specter Transformation (Stage 1)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_SPECTER_LEVEL_1">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SPECTER" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SPECTER" />
+        </rules>
+    </element>
+    <element name="Specter Transformation (Stage 2)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_SPECTER_LEVEL_2">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SPECTER" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_2" requirements="ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_1"/>
+        </rules>
+    </element>
+    <element name="Specter Transformation (Stage 3)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_SPECTER_LEVEL_3">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SPECTER" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_3" requirements="ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_2"/>
+        </rules>
+    </element>
+    <element name="Specter Transformation (Stage 4)" type="Item" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ITEM_TRANSFORMATION_SPECTER_LEVEL_4">
+        <compendium display="false" />
+        <description>
+            <p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SPECTER" />
+            </div>
+        </description>
+        <setters>
+            <set name="category">Transformations</set>
+            <set name="keywords">transformation</set>
+            <set name="slot">misc</set>
+            <set name="inventory-hidden">true</set>
+        </setters>
+        <rules>
+            <grant type="Feat" id="ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_4" requirements="ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_3"/>
+        </rules>
+    </element>
+
+    <!-- Base Feat -->
+    <element name="Specter" type="Feat" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_TRANSFORMATION_SPECTER">
+        <description>
+            <p>The young woman walks the cobblestone streets every evening. No one ever speaks with her. Few even dare to pass her by. She searches for her home, unaware that it’s long demolished, and she is long dead. Her haunting image illuminates the dark streets. Her voice echoes in the dusk, “Help me!”</p>
+            <p>A lithe figure shambles into town from the graveyard; their body is luminous and ghastly. Their soiled clothes are held together in tatters and their head is marked by twenty gashes. They raise a ghostly hand to point. Their eyes are haunted and filled with rage. The wraith unleashes a cry of the dead that would chill their murderer’s blood to ice.</p>
+            <p>A living person becomes a Specter through death, by contacting the realm of the dead, or through magic that breaks the body’s ties to the material world. This Transformation tears at the substance of body and mind, until what is left is a spiritual shadow.</p>
+            <p>Specters have a tenuous grasp on reality, and some fade into oblivion while others become monsters that sow the same. Few cursed with this Transformation have the fortitude to remain whole.</p>
+            
+            <h4>Becoming a Specter</h4>
+            <p>Methods of becoming a Specter vary, and few find their way willingly. One that dies of an unjust or violent cause may find their spirit refusing to depart, despite their physical form fading. Contact with the forces of death can drain the soul of vitality—a would-be hero is corrupted by the force they wanted to fight. Sinister rituals can also infuse a body with the powers of unmaking from the realm of the Aether Kindred.</p>
+            <p>Alongside incorporeal beings and the magic of death stand entities that exist in a reality untethered from the material world as mortals understand it. These others and their minions, manifestations of otherworldly chaos, can infuse a person with that chaos, making the victim’s ultimate home a dream of cosmic horror.</p>
+            
+            <h4>Reversing Specter Traits</h4>
+            <p>Once the character reaches Stage 1 of the Specter Transformation, typical magic like Remove Curse cannot remove the affliction. You cannot be revived or restored by any magic lesser than the Wish spell due to the ties that anchor your spirit to the corporeal world.</p>
+            <p>Once you die completely and your soul departs, you may be brought back to life by more conventional magic, free of the Transformation and its Boons and Flaws.</p>
+            
+            <h4>Specter Stages</h4>
+            <p>At each stage of this Transformation, follow the instructions provided for that stage.</p>
+            
+            <h4>Achieving a New Stage</h4>
+            <p>To move from one stage to the next higher one in this Transformation, an event or some other notable occurrence tied to the story of the character should take place. The following events are suggestions for ones that might trigger a move to the next stage of the Transformation:</p>
+            <ul>
+                <li>Defeat a powerful, ghostly Undead and absorb its power.</li>
+                <li>Defeat an Aberration that has powers over space, time, or death.</li>
+                <li>Use a ritual that infuses your body with the forces of death or primordial chaos.</li>
+                <li>Survive a near-death experience caused by a ghostly Undead creature or an Aberration, especially one in which your Hit Point maximum is reduced, such as by a Wraith’s Life Drain, or in which you drop to 0 Hit Points.</li>
+                <li>Kill a significant foe with Necrotic or Psychic damage, or by using Necromancy.</li>
+                <li>Infuse other willing people with the power that corrupts you.</li>
+                <li>Interact with ghosts and similar spirits, or beings of other realities, perhaps as a conduit between them and other mortals.</li>
+                <li>Open a gate or path to places of the dead or the dreams of the Aether Kindred.</li>
+            </ul>
+
+            <p><strong>Transformation Save DC:</strong> Some of your abilities require a target to make a saving throw. The DC is calculated as follows:</p>
+            <center>
+                <p><strong>Transformation Save DC</strong> = 8 + your Proficiency Bonus + your Transformation Stage</p>
+            </center>
+        </description>
+        <sheet>
+            <description>Save DC: {{specter:dc}}</description>
+        </sheet>
+        <rules>
+            <stat name="specter:stage" value="0" bonus="base" />
+            <stat name="specter:dc" value="8" />
+            <stat name="specter:dc" value="proficiency" />
+            <stat name="specter:dc" value="specter:stage" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_1" />
+        </rules>
+    </element>
+
+    <!-- Transformation Stage 1 -->
+    <element name="Specter (Stage 1)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_1">
+        <prerequisite>Specter Transformation</prerequisite>
+        <requirements>ID_GFG_GHPG25_FEAT_TRANSFORMATION_SPECTER</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you initially undergo the Specter Transformation, you gain the Spectral Form Boon and one other Stage 1 Boon of your choice. You also gain the Stage 1 Flaw.</p>
+            <div class="reference">
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_SPECTRAL_FORM" />
+                <div element="ID_GFG_GHPG25_FEAT_FEATURE_DRAWN_TO_DARKNESS" />
+            </div>
+        </description>
+        <sheet display="false">
+            <description>Spectral Form, Stage 1 Boon, Drawn to Darkness (Flaw)</description>
+        </sheet>
+        <rules>
+            <stat name="specter:stage" value="1" bonus="base" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_SPECTRAL_FORM" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_DRAWN_TO_DARKNESS" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 1)" supports="Specter 2025 Boon 1" />
+        </rules>
+    </element>
+
+    <element name="Boon: Spectral Form" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_SPECTRAL_FORM">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_1</requirements>
+        <description>
+            <p>You are considered to be Undead in addition to your existing creature type(s). You cannot be excluded from Turn Undead.</p>
+            <p>Additionally, you have Resistance to Necrotic damage. If you have Resistance to Necrotic damage from another source, you have Immunity instead.</p>
+            <p>Finally, you stop aging. You are immune to any effect that would age you, and you cannot die from old age.</p>
+        </description>
+        <sheet>
+            <description>Cannot be excluded from Turn Undead. Stop aging, immune to aging effects, cannot die from old age.</description>
+        </sheet>
+        <rules>
+            <grant type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_UNDEAD" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" requirements="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_NECROTIC" requirements="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+        </rules>
+    </element>
+
+    <element name="Boon: Ghastly Touch" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_GHASTLY_TOUCH">
+        <supports>Specter 2025 Boon 1</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_1</requirements>
+        <description>
+            <p>You can deliver a soul-chilling jolt through your attacks. Once per turn, when you hit a target with a melee attack when you are within 5 feet of the target, you can deal an additional 1d6 Necrotic damage.</p>
+            <p>You can use this feature a number of times equal to your Proficiency Bonus plus your Transformation Stage. You regain all uses of this feature when you finish a Short or Long Rest.</p>
+        </description>
+        <sheet usage="{{ghastly touch:uses}}/Short Rest">
+            <description>Once per turn, when you hit a target with a melee attack within 5ft, deal an additional {{ghastly touch:dice}}d6 Necrotic damage.</description>
+        </sheet>
+        <rules>
+            <stat name="ghastly touch:uses" value="proficiency" />
+            <stat name="ghastly touch:uses" value="specter:stage" />
+            
+            <stat name="ghastly touch:dice" value="1" />
+        </rules>
+    </element>
+
+    <element name="Boon: Incorporeal Movement" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_INCORPOREAL_MOVEMENT">
+        <supports>Specter 2025 Boon 1</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_1</requirements>
+        <description>
+            <p>You are able to loosen the binds that tie you to the material world to move through solid objects and creatures. As a Magic action, you can make yourself incorporeal until the start of your next turn. While in this form, you gain the following benefits:</p>
+            <ul>
+                <li>You can move through solid objects at your full Speed. You take 1d10 Force damage if you end your turn inside a solid object and are moved to the nearest open space.</li>
+                <li>You have Resistance to all damage types except Force damage.</li>
+                <li>You are Lightly Obscured.</li>
+            </ul>
+            <p>You can use this feature a number of times equal to your Proficiency Bonus, and regain all uses after finishing a Long Rest.</p>
+        </description>
+        <sheet action="Magic Action" usage="{{proficiency}}/Long Rest">
+            <description>Become incorporeal until start of next turn.&#13;
+            • Move through solid objects at full Speed (take 1d10 Force dmg if ending turn inside, moved to nearest open space).&#13;
+            • Resistance to all damage except Force.&#13;
+            • Lightly Obscured.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Drawn to Darkness" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_DRAWN_TO_DARKNESS">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_1</requirements>
+        <description>
+            <p>Your body and soul are bound to the cold darkness of the realms of death. You have Disadvantage on Death Saving Throws as your life force is drawn to oblivion.</p>
+        </description>
+        <sheet>
+            <description>Disadvantage on Death Saving Throws.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 2 -->
+    <element name="Specter (Stage 2)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_2">
+        <prerequisite>Specter Transformation Stage 1</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_1</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 2 of the Specter Transformation, you select one Stage 2 Boon and gain the Stage 2 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_UNTETHERED_FROM_LIFE" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 2 Boon. Untethered from Life (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="specter:stage" value="2" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 2)" supports="Specter 2025 Boon 1||Specter 2025 Boon 2" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_UNTETHERED_FROM_LIFE" />
+        </rules>
+    </element>
+
+    <element name="Boon: Ethereal Phasing" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_ETHEREAL_PHASING">
+        <supports>Specter 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_2</requirements>
+        <description>
+            <p>You can cast the Blink spell without expending a spell slot. You can cast the spell using this Boon a number of times equal to your Transformation Stage, and you regain all uses after finishing a Long Rest.</p>
+            <p>While you are under the effects of Blink when cast in this way, you also gain Temporary Hit Points equal to your Proficiency Bonus plus your Transformation Stage at the start of each of your turns.</p>
+        </description>
+        <sheet usage="{{specter:stage}}/Long Rest">
+            <description>Cast Blink without expending a spell slot. While under its effects, gain {{ethereal phasing:thp}} THP at the start of each of your turns.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_WOTC_PHB24_SPELL_BLINK" />
+            <stat name="ethereal phasing:thp" value="proficiency" />
+            <stat name="ethereal phasing:thp" value="specter:stage" />
+        </rules>
+    </element>
+
+    <element name="Boon: Haunting Flight" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_HAUNTING_FLIGHT">
+        <supports>Specter 2025 Boon 2</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_2</requirements>
+        <description>
+            <p>You gain a Fly Speed equal to your Speed.</p>
+            <p>Also, while you are flying, you can use a Bonus Action to focus your terrifying presence on one creature you can see within 30 feet. That creature must succeed on a Wisdom saving throw or have the Frightened condition for 1 minute. The DC for the Wisdom saving throw is 8 plus your Proficiency Bonus plus your Transformation Stage. Once you use this feature, you must finish a Short or Long Rest before you can use it again.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Short Rest">
+            <description>While flying, target 1 creature w/in 30ft: DC {{specter:dc}} Wis save or Frightened for 1 min.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:fly" value="innate speed" requirements="!ID_GFG_GHPG25_FEAT_FEATURE_DRAINING_FLIGHT" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Untethered from Life" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_UNTETHERED_FROM_LIFE">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_2</requirements>
+        <description>
+            <p>Your life force is weaker than other creatures. When you would regain Hit Points, you regain half as many Hit Points as normal (rounded down).</p>
+        </description>
+        <sheet>
+            <description>When regaining Hit Points, regain half as many (rounded down).</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 3 -->
+    <element name="Specter (Stage 3)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_3">
+        <prerequisite>Specter Transformation Stage 2</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_2</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 3 of the Specter Transformation, you select one Stage 3 Boon and gain the Stage 3 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_FRAYING_REALITY" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 3 Boon. Fraying Reality (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="specter:stage" value="3" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 3)" supports="Specter 2025 Boon 1||Specter 2025 Boon 2||Specter 2025 Boon 3" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_FRAYING_REALITY" />
+        </rules>
+    </element>
+
+    <element name="Boon: Draining Flight" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_DRAINING_FLIGHT">
+        <supports>Specter 2025 Boon 3</supports>
+        <prerequisite>Incorporeal Movement and Haunting Flight</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_3, ID_GFG_GHPG25_FEAT_FEATURE_INCORPOREAL_MOVEMENT, ID_GFG_GHPG25_FEAT_FEATURE_HAUNTING_FLIGHT</requirements>
+        <description>
+            <p>You can now use your Incorporeal Movement feature as a Bonus Action. Additionally, your Fly Speed while using Haunting Flight becomes double your Speed.</p>
+            <p>Additionally, while you are using Incorporeal Movement, your movement does not provoke Opportunity Attacks and you can damage creatures that you move through. Once per turn, when you enter a space occupied by a creature, you can choose to force that creature to succeed on a Constitution saving throw or take 6d6 Psychic damage and have the Frightened condition until the end of your next turn. A creature takes half damage on a successful save and is not Frightened. The DC of the Constitution saving throw is 8 plus your Proficiency Bonus plus your Transformation Stage.</p>
+            <p>Once you use this feature, you must finish a Short or Long Rest before you can use it again.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>Incorporeal Movement is a Bonus Action. While using it: no Opportunity Attacks. Once per turn, entering a creature's space forces DC {{specter:dc}} Con save. Fail: 6d6 Psychic dmg and Frightened until end of your next turn. Success: Half dmg, no Frightened.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:fly" value="innate speed" />
+        </rules>
+    </element>
+
+    <element name="Boon: Paralyzing Touch" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_PARALYZING_TOUCH">
+        <supports>Specter 2025 Boon 3</supports>
+        <prerequisite>Ghastly Touch</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_3, ID_GFG_GHPG25_FEAT_FEATURE_GHASTLY_TOUCH</requirements>
+        <description>
+            <p>Your Ghastly Touch feature takes on a spirit-freezing quality. The damage from your Ghastly Touch increases to 2d6 Necrotic damage. Additionally, you can force any creature you damage with Ghastly Touch to make a Constitution saving throw. The DC for this saving throw is 8 plus your Proficiency Bonus plus your Transformation Stage.</p>
+            <p>On a failed save, the creature has the Paralyzed condition until the start of your next turn. On a successful save, they have the Prone condition instead. You can use this feature a number of times equal to your Transformation Stage. You regain all uses of this feature when you finish a Short or Long Rest.</p>
+        </description>
+        <sheet usage="{{specter:stage}}/Short Rest">
+            <description>When damaging with Ghastly Touch, force DC {{specter:dc}} Con save. Fail: Paralyzed until start of your next turn. Success: Prone.</description>
+        </sheet>
+        <rules>
+            <stat name="ghastly touch:dice" value="1" />
+        </rules>
+    </element>
+
+    <element name="Flaw: Fraying Reality" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_FRAYING_REALITY">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_3</requirements>
+        <description>
+            <p>Your mind begins to slip into the dark places where the world of life and world of death intersect. When you become Bloodied for the first time after finishing a Short or Long Rest, you must make a DC 15 Charisma saving throw. On a failed save, you act as though under the effects of a Confusion spell for 1 minute.</p>
+        </description>
+        <sheet>
+            <description>1st time Bloodied after a Rest: DC 15 Cha save or act under Confusion spell for 1 min.</description>
+        </sheet>
+    </element>
+
+    <!-- Transformation Stage 4 -->
+    <element name="Specter (Stage 4)" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_4">
+        <prerequisite>Specter Transformation Stage 3</prerequisite>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_3</requirements>
+        <compendium display="false" />
+        <description>
+            <p>When you reach Stage 4 of the Specter Transformation, you select one Stage 4 Boon and gain the Stage 4 Flaw.</p>
+            <p>In addition, you also gain this stage’s Transformation Flaw.</p>
+            <div element="ID_GFG_GHPG25_FEAT_FEATURE_PULL_OF_OBLIVION" />
+        </description>
+        <sheet display="false">
+            <description>Choose one Stage 4 Boon. Pull of Oblivion (Flaw).</description>
+        </sheet>
+        <rules>
+            <stat name="specter:stage" value="4" bonus="base" />
+            <select type="Feat Feature" name="Transformation Boon (Stage 4)" supports="Specter 2025 Boon 1||Specter 2025 Boon 2||Specter 2025 Boon 3||Specter 2025 Boon 4" />
+            <grant type="Feat Feature" id="ID_GFG_GHPG25_FEAT_FEATURE_PULL_OF_OBLIVION" />
+        </rules>
+    </element>
+
+    <element name="Boon: Call of Unmaking" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_CALL_OF_UNMAKING">
+        <supports>Specter 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_4</requirements>
+        <description>
+            <p>As a Bonus Action, you can give a mournful wail or otherwise set up a wracking vibration. This sound has no effect on Constructs and Undead.</p>
+            <p>All other creatures of your choice within 30 feet of you must make a Constitution saving throw. The DC of the Constitution saving throw is 8 plus your Proficiency Bonus plus your Transformation Stage. Creatures that can’t hear you have Advantage on the saving throw.</p>
+            <p>On a failed save, the creature bears the Mark of Unmaking for 1 minute. While bearing this mark, a creature takes an additional 1d6 Necrotic damage each time it takes damage.</p>
+            <p>Once you use this feature, you can’t use it again until you finish a Long Rest.</p>
+        </description>
+        <sheet action="Bonus Action" usage="1/Long Rest">
+            <description>Chosen creatures w/in 30ft (not Constructs/Undead) make DC {{specter:dc}} Con save (Adv if deaf). Fail: Mark of Unmaking for 1 min (takes extra 1d6 Necrotic dmg each time it takes dmg).</description>
+        </sheet>
+    </element>
+
+    <element name="Boon: Possession" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_POSSESSION">
+        <supports>Specter 2025 Boon 4</supports>
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_4</requirements>
+        <description>
+            <p>As a Magic action, you enter the space of a Humanoid or Beast and force that creature to make a DC 15 Charisma saving throw. If the target fails, you disappear, and the target is Incapacitated and loses control of its body. You control the body without depriving the target of awareness.</p>
+            <p>While possessing a target, you can’t be targeted by any attack, spell, or other effect. You retain your alignment, Intelligence, Wisdom, Charisma, and any immunity to having the Charmed and Frightened conditions. Otherwise, you use the possessed target’s statistics but don’t gain access to the target’s knowledge, spellcasting abilities or Magic actions, class features, or proficiencies.</p>
+            <p>The possession lasts for 1 hour, until the possessed target drops to 0 Hit Points, you end it as a Bonus Action, or you are forced out by an effect that ends possession. When the possession ends, you reappear in an unoccupied space within 5 feet of the possessed creature. Once you use this feature, you can’t use it again until you finish a Short or Long Rest.</p>
+        </description>
+        <sheet action="Magic Action" usage="1/Short Rest">
+            <description>Enter space of Humanoid/Beast: DC 15 Cha save. Fail: Possess target for 1 hr (or 0 HP, or end as BA). Target Incapacitated, you control body (use its stats, keep your Int/Wis/Cha/Alignment/Immunities). Untargetable while possessing.</description>
+        </sheet>
+    </element>
+
+    <element name="Flaw: Pull of Oblivion" type="Feat Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_FEAT_FEATURE_PULL_OF_OBLIVION">
+        <requirements>ID_GFG_GHPG25_TRANSFORMATION_SPECTER_LEVEL_4</requirements>
+        <description>
+            <p>Your connection to the material realm becomes gossamer thin. When you roll a natural 1 on a D20 Test, you take 4d6 Force damage, and this damage cannot be mitigated. If this damage reduces you to 0 Hit Points, you die.</p>
+            <p>When you die in this way or any other, you can only be brought back to life through magic equivalent to level 7 or higher spells.</p>
+        </description>
+        <sheet>
+            <description>Roll natural 1 on D20 Test: Take 4d6 Force dmg (unmitigable). 0 HP = die. Revival requires 7th level+ magic.</description>
+        </sheet>
+    </element>
+</elements>

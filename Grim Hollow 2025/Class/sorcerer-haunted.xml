@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Haunted Sorcery</name>
+		<description>The Haunted Sorcery subclass from Grim Hollow: Player's Guide (2025).</description>
+		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
+		<update version="0.0.1">
+			<file name="sorcerer-haunted.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim-Hollow-2025/Class/sorcerer-haunted.xml" />
+		</update>
+	</info>
+
+	<element name="Haunted Sorcery" type="Archetype" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_SORCERER_HAUNTED_SORCERY">
+		<supports>Sorcerer Subclass</supports>
+		<description>
+			<p class="flavor">Commune with the Dead</p>
+			<p>Unlike other Sorcerers, the circumstances of your birth were mundane and you have no arcane inheritance passed down from strange ancestors. Instead, you gained your sorcerous powers after you survived an experience that left you near death. Since that experience, you've had a preternatural sense for danger and a ghostly companion that either can't, or won't, leave you alone. Some Haunted, as Sorcerers who share your origin are called, develop cordial relationships with their phantom, while others find their spectral companion to be a relentless nuisance.</p>
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_SPELLS" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_SIXTH_SENSE" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_PHANTOM_COMPANION" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_STRENGTH_OF_SPIRIT" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_DEATHLY_PALLOR" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_PHANTOM_POSSESSION" />
+			<div element="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_BECOME_DEATH" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_SIXTH_SENSE" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_PHANTOM_COMPANION" level="3" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_STRENGTH_OF_SPIRIT" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_DEATHLY_PALLOR" level="6" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_PHANTOM_POSSESSION" level="14" />
+			<grant type="Archetype Feature" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_BECOME_DEATH" level="18" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Haunted Spells" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_SPELLS">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HAUNTED_SPELLS</requirements>
+		<description>
+			<p>When you reach a Sorcerer level specified in the Haunted Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5>Haunted Spells</h5>
+			<table>
+				<thead>
+					<tr><td class="col05" style="text-align:center">Sorcerer Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><em>Bane, Chill Touch, Invisibility, See Invisibility, Unseen Servant</em></td></tr>
+				<tr><td style="text-align:center">5</td><td><em>Fly, Speak with Dead</em></td></tr>
+				<tr><td style="text-align:center">7</td><td><em>Death Ward, Greater Invisibility</em></td></tr>
+				<tr><td style="text-align:center">9</td><td><em>Little Death, Telekinesis</em></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_BANE" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_CHILL_TOUCH" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_INVISIBILITY" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SEE_INVISIBILITY" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_UNSEEN_SERVANT" level="3" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FLY" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_SPEAK_WITH_DEAD" level="5" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_DEATH_WARD" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_GREATER_INVISIBILITY" level="7" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_GFG_GHPG25_SPELL_LITTLE_DEATH" level="9" spellcasting="Sorcerer" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_TELEKINESIS" level="9" spellcasting="Sorcerer" prepared="true" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Sixth Sense" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_SIXTH_SENSE">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HAUNTED_SIXTH_SENSE</requirements>
+		<description>
+			<p>When you roll Initiative, you can add your Charisma modifier to the roll.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="initiative" value="charisma:modifier" />
+		</rules>
+	</element>
+
+	<element name="Level 3: Phantom Companion" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_PHANTOM_COMPANION">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HAUNTED_PHANTOM_COMPANION</requirements>
+		<description>
+			<p>You learn the Find Familiar spell and can cast it as a Magic action without expending a spell slot.</p>
+			<p class="indent">The familiar takes the form of a Specter, though it is an Undead instead of a Celestial, Fey, or Fiend. As a Magic action, you can command your phantom companion to gain the Invisible condition until it attacks or you cast a spell through it. While Invisible, it leaves no physical evidence of its passage and can be tracked only by magic. Any equipment or objects it is holding remains visible.</p>
+			<p class="indent">Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make its Life Drain attack with its Reaction.</p>
+            <div element="ID_WOTC_MM25_INFORMATION_COMPANION_SPECTER" />
+		</description>
+		<sheet alt="Phantom Companion">
+			<description>You can cast Find Familiar as a Magic action without a spell slot. It takes the form of an Undead Specter.&#13;
+			As a Magic action, you can command it to become Invisible (ends if it attacks or you cast a spell through it). While Invisible, it leaves no physical trace.&#13;
+			When you take the Attack action, you can forgo one attack to let it use its Life Drain attack as a Reaction.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_WOTC_PHB24_SPELL_FIND_FAMILIAR" />
+            <select type="Companion" name="Panthom Companion" supports="Phantom Companion" default="ID_WOTC_MM25_COMPANION_SPECTER"/>
+		</rules>
+	</element>
+
+	<element name="Level 6: Strength of Spirit" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_STRENGTH_OF_SPIRIT">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HAUNTED_STRENGTH_OF_SPIRIT</requirements>
+		<description>
+			<p>Your bond with your phantom companion empowers it. You gain the following benefits:</p>
+			<ul>
+				<li>Your familiar's Hit Point maximum increases by four times your Sorcerer level.</li>
+				<li>You can cast spells as if you were in the familiar's space.</li>
+				<li>When you use your action to cast a spell, you can use a Bonus Action to command your phantom companion to use its Life Drain attack with its Reaction.</li>
+			</ul>
+		</description>
+		<sheet alt="Strength of Spirit">
+			<description>Your phantom companion's HP max increases by {{strength of spirit:hp}}. You can cast spells from its space. When you cast a spell as an action, you can use a Bonus Action to command it to use Life Drain as a Reaction.</description>
+		</sheet>
+		<rules>
+			<stat name="strength of spirit:hp" value="level:sorcerer" />
+			<stat name="strength of spirit:hp" value="level:sorcerer" />
+			<stat name="strength of spirit:hp" value="level:sorcerer" />
+			<stat name="strength of spirit:hp" value="level:sorcerer" />
+            <stat name="companion:hp:max" value="strength of spirit:hp" />
+		</rules>
+	</element>
+
+	<element name="Level 6: Deathly Pallor" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_DEATHLY_PALLOR">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HAUNTED_DEATHLY_PALLOR</requirements>
+		<description>
+			<p>You have Resistance to Necrotic damage, and when you cast a Sorcerer spell that deals damage, it can deal your choice of Necrotic damage or its normal damage type.</p>
+		</description>
+		<sheet alt="Deathly Pallor">
+			<description>When you cast a Sorcerer spell that deals damage, it can deal Necrotic damage instead.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+
+	<element name="Level 14: Phantom Possession" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_PHANTOM_POSSESSION">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HAUNTED_PHANTOM_POSSESSION</requirements>
+		<description>
+			<p>As a Magic action, you can direct your phantom companion to possess a creature of your choice within 5 feet of your phantom. The target makes a Charisma saving throw against your spell save DC. On a failed save, your phantom companion enters the target's body for 1 minute. On a successful save, the target resists the efforts to possess it, and your familiar can't possess it again for 24 hours.</p>
+			<p class="indent">Once the phantom companion possesses a creature's body, it controls that creature. The familiar's Hit Points, Hit Point Dice, Strength, Dexterity, Constitution, Speed, and senses are replaced by the creature's. The phantom companion otherwise keeps its game statistics.</p>
+			<p class="indent">While the target is possessed, you have a telepathic link with your phantom companion as long as the two of you are within 100 feet. You can use this telepathic link to issue commands to your phantom companion (no action required) unless you have the Incapacitated condition. Your phantom companion does its best to obey on its turn. If it completes an order and doesn't receive further direction from you, the phantom companion acts and moves as it likes, focusing on protecting itself.</p>
+			<p class="indent">You can command the target to take a Reaction but must take your own Reaction to do so.</p>
+			<p class="indent">Whenever the target takes damage, it repeats the save, ending the possession on itself on a success, and your phantom companion reappears in the closest unoccupied space.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet alt="Phantom Possession" action="Action" usage="1/Short Rest">
+			<description>Command your phantom to possess a creature within 5 ft of it. Target makes a DC{{sorcerer:spellcasting:dc}} Cha save. Fail: Possessed for 1 min. Success: Immune for 24 hrs.&#13;
+			While possessed, the phantom controls the target, using its physical stats/senses. You can telepathically command the phantom if within 100 ft (no action). You can use your Reaction to command it to take a Reaction. The target repeats the save when it takes damage, ending the effect on a success.</description>
+		</sheet>
+	</element>
+
+	<element name="Level 18: Become Death" type="Archetype Feature" source="Grim Hollow: Player's Guide (2025)" id="ID_GFG_GHPG25_ARCHETYPE_FEATURE_HAUNTED_BECOME_DEATH">
+		<requirements>!ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HAUNTED_BECOME_DEATH</requirements>
+		<description>
+			<p>You can transmute your physical form into a spectral one when near death. When you are reduced to 0 Hit Points and not killed outright, you can drop to 1 Hit Point instead and gain Temporary Hit Points equal to half your Hit Point maximum. At the start of each of your turns, you lose 10 Temporary Hit Points and creatures of your choice within 30 feet of you take 10 Necrotic damage. While you have Temporary Hit Points granted by this feature, you have Resistance to all damage, a Fly Speed of 30 feet, can Hover, and you can move through occupied spaces as if they were Difficult Terrain. If you end your turn in such a space, you are shunted to the last unoccupied space you were in.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a Long Rest.</p>
+		</description>
+		<sheet alt="Become Death" usage="1/Long Rest">
+			<description>When reduced to 0 HP (not killed outright), drop to 1 HP and gain half your HP maximum THP. While you have these THP, you have Resistance to all damage, Fly Speed 30 ft (Hover), and can move through creatures (shunted if you end turn there). At the start of your turns, lose 10 THP and deal 10 Necrotic damage to chosen creatures within 30 ft.</description>
+		</sheet>
+	</element>
+
+
+    <!-- Specter -->
+    <element name="Specter" type="Companion" source="Monster Manual (2024)" id="ID_WOTC_MM25_COMPANION_SPECTER">
+        <supports>Phantom Companion</supports>
+        <description>
+            <p>Specters are bodiless, life-devouring spirits drawn to darkness and negative emotions. Having lost all connection to the beings they once were, these hateful spirits drain mortal essence to steal fleeting tastes of life and warmth.</p>
+            <p>Specters seek creatures and locations that exude evil and feed on the suffering they inspire. Roll on or choose a result from the Specter Haunts table to inspire where a specter lurks.</p>
+        </description>
+        <setters>
+            <set name="size">Medium</set>
+            <set name="type">Undead</set>
+            <set name="alignment">Chaotic Evil</set>
+            <set name="ac">12</set>
+            <set name="hp">22 (5d8)</set>
+            <set name="speed">30 ft., Fly 50 ft. (hover)</set>
+            <set name="strength">1</set>
+            <set name="dexterity">14</set>
+            <set name="constitution">11</set>
+            <set name="intelligence">10</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">11</set>
+            <set name="resistances">Acid, Bludgeoning, Cold, Fire, Lightning, Piercing, Slashing, Thunder</set>
+            <set name="immunities">Necrotic, Poison</set>
+            <set name="conditionImmunities">Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious</set>            
+            <set name="senses">Darkvision 60 ft., Passive Perception 10</set>
+            <set name="languages">Understands Common plus one other language but can't speak</set>
+            <set name="challenge">1</set>
+            <set name="traits">ID_WOTC_MM25_COMPANION_TRAIT_SPECTER_INCORPOREAL_MOVEMENT,ID_WOTC_MM25_COMPANION_TRAIT_SPECTER_SUNLIGHT_SENSITIVITY</set>
+            <set name="actions">ID_WOTC_MM25_COMPANION_ACTION_SPECTER_LIFE_DRAIN</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="12" />
+            <stat name="companion:hp:max" value="22" bonus="base" />
+            <stat name="companion:speed:fly" value="50" bonus="base" />
+        </rules>
+    </element>
+
+    <element name="Incorporeal Movement" type="Companion Trait" source="Monster Manual" id="ID_WOTC_MM25_COMPANION_TRAIT_SPECTER_INCORPOREAL_MOVEMENT">
+        <description>
+            <p>The specter can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.</p>
+        </description>
+        <sheet>
+            <description>The specter can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.</description>
+        </sheet>
+    </element>
+    <element name="Sunlight Sensitivity" type="Companion Trait" source="Monster Manual" id="ID_WOTC_MM25_COMPANION_TRAIT_SPECTER_SUNLIGHT_SENSITIVITY">
+        <description>
+            <p> While in sunlight, the specter has Disadvantage on ability checks and attack rolls.</p>
+        </description>
+        <sheet>
+            <description> While in sunlight, the specter has Disadvantage on ability checks and attack rolls.</description>
+        </sheet>
+    </element>
+    <element name="Life Drain" type="Companion Action" source="Monster Manual" id="ID_WOTC_MM25_COMPANION_ACTION_SPECTER_LIFE_DRAIN">
+        <description>
+            <p><i>Melee Attack Roll:</i> +4, reach 5 ft. <i>Hit:</i> 7 (2d6) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the damage taken.</p>
+        </description>
+        <sheet>
+            <description>Melee Attack Roll: +4, reach 5 ft. Hit: 7 (2d6) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the damage taken.</description>
+        </sheet>
+    </element>
+
+    <element name="Specter" type="Information" source="Monster Manual (2024)" id="ID_WOTC_MM25_INFORMATION_COMPANION_SPECTER">
+		<description>
+			<p style="margin-bottom:-5px"><em>Medium Undead, Chaotic Evil</em></p>
+			<h4 style="margin-top:5px" />
+			<ul class="unstyled">
+				<li><strong>AC</strong> 12</li>
+				<li><strong>HP</strong> 22 (5d8)</li>
+				<li><strong>Speed</strong> 30 ft., Fly 50 ft. (hover)</li>
+			</ul>
+			<table style="text-align:center;margin-top:2px;margin-bottom:10px">
+				<tr style="font-size:8px"><td colspan="2" /><td>MOD</td><td>SAVE</td><td colspan="2" /><td>MOD</td><td>SAVE</td><td colspan="2" /><td>MOD</td><td>SAVE</td></tr>
+				<tr><td><b>STR</b></td><td>1</td><td>-5</td><td>-5</td><td><b>DEX</b></td><td>14</td><td>+2</td><td>+2</td><td><b>CON</b></td><td>11</td><td>0</td><td>0</td></tr>
+				<tr><td><b>INT</b></td><td>10</td><td>0</td><td>0</td><td><b>WIS</b></td><td>10</td><td>0</td><td>0</td><td><b>CHA</b></td><td>11</td><td>+0</td><td>+0</td></tr>
+			</table>
+			<ul class="unstyled">
+				<li><strong>Resistances</strong> Acid, Cold, Fire, Lightning, Thunder, Bludgeoning, Piercing, and Slashing from nonmagical attacks</li>
+				<li><strong>Immunities</strong>Necrotic, Poison, Charmed, Exhaustion, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained, Unconscious</li>
+				<li><strong>Senses</strong> Darkvision 60 ft., Passive Perception 10</li>
+				<li><strong>Languages</strong> UndUnderstands Common plus one other language but can't speak</li>
+				<li><strong>Challenge</strong> 1 <strong>PB</strong> +2</li>
+			</ul>
+			<h4 style="margin-top:5px; margin-bottom:10px" />
+			<ul class="unstyled">
+				<li><strong><em>Incorporeal Movement.</em></strong> The specter can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.</li>
+                <li style="margin-top:5px"><strong><em>Sunlight Sensitivity.</em></strong> While in sunlight, the specter has Disadvantage on ability checks and attack rolls.</li>
+			</ul>
+			<h4 style="margin-top:10px">Actions</h4>
+			<ul class="unstyled">
+				<li><em><strong>Life Drain.</strong> Melee Attack Roll:</em> +4, reach 5 ft. <em>Hit:</em> 7 (2d6) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the damage taken.</li>
+			</ul>
+		</description>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Haunted Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HAUNTED_SPELLS" />
+	<element name="Sixth Sense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HAUNTED_SIXTH_SENSE" />
+	<element name="Phantom Companion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HAUNTED_PHANTOM_COMPANION" />
+	<element name="Strength of Spirit Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HAUNTED_STRENGTH_OF_SPIRIT" />
+	<element name="Deathly Pallor Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HAUNTED_DEATHLY_PALLOR" />
+	<element name="Phantom Possession Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HAUNTED_PHANTOM_POSSESSION" />
+	<element name="Become Death Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_GHPG25_FEATURE_REPLACEMENT_HAUNTED_BECOME_DEATH" />
+
+</elements>
