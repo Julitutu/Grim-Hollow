@@ -4,7 +4,7 @@
 		<name>Monster Hunter</name>
 		<description>The Monster Hunter class from Grim Hollow: Player's Guide (2025).</description>
 		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="class-monster-hunter.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Class/class-monster-hunter.xml" />
 		</update>
 	</info>
@@ -113,7 +113,7 @@
 		</rules>
 		<multiclass id="ID_GFG_GHPG25_MULTICLASS_MONSTER_HUNTER">
 			<prerequisite>Strength 13 or Dexterity 13, and Intelligence 13</prerequisite>
-			<requirements>(([str:13]||[dex:13]),[int:13],!(ID_GFG_GHPG25_CLASS_MONSTER_HUNTER||ID_GFG_GHPG25_MULTICLASS_MONSTER_HUNTER))||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
+			<requirements>(([str:13]||[dex:13]),[int:13])||ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Martial weapons, Light armor, Medium armor, Shields</set>
 			</setters>
