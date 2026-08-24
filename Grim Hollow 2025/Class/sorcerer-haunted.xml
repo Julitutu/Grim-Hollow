@@ -4,7 +4,7 @@
 		<name>Haunted Sorcery</name>
 		<description>The Haunted Sorcery subclass from Grim Hollow: Player's Guide (2025).</description>
 		<author url="https://ghostfiregaming.com/">Ghostfire Gaming</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="sorcerer-haunted.xml" url="https://raw.githubusercontent.com/Julitutu/Grim-Hollow/refs/heads/main/Grim%20Hollow%202025/Class/sorcerer-haunted.xml" />
 		</update>
 	</info>
@@ -159,7 +159,7 @@
 
 
     <!-- Specter -->
-    <element name="Specter" type="Companion" source="Monster Manual (2024)" id="ID_WOTC_MM25_COMPANION_SPECTER">
+    <element name="Specter" type="Companion" source="Monster Manual (2025)" id="ID_WOTC_MM25_COMPANION_SPECTER">
         <supports>Phantom Companion</supports>
         <description>
             <p>Specters are bodiless, life-devouring spirits drawn to darkness and negative emotions. Having lost all connection to the beings they once were, these hateful spirits drain mortal essence to steal fleeting tastes of life and warmth.</p>
@@ -194,7 +194,8 @@
         </rules>
     </element>
 
-    <element name="Incorporeal Movement" type="Companion Trait" source="Monster Manual" id="ID_WOTC_MM25_COMPANION_TRAIT_SPECTER_INCORPOREAL_MOVEMENT">
+	<element name="Incorporeal Movement" type="Companion Trait" source="Monster Manual (2025)"
+		id="ID_WOTC_MM25_COMPANION_TRAIT_SPECTER_INCORPOREAL_MOVEMENT">
         <description>
             <p>The specter can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.</p>
         </description>
@@ -202,7 +203,8 @@
             <description>The specter can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) Force damage if it ends its turn inside an object.</description>
         </sheet>
     </element>
-    <element name="Sunlight Sensitivity" type="Companion Trait" source="Monster Manual" id="ID_WOTC_MM25_COMPANION_TRAIT_SPECTER_SUNLIGHT_SENSITIVITY">
+	<element name="Sunlight Sensitivity" type="Companion Trait" source="Monster Manual (2025)"
+		id="ID_WOTC_MM25_COMPANION_TRAIT_SPECTER_SUNLIGHT_SENSITIVITY">
         <description>
             <p> While in sunlight, the specter has Disadvantage on ability checks and attack rolls.</p>
         </description>
@@ -210,7 +212,8 @@
             <description> While in sunlight, the specter has Disadvantage on ability checks and attack rolls.</description>
         </sheet>
     </element>
-    <element name="Life Drain" type="Companion Action" source="Monster Manual" id="ID_WOTC_MM25_COMPANION_ACTION_SPECTER_LIFE_DRAIN">
+	<element name="Life Drain" type="Companion Action" source="Monster Manual (2025)"
+		id="ID_WOTC_MM25_COMPANION_ACTION_SPECTER_LIFE_DRAIN">
         <description>
             <p><i>Melee Attack Roll:</i> +4, reach 5 ft. <i>Hit:</i> 7 (2d6) Necrotic damage. If the target is a creature, its Hit Point maximum decreases by an amount equal to the damage taken.</p>
         </description>
@@ -219,7 +222,7 @@
         </sheet>
     </element>
 
-    <element name="Specter" type="Information" source="Monster Manual (2024)" id="ID_WOTC_MM25_INFORMATION_COMPANION_SPECTER">
+    <element name="Specter" type="Information" source="Monster Manual (2025)" id="ID_WOTC_MM25_INFORMATION_COMPANION_SPECTER">
 		<description>
 			<p style="margin-bottom:-5px"><em>Medium Undead, Chaotic Evil</em></p>
 			<h4 style="margin-top:5px" />
